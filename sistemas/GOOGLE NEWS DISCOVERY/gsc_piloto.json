@@ -1,0 +1,2306 @@
+{
+ "janela": [
+  "2026-05-19",
+  "2026-08-17"
+ ],
+ "sites": {
+  "viajenodetalhe.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 39271,
+   "cliques": 4045,
+   "top_impressoes": [
+    {
+     "q": "milhar da cobra",
+     "imp": 4486,
+     "cli": 602,
+     "pos": 2.5
+    },
+    {
+     "q": "milhar de cobra",
+     "imp": 3355,
+     "cli": 324,
+     "pos": 3.1
+    },
+    {
+     "q": "cobra jogo do bicho",
+     "imp": 1590,
+     "cli": 5,
+     "pos": 9.2
+    },
+    {
+     "q": "milhar do jacaré",
+     "imp": 1357,
+     "cli": 329,
+     "pos": 2.5
+    },
+    {
+     "q": "milhar do galo",
+     "imp": 1291,
+     "cli": 387,
+     "pos": 1.6
+    },
+    {
+     "q": "número da cobra no jogo do bicho",
+     "imp": 1029,
+     "cli": 8,
+     "pos": 6.7
+    },
+    {
+     "q": "jogo do bicho cobra",
+     "imp": 996,
+     "cli": 4,
+     "pos": 7.9
+    },
+    {
+     "q": "cobra no jogo do bicho",
+     "imp": 993,
+     "cli": 3,
+     "pos": 8.8
+    },
+    {
+     "q": "qual o número da cobra no jogo do bicho",
+     "imp": 967,
+     "cli": 3,
+     "pos": 7.2
+    },
+    {
+     "q": "número da cobra no jogo do bicho milhar",
+     "imp": 886,
+     "cli": 12,
+     "pos": 6.0
+    },
+    {
+     "q": "milhar de jacaré",
+     "imp": 814,
+     "cli": 118,
+     "pos": 2.9
+    },
+    {
+     "q": "milhar cobra",
+     "imp": 729,
+     "cli": 100,
+     "pos": 2.7
+    },
+    {
+     "q": "milhar de galo",
+     "imp": 655,
+     "cli": 129,
+     "pos": 1.5
+    },
+    {
+     "q": "milhar do jacare",
+     "imp": 652,
+     "cli": 217,
+     "pos": 2.0
+    },
+    {
+     "q": "qual a milhar da cobra",
+     "imp": 614,
+     "cli": 58,
+     "pos": 2.4
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "milhar da cobra",
+     "cli": 602,
+     "imp": 4486,
+     "pos": 2.5
+    },
+    {
+     "q": "milhar do galo",
+     "cli": 387,
+     "imp": 1291,
+     "pos": 1.6
+    },
+    {
+     "q": "milhar do jacaré",
+     "cli": 329,
+     "imp": 1357,
+     "pos": 2.5
+    },
+    {
+     "q": "milhar de cobra",
+     "cli": 324,
+     "imp": 3355,
+     "pos": 3.1
+    },
+    {
+     "q": "milhar do jacare",
+     "cli": 217,
+     "imp": 652,
+     "pos": 2.0
+    },
+    {
+     "q": "milhar de galo",
+     "cli": 129,
+     "imp": 655,
+     "pos": 1.5
+    },
+    {
+     "q": "milhar de jacaré",
+     "cli": 118,
+     "imp": 814,
+     "pos": 2.9
+    },
+    {
+     "q": "milhar cobra",
+     "cli": 100,
+     "imp": 729,
+     "pos": 2.7
+    },
+    {
+     "q": "milhar de jacare",
+     "cli": 86,
+     "imp": 445,
+     "pos": 2.3
+    },
+    {
+     "q": "milhar do jacaré que mais saem",
+     "cli": 80,
+     "imp": 426,
+     "pos": 3.2
+    }
+   ]
+  },
+  "qmixdigital.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 198573,
+   "cliques": 4252,
+   "top_impressoes": [
+    {
+     "q": "simbolos para copiar",
+     "imp": 40634,
+     "cli": 574,
+     "pos": 5.1
+    },
+    {
+     "q": "símbolos para copiar",
+     "imp": 17997,
+     "cli": 254,
+     "pos": 5.2
+    },
+    {
+     "q": "letras personalizadas",
+     "imp": 17088,
+     "cli": 267,
+     "pos": 6.2
+    },
+    {
+     "q": "simbolos aesthetic",
+     "imp": 16877,
+     "cli": 79,
+     "pos": 6.1
+    },
+    {
+     "q": "letras bonitas para copiar",
+     "imp": 15090,
+     "cli": 532,
+     "pos": 5.0
+    },
+    {
+     "q": "simbolos",
+     "imp": 12665,
+     "cli": 50,
+     "pos": 8.6
+    },
+    {
+     "q": "letras diferentes",
+     "imp": 8104,
+     "cli": 110,
+     "pos": 9.6
+    },
+    {
+     "q": "símbolos aesthetic",
+     "imp": 5345,
+     "cli": 26,
+     "pos": 6.5
+    },
+    {
+     "q": "letras bonitas",
+     "imp": 5235,
+     "cli": 71,
+     "pos": 7.4
+    },
+    {
+     "q": "gerador de pessoas",
+     "imp": 5143,
+     "cli": 26,
+     "pos": 5.3
+    },
+    {
+     "q": "letras diferentes para copiar",
+     "imp": 5066,
+     "cli": 147,
+     "pos": 5.8
+    },
+    {
+     "q": "inverter texto",
+     "imp": 2679,
+     "cli": 6,
+     "pos": 7.1
+    },
+    {
+     "q": "simbolos diferentes",
+     "imp": 2466,
+     "cli": 22,
+     "pos": 7.1
+    },
+    {
+     "q": "baixar thumbnail",
+     "imp": 1999,
+     "cli": 6,
+     "pos": 6.7
+    },
+    {
+     "q": "letra bonita para copiar",
+     "imp": 1977,
+     "cli": 12,
+     "pos": 9.0
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "simbolos para copiar",
+     "cli": 574,
+     "imp": 40634,
+     "pos": 5.1
+    },
+    {
+     "q": "letras bonitas para copiar",
+     "cli": 532,
+     "imp": 15090,
+     "pos": 5.0
+    },
+    {
+     "q": "gerador de caracteres",
+     "cli": 401,
+     "imp": 1304,
+     "pos": 3.3
+    },
+    {
+     "q": "letras personalizadas",
+     "cli": 267,
+     "imp": 17088,
+     "pos": 6.2
+    },
+    {
+     "q": "símbolos para copiar",
+     "cli": 254,
+     "imp": 17997,
+     "pos": 5.2
+    },
+    {
+     "q": "letras diferentes para copiar",
+     "cli": 147,
+     "imp": 5066,
+     "pos": 5.8
+    },
+    {
+     "q": "letras diferentes",
+     "cli": 110,
+     "imp": 8104,
+     "pos": 9.6
+    },
+    {
+     "q": "link falso gerador",
+     "cli": 96,
+     "imp": 282,
+     "pos": 1.9
+    },
+    {
+     "q": "link aleatório",
+     "cli": 92,
+     "imp": 224,
+     "pos": 1.3
+    },
+    {
+     "q": "link aleatório para copiar",
+     "cli": 91,
+     "imp": 212,
+     "pos": 1.6
+    }
+   ]
+  },
+  "ebookcult.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 1755,
+   "cliques": 50,
+   "top_impressoes": [
+    {
+     "q": "atualizar lista iptv",
+     "imp": 156,
+     "cli": 0,
+     "pos": 34.3
+    },
+    {
+     "q": "/recuperar-o-alcance/",
+     "imp": 118,
+     "cli": 0,
+     "pos": 12.5
+    },
+    {
+     "q": "o que significa sonhar com alguém dizendo que você vai morrer",
+     "imp": 112,
+     "cli": 6,
+     "pos": 3.9
+    },
+    {
+     "q": "apostar artes marciais",
+     "imp": 95,
+     "cli": 0,
+     "pos": 25.9
+    },
+    {
+     "q": "atualização iptv",
+     "imp": 92,
+     "cli": 0,
+     "pos": 22.9
+    },
+    {
+     "q": "sonhar com capivara",
+     "imp": 82,
+     "cli": 1,
+     "pos": 10.6
+    },
+    {
+     "q": "sonhar com alguem falando que você vai morrer",
+     "imp": 77,
+     "cli": 1,
+     "pos": 5.0
+    },
+    {
+     "q": "sonhar com alguém dizendo que você vai morrer",
+     "imp": 72,
+     "cli": 4,
+     "pos": 4.3
+    },
+    {
+     "q": "como referenciar a declaração universal dos direitos humanos",
+     "imp": 63,
+     "cli": 5,
+     "pos": 3.4
+    },
+    {
+     "q": "o filme impuros é igual a serie",
+     "imp": 61,
+     "cli": 1,
+     "pos": 7
+    },
+    {
+     "q": "declaração universal dos direitos humanos referencia abnt",
+     "imp": 48,
+     "cli": 3,
+     "pos": 4.5
+    },
+    {
+     "q": "maquininha bradesco taxas",
+     "imp": 46,
+     "cli": 1,
+     "pos": 14.3
+    },
+    {
+     "q": "asus ou positivo",
+     "imp": 42,
+     "cli": 0,
+     "pos": 5.6
+    },
+    {
+     "q": "apostar em esports",
+     "imp": 34,
+     "cli": 0,
+     "pos": 75.2
+    },
+    {
+     "q": "aposta artes marciais",
+     "imp": 33,
+     "cli": 0,
+     "pos": 23.9
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "o que significa sonhar com alguém dizendo que você vai morrer",
+     "cli": 6,
+     "imp": 112,
+     "pos": 3.9
+    },
+    {
+     "q": "como referenciar a declaração universal dos direitos humanos",
+     "cli": 5,
+     "imp": 63,
+     "pos": 3.4
+    },
+    {
+     "q": "atualizar o kwai",
+     "cli": 4,
+     "imp": 6,
+     "pos": 18.2
+    },
+    {
+     "q": "sonhar com alguém dizendo que você vai morrer",
+     "cli": 4,
+     "imp": 72,
+     "pos": 4.3
+    },
+    {
+     "q": "assistir batman o cavaleiro das trevas online",
+     "cli": 3,
+     "imp": 12,
+     "pos": 29.9
+    },
+    {
+     "q": "declaração universal dos direitos humanos referencia abnt",
+     "cli": 3,
+     "imp": 48,
+     "pos": 4.5
+    },
+    {
+     "q": "batman o cavaleiro das trevas online",
+     "cli": 2,
+     "imp": 11,
+     "pos": 23.9
+    },
+    {
+     "q": "assistir batman cavaleiro das trevas online",
+     "cli": 1,
+     "imp": 6,
+     "pos": 27
+    },
+    {
+     "q": "assistir batman o cavaleiro das trevas",
+     "cli": 1,
+     "imp": 17,
+     "pos": 27.2
+    },
+    {
+     "q": "assistir batman: o cavaleiro das trevas",
+     "cli": 1,
+     "imp": 3,
+     "pos": 28.3
+    }
+   ]
+  },
+  "adonline.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 1047,
+   "cliques": 147,
+   "top_impressoes": [
+    {
+     "q": "curtidas gratis tiktok",
+     "imp": 220,
+     "cli": 27,
+     "pos": 29.4
+    },
+    {
+     "q": "curtidas tiktok grátis",
+     "imp": 175,
+     "cli": 31,
+     "pos": 34.0
+    },
+    {
+     "q": "que nos lê em cópia",
+     "imp": 86,
+     "cli": 2,
+     "pos": 4.4
+    },
+    {
+     "q": "adonline",
+     "imp": 33,
+     "cli": 23,
+     "pos": 1
+    },
+    {
+     "q": "ganhar curtidas no tiktok",
+     "imp": 21,
+     "cli": 3,
+     "pos": 41.8
+    },
+    {
+     "q": "curtidas tiktok gratis",
+     "imp": 19,
+     "cli": 3,
+     "pos": 31.7
+    },
+    {
+     "q": "curtidas grátis tiktok",
+     "imp": 18,
+     "cli": 2,
+     "pos": 36.8
+    },
+    {
+     "q": "ganhar seguidores no tiktok",
+     "imp": 16,
+     "cli": 6,
+     "pos": 21.8
+    },
+    {
+     "q": "seguidores gratis tiktok",
+     "imp": 12,
+     "cli": 2,
+     "pos": 69.8
+    },
+    {
+     "q": "aperto de mão maçom",
+     "imp": 12,
+     "cli": 0,
+     "pos": 81.3
+    },
+    {
+     "q": "assinar iptv",
+     "imp": 11,
+     "cli": 0,
+     "pos": 86.1
+    },
+    {
+     "q": "seguidores tiktok gratis",
+     "imp": 10,
+     "cli": 2,
+     "pos": 31.5
+    },
+    {
+     "q": "\"instagram suggested accounts ai system\" meta transparency",
+     "imp": 10,
+     "cli": 0,
+     "pos": 8.7
+    },
+    {
+     "q": "acabar com pulgas",
+     "imp": 10,
+     "cli": 0,
+     "pos": 91.7
+    },
+    {
+     "q": "arquibancadas morumbi",
+     "imp": 10,
+     "cli": 0,
+     "pos": 83.6
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "curtidas tiktok grátis",
+     "cli": 31,
+     "imp": 175,
+     "pos": 34.0
+    },
+    {
+     "q": "curtidas gratis tiktok",
+     "cli": 27,
+     "imp": 220,
+     "pos": 29.4
+    },
+    {
+     "q": "adonline",
+     "cli": 23,
+     "imp": 33,
+     "pos": 1
+    },
+    {
+     "q": "ganhar seguidores no tiktok",
+     "cli": 6,
+     "imp": 16,
+     "pos": 21.8
+    },
+    {
+     "q": "curtidas no tiktok gratis",
+     "cli": 4,
+     "imp": 7,
+     "pos": 27.4
+    },
+    {
+     "q": "curtidas tiktok gratis",
+     "cli": 3,
+     "imp": 19,
+     "pos": 31.7
+    },
+    {
+     "q": "ganhar curtidas no tiktok",
+     "cli": 3,
+     "imp": 21,
+     "pos": 41.8
+    },
+    {
+     "q": "comprar curtidas e visualizações tiktok",
+     "cli": 2,
+     "imp": 2,
+     "pos": 13
+    },
+    {
+     "q": "curtidas grátis tiktok",
+     "cli": 2,
+     "imp": 18,
+     "pos": 36.8
+    },
+    {
+     "q": "ganhar curtida no tiktok",
+     "cli": 2,
+     "imp": 8,
+     "pos": 33.1
+    }
+   ]
+  },
+  "barranews.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 152,
+   "impressoes": 389,
+   "cliques": 16,
+   "top_impressoes": [
+    {
+     "q": "barra news notícias de hoje",
+     "imp": 161,
+     "cli": 13,
+     "pos": 4.3
+    },
+    {
+     "q": "barranews",
+     "imp": 19,
+     "cli": 3,
+     "pos": 2.9
+    },
+    {
+     "q": "barra news",
+     "imp": 11,
+     "cli": 0,
+     "pos": 11
+    },
+    {
+     "q": "como medir cortinas",
+     "imp": 10,
+     "cli": 0,
+     "pos": 80
+    },
+    {
+     "q": "pomba gira rosa caveira",
+     "imp": 8,
+     "cli": 0,
+     "pos": 76
+    },
+    {
+     "q": "melhores filmes de aventura do ano 1960",
+     "imp": 5,
+     "cli": 0,
+     "pos": 47
+    },
+    {
+     "q": "rosa caveira pomba gira",
+     "imp": 5,
+     "cli": 0,
+     "pos": 81.6
+    },
+    {
+     "q": "site:barranews.com.br",
+     "imp": 5,
+     "cli": 0,
+     "pos": 1
+    },
+    {
+     "q": "rigidez no pescoço causada por calor ou frio",
+     "imp": 4,
+     "cli": 0,
+     "pos": 96.2
+    },
+    {
+     "q": "altura cortina",
+     "imp": 2,
+     "cli": 0,
+     "pos": 91
+    },
+    {
+     "q": "boca juniors x tucuman",
+     "imp": 2,
+     "cli": 0,
+     "pos": 87.5
+    },
+    {
+     "q": "building the bands",
+     "imp": 2,
+     "cli": 0,
+     "pos": 94
+    },
+    {
+     "q": "consulta veículo roubado pela placa",
+     "imp": 2,
+     "cli": 0,
+     "pos": 85.5
+    },
+    {
+     "q": "esposa do alberto cowboy",
+     "imp": 2,
+     "cli": 0,
+     "pos": 93
+    },
+    {
+     "q": "história de rosa caveira",
+     "imp": 2,
+     "cli": 0,
+     "pos": 58
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "barra news notícias de hoje",
+     "cli": 13,
+     "imp": 161,
+     "pos": 4.3
+    },
+    {
+     "q": "barranews",
+     "cli": 3,
+     "imp": 19,
+     "pos": 2.9
+    }
+   ]
+  },
+  "sabedoriaglobal.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 4012,
+   "cliques": 39,
+   "top_impressoes": [
+    {
+     "q": "dormir de olhos semi abertos espiritismo",
+     "imp": 960,
+     "cli": 6,
+     "pos": 8.2
+    },
+    {
+     "q": "quem tem 90 anos nasceu em que ano",
+     "imp": 945,
+     "cli": 1,
+     "pos": 4.0
+    },
+    {
+     "q": "quem tem 90 anos em 2026 nasceu em que ano",
+     "imp": 301,
+     "cli": 5,
+     "pos": 4.1
+    },
+    {
+     "q": "como abrir o capô do jeep compass",
+     "imp": 271,
+     "cli": 1,
+     "pos": 7.6
+    },
+    {
+     "q": "aviator pixbet",
+     "imp": 165,
+     "cli": 0,
+     "pos": 7.2
+    },
+    {
+     "q": "aviator pix",
+     "imp": 120,
+     "cli": 2,
+     "pos": 10.3
+    },
+    {
+     "q": "site:sabedoriaglobal.com.br",
+     "imp": 119,
+     "cli": 4,
+     "pos": 7.3
+    },
+    {
+     "q": "ele me olha muito mas não fala comigo",
+     "imp": 118,
+     "cli": 2,
+     "pos": 23.5
+    },
+    {
+     "q": "tomei manitol e não fez efeito o que fazer",
+     "imp": 113,
+     "cli": 3,
+     "pos": 9.8
+    },
+    {
+     "q": "como abrir o capo do compass",
+     "imp": 70,
+     "cli": 1,
+     "pos": 5.5
+    },
+    {
+     "q": "como abrir capo jeep compass",
+     "imp": 64,
+     "cli": 1,
+     "pos": 6.7
+    },
+    {
+     "q": "quem faz 90 anos em 2026 nasceu em que ano",
+     "imp": 53,
+     "cli": 2,
+     "pos": 4.4
+    },
+    {
+     "q": "quem tem 90 anos hoje nasceu em que ano",
+     "imp": 45,
+     "cli": 1,
+     "pos": 2.6
+    },
+    {
+     "q": "72 horas são quantos dias",
+     "imp": 26,
+     "cli": 0,
+     "pos": 27.3
+    },
+    {
+     "q": "90 anos atras era que ano",
+     "imp": 24,
+     "cli": 0,
+     "pos": 3.8
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "dormir de olhos semi abertos espiritismo",
+     "cli": 6,
+     "imp": 960,
+     "pos": 8.2
+    },
+    {
+     "q": "quem tem 90 anos em 2026 nasceu em que ano",
+     "cli": 5,
+     "imp": 301,
+     "pos": 4.1
+    },
+    {
+     "q": "site:sabedoriaglobal.com.br",
+     "cli": 4,
+     "imp": 119,
+     "pos": 7.3
+    },
+    {
+     "q": "tomei manitol e não fez efeito o que fazer",
+     "cli": 3,
+     "imp": 113,
+     "pos": 9.8
+    },
+    {
+     "q": "aviator pix",
+     "cli": 2,
+     "imp": 120,
+     "pos": 10.3
+    },
+    {
+     "q": "ele me olha muito mas não fala comigo",
+     "cli": 2,
+     "imp": 118,
+     "pos": 23.5
+    },
+    {
+     "q": "quem faz 90 anos em 2026 nasceu em que ano",
+     "cli": 2,
+     "imp": 53,
+     "pos": 4.4
+    },
+    {
+     "q": "sonhar com furacão",
+     "cli": 2,
+     "imp": 13,
+     "pos": 30.4
+    },
+    {
+     "q": "abrir capo jeep compass",
+     "cli": 1,
+     "imp": 13,
+     "pos": 7.8
+    },
+    {
+     "q": "como abrir capo jeep compass",
+     "cli": 1,
+     "imp": 64,
+     "pos": 6.7
+    }
+   ]
+  },
+  "exquisito.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 23815,
+   "cliques": 101,
+   "top_impressoes": [
+    {
+     "q": "quando a pessoa morre ela vê seu velório",
+     "imp": 4969,
+     "cli": 11,
+     "pos": 9.2
+    },
+    {
+     "q": "símbolo narcisista",
+     "imp": 4345,
+     "cli": 1,
+     "pos": 7.6
+    },
+    {
+     "q": "café é oxitona paroxitona ou proparoxitona",
+     "imp": 1629,
+     "cli": 1,
+     "pos": 7.3
+    },
+    {
+     "q": "saguão é ditongo tritongo ou hiato",
+     "imp": 1572,
+     "cli": 2,
+     "pos": 4.2
+    },
+    {
+     "q": "café é oxítona",
+     "imp": 1073,
+     "cli": 1,
+     "pos": 6.8
+    },
+    {
+     "q": "ver uma pessoa que já morreu viva",
+     "imp": 947,
+     "cli": 11,
+     "pos": 7.2
+    },
+    {
+     "q": "quanto tempo demora para aparecer o registro na carteira digital",
+     "imp": 810,
+     "cli": 2,
+     "pos": 11.6
+    },
+    {
+     "q": "abacaxi com ovo faz mal",
+     "imp": 765,
+     "cli": 1,
+     "pos": 6.1
+    },
+    {
+     "q": "o que é sg no futebol",
+     "imp": 603,
+     "cli": 1,
+     "pos": 6.4
+    },
+    {
+     "q": "a palavra café é oxítona paroxítona ou proparoxítona",
+     "imp": 583,
+     "cli": 1,
+     "pos": 7.8
+    },
+    {
+     "q": "gorpo",
+     "imp": 559,
+     "cli": 1,
+     "pos": 9.5
+    },
+    {
+     "q": "natifa pro emagrece",
+     "imp": 458,
+     "cli": 1,
+     "pos": 11.7
+    },
+    {
+     "q": "morena é cor de cabelo ou pele",
+     "imp": 380,
+     "cli": 2,
+     "pos": 4.9
+    },
+    {
+     "q": "a palavra café é oxítona",
+     "imp": 282,
+     "cli": 1,
+     "pos": 5.5
+    },
+    {
+     "q": "a palavra uruguai é ditongo tritongo ou hiato",
+     "imp": 282,
+     "cli": 1,
+     "pos": 3.8
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "quando a pessoa morre ela vê seu velório",
+     "cli": 11,
+     "imp": 4969,
+     "pos": 9.2
+    },
+    {
+     "q": "ver uma pessoa que já morreu viva",
+     "cli": 11,
+     "imp": 947,
+     "pos": 7.2
+    },
+    {
+     "q": "quais estados aceitam biomedicina para perito criminal",
+     "cli": 4,
+     "imp": 67,
+     "pos": 3.7
+    },
+    {
+     "q": "morena é cor de pele ou cabelo",
+     "cli": 3,
+     "imp": 124,
+     "pos": 4.1
+    },
+    {
+     "q": "o chamado final explicado",
+     "cli": 3,
+     "imp": 83,
+     "pos": 6.3
+    },
+    {
+     "q": "tecido que não amassa",
+     "cli": 3,
+     "imp": 79,
+     "pos": 29.2
+    },
+    {
+     "q": "como baixar iptv",
+     "cli": 2,
+     "imp": 113,
+     "pos": 9.6
+    },
+    {
+     "q": "como instalar iptv na tv",
+     "cli": 2,
+     "imp": 243,
+     "pos": 8.0
+    },
+    {
+     "q": "fica bem ou fique bem",
+     "cli": 2,
+     "imp": 69,
+     "pos": 6.4
+    },
+    {
+     "q": "final de o chamado explicado",
+     "cli": 2,
+     "imp": 28,
+     "pos": 6.5
+    }
+   ]
+  },
+  "jornaldobairroalto.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 732,
+   "cliques": 22,
+   "top_impressoes": [
+    {
+     "q": "brinquedos para tdah",
+     "imp": 70,
+     "cli": 0,
+     "pos": 56.4
+    },
+    {
+     "q": "cachos",
+     "imp": 40,
+     "cli": 0,
+     "pos": 66.8
+    },
+    {
+     "q": "jornal do bairro alto",
+     "imp": 35,
+     "cli": 15,
+     "pos": 1.7
+    },
+    {
+     "q": "inss",
+     "imp": 31,
+     "cli": 4,
+     "pos": 1
+    },
+    {
+     "q": "mega-sena resultado próximo sorteio",
+     "imp": 26,
+     "cli": 1,
+     "pos": 1
+    },
+    {
+     "q": "colchão inducol é bom",
+     "imp": 26,
+     "cli": 0,
+     "pos": 53.0
+    },
+    {
+     "q": "assinatura online",
+     "imp": 24,
+     "cli": 0,
+     "pos": 92.6
+    },
+    {
+     "q": "assinar documento eletronico",
+     "imp": 22,
+     "cli": 0,
+     "pos": 82.5
+    },
+    {
+     "q": "alimentos naturais e industrializados",
+     "imp": 18,
+     "cli": 0,
+     "pos": 78.9
+    },
+    {
+     "q": "assinar documento eletronicamente",
+     "imp": 17,
+     "cli": 0,
+     "pos": 87.9
+    },
+    {
+     "q": "alimentos industrializados e naturais",
+     "imp": 16,
+     "cli": 0,
+     "pos": 83.5
+    },
+    {
+     "q": "assinar doc com certificado digital",
+     "imp": 14,
+     "cli": 0,
+     "pos": 88.9
+    },
+    {
+     "q": "atividade de ensino religioso",
+     "imp": 13,
+     "cli": 0,
+     "pos": 57.8
+    },
+    {
+     "q": "assinador digital on line",
+     "imp": 12,
+     "cli": 0,
+     "pos": 97.2
+    },
+    {
+     "q": "colchão inducol molas ensacadas e bom",
+     "imp": 11,
+     "cli": 0,
+     "pos": 40.1
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "jornal do bairro alto",
+     "cli": 15,
+     "imp": 35,
+     "pos": 1.7
+    },
+    {
+     "q": "inss",
+     "cli": 4,
+     "imp": 31,
+     "pos": 1
+    },
+    {
+     "q": "feiticeira do he man",
+     "cli": 1,
+     "imp": 1,
+     "pos": 15
+    },
+    {
+     "q": "feiticeira he man",
+     "cli": 1,
+     "imp": 1,
+     "pos": 14
+    },
+    {
+     "q": "mega-sena resultado próximo sorteio",
+     "cli": 1,
+     "imp": 26,
+     "pos": 1
+    }
+   ]
+  },
+  "pontonaturalbrasil.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 362,
+   "cliques": 3,
+   "top_impressoes": [
+    {
+     "q": "como pintar com cal",
+     "imp": 22,
+     "cli": 0,
+     "pos": 61.9
+    },
+    {
+     "q": "pintar com cal",
+     "imp": 20,
+     "cli": 0,
+     "pos": 63.5
+    },
+    {
+     "q": "bursite no calcanhar",
+     "imp": 9,
+     "cli": 0,
+     "pos": 78
+    },
+    {
+     "q": "declarar carro no imposto de renda",
+     "imp": 7,
+     "cli": 0,
+     "pos": 96.6
+    },
+    {
+     "q": "como declarar carro no imposto de renda",
+     "imp": 6,
+     "cli": 0,
+     "pos": 96.2
+    },
+    {
+     "q": "bursite calcanhar",
+     "imp": 5,
+     "cli": 0,
+     "pos": 76.8
+    },
+    {
+     "q": "como declarar moto no imposto de renda",
+     "imp": 5,
+     "cli": 0,
+     "pos": 91.4
+    },
+    {
+     "q": "ponto natural",
+     "imp": 5,
+     "cli": 0,
+     "pos": 18.4
+    },
+    {
+     "q": "benefícios da maçã",
+     "imp": 4,
+     "cli": 0,
+     "pos": 90.5
+    },
+    {
+     "q": "como declarar carros no imposto de renda",
+     "imp": 4,
+     "cli": 0,
+     "pos": 96.2
+    },
+    {
+     "q": "construir para alugar",
+     "imp": 4,
+     "cli": 0,
+     "pos": 57.5
+    },
+    {
+     "q": "faz mal dormir de cinta",
+     "imp": 4,
+     "cli": 0,
+     "pos": 77
+    },
+    {
+     "q": "o filme oppenheimer é historicamente preciso?",
+     "imp": 4,
+     "cli": 0,
+     "pos": 93.8
+    },
+    {
+     "q": "beneficios da maça",
+     "imp": 3,
+     "cli": 0,
+     "pos": 93
+    },
+    {
+     "q": "beneficios da maçã",
+     "imp": 3,
+     "cli": 0,
+     "pos": 95
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "rio grande do sul",
+     "cli": 1,
+     "imp": 1,
+     "pos": 6
+    },
+    {
+     "q": "rs",
+     "cli": 1,
+     "imp": 1,
+     "pos": 4
+    },
+    {
+     "q": "tipos de turismo no brasil",
+     "cli": 1,
+     "imp": 1,
+     "pos": 29
+    }
+   ]
+  },
+  "advivo.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 1640,
+   "cliques": 34,
+   "top_impressoes": [
+    {
+     "q": "sonhar com dinheiro molhado",
+     "imp": 312,
+     "cli": 7,
+     "pos": 4.2
+    },
+    {
+     "q": "altura virginia fonseca",
+     "imp": 185,
+     "cli": 0,
+     "pos": 11.5
+    },
+    {
+     "q": "o que significa sonhar com dinheiro molhado",
+     "imp": 149,
+     "cli": 3,
+     "pos": 4.1
+    },
+    {
+     "q": "altura virginia",
+     "imp": 101,
+     "cli": 0,
+     "pos": 12.3
+    },
+    {
+     "q": "site:advivo.com.br",
+     "imp": 94,
+     "cli": 1,
+     "pos": 13.0
+    },
+    {
+     "q": "cine vision",
+     "imp": 52,
+     "cli": 4,
+     "pos": 41.9
+    },
+    {
+     "q": "invasão alienígena",
+     "imp": 42,
+     "cli": 1,
+     "pos": 1
+    },
+    {
+     "q": "iptv no navegador",
+     "imp": 42,
+     "cli": 1,
+     "pos": 26.5
+    },
+    {
+     "q": "acessar iptv pelo navegador",
+     "imp": 42,
+     "cli": 0,
+     "pos": 16
+    },
+    {
+     "q": "altura de virgínia fonseca e peso",
+     "imp": 35,
+     "cli": 0,
+     "pos": 9.5
+    },
+    {
+     "q": "amstaff",
+     "imp": 30,
+     "cli": 0,
+     "pos": 59.6
+    },
+    {
+     "q": "\"trends.google.com/trending/rss?geo=br\"",
+     "imp": 24,
+     "cli": 0,
+     "pos": 5.6
+    },
+    {
+     "q": "american staffordshire terrier",
+     "imp": 21,
+     "cli": 0,
+     "pos": 87.7
+    },
+    {
+     "q": "altura de virgínia fonseca",
+     "imp": 19,
+     "cli": 0,
+     "pos": 13.5
+    },
+    {
+     "q": "a guerra de troia em versos de cordel",
+     "imp": 18,
+     "cli": 0,
+     "pos": 84.7
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "sonhar com dinheiro molhado",
+     "cli": 7,
+     "imp": 312,
+     "pos": 4.2
+    },
+    {
+     "q": "advivo",
+     "cli": 4,
+     "imp": 16,
+     "pos": 1.4
+    },
+    {
+     "q": "cine vision",
+     "cli": 4,
+     "imp": 52,
+     "pos": 41.9
+    },
+    {
+     "q": "o que significa sonhar com dinheiro molhado",
+     "cli": 3,
+     "imp": 149,
+     "pos": 4.1
+    },
+    {
+     "q": "assistir cine vision",
+     "cli": 1,
+     "imp": 1,
+     "pos": 67
+    },
+    {
+     "q": "baixador de mp3 do youtube",
+     "cli": 1,
+     "imp": 2,
+     "pos": 125.5
+    },
+    {
+     "q": "baixar mp3 do youtube",
+     "cli": 1,
+     "imp": 9,
+     "pos": 79.7
+    },
+    {
+     "q": "brasil x haiti audiência",
+     "cli": 1,
+     "imp": 1,
+     "pos": 35
+    },
+    {
+     "q": "cine vision filmes",
+     "cli": 1,
+     "imp": 1,
+     "pos": 34
+    },
+    {
+     "q": "conversor de youtube para mp3",
+     "cli": 1,
+     "imp": 14,
+     "pos": 66.5
+    }
+   ]
+  },
+  "desassossegada.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 2222,
+   "cliques": 15,
+   "top_impressoes": [
+    {
+     "q": "tabela de preço para desentupimento",
+     "imp": 691,
+     "cli": 4,
+     "pos": 3.4
+    },
+    {
+     "q": "com quem zeynep fica no final meu lar meu destino",
+     "imp": 193,
+     "cli": 2,
+     "pos": 9.9
+    },
+    {
+     "q": "como desligar a luz do ar condicionado tcl",
+     "imp": 159,
+     "cli": 0,
+     "pos": 8.3
+    },
+    {
+     "q": "carla rygaard",
+     "imp": 128,
+     "cli": 0,
+     "pos": 9.5
+    },
+    {
+     "q": "como apagar a luz do ar condicionado tcl",
+     "imp": 84,
+     "cli": 0,
+     "pos": 6.3
+    },
+    {
+     "q": "site:desassossegada.com.br",
+     "imp": 69,
+     "cli": 1,
+     "pos": 7.2
+    },
+    {
+     "q": "meu lar meu destino zeynep fica com quem no final",
+     "imp": 66,
+     "cli": 1,
+     "pos": 9.2
+    },
+    {
+     "q": "como desligar o led do ar condicionado tcl",
+     "imp": 52,
+     "cli": 1,
+     "pos": 6.5
+    },
+    {
+     "q": "como desligar a luz do ar tcl",
+     "imp": 45,
+     "cli": 0,
+     "pos": 6.2
+    },
+    {
+     "q": "como apagar a luz do ar tcl",
+     "imp": 42,
+     "cli": 0,
+     "pos": 7.4
+    },
+    {
+     "q": "carne angus",
+     "imp": 35,
+     "cli": 0,
+     "pos": 85.7
+    },
+    {
+     "q": "como apagar a luz do ar condicionado tcl inverter",
+     "imp": 33,
+     "cli": 0,
+     "pos": 7.5
+    },
+    {
+     "q": "como desligar a luz do ar condicionado tcl inverter",
+     "imp": 28,
+     "cli": 0,
+     "pos": 5.8
+    },
+    {
+     "q": "como apagar a luz do ar-condicionado tcl",
+     "imp": 27,
+     "cli": 0,
+     "pos": 5.8
+    },
+    {
+     "q": "como apagar luz do ar condicionado tcl",
+     "imp": 24,
+     "cli": 0,
+     "pos": 5.6
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "tabela de preço para desentupimento",
+     "cli": 4,
+     "imp": 691,
+     "pos": 3.4
+    },
+    {
+     "q": "com quem zeynep fica no final meu lar meu destino",
+     "cli": 2,
+     "imp": 193,
+     "pos": 9.9
+    },
+    {
+     "q": "como desligar o led do ar condicionado tcl",
+     "cli": 1,
+     "imp": 52,
+     "pos": 6.5
+    },
+    {
+     "q": "heitor e aquiles",
+     "cli": 1,
+     "imp": 2,
+     "pos": 75
+    },
+    {
+     "q": "meu lar meu destino com quem zeynep fica no final",
+     "cli": 1,
+     "imp": 14,
+     "pos": 9
+    },
+    {
+     "q": "meu lar meu destino zeynep fica com quem no final",
+     "cli": 1,
+     "imp": 66,
+     "pos": 9.2
+    },
+    {
+     "q": "site:desassossegada.com.br",
+     "cli": 1,
+     "imp": 69,
+     "pos": 7.2
+    },
+    {
+     "q": "ticiane pinheiro",
+     "cli": 1,
+     "imp": 1,
+     "pos": 1
+    },
+    {
+     "q": "ticiane pinheiro relembrou como seu pai se esforçou durante crise financeira familiar",
+     "cli": 1,
+     "imp": 2,
+     "pos": 1
+    },
+    {
+     "q": "zeynep e baris ficam juntos",
+     "cli": 1,
+     "imp": 9,
+     "pos": 10
+    }
+   ]
+  },
+  "oiempreendedores.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 1059,
+   "cliques": 92,
+   "top_impressoes": [
+    {
+     "q": "tv online hd",
+     "imp": 192,
+     "cli": 40,
+     "pos": 110
+    },
+    {
+     "q": "pode lavar geladeira com mangueira",
+     "imp": 133,
+     "cli": 3,
+     "pos": 9.9
+    },
+    {
+     "q": "barata",
+     "imp": 45,
+     "cli": 0,
+     "pos": 80.7
+    },
+    {
+     "q": "tvonlinehd",
+     "imp": 44,
+     "cli": 10,
+     "pos": 52.1
+    },
+    {
+     "q": "teste xciptv",
+     "imp": 43,
+     "cli": 2,
+     "pos": 61.4
+    },
+    {
+     "q": "teste iptv xciptv 48h",
+     "imp": 33,
+     "cli": 3,
+     "pos": 38.1
+    },
+    {
+     "q": "assistir tv online hd",
+     "imp": 31,
+     "cli": 8,
+     "pos": 79.2
+    },
+    {
+     "q": "baratas",
+     "imp": 18,
+     "cli": 0,
+     "pos": 87.4
+    },
+    {
+     "q": "assistir tv online em hd gratis",
+     "imp": 16,
+     "cli": 0,
+     "pos": 53.9
+    },
+    {
+     "q": "bolha no pé",
+     "imp": 16,
+     "cli": 0,
+     "pos": 88.3
+    },
+    {
+     "q": "bandeirinha instagram o que significa",
+     "imp": 15,
+     "cli": 0,
+     "pos": 9.8
+    },
+    {
+     "q": "barata voadora",
+     "imp": 15,
+     "cli": 0,
+     "pos": 76.8
+    },
+    {
+     "q": "tv onlinehd",
+     "imp": 13,
+     "cli": 3,
+     "pos": 138.7
+    },
+    {
+     "q": "tvonlinehd.com.br",
+     "imp": 13,
+     "cli": 1,
+     "pos": 43.3
+    },
+    {
+     "q": "tv ao vivo hd",
+     "imp": 12,
+     "cli": 2,
+     "pos": 68.1
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "tv online hd",
+     "cli": 40,
+     "imp": 192,
+     "pos": 110
+    },
+    {
+     "q": "tvonlinehd",
+     "cli": 10,
+     "imp": 44,
+     "pos": 52.1
+    },
+    {
+     "q": "assistir tv online hd",
+     "cli": 8,
+     "imp": 31,
+     "pos": 79.2
+    },
+    {
+     "q": "tv online hd ao vivo",
+     "cli": 4,
+     "imp": 7,
+     "pos": 90.9
+    },
+    {
+     "q": "pode lavar geladeira com mangueira",
+     "cli": 3,
+     "imp": 133,
+     "pos": 9.9
+    },
+    {
+     "q": "teste iptv xciptv 48h",
+     "cli": 3,
+     "imp": 33,
+     "pos": 38.1
+    },
+    {
+     "q": "tv onlinehd",
+     "cli": 3,
+     "imp": 13,
+     "pos": 138.7
+    },
+    {
+     "q": "canais online hd",
+     "cli": 2,
+     "imp": 11,
+     "pos": 56.2
+    },
+    {
+     "q": "como saber com quem a pessoa está conversando no instagram",
+     "cli": 2,
+     "imp": 9,
+     "pos": 28
+    },
+    {
+     "q": "como ver com quem a pessoa conversa no instagram",
+     "cli": 2,
+     "imp": 8,
+     "pos": 20.4
+    }
+   ]
+  },
+  "clickinfohub.com": {
+   "sa": "enjai",
+   "n_queries": 14,
+   "impressoes": 17,
+   "cliques": 0,
+   "top_impressoes": [
+    {
+     "q": "brasilia design week 2026",
+     "imp": 4,
+     "cli": 0,
+     "pos": 10
+    },
+    {
+     "q": "baropodometria",
+     "imp": 1,
+     "cli": 0,
+     "pos": 95
+    },
+    {
+     "q": "brasília design week 2026",
+     "imp": 1,
+     "cli": 0,
+     "pos": 11
+    },
+    {
+     "q": "como limpar chapa de fogão a lenha com vinagre",
+     "imp": 1,
+     "cli": 0,
+     "pos": 64
+    },
+    {
+     "q": "como tirar ferrugem da chapa do fogão a lenha",
+     "imp": 1,
+     "cli": 0,
+     "pos": 78
+    },
+    {
+     "q": "exame de baropodometria",
+     "imp": 1,
+     "cli": 0,
+     "pos": 96
+    },
+    {
+     "q": "exercícios para correção de pisada supinada",
+     "imp": 1,
+     "cli": 0,
+     "pos": 73
+    },
+    {
+     "q": "onde ver chassi do carro",
+     "imp": 1,
+     "cli": 0,
+     "pos": 91
+    },
+    {
+     "q": "pesquisa governador sp",
+     "imp": 1,
+     "cli": 0,
+     "pos": 81
+    },
+    {
+     "q": "pesquisa tarcisio",
+     "imp": 1,
+     "cli": 0,
+     "pos": 85
+    },
+    {
+     "q": "troca de resistencia",
+     "imp": 1,
+     "cli": 0,
+     "pos": 86
+    },
+    {
+     "q": "trocar a resistencia do chuveiro",
+     "imp": 1,
+     "cli": 0,
+     "pos": 80
+    },
+    {
+     "q": "trocar resistencia",
+     "imp": 1,
+     "cli": 0,
+     "pos": 89
+    },
+    {
+     "q": "trocar resistencia de chuveiro",
+     "imp": 1,
+     "cli": 0,
+     "pos": 87
+    }
+   ],
+   "top_cliques": []
+  },
+  "folhadonoroeste.com.br": {
+   "sa": "backlinkguard",
+   "n_queries": 200,
+   "impressoes": 298,
+   "cliques": 2,
+   "top_impressoes": [
+    {
+     "q": "folha do noroeste",
+     "imp": 18,
+     "cli": 2,
+     "pos": 2.8
+    },
+    {
+     "q": "arjen robben",
+     "imp": 8,
+     "cli": 0,
+     "pos": 89.5
+    },
+    {
+     "q": "coisas que atraem loucamente um homem",
+     "imp": 7,
+     "cli": 0,
+     "pos": 77.9
+    },
+    {
+     "q": "carol lekker antes e depois",
+     "imp": 5,
+     "cli": 0,
+     "pos": 71.4
+    },
+    {
+     "q": "como enlouquecer um homem",
+     "imp": 5,
+     "cli": 0,
+     "pos": 77
+    },
+    {
+     "q": "elenco de s.w.a.t.",
+     "imp": 5,
+     "cli": 0,
+     "pos": 78.8
+    },
+    {
+     "q": "folha noroeste",
+     "imp": 4,
+     "cli": 0,
+     "pos": 38.5
+    },
+    {
+     "q": "que horas vai ser o evento do roube um brainrot",
+     "imp": 4,
+     "cli": 0,
+     "pos": 44
+    },
+    {
+     "q": "como surpreender um homem",
+     "imp": 3,
+     "cli": 0,
+     "pos": 56.7
+    },
+    {
+     "q": "eduardo martini esposa",
+     "imp": 3,
+     "cli": 0,
+     "pos": 69
+    },
+    {
+     "q": "evento roube um brainrot hoje horario",
+     "imp": 3,
+     "cli": 0,
+     "pos": 38.3
+    },
+    {
+     "q": "fases da lua setembro 2025",
+     "imp": 3,
+     "cli": 0,
+     "pos": 85.3
+    },
+    {
+     "q": "hoje tem evento no roube um brainrot que horas",
+     "imp": 3,
+     "cli": 0,
+     "pos": 47.7
+    },
+    {
+     "q": "lua cheia setembro 2025",
+     "imp": 3,
+     "cli": 0,
+     "pos": 82.7
+    },
+    {
+     "q": "lucelia tres graças",
+     "imp": 3,
+     "cli": 0,
+     "pos": 79.7
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "folha do noroeste",
+     "cli": 2,
+     "imp": 18,
+     "pos": 2.8
+    }
+   ]
+  },
+  "gpnoticias.com": {
+   "sa": "enjai",
+   "n_queries": 66,
+   "impressoes": 127,
+   "cliques": 1,
+   "top_impressoes": [
+    {
+     "q": "site:gpnoticias.com",
+     "imp": 20,
+     "cli": 1,
+     "pos": 11
+    },
+    {
+     "q": "mega-sena",
+     "imp": 12,
+     "cli": 0,
+     "pos": 1
+    },
+    {
+     "q": "penarol x corinthians",
+     "imp": 6,
+     "cli": 0,
+     "pos": 1
+    },
+    {
+     "q": "biomarcadores laboratoriais na prática clínica",
+     "imp": 4,
+     "cli": 0,
+     "pos": 64
+    },
+    {
+     "q": "brb",
+     "imp": 4,
+     "cli": 0,
+     "pos": 1
+    },
+    {
+     "q": "filme triste",
+     "imp": 4,
+     "cli": 0,
+     "pos": 87.5
+    },
+    {
+     "q": "zé roberto",
+     "imp": 4,
+     "cli": 0,
+     "pos": 74
+    },
+    {
+     "q": "gabriel pec",
+     "imp": 3,
+     "cli": 0,
+     "pos": 1
+    },
+    {
+     "q": "nathalia dill quem ama cuida",
+     "imp": 3,
+     "cli": 0,
+     "pos": 14
+    },
+    {
+     "q": "paulinho vilhena",
+     "imp": 3,
+     "cli": 0,
+     "pos": 91.3
+    },
+    {
+     "q": "ze roberto",
+     "imp": 3,
+     "cli": 0,
+     "pos": 83.7
+    },
+    {
+     "q": "ze roberto jogador",
+     "imp": 3,
+     "cli": 0,
+     "pos": 84.3
+    },
+    {
+     "q": "brb enfrenta incertezas na capitalização, levando a novo corte de rating pela s&p",
+     "imp": 2,
+     "cli": 0,
+     "pos": 1
+    },
+    {
+     "q": "flamengo",
+     "imp": 2,
+     "cli": 0,
+     "pos": 1
+    },
+    {
+     "q": "lista de candidatos a presidente 2026 nomes",
+     "imp": 2,
+     "cli": 0,
+     "pos": 62.5
+    }
+   ],
+   "top_cliques": [
+    {
+     "q": "site:gpnoticias.com",
+     "cli": 1,
+     "imp": 20,
+     "pos": 11
+    }
+   ]
+  },
+  "jornalconceito.com": {
+   "sa": "enjai",
+   "n_queries": 14,
+   "impressoes": 16,
+   "cliques": 0,
+   "top_impressoes": [
+    {
+     "q": "jobson botafogo",
+     "imp": 2,
+     "cli": 0,
+     "pos": 81
+    },
+    {
+     "q": "melhores filmes de animação do ano 1970",
+     "imp": 2,
+     "cli": 0,
+     "pos": 41.5
+    },
+    {
+     "q": "calendário licenciamento detran ms",
+     "imp": 1,
+     "cli": 0,
+     "pos": 73
+    },
+    {
+     "q": "como tirar ar do chuveiro com garrafa pet",
+     "imp": 1,
+     "cli": 0,
+     "pos": 56
+    },
+    {
+     "q": "exportação soja mato grosso do sul",
+     "imp": 1,
+     "cli": 0,
+     "pos": 93
+    },
+    {
+     "q": "filme jazz",
+     "imp": 1,
+     "cli": 0,
+     "pos": 80
+    },
+    {
+     "q": "jobson do botafogo",
+     "imp": 1,
+     "cli": 0,
+     "pos": 81
+    },
+    {
+     "q": "melhores filmes de animação do ano 1960",
+     "imp": 1,
+     "cli": 0,
+     "pos": 35
+    },
+    {
+     "q": "melhores filmes de animação do ano 1962",
+     "imp": 1,
+     "cli": 0,
+     "pos": 32
+    },
+    {
+     "q": "melhores filmes de animação do ano 1969",
+     "imp": 1,
+     "cli": 0,
+     "pos": 45
+    },
+    {
+     "q": "melhores filmes de animação do ano 1973",
+     "imp": 1,
+     "cli": 0,
+     "pos": 39
+    },
+    {
+     "q": "melhores filmes de animação dos anos 50",
+     "imp": 1,
+     "cli": 0,
+     "pos": 37
+    },
+    {
+     "q": "o dilema das redes resumo",
+     "imp": 1,
+     "cli": 0,
+     "pos": 94
+    },
+    {
+     "q": "resultado da federal dia 18",
+     "imp": 1,
+     "cli": 0,
+     "pos": 85
+    }
+   ],
+   "top_cliques": []
+  },
+  "ocontraditorio.com": {
+   "sa": "enjai",
+   "n_queries": 33,
+   "impressoes": 37,
+   "cliques": 0,
+   "top_impressoes": [
+    {
+     "q": "aplicativo para editar vídeo para instagram",
+     "imp": 2,
+     "cli": 0,
+     "pos": 62.5
+    },
+    {
+     "q": "dorso do pé inchado",
+     "imp": 2,
+     "cli": 0,
+     "pos": 91.5
+    },
+    {
+     "q": "filmes músicas",
+     "imp": 2,
+     "cli": 0,
+     "pos": 80
+    },
+    {
+     "q": "zé antônio",
+     "imp": 2,
+     "cli": 0,
+     "pos": 70
+    },
+    {
+     "q": "a empresa é obrigada a comprar 10 dias de ferias",
+     "imp": 1,
+     "cli": 0,
+     "pos": 93
+    },
+    {
+     "q": "assistir melhores filmes de suspense",
+     "imp": 1,
+     "cli": 0,
+     "pos": 70
+    },
+    {
+     "q": "bolsa família 2026 março",
+     "imp": 1,
+     "cli": 0,
+     "pos": 94
+    },
+    {
+     "q": "calo no pé que doi",
+     "imp": 1,
+     "cli": 0,
+     "pos": 90
+    },
+    {
+     "q": "calo pé",
+     "imp": 1,
+     "cli": 0,
+     "pos": 90
+    },
+    {
+     "q": "cecilia malan é filha de pedro malan",
+     "imp": 1,
+     "cli": 0,
+     "pos": 82
+    },
+    {
+     "q": "cgi cinema",
+     "imp": 1,
+     "cli": 0,
+     "pos": 84
+    },
+    {
+     "q": "comercial norte taguatinga",
+     "imp": 1,
+     "cli": 0,
+     "pos": 65
+    },
+    {
+     "q": "contraditorium",
+     "imp": 1,
+     "cli": 0,
+     "pos": 39
+    },
+    {
+     "q": "cuboide do pé inchado",
+     "imp": 1,
+     "cli": 0,
+     "pos": 90
+    },
+    {
+     "q": "diretor de cinema",
+     "imp": 1,
+     "cli": 0,
+     "pos": 90
+    }
+   ],
+   "top_cliques": []
+  }
+ },
+ "sem_acesso": []
+}

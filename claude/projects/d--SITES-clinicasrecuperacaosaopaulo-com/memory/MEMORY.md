@@ -1,0 +1,17 @@
+- [Diretório Clínicas SP](project_diretorio_clinicas.md) — Projeto Next.js EM PRODUÇÃO na VPS srv1166087 (31.97.173.40), migrado de 31.97.162.199
+- [Cluster Tratamento Gratuito/CAPS](project_cluster_tratamento_gratuito.md) — Cluster SEO aditivo /tratamento-gratuito, Fase 1 no ar, Fase 2 pausada aguardando indexação
+- [Avaliações de clínica (UGC)](project_avaliacoes_reviews.md) — Sistema de avaliações moderadas (IA+humano) no ar; bot do Telegram operacional (prefixo rv:)
+- [Comentários no blog (UGC)](project_comentarios_blog.md) — Mensagens de apoio moderadas nos artigos, no ar; reusa motor de moderação + Telegram (prefixo bc:)
+- [Workflow publicar blog](reference_blog_publish_workflow.md) — Como publicar artigo (banco blog_posts, dollar-quote, capa em /var/www/.../public/uploads, rebuild p/ sitemap, IndexNow)
+- [Cluster SEO Drogas](project_cluster_drogas.md) — Topic cluster tipos/efeitos de drogas: 2 pilares + 7 satélites por droga, no ar e interligados
+- [Suíte Testes de Vício](project_testes_vicio.md) — /testes: 5 testes multi-etapas (álcool, drogas, apostas, remédios, codependência) p/ engajamento + AdSense, no ar
+- [Cluster Álcool Linha do Tempo](project_cluster_alcool_timeline.md) — Páginas "X dias sem álcool" (15→30→60→90→6m→1ano) interligadas + artigo âncora de fígado
+- [Bot de Keywords GSC](project_gsc_keyword_bot.md) — Cron semanal puxa keywords do Search Console (API, conta enjai-ga4-reader) e envia oportunidades no bot Telegram
+- [Sem travessões](feedback_no_travessoes.md) — Nunca usar em dash (—) nem en dash (–) no conteúdo; usar vírgula/ponto
+- [Casas de Recuperação nacional](project_casasderecuperacao_nacional.md) — Diretório nacional casasderecuperacao.com.br no ar (VPS srv1166087, portas 3013/3014, 42.215 estab., ingestão CNES+Receita)
+- [PageSpeed API + skill](reference_pagespeed_api.md) — Chave Google PageSpeed + skill global `pagespeed-audit` p/ auditar Core Web Vitals de qualquer site
+- [Dicionario de acentos](reference_dicionario_acentos.md) — reacentuacao dos nomes CNES/Receita, duplicado nos dois repos e sincronizado a mao
+- [Nao engolir erro de banco](feedback_nao_engolir_erro_db.md) — catch com [] ou numero fixo gravou 404 e sitemap truncado no build
+- [Build com Node 20 via ssh](feedback_build_node20_path.md) — ssh nao interativo usa Node 18 e o next build falha em silencio; exportar PATH do nvm e nao apagar .next antes
+- [Fotos de banco nas capas](project_fotos_banco_capas.md) — todas as imagens de IA trocadas em 16/09/2026; cover_alt no banco; termo descreve a cena; purge CF se o nome do arquivo repetir
+- [Redesign home verde](project_redesign_home_verde.md) — home/header/footer novos em 17/09/2026 (mockup B), tokens --h- em src/app/home.css, internas so recoloridas (fase 2 pendente)

@@ -1,0 +1,1089 @@
+/*
+Theme Name: Incast
+Theme URI: https://incast.com.br
+Description: Portal editorial de famosos, TV e entretenimento. Tema filho de Blocksy com layout magazine.
+Author: Incast
+Version: 1.0.0
+Template: blocksy
+Text Domain: incast
+*/
+
+/* ==========================================================================
+   1. Tokens — palette P18 (Lifestyle revista magenta/cream) + font F06
+   ========================================================================== */
+:root{
+    --ink:#1a1015;
+    --ink-2:#3d2f37;
+    --muted:#7a6c75;
+    --line:#e8dde2;
+    --paper:#fffdfb;
+    --bg:#faf3f0;
+    --accent:#c8326c;
+    --accent-2:#e8a04e;
+    --accent-dark:#9b1f51;
+
+    --serif:"Cormorant Garamond","Times New Roman",Georgia,serif;
+    --sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+
+    --container:1280px;
+    --gutter:24px;
+
+    /* Spacing — spacious */
+    --sp-1:10px;  --sp-2:16px;  --sp-3:24px;  --sp-4:40px;  --sp-5:64px;
+
+    /* Border radius — friendly (medium soft) */
+    --r-card:10px;
+    --r-pill:999px;
+    --r-input:6px;
+
+    /* Shadow — subtle */
+    --sh-card:0 1px 2px rgba(26,16,21,.05), 0 2px 6px rgba(26,16,21,.06);
+}
+
+@media (prefers-color-scheme: dark){
+    /* dark_mode_support = auto_prefers */
+    :root{
+        --ink:#fffdfb;
+        --ink-2:#cdc0c7;
+        --muted:#8a7e85;
+        --line:#3a2a32;
+        --paper:#15090f;
+        --bg:#0d0509;
+    }
+}
+
+/* ==========================================================================
+   2. Reset / base
+   ========================================================================== */
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body.ic-body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--sans);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; text-decoration:none; }
+button{ font:inherit; }
+
+h1,h2,h3,h4,h5,h6{
+    font-family:var(--serif);
+    font-weight:700;
+    letter-spacing:-.005em;
+    line-height:1.15;
+    margin:0;
+    color:var(--ink);
+}
+
+.ic-container{
+    width:100%;
+    max-width:var(--container);
+    margin:0 auto;
+    padding:0 var(--gutter);
+}
+.ic-sr-only{ position:absolute; left:-9999px; }
+
+/* Screen reader only — fórmula moderna que mantém focável (PageSpeed-safe). */
+.screen-reader-text,
+.sr-only{
+    border:0;
+    clip:rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path:inset(50%);
+    clip-path:inset(50%);
+    height:1px;
+    width:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    word-wrap:normal !important;
+}
+
+/* Skip link — herdado do core WP/Blocksy. Visualmente escondido até receber foco. */
+.skip-link,
+a.skip-link{
+    border:0;
+    clip:rect(1px, 1px, 1px, 1px);
+    clip-path:inset(50%);
+    height:1px;
+    width:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100000;
+}
+.skip-link:focus,
+a.skip-link:focus,
+.screen-reader-text:focus{
+    clip:auto !important;
+    clip-path:none !important;
+    position:fixed;
+    left:14px;
+    top:14px;
+    width:auto;
+    height:auto;
+    margin:0;
+    padding:10px 18px;
+    background:var(--accent);
+    color:#fff !important;
+    font-family:var(--sans);
+    font-size:14px;
+    font-weight:700;
+    line-height:1.2;
+    border-radius:var(--r-pill);
+    text-decoration:none;
+    box-shadow:var(--sh-card);
+    outline:2px solid #fff;
+    outline-offset:2px;
+}
+
+/* link_underline_style: animated */
+.ic-post__content a,
+.ic-card__title a:hover,
+.ic-section__h a:hover{
+    background-image:linear-gradient(currentColor,currentColor);
+    background-repeat:no-repeat;
+    background-size:0 1px;
+    background-position:0 100%;
+    transition:background-size .3s;
+}
+.ic-post__content a{ background-size:100% 1px; }
+.ic-card__title a:hover{ background-size:100% 1px; }
+
+/* ==========================================================================
+   3. Header H5 — magazine masthead, menu acima do logo, search inline visível
+   ========================================================================== */
+.ic-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+}
+.ic-header__top{
+    border-bottom:1px solid var(--line);
+    background:var(--bg);
+}
+.ic-header__top-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:8px 0;
+    font-family:var(--sans);
+    font-size:12px;
+    color:var(--muted);
+}
+.ic-header__date{ letter-spacing:.04em; }
+
+/* menu_position_in_header: above_logo */
+.ic-nav{
+    display:flex;
+    gap:var(--sp-3);
+    list-style:none;
+    margin:0; padding:0;
+    flex-wrap:wrap;
+}
+.ic-nav a{
+    font-family:var(--sans);
+    font-size:13px;
+    font-weight:500;
+    color:var(--ink);
+    padding:6px 0;
+    position:relative;
+}
+.ic-nav a:hover{ color:var(--accent); }
+
+.ic-header__masthead{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding:var(--sp-3) 0 var(--sp-2);
+    gap:var(--sp-2);
+}
+.ic-header__brand{
+    font-family:var(--serif);
+    font-weight:700;
+    font-style:italic;
+    font-size:clamp(38px, 4.6vw, 58px);
+    letter-spacing:-.02em;
+    line-height:1;
+    color:var(--ink);
+    text-align:center;
+}
+.ic-brand__dot{ color:var(--accent); }
+
+/* header_search_treatment: visible_input_box */
+.ic-header__search{
+    width:100%;
+    max-width:380px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:var(--bg);
+    border:1px solid var(--line);
+    border-radius:var(--r-pill);
+    padding:8px 16px;
+}
+.ic-header__search input{
+    flex:1;
+    border:none;
+    background:transparent;
+    font-family:var(--sans);
+    font-size:14px;
+    color:var(--ink);
+    outline:none;
+}
+.ic-header__search button{
+    border:none;
+    background:transparent;
+    color:var(--muted);
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+}
+.ic-header__search button:hover{ color:var(--accent); }
+
+.ic-header__bottom{
+    border-top:1px solid var(--line);
+    padding:var(--sp-1) 0;
+    background:var(--paper);
+}
+.ic-header__bottom-row{
+    display:flex;
+    justify-content:center;
+}
+
+/* ==========================================================================
+   4. Breaking strip — tab_filter (3 abas: Em alta / Recentes / Mais lidos)
+   Cores fixas (independente de prefers-color-scheme) — sempre escuro com
+   texto claro. Caso contrário em dark mode --ink vira branco e o conteúdo
+   fica branco no branco.
+   ========================================================================== */
+.ic-breaking{
+    background:#1a0d12;
+    color:#fff;
+}
+.ic-breaking__inner{
+    display:flex;
+    align-items:center;
+    gap:var(--sp-2);
+    padding:10px 0;
+    overflow:hidden;
+}
+.ic-breaking__label{
+    background:var(--accent);
+    color:#fff;
+    font-family:var(--sans);
+    font-weight:700;
+    font-size:11px;
+    letter-spacing:.16em;
+    padding:5px 12px;
+    border-radius:var(--r-pill);
+    flex-shrink:0;
+}
+.ic-breaking__tabs{
+    display:flex;
+    gap:18px;
+    list-style:none;
+    margin:0; padding:0;
+    flex-shrink:0;
+}
+.ic-breaking__tabs button{
+    background:transparent;
+    border:none;
+    padding:0;
+    font-family:var(--sans);
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.55);
+    cursor:pointer;
+}
+.ic-breaking__tabs button.is-active{ color:#fff; }
+.ic-breaking__items{ flex:1; overflow:hidden; min-width:0; }
+.ic-breaking__pane{ display:none; white-space:nowrap; }
+.ic-breaking__pane.is-active{ display:block; }
+.ic-breaking__item{
+    display:inline-block;
+    font-family:var(--sans);
+    font-size:13.5px;
+    font-weight:500;
+    color:rgba(255,255,255,.85);
+    margin-right:24px;
+}
+.ic-breaking__item a{ color:inherit; }
+.ic-breaking__item a:hover{ color:var(--accent-2); }
+.ic-breaking__item + .ic-breaking__item::before{
+    content:"•";
+    color:var(--accent);
+    margin-right:24px;
+}
+
+/* ==========================================================================
+   5. Layout (main + floating sidebar)
+   ========================================================================== */
+.ic-layout,
+.ic-layout--single{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 320px;
+    gap:var(--sp-5);
+    align-items:start;
+    margin:var(--sp-4) 0;
+}
+.ic-main-col,
+.ic-post{ min-width:0; }
+.ic-sidebar{
+    /* sidebar: floating */
+    position:sticky;
+    top:170px;
+    min-width:0;
+}
+@media (max-width:980px){
+    .ic-layout, .ic-layout--single{
+        grid-template-columns:1fr;
+        gap:var(--sp-3);
+    }
+    .ic-sidebar{ position:static; }
+}
+
+/* ==========================================================================
+   6. Hero — dual (2 manchetes lado a lado)
+   ========================================================================== */
+.ic-hero{
+    margin:var(--sp-4) 0;
+    display:grid;
+    grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);
+    gap:var(--sp-4);
+    align-items:stretch;
+}
+.ic-hero__primary,
+.ic-hero__secondary{
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-2);
+}
+.ic-hero__media{
+    display:block;
+    aspect-ratio:16 / 9;
+    overflow:hidden;
+    border-radius:var(--r-card);
+    background:var(--line);
+}
+.ic-hero__media img,
+.ic-hero__media .wp-post-image{
+    display:block;
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    object-fit:cover;
+}
+.ic-hero__cat{
+    font-family:var(--sans);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.18em;
+    color:var(--accent);
+    margin-top:var(--sp-1);
+}
+.ic-hero__title{
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:clamp(28px, 3.2vw, 44px);
+    line-height:1.1;
+    letter-spacing:-.01em;
+    margin:0 0 var(--sp-1);
+}
+.ic-hero__title a{ color:var(--ink); }
+.ic-hero__title a:hover{ color:var(--accent); }
+.ic-hero__excerpt{
+    font-size:16px;
+    line-height:1.55;
+    color:var(--ink-2);
+    margin:0;
+    max-width:50ch;
+}
+.ic-hero__secondary .ic-hero__title{ font-size:clamp(20px, 1.8vw, 26px); }
+.ic-hero__secondary .ic-hero__excerpt{ font-size:14px; }
+@media (max-width:880px){
+    .ic-hero{ grid-template-columns:1fr; gap:var(--sp-3); }
+}
+
+/* ==========================================================================
+   7. Section heading — editorial column
+   ========================================================================== */
+.ic-section{ margin:0 0 var(--sp-5); }
+.ic-section__h{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:var(--sp-3);
+    margin-bottom:var(--sp-3);
+    padding:0 0 var(--sp-1);
+    border-bottom:2px solid var(--ink);
+}
+.ic-section__h h2{
+    font-family:var(--serif);
+    font-style:italic;
+    font-weight:700;
+    font-size:30px;
+    color:var(--ink);
+}
+.ic-section__h a{
+    flex-shrink:0;
+    font-family:var(--sans);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.14em;
+    color:var(--ink);
+    padding-bottom:2px;
+    border-bottom:1px solid var(--accent);
+}
+.ic-section__h a:hover{ color:var(--accent); }
+
+/* ==========================================================================
+   8. Card — image_left (image at left, body at right)
+   ========================================================================== */
+.ic-card{
+    display:grid;
+    grid-template-columns:minmax(0, 200px) minmax(0, 1fr);
+    gap:var(--sp-2);
+    align-items:start;
+    margin:0;
+}
+.ic-card__media{
+    display:block;
+    aspect-ratio:16 / 9;
+    overflow:hidden;
+    border-radius:var(--r-card);
+    background:var(--line);
+    box-shadow:var(--sh-card);
+}
+.ic-card__media img,
+.ic-card__img,
+.ic-card__media .wp-post-image{
+    display:block;
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    object-fit:cover;
+}
+.ic-card__body{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+.ic-card__cat{
+    font-family:var(--sans);
+    font-size:10.5px;
+    font-weight:700;
+    letter-spacing:.16em;
+    color:var(--accent);
+}
+.ic-card__cat a{ color:inherit; }
+.ic-card__title{
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:19px;
+    line-height:1.2;
+    letter-spacing:-.005em;
+    margin:0;
+}
+.ic-card__title a{ color:var(--ink); }
+.ic-card__excerpt{
+    font-family:var(--sans);
+    font-size:14px;
+    line-height:1.55;
+    color:var(--muted);
+    margin:0;
+}
+.ic-card__meta{
+    margin-top:auto;
+    font-family:var(--sans);
+    font-size:11px;
+    font-weight:500;
+    color:var(--muted);
+    display:flex;
+    gap:var(--sp-2);
+    align-items:center;
+}
+.ic-card__meta .ic-author{ color:var(--ink-2); font-weight:600; }
+
+.ic-card--lg{ grid-template-columns:minmax(0, 1fr); }
+.ic-card--lg .ic-card__media{ aspect-ratio:16 / 10; }
+.ic-card--lg .ic-card__title{ font-size:26px; }
+.ic-card--featured{
+    grid-template-columns:1fr;
+}
+.ic-card--featured .ic-card__media{ aspect-ratio:16 / 9; }
+.ic-card--featured .ic-card__title{ font-size:30px; }
+
+@media (max-width:560px){
+    .ic-card{ grid-template-columns:1fr; }
+    .ic-card__media{ aspect-ratio:16 / 9; }
+}
+
+/* ==========================================================================
+   9. "Em alta" — 3 cards (image_left mantido, ranking pill no canto)
+   ========================================================================== */
+.ic-front__row-three{
+    display:grid;
+    grid-template-columns:repeat(3, minmax(0, 1fr));
+    gap:var(--sp-3);
+}
+.ic-front__row-three--ranked{ counter-reset:trend; }
+.ic-front__row-three--ranked > .ic-card{
+    counter-increment:trend;
+    grid-template-columns:1fr;
+    position:relative;
+}
+.ic-front__row-three--ranked > .ic-card .ic-card__media{
+    aspect-ratio:16 / 9;
+    position:relative;
+}
+.ic-front__row-three--ranked > .ic-card .ic-card__media::before{
+    content:counter(trend, decimal-leading-zero);
+    position:absolute;
+    top:10px; left:10px;
+    z-index:2;
+    background:var(--accent);
+    color:#fff;
+    font-family:var(--sans);
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:.08em;
+    padding:5px 10px;
+    border-radius:var(--r-pill);
+}
+.ic-front__row-three--ranked > .ic-card .ic-card__title{ font-size:20px; }
+@media (max-width:780px){
+    .ic-front__row-three{ grid-template-columns:1fr; gap:var(--sp-3); }
+}
+
+/* ==========================================================================
+   10. Bloco de categoria — boxed grid
+   ========================================================================== */
+.ic-front__cat-block{ margin:0 0 var(--sp-5); }
+.ic-front__cat-grid{
+    display:grid;
+    grid-template-columns:minmax(0, 1.3fr) minmax(0, 1fr);
+    gap:var(--sp-4);
+    align-items:start;
+}
+.ic-front__cat-grid > div:first-child .ic-card{
+    grid-template-columns:1fr;
+}
+.ic-front__cat-grid > div:first-child .ic-card .ic-card__media{
+    aspect-ratio:16 / 10;
+}
+.ic-front__cat-grid > div:first-child .ic-card .ic-card__title{ font-size:26px; }
+.ic-front__cat-grid > div:nth-child(2){
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-3);
+}
+.ic-front__cat-grid > div:nth-child(2) .ic-card{
+    border-bottom:1px solid var(--line);
+    padding-bottom:var(--sp-2);
+}
+.ic-front__cat-grid > div:nth-child(2) .ic-card:last-child{
+    border-bottom:none;
+    padding-bottom:0;
+}
+@media (max-width:880px){
+    .ic-front__cat-grid{ grid-template-columns:1fr; gap:var(--sp-3); }
+}
+
+/* ==========================================================================
+   11. Sidebar widgets (heavy)
+   ========================================================================== */
+.ic-widget{
+    background:var(--paper);
+    padding:var(--sp-3);
+    border-radius:var(--r-card);
+    box-shadow:var(--sh-card);
+    margin-bottom:var(--sp-3);
+}
+.ic-widget h4{
+    font-family:var(--sans);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 var(--sp-2);
+    padding-bottom:var(--sp-1);
+    border-bottom:1px solid var(--line);
+}
+.ic-widget ul{ list-style:none; margin:0; padding:0; }
+.ic-widget ul li{
+    padding:8px 0;
+    border-bottom:1px solid var(--line);
+    font-family:var(--sans);
+    font-size:14px;
+    line-height:1.4;
+}
+.ic-widget ul li:last-child{ border-bottom:none; }
+.ic-widget ul li a{ color:var(--ink); }
+.ic-widget ul li a:hover{ color:var(--accent); }
+.ic-widget ol{
+    counter-reset:rank;
+    list-style:none;
+    margin:0; padding:0;
+}
+.ic-widget ol > li{
+    counter-increment:rank;
+    position:relative;
+    padding:10px 0 10px 38px;
+    border-bottom:1px solid var(--line);
+    font-family:var(--sans);
+    font-size:13.5px;
+    line-height:1.35;
+}
+.ic-widget ol > li:last-child{ border-bottom:none; }
+.ic-widget ol > li::before{
+    content:counter(rank);
+    position:absolute;
+    left:0; top:8px;
+    width:26px; height:26px;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--accent);
+    color:#fff;
+    font-family:var(--sans);
+    font-weight:700;
+    font-size:12px;
+    border-radius:var(--r-pill);
+}
+.ic-widget ol > li a{ color:var(--ink); }
+.ic-widget ol > li a:hover{ color:var(--accent); }
+
+.ic-widget--ad{
+    text-align:center;
+    background:transparent;
+    box-shadow:none;
+    padding:0;
+}
+
+/* ==========================================================================
+   12. Single post (Archetype I_classic)
+   ========================================================================== */
+.ic-post{ background:transparent; padding:0; margin:var(--sp-4) 0 0; }
+.ic-post__kicker{
+    display:inline-block;
+    background:var(--accent);
+    color:#fff;
+    font-family:var(--sans);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.16em;
+    padding:5px 12px;
+    border-radius:var(--r-pill);
+    margin-bottom:var(--sp-2);
+}
+.ic-post__kicker a{ color:inherit; }
+.ic-post h1.ic-post__title{
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:clamp(34px, 4vw, 56px);
+    line-height:1.08;
+    letter-spacing:-.015em;
+    margin:0 0 var(--sp-2);
+    max-width:24ch;
+}
+.ic-post__meta{
+    font-family:var(--sans);
+    font-size:13px;
+    color:var(--muted);
+    padding:var(--sp-2) 0;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+    margin-bottom:var(--sp-3);
+    display:flex;
+    flex-wrap:wrap;
+    gap:var(--sp-2);
+    align-items:center;
+}
+.ic-post__meta strong{ color:var(--ink); font-weight:600; }
+.ic-post__meta .ic-dot{ color:var(--line); }
+
+.ic-post__featured{
+    aspect-ratio:16 / 9;
+    overflow:hidden;
+    border-radius:var(--r-card);
+    margin-bottom:var(--sp-3);
+    background:var(--line);
+}
+.ic-post__featured img,
+.ic-post__featured .wp-post-image{
+    display:block;
+    width:100% !important;
+    height:100% !important;
+    max-width:100% !important;
+    object-fit:cover;
+}
+.ic-post__featured figcaption{
+    font-family:var(--sans);
+    font-size:12px;
+    color:var(--muted);
+    margin-top:6px;
+}
+
+/* share_buttons_position: top_only — apenas botões de "copiar link" e "imprimir", sem redes sociais */
+.ic-post__sharebar{
+    display:flex;
+    gap:var(--sp-1);
+    margin-bottom:var(--sp-3);
+    padding-bottom:var(--sp-2);
+    border-bottom:1px solid var(--line);
+}
+.ic-post__sharebar button{
+    background:transparent;
+    border:1px solid var(--line);
+    color:var(--ink-2);
+    padding:6px 12px;
+    border-radius:var(--r-input);
+    font-family:var(--sans);
+    font-size:12px;
+    font-weight:600;
+    cursor:pointer;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+}
+.ic-post__sharebar button:hover{ border-color:var(--accent); color:var(--accent); }
+
+.ic-post__content{
+    font-family:var(--sans);
+    font-size:18px;
+    line-height:1.75;
+    color:var(--ink);
+    max-width:68ch;
+}
+.ic-post__content > p:first-of-type{
+    font-size:21px;
+    line-height:1.5;
+    font-weight:500;
+}
+.ic-post__content p{ margin:0 0 var(--sp-2); }
+.ic-post__content h2{ font-family:var(--serif); font-style:italic; font-size:30px; margin:var(--sp-4) 0 var(--sp-2); }
+.ic-post__content h3{ font-family:var(--serif); font-size:22px; margin:var(--sp-3) 0 var(--sp-1); }
+.ic-post__content ul, .ic-post__content ol{ padding-left:24px; margin:0 0 var(--sp-2); }
+.ic-post__content li{ margin-bottom:6px; }
+.ic-post__content blockquote{
+    border-left:3px solid var(--accent);
+    margin:var(--sp-3) 0;
+    padding:8px var(--sp-3);
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:24px;
+    line-height:1.4;
+}
+.ic-post__content img{ max-width:100%; height:auto; border-radius:var(--r-card); }
+.ic-post__content figure{ margin:var(--sp-3) 0; }
+
+.ic-inline-ad{
+    margin:var(--sp-3) 0;
+    text-align:center;
+    padding:var(--sp-2);
+    background:var(--bg);
+    border-radius:var(--r-card);
+}
+.ic-inline-ad::before{
+    content:"Publicidade";
+    display:block;
+    font-family:var(--sans);
+    font-size:10px;
+    letter-spacing:.16em;
+    color:var(--muted);
+    margin-bottom:6px;
+}
+
+.ic-post__tags{
+    display:flex; flex-wrap:wrap; gap:6px;
+    margin:var(--sp-4) 0 0;
+    padding-top:var(--sp-2);
+    border-top:1px solid var(--line);
+}
+.ic-post__tags a{
+    font-family:var(--sans);
+    font-size:11px;
+    font-weight:600;
+    padding:6px 12px;
+    border:1px solid var(--line);
+    border-radius:var(--r-pill);
+    color:var(--ink-2);
+}
+.ic-post__tags a::before{ content:"#"; color:var(--accent); margin-right:3px; }
+.ic-post__tags a:hover{ border-color:var(--accent); color:var(--accent); }
+
+/* author_bio_box: compact */
+.ic-authorbox{
+    display:flex;
+    gap:var(--sp-2);
+    align-items:center;
+    margin:var(--sp-4) 0 0;
+    padding:var(--sp-2);
+    background:var(--bg);
+    border-radius:var(--r-card);
+    font-family:var(--sans);
+}
+.ic-authorbox__avatar{
+    flex-shrink:0;
+    width:56px; height:56px;
+    overflow:hidden;
+    border-radius:var(--r-pill);
+    background:var(--line);
+}
+.ic-authorbox__avatar img,
+.ic-authorbox__img{
+    width:56px !important; height:56px !important; max-width:56px !important;
+    display:block;
+    object-fit:cover;
+}
+.ic-authorbox__body{ flex:1; min-width:0; }
+.ic-authorbox__name{
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:18px;
+    font-weight:700;
+    margin:0;
+}
+.ic-authorbox__name a{ color:var(--ink); }
+.ic-authorbox__name a:hover{ color:var(--accent); }
+.ic-authorbox__meta{
+    font-size:12px;
+    color:var(--muted);
+    margin:0;
+}
+
+.ic-related{
+    margin-top:var(--sp-5);
+    padding-top:var(--sp-3);
+    border-top:2px solid var(--ink);
+}
+.ic-related__grid{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0,1fr));
+    gap:var(--sp-2);
+}
+.ic-related__grid .ic-card{ grid-template-columns:1fr; }
+.ic-related__grid .ic-card .ic-card__media{ aspect-ratio:16 / 9; }
+.ic-related__grid .ic-card .ic-card__title{ font-size:15px; }
+.ic-related__grid .ic-card .ic-card__excerpt{ display:none; }
+@media (max-width:880px){ .ic-related__grid{ grid-template-columns:repeat(2, minmax(0,1fr)); } }
+@media (max-width:480px){ .ic-related__grid{ grid-template-columns:1fr; } }
+
+.ic-comments{
+    margin-top:var(--sp-4);
+    padding-top:var(--sp-3);
+    border-top:1px solid var(--line);
+}
+.ic-comments h3{
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:24px;
+    margin:0 0 var(--sp-2);
+}
+
+/* ==========================================================================
+   13. Archive — gamma editorial column
+   ========================================================================== */
+.ic-archive__head{
+    padding:var(--sp-4) 0 var(--sp-3);
+    margin-bottom:var(--sp-3);
+    border-bottom:2px solid var(--ink);
+}
+.ic-archive__h1{
+    font-family:var(--serif);
+    font-style:italic;
+    font-weight:700;
+    font-size:clamp(36px, 4.4vw, 52px);
+    line-height:1.05;
+    margin:0 0 var(--sp-1);
+}
+.ic-archive__h1 .ic-count{
+    font-family:var(--sans);
+    font-style:normal;
+    font-weight:600;
+    font-size:14px;
+    color:var(--muted);
+    letter-spacing:.06em;
+    vertical-align:middle;
+    margin-left:var(--sp-1);
+}
+.ic-archive__sub{ display:none; }
+.ic-archive__strip{
+    display:flex; flex-wrap:wrap; gap:8px;
+    margin-top:var(--sp-2);
+}
+.ic-archive__strip a{
+    font-family:var(--sans);
+    font-size:12px;
+    font-weight:600;
+    padding:6px 14px;
+    background:var(--bg);
+    border-radius:var(--r-pill);
+    color:var(--ink-2);
+}
+.ic-archive__strip a:hover{ background:var(--accent); color:#fff; }
+.ic-archive__list{
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-3);
+}
+.ic-archive__list .ic-card .ic-card__media{ aspect-ratio:16 / 9; }
+.ic-archive__pagination{
+    display:flex;
+    justify-content:center;
+    gap:6px;
+    margin:var(--sp-4) 0;
+    font-family:var(--sans);
+    font-size:14px;
+}
+.ic-archive__pagination a,
+.ic-archive__pagination span{
+    padding:8px 14px;
+    border:1px solid var(--line);
+    border-radius:var(--r-input);
+    color:var(--ink);
+    text-decoration:none;
+}
+.ic-archive__pagination .current{
+    background:var(--accent);
+    color:#fff;
+    border-color:var(--accent);
+}
+
+/* ==========================================================================
+   14. Search / 404
+   ========================================================================== */
+.ic-search__form{
+    display:flex; gap:8px;
+    background:var(--paper);
+    padding:var(--sp-2);
+    border-radius:var(--r-card);
+    border:1px solid var(--line);
+    margin-bottom:var(--sp-3);
+}
+.ic-search__form input[type="search"]{
+    flex:1;
+    padding:10px 14px;
+    font-size:16px;
+    border:none;
+    background:transparent;
+    color:var(--ink);
+}
+.ic-404{ padding:var(--sp-5) 0; text-align:left; }
+.ic-404 h1{
+    font-family:var(--serif);
+    font-style:italic;
+    font-weight:700;
+    font-size:clamp(80px, 14vw, 180px);
+    line-height:.9;
+    color:var(--accent);
+    margin:0 0 var(--sp-2);
+}
+
+/* ==========================================================================
+   15. Buttons
+   ========================================================================== */
+.ic-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:10px 20px;
+    font-family:var(--sans);
+    font-size:13px;
+    font-weight:700;
+    color:var(--ink);
+    background:transparent;
+    border:1px solid var(--ink);
+    border-radius:var(--r-pill);
+    cursor:pointer;
+}
+.ic-btn:hover{ background:var(--ink); color:var(--paper); }
+.ic-btn--accent{ border-color:var(--accent); color:var(--accent); }
+.ic-btn--accent:hover{ background:var(--accent); color:#fff; }
+
+/* ==========================================================================
+   16. Footer F2 — classic 4 columns
+   ========================================================================== */
+.ic-footer{
+    background:#0d0509;
+    color:#d8cdd2;
+    padding:var(--sp-5) 0 var(--sp-2);
+    margin-top:var(--sp-5);
+}
+.ic-footer h4{
+    font-family:var(--sans);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:#fff;
+    margin:0 0 var(--sp-2);
+    padding-bottom:8px;
+    border-bottom:1px solid #2a1a20;
+}
+.ic-footer__grid{
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0,1fr));
+    gap:var(--sp-3);
+}
+.ic-footer__col p{ font-family:var(--sans); font-size:14px; line-height:1.6; margin:0; }
+.ic-footer__col ul{ list-style:none; margin:0; padding:0; }
+.ic-footer__col li{ font-family:var(--sans); font-size:14px; padding:5px 0; }
+.ic-footer__col a{ color:#d8cdd2; }
+.ic-footer__col a:hover{ color:#fff; }
+.ic-footer__brand{
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:30px;
+    color:#fff;
+    margin-bottom:var(--sp-1);
+}
+.ic-footer__bottom{
+    border-top:1px solid #2a1a20;
+    margin-top:var(--sp-3);
+    padding-top:var(--sp-2);
+    font-size:12px;
+    color:#9a8c93;
+}
+@media (max-width:780px){ .ic-footer__grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:480px){ .ic-footer__grid{ grid-template-columns:1fr; } }
+
+/* ==========================================================================
+   17. Force visibility (regra 4 da SKILL — anti content-visibility:auto)
+   ========================================================================== */
+.ic-main, .ic-main-col, .ic-section,
+.ic-front__row-three, .ic-front__cat-block, .ic-front__cat-grid,
+.ic-card, .ic-card__body, .ic-card__media,
+.ic-sidebar, .ic-widget, .ic-hero, .ic-hero__primary, .ic-hero__secondary{
+    content-visibility:visible !important;
+    opacity:1 !important;
+    visibility:visible !important;
+}
+.ic-main, .ic-main-col, .ic-section, .ic-front__cat-block{ display:block !important; }
+.ic-front__row-three, .ic-front__cat-grid, .ic-hero{ display:grid !important; }
+.ic-card{ display:grid !important; }
+
+/* ==========================================================================
+   18. Misc / a11y
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce){
+    *{ transition:none !important; animation:none !important; }
+}
+a:focus-visible, button:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:3px;
+}
+.ic-pagination{ display:none; }

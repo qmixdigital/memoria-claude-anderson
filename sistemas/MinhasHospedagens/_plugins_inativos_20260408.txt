@@ -1,0 +1,41 @@
+h-vps1|blog.advdobrasil.com.br|wp-seopress
+h-vps1|noticiasdiarios.com|woocommerce
+h-vps1|noticiasdiarios.com|woo-pix-pro-unified/woo-pix-pro-unified
+h-anderson|adonline.com.br|Indicador de Links Externos
+h-anderson|adonline.com.br|qmix-feed-import
+h-anderson|advivo.com.br|wp-automatic-plugin-for-wordpress
+h-anderson|azulmagazine.com.br|Indicador de Links Externos
+h-anderson|azulmagazine.com.br|wp-automatic-plugin-for-wordpress
+h-anderson|blogse.com.br|wp-automatic-plugin-for-wordpress
+h-anderson|cameracotidiana.com.br|wp-automatic-plugin-for-wordpress
+h-anderson|curiosododia.com.br|wp-automatic-plugin-for-wordpress
+h-anderson|divirto.com.br|Indicador de Links Externos
+h-anderson|divirto.com.br|wp-automatic-plugin-for-wordpress
+h-anderson|incast.com.br|wp-automatic-plugin-for-wordpress
+h-anderson|publisherbrasil.com.br|wp-automatic-plugin-for-wordpress
+h-anderson|qmixdigital.com.br|classic-editor
+h-anderson|qmixdigital.com.br|Indicador de Links Externos
+h-anderson|revistarumo.com.br|Indicador de Links Externos
+h-anderson|saberdefato.com.br|header-footer-code-manager
+h-anderson|saberdefato.com.br|wp-automatic-plugin-for-wordpress
+h-anderson|setorenergetico.com.br|Indicador de Links Externos
+h-anderson|universoneo.com.br|Indicador de Links Externos
+h-anderson|universoneo.com.br|wp-automatic-plugin-for-wordpress
+h-qmixdigital|folhadonoroeste.com.br|Indicador de Links Externos
+hostverge|cirurgiacoracao.com.br|wp-automatic-plugin-for-wordpress
+hostverge|comprarsites|seowriting
+hostverge|exquisito|qmix-feed-import
+hostverge|medicinageriatrica|wp-automatic-plugin-for-wordpress
+hostverge|medicodasmaos.com.br|Indicador de Links Externos
+hostverge|qmixdigital|w3-total-cache
+hostverge|revistadeducao|Indicador de Links Externos
+hostverge|revistadeducao|permalink-manager
+hostverge|revistadeducao|wp-automatic-plugin-for-wordpress
+hostverge|sabedoriaglobal|Indicador de Links Externos
+hostverge|sabedoriaglobal|wp-automatic-plugin-for-wordpress
+hostverge|saudeacessivel.com.br|maintenance
+hostverge|saudevitalidade|Indicador de Links Externos
+hostverge|tendasbarbantech|all-in-one-wp-security-and-firewall
+hostverge|viajenodetalhe|Indicador de Links Externos
+hostverge|viajenodetalhe|wp-automatic-plugin-for-wordpress
+hostverge|wtw19|wp-automatic-plugin-for-wordpress

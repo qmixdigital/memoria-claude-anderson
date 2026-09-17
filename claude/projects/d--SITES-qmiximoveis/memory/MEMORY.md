@@ -1,0 +1,3 @@
+- [Não mexer na config de segurança da Cloudflare](nao-mexer-na-config-de-seguranca-da-cloudflare.md) — resolver pelo lado da aplicação; se não houver saída, só na zona do próprio domínio.
+- [Cloudflare sobrescreve headers de segurança](cloudflare-sobrescreve-headers-de-seguranca.md) — a regra de zona usa `set` e descarta o CSP da origem; a saída é entregar por `<meta http-equiv>`.
+- [Purgar cache da Cloudflare após trocar DNS](purgar-cache-cloudflare-apos-troca-de-dns.md) — a borda entrega o site antigo depois da virada; o teste `?v=1` separa cache de roteamento.

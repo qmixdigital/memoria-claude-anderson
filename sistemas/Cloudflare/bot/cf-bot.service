@@ -1,0 +1,16 @@
+[Unit]
+Description=Cloudflare Redirects Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/cf-bot
+ExecStart=/usr/bin/python3 /opt/cf-bot/bot.py
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/var/log/cf-bot.log
+StandardError=append:/var/log/cf-bot.log
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1 @@
+- [Deploys do playpro sao manuais](feedback_deploys_manuais.md) — GitHub push nao dispara deploy automatico no Cloudflare Pages; usuario faz manual

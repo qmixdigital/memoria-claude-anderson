@@ -1,0 +1,264 @@
+/* ============================================================
+ * Viaje no Detalhe — front-page (archetype A newspaper grid)
+ * ============================================================ */
+
+/* ---------- Hero triptych ---------- */
+.vd-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: var(--vd-sp-5);
+  margin: var(--vd-sp-5) 0;
+  align-items: stretch;
+}
+.vd-hero__lead {
+  display: flex;
+  flex-direction: column;
+  background: var(--vd-paper);
+  border: 1px solid var(--vd-line);
+  overflow: hidden;
+  border-radius: var(--vd-radius);
+}
+html[data-theme="dark"] .vd-hero__lead { background: var(--vd-dark-paper); border-color: var(--vd-dark-line); }
+.vd-hero__media {
+  display: block;
+  overflow: hidden;
+}
+.vd-hero__media img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform .4s;
+}
+.vd-hero__lead:hover .vd-hero__media img { transform: scale(1.02); }
+.vd-hero__body { padding: var(--vd-sp-4); flex: 1; display: flex; flex-direction: column; }
+.vd-hero__cat {
+  display: inline-block;
+  font-family: var(--vd-mono);
+  font-size: 10.5px;
+  color: var(--vd-coral);
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: var(--vd-sp-3);
+  border-bottom: 1.5px dotted var(--vd-coral);
+  padding-bottom: 2px;
+  text-decoration: none !important;
+}
+.vd-hero__title {
+  font-family: var(--vd-display);
+  font-size: clamp(28px, 3.6vw, 40px);
+  line-height: 1.1;
+  margin: 0 0 var(--vd-sp-3);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-feature-settings: "kern", "liga", "dlig";
+}
+.vd-hero__title a { color: var(--vd-ink); text-decoration: none !important; }
+html[data-theme="dark"] .vd-hero__title a { color: var(--vd-dark-ink); }
+.vd-hero__title a:hover { color: var(--vd-coral); }
+.vd-hero__excerpt {
+  font-family: var(--vd-serif);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--vd-muted);
+  margin: 0 0 var(--vd-sp-3);
+  font-style: italic;
+  max-width: 56ch;
+}
+.vd-hero__meta {
+  margin: 0;
+  font-family: var(--vd-mono);
+  font-size: 10px;
+  color: var(--vd-muted);
+  letter-spacing: .12em;
+  text-transform: lowercase;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.vd-hero__num {
+  font-family: var(--vd-display);
+  font-style: italic;
+  color: var(--vd-coral);
+  font-size: 14px;
+  font-weight: 700;
+}
+.vd-hero__meta strong { color: var(--vd-ink-2); font-weight: 600; }
+html[data-theme="dark"] .vd-hero__meta strong { color: var(--vd-dark-ink-2); }
+
+/* Supports (4 cells, equal height fills lead column) */
+.vd-hero__supports {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  min-height: 0;
+}
+.vd-hero__support {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 12px;
+  background: var(--vd-paper);
+  border: 1px solid var(--vd-line);
+  padding: 10px 12px;
+  border-radius: var(--vd-radius);
+  align-items: center;
+  min-height: 0;
+  overflow: hidden;
+}
+html[data-theme="dark"] .vd-hero__support { background: var(--vd-dark-paper); border-color: var(--vd-dark-line); }
+.vd-hero__support-media {
+  align-self: stretch;
+  display: block;
+  overflow: hidden;
+}
+.vd-hero__support-media img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform .35s;
+}
+.vd-hero__support-body { min-width: 0; }
+.vd-hero__support:hover .vd-hero__support-media img { transform: scale(1.04); }
+.vd-hero__support-cat {
+  font-family: var(--vd-mono);
+  font-size: 9px;
+  color: var(--vd-coral);
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+.vd-hero__support-title {
+  font-family: var(--vd-display);
+  font-size: 14.5px;
+  line-height: 1.22;
+  margin: 0 0 4px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.vd-hero__support-title a { color: var(--vd-ink); text-decoration: none !important; }
+html[data-theme="dark"] .vd-hero__support-title a { color: var(--vd-dark-ink); }
+.vd-hero__support-title a:hover { color: var(--vd-coral); }
+.vd-hero__support-excerpt {
+  font-family: var(--vd-serif);
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: var(--vd-muted);
+  font-style: italic;
+  margin: 0 0 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.vd-hero__support-meta { font-size: 8.5px; }
+.vd-hero__support-meta {
+  margin: 0;
+  font-family: var(--vd-mono);
+  font-size: 9px;
+  color: var(--vd-muted);
+  letter-spacing: .14em;
+}
+
+@media (max-width: 880px) {
+  .vd-hero { grid-template-columns: 1fr; }
+}
+
+/* ---------- Cluster estilo portal: 1 destaque + lista de manchetes ---------- */
+.vd-cluster {
+  display: grid;
+  grid-template-columns: minmax(0, 1.42fr) minmax(0, 1fr);
+  gap: var(--vd-sp-4);
+  align-items: start;
+}
+@media (max-width: 880px) { .vd-cluster { grid-template-columns: 1fr; } }
+
+/* Destaque do caderno (imagem grande + olho) */
+.vd-card--lead .vd-card__media img { aspect-ratio: 16 / 10; }
+.vd-card--lead .vd-card__body { padding: var(--vd-sp-4); }
+.vd-card--lead .vd-card__title {
+  font-size: clamp(21px, 2.3vw, 27px);
+  line-height: 1.16;
+  margin-bottom: var(--vd-sp-3);
+}
+.vd-card--lead .vd-card__excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Lista de manchetes (thumb 1:1 + título, denso, com divisórias) */
+.vd-cluster__list { display: flex; flex-direction: column; }
+.vd-card--row {
+  flex-direction: row;
+  align-items: center;
+  border: 0;
+  border-bottom: 1px dashed var(--vd-line-soft);
+  border-radius: 0;
+  background: transparent;
+  padding: var(--vd-sp-3) 0;
+}
+.vd-card--row:first-child { padding-top: 2px; }
+.vd-card--row:last-child { border-bottom: 0; padding-bottom: 0; }
+.vd-card--row:hover { transform: none; border-color: transparent; border-bottom-color: var(--vd-coral); }
+.vd-card--row .vd-card__media {
+  flex: 0 0 92px;
+  width: 92px;
+  border-radius: var(--vd-radius);
+  overflow: hidden;
+}
+.vd-card--row .vd-card__media img { aspect-ratio: 1 / 1; }
+.vd-card--row .vd-card__body { padding: 0 0 0 var(--vd-sp-3); justify-content: center; }
+.vd-card--row .vd-card__title {
+  font-size: 15px;
+  line-height: 1.26;
+  margin: 0 0 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.vd-card--row .vd-card__cat,
+.vd-card--row .vd-card__excerpt { display: none; }
+
+/* ---------- Mais lidos: ranking numerado (estilo portal) ---------- */
+.vd-ranked { list-style: none; margin: 0; padding: 0; counter-reset: vdrank; }
+.vd-ranked__item {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--vd-line-soft);
+}
+.vd-ranked__item:last-child { border-bottom: 0; }
+.vd-ranked__num {
+  font-family: var(--vd-display);
+  font-size: 22px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1;
+  color: var(--vd-coral);
+  text-align: center;
+}
+.vd-ranked__link {
+  font-family: var(--vd-display);
+  font-size: 13.5px;
+  line-height: 1.34;
+  font-weight: 600;
+  color: var(--vd-ink-2) !important;
+  text-decoration: none !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.vd-ranked__link:hover { color: var(--vd-coral) !important; }
+html[data-theme="dark"] .vd-ranked__link { color: var(--vd-dark-ink-2) !important; }

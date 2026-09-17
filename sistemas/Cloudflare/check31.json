@@ -1,0 +1,157 @@
+{
+ "diariodatv.com": {
+  "conta": "AdOnline",
+  "auto_renew": false,
+  "expira": "2027-02-05"
+ },
+ "topsulnoticias.com": {
+  "conta": "AdOnline",
+  "auto_renew": false,
+  "expira": "2027-02-05"
+ },
+ "entrenoticia.com": {
+  "conta": "Advivo",
+  "auto_renew": false,
+  "expira": "2027-02-06"
+ },
+ "noticiasdasemana.com": {
+  "conta": "Advivo",
+  "auto_renew": false,
+  "expira": "2027-02-06"
+ },
+ "nerddahora.com": {
+  "conta": "Aluguel Sites 5",
+  "auto_renew": false,
+  "expira": "2026-11-29"
+ },
+ "ocontraditorio.com": {
+  "conta": "Aluguel Sites 5",
+  "auto_renew": false,
+  "expira": "2026-11-30"
+ },
+ "filmeseseriesnovas.com": {
+  "conta": "Aluguel Sites BOL",
+  "auto_renew": false,
+  "expira": "2026-11-04"
+ },
+ "diariodegoiania.com": {
+  "conta": "Anderson Alves",
+  "auto_renew": false,
+  "expira": "2027-01-19"
+ },
+ "diariodobrejo.com": {
+  "conta": "Anderson Alves",
+  "auto_renew": false,
+  "expira": "2026-10-07"
+ },
+ "folhaum.com": {
+  "conta": "Anderson Alves",
+  "auto_renew": false,
+  "expira": "2026-10-07"
+ },
+ "jornalimigrantes.com": {
+  "conta": "Azul Magazine",
+  "auto_renew": false,
+  "expira": "2027-02-10"
+ },
+ "portalnoticiasbh.com": {
+  "conta": "Barra News",
+  "auto_renew": false,
+  "expira": "2026-10-11"
+ },
+ "gdsnoticias.com": {
+  "conta": "Beatriz",
+  "auto_renew": false,
+  "expira": "2026-10-11"
+ },
+ "noticiasgoias.com": {
+  "conta": "Beatriz",
+  "auto_renew": true,
+  "expira": "2026-10-11"
+ },
+ "osertaoenoticia.com": {
+  "conta": "Beatriz",
+  "auto_renew": false,
+  "expira": "2026-10-11"
+ },
+ "dataroomus.com": {
+  "conta": "blogse",
+  "auto_renew": false,
+  "expira": "2027-02-17"
+ },
+ "rumourisnews.com": {
+  "conta": "blogse",
+  "auto_renew": false,
+  "expira": "2027-02-16"
+ },
+ "edenoticias.com": {
+  "conta": "camera cotidiana",
+  "auto_renew": false,
+  "expira": "2027-02-18"
+ },
+ "noticias9.com": {
+  "conta": "Cirurgia de catarata",
+  "auto_renew": false,
+  "expira": "2027-02-20"
+ },
+ "r10noticias.com": {
+  "conta": "Cirurgia de catarata",
+  "auto_renew": false,
+  "expira": "2027-02-20"
+ },
+ "noticiasdojogo.com": {
+  "conta": "Curioso do Dia",
+  "auto_renew": false,
+  "expira": "2027-02-23"
+ },
+ "ferronoticias.net": {
+  "conta": "Desassossegada",
+  "auto_renew": false,
+  "expira": "2027-02-26"
+ },
+ "gazetadoconsumidor.com": {
+  "conta": "Fatima Watanabe",
+  "auto_renew": false,
+  "expira": "2026-11-13"
+ },
+ "tribunainformativa.com": {
+  "conta": "Fatima Watanabe",
+  "auto_renew": false,
+  "expira": "2026-11-13"
+ },
+ "tribunalpopular.org": {
+  "conta": "Fatima Watanabe",
+  "auto_renew": false,
+  "expira": "2026-11-13"
+ },
+ "jornaldabahia.net": {
+  "conta": "Giselle Wagner",
+  "auto_renew": false,
+  "expira": "2026-11-14"
+ },
+ "jornaldebarcelos.com": {
+  "conta": "Giselle Wagner",
+  "auto_renew": false,
+  "expira": "2026-11-13"
+ },
+ "umjornal.com": {
+  "conta": "Giselle Wagner",
+  "auto_renew": false,
+  "expira": "2026-11-14"
+ },
+ "girodasnoticias.com": {
+  "conta": "Juliana Moraes",
+  "auto_renew": false,
+  "expira": "2026-11-16"
+ },
+ "projetob.net": {
+  "conta": "Mato Grosso Saúde",
+  "auto_renew": false,
+  "expira": "2027-06-05"
+ },
+ "sejanoticia.com": {
+  "conta": "QMIX",
+  "auto_renew": false,
+  "expira": "2026-10-08"
+ }
+}

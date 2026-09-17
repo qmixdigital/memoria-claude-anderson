@@ -1,0 +1,35 @@
+# Memory index
+
+- [Sempre rodar o build após editar source](always-run-build.md) — usuário não roda npm build manualmente, sempre fazer depois de Edit/Write
+- [CLIQUEX: onde vive o código e deploy](cliquex-deploy.md) — código na VPS `ssh cliquex` (não local), deploy bun build + pm2 reload a/b
+- [CLIQUEX: Cloudflare + fail2ban](cliquex-cloudflare-fail2ban.md) — site atrás da Cloudflare; fail2ban não pode banir faixas CF (ERR_TIMED_OUT); precisa real_ip no Nginx
+- [CLIQUEX: landing pages de Teste IPTV](cliquex-landing-pages.md) — PLAYBOOK: rede de 16 diretórios; canônica por backlinks, layout diferente por domínio, CTA 1ª dobra, 301 catch-all, deploy staged/propagado
+- [CLIQUEX: otimização Cloudflare](cliquex-cloudflare-optimization.md) — settings de velocidade/segurança via API em todas as zonas + Bot Fight Mode nos nossos
+- [Cloudflare: segunda conta](cliquex-cloudflare-account2.md) — account id b7618ea1... usada em novos projetos; token vem na hora (não guardar)
+- [CLIQUEX: IndexNow](cliquex-indexnow.md) — chave e submissão pra acelerar indexação (Bing/Yandex; Google não participa)
+- [CLIQUEX: hardening DDoS](cliquex-ddos-hardening.md) — flood derrubou o VPS; fix Nginx (worker_connections/FD/session cache), Under Attack como escudo, cliquex.click movido pro CF
+- [CLIQUEX: rodízio no Cloudflare Worker](cliquex-worker-rotador.md) — `/` e `/whatsapp-*` no edge (DO round-robin exato + contagem via alarm 30s); imune a flood na origem
+- [CLIQUEX: alertas Telegram](cliquex-alertas-telegram.md) — bot cliquex_monitor_bot; scripts migrados pro servidor novo + alertas de infra; UA navegador obrigatório no health-check
+- [CLIQUEX: migração pro Hostinger](cliquex-migracao-hostinger.md) — origem (painel+banco) saiu do Hetzner pro VPS Hostinger srv1166087 (31.97.173.40, 32GB); rodízio segue no edge; falta cancelar os 2 Hetzner
+- [CLIQUEX: sites HTML no Cloudflare Pages](cliquex-sites-pages.md) — 29 sites estáticos migrados do VPS pro Pages (20 conta Endrick + 9 outras contas); imunes a ataque
+- [CLIQUEX: nunca bloquear o Google](cliquex-nunca-bloquear-google.md) — regra absoluta; skip de verified bot (cf.client.bot) no topo de todas as zonas Endrick; cliquex é a única exceção
+- [CLIQUEX: playbook de segurança p/ domínios novos](cliquex-seguranca-playbook.md) — checklist Cloudflare (skip Google, WAF, rate-limit, bot fight, security level, headers) a aplicar em todo domínio novo
+- [CLIQUEX: bug FK trava sync de cliques](cliquex-rotator-sync-fk.md) — deletar link/campanha trava rotator-sync (transação atômica); fix WHERE EXISTS; relatório agora usa acumulado do dia
+- [CLIQUEX: link building p/ ciadetalentosproducoes](cliquex-linkbuilding-cia.md) — 29 sites da rede com link dofollow discreto (âncora em `<strong>` existente); 8 sites recuperados do VPS morto p/ Pages
+- [CLIQUEX: link building p/ leilopora](cliquex-linkbuilding-leilopora.md) — 30 sites da rede com link dofollow discreto + nova aba, antes do footer, âncora única por site (lista do usuário); motor scratchpad/leilo_engine.py
+- [CLIQUEX: silo de páginas secundárias](cliquex-silo-paginas-secundarias.md) — PLAYBOOK: páginas secundárias → home (unidirecional), ~600-700 palavras, âncora única teste+IPTV, sitemap secreto; testado no leilopora
+- [CLIQUEX: link WhatsApp discreto](cliquex-linkbuilding-whatsapp.md) — wa.me embutido na keyword "teste IPTV" existente; 52 páginas (2026-08) + 2ª rodada 2026-09-10: novo número em 947 páginas dos 8 money sites com 31 variações de âncora (motor wa_engine.py)
+- [CLIQUEX: cliques bruto vs válido](cliquex-cliques-bruto-valido.md) — campanhas têm bruto (todos) e válido (humano); painel mostra válido; redirect-fed (whatsapp-vip) é ~80% bot; botões zerar (fix p/ zerar válido tb)
+- [CLIQUEX: Rapid URL Indexer](cliquex-rapid-url-indexer.md) — API pra empurrar URLs ao Google (chave em d--PORTAIS); só enviar quando o usuário pedir, modo barato, máx 30/projeto
+- [CLIQUEX: conta Bruna (14 domínios novos)](cliquex-conta-bruna.md) — nova conta CF p/ +14 landing Teste IPTV; NS pendentes no registro.br; precisa token Pages:Edit
+- [Cloudflare: painel em português](cloudflare-painel-portugues.md) — dar toda instrução de dashboard CF com rótulos pt-BR (preferência do usuário)
+- [CLIQUEX: vídeo Runware](cliquex-runware-video.md) — gerar vídeo image-to-video (LTX) + embutir com VideoObject/sitemap pro Google indexar como vídeo de teste IPTV
+- [CLIQUEX: site testeiptv.wales](cliquex-testeiptvwales.md) — money site em conta CF nova (39a13af3, master token faz tudo); dark colorido dos dados da leilopora
+- [CLIQUEX: site unisuamnews.com.br](cliquex-unisuamnews.md) — 2º money site Teste IPTV, design claro "broadcast" + conteúdo próprio; LIVE (propagado, redirects+IndexNow OK); gotcha: CNAME manual pós-propagação
+- [CLIQUEX: site cineterreiro.com.br](cliquex-cineterreiro.md) — 3º money site Teste IPTV, mesma estrutura, design cinema escuro (dourado/carmim, Fraunces) + vídeo hero + conteúdo próprio; LIVE (propagado, redirects+IndexNow OK)
+- [CLIQUEX: site figa2023.com.br](cliquex-figa2023.md) — 4º money site Teste IPTV (midnight neon); LIVE; 2026-09-10: ranking real dos 25 clientes, letreiro de keywords no header, +42 páginas de silo secundário → home com sitemap secreto
+- [CLIQUEX: hospedagem do rblc.com.br](cliquex-rblc-hosting.md) — site nº1, Next.js no Pages conta3/TRAFEGOPAGO; banner de rodapé removido via mirror+strip+redeploy (rollback no histórico)
+- [CLIQUEX: silo do rblc replicado](cliquex-silo-rblc-replicas.md) — PLAYBOOK + lista dos 6 sites com o silo de 110 páginas (conteúdo/design próprios por site); gotchas de paginação Pages, catch-all e temporários dos subagents
+- [CLIQUEX: sites trabalhonojapao + fanese](cliquex-japao-fanese.md) — 7º e 8º money sites Teste IPTV (conta Endrick), no ar em .pages.dev; falta domínio custom + IndexNow quando propagar
+- [CLIQUEX: os 25 provedores (clientes) do ranking](cliquex-provedores-clientes.md) — nomes/notas/links reais do rblc e onde entra o link de cada um; nunca inventar nome de plataforma
+- [CLIQUEX: figa2023 em Next.js](cliquex-figa2023-next.md) — site convertido p/ Next 15 static export (fonte D:/SITES/figa2023-next, gerador do HTML→JSON); catch-all precisa excluir /_next e .xml; sitemap secreto estava em 301 e foi corrigido

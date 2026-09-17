@@ -1,0 +1,36 @@
+mareonline.com.br	links=3820	sites=69	EXTERNO	anchors=lista IPTV grátis | IPTV Brasil Box | melhor IPTV grátis | IPTV teste 7 horas | melhor IPTV pago
+rblc.com.br	links=2606	sites=69	EXTERNO	anchors=IPTV contratar | lista IPTV grátis | teste IPTV 6 dias | lista IPTV M3U grátis | IPTV gratuito TV Box
+enraizados.com.br	links=1850	sites=69	EXTERNO	anchors=IPTV contratar | lista IPTV grátis | teste IPTV 6 dias | lista IPTV M3U grátis | IPTV gratuito TV Box
+lepur.com.br	links=1035	sites=69	EXTERNO	anchors=IPTV contratar | lista IPTV grátis | lista IPTV M3U grátis | teste IPTV 6 dias | teste de IPTV grátis
+quatrode15.com.br	links=656	sites=69	EXTERNO	anchors=IPTV contratar | lista IPTV grátis | teste IPTV 6 dias | lista IPTV M3U grátis | teste de IPTV grátis
+criexp.com.br	links=501	sites=64	EXTERNO	anchors=teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | teste IPTV 12 horas | testes IPTV
+spressosp.com.br	links=314	sites=64	EXTERNO	anchors=teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | teste IPTV 12 horas | testes IPTV
+hotec.com.br	links=305	sites=64	EXTERNO	anchors=IPTV teste 4K | teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | teste IPTV 12 horas
+fbrn.com.br	links=266	sites=69	EXTERNO	anchors=IPTV contratar | lista IPTV grátis | teste IPTV 6 dias | lista IPTV M3U grátis | teste de IPTV grátis
+fcblu.com.br	links=257	sites=69	EXTERNO	anchors=teste IPTV 6 dias | teste de IPTV grátis | teste IPTV 4 horas | testes IPTV | teste IPTV TV Roku
+uniaseconcursos.com.br	links=243	sites=64	EXTERNO	anchors=teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | teste IPTV 12 horas | testes IPTV
+imesp.com.br	links=207	sites=69	EXTERNO	anchors=IPTV contratar | lista IPTV grátis | IPTV gratuito TV Box | teste de IPTV grátis | IPTV online grátis
+guia55.com.br	links=196	sites=64	EXTERNO	anchors=teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | teste IPTV 12 horas | testes IPTV
+meupratosaudavel.com.br	links=135	sites=62	EXTERNO	anchors=teste IPTV 6 dias | teste para IPTV | teste IPTV 12 horas | testes IPTV | teste IPTV smart
+pinaunaeditora.com.br	links=122	sites=64	EXTERNO	anchors=IPTV teste 4K | teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | teste IPTV 12 horas
+meupratinhosaudavel.com.br	links=72	sites=60	EXTERNO	anchors=teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | testes IPTV | teste IPTV smart
+revan.com.br	links=72	sites=61	EXTERNO	anchors=teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | teste IPTV 12 horas | testes IPTV
+teste-iptv.top	links=65	sites=61	EXTERNO	anchors=teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | teste IPTV 12 horas | IPTV teste 7 dias 2026
+docesletras.com.br	links=61	sites=61	EXTERNO	anchors=IPTV teste 4K | teste IPTV 6 dias | lista IPTV teste gratis | teste para IPTV | teste IPTV 12 horas
+leiaagora.com.br	links=58	sites=58	EXTERNO	anchors=lista IPTV teste gratis | teste IPTV 12 horas | testes IPTV | teste IPTV smart | teste IPTV TV Roku
+amenictop.online	links=18	sites=18	EXTERNO	anchors=teste IPTV | IPTV teste
+revendaiptvskt.com	links=17	sites=17	EXTERNO	anchors=revenda IPTV fácil | revenda IPTV atualizada | plataforma de revenda IPTV | sistema de revenda IPTV | revenda IPTV lucrativa
+newtvbr.com	links=12	sites=12	EXTERNO	anchors=melhor app IPTV | IPTV
+cabofolia.com.br	links=11	sites=11	EXTERNO	anchors=teste IPTV LG smart | teste IPTV LG | teste gratuito de IPTV | IPTV teste 4K | IPTV test gratis
+citc2023.com.br	links=8	sites=3	EXTERNO	anchors=IPTV teste 7 dias | melhor IPTV do mercado | teste IPTV e-mail | IPTV teste 6 horas | IPTV teste 2026
+revendaiptv.me	links=3	sites=3	EXTERNO	anchors=plano de revenda IPTV | revenda IPTV dedicada | revenda IPTV completa
+adonline.com.br	links=3	sites=3	rede	anchors=é pecado usar IPTV | IPTV regulamentada pela ANATEL | Assinar IPTV legalizado
+newtvstore.com	links=3	sites=3	EXTERNO	anchors=Contratar Plano de IPTV | Planos IPTV | planos de IPTV
+novatecnologiabr.com	links=2	sites=2	EXTERNO	anchors=teste IPTV
+byplay.com.br	links=2	sites=2	EXTERNO	anchors=teste IPTV | By Play - Teste IPTV
+exemplo.com	links=1	sites=1	EXTERNO	anchors=canais portugueses IPTV
+sites.google.com	links=1	sites=1	EXTERNO	anchors=https://sites.google.com/view/blogdopedro/como-vender-iptv-n
+4maos.com.br	links=1	sites=1	EXTERNO	anchors=https://4maos.com.br/revender-iptv/
+wa.me	links=1	sites=1	EXTERNO	anchors=testar IPTV grátis
+instagram.com	links=1	sites=1	EXTERNO	anchors=@testeiptv7horas
+pinaunaunaeditora.com.br	links=1	sites=1	EXTERNO	anchors=teste IPTV grátis automático

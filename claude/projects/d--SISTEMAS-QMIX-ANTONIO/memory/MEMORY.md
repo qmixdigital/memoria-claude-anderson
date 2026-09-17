@@ -1,0 +1,13 @@
+- [Diagnóstico: site não está publicando](diagnostico-site-nao-publica.md) — checar isto primeiro, as causas conhecidas são estado intencional
+- [Cautela com alterações no Antônio](cautela-com-alteracoes-no-antonio.md) — dado eu executo, código eu proponho e aguardo
+- [Operações no painel Antônio](operacoes-painel-antonio.md) — onde está o passo a passo de cadastrar, ativar, desativar e excluir cada coisa
+- [Search Console e palavras-chave](gsc-e-palavras-chave.md) — service account de 83 sites e a pasta de CSVs com volume
+- [Campanhas desativadas em 17/08/2026](campanhas-desativadas-agosto-2026.md) — as 197 estão off e a lista de reversão está salva
+- [Site de cliente fora da publicação](sites-cliente-fora-da-publicacao.md) — cliente recebe link, não recebe artigo
+- [Faturamento dos editores (Asaas)](faturamento-editores-asaas.md) — o que ja subiu, o que falta e a chave do Asaas que esta invalida
+- [Crons caem todos juntos](crons-caem-todos-juntos-tmp.md) — saida vazia com exit 1 acusa a permissao do /tmp, nao o banco
+- [Indexação: Rapid URL Indexer](indexacao-rapid-url-indexer.md) — custo real por URL nos dois modos e a pegadinha do relatório de 4 dias
+- [Módulo de notícias desativado](modulo-noticias-desativado.md) — desligado de propósito em 01/09/2026, com o caminho de volta
+- [API do editor e MCP do Jean](api-editor-mcp-jean.md) — chave por editor, fila do Antonio, modo editor no wp-mcp; falta a regra do Cloudflare
+- [Dayane e Diego: pagantes com indexação automática](dayane-editora-pagante-indexacao-auto.md) — lc_users 10 e 11, flag indexacao_auto, 3 créditos do fornecedor por URL sem debitar dela
+- [Editorias black ocultas](editorias-black-ocultas.md) — 5 categorias ocultas em 32 portais, reservadas a 2/4/10/11; 10 apps Next pendentes

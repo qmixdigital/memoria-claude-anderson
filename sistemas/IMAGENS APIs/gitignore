@@ -1,0 +1,4 @@
+.env
+resultado.json
+fotos/
+__pycache__/

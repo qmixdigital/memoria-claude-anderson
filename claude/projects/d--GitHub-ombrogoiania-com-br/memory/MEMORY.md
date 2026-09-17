@@ -1,0 +1,2 @@
+- [Redirects no Cloudflare Pages](cloudflare-pages-redirects-sem-exclamacao.md) — o "!" invalida a linha em silencio e asset estatico ganha da regra; www para apex so por Redirect Rule na zona.
+- [Alinhamento: pedidos valem só no celular](hero-mobile-alinhado-a-esquerda.md) — "à esquerda"/"ao centro" + trecho = text-align daquele bloco em @media (max-width: 480px); tablet e desktop ficam como estão.

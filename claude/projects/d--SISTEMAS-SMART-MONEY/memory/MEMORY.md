@@ -1,0 +1,5 @@
+- [Sem textos explicativos em ferramentas](no-explanatory-text-in-tools.md) — user odeia disclaimers/explicações em UI; tudo via chat
+- [Deploy QMIX Invest](qmix-invest-deploy.md) — VPS Hostinger via ssh hostinger-vps-srv1166087, /opt/qmix-invest (não-git), fluxo: local→commit→deploy
+- [Alertas de preço QMIX](qmix-alertas-preco.md) — target_high=venda(subir), stop_loss=compra(cair); regra: alvo>cotação=venda, alvo<cotação=compra
+- [Módulo fiscal QMIX](qmix-modulo-fiscal.md) — planejamento tributário (worker/src/tax), ledger manual via Claude Code, linguagem leiga com glossário, regras validadas por revisor
+- [PENDÊNCIA venda imóvel](qmix-venda-imovel-pendente.md) — 6 ações vendidas jun/2026 (~R$240k), preços a registrar antes de fechar o mês, imposto ~R$1.280 DARF fim/julho

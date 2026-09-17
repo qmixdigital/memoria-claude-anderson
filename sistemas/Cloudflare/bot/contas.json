@@ -1,0 +1,132 @@
+[
+  {
+    "nome": "principal",
+    "token": "<<REMOVIDO>>",
+    "account_id": "9ecbf885a61a34c6ac4d73033fa0f497"
+  },
+  {
+    "nome": "teste",
+    "token": "<<REMOVIDO>>",
+    "account_id": "a2da896a380bdec758c4ac2cc3078713"
+  },
+  {
+    "nome": "conta3",
+    "token": "<<REMOVIDO>>",
+    "account_id": "0a107ac0726c16a763c318bf7a45b57d"
+  },
+  {
+    "nome": "conta4",
+    "token": "<<REMOVIDO>>",
+    "account_id": "d2aeda609bafa52c3e1152e2e349e0c1"
+  },
+  {
+    "nome": "conta5",
+    "token": "<<REMOVIDO>>",
+    "account_id": "7b55f3322fb7566caf4cb99b2510d03b"
+  },
+  {
+    "nome": "conta6",
+    "token": "<<REMOVIDO>>",
+    "account_id": "32444f7586c8574369173eb2bf2fad81"
+  },
+  {
+    "nome": "conta7",
+    "token": "<<REMOVIDO>>",
+    "account_id": "3167ec16d6b759a1bb6eb8d62e8025f5"
+  },
+  {
+    "nome": "conta8",
+    "token": "<<REMOVIDO>>",
+    "account_id": "661e92abfd0407127dc8527b1df5eff3"
+  },
+  {
+    "nome": "conta9",
+    "token": "<<REMOVIDO>>",
+    "account_id": "596a5e4f849bed8e02994fe62edebd2a"
+  },
+  {
+    "nome": "conta10",
+    "token": "<<REMOVIDO>>",
+    "account_id": "37b5f07b227c4fd026187d2e86b32d0e"
+  },
+  {
+    "nome": "conta11",
+    "token": "<<REMOVIDO>>",
+    "account_id": "f554283e1bb09f7be42a2a26d41d1e71"
+  },
+  {
+    "nome": "conta12",
+    "token": "<<REMOVIDO>>",
+    "account_id": "1684b54861c2eae5f9b41c580ccbdd33"
+  },
+  {
+    "nome": "conta13",
+    "token": "<<REMOVIDO>>",
+    "account_id": "bad26c56de2cf30c0c6890da6bd06368"
+  },
+  {
+    "nome": "conta14",
+    "token": "<<REMOVIDO>>",
+    "account_id": "2ff4c5d06407622c756c5b57c46924a5"
+  },
+  {
+    "nome": "conta15",
+    "token": "<<REMOVIDO>>",
+    "account_id": "2d77f3c4ec11e605cf5701e8d18d48ad"
+  },
+  {
+    "nome": "conta16",
+    "token": "<<REMOVIDO>>",
+    "account_id": "862514f37ef20f4575c631621a1dd750"
+  },
+  {
+    "nome": "conta17",
+    "token": "<<REMOVIDO>>",
+    "account_id": "df8b666486d88a8149cc45dec0de1cf5"
+  },
+  {
+    "nome": "conta18",
+    "token": "<<REMOVIDO>>",
+    "account_id": "a5d7c26b6461a425e8eccd5cec0f0934"
+  },
+  {
+    "nome": "conta19",
+    "token": "<<REMOVIDO>>",
+    "account_id": "39a13af3f35978930626369e6091840e"
+  },
+  {
+    "nome": "conta20",
+    "token": "<<REMOVIDO>>",
+    "account_id": "cc8e5f3ba69ac10095c18b33771796f2"
+  },
+  {
+    "nome": "conta21",
+    "token": "<<REMOVIDO>>",
+    "account_id": "1e8c471e36de8438eb254ced93f8835e"
+  },
+  {
+    "nome": "conta22",
+    "token": "<<REMOVIDO>>",
+    "account_id": "7d3bd146212cd237730054dd43d07d7d"
+  },
+  {
+    "nome": "conta23",
+    "token": "<<REMOVIDO>>",
+    "account_id": "2ff4c5d06407622c756c5b57c46924a5"
+  },
+  {
+    "nome": "conta24",
+    "token": "<<REMOVIDO>>",
+    "account_id": "661def8c38215e9c037f6d145631ca0d"
+  },
+  {
+    "nome": "conta25",
+    "token": "<<REMOVIDO>>",
+    "account_id": "e1afd354b17fd5c336f44c6095f41081",
+    "token_name": "snowy-scene-9eb8",
+    "dominios": [
+      "cirurgiadojoelhogoiania.com"
+    ],
+    "nota": "Conta CF do blog.cirurgiadojoelhogoiania.com (NS anderson/frida). Token account-scoped: nao valida em /user/tokens/verify, mas funciona em zones/purge. Adicionado 2026-06-27."
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "name": "@qmix-invest/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./schema": {
+      "types": "./src/schema.ts",
+      "import": "./dist/schema.js",
+      "default": "./dist/schema.js"
+    },
+    "./glossario": {
+      "types": "./src/glossario.ts",
+      "import": "./dist/glossario.js",
+      "default": "./dist/glossario.js"
+    },
+    "./tax/types": {
+      "types": "./src/tax/types.ts",
+      "import": "./dist/tax/types.js",
+      "default": "./dist/tax/types.js"
+    },
+    "./tax/config": {
+      "types": "./src/tax/config.ts",
+      "import": "./dist/tax/config.js",
+      "default": "./dist/tax/config.js"
+    },
+    "./tax/calendario": {
+      "types": "./src/tax/calendario.ts",
+      "import": "./dist/tax/calendario.js",
+      "default": "./dist/tax/calendario.js"
+    },
+    "./tax/custos": {
+      "types": "./src/tax/custos.ts",
+      "import": "./dist/tax/custos.js",
+      "default": "./dist/tax/custos.js"
+    },
+    "./tax/ledger": {
+      "types": "./src/tax/ledger.ts",
+      "import": "./dist/tax/ledger.js",
+      "default": "./dist/tax/ledger.js"
+    },
+    "./tax/apuracao": {
+      "types": "./src/tax/apuracao.ts",
+      "import": "./dist/tax/apuracao.js",
+      "default": "./dist/tax/apuracao.js"
+    },
+    "./tax/recomendacao": {
+      "types": "./src/tax/recomendacao.ts",
+      "import": "./dist/tax/recomendacao.js",
+      "default": "./dist/tax/recomendacao.js"
+    },
+    "./tax/mensagens": {
+      "types": "./src/tax/mensagens.ts",
+      "import": "./dist/tax/mensagens.js",
+      "default": "./dist/tax/mensagens.js"
+    },
+    "./paper/types": {
+      "types": "./src/paper/types.ts",
+      "import": "./dist/paper/types.js",
+      "default": "./dist/paper/types.js"
+    },
+    "./paper/execucao": {
+      "types": "./src/paper/execucao.ts",
+      "import": "./dist/paper/execucao.js",
+      "default": "./dist/paper/execucao.js"
+    },
+    "./paper/metricas": {
+      "types": "./src/paper/metricas.ts",
+      "import": "./dist/paper/metricas.js",
+      "default": "./dist/paper/metricas.js"
+    },
+    "./paper/imposto-daytrade": {
+      "types": "./src/paper/imposto-daytrade.ts",
+      "import": "./dist/paper/imposto-daytrade.js",
+      "default": "./dist/paper/imposto-daytrade.js"
+    },
+    "./tax/janela": {
+      "types": "./src/tax/janela.ts",
+      "import": "./dist/tax/janela.js",
+      "default": "./dist/tax/janela.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "generate": "drizzle-kit generate",
+    "studio": "drizzle-kit studio",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.40.0",
+    "postgres": "^3.4.0",
+    "decimal.js": "^10.6.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.0",
+    "typescript": "^5.6.0"
+  }
+}

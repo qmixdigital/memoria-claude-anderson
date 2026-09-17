@@ -1,0 +1,359 @@
+/**
+ * EUVO News, CSS exclusivo da materia. Handle: euvo-materia.
+ *
+ * Roll: single=IV_sidebar_rich | typography=magazine_serif
+ *       featured=boxed_max_width | share=inline_after_first_para
+ */
+
+.ev-post__head {
+    margin-bottom: var(--ev-s3);
+}
+
+.ev-post__cat {
+    display: inline-block;
+    color: var(--ev-primary);
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    margin-bottom: var(--ev-s1);
+}
+
+.ev-post__t {
+    font-size: clamp(29px, 4vw, 46px);
+    line-height: 1.12;
+    margin: 0 0 var(--ev-s2);
+    max-width: 24ch;
+}
+
+.ev-post__deck {
+    color: var(--ev-ink-soft);
+    font-size: 21px;
+    line-height: 1.5;
+    margin: 0 0 var(--ev-s2);
+    max-width: 60ch;
+}
+
+.ev-post__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px;
+    border-top: 1px solid var(--ev-rule);
+    border-bottom: 1px solid var(--ev-rule);
+    padding-block: var(--ev-s1);
+    color: var(--ev-ink-soft);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+
+.ev-post__dot {
+    color: var(--ev-rule);
+}
+
+/* featured_image_treatment=boxed_max_width */
+.ev-post__fig {
+    margin: 0 0 var(--ev-s3);
+}
+
+.ev-post__fig img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--ev-r-md);
+}
+
+.ev-post__fig figcaption {
+    color: var(--ev-ink-soft);
+    font-size: 13px;
+    line-height: 1.45;
+    margin-top: 9px;
+    padding-left: var(--ev-s1);
+    border-left: 2px solid var(--ev-accent);
+}
+
+/* content_typography=magazine_serif */
+.ev-post__body {
+    font-family: var(--ev-font-body);
+    font-size: 19px;
+    line-height: 1.78;
+    max-width: 68ch;
+}
+
+.ev-post__body p {
+    margin: 0 0 var(--ev-s2);
+}
+
+.ev-post__body h2 {
+    font-size: 30px;
+    margin: var(--ev-s4) 0 var(--ev-s1);
+}
+
+.ev-post__body h3 {
+    font-size: 23px;
+    margin: var(--ev-s3) 0 var(--ev-s1);
+}
+
+.ev-post__body a {
+    color: var(--ev-primary);
+    border-bottom: 1px solid var(--ev-accent);
+}
+
+.ev-post__body a:hover {
+    background: var(--ev-accent);
+    color: var(--ev-ink);
+}
+
+.ev-post__body ul,
+.ev-post__body ol {
+    margin: 0 0 var(--ev-s2);
+    padding-left: var(--ev-s3);
+}
+
+.ev-post__body li {
+    margin-bottom: 9px;
+}
+
+.ev-post__body img {
+    height: auto;
+    border-radius: var(--ev-r-md);
+}
+
+.ev-post__body figure {
+    margin: var(--ev-s3) 0;
+}
+
+.ev-post__body figcaption {
+    color: var(--ev-ink-soft);
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.ev-post__body blockquote {
+    border-left: 3px solid var(--ev-primary);
+    margin: var(--ev-s3) 0;
+    padding: var(--ev-s1) 0 var(--ev-s1) var(--ev-s2);
+    font-family: var(--ev-font-display);
+    font-size: 25px;
+    line-height: 1.35;
+    color: var(--ev-ink);
+}
+
+.ev-post__body blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+.ev-post__body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--ev-s2);
+    font-size: 16px;
+}
+
+.ev-post__body th,
+.ev-post__body td {
+    border: 1px solid var(--ev-rule);
+    padding: var(--ev-s1);
+    text-align: left;
+}
+
+.ev-post__body th {
+    background: var(--ev-surface);
+}
+
+/* Tabela larga rola dentro do proprio bloco, o corpo da pagina nunca rola. */
+.ev-post__body .wp-block-table,
+.ev-post__body figure.wp-block-table {
+    overflow-x: auto;
+}
+
+/* share_buttons_position=inline_after_first_para */
+.ev-share {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--ev-s1);
+    background: var(--ev-paper);
+    border: 1px solid var(--ev-rule);
+    border-radius: var(--ev-r-md);
+    padding: var(--ev-s1) var(--ev-s2);
+    margin: var(--ev-s3) 0;
+    /* Esticada nos 68ch do corpo, a caixa ficava com meia largura vazia. */
+    width: fit-content;
+    max-width: 100%;
+}
+
+.ev-share__lbl {
+    color: var(--ev-ink-soft);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+}
+
+.ev-share a {
+    border: 1px solid var(--ev-rule);
+    border-radius: var(--ev-r-sm);
+    color: var(--ev-ink);
+    font-size: 14px;
+    padding: 8px 14px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.ev-share a:hover {
+    background: var(--ev-primary);
+    border-color: var(--ev-primary);
+    color: #fff;
+}
+
+.ev-post__tags {
+    margin-top: var(--ev-s3);
+    padding-top: var(--ev-s2);
+    border-top: 1px solid var(--ev-rule);
+}
+
+/* ==========================================================================
+   Assinatura da matéria
+   ========================================================================== */
+
+.ev-author {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: var(--ev-s2);
+    align-items: start;
+    border-top: 3px solid var(--ev-rule-strong);
+    margin-top: var(--ev-s4);
+    padding-top: var(--ev-s2);
+}
+
+.ev-author__pic img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: block;
+    background: var(--ev-rule);
+}
+
+.ev-author__kicker {
+    display: block;
+    color: var(--ev-primary);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    margin-bottom: 5px;
+}
+
+.ev-author__name {
+    font-family: var(--ev-font-display);
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 0 0 7px;
+    color: var(--ev-ink);
+}
+
+.ev-author__bio {
+    color: var(--ev-ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+    margin: 0 0 var(--ev-s1);
+    max-width: 62ch;
+}
+
+.ev-author__link {
+    color: var(--ev-primary);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+}
+
+.ev-author__link:hover {
+    border-bottom: 1px solid var(--ev-primary);
+}
+
+.ev-rel {
+    margin-top: var(--ev-s4);
+}
+
+/* ==========================================================================
+   Celular
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /*
+     * O corpo cai para 17px.
+     *
+     * A 19px com entrelinha 1.78 numa tela de 390px sobravam ~7 palavras por
+     * linha: a matéria virava uma coluna estreita e altissima, e ler exigia
+     * rolagem sem fim. 17px com 1.7 poe ~9 palavras por linha, que e a medida
+     * confortavel de leitura no celular.
+     */
+    .ev-post__body {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .ev-post__body h2 {
+        font-size: 25px;
+        margin-top: var(--ev-s3);
+    }
+
+    .ev-post__body h3 {
+        font-size: 20px;
+    }
+
+    /* O olho competia com a manchete em vez de apoiar. */
+    .ev-post__deck {
+        font-size: 18px;
+    }
+
+    .ev-post__t {
+        font-size: 28px;
+    }
+
+    /*
+     * A caixa de compartilhar quebrava deixando o "X" sozinho na segunda
+     * linha. Com fundo transparente, rotulo em cima e botoes espalhados, ela
+     * ocupa a largura toda e a quebra deixa de parecer defeito.
+     */
+    .ev-share {
+        width: auto;
+        display: flex;
+        gap: 8px;
+        padding: var(--ev-s1);
+    }
+
+    .ev-share__lbl {
+        flex: 1 1 100%;
+        margin-bottom: 4px;
+    }
+
+    .ev-share a {
+        flex: 1 1 0;
+        justify-content: center;
+        padding-inline: 8px;
+        font-size: 13px;
+    }
+
+    /* Legenda e figura encostam menos na borda. */
+    .ev-post__fig {
+        margin-bottom: var(--ev-s2);
+    }
+
+    .ev-author {
+        grid-template-columns: 56px minmax(0, 1fr);
+        gap: var(--ev-s1);
+    }
+
+    .ev-author__pic img {
+        width: 56px;
+        height: 56px;
+    }
+
+    .ev-author__name {
+        font-size: 19px;
+    }
+}
+
+/* Na materia a sidebar pode grudar: as colunas ja foram medidas aqui. */
+@media (min-width: 1025px) {
+    .ev-layout--post .ev-aside {
+        position: sticky;
+        top: var(--ev-s2);
+    }
+}

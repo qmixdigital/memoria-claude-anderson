@@ -1,0 +1,251 @@
+- [CONVERSÃO TOTAL](conversao-total.md) — nome e escopo do processo padrão de migração, runbook em D:\PORTAIS\CONVERSAO-TOTAL.md
+- [Vitrine da home e conteudo organico](vitrine-e-conteudo-organico.md) - homeSections, e as regras de title, meta e imagem que o motor nao resolve
+- [Palavras-chave e entrega](palavras-chave-e-entrega.md) - a pasta D:\PORTAIS\palavras-chave, como escolher cluster e entregar URLs clicaveis
+- [IPTV tem cinco vetores](iptv-tres-vetores.md) - a sigla junta, a mascarada e o link sem a palavra; buscar so a sigla deixa passar
+- [Linkagem interna automática](linkagem-interna-automatica.md) - o motor já tem, vem desligado, e tinha 3 falhas na variação de âncora
+- [Estilo de trabalho do Anderson](estilo-de-trabalho-anderson.md) — decide rápido, não quer ser consultado no que já resolveu, revisa por captura de tela
+- [Nunca citar a agência nos portais](nunca-citar-a-agencia-nos-portais.md) — rede de backlinks: assinatura repetida no rodapé entrega o conjunto
+- [Pacote editorial e E-E-A-T](pacote-editorial-eeat.md) — equipe, política editorial e páginas de autor, e o limite entre persona e credencial falsa
+- [Arch U e o repertório esgotado](arch-u-identidade.md) — A até T já em uso, a próxima é a V, mais os erros de layout a não repetir
+- [Patches do motor na clinicas-vps](patches-motor-clinicas-vps.md) — correções e recursos que ainda não foram para os outros 22 portais
+- [Destino dos e-mails de contato](contato-portais-destino.md) — todo portal da rede entrega em gisellewagnerofc@gmail.com
+- [Bugs do contato no receiver.js](receiver-contato-bugs.md) — acento, reply-to e travessão, corrigidos só na clinicas-vps
+- [Provisionamento do portal-engine](portal-engine-provisionamento.md) — as globais do sites.json que não podem faltar
+- [Travessão no render.js](travessao-render-js.md) — texto da página de contato sai com travessão nos 22 portais
+- [Poda de IPTV no destino](poda-iptv-no-destino.md) — rodar os vetores de novo depois de importar, e o quarto vetor do template de afiliado
+- [Plataforma do Antônio](plataforma-antonio-acesso.md) — origem, banco MySQL e helper de criptografia da chave de API
+- [Classes CSS não podem repetir](classes-css-nao-podem-repetir.md) — nome literal igual entre portais é impressão digital de rede
+- [Campos novos do motor](campos-novos-do-motor.md) — heroFrom e titleMax, o que cada um resolve
+- [Apagar artigo: checar quem linkava](apagar-artigo-checar-links.md) — exclusão sem varredura deixa link interno indo para 410
+- [Artigos do Dr. Luiz Teixeira](dr-luiz-teixeira-apagar.md) — saem de qualquer portal da rede, mesmo com backlink, sem precisar perguntar
+- [Domínios redirecionados da Cloudflare](dominios-redirecionados-cloudflare.md) — artigo que linka para a lista pode ser apagado, se não tiver tráfego
+- [Conferir a poda por backlink](poda-por-backlink-conferir-antes.md) — como provar que a regra não foi invertida, e as ordens que se sobrepõem
+- [Classes hasheadas no motor](classes-hasheadas-no-motor.md) — como cada portal passou a ter nomes de classe próprios, e o que falta propagar
+- [Poda do boxnoticias por tráfego](boxnoticias-poda-por-trafego.md) — 480 para 62 artigos, e a pendência dos bancos órfãos na hospedagem antiga
+- [Documentar migrações nas hospedagens](documentar-migracoes-nas-hospedagens.md) — regra permanente: atualizar D:\SISTEMAS\MinhasHospedagens na mesma migração
+- [Nada centralizado no layout](layout-nada-centralizado.md) — conteúdo centralizado é "layout americano"; só a marca pode centralizar
+- [Banner LGPD e og:image](banner-lgpd-e-og-image.md) — obrigatórios em todo projeto; e artigo sem imagem se apaga ou ganha imagem gerada
+- [Motor tem duas funções de hash de classe](motor-duas-funcoes-de-hash.md) — misturar `s()` com classe literal deixa a página sem estilo
+- [Deploy de arch não pode cortar a vizinha](deploy-arch-nao-cortar-vizinha.md) — o corte até `const ARCHS` apagava a arquitetura seguinte
+- [Arch local é fonte única](arch-local-e-fonte-unica.md) — patch feito só no archs.js do servidor é revertido no próximo deploy da arquitetura
+- [Chave da SerpAPI](serpapi-chave.md) — guardada; só usar quando o Anderson pedir, nunca por iniciativa própria
+- [QA de mobile no Chrome headless](qa-mobile-chrome-headless.md) — a largura mínima de 500px cria um estouro de layout que não existe
+- [Arquitetura X e o agoranoticias](arch-x-agoranoticias.md) — a X está em uso, e o widget de WhatsApp que denuncia domínio de IPTV
+- [Rapid URL Indexer](rapidurlindexer-api.md) — a API de indexação: sempre o modo barato, só enviar quando ele pedir, e o 403 do LiteSpeed
+- [Title separado do h1](title-separado-do-h1.md) — o campo metaTitle, e o titleMax que estoura o limite de 60
+- [Artigo sem imagem se apaga](artigo-sem-imagem-apagar.md) — na conversão total, sem imagem sai, mesmo com backlink
+- [Search Console em duas contas](gsc-duas-contas.md) — u/8 e u/9, e a conta de serviço que lê todas as 68 propriedades
+- [Três instâncias do motor](tres-instancias-do-motor.md) — a letra da arquitetura só é única dentro de cada servidor
+- [410 por gone.txt](gone-txt-em-vez-de-410-no-nginx.md) — nos servidores antigos o 410 sai do receptor, não do nginx
+- [IPTV só é legítimo no wtw19](iptv-legitimo-no-wtw19.md) — nos outros portais é enxerto de afiliado e sai
+- [Entregar sempre URL clicável](entregar-url-clicavel.md) — ele confere abrindo a página, não lendo o relatório
+- [Criar categoria quando faltar](criar-categoria-quando-faltar.md) — pauta sem editoria adequada ganha editoria nova, sem perguntar
+- [archs.js local desatualizado](archs-local-desatualizado.md) — o local tinha 5 arquiteturas e o servidor 54; conferir a contagem antes de qualquer deploy
+- [Token de purge da Cloudflare](cloudflare-purge-token-de-conta.md) — o token já existente é de conta e cobre tudo; não pedir credencial nova
+- [HTML sem Cache-Control](html-sem-cache-control.md) — a página ficava presa no navegador sem revalidar; corrigido nos vhosts das 3 máquinas
+- [Registro de donos de slug](registro-de-donos-de-slug.md) — o motor barra slug repetido e mesmo assim devolve HTTP 201
+- [Registro de lotes por portal](registro-de-lotes-por-portal.md) — quais portais já receberam lote e qual cluster; data não serve para descobrir, só a assinatura do FAQ
+- [Âncora genérica no breadcrumb](breadcrumb-ancora-generica.md) — "Início" em 29 mil links para as homes; corrigido no motor, faltam 48 portais reconstruírem
+- [Padrão de crosslinking do lote](padrao-de-crosslinking-do-lote.md) — pilar e clusters, "Veja também" com 4 links, alvo de ~63 links por lote e não 20
+- [Lote a partir do Search Console](lote-a-partir-do-search-console.md) — página rasa que já ranqueia vale mais expandida do que substituída
+- [Conversão exige redirects](conversao-exige-redirects.md) — URL plana vira /categoria/slug/ e a página que ranqueia morre em 404
+- [Padrão de SEO do lote](padrao-seo-do-lote.md) — 1.200 palavras, keyword exata no primeiro parágrafo e densidade de 1% a 2,5%
+- [Zone id da Cloudflare por domínio](cloudflare-zone-id-por-dominio.md) — purga na zona errada responde success e some com horas de investigação
+- [Checklist do pacote editorial](checklist-do-pacote-editorial.md) — os cinco itens de E-E-A-T que o checklist de SEO não pegava
+- [Reiniciar o motor depois de editar](reiniciar-motor-depois-de-editar.md) — publicar pela API com o serviço antigo reescreve tudo com o código velho
+- [Texto repetido na rede](texto-repetido-na-rede.md) — 4.568 artigos iguais em 47 portais; a origem é o noticiário diário, não os lotes
+- [Span com aspect-ratio precisa de block](span-com-aspect-ratio-precisa-de-block.md) — a imagem passa por cima do título; já apareceu em nove arquiteturas
+- [Entidade HTML no título](entidade-html-no-titulo.md) — sai escapada duas vezes; reaparece a cada lote importado
+- [Conferir por captura: usar cache-busting](conferir-por-captura-usar-cache-busting.md) — sem a query o Chrome headless mostra a página velha
+- [Prompt da IA vazado no campo](prompt-da-ia-vazado-no-campo.md) — a instrução sai no lugar do resumo, e vai para o Google
+- [Acumular URLs para indexação](acumular-urls-para-indexacao.md) — juntar durante o trabalho em URLS-PARA-INDEXACAO.md, entregar no fim
+- [Virada de DNS com a zona em strict](virada-dns-cloudflare-strict.md) — a ordem que evita o 526, e por que o certbot sozinho não resolve
+- [AdSense na migração](adsense-na-migracao.md) — o site novo passa em tudo e para de faturar, sem nenhum erro visível
+- [Mazzard, a marca da Revista QMIX](mazzard-marca-revista-qmix.md) — onde a fonte está, que ela não traz licença, e o kerning que não está na tabela `kern`
+- [Impressão não é oportunidade](impressao-nao-e-oportunidade.md) — a conta que decide é impressão × CTR da posição alvo, e descontar as buscas `site:`
+- [Tabela em cartão no celular](tabela-em-cartao-no-celular.md) — o CSS foi para as 105 arquiteturas, e o `data-rotulo` é a metade que se esquece
+- [Apagar artigo não basta apagar o arquivo](motor-serve-da-memoria.md) — o motor continua servindo pelo proxy de reserva até reiniciar
+- [Linkagem interna de portal novo](linkagem-interna-portal-novo.md) — convertido nasce órfão; são duas frentes, a malha do acervo e o `autoLink`
+- [Título duplicado não se apaga](titulo-duplicado-nao-apagar.md) — cada cópia carrega o backlink de um cliente; muda o título, nunca o slug
+- [O `<body>` não abre nas arquiteturas novas](body-nao-abre-nas-archs-novas.md) — quem emite a tag é a arch, não o motor; N e R nem passam pelo *Header
+- [Régua de meta description escapada](regua-de-meta-description-escapada.md) — medir o atributo cru conta `&quot;` como 6 e corta texto correto
+- [Lista de editoria precisa de h1](lista-de-editoria-precisa-de-h1.md) — e o cartão tem que subir para h2 junto, senão a hierarquia pula
+- [Exit code do rebuild antes de comparar](rebuild-exit-code-antes-de-comparar.md) — md5 igual pode significar que nada rodou, não que nada mudou
+- [autoLink só roda no publish](autolink-so-roda-no-publish.md) — ligar no sites.json não alcança o acervo importado; precisa de passada única
+- [A 404 do motor é 404.html na raiz](404-do-motor-e-404-html-na-raiz.md) — vhost apontando para /404/index.html entrega o 404 cru do nginx
+- [Marca tem duas cores](marca-tem-duas-cores.md) — o verde vivo da logo não carrega texto sobre papel; precisa de um segundo verde escuro
+- [Favicon para o Google](favicon-para-o-google.md) — quadrado e múltiplo de 48px, lido da home; e declarar arquivo que não existe dá 404 no head
+- [Lista de dominios nao e de um portal](lista-de-dominios-nao-e-de-um-portal.md) — conferir a contagem antes de agir no portal da conversa
+- [Link interno quebrado gravado no conteúdo](link-interno-quebrado-gravado-no-conteudo.md) — 25.828 apontavam para 404; tirar do autoLink não desfaz
+- [Cifrão escapado no regex do nginx](cifrao-escapado-no-regex-do-nginx.md) — vira caractere literal; o 410 passa no teste e nunca casa
+- [Auditoria da rede tem régua errada](auditoria-da-rede-tem-regua-errada.md) — alt vazio, LCP e wp-content acusam falso positivo em massa
+- [Teto de oito usos por âncora](teto-de-oito-usos-por-ancora.md) — regra permanente: o mesmo texto âncora no máximo 8 vezes, só em link interno
+- [`^~ /wp-json/` engole o receptor](wp-json-com-til-engole-o-receptor.md) — a plataforma para de entregar e nada acusa
+- [Campos do padrão da instância](campos-do-padrao-da-instancia.md) — ns, categoryMap e indexnowKey faltam calados na conversão nova
+- [Auto Ads quebra a navegação](auto-ads-quebra-a-navegacao.md) — o div é criado pelo Google, não está no HTML nem no CSS
+- [autoLink dentro de `<script>`](autolink-dentro-de-script.md) — o link entra na string do JSON-LD e o bloco some do Google
+- [Heredoc come contrabarra](heredoc-come-contrabarra.md) — patch de regex por SSH não casa e diz "não achei o trecho"
+- [Wordmark em SVG pode faltar letra](wordmark-svg-pode-faltar-letra.md) — foi ao ar como "Viaje no Det" e nem leitor de tela acusa
+- [O motor é systemd, não pm2](portal-engine-e-systemd-nao-pm2.md) — `pm2 reload all` recarrega 15 apps de clientes
+- [Trilha só existia no artigo](trilha-so-existia-no-artigo.md) — editoria, autor e institucional iam ao ar sem BreadcrumbList
+- [Slug podado que o motor regenera](slug-podado-que-o-motor-regenera.md) — o 410 mata a página de contato nova, e ninguém descobre
+- [Variáveis CSS no `<main>` não alcançam o cabeçalho](variaveis-css-no-main-nao-alcancam-o-cabecalho.md) — botão do menu invisível no celular
+- [`padding` completo zera o respiro lateral](padding-completo-zera-o-respiro-lateral.md) — invisível no desktop, marca colada na borda no celular
+- [open_file_cache serve arquivo apagado](open-file-cache-serve-arquivo-apagado.md) — 200 por até 60s depois de apagar
+- [Data do WordPress não é ISO](data-do-wordpress-nao-e-iso.md) — o Google recusou 950 das 960 URLs do sitemap, sem aviso nenhum
+- [news-sitemap vazio dá erro](news-sitemap-vazio-da-erro.md) — na virada, enviar só o sitemap.xml
+- [Crase no comentário do CSS](crase-no-comentario-do-css.md) — fecha o template literal e derruba o archs.js inteiro
+- [Conteúdo da plataforma nascia sem assinatura](conteudo-da-plataforma-nascia-sem-assinatura.md) — o motor assinava com o nome do site; corrigido nas 3 máquinas
+- [Autor tipado como Organization](autor-tipado-como-organization.md) — o schemaVariant sorteava o tipo; pessoa saía como editora em 6 dos 15 portais
+- [Favicon 48 declarado e nunca gerado](favicon-48-declarado-e-nunca-gerado.md) — dois 404 no head de todo portal da opengravity
+- [Title de listagem sem marca](title-de-listagem-sem-marca.md) — `<title>Beleza</title>` em toda editoria da rede; três formas diferentes de corrigir
+- [catTitle dá título próprio à editoria](title-de-listagem-sem-marca.md) — campo opcional novo no motor; só o adonline usa, faltam 51 portais
+- [Poda na origem pode não ter rodado](poda-na-origem-pode-nao-ter-rodado.md) — o destino sai certo mesmo assim; contar os posts antes de desligar
+- [Credencial do banco antes de apagar](credencial-do-banco-antes-de-apagar.md) — o rm -rf leva o wp-config junto e o banco fica órfão
+- [Home title com marca duplicada](home-title-com-marca-duplicada.md) — 22 dos 28 portais da hostinger; o conserto é metaTitle, não o motor
+- [Favicon para a SERP do Google](favicon-para-a-serp-do-google.md) — recorte em círculo, zona segura do maskable e o cache de 30 dias que entrega o ícone velho
+- [Editoria vem da URL, não da lista](editoria-vem-da-url-nao-da-lista.md) — `cats[0]` mudou a URL de 40 dos 898 preservados
+- [Menu do motor escondia a maior editoria](menu-do-motor-escondia-a-maior-editoria.md) — Games com 298 artigos sem um link no site inteiro
+- [Lixo de tema no corpo importado](lixo-de-tema-no-corpo-importado.md) — `[ad_1]` na tela, comentário de tema, e 42 artigos sem nenhum parágrafo
+- [Linha fina não pode repetir a abertura](linha-fina-nao-pode-repetir-a-abertura.md) — a correção da descrição cria o defeito; os dois campos têm origens diferentes
+- [Script copiado carrega o portal anterior](script-copiado-carrega-o-portal-anterior.md) — prefixo de imagem, classe hasheada do auditor e regex mutilado
+- [`rm -rf public/*/` leva a pasta de imagens](rm-rf-public-leva-a-pasta-de-imagens.md) — a reimportação roda sem nenhuma imagem e só o contador denuncia
+- [Quem Somos padrão do motor](quem-somos-padrao-do-motor.md) — `site.about` nunca preenchido; opengravity resolvida, faltam 51 portais
+- [Âncora dentro de âncora](ancora-dentro-de-ancora.md) — o navegador serve dois links e nenhum regex não-guloso enxerga o de dentro
+- [Artigo de teste deixa rastro nas vizinhas](artigo-de-teste-deixa-rastro-nas-vizinhas.md) — 133 páginas com link para um teste apagado; só o rebuild limpa
+- [Diretório sem índice devolve 403](diretorio-sem-indice-devolve-403.md) — o conserto é `error_page 403 =404`, e não mexer no try_files
+- [Shortcode de afiliado não se apaga](shortcode-de-afiliado-nao-se-apaga.md) — `[su_button]` carrega link real e vira âncora; `[amazon box]` sai
+- [410 do sitemap não pegava o Yoast](410-do-sitemap-nao-pegava-o-yoast.md) — `<tipo>-sitemap.xml`; e a correção casaria o news-sitemap do motor
+- [403 de xmlrpc vem do WAF](403-de-xmlrpc-vem-do-waf.md) — o 410 do vhost está certo; medir no origin antes de mexer
+- [HTML dentro do título](html-dentro-do-titulo.md) — sai literal no `<title>` e come 14 caracteres da régua de 60
+- [Editoria vazia deixa listagem velha](editoria-vazia-deixa-listagem-velha.md) — o rebuild não toca na pasta, e a página apagada continua no ar
+- [O campo `image` do motor é objeto](campo-image-do-motor-e-objeto.md) — gravar string deixa o artigo sem imagem, sem erro nenhum
+- [Imagem hospedada por terceiro no corpo](imagem-hospedada-por-terceiro-no-corpo.md) — 283 vindas da raspagem; somem quando o dono quiser
+- [Citação contada como backlink](citacao-contada-como-backlink.md) — duas listas incompletas preservaram 284 artigos que ninguém pagou
+- [Apagar pasta pelo caminho do motor](apagar-pasta-pelo-caminho-do-motor.md) — pelo caminho da origem o index.html fica, e a auditoria de link mente
+- [410 não alcança slug fora do ASCII](410-nao-alcanca-slug-fora-do-ascii.md) — e o nginx compara o URI já decodificado
+- [Link cruzado para portal podado](link-cruzado-para-portal-podado.md) — o vizinho fica apontando para 410 e nenhuma das duas auditorias vê
+- [Backlink de cliente fora do ar](backlink-de-cliente-fora-do-ar.md) — URL profunda em 404 vai para a home do cliente; só NXDOMAIN nos dois resolvedores se apaga
+- [`category_base` vazio é `category`](category-base-vazio-e-category.md) — cravar "categoria" por analogia põe a editoria toda em 404
+- [Legenda repete o h1](legenda-repete-o-h1.md) — o alt importado é cópia do título em metade do acervo
+- [Deploy de arch aponta para a vizinha](deploy-de-arch-aponta-para-a-vizinha.md) — a tabela ARCHS fica com as funções erradas e só a captura de tela mostra
+- [Fase 7 pode comer backlink](fase-7-pode-comer-backlink.md) — o link pago estava dentro de um bloco removido; comparar origem e motor no fim
+- [AdSense apagava o banner de LGPD](adsense-apagava-o-banner-de-lgpd.md) — o guard procurava a palavra que o próprio Consent Mode escreve
+- [Leia também concentra âncora](leia-tambem-concentra-ancora.md) — o bloco do motor dava as mesmas 3 URLs a toda a editoria; pico de 641 usos
+- [Imagem gerada por cima da do cliente](imagem-gerada-por-cima-da-do-cliente.md) — foto própria no corpo e cena genérica no topo, em 18 artigos
+- ["no text" não impede texto na imagem](no-text-nao-impede-texto-na-imagem.md) — tirar o objeto que pede texto, não repetir a proibição
+- [Malha copiada usa a URL do portal anterior](malha-copiada-usa-url-do-portal-anterior.md) — 1.728 links internos para 404, criados de uma vez
+- [flatUrl com categoryBase](flat-url-com-category-base.md) — o par existe, e faz slug podado colidir com página do motor na raiz
+- [Medir 410 em massa pela Cloudflare](medir-410-em-massa-pela-cloudflare.md) — 3.599 pedidos viram 000 em bloco e o relatório acusa o 410 errado
+- [Página renderizada dentro do content](pagina-renderizada-dentro-do-content.md) — título 5 vezes e foto 2 vezes em 507 artigos de dois portais
+- [410 por slug mata editoria](410-por-slug-mata-editoria.md) — o podado chamado `beleza` levaria a listagem inteira junto
+- [Cópia de script traz o portal anterior](copia-de-script-traz-o-portal-anterior.md) — malha, avatar, cenas, arch e auditor: cinco casos numa conversão só
+- [`any` não traz a lixeira](any-nao-traz-a-lixeira.md) — o inventário da Fase 0 sai sem trash nem auto-draft, e só a contagem final mostra
+- [Registro sem permalink herda cliques da home](registro-sem-permalink-herda-cliques-da-home.md) — 9 registros com 41 cliques cada, inflando a conta da poda
+- [Demo do tema conta como backlink](demo-do-tema-conta-como-backlink.md) — theme-sphere e afins passam pela regra e preservam página que ninguém pagou
+- [Regex não-guloso corta o corpo](regex-nao-guloso-corta-o-corpo.md) — o auditor reportou 74 links onde havia 3.477, e número baixo não acusa erro
+- [Status inventado só sai por SQL](status-inventado-so-sai-por-sql.md) — nem `any` nem a lista por extenso trazem `nao` e `sim`
+- [Editoria órfã responde 404](editoria-orfa-responde-404.md) — 24 casos em 12 portais; o menu e o sitemap não a listam, então nenhuma auditoria vê
+- [Lista de duas colunas preenche por linha](lista-de-duas-colunas-preenche-por-linha.md) — o 2º item vai para o topo da direita e a data pula; só a captura mostra
+- [Atualizar arch já instalada](atualizar-arch-ja-instalada.md) — o deploy só insere; para corrigir no ar existe o atualiza_arch.py
+- [Logo da origem antes de inventar](logo-da-origem-antes-de-inventar.md) — o WordPress quase sempre tem marca própria, e a paleta sai dos pixels dela
+- [Linha fina repete parágrafo do corpo](linha-fina-repete-paragrafo-do-corpo.md) — metade do acervo; apagar o campo deixa o cartão pelado, o conserto é no render
+- [Relatório de 3 a 4 linhas](relatorio-de-3-a-4-linhas.md) — ele não lê texto longo; o detalhe vai para o CONVERSAO.md, não para a resposta
+- [O `fp` do sites.json não chegava](fp-do-sites-json-nao-chegava.md) — 88 portais renderizavam com a medida de reserva da arquitetura
+- [Fonte de um peso só](fonte-de-um-peso-so.md) — pedir 700 na Anton faz o navegador fabricar negrito e o título ganha fantasma
+- [defaultCategory fora do mapa](default-category-fora-do-mapa.md) — o conteúdo da plataforma cai em editoria que não existe, e só o teste de entrega mostra
+- [Editoria vem da URL, não de cats[0]](editoria-vem-da-url-nao-de-cats0.md) — artigo com duas categorias: a primeira da lista não é a da URL
+- [Rodapé com `var(--ink)` em paleta escura](rodape-com-var-ink-em-paleta-escura.md) — fundo claro com texto claro; nenhum auditor pegava
+- [Contraste do tema abaixo da régua](contraste-do-tema-abaixo-da-regua.md) — 31 de 89 portais; o pior é o `primary`, que pinta o link do corpo
+- [`<script>` sem fechamento no corpo](script-sem-fechamento-no-corpo.md) — 77 artigos; o rodapé some da tela e o `</footer>` continua no arquivo
+- [Zona da Cloudflare fora das contas](zona-cloudflare-fora-das-contas.md) — o master não cobre tudo, e duas contas estão com token inválido
+- [`<img>` sem src infla a auditoria](img-sem-src-infla-a-auditoria.md) — 16 fantasmas escondendo 15 casos reais de alt faltando
+- [Recolorir logo por luminância](recolorir-logo-por-luminancia.md) — faixa de RGB salpica a palavra; a borda suavizada cai no meio da faixa
+- [Ícone que é letra não se desenha](icone-que-e-letra-nao-se-desenha.md) — embrulhar o PNG da origem em base64, e deixar o `iconSvg` ausente
+- [Lixeira gigante não cabe no inventário](lixeira-gigante-nao-cabe-no-inventario.md) — 37 mil posts: só metadado, e os slugs `__trashed` ficam fora do 410
+- [O vhost lê /tmp do portal anterior](vhost-le-tmp-do-portal-anterior.md) — o 410 sai com a lista errada e só a contagem denuncia
+- [Sweep-flag do arco SVG](sweep-flag-do-arco-svg.md) — os dois lados são válidos; o símbolo vira um gancho e nada acusa
+- [Listagem repetia o destaque](listagem-repetia-o-destaque.md) — `itens.map` onde devia ser `resto.map`; a AN parece ter e não tem
+- [Classe do Veja também sai do prefixo](classe-do-veja-tambem-sai-do-prefixo.md) — 3 letras do slug ≠ `fp.prefix`, e o bloco sobe sem estilo
+- [Fonte de ascendente alto](fonte-de-ascendente-alto.md) — a assinatura sai por cima do h1 de duas linhas
+- [PNG paletizado com pontilhado](png-paletizado-com-pontilhado.md) — a letra sai chapiscada, e o corte do símbolo não se crava
+- [Heredoc longo trunca o script](heredoc-longo-trunca-o-script.md) — chega a metade e o Python roda sem erro
+- [mu-plugin filtra o export](mu-plugin-filtra-o-export.md) — `--skip-plugins` não o pula; 149 posts ficaram fora do inventário
+- [Criar arch sobrescreve a vizinha](cria-arch-sobrescreve-a-vizinha.md) — o par O/N do script fica do portal anterior
+- [Logo preta com símbolo branco](logo-preta-com-simbolo-branco.md) — o ícone some no papel; e os dois arquivos vêm com o nome trocado
+- [Breadcrumb raspado no corpo](breadcrumb-raspado-no-corpo.md) — trilha do site copiado, com schema e link de terceiro
+- [Slug da lixeira tem sufixo](slug-da-lixeira-tem-sufixo.md) — `__trashed` no slug; o 410 precisa da URL sem ele
+- [Gerador grava por cima do anterior](gerador-grava-por-cima-do-anterior.md) — o caminho de saída fica do portal passado
+- [Recolorir desenho de contorno](recolorir-desenho-de-contorno.md) — o mascote vira fantasma; recolorir só a palavra
+- [Página fantasma no public](pagina-fantasma-no-public.md) — artigo apagado deixa a pasta servindo HTML velho
+- [Itálico abre o corpo](italico-abre-o-corpo.md) — 1.925 artigos; o script da conversão só via uma das três formas
+- [Legenda volta quando o título é reescrito](legenda-volta-quando-o-titulo-e-reescrito.md) — o alt fica com o título velho
+- [Meta description das institucionais](meta-description-das-institucionais.md) — 654 páginas curtas; a raiz é o metaDescription do portal
+- [Title cru acima de 65](title-cru-acima-de-65.md) — o motor tira a marca mas não corta o título; o campo é o metaTitle
+- [Conteúdo preso como rascunho](conteudo-preso-como-rascunho.md) — sem imagem o motor não publica, e devolve 201 assim mesmo
+- [Certbot falha por domínio que saiu](certbot-falha-por-dominio-que-saiu.md) — 3 órfãos derrubavam a renovação dos 29 bons
+- [Erro 1000: DNS aponta para a Cloudflare](erro-1000-dns-aponta-para-cloudflare.md) — 403 para todo mundo, e o script troca só o primeiro A
+- [Zona `pending` ainda é alcançável](zona-pending-e-zona-alcancavel.md) — ler pelo id antes de concluir que falta token
+- [Backup do motor e o cofre](backup-do-motor-e-o-cofre.md) — 2,04 GB, o HTML fica de fora, e a hostinger guarda as três
+- [authorized_keys sem quebra de linha](authorized-keys-sem-quebra-de-linha.md) — a chave nova solda na antiga e as duas param
+- [Banner de LGPD some em paleta escura](lgpd-some-em-paleta-escura.md) — botão preto sobre preto; só a captura mostra
+- [Sufixo de desduplicar título é cortado](sufixo-de-desduplicar-titulo-e-cortado.md) — o titleMax come a parte que diferenciava
+- [Motor da hostinger sem H.curl](motor-da-hostinger-sem-curl.md) — não serve portal com base de categoria
+- [Fontes Preferidas implantado](fontes-preferidas-implantado.md) — nos 101 portais; o gancho é instLinks + _raw_articleHtml
+- [Redirect de server engole o ACME](redirect-de-server-engole-o-acme.md) — o `if` roda antes da location e o certbot falha
+- [Acento quebra no curl do Windows](acento-quebra-no-curl-do-windows.md) — `/sa-de/` parecia defeito do motor e era do transporte
+- [Âncora de patch não é exclusiva](ancora-de-patch-nao-e-exclusiva.md) — o gancho cai na função de anúncio e nada acusa
+- [Menu sanfonado tem três padrões](menu-sanfonado-tem-tres-padroes.md) — e a nav nem sempre está dentro do header
+- [Cabeçalho tem dois arranjos](cabecalho-tem-dois-arranjos.md) — a nav dentro do header ou em faixa própria; o `:has()` pode acertar o body
+- [Cor escrita não é cor efetiva](cor-escrita-nao-e-cor-efetiva.md) — o auditor de CSS aprovou texto invisível em 101 portais
+- [Patch de vhost cai no bloco 80](patch-de-vhost-cai-no-bloco-80.md) — nginx -t aprova e nada muda
+- [301 do arquivo de categoria](cat301-do-arquivo-de-categoria.md) — /category/<editoria>/ dava 404 em 61 portais
+- [Ahrefs pode ser de antes da conversão](ahrefs-pode-ser-de-antes-da-conversao.md) — conferir a data antes de consertar
+- [Prompt negativo invoca o objeto](prompt-negativo-invoca-o-objeto.md) — "no lab coat" pôs jaleco em 3 de 4 retratos
+- [Descrição curta vira descrição longa](descricao-curta-vira-descricao-longa.md) — o motor completa com o metaDescription do site
+- [Site comprado entra pela REST](site-comprado-entra-pela-rest.md) — sem backup, sem vírus, e o que do dono anterior tem que sair
+- [Motor reescreve o favicon](motor-reescreve-o-favicon.md) — ícone à mão dura um rebuild; e faltam o 96 e o 144
+- [Classe no corpo não casa com o CSS](classe-no-corpo-nao-casa-com-o-css.md) — o motor hasheia toda classe; usar atributo
+- [Acervo antigo tem imagem pequena](acervo-antigo-tem-imagem-pequena.md) — 300 a 450px, sem original; ampliar com Lanczos e só a deitada ocupa a coluna
+- [CLS vem da troca de fonte](cls-vem-da-troca-de-fonte.md) — o relatório culpa quem se moveu; display=optional zerou
+- [Veja também dá os 3 mesmos](veja-tambem-da-os-3-mesmos.md) — a editoria inteira apontava para 3 artigos; agora aceita lista curada
+- [Malha de acervo não sai de menção](malha-de-acervo-nao-sai-de-mencao.md) — remédio não cita remédio; a malha vem de classe, sintoma e hub
+- [Inseridor de link entra dentro da tag](inseridor-de-link-entra-dentro-da-tag.md) — proteger a tag, não só o link e o título
+- [Título não pode afirmar efeito](titulo-nao-pode-afirmar-efeito.md) — "X engorda:" vira alegação no SERP; pergunta ou sai
+- [Zero impressão não é critério para apagar](zero-impressao-nao-e-criterio-para-apagar.md) — mede o dono anterior, não a página
+- [FAQ do motor exige o título e o fim](faq-do-motor-exige-titulo-e-fim.md) — "perguntas frequentes" literal, e o bloco por último
+- [Não trocar número por frase em massa](nao-trocar-numero-por-frase-em-massa.md) — quebrou 160 artigos; a cópia bruta salvou
+- [Crédito de outro blog no guest post](credito-de-outro-blog-no-guest-post.md) — o link sai na conversão, a frase fica e declara conteúdo sindicado
+- [grep estoura o limite de argumentos](grep-estoura-limite-de-argumentos.md) — falha e devolve zero em silêncio; 3.168 artigos viraram "0"
+- [Inventário de classes tem ponto cego](inventario-de-classes-tem-ponto-cego.md) — só media as do motor; `qmix` no HTML de 93 portais passou batido
+- [Bloco novo na rede vira footprint](bloco-novo-na-rede-inteira-vira-footprint.md) — o conserto da malha criou h2 idêntico em 103/103
+- [410 da poda sombreia artigo novo](410-da-poda-sombreia-artigo-novo.md) — a lista é fotografia da conversão; slug novo igual a podado nasce em Gone e o log não acusa
+- [Dono root no /srv/portais](dono-root-no-srv-portais.md) — arquivo root não trava o motor, diretório root trava; é esse que se procura
+- [Verificação pós-publicação no Antônio](verificacao-pos-publicacao-antonio.md) — o 201 não prova que a página existe; só 404 e 410 alertam, e nada é reenviado
+- [Reconstruir portal do motor](reconstruir-portal-do-motor.md) — não há script pronto; `rebuildIndexes` refaz home e todos os artigos
+- [Melhor pauta pode ser página podada](melhor-pauta-pode-ser-pagina-podada.md) — cruzar as consultas com o que responde 410; e canibalização não se vê pelo slug
+- [Registro de donos é por servidor](registro-de-donos-e-por-servidor.md) — slug livre num servidor pode ser de um portal do outro; conferir nos dois
+- [Token não pega canibalização](cruzamento-por-token-nao-pega-canibalizacao.md) — 4 falsos negativos em 6 portais; buscar a frase no corpo e olhar quem já ranqueia
+- [Editoria partida e página fantasma](editoria-partida-e-pagina-fantasma.md) — trocar categoria deixa a URL velha no ar; nome fora do categoryMap cria editoria acidental
+- [Tag `<main>` no comentário do CSS](tag-main-no-comentario-do-css.md) — apaga o botão de menu do celular; nada acusa, só a captura
+- [Foto no corpo e cartão sem capa](foto-no-corpo-e-cartao-sem-capa.md) — o campo image vazio; e a tag raspada mente na dimensão
+- [Cartão sem foto é defeito](cartao-sem-foto-e-defeito.md) — hierarquia sai do tamanho, nunca da ausência da imagem
+- [Padding em grade desalinha a faixa](padding-em-grade-desalinha-a-faixa.md) — o vão é gap, o fio é pseudo-elemento; e `.a.duo` vence a media query
+- [Importador rebaixa artigo sem imagem](importador-rebaixa-artigo-sem-imagem.md) — vira rascunho e some; só a contagem de lidos mostra
+- [Certificado de origem é Cloudflare Origin CA](certificado-de-origem-e-cloudflare-origin-ca.md) — a clinicas-vps não tem certbot; emite antes da virada
+- [`absolute_redirect off` atrás da Cloudflare](absolute-redirect-atras-da-cloudflare.md) — sem ele todo 301 do vhost vira dois
+- [WAF bloqueia imagem por 0x50](waf-bloqueia-imagem-por-0x50.md) — `?p=1000x500` contém a assinatura; 14 portais quebrados, 38 zonas corrigidas
+- [Ocultar editoria: hideCategories](ocultar-categoria-e-hidecategories.md) — o motor já tem; o risco é o critério, que esconderia 9.263 legítimos
+- [Vivid como filete sobre papel](vivid-como-filete-sobre-papel.md) — a cor da marca some a 1,17:1 e nenhuma auditoria pega, porque todas medem só texto
+- [Bloco de crédito de imagem é impressão digital](bloco-de-credito-de-imagem-e-impressao-digital.md) — byte-idêntico em 10 portais; a saída é banco sem crédito via banco_img.py
+- [Imagens: banco primeiro, termo em inglês](imagens-banco-primeiro-termo-em-ingles.md) — regra permanente: Pixabay/Pexels/Commons CC0 por API, IA só com ordem expressa, busca em inglês
+- [Termo da pasta não diz a intenção](termo-da-pasta-nao-diz-a-intencao.md) — "banho de lua" é estética, não umbanda; conferir a SERP antes, e o Console da rede inteira é a fonte de irmãos
+- [Lote orgânico passa pelo validador de matérias](lote-organico-passa-pelo-validador-de-materias.md) — os 8 do EuVo reprovaram na 1ª rodada; quatro regras são de guest post e se ignoram
+- [Leia também só no rodapé](leia-tambem-so-no-rodape.md) — o motor não injeta mais bloco no meio do corpo; entrava antes do link do cliente. Máximo 2 links, nas 3 máquinas
+- [Coluna vazia ao lado do corpo](coluna-vazia-ao-lado-do-corpo.md) — medida de 70ch em container de 1240 deixa 450px vazios; o trilho fixo é o que ocupa a lateral
+- [Receptor slugifica o nome da categoria](receptor-slugifica-o-nome-da-categoria.md) — "Mídia" virou /midia/ em vez de /marketing/; conferir a URL devolvida e corrigir no JSON
+- [Portais no Cloudflare Pages](portais-no-cloudflare-pages.md) — Direct Upload a partir da VPS, gancho no render, piloto pronto; a virada de DNS precisa de autorização
+- [Ingresso do motor para o Pages](ingresso-do-motor-para-o-pages.md) — a API e o contato precisam de um host na VPS com segredo; DNS-01, regra de WAF e permissões do usuário portais
+- [pages.dev nem sempre é o slug](pages-dev-nem-sempre-e-o-slug.md) — projeto ganha sufixo se o nome já é de outro; CNAME errado dá 1014 e derruba o site
+- [Pages tem dois caches](pages-tem-dois-caches.md) — o de assets do Pages não renova no deploy e a zona cacheia o 404; purge na zona + marca do deploy na query
+- [Footprint dos portais do motor](footprint-portais-do-motor.md) — texto institucional, 404, 410, robots e JSON-LD saíam iguais nos 104; variacoes.js e a skill portal-engine-footprint

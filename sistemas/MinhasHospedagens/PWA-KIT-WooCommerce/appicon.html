@@ -1,0 +1,16 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  html,body{margin:0;padding:0}
+  .ic{width:100vw;height:100vh;background:linear-gradient(135deg,#1a5cff 0%,#6a3cff 100%);display:grid;place-items:center;position:relative;overflow:hidden}
+  .ic::before{content:"";position:absolute;width:150%;height:60%;top:-10%;left:-25%;background:radial-gradient(closest-side,rgba(255,255,255,.22),transparent);transform:rotate(-12deg)}
+  .mark{width:60%;height:60%;position:relative;z-index:2}
+</style></head><body>
+  <div class="ic">
+    <svg class="mark" viewBox="0 0 100 100" fill="none">
+      <!-- seta de crescimento (seguidores subindo) -->
+      <path d="M16 74 L40 50 L56 62 L86 28" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M66 26 L88 26 L88 48" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- ponto de origem com acento Brasil (verde/amarelo) -->
+      <circle cx="16" cy="74" r="8.5" fill="#ffd21e" stroke="#00a651" stroke-width="3.5"/>
+    </svg>
+  </div>
+</body></html>

@@ -1,0 +1,76 @@
+Success: The cache was flushed.
+FAIL [403]: clickinfohub.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+OK: dataroomus.com (HTTP 401)
+Success: The cache was flushed.
+OK: diariodatv.com (HTTP 401)
+Success: The cache was flushed.
+FAIL [403]: diariodegoiania.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: diariodobrejo.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: edenoticias.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: entrenoticia.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: euvo.com.br | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+OK: ferronoticias.net (HTTP 401)
+Success: The cache was flushed.
+OK: filmeseseriesnovas.com (HTTP 401)
+Success: The cache was flushed.
+FAIL [403]: gdsnoticias.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: gpnoticias.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+OK: jornalacapital.com (HTTP 401)
+Success: The cache was flushed.
+FAIL [403]: jornaldinamico.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: jornalimigrantes.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: jrnoticias.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: maragoginoticias.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: mgnoticias.net | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: nodiario.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: noticias9.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+OK: noticiasdasemana.com (HTTP 401)
+Success: The cache was flushed.
+FAIL [403]: noticiasdiarios.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: noticiasdodia.net | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: noticiasdojogo.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: noticiasgoias.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: osertaoenoticia.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: portalnoticiasbh.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: portalr5.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: r10noticias.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+OK: riachonoticias.net (HTTP 401)
+Success: The cache was flushed.
+FAIL [403]: rsnoticias.net | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: rumourisnews.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: topsulnoticias.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: www.folhaum.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: www.jornalexpresso.net | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: www.matogrossosaude.com.br | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: www.mundodasnoticias.net | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: www.sejanoticia.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 2a02:4780:13:1704:0:26cf:3b5a:1","data":{"status":403}}

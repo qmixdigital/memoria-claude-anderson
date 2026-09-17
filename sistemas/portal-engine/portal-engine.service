@@ -1,0 +1,35 @@
+[Unit]
+Description=Portal Engine - receptor Antonio (HTML estatico, multi-site)
+After=network.target
+
+[Service]
+Type=simple
+User=portais
+Group=portais
+WorkingDirectory=/opt/portal-engine
+ExecStart=/usr/bin/node /opt/portal-engine/src/receiver.js
+Restart=always
+RestartSec=3
+
+# ---- Blindagem: limites de recurso (nao derruba a VPS) ----
+MemoryMax=512M
+MemoryHigh=384M
+CPUQuota=50%
+TasksMax=100
+
+# ---- Blindagem: sandbox de filesystem/kernel ----
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/srv/portais
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6
+RestrictNamespaces=true
+LockPersonality=true
+SystemCallArchitectures=native
+
+[Install]
+WantedBy=multi-user.target

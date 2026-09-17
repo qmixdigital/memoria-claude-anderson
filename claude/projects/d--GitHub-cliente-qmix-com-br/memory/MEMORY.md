@@ -1,0 +1,3 @@
+- [Nunca centralizar texto no mobile](feedback_no_centered_text.md) — usuário associa centralização a "site americano amador"
+- [Briefings de vídeo são de outro chat](briefings-video-outro-chat.md) — perguntar antes de produzir, já custou trabalho refeito
+- [Deploy da landing exige purge do Cloudflare](landing-cliente-qmix-fluxo-deploy.md) — e na ordem certa, senão o cache velho volta por 1 hora

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 110" role="img" aria-label="exquisito">
+  <text x="0" y="84" fill="#FFFFFF" font-family="Georgia, 'Playfair Display', 'Libre Caslon Display', serif" font-style="italic" font-weight="700" font-size="96">exquisito</text>
+  <g transform="translate(385,18) rotate(45)">
+    <rect x="-11" y="-11" width="22" height="22" fill="#00D4FF"/>
+    <rect x="-11" y="-11" width="22" height="11" fill="#0098C7" opacity=".55"/>
+  </g>
+</svg>

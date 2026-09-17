@@ -1,0 +1,19 @@
+---
+name: cliquex-sites-pages
+description: "Os ~29 sites HTML estáticos foram migrados do VPS para o Cloudflare Pages"
+metadata:
+  node_type: memory
+  type: project
+  originSessionId: 4e6e74a4-cdf0-4d50-aa4e-ae7c023a9ac0
+  modified: 2026-07-26T20:03:37.995Z
+---
+
+**MIGRADO em 2026-07-26**: os ~29 sites HTML estáticos que estavam amontoados no VPS (nginx) foram para o **Cloudflare Pages** (Direct Upload via `wrangler pages deploy`). Motivo de segurança: o ataque slowloris mirava esses sites no VPS pra colateralmente sufocar o cliquex; no Pages (edge) não há servidor pra atacar. Cada site = 1 projeto Pages; domínio conectado por **CNAME apex+www → `<proj>.pages.dev`** (proxied) trocando o A record que apontava pro VPS.
+
+**Distribuição**: 20 sites na conta **Endrick** (011fa32b, a do cliquex): aesupar, anufoodbrazil, cieh, cienciadotreinamento, educacaoniteroi, elfolivre, endipe2024, expoind2025, faesfpi, falaseriocanaa, fcpge, federapars, festivalfeirapreta, fnem, inteligenciacompetitivarev, jornalcidademg, radioitaboraisantos, revistabforest, serpes, tendenciaconcursos. Os outros 9 em 4 contas diferentes: agroshopacamargo+compdistribuidora (b7618ea1), cabecadagua+ciadetalentosproducoes+leilopora (23077979), consultoriaflorapura+conviteriadaline (c86b1054), jcrgs+replicasderelogiostop (596a5e4f).
+
+**Token**: os domínios estão espalhados em ~13 contas CF do usuário. O token da Endrick só faz a Endrick; pra as outras foi preciso um **token "ALL IN ONE"** com **Cloudflare Pages: Edit + DNS: Edit + Zone: Read**, escopo **All accounts + All zones**. ARMADILHA: um token com essas permissões mas Pages em **Read** (não Edit) lista projetos mas dá "Authentication error" no create — confirmar Pages=Edit testando `POST /accounts/{ac}/pages/projects`. Token amplo → usuário deve revogar após uso (não guardar).
+
+**Gotchas**: (1) `wrangler pages deploy` NÃO cria o projeto — criar antes via `POST .../pages/projects` (name sem pontos/`.com.br`). (2) Nome do projeto = domínio sem `.com.br` e sem pontos. (3) Sites com regra WAF que bloqueia `curl` → testar com UA de navegador (curl dá 403). (4) `jornalcidademg` estava com `security_level=under_attack` (do ataque) → 403 até baixar pra medium. (5) Os sites **continuam duplicados no VPS** até o usuário confirmar remoção. Ver [[cliquex-migracao-hostinger]], [[cliquex-ddos-hardening]].
+
+**FAVICON — problema conhecido na rede (2026-08-17)**: auditoria de `/favicon.ico` nos ~29 sites estáticos revelou que **28 referenciam só `/favicon.svg` e não têm `/favicon.ico` (404)** — mesma causa do favicon da leilopora sumir do Google (o Google usa `/favicon.ico` como fallback e SVG sozinho falha). OK só: leilopora (corrigida: .ico+PNGs+tags) e estudiounidesign (tem .ico). Os 28 com problema: aesupar, agroshopacamargo, anufoodbrazil, cabecadagua, ciadetalentosproducoes, cieh, cienciadotreinamento, compdistribuidora, consultoriaflorapura, conviteriadaline, educacaoniteroi, elfolivre, endipe2024, expoind2025, faesfpi, falaseriocanaa, fcpge, federapars, festivalfeirapreta, fnem, inteligenciacompetitivarev, jcrgs, jornalcidademg, radioitaboraisantos, replicasderelogiostop, revistabforest, serpes, tendenciaconcursos (todos .com.br). **Usuário optou por NÃO corrigir agora** (só leilopora importava). Fix definitivo qdo quiser: rasterizar o favicon.svg de cada site → favicon.ico(16/32/48)+PNGs, injetar `<link rel="icon" href="/favicon.ico">` nos HTML, redeployar cada projeto Pages (precisa token Pages:Edit da conta dona). Pastas-fonte não estão locais nem no hostinger-vps1/opengravity/srv1166087/qmix testados — descobrir onde estão as fontes (ou mirror do live) é pré-requisito. Alternativa mais rápida/menos ideal: Redirect Rule por zona `/favicon.ico`→`/favicon.svg` (mas serve SVG no path .ico; pode não resolver se o próprio SVG for o que o Google rejeita).

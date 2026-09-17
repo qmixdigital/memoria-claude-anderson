@@ -1,0 +1,266 @@
+--<<REMOVIDO>>
+Content-Disposition: form-data; name="ponte.js"
+
+/**
+ * A ponte entre o domínio e o diretório.
+ *
+ * O site institucional vive no Cloudflare Pages e NÃO é tocado. Este Worker
+ * intercepta apenas o prefixo do diretório e busca o conteúdo na VPS, de modo
+ * que `/imovel-rural/` é o mesmo hostname, o mesmo domínio e a mesma
+ * autoridade. Subdomínio seria tratado pelo Google como site quase separado, e
+ * jogaria fora o motivo de o diretório morar aqui.
+ *
+ * O CABEÇALHO DA PONTE não é enfeite: sem ele o hostname de origem responde 404.
+ * Do contrário, o diretório teria dois endereços públicos servindo o mesmo
+ * conteúdo, e o Google escolheria qual indexar.
+ *
+ * ALÉM DA PONTE, ESTE WORKER COSTURA O LINK DE VOLTA.
+ * O institucional não linkava o diretório em lugar nenhum: nem menu, nem rodapé,
+ * nem corpo, em nenhuma das seis páginas. O link era de mão única — o diretório
+ * mandava dez links para o institucional e recebia zero. O efeito estava medido
+ * no Search Console: a home e os artigos do blog em "Submitted and indexed", e
+ * `/areas-embargadas/` e `/areas-embargadas/pa/` em **"Discovered - currently
+ * not indexed", sem NENHUM rastreio**, com 114.987 URLs no sitemap. Sitemap diz
+ * que a URL existe; link interno diz que ela importa.
+ *
+ * A injeção acontece aqui e não no fonte do site porque o Pages do institucional
+ * é upload direto, sem Git conectado, e o repositório que o gera não está na
+ * máquina de quem mantém o diretório. Fazer aqui também tem uma vantagem real:
+ * é um lugar só, e vale para toda página do site de uma vez.
+ */
+const PREFIXO = "/imovel-rural";
+/**
+ * O prefixo que existiu de 11 a 13/09/2026. Redireciona em 301 para o novo,
+ * mapeando a estrutura: a raiz e as listagens por UF/município eram de embargo
+ * e hoje vivem sob /embargos/; o resto só troca o prefixo. A troca foi barata
+ * porque nada tinha sido rastreado, mas o 301 fica: link colado em e-mail não
+ * sabe disso.
+ */
+const PREFIXOS_ANTIGOS = ["/areas-embargadas", "/cadastro-rural"];
+
+function redirecionaAntigo(url, antigo) {
+  const resto = url.pathname.slice(antigo.length); // "" | "/..."
+  let novo;
+  // `/areas-embargadas` era o diretório de embargos inteiro: a raiz e as
+  // listagens por UF viraram a seção /embargos/. `/cadastro-rural` já tinha a
+  // estrutura de hoje, então só troca o prefixo.
+  if (antigo === "/areas-embargadas") {
+    if (resto === "" || resto === "/") novo = PREFIXO + "/embargos/";
+    else if (/^\/[a-z]{2}(\/|$)/.test(resto)) novo = PREFIXO + "/embargos" + resto;
+    else novo = PREFIXO + resto;
+  } else {
+    novo = PREFIXO + (resto === "" ? "/" : resto);
+  }
+  return Response.redirect(url.origin + novo + url.search, 301);
+}
+const ORIGEM = "https://interno-areas.advdobrasil.com.br";
+
+/**
+ * O `robots.txt` da RAIZ é o único que o Google lê.
+ *
+ * O institucional serve o dele pelo Pages, e nele estavam as diretivas do
+ * diretório escritas à mão. Quando o prefixo mudou de `/cadastro-rural` para
+ * `/imovel-rural`, o arquivo ficou para trás: apontava `Sitemap:` para uma URL
+ * que hoje responde 301, e o `Disallow` de paginação passou a proteger um path
+ * que não existe mais. Para o Google, um `Sitemap:` que redireciona é um
+ * sitemap que não existe — foi assim que 114.987 URLs ficaram em "Discovered,
+ * not indexed" da outra vez.
+ *
+ * A correção mora AQUI e não lá porque o Pages é upload direto, sem Git, e o
+ * repositório que o gera não está na máquina de quem mantém o diretório. E
+ * porque aqui ela é derivada, não copiada: qualquer linha do institucional que
+ * fale de um prefixo do diretório é descartada e substituída pelo bloco abaixo,
+ * que é o único lugar onde essas diretivas são escritas. Editar o robots do
+ * Pages não pode mais dessincronizar o diretório.
+ */
+const PREFIXOS_DO_DIRETORIO = [PREFIXO, ...PREFIXOS_ANTIGOS];
+
+const BLOCO_ROBOTS = `
+# Bloco do diretorio de imovel rural, GERADO PELO WORKER: nao edite no Pages.
+# Ele e o espelho de ${PREFIXO}/robots.txt, que traz o porque de cada linha.
+#
+# A PAGINACAO FICA LIBERADA DE PROPOSITO. A primeira pagina de um municipio
+# mostra 40 imoveis e Araci (BA) tem 14.346, em 359 paginas: bloquear ?pagina=
+# deixava 96% das 6,15 milhoes de fichas do sitemap sem link de entrada. Cada
+# pagina numerada declara canonical para si mesma, que e o que evita duplicata.
+#
+# O que sai e o FILTRO, que e ferramenta de tela e gera combinacao infinita.
+Disallow: ${PREFIXO}/*?q=
+Disallow: ${PREFIXO}/*&q=
+Disallow: ${PREFIXO}/*?porte=
+Disallow: ${PREFIXO}/*&porte=
+Disallow: ${PREFIXO}/*?restricao=
+Disallow: ${PREFIXO}/*&restricao=
+Disallow: ${PREFIXO}/buscar/
+Disallow: ${PREFIXO}/admin/
+
+Sitemap: https://advdobrasil.com.br${PREFIXO}/sitemap.xml
+`;
+
+async function robots(request) {
+  const original = await fetch(request);
+  if (!original.ok) return original;
+  const texto = await original.text();
+  // Fora TODA linha que fale de um prefixo do diretorio, inclusive as dos
+  // prefixos mortos: sao elas que ficam velhas. O resto do arquivo, que e do
+  // site do escritorio, passa intacto.
+  // Descartar SO a linha da diretiva deixa o comentario que a explicava orfao,
+  // apontando para um prefixo morto: foi o que aconteceu na primeira versao
+  // desta funcao. O comentario e parte da diretiva, entao o bloco inteiro de
+  // comentario colado nela sai junto.
+  const linhas = texto.split(/\r?\n/);
+  const fora = new Set();
+  const ehNossa = (l) => PREFIXOS_DO_DIRETORIO.some((pfx) => l.includes(pfx + "/"));
+  const ehComentario = (l) => l.trimStart().startsWith("#");
+  linhas.forEach((l, i) => {
+    if (!ehNossa(l)) return;
+    fora.add(i);
+    for (let k = i - 1; k >= 0 && ehComentario(linhas[k]); k--) fora.add(k);
+    for (let k = i + 1; k < linhas.length && ehComentario(linhas[k]); k++) fora.add(k);
+  });
+  const limpo = linhas
+    .filter((_, i) => !fora.has(i))
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trimEnd();
+  return new Response(limpo + "\n" + BLOCO_ROBOTS, {
+    headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "public, max-age=300" },
+  });
+}
+
+/** O item que entra no menu principal, com as classes que o site já usa. */
+const ITEM_MENU =
+  '<li class="menu__item">' +
+  '<a class="menu__link menu__link--diretorio" href="/imovel-rural/">Imóveis Rurais</a>' +
+  "</li>";
+
+/**
+ * SEM ESTILO PRÓPRIO, e isso é decisão, não esquecimento.
+ *
+ * A primeira versão pintava o item de `--ouro` e punha um traço embaixo. Só que
+ * no `site.css` isso é EXATAMENTE o estado de página atual:
+ * `.menu__link[aria-current=page]{color:var(--ouro)}` mais o `::after` que passa
+ * de `scaleX(0)` para `scaleX(1)`. O item ia parecer "você está aqui" em toda
+ * página do site, e o meu `::after` ainda sobrescrevia o do tema, matando a
+ * animação de hover justamente nele.
+ *
+ * A classe fica como gancho, sem regra: se o dono quiser destaque, ele sai de um
+ * print aprovado e de um tratamento que NÃO colida com a convenção do menu.
+ */
+
+/** O link do rodapé entra na lista que já existe, para não mexer na grade. */
+const ITEM_RODAPE =
+  '<li><a href="/imovel-rural/">Consultar imóvel rural</a></li>' +
+  '<li><a href="/imovel-rural/embargos/">Áreas embargadas pelo IBAMA</a></li>';
+
+function costura(resposta) {
+  let proximaListaEhInstitucional = false;
+
+  return new HTMLRewriter()
+    .on("ul.menu__lista", {
+      element(el) {
+        el.append(ITEM_MENU, { html: true });
+      },
+    })
+    // O `<ul>` do bloco "Institucional" do rodapé não tem classe própria, e
+    // `nth-of-type` quebraria calado no dia em que alguém reordenasse as
+    // colunas. O HTMLRewriter percorre em ordem de documento, então marcar pelo
+    // título e consumir a marca na lista seguinte é estável.
+    .on(".rodape__bloco h2", {
+      text(t) {
+        if (/Institucional/i.test(t.text)) proximaListaEhInstitucional = true;
+      },
+    })
+    .on(".rodape__bloco ul", {
+      element(el) {
+        if (!proximaListaEhInstitucional) return;
+        proximaListaEhInstitucional = false;
+        el.append(ITEM_RODAPE, { html: true });
+      },
+    })
+    .transform(resposta);
+}
+
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+
+    // ---- os prefixos antigos: 301 para o novo, antes de qualquer outra coisa ----
+    for (const antigo of PREFIXOS_ANTIGOS) {
+      if (url.pathname === antigo || url.pathname.startsWith(antigo + "/")) {
+        return redirecionaAntigo(url, antigo);
+      }
+    }
+
+    // ---- o robots da raiz, com o bloco do diretório sempre atual ----
+    if (url.pathname === "/robots.txt") {
+      try {
+        return await robots(request);
+      } catch {
+        return fetch(request); // falha aberta, como o resto deste Worker
+      }
+    }
+
+    // ---- fora do diretório: o site do escritório, só costurado ----
+    if (url.pathname !== PREFIXO && !url.pathname.startsWith(PREFIXO + "/")) {
+      const original = await fetch(request);
+      // FALHA ABERTA. Qualquer coisa que não seja HTML, ou qualquer erro na
+      // costura, devolve a resposta como ela veio. Este Worker passou a rodar
+      // na frente do site inteiro do escritório por causa de um link de menu:
+      // ele não pode ser o motivo de uma página não abrir.
+      try {
+        const tipo = original.headers.get("content-type") || "";
+        if (!tipo.includes("text/html")) return original;
+        return costura(original);
+      } catch {
+        return original;
+      }
+    }
+
+    // ---- dentro do diretório: a ponte para a VPS ----
+
+    // `/imovel-rural` sem barra final vai para a forma canônica antes de
+    // qualquer outra coisa: o app usa `trailingSlash`, e deixar as duas formas
+    // vivas cria duas URLs para a mesma página.
+    if (url.pathname === PREFIXO) {
+      return Response.redirect(url.origin + PREFIXO + "/" + url.search, 308);
+    }
+
+    const destino = new URL(url.pathname + url.search, ORIGEM);
+    const pedido = new Request(destino, request);
+    pedido.headers.set("X-Ponte-Adv", env.PONTE);
+    pedido.headers.set("X-Forwarded-Host", url.host);
+    pedido.headers.set("X-Forwarded-Proto", "https");
+
+    // O PAINEL NUNCA VAI PARA A BORDA.
+    //
+    // A zona tem uma regra da rede, "WP edge microcache HTML", que casa
+    // `starts_with(path, "/")` — tudo — com `edge_ttl: override_origin`.
+    // Override IGNORA o `no-store` da origem, e o bypass que acompanha a regra
+    // só conhece `/wp-admin` e o cookie do WordPress. Resultado medido: a borda
+    // guardou o painel logado e o entregou para requisição sem cookie nenhum,
+    // com `CF-Cache-Status: HIT` e `Age: 53`.
+    //
+    // A regra de bypass na zona já foi criada, e esta trava existe porque a
+    // regra vive num painel que outra pessoa edita. `cacheTtlByStatus` com -1 é
+    // "não guarde", e vale para a subrequisição deste Worker.
+    const ehPainel = url.pathname.startsWith(PREFIXO + "/admin");
+    const resposta = await fetch(
+      pedido,
+      ehPainel ? { cf: { cacheEverything: false, cacheTtlByStatus: { "100-599": -1 } } } : undefined,
+    );
+
+    // O noindex do hostname interno existe para o hostname interno, e não pode
+    // vazar para a URL pública: ele tiraria o diretório inteiro do índice.
+    const limpa = new Response(resposta.body, resposta);
+    limpa.headers.delete("X-Robots-Tag");
+    if (ehPainel) {
+      limpa.headers.set("Cache-Control", "private, no-store, max-age=0");
+      limpa.headers.set("CDN-Cache-Control", "no-store");
+      limpa.headers.set("X-Robots-Tag", "noindex, nofollow");
+    }
+    return limpa;
+  },
+};
+
+--<<REMOVIDO>>--

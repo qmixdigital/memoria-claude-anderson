@@ -1,0 +1,20 @@
+---
+name: cliquex-linkbuilding-leilopora
+description: "Link building interno da rede apontando p/ leilopora.com.br (backlink discreto dofollow, âncora única por site)"
+metadata: 
+  node_type: memory
+  type: project
+  originSessionId: 4e6e74a4-cdf0-4d50-aa4e-ae7c023a9ac0
+  modified: 2026-08-12T19:12:27.800Z
+---
+
+**LINK BUILDING → leilopora.com.br (2026-08-12)**: todos os sites que eu fiz na rede receberam **1 link dofollow discreto** apontando p/ `https://leilopora.com.br/` (o site que pegou 3º no Google e vira alvo do silo — ver [[cliquex-silo-paginas-secundarias]]). Análogo ao [[cliquex-linkbuilding-cia]] mas com destino leilopora e **abrindo em nova aba**.
+
+**MÉTODO (pedido do usuário)**: link **dofollow** (SEM nofollow) + **`target="_blank" rel="noopener"`** (nova aba) + discreto (`style="color:inherit;text-decoration:none"`, mistura no texto). Posição: **antes do `<footer>`, NÃO no rodapé** — inserido logo antes do ÚLTIMO `</p>` que precede o `<footer>` (fim do guia/prosa), como frase ` Vale também um <a…>{âncora}</a>.`. **1 âncora ÚNICA por site**, escolhida de uma lista de ~75 variações que o usuário forneceu (todas contendo "IPTV"/"teste"). Idempotente: pular se `leilopora.com.br` já está no HTML.
+
+**FEITO — 30 sites, 30 âncoras únicas, verificado (dofollow, _blank, sem duplicata)**. Motor: `scratchpad/leilo_engine.py` (re-fetch live index + 7 assets + insere + redeploy Pages; modo `local` p/ estudiounidesign e ticketson preservando assets/_headers/key.txt; cordeiropolis via token conta3 `0a107ac0`). Mapa slug→âncora: jornalcidademg=teste IPTV novo · faesfpi=IPTV WhatsApp teste · anufoodbrazil=IPTV teste WhatsApp · educacaoniteroi=teste IPTV automático por e-mail · festivalfeirapreta=IPTV teste Brasil · tendenciaconcursos=teste gratuito de IPTV · revistabforest=teste IPTV roku tv · aesupar=teste IPTV 24h · serpes=IPTV teste 4K · radioitaboraisantos=teste IPTV 48 horas · federapars=IPTV test gratis · endipe2024=IPTV teste grátis · expoind2025=teste grátis IPTV · fcpge=teste IPTV 6 horas · fnem=teste IPTV Smart TV · cienciadotreinamento=teste de IPTV · elfolivre=teste IPTV 7 dias · falaseriocanaa=teste IPTV 15 reais · inteligenciacompetitivarev=teste IPTV 2 horas · agroshopacamargo=IPTV teste 7 dias · cabecadagua=teste IPTV 24 horas · compdistribuidora=teste IPTV TV Roku · consultoriaflorapura=teste grátis de IPTV · conviteriadaline=teste IPTV 12 horas · jcrgs=IPTV teste 2026 · replicasderelogiostop=IPTV com teste grátis · cieh=IPTV teste gratuito · cordeiropolisemfoco=teste grátis IPTV celular · estudiounidesign=teste IPTV 8 horas · ticketson=teste de IPTV 2026.
+
+**Obs**: cada página da rede tem agora 3 links discretos de saída (cia dofollow, WhatsApp nofollow [[cliquex-linkbuilding-whatsapp]], leilopora dofollow) — se o usuário pedir mais alvos, cuidar do footprint. leilopora NÃO linka p/ si mesmo; as 22 páginas de silo dela já apontam p/ a home.
+
+
+**+14 SITES NOVOS (conta Bruna, 2026-08-19):** os 14 sites criados hoje já herdaram o link leilopora do template-base (com a âncora DUPLICADA do gêmeo) → troquei por **âncora única** em cada um (todas com teste+IPTV, diferentes das 30 anteriores). Mapa: gremioavalanche=teste IPTV grátis 2026 · autoribeirao=IPTV teste rápido · bangu=teste IPTV sem travar · brooklin=teste IPTV 4 horas · cadernoseletronicosdisf=IPTV teste na Smart TV · cakemoe=teste IPTV para celular · canaldoestudante=teste IPTV estável · concursosc=IPTV teste completo · eterfs=teste IPTV em HD · inovatradeshow=teste IPTV no Android · sblmc=IPTV teste grátis online · tijuca=teste IPTV 3 dias · tsjoias=teste IPTV confiável · valparaisogoias=IPTV teste premium. Método discreto (dofollow, _blank, color:inherit, antes do footer) — usuário reconfirmou "discreto" e recusou "oculto de verdade" (risco de penalidade do Google). Total de sites da rede linkando p/ leilopora agora = 30 antigos + 14 novos = 44.

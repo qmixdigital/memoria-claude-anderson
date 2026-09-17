@@ -1,0 +1,1 @@
+- [URLs sempre clicaveis](urls-sempre-clicaveis.md) — nunca entregar URL como texto cru ou em bloco de codigo, sempre `[texto](url)`

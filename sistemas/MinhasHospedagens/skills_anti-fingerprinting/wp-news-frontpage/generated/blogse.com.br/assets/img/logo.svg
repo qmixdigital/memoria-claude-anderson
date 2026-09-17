@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" width="240" height="56" role="img" aria-label="Blog-Se">
+  <!-- Mark: bloco magenta P11 com BS branco -->
+  <rect x="0" y="4" width="48" height="48" fill="#AB1267"/>
+  <text x="24" y="36" text-anchor="middle" fill="#FFF9F0" font-family="Raleway, system-ui, 'Arial Black', sans-serif" font-weight="900" font-size="20" letter-spacing="0.5">BS</text>
+  <!-- Wordmark: blog-se lowercase + ponto dourado P11 -->
+  <text x="58" y="40" fill="currentColor" font-family="Raleway, system-ui, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.015em">blog-se<tspan fill="#F1A208" font-weight="900">.</tspan></text>
+</svg>

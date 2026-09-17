@@ -1,0 +1,23 @@
+{
+  "dividir": true,
+  "duracao_parte": "0.50",
+  "espelhar": true,
+  "espelhar_v": false,
+  "cortar": false,
+  "sem_audio": true,
+  "normalizar": false,
+  "limpar": true,
+  "giro": "Não girar",
+  "formato": "Horizontal 16:9 (YouTube)",
+  "auto": false,
+  "limiar": "-30",
+  "dur_silencio": "0.30",
+  "pausa": "0.20",
+  "qualidade": "Máxima, sem perda visível (padrão)",
+  "pasta_saida": "C:/Users/User/Desktop/moto de trilha eletrica",
+  "qualidade_dl": "Melhor disponível",
+  "navegador": "Sem cookies",
+  "playlist": false,
+  "apagar_baixado": true,
+  "pasta_download": "C:/Users/User/Desktop/moto de trilha eletrica"
+}

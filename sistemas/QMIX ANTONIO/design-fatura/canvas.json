@@ -1,0 +1,40 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 794,
+      "h": 1560,
+      "print": "flow",
+      "title": "Fatura QMIX"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "nota-rodape",
+      "x": 880,
+      "y": 40,
+      "w": 300,
+      "text": "Rodapé com os dados da QMIX DIGITAL LTDA: razão social, CNPJ e contato.\n\nEndereço físico removido a pedido, e o e-mail é o marketing@qmix.com.br, o mesmo da chave PIX."
+    },
+    {
+      "id": "nota-valores",
+      "x": 880,
+      "y": 260,
+      "w": 300,
+      "text": "O chip \"mostrarValores\" acima do quadro alterna entre a versão do administrador (com preços) e a do cliente (só as entregas), que é como o sistema já se comporta hoje pelo papel do usuário."
+    },
+    {
+      "id": "nota-numeros",
+      "x": 880,
+      "y": 470,
+      "w": 300,
+      "text": "Achei um erro no PHP atual: number_format usa ponto como separador decimal, então R$ 3.600,00 sai escrito \"3.600.00\". Corrijo junto na implementação."
+    }
+  ],
+  "launch": {
+    "view": "focused",
+    "file": "Main.dc.html"
+  }
+}

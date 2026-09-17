@@ -1,0 +1,344 @@
+{
+ "diariodatv.com": {
+  "conta": "AdOnline",
+  "aid": "b8e5af6f7edcfbe38ee1bc2844ac9f98",
+  "auto": false,
+  "exp": "2027-02-05"
+ },
+ "topsulnoticias.com": {
+  "conta": "AdOnline",
+  "aid": "b8e5af6f7edcfbe38ee1bc2844ac9f98",
+  "auto": false,
+  "exp": "2027-02-05"
+ },
+ "entrenoticia.com": {
+  "conta": "Advivo",
+  "aid": "27036304c8da0371f0f90a63c0193c95",
+  "auto": false,
+  "exp": "2027-02-06"
+ },
+ "nodiario.com": {
+  "conta": "Advivo",
+  "aid": "27036304c8da0371f0f90a63c0193c95",
+  "auto": true,
+  "exp": "2027-02-06"
+ },
+ "noticiasdasemana.com": {
+  "conta": "Advivo",
+  "aid": "27036304c8da0371f0f90a63c0193c95",
+  "auto": false,
+  "exp": "2027-02-06"
+ },
+ "jornalistanofato.com": {
+  "conta": "Aluguel Sites 5",
+  "aid": "3167ec16d6b759a1bb6eb8d62e8025f5",
+  "auto": true,
+  "exp": "2026-11-30"
+ },
+ "nerddahora.com": {
+  "conta": "Aluguel Sites 5",
+  "aid": "3167ec16d6b759a1bb6eb8d62e8025f5",
+  "auto": false,
+  "exp": "2026-11-29"
+ },
+ "professortic.com": {
+  "conta": "Aluguel Sites 5",
+  "aid": "3167ec16d6b759a1bb6eb8d62e8025f5",
+  "auto": true,
+  "exp": "2026-11-29"
+ },
+ "filmeseseriesnovas.com": {
+  "conta": "Aluguel Sites BOL",
+  "aid": "37b5f07b227c4fd026187d2e86b32d0e",
+  "auto": false,
+  "exp": "2026-11-04"
+ },
+ "diariodegoiania.com": {
+  "conta": "Anderson Alves",
+  "aid": "9ecbf885a61a34c6ac4d73033fa0f497",
+  "auto": false,
+  "exp": "2027-01-19"
+ },
+ "diariodobrejo.com": {
+  "conta": "Anderson Alves",
+  "aid": "9ecbf885a61a34c6ac4d73033fa0f497",
+  "auto": false,
+  "exp": "2026-10-07"
+ },
+ "folhaum.com": {
+  "conta": "Anderson Alves",
+  "aid": "9ecbf885a61a34c6ac4d73033fa0f497",
+  "auto": false,
+  "exp": "2026-10-07"
+ },
+ "jornalexpresso.net": {
+  "conta": "Anderson Alves",
+  "aid": "9ecbf885a61a34c6ac4d73033fa0f497",
+  "auto": true,
+  "exp": "2026-10-07"
+ },
+ "jornalconceito.com": {
+  "conta": "Azul Magazine",
+  "aid": "4e1503962fb7c89aea242e5e821459e8",
+  "auto": true,
+  "exp": "2027-02-10"
+ },
+ "jornalimigrantes.com": {
+  "conta": "Azul Magazine",
+  "aid": "4e1503962fb7c89aea242e5e821459e8",
+  "auto": false,
+  "exp": "2027-02-10"
+ },
+ "maragoginoticias.com": {
+  "conta": "Azul Magazine",
+  "aid": "4e1503962fb7c89aea242e5e821459e8",
+  "auto": true,
+  "exp": "2027-02-10"
+ },
+ "jornalacapital.com": {
+  "conta": "Barra News",
+  "aid": "47ae5909b02eec644d8ffb5a1cb9e119",
+  "auto": true,
+  "exp": "2027-02-10"
+ },
+ "jornaldinamico.com": {
+  "conta": "Barra News",
+  "aid": "47ae5909b02eec644d8ffb5a1cb9e119",
+  "auto": true,
+  "exp": "2027-02-10"
+ },
+ "jrnoticias.com": {
+  "conta": "Barra News",
+  "aid": "47ae5909b02eec644d8ffb5a1cb9e119",
+  "auto": true,
+  "exp": "2027-02-10"
+ },
+ "portalnoticiasbh.com": {
+  "conta": "Barra News",
+  "aid": "47ae5909b02eec644d8ffb5a1cb9e119",
+  "auto": false,
+  "exp": "2026-10-11"
+ },
+ "gdsnoticias.com": {
+  "conta": "Beatriz",
+  "aid": "bad26c56de2cf30c0c6890da6bd06368",
+  "auto": false,
+  "exp": "2026-10-11"
+ },
+ "mundodasnoticias.net": {
+  "conta": "Beatriz",
+  "aid": "bad26c56de2cf30c0c6890da6bd06368",
+  "auto": true,
+  "exp": "2026-10-10"
+ },
+ "noticiasgoias.com": {
+  "conta": "Beatriz",
+  "aid": "bad26c56de2cf30c0c6890da6bd06368",
+  "auto": true,
+  "exp": "2026-10-11"
+ },
+ "osertaoenoticia.com": {
+  "conta": "Beatriz",
+  "aid": "bad26c56de2cf30c0c6890da6bd06368",
+  "auto": false,
+  "exp": "2026-10-11"
+ },
+ "rumourisnews.com": {
+  "conta": "blogse",
+  "aid": "55dd51fb026f0eb537ee3c6c732227a5",
+  "auto": false,
+  "exp": "2027-02-16"
+ },
+ "edenoticias.com": {
+  "conta": "camera cotidiana",
+  "aid": "2bea7e5aa29f535f266815b9687fd6e5",
+  "auto": false,
+  "exp": "2027-02-18"
+ },
+ "noticiasdodia.net": {
+  "conta": "camera cotidiana",
+  "aid": "2bea7e5aa29f535f266815b9687fd6e5",
+  "auto": true,
+  "exp": "2027-02-18"
+ },
+ "tempusnoticias.com": {
+  "conta": "camera cotidiana",
+  "aid": "2bea7e5aa29f535f266815b9687fd6e5",
+  "auto": true,
+  "exp": "2027-02-18"
+ },
+ "noticias9.com": {
+  "conta": "Cirurgia de catarata",
+  "aid": "58a8a3e7dfd2c346d2360e4fac4263aa",
+  "auto": false,
+  "exp": "2027-02-20"
+ },
+ "r10noticias.com": {
+  "conta": "Cirurgia de catarata",
+  "aid": "58a8a3e7dfd2c346d2360e4fac4263aa",
+  "auto": false,
+  "exp": "2027-02-20"
+ },
+ "mgnoticias.net": {
+  "conta": "Curioso do Dia",
+  "aid": "ce915c98851906a22f625ce20009431c",
+  "auto": true,
+  "exp": "2027-02-23"
+ },
+ "noticiasdojogo.com": {
+  "conta": "Curioso do Dia",
+  "aid": "ce915c98851906a22f625ce20009431c",
+  "auto": false,
+  "exp": "2027-02-23"
+ },
+ "riachonoticias.net": {
+  "conta": "Curioso do Dia",
+  "aid": "ce915c98851906a22f625ce20009431c",
+  "auto": true,
+  "exp": "2027-02-23"
+ },
+ "rsnoticias.net": {
+  "conta": "Curioso do Dia",
+  "aid": "ce915c98851906a22f625ce20009431c",
+  "auto": true,
+  "exp": "2027-02-23"
+ },
+ "ferronoticias.net": {
+  "conta": "Desassossegada",
+  "aid": "2d77f3c4ec11e605cf5701e8d18d48ad",
+  "auto": false,
+  "exp": "2027-02-26"
+ },
+ "gpnoticias.com": {
+  "conta": "Desassossegada",
+  "aid": "2d77f3c4ec11e605cf5701e8d18d48ad",
+  "auto": true,
+  "exp": "2027-02-26"
+ },
+ "noticiasdiarios.com": {
+  "conta": "Desassossegada",
+  "aid": "2d77f3c4ec11e605cf5701e8d18d48ad",
+  "auto": true,
+  "exp": "2027-02-26"
+ },
+ "gazetaalerta.com": {
+  "conta": "Fatima Watanabe",
+  "aid": "524e851da1309cb006961ccf53fca0ae",
+  "auto": true,
+  "exp": "2026-11-13"
+ },
+ "gazetadoconsumidor.com": {
+  "conta": "Fatima Watanabe",
+  "aid": "524e851da1309cb006961ccf53fca0ae",
+  "auto": false,
+  "exp": "2026-11-13"
+ },
+ "tribunainformativa.com": {
+  "conta": "Fatima Watanabe",
+  "aid": "524e851da1309cb006961ccf53fca0ae",
+  "auto": false,
+  "exp": "2026-11-13"
+ },
+ "tribunalpopular.org": {
+  "conta": "Fatima Watanabe",
+  "aid": "524e851da1309cb006961ccf53fca0ae",
+  "auto": false,
+  "exp": "2026-11-13"
+ },
+ "gazetaretina.com": {
+  "conta": "Giselle Wagner",
+  "aid": "64af6d6c89878c16891bb88114bf0073",
+  "auto": true,
+  "exp": "2026-11-14"
+ },
+ "jornaldabahia.net": {
+  "conta": "Giselle Wagner",
+  "aid": "64af6d6c89878c16891bb88114bf0073",
+  "auto": false,
+  "exp": "2026-11-14"
+ },
+ "jornaldebarcelos.com": {
+  "conta": "Giselle Wagner",
+  "aid": "64af6d6c89878c16891bb88114bf0073",
+  "auto": false,
+  "exp": "2026-11-13"
+ },
+ "jornalsaosimao.com": {
+  "conta": "Giselle Wagner",
+  "aid": "64af6d6c89878c16891bb88114bf0073",
+  "auto": true,
+  "exp": "2026-11-14"
+ },
+ "umjornal.com": {
+  "conta": "Giselle Wagner",
+  "aid": "64af6d6c89878c16891bb88114bf0073",
+  "auto": false,
+  "exp": "2026-11-14"
+ },
+ "agencianacionaldenoticias.com": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "editaldeconcurso.net": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "girodasnoticias.com": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": false,
+  "exp": "2026-11-16"
+ },
+ "manacultura.com": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "noticiasagoras.com": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "noticiasubuntu.com": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "jornaldiario.net": {
+  "conta": "Mato Grosso Saúde",
+  "aid": "4bca15cea19eba9cb6bdc8e0cb4a3a7b",
+  "auto": true,
+  "exp": "2027-06-07"
+ },
+ "projetob.net": {
+  "conta": "Mato Grosso Saúde",
+  "aid": "4bca15cea19eba9cb6bdc8e0cb4a3a7b",
+  "auto": false,
+  "exp": "2027-06-05"
+ },
+ "romanceseleituras.com": {
+  "conta": "Mato Grosso Saúde",
+  "aid": "4bca15cea19eba9cb6bdc8e0cb4a3a7b",
+  "auto": true,
+  "exp": "2027-06-05"
+ },
+ "todossomosgeek.com": {
+  "conta": "Mato Grosso Saúde",
+  "aid": "4bca15cea19eba9cb6bdc8e0cb4a3a7b",
+  "auto": true,
+  "exp": "2027-06-06"
+ },
+ "sejanoticia.com": {
+  "conta": "QMIX",
+  "aid": "2ff4c5d06407622c756c5b57c46924a5",
+  "auto": false,
+  "exp": "2026-10-08"
+ }
+}

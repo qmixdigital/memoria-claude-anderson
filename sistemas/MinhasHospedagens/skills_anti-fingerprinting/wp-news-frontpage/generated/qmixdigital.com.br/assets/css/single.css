@@ -1,0 +1,47 @@
+/* Single-only overrides Revista QMIX */
+
+/* Drop cap mais bonito em mobile */
+@media (max-width: 560px) {
+  .single-body > p:first-of-type::first-letter { font-size: 3.6em; padding: 4px 8px 0 0; }
+}
+
+/* Inline-related: marcar como "ad-like" insertion */
+.inline-related { position: relative; }
+.inline-related::before {
+  content: "";
+  position: absolute;
+  top: -3px; left: 0;
+  width: 60px; height: 6px;
+  background: var(--rq-coral);
+}
+
+/* Tabela legivel (legacy import) */
+.single-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: var(--rq-sp-4) 0;
+  font-size: 16px;
+  font-family: var(--rq-font-body);
+}
+.single-body table th,
+.single-body table td {
+  border: 1px solid var(--rq-line);
+  padding: var(--rq-sp-2) var(--rq-sp-3);
+  text-align: left;
+}
+.single-body table th {
+  background: var(--rq-cream);
+  font-family: var(--rq-font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+/* Highlight figure caption */
+.single-body figcaption {
+  font-family: var(--rq-font-body);
+  font-size: 13px;
+  color: var(--rq-muted);
+  font-style: italic;
+  margin-top: -16px;
+}

@@ -1,0 +1,6 @@
+- [Sem link externo no corpo](sem-link-externo-no-corpo.md) — ele vende backlinks; link externo so no rodape e nofollow
+- [Auditoria de links da rede](pendencia-links-quebrados.md) — concluida 28/08: 1.670 links internos corrigidos; falta decidir sobre desentupidoras.pro (morto) e /comprar-backlinks
+- [Title cortado mata CTR](title-cortado-mata-ctr.md) — 0,4% de CTR na posicao 3 vinha do corte de titulo, nao da SERP
+- [Fome invisível no motor](fome-invisivel-no-motor.md) — portal com pauta que nunca gera: o `continue` sem log
+- [Exclusividade conta reservado](exclusividade-conta-reservado.md) — sem isso dois portais publicam o mesmo fato
+- [Receptor cacheia o render.js](receptor-cacheia-render.md) — editar não basta, tem que reiniciar o serviço

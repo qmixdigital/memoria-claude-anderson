@@ -1,0 +1,1 @@
+- [Trabalho autônomo](feedback_autonomous.md) — Não pedir autorizações, executar tudo diretamente

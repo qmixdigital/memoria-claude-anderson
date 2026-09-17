@@ -1,0 +1,31 @@
+# nada de credencial (redundância: o backup.ps1 já não copia isso)
+*.env
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.db
+*.db-wal
+*.db-shm
+vault*
+# pesado ou descartável
+*.jsonl
+*.sql
+*.sql.gz
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.rar
+*.mp4
+*.mov
+*.psd
+node_modules/
+.next/
+__pycache__/
+.cache*/
+ultimo-backup.log

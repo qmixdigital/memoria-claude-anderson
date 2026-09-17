@@ -1,0 +1,8 @@
+{
+  "nome": "PageSpeed Insights API",
+  "projeto_gcp": "qmix-seo",
+  "conta": "qmixdigital@gmail.com",
+  "api_key": "<<REMOVIDO>>",
+  "uso": "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=URL&strategy=mobile&key=API_KEY",
+  "criada_em": "2026-06-23"
+}

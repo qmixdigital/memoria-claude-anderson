@@ -1,0 +1,57 @@
+# Landing Pages da rede CliqueX (nicho: teste IPTV grátis)
+# URLs na forma CANÔNICA otimizada (https, apex sem www, com barra final) — igual ao <link rel="canonical"> de cada página.
+# Ordem: por data de CRIAÇÃO (mais antigo no topo). Sempre adicionar o novo site no FINAL da lista.
+
+https://cieh.com.br/
+https://www.jornalcidademg.com.br/
+https://www.faesfpi.com.br/
+https://www.anufoodbrazil.com.br/
+https://www.educacaoniteroi.com.br/
+https://www.festivalfeirapreta.com.br/
+https://tendenciaconcursos.com.br/
+https://revistabforest.com.br/
+https://aesupar.com.br/
+https://www.serpes.com.br/
+https://radioitaboraisantos.com.br/
+https://federapars.com.br/
+https://www.endipe2024.com.br/
+https://www.expoind2025.com.br/
+https://fcpge.com.br/
+https://www.fnem.com.br/
+https://cienciadotreinamento.com.br/
+https://elfolivre.com.br/
+https://falaseriocanaa.com.br/
+https://www.inteligenciacompetitivarev.com.br/
+https://agroshopacamargo.com.br/
+https://consultoriaflorapura.com.br/
+https://replicasderelogiostop.com.br/
+https://www.compdistribuidora.com.br/
+https://conviteriadaline.com.br/
+https://jcrgs.com.br/
+https://cabecadagua.com.br/
+https://ciadetalentosproducoes.com.br/
+https://leilopora.com.br/
+https://www.ticketson.com.br/
+https://cordeiropolisemfoco.com.br/
+https://estudiounidesign.com.br/
+
+# Lote conta Bruna (2026-08-19)
+https://www.gremioavalanche.com.br/
+https://autoribeirao.com.br/
+https://bangu.net.br/
+https://brooklin.net.br/
+https://www.cadernoseletronicosdisf.com.br/
+https://cakemoe.com.br/
+https://canaldoestudante.com.br/
+https://concursosc.com.br/
+https://eterfs.com.br/
+https://inovatradeshow.com.br/
+https://sblmc.com.br/
+https://tijuca.net.br/
+https://tsjoias.com.br/
+https://valparaisogoias.net.br/
+
+# Lote Bruna 2 (2026-08-20)
+https://www.craftdesign.com.br/
+https://eusou12por8.com.br/
+https://institutoavantebrasil.com.br/

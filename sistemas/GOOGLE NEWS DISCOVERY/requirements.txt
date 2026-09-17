@@ -1,0 +1,13 @@
+anthropic>=0.125
+openai>=1.0
+psycopg[binary]>=3.2
+psycopg-pool>=3.2
+trafilatura>=1.12
+lxml>=5.0
+lxml_html_clean>=0.2
+feedparser>=6.0
+httpx>=0.27
+beautifulsoup4>=4.12
+readability-lxml>=0.8.1
+python-dateutil>=2.9
+googlenewsdecoder>=0.1.7

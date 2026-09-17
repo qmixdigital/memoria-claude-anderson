@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/png;base64,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">
+<title>Relatório de Presença Digital · Dr. Fulano de Tal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:<<REMOVIDO>>;500&family=IBM+Plex+Sans:<<REMOVIDO>>;500;600&display=swap">
+<style>
+/* Paleta QMIX Digital (qmix.com.br): navy #03101e, verde neon #00ff66,
+   ambar #ffaa00, frios #c7d5e5 / #8899aa / #556677.
+   O neon so entra sobre fundo escuro; em fundo claro usamos o verde legivel. */
+:root{
+  --papel:#f2f7fc; --carta:#ffffff;
+  --tinta:#03101e; --tinta2:#556677; --tinta3:#8899aa;
+  --regua:rgba(3,16,30,.14); --regua2:rgba(3,16,30,.07);
+  --neon:#00ff66; --alta:#046b39; --alta-fraca:#e2f9ec;
+  --baixa:#c02646; --baixa-fraca:#fdeaee; --ambar:#ffaa00;
+  --barra:#7d90a4; --grafo:#046b39;
+  --ia-openai:#046b39; --ia-anthropic:#b06f00; --ia-gemini:#c02646;
+  --ia-perplexity:#3f5468; --ia-overview:#6b7a8c;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--papel); color:var(--tinta);
+  font-family:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+  font-size:15px; line-height:1.6; font-feature-settings:'kern' 1;
+}
+.folha{max-width:1080px; margin:0 auto; padding:0 28px}
+.mono{font-family:'IBM Plex Mono',ui-monospace,'Cascadia Mono',monospace}
+.num{font-variant-numeric:tabular-nums lining-nums}
+
+/* ---------- capa ---------- */
+.capa{
+  background:var(--tinta); color:var(--papel); padding:52px 0 44px;
+  background-image:radial-gradient(circle at 88% 6%, rgba(0,255,102,.30), transparent 48%);
+}
+.selo{font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--neon)}
+.capa h1{
+  font-family:Fraunces,Georgia,'Times New Roman',serif;
+  font-weight:600; font-size:clamp(30px,5vw,50px); line-height:1.06;
+  margin:14px 0 10px; letter-spacing:-.015em;
+}
+.capa .sub{color:#c7d5e5; font-size:14px; margin:0}
+.destaques{
+  display:grid; gap:1px; background:rgba(255,255,255,.14); margin-top:38px;
+  grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+  border:1px solid rgba(255,255,255,.14);
+}
+.destaques div{background:var(--tinta); padding:20px 22px}
+.destaques .v{font-size:31px; font-weight:600; line-height:1.1;
+              letter-spacing:-.02em; color:var(--neon)}
+.destaques .r{font-size:12px; color:#8899aa; margin-top:6px; line-height:1.45}
+
+/* ---------- secoes ---------- */
+section{padding:52px 0 8px; border-top:1px solid var(--regua)}
+section:first-of-type{border-top:0}
+.cab{display:flex; align-items:baseline; gap:16px; margin-bottom:6px}
+.cab .idx{font-size:12px; color:var(--alta); letter-spacing:.14em}
+.cab h2{
+  font-family:Fraunces,Georgia,serif; font-weight:600;
+  font-size:clamp(22px,3.2vw,30px); margin:0; letter-spacing:-.01em;
+}
+.linhafina{color:var(--tinta2); font-size:14px; margin:0 0 26px; max-width:65ch}
+h3{font-size:13px; letter-spacing:.1em; text-transform:uppercase;
+   color:var(--tinta2); margin:36px 0 14px; font-weight:600}
+
+/* ---------- indicadores ---------- */
+.kpis{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(178px,1fr))}
+.kpi{background:var(--carta); border:1px solid var(--regua2); border-radius:3px;
+     padding:18px 20px 16px; box-shadow:0 1px 0 rgba(3,16,30,.04)}
+.kpi .v{font-size:30px; font-weight:600; letter-spacing:-.025em; line-height:1.12}
+.kpi .r{font-size:12.5px; color:var(--tinta2); margin-top:5px; line-height:1.4}
+.chip{display:inline-block; font-size:11.5px; font-weight:600; margin-top:9px;
+      padding:2px 8px; border-radius:2px; letter-spacing:.01em}
+.chip.sobe{background:var(--alta-fraca); color:var(--alta)}
+.chip.desce{background:var(--baixa-fraca); color:var(--baixa)}
+.chip.igual{background:rgba(3,16,30,.05); color:var(--tinta2)}
+
+/* ---------- ranking: o coracao do relatorio ---------- */
+.perg{background:var(--carta); border:1px solid var(--regua2); border-radius:3px;
+      padding:22px 24px 18px; margin-bottom:16px}
+.perg .q{font-family:Fraunces,Georgia,serif; font-size:18px; font-weight:500;
+         line-height:1.35; margin:0 0 4px}
+.perg .meta{font-size:12px; color:var(--tinta3); margin:0 0 16px}
+.rank{list-style:none; margin:0; padding:0; counter-reset:r}
+.rank li{
+  display:grid; grid-template-columns:34px 1fr; align-items:baseline; gap:12px;
+  padding:9px 12px 9px 10px; border-radius:3px; font-size:14.5px;
+  border-left:3px solid transparent;
+}
+.rank li + li{border-top:1px solid var(--regua2)}
+.rank .pos{font-size:12px; color:var(--tinta3); letter-spacing:.02em}
+.rank li.voce{
+  background:var(--alta-fraca); border-left-color:var(--alta);
+  border-top-color:transparent; font-weight:600;
+}
+.rank li.voce .pos{color:var(--alta)}
+.rank li.voce .marca{
+  font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--alta); margin-left:10px; font-weight:600; white-space:nowrap;
+}
+.selo-ia{display:inline-flex; align-items:center; gap:8px; padding:6px 13px 6px 9px;
+   border-radius:3px; font-size:12.5px; font-weight:700; letter-spacing:.06em;
+   text-transform:uppercase; color:var(--ia-overview); background:var(--carta);
+   border:1.5px solid currentColor}
+.selo-ia svg{flex:0 0 auto}
+.ia-openai .selo-ia{color:var(--ia-openai)}
+.ia-anthropic .selo-ia{color:var(--ia-anthropic)}
+.ia-gemini .selo-ia{color:var(--ia-gemini)}
+.ia-perplexity .selo-ia{color:var(--ia-perplexity)}
+.barra.com-ico .nome{display:flex; align-items:center; gap:9px}
+.barra .ico{flex:0 0 auto; display:inline-flex; line-height:0}
+.perg{border-top:3px solid var(--ia-overview)}
+.perg.ia-openai{border-top-color:var(--ia-openai)}
+.perg.ia-anthropic{border-top-color:var(--ia-anthropic)}
+.perg.ia-gemini{border-top-color:var(--ia-gemini)}
+.perg.ia-perplexity{border-top-color:var(--ia-perplexity)}
+.topo-perg{display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:14px}
+.topo-perg .meta{margin:0; font-size:12.5px; color:var(--tinta2)}
+a{color:var(--alta); text-decoration:none; border-bottom:1px solid rgba(4,107,57,.3)}
+a:hover{border-bottom-color:var(--alta); background:var(--alta-fraca)}
+a:focus-visible{outline:2px solid var(--alta); outline-offset:2px}
+.tab a, .barra a{color:var(--tinta); border-bottom-color:rgba(3,16,30,.18)}
+.tab a:hover, .barra a:hover{color:var(--alta); border-bottom-color:var(--alta)}
+.ausente{padding:12px 14px; background:rgba(3,16,30,.04); border-radius:3px;
+         font-size:14px; color:var(--tinta2)}
+.citacao mark{background:rgba(4,107,57,.15); color:var(--alta);
+                font-weight:600; padding:1px 3px; border-radius:2px}
+.citacao{margin:14px 0 0; padding:12px 16px; border-left:2px solid var(--regua);
+         color:var(--tinta2); font-size:13.5px; font-style:italic}
+
+/* ---------- barras ---------- */
+.barras{background:var(--carta); border:1px solid var(--regua2);
+        border-radius:3px; padding:22px 24px}
+.barra{display:grid; grid-template-columns:minmax(150px,240px) 1fr 66px;
+       align-items:center; gap:14px; padding:7px 0; font-size:14px}
+.barra + .barra{border-top:1px solid var(--regua2)}
+.barra .nome{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.trilho{background:rgba(3,16,30,.07); height:9px; border-radius:1px}
+.enche{background:var(--barra); height:9px; border-radius:1px; display:block}
+.barra.voce .nome{font-weight:600; color:var(--alta)}
+.barra.voce .enche{background:var(--alta)}
+.barra .val{text-align:right; font-size:13px; color:var(--tinta2)}
+
+/* ---------- grafico ---------- */
+.grafico{background:var(--carta); border:1px solid var(--regua2);
+         border-radius:3px; padding:22px 24px 14px}
+.grafico svg{display:block; width:100%; height:auto}
+.eixo{display:flex; justify-content:space-between; font-size:11.5px;
+      color:var(--tinta3); margin-top:8px}
+
+/* ---------- tabelas ---------- */
+.tabwrap{overflow-x:auto}
+.tab{width:100%; border-collapse:collapse; background:var(--carta);
+     border:1px solid var(--regua2); border-radius:3px}
+.tab caption{text-align:left; font-size:12.5px; color:var(--tinta3);
+             padding:0 0 10px}
+.tab th{text-align:left; font-size:11px; letter-spacing:.1em; text-transform:uppercase;
+        color:var(--tinta2); font-weight:600; padding:13px 16px; border:0;
+        background:transparent; border-bottom:1px solid var(--regua)}
+.tab td{padding:12px 16px; border:0; border-top:1px solid var(--regua2);
+        font-size:14px; vertical-align:top; background:transparent}
+.tab td.n, .tab th.n{text-align:right; white-space:nowrap}
+.tab tbody tr:first-child td{border-top:0}
+.sim{color:var(--alta); font-weight:600}
+.chave-nao{color:var(--baixa); font-weight:600}
+.nao{color:var(--tinta3)}
+
+.explica{background:#eef6ff; border:1px solid #cfe2f7; border-left:4px solid #3f5468;
+   border-radius:3px; padding:16px 20px; margin:0 0 24px; font-size:13.5px;
+   color:var(--tinta2); line-height:1.62}
+.explica strong{color:var(--tinta); display:block; margin-bottom:5px; font-size:13px;
+   letter-spacing:.03em; text-transform:uppercase}
+.explica em{font-style:normal; font-weight:600; color:var(--tinta)}
+.subtotal{display:flex; align-items:baseline; gap:10px; margin:0 0 12px}
+.subtotal .n{font-size:26px; font-weight:600; letter-spacing:-.02em; color:var(--alta)}
+.subtotal .t{font-size:13.5px; color:var(--tinta2)}
+.fonte-dado{display:inline-flex; align-items:center; gap:8px; padding:6px 13px 6px 9px;
+   background:var(--carta); border:1px solid var(--regua); border-radius:3px;
+   font-size:12.5px; font-weight:600; color:var(--tinta); margin-bottom:16px}
+.fonte-dado svg{flex:0 0 auto}
+.artigos{background:var(--carta); border:1px solid var(--regua2); border-radius:3px;
+   padding:6px 24px 12px}
+.artigo{padding:14px 0; border-top:1px solid var(--regua2)}
+.artigo:first-child{border-top:0}
+.artigo .cab-f{display:flex; align-items:baseline; justify-content:space-between;
+   gap:14px; margin-bottom:2px}
+.artigo .dom{font-weight:600; font-size:14.5px}
+.artigo .vezes{font-size:12.5px; color:var(--tinta3); white-space:nowrap}
+.artigo .trilho{margin:7px 0 9px}
+.artigo ul{list-style:none; margin:0; padding:0}
+.artigo li{font-size:13px; line-height:1.5; padding:3px 0 3px 15px; position:relative;
+   overflow-wrap:anywhere}
+.artigo li::before{content:"↗"; position:absolute; left:0; color:var(--tinta3);
+   font-size:11px; top:5px}
+.assinatura{display:flex; align-items:center; gap:26px; flex-wrap:wrap;
+   padding:24px 26px; background:var(--tinta); border-radius:3px; margin-top:20px}
+.assinatura img{display:block; height:36px; width:auto; flex:0 0 auto}
+.texto-marca{flex:1 1 300px; min-width:0}
+.assinatura p{margin:0; color:#c7d5e5}
+.assinatura .chamada{font-family:Fraunces,Georgia,serif; font-size:19px;
+   line-height:1.25; color:#fff; letter-spacing:-.01em}
+.assinatura .promessa{font-size:13.5px; line-height:1.55; margin-top:5px;
+   max-width:52ch}
+.assinatura .creditos{font-size:12px; color:#8899aa; margin-top:11px}
+/* Especificidade acima de ".rodape strong", que é escuro e vem depois. */
+.rodape .assinatura strong{color:var(--neon); font-weight:600}
+@media (max-width:640px){
+  .assinatura{flex-direction:column; align-items:flex-start; gap:16px;
+              padding:22px 20px}
+  /* Em coluna, o eixo principal vira o vertical: sem zerar isto, o
+     flex-basis de 300px passa a valer como ALTURA e estica a caixa. */
+  .texto-marca{flex:0 0 auto; width:100%}
+  .assinatura .promessa{max-width:none}
+}
+.assinatura a{color:var(--neon); border-bottom-color:rgba(0,255,102,.4)}
+.assinatura a:hover{background:transparent; border-bottom-color:var(--neon)}
+.marca-texto{font-family:Fraunces,Georgia,serif; font-size:22px; color:var(--neon)}
+.video .cab .idx{font-size:15px}
+.quadro{position:relative; aspect-ratio:16/9; background:var(--tinta);
+   border-radius:3px; overflow:hidden; border:1px solid var(--regua2)}
+.quadro iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
+/* O iframe já traz a própria proporção: forçar 16/9 por cima distorce. */
+.quadro.livre{aspect-ratio:auto; overflow:visible; background:transparent;
+   border:0; border-radius:0}
+.quadro.livre iframe{position:static; inset:auto; height:auto;
+   border-radius:3px; border:1px solid var(--regua2)}
+.fora{font-size:13px; color:var(--tinta2); margin:10px 0 0}
+.transcricao{margin-top:14px; background:var(--carta); border:1px solid var(--regua2);
+   border-radius:3px}
+.transcricao summary{cursor:pointer; padding:14px 20px; font-size:13.5px;
+   font-weight:600; color:var(--alta); list-style:none}
+.transcricao summary::-webkit-details-marker{display:none}
+.transcricao summary::before{content:"+ "; font-weight:700}
+.transcricao[open] summary::before{content:"− "}
+.transcricao summary:hover{background:var(--alta-fraca)}
+.transcricao > div{padding:2px 20px 18px; border-top:1px solid var(--regua2)}
+.transcricao p{margin:12px 0 0; font-size:14px; line-height:1.65; color:var(--tinta2)}
+@media print{ .video .quadro{display:none} .transcricao[open] summary{display:none} }
+.recos{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(310px,1fr))}
+.reco{background:var(--carta); border:1px solid var(--regua2); border-radius:3px;
+   padding:18px 22px 20px; border-top:3px solid var(--tinta3)}
+.reco.p-alta{border-top-color:var(--baixa)}
+.reco.p-media{border-top-color:var(--ambar)}
+.reco.p-baixa{border-top-color:var(--tinta3)}
+.reco-topo{display:flex; align-items:baseline; justify-content:space-between;
+   gap:12px; margin-bottom:8px}
+.reco h3{margin:0; font-family:Fraunces,Georgia,serif; font-size:17px;
+   text-transform:none; letter-spacing:0; color:var(--tinta); font-weight:600}
+.reco .prio{font-size:10px; letter-spacing:.12em; text-transform:uppercase;
+   font-weight:700; color:var(--tinta3); white-space:nowrap}
+.reco.p-alta .prio{color:var(--baixa)}
+.reco.p-media .prio{color:#8a6100}
+.reco .achado{margin:0 0 12px; font-size:13.5px; line-height:1.6;
+   color:var(--tinta2); padding-bottom:12px; border-bottom:1px solid var(--regua2)}
+.acoes{list-style:none; margin:0; padding:0}
+.acoes li{position:relative; padding:7px 0 7px 20px; font-size:14px; line-height:1.5}
+.acoes li::before{content:"→"; position:absolute; left:0; color:var(--alta);
+   font-weight:700}
+.feito{list-style:none; margin:0; padding:0}
+.feito li{padding:11px 0 11px 26px; position:relative; font-size:14.5px;
+   border-top:1px solid var(--regua2)}
+.feito li:first-child{border-top:0}
+.feito li::before{content:"✓"; position:absolute; left:0; top:11px;
+   color:var(--alta); font-weight:700}
+.ganho{color:var(--alta); font-weight:600; white-space:nowrap}
+.nota{background:rgba(3,16,30,.04); border-left:3px solid var(--tinta3);
+      padding:14px 18px; font-size:13.5px; color:var(--tinta2); border-radius:2px;
+      margin-top:18px}
+.nota.alerta{background:var(--baixa-fraca); border-left-color:var(--baixa);
+             color:#7a3220}
+.rodape{border-top:1px solid var(--regua); margin-top:56px; padding:26px 0 40px;
+        font-size:12.5px; color:var(--tinta3)}
+.rodape strong{color:var(--tinta2)}
+
+@media (max-width:640px){
+  .folha{padding:0 18px}
+  .capa{padding:38px 0 32px}
+  section{padding:38px 0 4px}
+  .barra{grid-template-columns:1fr; gap:5px; padding:11px 0}
+  .barra .val{text-align:left}
+  .rank li{grid-template-columns:28px 1fr; gap:8px}
+  .rank li.voce .marca{display:block; margin:2px 0 0}
+  .tabwrap{overflow:visible}
+  .tab{border:0; background:transparent}
+  .tab caption{display:none}
+  .tab thead{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0)}
+  .tab, .tab tbody, .tab tr, .tab th, .tab td{display:block; width:auto}
+  .tab tbody tr{background:var(--carta); border:1px solid var(--regua2);
+                border-radius:3px; padding:6px 18px 16px; margin-bottom:12px}
+  .tab tbody td{border:0; background:transparent; padding:13px 0 0; text-align:left}
+  .tab td.n{text-align:left}
+  .tab tbody td::before{content:attr(data-rotulo); display:block; font-weight:600;
+                        font-size:10.5px; letter-spacing:.09em; text-transform:uppercase;
+                        color:var(--tinta3); margin-bottom:2px}
+}
+@media print{
+  body{background:#fff}
+  .assinatura{background:var(--tinta); -webkit-print-color-adjust:exact;
+              print-color-adjust:exact}
+  .capa{background:#fff; color:var(--tinta); border-bottom:2px solid var(--tinta)}
+  .capa .selo,.capa .sub,.destaques .r{color:var(--tinta2)}
+  .destaques{background:var(--regua); border-color:var(--regua)}
+  .destaques div{background:#fff}
+  section{break-inside:avoid; page-break-inside:avoid}
+  .perg,.kpi,.barras,.grafico{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header class="capa"><div class="folha">
+  <p class="selo mono">QMIX Digital · Relatório mensal</p>
+  <h1>Dr. Fulano de Tal</h1>
+  <p class="sub">Presença digital nos últimos 30 dias · Inteligência Artificial,
+     Google e audiência do site · Emitido em 07/09/2026</p>
+  <div class="destaques"><div><div class="v num">100%</div><div class="r">das respostas de IA citaram você</div></div><div><div class="v num">1,5º</div><div class="r">posição média na lista da IA</div></div></div>
+</div></header>
+
+<main class="folha"><section>
+  <div class="cab"><span class="idx mono">01</span><h2>Visibilidade em Inteligência Artificial</h2></div>
+  <p class="linhafina">Perguntamos às IAs exatamente o que um paciente pergunta antes de
+     escolher um médico, e registramos em que posição o seu nome aparece na resposta.</p>
+  <div class="kpis"><div class="kpi"><div class="v num">100%</div><div class="r">Respostas em que você foi citado</div><span class="chip sobe">▲ +100 pp vs. período anterior</span></div><div class="kpi"><div class="v num">1,5º</div><div class="r">Posição média na lista da IA</div><span class="chip igual">sem base anterior</span></div><div class="kpi"><div class="v num">1</div><div class="r">Vezes em 1º lugar, de 2 consultas</div></div><div class="kpi"><div class="v num">2</div><div class="r">Ferramentas de IA consultadas</div></div></div><div class="nota alerta"><strong>Cobertura do período:</strong> 1 de 3 consultas não puderam ser concluídas e ficaram fora dos percentuais acima.</div>
+
+  <h3>Evolução da sua presença nas IAs</h3>
+  <p class="linhafina">Percentual de respostas que citaram o seu nome, por data de
+     medição.</p>
+  
+
+  <h3>A lista que a IA entregou, na ordem</h3>
+  <article class="perg ia-anthropic"><p class="q">Indique um cirurgião de joelho em Goiânia</p><div class="topo-perg"><span class="selo-ia"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><g stroke="#D97757" stroke-width="1.9" stroke-linecap="round"><path d="M12 3.6v5"/><path d="M12 15.4v5"/><path d="M3.6 12h5"/><path d="M15.4 12h5"/><path d="M6.1 6.1l3.5 3.5"/><path d="M14.4 14.4l3.5 3.5"/><path d="M17.9 6.1l-3.5 3.5"/><path d="M9.6 14.4l-3.5 3.5"/></g></svg>Claude</span><p class="meta">Você foi citado em <strong>2º lugar</strong> de 3 nomes</p></div><ol class="rank"><li class=""><span class="pos mono num">01</span><span>Dr. Beltrano</span></li><li class="voce"><span class="pos mono num">02</span><span>Dr. Fulano de Tal<span class="marca">você está aqui</span></span></li><li class=""><span class="pos mono num">03</span><span>Dr. Sicrano</span></li></ol><p class="citacao">“...entre os mais recomendados está Fulano de Tal, bem avaliado...”</p></article><article class="perg ia-openai"><p class="q">Quem é o melhor ortopedista de joelho em Goiânia?</p><div class="topo-perg"><span class="selo-ia"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#10A37F"/><path d="M6.6 8.4h10.8v6.2h-5.1l-3.2 2.5v-2.5H6.6z" fill="#fff"/></svg>ChatGPT</span><p class="meta">Você foi citado em <strong>1º lugar</strong> de 3 nomes</p></div><ol class="rank"><li class="voce"><span class="pos mono num">01</span><span>Dr. Fulano de Tal<span class="marca">você está aqui</span></span></li><li class=""><span class="pos mono num">02</span><span>Dr. Beltrano</span></li><li class=""><span class="pos mono num">03</span><span>Dr. Sicrano</span></li></ol><p class="citacao">“...o <mark>Dr. Fulano de Tal</mark> é referência em cirurgia de joelho na região...”</p></article>
+
+  <h3>Frequência de aparição: você e os concorrentes</h3>
+  <div class="barras"><div class="barra voce"><span class="nome">Dr. Fulano de Tal</span><span class="trilho"><span class="enche" style="width:100%"></span></span><span class="val num">2x</span></div><div class="barra"><span class="nome">Dr. Beltrano</span><span class="trilho"><span class="enche" style="width:100%"></span></span><span class="val num">2x</span></div><div class="barra"><span class="nome">Dr. Sicrano</span><span class="trilho"><span class="enche" style="width:100%"></span></span><span class="val num">2x</span></div></div>
+
+  <h3>De onde a IA tirou a resposta</h3>
+  <p class="linhafina">Os artigos que a IA leu para montar a resposta. Clique para
+     abrir e ver exatamente o que ela encontrou sobre você e sobre os concorrentes.
+     Estar presente nestas páginas é o caminho mais direto para ser recomendado.</p>
+  <div class="artigos"><div class="artigo"><div class="cab-f"><span class="dom"><a href="https://doctoralia.com.br" target="_blank" rel="noopener">doctoralia.com.br</a></span><span class="vezes num">2x citado</span></div><span class="trilho" style="display:block"><span class="enche" style="width:100%"></span></span><ul><li><a href="https://doctoralia.com.br" target="_blank" rel="noopener">página inicial</a></li></ul></div><div class="artigo"><div class="cab-f"><span class="dom"><a href="https://drfulano.com.br" target="_blank" rel="noopener">drfulano.com.br</a></span><span class="vezes num">1x citado</span></div><span class="trilho" style="display:block"><span class="enche" style="width:50%"></span></span><ul><li><a href="https://drfulano.com.br" target="_blank" rel="noopener">página inicial</a></li></ul></div><div class="artigo"><div class="cab-f"><span class="dom"><a href="https://em.com.br" target="_blank" rel="noopener">em.com.br</a></span><span class="vezes num">1x citado</span></div><span class="trilho" style="display:block"><span class="enche" style="width:50%"></span></span><ul><li><a href="https://em.com.br" target="_blank" rel="noopener">página inicial</a></li></ul></div></div>
+</section>
+  <footer class="rodape">
+    <p><strong>Como estes números são apurados.</strong> A seção de Inteligência
+       Artificial vem de perguntas reais enviadas às ferramentas de IA com busca na web
+       ativada, e a posição é a ordem em que os nomes aparecem na resposta. O desempenho
+       no Google vem do Search Console, que fecha os dados com cerca de três dias de
+       atraso. A audiência vem do Google Analytics 4.</p>
+    <div class="assinatura">
+      <img src="data:image/webp;base64,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" alt="QMIX Digital" width="132" height="34">
+      <div class="texto-marca">
+        <p class="chamada">Agência de <strong>SEO&nbsp;e&nbsp;GEO</strong></p>
+        <p class="promessa">Seu site e suas redes na primeira página do Google
+           e nas respostas das IAs.</p>
+        <p class="creditos">Relatório produzido pela QMIX Digital ·
+           <a href="https://qmix.com.br" target="_blank" rel="noopener">qmix.com.br</a></p>
+      </div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,206 @@
+{
+ "nodiario.com": {
+  "conta": "Advivo",
+  "aid": "27036304c8da0371f0f90a63c0193c95",
+  "auto": true,
+  "exp": "2027-02-06"
+ },
+ "jornalistanofato.com": {
+  "conta": "Aluguel Sites 5",
+  "aid": "3167ec16d6b759a1bb6eb8d62e8025f5",
+  "auto": true,
+  "exp": "2026-11-30"
+ },
+ "olharmoderno.com": {
+  "conta": "Aluguel Sites 5",
+  "aid": "3167ec16d6b759a1bb6eb8d62e8025f5",
+  "auto": true,
+  "exp": "2026-11-30"
+ },
+ "professortic.com": {
+  "conta": "Aluguel Sites 5",
+  "aid": "3167ec16d6b759a1bb6eb8d62e8025f5",
+  "auto": true,
+  "exp": "2026-11-29"
+ },
+ "semtedio.com": {
+  "conta": "Aluguel Sites 5",
+  "aid": "3167ec16d6b759a1bb6eb8d62e8025f5",
+  "auto": true,
+  "exp": "2026-11-29"
+ },
+ "jornalexpresso.net": {
+  "conta": "Anderson Alves",
+  "aid": "9ecbf885a61a34c6ac4d73033fa0f497",
+  "auto": true,
+  "exp": "2026-10-07"
+ },
+ "jornalconceito.com": {
+  "conta": "Azul Magazine",
+  "aid": "4e1503962fb7c89aea242e5e821459e8",
+  "auto": false,
+  "exp": "2027-02-10"
+ },
+ "maragoginoticias.com": {
+  "conta": "Azul Magazine",
+  "aid": "4e1503962fb7c89aea242e5e821459e8",
+  "auto": false,
+  "exp": "2027-02-10"
+ },
+ "jornalacapital.com": {
+  "conta": "Barra News",
+  "aid": "47ae5909b02eec644d8ffb5a1cb9e119",
+  "auto": false,
+  "exp": "2027-02-10"
+ },
+ "jornaldinamico.com": {
+  "conta": "Barra News",
+  "aid": "47ae5909b02eec644d8ffb5a1cb9e119",
+  "auto": true,
+  "exp": "2027-02-10"
+ },
+ "jrnoticias.com": {
+  "conta": "Barra News",
+  "aid": "47ae5909b02eec644d8ffb5a1cb9e119",
+  "auto": true,
+  "exp": "2027-02-10"
+ },
+ "mundodasnoticias.net": {
+  "conta": "Beatriz",
+  "aid": "bad26c56de2cf30c0c6890da6bd06368",
+  "auto": true,
+  "exp": "2026-10-10"
+ },
+ "clickinfohub.com": {
+  "conta": "blogse",
+  "aid": "55dd51fb026f0eb537ee3c6c732227a5",
+  "auto": false,
+  "exp": "2027-02-17"
+ },
+ "portalr5.com": {
+  "conta": "blogse",
+  "aid": "55dd51fb026f0eb537ee3c6c732227a5",
+  "auto": false,
+  "exp": "2027-02-16"
+ },
+ "agoranoticias.net": {
+  "conta": "camera cotidiana",
+  "aid": "2bea7e5aa29f535f266815b9687fd6e5",
+  "auto": true,
+  "exp": "2027-02-18"
+ },
+ "noticiasdodia.net": {
+  "conta": "camera cotidiana",
+  "aid": "2bea7e5aa29f535f266815b9687fd6e5",
+  "auto": true,
+  "exp": "2027-02-18"
+ },
+ "tempusnoticias.com": {
+  "conta": "camera cotidiana",
+  "aid": "2bea7e5aa29f535f266815b9687fd6e5",
+  "auto": true,
+  "exp": "2027-02-18"
+ },
+ "mgnoticias.net": {
+  "conta": "Curioso do Dia",
+  "aid": "ce915c98851906a22f625ce20009431c",
+  "auto": false,
+  "exp": "2027-02-23"
+ },
+ "riachonoticias.net": {
+  "conta": "Curioso do Dia",
+  "aid": "ce915c98851906a22f625ce20009431c",
+  "auto": false,
+  "exp": "2027-02-23"
+ },
+ "rsnoticias.net": {
+  "conta": "Curioso do Dia",
+  "aid": "ce915c98851906a22f625ce20009431c",
+  "auto": false,
+  "exp": "2027-02-23"
+ },
+ "gpnoticias.com": {
+  "conta": "Desassossegada",
+  "aid": "2d77f3c4ec11e605cf5701e8d18d48ad",
+  "auto": true,
+  "exp": "2027-02-26"
+ },
+ "noticiasdiarios.com": {
+  "conta": "Desassossegada",
+  "aid": "2d77f3c4ec11e605cf5701e8d18d48ad",
+  "auto": true,
+  "exp": "2027-02-26"
+ },
+ "gazetaalerta.com": {
+  "conta": "Fatima Watanabe",
+  "aid": "524e851da1309cb006961ccf53fca0ae",
+  "auto": false,
+  "exp": "2026-11-13"
+ },
+ "gazetaretina.com": {
+  "conta": "Giselle Wagner",
+  "aid": "64af6d6c89878c16891bb88114bf0073",
+  "auto": true,
+  "exp": "2026-11-14"
+ },
+ "jornalsaosimao.com": {
+  "conta": "Giselle Wagner",
+  "aid": "64af6d6c89878c16891bb88114bf0073",
+  "auto": true,
+  "exp": "2026-11-14"
+ },
+ "agencianacionaldenoticias.com": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "boxnoticias.net": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "editaldeconcurso.net": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "manacultura.com": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "noticiasagoras.com": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "noticiasubuntu.com": {
+  "conta": "Juliana Moraes",
+  "aid": "24b6021d69cd66b227a5d845fbac38bf",
+  "auto": true,
+  "exp": "2026-11-16"
+ },
+ "jornaldiario.net": {
+  "conta": "Mato Grosso Saúde",
+  "aid": "4bca15cea19eba9cb6bdc8e0cb4a3a7b",
+  "auto": false,
+  "exp": "2027-06-07"
+ },
+ "romanceseleituras.com": {
+  "conta": "Mato Grosso Saúde",
+  "aid": "4bca15cea19eba9cb6bdc8e0cb4a3a7b",
+  "auto": false,
+  "exp": "2027-06-05"
+ },
+ "todossomosgeek.com": {
+  "conta": "Mato Grosso Saúde",
+  "aid": "4bca15cea19eba9cb6bdc8e0cb4a3a7b",
+  "auto": false,
+  "exp": "2027-06-06"
+ }
+}

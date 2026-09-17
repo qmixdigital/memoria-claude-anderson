@@ -1,0 +1,1 @@
+- [Créditos dos fornecedores — acompanhamento próprio](smspix-creditos-fornecedores-acompanhamento-proprio.md) — não alertar sobre saldo de 5sim/Grizzly nos resumos.

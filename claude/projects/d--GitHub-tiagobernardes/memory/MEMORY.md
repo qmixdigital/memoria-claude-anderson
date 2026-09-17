@@ -1,0 +1,3 @@
+- [Conta de serviço do Search Console](gsc-service-account.md) — chave em DocumentsAPIs dá acesso ao GSC de 9 propriedades da rede, não só ao GA4
+- [Entregar links clicáveis](entregar-links-clicaveis.md) — sempre terminar a entrega com as URLs completas das páginas criadas
+- [Migração para Cloudflare Pages](migracao-cloudflare-pages.md) — domínio inteiro no Pages desde 16/09/2026; WP, site antigo e backups apagados; fonte dos posts é blog/dados/wp-export.json; como publicar e limites medidos

@@ -1,0 +1,2 @@
+- [SEO risk tolerance — máxima](feedback_seo_risk.md) — usuário aceita gray/black hat completo no FETH, sem medo de penalização
+- [FETH Diretório — visão geral](project_feth_overview.md) — diretório IPTV concorrente do lepur, 113 páginas, tema Warm Charcoal + Sage

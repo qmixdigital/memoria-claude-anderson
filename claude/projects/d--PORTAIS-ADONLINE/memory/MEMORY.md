@@ -1,0 +1,1 @@
+- [Estado atual do AdOnline](adonline-estado-atual.md) — corrige o README da pasta: 739 posts (limpeza 13/08), CF conta30, GSC delegado

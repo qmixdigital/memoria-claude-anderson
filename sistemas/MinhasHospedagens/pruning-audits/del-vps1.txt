@@ -1,0 +1,82 @@
+advdobrasil.com.br | TOTAL_DEL=0
+blog.advdobrasil.com.br | TOTAL_DEL=0
+carretaspresidente.com.br | TOTAL_DEL=0
+clickinfohub.com | DEL 1694 Como o mercado de colecionáveis de He-Man cresceu com os anos
+clickinfohub.com | TOTAL_DEL=1
+comprarvisualizacoes.com | TOTAL_DEL=0
+dataroomus.com | DEL 1771 As edições especiais de brinquedos de He-Man mais procuradas
+dataroomus.com | TOTAL_DEL=1
+diariodatv.com | DEL 1955 Como os brinquedos de He-Man viraram itens de colecionador raros
+diariodatv.com | TOTAL_DEL=1
+diariodegoiania.com | DEL 6118 Como a animação de He-Man era produzida nos estúdios da Filmation
+diariodegoiania.com | TOTAL_DEL=1
+diariodobrejo.com | DEL 4991 As animações modernas de He-Man que renovaram a franquia
+diariodobrejo.com | TOTAL_DEL=1
+edenoticias.com | DEL 1935 Como a Mattel criou o universo de He-Man e Mestres do Universo
+edenoticias.com | TOTAL_DEL=1
+energiaeficiente.com.br | TOTAL_DEL=0
+entrenoticia.com | DEL 2091 Os artefatos mágicos mais poderosos do universo de He-Man
+entrenoticia.com | TOTAL_DEL=1
+euvo.com.br | DEL 10600 A história de Gato Guerreiro, o fiel companheiro do herói He-Man
+euvo.com.br | TOTAL_DEL=1
+ferronoticias.net | DEL 1733 A história de Teela e seu papel no universo de Mestres do Universo
+ferronoticias.net | TOTAL_DEL=1
+filmeseseriesnovas.com | DEL 7159 As curiosidades mais surpreendentes sobre o universo de He-Man
+filmeseseriesnovas.com | TOTAL_DEL=1
+folhaum.com | DEL 5110 As melhores fases do desenho animado de Mestres do Universo
+folhaum.com | TOTAL_DEL=1
+gdsnoticias.com | DEL 4827 As mensagens educativas no final dos episódios de He-Man
+gdsnoticias.com | TOTAL_DEL=1
+gpnoticias.com | DEL 1850 Quem é He-Man e como ele se tornou o herói mais forte de Eternia
+gpnoticias.com | TOTAL_DEL=1
+jornalacapital.com | DEL 2013 Como Mestres do Universo virou referência na cultura geek atual
+jornalacapital.com | TOTAL_DEL=1
+jornaldinamico.com | DEL 1901 Como He-Man se tornou um fenômeno mundial na década de 80
+jornaldinamico.com | TOTAL_DEL=1
+jornalexpresso.net | DEL 9646 Como o desenho de She-Ra expandiu o universo de He-Man
+jornalexpresso.net | TOTAL_DEL=1
+jornalimigrantes.com | DEL 1981 Como a linha de brinquedos de He-Man influenciou os desenhos
+jornalimigrantes.com | TOTAL_DEL=1
+jrnoticias.com | DEL 1997 A história da franquia He-Man desde a sua criação nos anos 80
+jrnoticias.com | TOTAL_DEL=1
+maragoginoticias.com | DEL 1924 Os quadrinhos de He-Man e sua importância para toda a franquia
+maragoginoticias.com | TOTAL_DEL=1
+matogrossosaude.com.br | TOTAL_DEL=0
+mgnoticias.net | DEL 1841 Por que He-Man continua relevante mesmo depois de tantos anos
+mgnoticias.net | TOTAL_DEL=1
+mundodasnoticias.net | DEL 4702 As diferenças entre o desenho clássico e as versões modernas
+mundodasnoticias.net | TOTAL_DEL=1
+nodiario.com | DEL 1987 Como os bonecos de He-Man revolucionaram a indústria de brinquedos
+nodiario.com | TOTAL_DEL=1
+noticias9.com | DEL 1911 Como He-Man chegou ao Brasil e conquistou os fãs brasileiros
+noticias9.com | TOTAL_DEL=1
+noticiasdasemana.com | DEL 2038 A história dos bonecos de Mestres do Universo feitos pela Mattel
+noticiasdasemana.com | TOTAL_DEL=1
+noticiasdiarios.com | TOTAL_DEL=0
+noticiasdodia.net | DEL 2007 O legado de He-Man na cultura pop de diferentes gerações
+noticiasdodia.net | TOTAL_DEL=1
+noticiasdojogo.com | DEL 1556 Como Mestres do Universo marcou a infância de uma geração inteira
+noticiasdojogo.com | TOTAL_DEL=1
+noticiasgoias.com | DEL 3365 Como o desenho de He-Man ensinava lições morais às crianças
+noticiasgoias.com | TOTAL_DEL=1
+osertaoenoticia.com | DEL 4673 A relação entre os desenhos de He-Man e She-Ra no universo
+osertaoenoticia.com | TOTAL_DEL=1
+pael.com.br | TOTAL_DEL=0
+portalnoticiasbh.com | DEL 4782 Os episódios mais marcantes do desenho de Mestres do Universo
+portalnoticiasbh.com | TOTAL_DEL=1
+portalr5.com | DEL 1876 Como os brinquedos de He-Man dominaram o mercado dos anos 80
+portalr5.com | TOTAL_DEL=1
+qmiximoveis.com.br | TOTAL_DEL=0
+r10noticias.com | DEL 1823 A evolução da franquia He-Man ao longo de quatro décadas
+r10noticias.com | TOTAL_DEL=1
+riachonoticias.net | DEL 1849 A trajetória de He-Man dos brinquedos às telas de cinema
+riachonoticias.net | TOTAL_DEL=1
+rsnoticias.net | DEL 1740 O significado do bordão Eu tenho a força na transformação de He-Man
+rsnoticias.net | TOTAL_DEL=1
+rumourisnews.com | DEL 1986 Os itens de He-Man que todo fã nostálgico sonha em ter um dia
+rumourisnews.com | TOTAL_DEL=1
+sejanoticia.com | DEL 5355 Como a Netflix recriou He-Man em novas séries animadas
+sejanoticia.com | TOTAL_DEL=1
+topsulnoticias.com | DEL 1897 O impacto cultural de Mestres do Universo no mundo inteiro
+topsulnoticias.com | TOTAL_DEL=1
+tratamentodor.com.br | TOTAL_DEL=0

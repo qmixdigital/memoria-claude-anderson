@@ -1,0 +1,6 @@
+# Forçar LF em scripts shell e arquivos críticos do Linux/Docker
+# Evita falha do deploy.sh por CRLF quando o repositório é editado no Windows.
+*.sh        text eol=lf
+Dockerfile  text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf

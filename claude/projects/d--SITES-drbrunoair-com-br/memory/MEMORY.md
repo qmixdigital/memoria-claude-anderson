@@ -1,0 +1,4 @@
+- [Rastreio GA4](rastreio-ga4.md) — 94% das visitas eram invisíveis (consent + blog sem tag); Consent Mode v2 + rastreio.js + engajamento.js; relatório com bloco de engajamento
+- [Migrado para Cloudflare Pages](migrado-cloudflare-pages.md) — desde 17/09/2026 a fonte de verdade é D:\GitHub\drbrunoair.com.br; D:\SITES é legado; deploy por Actions
+- [Nginx serve .html direto](nginx-serve-html-direto.md) — HestiaCP servia .html sem passar pelo Apache; corrigido via PROXY_EXT do domínio
+- [Redis Object Cache](redis-object-cache.md) — blog WP usa Redis DB5 isolado (servidor compartilhado); nunca FLUSHALL

@@ -1,0 +1,769 @@
+/*
+Theme Name:     Ebookcult Child
+Theme URI:      https://ebookcult.com.br/
+Template:       astra
+Description:    Child theme do Astra, identidade Library Stack — direção literária editorial. Serifas system-only (Iowan Old Style, Palatino, Charter), paleta P04 reinterpretada como terracota + prussiano + highlighter. Layout magazine, dropcaps, reading-time, ornamentos tipográficos.
+Author:         QMIX Digital
+Author URI:     https://qmix.com.br/
+Version:        2.0.0
+Text Domain:    ebookcult
+*/
+
+/* ============================================================
+ * Library Stack — design system reinterpretado
+ * Roll: P04 (mantido) / F20 system-only (mantido) / sharp / neumorphic
+ * Recoloração editorial: laranja → terracota, azul → prussiano,
+ * amarelo → highlighter de marcação. Tipografia editorial via stack
+ * serif system-native. Zero Google Fonts.
+ * ============================================================ */
+:root {
+    /* === Color tokens — P04 reinterpretado como literário ===
+     * Hierarquia revisada: prussiano vira cor estrutural dominante,
+     * terracota fica RESERVADA para acentos raros (brand mark, dropcap,
+     * borda do footer, hover de links narrativos). Highlighter aparece
+     * só como ::selection e marca-texto em hover. */
+    --ec-clay:       #B23E18;            /* terracota — uso raro, só acento decisivo */
+    --ec-clay-deep:  #7A2A0A;
+    --ec-clay-soft:  #F2D9C8;
+    --ec-prussian:   #1F3F66;            /* azul tinta — DOMINANTE estrutural */
+    --ec-prussian-2: #3A5C82;
+    --ec-prussian-soft: #DCE4ED;
+    --ec-highlight:  #F2C94C;            /* highlighter dessaturado */
+    --ec-highlight-2: rgba(242,201,76,.36);
+
+    --ec-primary:    var(--ec-clay);     /* uso semântico, não decorativo */
+    --ec-primary-dark: var(--ec-clay-deep);
+    --ec-secondary:  var(--ec-prussian); /* cor dominante real */
+    --ec-accent:     var(--ec-highlight);
+
+    --ec-paper:      #FDFAF3;            /* cards: papel creme quente, suave */
+    --ec-paper-2:    #F5F0E3;
+    --ec-bg:         #F7F4ED;            /* fundo geral: branco-quente, quase off-white */
+    --ec-bg-warm:    #F1ECE0;
+    --ec-ink:        #15110D;            /* tinta quase-preto */
+    --ec-ink-2:      #322B22;
+    --ec-muted:      #6F6353;
+    --ec-line:       rgba(21,17,13,.14);
+    --ec-line-soft:  rgba(21,17,13,.07);
+    --ec-line-strong: rgba(21,17,13,.85);
+
+    /* === Typography — system editorial stack === */
+    --ec-serif:   "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino,
+                  "Charter", "Source Serif Pro", "DejaVu Serif", Georgia, Cambria, serif;
+    --ec-serif-display: "Iowan Old Style", "Palatino", Charter, Georgia, "Times New Roman", serif;
+    --ec-sans:    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue",
+                  "Segoe UI", Roboto, "Inter", system-ui, sans-serif;
+    --ec-mono:    "SF Mono", "JetBrains Mono", "IBM Plex Mono", Menlo, Consolas,
+                  "Liberation Mono", monospace;
+
+    /* === Spacing — comfortable === */
+    --ec-sp-1: 6px;
+    --ec-sp-2: 10px;
+    --ec-sp-3: 16px;
+    --ec-sp-4: 22px;
+    --ec-sp-5: 32px;
+    --ec-sp-6: 48px;
+    --ec-sp-7: 72px;
+    --ec-sp-8: 110px;
+
+    /* === Form — sharp === */
+    --ec-radius: 0;
+    --ec-radius-soft: 2px;
+
+    /* === Shadow — neumorphic with paper depth === */
+    --ec-shadow-flat:  0 0 0 1px var(--ec-line);
+    --ec-shadow-press: inset 2px 2px 4px rgba(26,22,18,.10);
+    --ec-shadow-paper: 0 1px 0 rgba(255,255,255,.55) inset,
+                       0 2px 14px rgba(26,22,18,.08),
+                       0 0 0 1px rgba(26,22,18,.06);
+    --ec-shadow-spine: -3px 0 0 var(--ec-clay-deep), -2px 0 6px rgba(26,22,18,.18);
+
+    /* === Texture: paper-noise (data-uri SVG) — opacity reduzido === */
+    --ec-paper-noise:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10  0 0 0 0 0.08  0 0 0 0 0.06  0 0 0 0.020 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* ============================================================
+ * Reset + body — paper-feel base
+ * ============================================================ */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ec-serif);
+    font-size: 17px;
+    line-height: 1.62;
+    color: var(--ec-ink);
+    background: var(--ec-bg);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+    font-feature-settings: "kern", "liga", "onum", "calt";
+    font-variant-ligatures: common-ligatures contextual;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--ec-prussian); text-decoration: none; }
+a:hover { color: var(--ec-clay); }
+
+/* Prose links: highlighter underline */
+.ec-prose a {
+    color: var(--ec-ink);
+    background-image: linear-gradient(180deg, transparent 60%, var(--ec-highlight-2) 60%, var(--ec-highlight-2) 92%, transparent 92%);
+    background-position: 0 .1em;
+    transition: background-color .2s, color .15s;
+    padding: 0 1px;
+}
+.ec-prose a:hover {
+    color: var(--ec-clay-deep);
+    background-image: linear-gradient(180deg, transparent 60%, var(--ec-highlight) 60%, var(--ec-highlight) 92%, transparent 92%);
+}
+
+/* Headings — display serif */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ec-serif-display);
+    font-weight: 700;
+    color: var(--ec-ink);
+    letter-spacing: -0.012em;
+    line-height: 1.14;
+    margin: 0 0 var(--ec-sp-3);
+    font-feature-settings: "kern", "liga", "dlig", "onum";
+}
+h1 { font-size: clamp(34px, 5.4vw, 60px); font-weight: 800; letter-spacing: -0.024em; }
+h2 { font-size: clamp(24px, 2.9vw, 32px); }
+h3 { font-size: clamp(19px, 2.1vw, 24px); }
+h4 { font-size: 15px; }
+
+p { margin: 0 0 var(--ec-sp-3); orphans: 3; widows: 3; }
+hr {
+    border: 0;
+    text-align: center;
+    height: var(--ec-sp-4);
+    margin: var(--ec-sp-5) 0;
+    position: relative;
+}
+hr::before {
+    content: "❦";
+    color: var(--ec-clay);
+    font-size: 18px;
+    line-height: var(--ec-sp-4);
+}
+
+::selection { background: var(--ec-highlight); color: var(--ec-ink); }
+
+/* ============================================================
+ * Skip link
+ * ============================================================ */
+.ec-skip {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    background: var(--ec-ink);
+    color: var(--ec-paper);
+    padding: 10px 18px;
+    z-index: 9999;
+    font-family: var(--ec-mono);
+    font-size: 12px;
+    letter-spacing: .08em;
+}
+.ec-skip:focus { left: 12px; top: 12px; }
+
+/* ============================================================
+ * Layout primitives
+ * ============================================================ */
+.ec-shell { width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 var(--ec-sp-4); }
+
+.ec-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: var(--ec-sp-7);
+    margin-top: var(--ec-sp-5);
+    align-items: start;
+}
+.ec-layout--single { grid-template-columns: minmax(0, 1fr) 320px; }
+
+@media (max-width: 980px) {
+    .ec-layout, .ec-layout--single { grid-template-columns: 1fr; gap: var(--ec-sp-5); }
+    .ec-layout > .ec-main { order: 1; }
+    .ec-layout > .ec-sidebar { order: 2; }
+}
+.ec-main { min-width: 0; }
+.ec-sidebar { min-width: 0; }
+
+/* ============================================================
+ * Header — nameplate de revista literária
+ * ============================================================ */
+.ec-chrome {
+    background: var(--ec-paper);
+    background-image: var(--ec-paper-noise);
+    border-bottom: 1px solid var(--ec-line);
+    box-shadow: 0 1px 0 var(--ec-line-soft), 0 4px 0 var(--ec-paper-2), 0 5px 0 var(--ec-line);
+    position: relative;
+    z-index: 100;
+}
+.ec-chrome__top {
+    border-bottom: 4px double var(--ec-line-strong);
+    padding: 28px 0 22px;
+    position: relative;
+}
+.ec-chrome__row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+    gap: var(--ec-sp-3);
+}
+.ec-chrome__edition {
+    text-align: left;
+    font-family: var(--ec-mono);
+    font-size: 11px;
+    letter-spacing: .18em;
+    color: var(--ec-muted);
+    text-transform: none;
+    line-height: 1.5;
+}
+.ec-chrome__edition strong {
+    display: block;
+    color: var(--ec-prussian);
+    font-size: 13px;
+    letter-spacing: .14em;
+    font-weight: 700;
+}
+.ec-brand {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--ec-ink);
+    text-align: center;
+}
+.ec-brand__mark {
+    font-family: var(--ec-serif-display);
+    font-weight: 800;
+    font-style: italic;
+    font-size: clamp(38px, 6vw, 64px);
+    letter-spacing: -0.04em;
+    line-height: .9;
+    color: var(--ec-ink);
+    font-feature-settings: "kern", "dlig", "swsh";
+}
+.ec-brand__mark span {
+    color: var(--ec-clay);
+    font-style: italic;
+}
+.ec-brand__tag {
+    font-family: var(--ec-mono);
+    font-size: 10px;
+    color: var(--ec-muted);
+    letter-spacing: .26em;
+    margin-top: 8px;
+    border: 0;
+    padding: 0;
+    text-transform: none;
+}
+.ec-chrome__date {
+    text-align: right;
+    font-size: 12px;
+    color: var(--ec-muted);
+    font-family: var(--ec-mono);
+    letter-spacing: .08em;
+    line-height: 1.5;
+}
+.ec-chrome__date strong {
+    display: block;
+    color: var(--ec-prussian);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
+
+.ec-chrome__nav {
+    background: var(--ec-paper);
+    border-bottom: 1px solid var(--ec-line);
+}
+.ec-menu {
+    list-style: none;
+    margin: 0;
+    padding: 14px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--ec-sp-5);
+}
+.ec-menu a {
+    color: var(--ec-ink-2);
+    font-family: var(--ec-serif-display);
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0;
+    text-decoration: none;
+    padding: 4px 0;
+    border-bottom: 0;
+    position: relative;
+    transition: color .2s;
+}
+.ec-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -2px;
+    height: 6px;
+    background: var(--ec-highlight);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform .25s ease;
+    z-index: -1;
+    opacity: .8;
+}
+.ec-menu a:hover { color: var(--ec-clay-deep); }
+.ec-menu a:hover::after { transform: scaleX(1); }
+.ec-menu .current-menu-item > a,
+.ec-menu .current_page_item > a { color: var(--ec-ink); }
+.ec-menu .current-menu-item > a::after,
+.ec-menu .current_page_item > a::after { transform: scaleX(1); }
+
+/* Esconder sub-itens (children) do menu — depth=1 visual */
+.ec-menu .sub-menu,
+.ec-menu .children { display: none !important; }
+
+@media (max-width: 760px) {
+    /* Header — versão mobile compacta: só brand centralizado, esconde edition + date */
+    .ec-chrome__top { padding: 14px 0 12px; }
+    .ec-chrome__row {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 4px;
+    }
+    .ec-chrome__edition,
+    .ec-chrome__date {
+        display: none;
+    }
+    .ec-brand__mark {
+        font-size: 38px;
+        letter-spacing: -0.035em;
+    }
+    .ec-brand__tag {
+        font-size: 9px;
+        letter-spacing: .22em;
+        margin-top: 4px;
+    }
+    /* Menu — scroll horizontal numa única linha, fim do quebra em 3 linhas */
+    .ec-chrome__nav .ec-shell { padding: 0; }
+    .ec-menu {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        gap: 22px;
+        padding: 10px 18px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        scroll-snap-type: x proximity;
+        mask-image: linear-gradient(90deg, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+        -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 12px, #000 calc(100% - 12px), transparent 100%);
+    }
+    .ec-menu::-webkit-scrollbar { display: none; }
+    .ec-menu li { flex: 0 0 auto; scroll-snap-align: start; }
+    .ec-menu a { font-size: 15px; white-space: nowrap; }
+}
+@media (max-width: 480px) {
+    .ec-brand__mark { font-size: 34px; }
+    .ec-menu { gap: 18px; }
+    .ec-menu a { font-size: 14px; }
+}
+
+/* ============================================================
+ * Footer — manifesto + index of pages
+ * ============================================================ */
+.ec-footer {
+    margin-top: var(--ec-sp-8);
+    background: var(--ec-ink);
+    background-image: var(--ec-paper-noise);
+    color: rgba(252, 248, 241, .82);
+    padding-top: var(--ec-sp-7);
+    border-top: 6px solid var(--ec-clay);
+    position: relative;
+}
+.ec-footer::before {
+    content: "❦";
+    position: absolute;
+    left: 50%;
+    top: -22px;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 44px;
+    background: var(--ec-bg);
+    background-image: var(--ec-paper-noise);
+    color: var(--ec-clay);
+    text-align: center;
+    line-height: 44px;
+    font-size: 22px;
+    border: 1px solid var(--ec-line-strong);
+}
+.ec-footer__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: var(--ec-sp-6);
+    padding-bottom: var(--ec-sp-6);
+    border-bottom: 1px solid rgba(245, 213, 71, .14);
+}
+.ec-footer h4 {
+    color: var(--ec-highlight);
+    font-family: var(--ec-mono);
+    font-size: 11px;
+    letter-spacing: .26em;
+    margin: 0 0 var(--ec-sp-3);
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(245, 213, 71, .22);
+}
+.ec-footer__brand .ec-brand__mark {
+    color: var(--ec-paper);
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+.ec-footer__brand .ec-brand__mark span { color: var(--ec-clay); }
+.ec-footer__manifesto {
+    font-family: var(--ec-serif);
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: rgba(252, 248, 241, .76);
+    margin: 14px 0 0;
+    max-width: 38ch;
+    font-style: italic;
+}
+.ec-footer ul { list-style: none; padding: 0; margin: 0; }
+.ec-footer li { margin: 0 0 9px; }
+.ec-footer a {
+    color: rgba(252, 248, 241, .85);
+    font-family: var(--ec-serif);
+    font-size: 15px;
+    text-decoration: none;
+    transition: color .2s;
+}
+.ec-footer a:hover { color: var(--ec-highlight); }
+.ec-footer__copy {
+    padding: var(--ec-sp-4) 0;
+    font-family: var(--ec-mono);
+    font-size: 11px;
+    letter-spacing: .14em;
+    color: rgba(252, 248, 241, .42);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ec-sp-3);
+    justify-content: space-between;
+    align-items: center;
+}
+.ec-footer__copy a { font-size: 11px; font-family: var(--ec-mono); letter-spacing: .14em; }
+@media (max-width: 880px) {
+    .ec-footer__grid { grid-template-columns: 1fr 1fr; gap: var(--ec-sp-4); }
+}
+@media (max-width: 540px) {
+    .ec-footer__grid { grid-template-columns: 1fr; gap: var(--ec-sp-5); }
+    .ec-footer__brand .ec-brand__mark { font-size: 30px; }
+    .ec-footer__manifesto { max-width: none; font-size: 14px; }
+    .ec-footer__copy { flex-direction: column; align-items: flex-start; gap: 8px; padding: var(--ec-sp-3) 0; }
+    .ec-footer__copy span { line-height: 1.5; }
+}
+
+/* ============================================================
+ * Buttons — letterpress feel
+ * ============================================================ */
+.ec-btn,
+button.ec-btn,
+input[type="submit"].ec-btn {
+    display: inline-block;
+    background: var(--ec-ink);
+    color: var(--ec-paper);
+    font-family: var(--ec-mono);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: .22em;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: var(--ec-radius);
+    cursor: pointer;
+    box-shadow: 0 2px 0 var(--ec-clay), 0 3px 14px rgba(26,22,18,.18);
+    text-transform: none;
+    transition: transform .15s, box-shadow .2s, background .2s;
+    position: relative;
+}
+.ec-btn:hover {
+    background: var(--ec-clay-deep);
+    color: var(--ec-paper);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 0 var(--ec-clay), 0 6px 18px rgba(26,22,18,.22);
+}
+.ec-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 0 var(--ec-clay), inset 0 2px 4px rgba(0,0,0,.18);
+}
+.ec-btn--ghost {
+    background: transparent;
+    color: var(--ec-ink);
+    border: 1px solid var(--ec-ink);
+    box-shadow: none;
+}
+.ec-btn--ghost:hover { background: var(--ec-ink); color: var(--ec-paper); }
+
+/* ============================================================
+ * Section heads — chapter divider
+ * ============================================================ */
+.ec-section { margin: var(--ec-sp-7) 0; }
+.ec-section__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--ec-sp-3);
+    margin-bottom: var(--ec-sp-5);
+    position: relative;
+    padding-bottom: var(--ec-sp-3);
+    border-bottom: 1px solid var(--ec-line);
+}
+.ec-section__head::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 60px;
+    height: 2px;
+    background: var(--ec-prussian);
+}
+.ec-section__head h2 {
+    margin: 0;
+    font-family: var(--ec-serif-display);
+    font-size: clamp(22px, 2.6vw, 30px);
+    font-weight: 700;
+    font-style: italic;
+    color: var(--ec-ink);
+    letter-spacing: -0.015em;
+}
+.ec-section__head h2::before {
+    content: "§ ";
+    color: var(--ec-prussian);
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 6px;
+    font-size: .85em;
+}
+.ec-section__head a {
+    font-family: var(--ec-mono);
+    font-size: 11px;
+    color: var(--ec-muted);
+    letter-spacing: .18em;
+    font-weight: 600;
+    text-transform: none;
+}
+.ec-section__head a:hover { color: var(--ec-prussian); }
+
+/* ============================================================
+ * Card primitives (used by archive + sidebar)
+ * ============================================================ */
+.ec-card {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: var(--ec-sp-3);
+    padding: var(--ec-sp-3) 0;
+    border-bottom: 1px solid var(--ec-line);
+    align-items: start;
+}
+.ec-card:last-child { border-bottom: 0; }
+.ec-card__media { position: relative; overflow: hidden; }
+.ec-card__media img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: var(--ec-bg);
+    filter: contrast(1.04) saturate(.94);
+    transition: transform .35s, filter .25s;
+}
+.ec-card:hover .ec-card__media img { transform: scale(1.04); filter: contrast(1.08) saturate(1.05); }
+.ec-card__body { min-width: 0; }
+.ec-card__cat {
+    display: inline-block;
+    font-family: var(--ec-mono);
+    font-size: 10px;
+    color: var(--ec-prussian);
+    font-weight: 600;
+    letter-spacing: .22em;
+    margin-bottom: 6px;
+}
+.ec-card__cat a { color: inherit; border: 0; background: none; padding: 0; }
+.ec-card__cat::after {
+    content: " ¶ ";
+    color: var(--ec-line-strong);
+    margin: 0 4px;
+    font-weight: 400;
+    opacity: .4;
+}
+.ec-card__cat:last-child::after { display: none; }
+.ec-card__title {
+    font-family: var(--ec-serif-display);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.26;
+    margin: 0 0 6px;
+    letter-spacing: -0.005em;
+}
+.ec-card__title a { color: var(--ec-ink); }
+.ec-card__title a:hover { color: var(--ec-clay); }
+.ec-card__meta {
+    font-family: var(--ec-mono);
+    font-size: 11px;
+    color: var(--ec-muted);
+    letter-spacing: .04em;
+}
+.ec-card--lg {
+    grid-template-columns: 1fr;
+    gap: var(--ec-sp-3);
+    padding: 0;
+    border-bottom: 0;
+}
+.ec-card--lg .ec-card__media img { aspect-ratio: 4 / 3; }
+.ec-card--lg .ec-card__title { font-size: 23px; }
+
+/* ============================================================
+ * Sidebar widgets — book-spine treatment
+ * ============================================================ */
+.ec-widget {
+    margin-bottom: var(--ec-sp-5);
+    padding: var(--ec-sp-4);
+    background: var(--ec-paper);
+    background-image: var(--ec-paper-noise);
+    box-shadow: var(--ec-shadow-paper);
+    position: relative;
+    border-left: 3px solid var(--ec-prussian);
+}
+.ec-widget::before {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0;
+    width: 4px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.12) 50%, transparent 100%);
+}
+.ec-widget h4 {
+    margin: 0 0 var(--ec-sp-3);
+    font-family: var(--ec-mono);
+    font-size: 11px;
+    letter-spacing: .26em;
+    color: var(--ec-prussian);
+    border-bottom: 1px solid var(--ec-line);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.ec-widget ul { list-style: none; margin: 0; padding: 0; }
+.ec-widget li {
+    border-bottom: 1px solid var(--ec-line-soft);
+    padding: 9px 0;
+}
+.ec-widget li:last-child { border-bottom: 0; }
+.ec-widget a {
+    color: var(--ec-ink-2);
+    font-family: var(--ec-serif);
+    font-size: 15px;
+    line-height: 1.4;
+    display: block;
+}
+.ec-widget a:hover { color: var(--ec-clay); }
+
+/* ============================================================
+ * Pagination — folio numbers
+ * ============================================================ */
+.ec-pagination {
+    margin: var(--ec-sp-6) 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ec-mono);
+}
+.ec-pagination .page-numbers,
+.ec-pagination a.page-numbers,
+.ec-pagination span.page-numbers {
+    display: inline-block;
+    padding: 10px 16px;
+    background: transparent;
+    color: var(--ec-ink-2);
+    border: 0;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .2s;
+    font-feature-settings: "onum";
+}
+.ec-pagination .page-numbers.current {
+    color: var(--ec-prussian);
+    border-bottom-color: var(--ec-prussian);
+    font-weight: 700;
+}
+.ec-pagination a.page-numbers:hover {
+    color: var(--ec-prussian);
+    border-bottom-color: var(--ec-prussian);
+}
+.ec-pagination .page-numbers.dots { letter-spacing: 4px; }
+
+/* ============================================================
+ * Breadcrumb
+ * ============================================================ */
+.ec-breadcrumb {
+    font-family: var(--ec-mono);
+    font-size: 11px;
+    color: var(--ec-muted);
+    letter-spacing: .12em;
+    margin: var(--ec-sp-4) 0 var(--ec-sp-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+}
+.ec-breadcrumb a { color: var(--ec-prussian); }
+.ec-breadcrumb a:hover { color: var(--ec-prussian); }
+.ec-breadcrumb__sep { margin: 0 10px; color: var(--ec-line-strong); opacity: .35; }
+
+/* ============================================================
+ * Forms — sharp, ink on paper
+ * ============================================================ */
+input[type=text], input[type=email], input[type=url], input[type=tel],
+input[type=number], input[type=search], textarea, select {
+    width: 100%;
+    padding: 13px 14px;
+    font-family: var(--ec-serif);
+    font-size: 16px;
+    color: var(--ec-ink);
+    background: var(--ec-paper);
+    background-image: var(--ec-paper-noise);
+    border: 1px solid var(--ec-line-strong);
+    border-radius: var(--ec-radius);
+    transition: border-color .2s, box-shadow .2s, background .2s;
+}
+input:focus, textarea:focus, select:focus {
+    outline: 0;
+    border-color: var(--ec-prussian);
+    box-shadow: 0 0 0 3px var(--ec-highlight-2), var(--ec-shadow-press);
+    background: var(--ec-paper-2);
+}
+::placeholder { color: var(--ec-muted); opacity: .65; font-style: italic; }
+
+/* ============================================================
+ * Visibility safety net (rule 4) — never hide
+ * ============================================================ */
+.ec-shell, .ec-main, .ec-sidebar, .ec-section,
+.ec-card, .ec-card__body, .ec-card__media,
+.ec-widget, .ec-hero, .ec-hero__cell,
+.ec-stream__row, .ec-pagination,
+.ec-edition, .ec-ranked, .ec-ranked__row {
+    content-visibility: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* ============================================================
+ * Print
+ * ============================================================ */
+@media print {
+    .ec-chrome, .ec-footer, .ec-sidebar, .ec-pagination, .ec-share { display: none; }
+    body { background: white; color: black; font-size: 12pt; }
+}

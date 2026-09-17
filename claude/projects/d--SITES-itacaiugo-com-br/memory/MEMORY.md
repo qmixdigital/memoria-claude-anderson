@@ -1,0 +1,1 @@
+- [Fotos de produto sempre originais](fotos-de-produto-sempre-originais.md) — em conteúdo de afiliado, foto oficial do produto, nunca IA.

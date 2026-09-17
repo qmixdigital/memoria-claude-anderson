@@ -1,0 +1,7 @@
+- [user_profile.md](user_profile.md) — Anderson Alves, 42+ Cloudflare domains, prefers Portuguese, uses VS Code + Claude Code
+- [project_cf_token_permissions.md](project_cf_token_permissions.md) — Exact Cloudflare API token permissions needed (Portuguese dashboard names)
+- [project_dominios_excluir_bulk.md](project_dominios_excluir_bulk.md) — Domínios reservados para sites reais (Auto Cloudflare): NÃO incluir em bulk redirect
+- [project_tokens_limitados.md](project_tokens_limitados.md) — Tokens das contas teste/conta7/conta11 só fazem WAF (sem Settings/DNSSEC/leaked-cred)
+- [cf_user_token_master.md](cf_user_token_master.md) — Token de usuário CF amplo (77 contas/326 zonas) guardado no .env como CF_USER_TOKEN
+- [feedback_sem_challenge_usuario.md](feedback_sem_challenge_usuario.md) — Hardening CF nunca pode inserir desafio/fricção ao usuário (derruba conversão); usar suavizar_conta.py
+- [project_funnel_pulse.md](project_funnel_pulse.md) — Padrão de pulso de redirects funnel temporário (funnel_162 → alvos, round-robin, reverter em ~1h via schtasks)

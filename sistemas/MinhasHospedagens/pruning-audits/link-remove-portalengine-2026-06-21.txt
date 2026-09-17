@@ -1,0 +1,12 @@
+[DONE] diariodatv -> arquivos: 0 | links: 0
+[DONE] diariodegoiania -> arquivos: 0 | links: 0
+[DONE] diariodobrejo -> arquivos: 0 | links: 0
+[DONE] edenoticias -> arquivos: 0 | links: 0
+[DONE] entrenoticia -> arquivos: 0 | links: 0
+[DONE] folhaum -> arquivos: 0 | links: 0
+[DONE] gdsnoticias -> arquivos: 0 | links: 0
+[DONE] jornaldiario -> arquivos: 0 | links: 0
+[DONE] medicodasmaos -> arquivos: 0 | links: 0
+[DONE] projetob -> arquivos: 0 | links: 0
+[DONE] romanceseleituras -> arquivos: 0 | links: 0
+[DONE] todossomosgeek -> arquivos: 0 | links: 0

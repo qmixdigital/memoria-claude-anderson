@@ -1,0 +1,3 @@
+- [Cache longo sem versionar asset](cache-longo-sem-versionar-asset.md) — max-age de 30 dias em CSS sem `?v=` travou o deploy na borda do Cloudflare
+- [Hospedagem do rinoplastia-goiania](rinoplastia-goiania-hospedagem.md) — é Cloudflare Pages: o `.htaccess` do repo é ignorado, vale o `_headers`
+- [Não marcar avaliação sem conteúdo visível](nao-marcar-avaliacao-sem-conteudo-visivel.md) — nada de aggregateRating/Review sem depoimento real coletado e exibido na página

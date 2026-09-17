@@ -1,0 +1,99 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Cada cliente da agencia tem sua conta de anuncio, pagina FB e conta IG
+model Cliente {
+  id            String     @id @default(cuid())
+  slug          String     @unique // identificador curto, ex: "ebookcult"
+  nome          String
+  adAccountId   String     @map("ad_account_id") // formato act_123456
+  pageId        String     @map("page_id")
+  instagramId   String     @map("instagram_id")
+  ativo         Boolean    @default(true)
+  criadoEm      DateTime   @default(now()) @map("criado_em")
+  campanhas     Campanha[]
+  creatives     Creative[]
+
+  @@map("clientes")
+}
+
+model Campanha {
+  id           String     @id @default(cuid())
+  metaId       String     @unique @map("meta_id")
+  nome         String
+  objetivo     String
+  status       String     @default("PAUSED")
+  clienteId    String     @map("cliente_id")
+  cliente      Cliente    @relation(fields: [clienteId], references: [id])
+  criadoEm     DateTime   @default(now()) @map("criado_em")
+  adSets       AdSet[]
+  insights     Insight[]
+
+  @@map("campanhas")
+}
+
+model AdSet {
+  id           String    @id @default(cuid())
+  metaId       String    @unique @map("meta_id")
+  nome         String
+  dailyBudget  Int       @map("daily_budget") // em centavos
+  status       String    @default("PAUSED")
+  campanhaId   String    @map("campanha_id")
+  campanha     Campanha  @relation(fields: [campanhaId], references: [id])
+  criadoEm     DateTime  @default(now()) @map("criado_em")
+  ads          Ad[]
+
+  @@map("ad_sets")
+}
+
+model Ad {
+  id          String    @id @default(cuid())
+  metaId      String    @unique @map("meta_id")
+  nome        String
+  status      String    @default("PAUSED")
+  adSetId     String    @map("ad_set_id")
+  adSet       AdSet     @relation(fields: [adSetId], references: [id])
+  creativeId  String?   @map("creative_id")
+  creative    Creative? @relation(fields: [creativeId], references: [id])
+  criadoEm    DateTime  @default(now()) @map("criado_em")
+
+  @@map("ads")
+}
+
+// O criativo e a "arte" do anuncio: imagem + texto + botao.
+// Um mesmo creative pode ser reaproveitado em varios ads.
+model Creative {
+  id          String   @id @default(cuid())
+  metaId      String   @unique @map("meta_id")
+  nome        String
+  clienteId   String   @map("cliente_id")
+  cliente     Cliente  @relation(fields: [clienteId], references: [id])
+  criadoEm    DateTime @default(now()) @map("criado_em")
+  ads         Ad[]
+
+  @@map("creatives")
+}
+
+// Snapshot de metricas puxadas do endpoint /insights
+model Insight {
+  id            String   @id @default(cuid())
+  campanhaId    String   @map("campanha_id")
+  campanha      Campanha @relation(fields: [campanhaId], references: [id])
+  data          String   // date_start retornado pela Meta
+  impressoes    Int
+  cliques       Int
+  gastoCentavos Int      @map("gasto_centavos")
+  cpcCentavos   Int      @map("cpc_centavos")
+  cpmCentavos   Int      @map("cpm_centavos")
+  alcance       Int
+  coletadoEm    DateTime @default(now()) @map("coletado_em")
+
+  @@unique([campanhaId, data])
+  @@map("insights")
+}

@@ -1,0 +1,391 @@
+{
+  "id": "ed35cc80-90b5-4f1f-b05a-a0e462b4cb06",
+  "prevId": "f81f20aa-e109-4a02-beba-8a6925b6c03c",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "qmix_invest.companies": {
+      "name": "companies",
+      "schema": "qmix_invest",
+      "columns": {
+        "cnpj": {
+          "name": "cnpj",
+          "type": "varchar(14)",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sector": {
+          "name": "sector",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "subsector": {
+          "name": "subsector",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "cvm_code": {
+          "name": "cvm_code",
+          "type": "varchar(10)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "companies_name_trgm_idx": {
+          "name": "companies_name_trgm_idx",
+          "columns": [
+            {
+              "expression": "\"name\" gin_trgm_ops",
+              "asc": true,
+              "isExpression": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "gin",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.cusip_to_ticker": {
+      "name": "cusip_to_ticker",
+      "schema": "qmix_invest",
+      "columns": {
+        "cusip": {
+          "name": "cusip",
+          "type": "varchar(12)",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_adr": {
+          "name": "is_adr",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "cusip_to_ticker_ticker_tickers_ticker_fk": {
+          "name": "cusip_to_ticker_ticker_tickers_ticker_fk",
+          "tableFrom": "cusip_to_ticker",
+          "tableTo": "tickers",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "ticker"
+          ],
+          "columnsTo": [
+            "ticker"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.funds": {
+      "name": "funds",
+      "schema": "qmix_invest",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "funds_id_seq",
+            "schema": "qmix_invest",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "cnpj_or_cik": {
+          "name": "cnpj_or_cik",
+          "type": "varchar(32)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nationality": {
+          "name": "nationality",
+          "type": "fund_nationality",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_tier_one": {
+          "name": "is_tier_one",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "aum_brl_estimate": {
+          "name": "aum_brl_estimate",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "funds_nationality_idx": {
+          "name": "funds_nationality_idx",
+          "columns": [
+            {
+              "expression": "nationality",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "funds_tier_one_idx": {
+          "name": "funds_tier_one_idx",
+          "columns": [
+            {
+              "expression": "is_tier_one",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "where": "\"qmix_invest\".\"funds\".\"is_tier_one\" = true",
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "funds_name_trgm_idx": {
+          "name": "funds_name_trgm_idx",
+          "columns": [
+            {
+              "expression": "\"name\" gin_trgm_ops",
+              "asc": true,
+              "isExpression": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "gin",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "funds_cnpj_or_cik_unique": {
+          "name": "funds_cnpj_or_cik_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "cnpj_or_cik"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.tickers": {
+      "name": "tickers",
+      "schema": "qmix_invest",
+      "columns": {
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "cnpj": {
+          "name": "cnpj",
+          "type": "varchar(14)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "class": {
+          "name": "class",
+          "type": "ticker_class",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_small_cap": {
+          "name": "is_small_cap",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "market_cap_brl": {
+          "name": "market_cap_brl",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "active": {
+          "name": "active",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "tickers_cnpj_idx": {
+          "name": "tickers_cnpj_idx",
+          "columns": [
+            {
+              "expression": "cnpj",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "tickers_small_cap_idx": {
+          "name": "tickers_small_cap_idx",
+          "columns": [
+            {
+              "expression": "is_small_cap",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "where": "\"qmix_invest\".\"tickers\".\"active\" = true",
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "tickers_cnpj_companies_cnpj_fk": {
+          "name": "tickers_cnpj_companies_cnpj_fk",
+          "tableFrom": "tickers",
+          "tableTo": "companies",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "cnpj"
+          ],
+          "columnsTo": [
+            "cnpj"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {
+    "qmix_invest.fund_nationality": {
+      "name": "fund_nationality",
+      "schema": "qmix_invest",
+      "values": [
+        "BR",
+        "US",
+        "OTHER"
+      ]
+    },
+    "qmix_invest.ticker_class": {
+      "name": "ticker_class",
+      "schema": "qmix_invest",
+      "values": [
+        "ON",
+        "PN",
+        "UNT",
+        "OTHER"
+      ]
+    }
+  },
+  "schemas": {
+    "qmix_invest": "qmix_invest"
+  },
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

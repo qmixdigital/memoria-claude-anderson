@@ -1,0 +1,16 @@
+---
+name: cliquex-figa2023-next
+description: figa2023.com.br convertido para Next.js 15 static export (teste de SEO); fonte em D:/SITES/figa2023-next, como buildar e deployar
+metadata:
+  type: project
+---
+
+**figa2023.com.br roda em Next.js desde 2026-09-10** (teste de SEO do Anderson: comparar HTML puro x Next static export, igual rblc/lepur). Fonte permanente: **`D:/SITES/figa2023-next`** (Next 15.5.x, React 19, App Router, `output:'export'`, `trailingSlash:false`, `experimental.inlineCss:true`). O projeto Pages continua o mesmo (`figa2023`, conta 39a13af3), agora recebendo a pasta **`out/`**.
+
+**Como foi feito (gerador `scratchpad/figa_next_gen.py`, reconstruível):** cada uma das 156 páginas do HTML estático virou um registro em `data/pages.json` (title, description, keywords, canonical, og/twitter, blocos JSON-LD, atributos e innerHTML do `<main>`); header e footer (2 variantes: home com `#x`, internas com `/#x`) em `data/chrome.json`; união dos 7 blocos `<style>` em `app/globals.css`; assets copiados para `public/`. `app/page.tsx` (home) e `app/[slug]/page.tsx` (`generateStaticParams`, `dynamicParams=false`) renderizam `components/PageBody.tsx` = JSON-LD + `<header>`/`<main>`/`<footer>` via `dangerouslySetInnerHTML` + `components/Interactions.tsx` ('use client': burger, fechar menu, reveal com IntersectionObserver). Metadata via `lib/meta.ts` (title/description/keywords/robots/canonical/openGraph/twitter); ícones, manifest, theme-color e preload das 2 fontes no `app/layout.tsx`. `app/not-found.tsx` gera `404.html` (noindex).
+
+**Resultado:** 157 HTML no `out/` (156 + 404), paridade página a página em title, description, canonical, og, robots, h1, vídeo, silo-nav (61 links), ranking (25 cards, 10 links de cliente), letreiro (77 itens) e **link do WhatsApp no HTML bruto** (o conteúdo é renderizado no servidor, não por JS). Diferença: HTML da home foi de ~50 KB para ~152 KB (RSC payload duplica o conteúdo no `self.__next_f`), + ~103 KB de JS. Hidratação confirmada com Edge headless (`--window-size=1280,6000 --virtual-time-budget=10000 --dump-dom`): reveal ativa 10/11 igual aos sites em HTML puro.
+
+**Build/deploy:** `cd D:/SITES/figa2023-next && npm run build` → `wrangler pages deploy D:/SITES/figa2023-next/out --project-name figa2023` (master token, account 39a13af3) → purge da zona `03728951f83c8f5cbbb062156050ffe4`. Para mudar conteúdo, editar `data/pages.json` (ou regenerar do HTML) e rebuildar. **Voltar para HTML puro** = deploy da pasta `scratchpad/figa2023` (ou rollback do Pages para o deploy anterior a 2026-09-10 17:5x).
+
+**GOTCHA CRÍTICO descoberto na conversão:** o catch-all da zona (`URLs antigas -> home`) 301-ava `/_next/*` (quebraria JS/CSS) **e também o sitemap secreto `/fg-idx-*.xml`** (só `.txt` estava excluído): o sitemap secreto do silo secundário **estava devolvendo 301 para a home desde que foi criado**, então uma submissão no Search Console teria falhado. Corrigido acrescentando `and not starts_with(path,"/_next/") and not ends_with(path,".xml")` na regra. Regra geral: **todo asset novo (`/_next/`, `.xml`, `/fonts/`) precisa entrar na exclusão do catch-all ANTES do deploy**, e conferir com `curl -o /dev/null -w %{http_code}` SEM seguir redirect (urlopen segue 301 e mascara o problema). Ver [[cliquex-figa2023]], [[cliquex-silo-paginas-secundarias]], [[cliquex-rblc-hosting]].

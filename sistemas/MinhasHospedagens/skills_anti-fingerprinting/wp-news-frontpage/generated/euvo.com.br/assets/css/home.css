@@ -1,0 +1,110 @@
+/**
+ * EUVO News, CSS exclusivo da capa. Handle: euvo-capa.
+ *
+ * Roll: archetype=A | hero=bleed | breaking=tab_filter | sidebar=floating
+ */
+
+/*
+ * O position fica por conta do style.css: no desktop a caixa e absolute e
+ * sobe para dentro da foto. Um `.home .ev-hero__box{position:relative}` aqui
+ * tem especificidade maior (0,2,0 contra 0,1,0) e ganharia da regra do
+ * arquivo base, derrubando a manchete para fora da imagem, so que ja com a
+ * cor de texto para fundo escuro: titulo branco sobre fundo branco, invisivel.
+ * No celular a caixa ja e estatica, e absolute ou relative dao o mesmo
+ * ancoramento para o ::before.
+ */
+.home .ev-hero__box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: var(--ev-s2);
+    bottom: var(--ev-s2);
+    width: 3px;
+    background: linear-gradient(180deg, var(--ev-primary), var(--ev-secondary));
+}
+
+/* Sobre a foto, o fio precisa de cor que aguente fundo escuro. */
+@media (min-width: 769px) {
+    .home .ev-hero__box {
+        padding-left: var(--ev-s3);
+    }
+
+    .home .ev-hero__box::before {
+        left: var(--ev-s2);
+        background: linear-gradient(180deg, var(--ev-accent), var(--ev-secondary));
+    }
+}
+
+/* No celular a caixa volta ao fluxo, abaixo da foto. */
+@media (max-width: 768px) {
+    .home .ev-hero__box {
+        position: relative;
+    }
+
+    .home .ev-hero__box::before {
+        left: var(--ev-s2);
+    }
+}
+
+/*
+ * A chamada do bloco nao leva filete proprio: a barra de secao ja abre a
+ * editoria logo acima, e dois fios pesados a 60px um do outro so competem.
+ */
+.home .ev-catblock__lead .ev-card {
+    border-top: 0;
+}
+
+/*
+ * Altura fixa na foto da chamada, e nao max-height.
+ *
+ * Na coluna de ~815px o 21:9 rende 350px: a foto engolia o bloco e empurrava a
+ * manchete para baixo, tres vezes na pagina. Mas max-height junto de
+ * aspect-ratio nao corta: encolhe o elemento inteiro na proporcao, e a foto
+ * saiu 135px mais estreita que a coluna, desalinhada do texto. Fixando a
+ * altura e zerando o aspect-ratio, a moldura ocupa a largura toda e o
+ * object-fit: cover da imagem faz o recorte.
+ */
+.home .ev-catblock__lead .ev-card__media {
+    aspect-ratio: auto;
+    height: 290px;
+}
+
+/* Numeral da lista de mais lidos: o primeiro colocado puxa a cor quente. */
+.home .ev-rank li:first-child .ev-rank__n {
+    color: var(--ev-primary);
+}
+
+/* Feed de ultimas: o botao nunca encosta no ultimo card. */
+.home .ev-more {
+    padding-top: var(--ev-s3);
+}
+
+.home #ev-more[disabled] {
+    cursor: progress;
+    filter: grayscale(0.4);
+}
+
+/*
+ * Capa sem lazy-load: as imagens sao carregadas de uma vez.
+ * Estas regras existem para o caso de um plugin injetar content-visibility
+ * ou opacidade zero e produzir o efeito de imagem surgindo na rolagem.
+ */
+.home .ev-hero,
+.home .ev-hero__media,
+.home .ev-strip,
+.home .ev-catblock,
+.home .ev-card__media,
+.home .ev-card__media img,
+.home .ev-grid-2,
+.home .ev-grid-3 {
+    content-visibility: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: none !important;
+    transform: none !important;
+}
+
+/* O zoom no hover do card e intencional e precisa sobreviver a regra acima. */
+.home .ev-card:hover .ev-card__media img {
+    transform: scale(1.03);
+}

@@ -1,0 +1,113 @@
+/* ============================================================
+ * Revista Rumo: home-only CSS overrides
+ * Ajustes especificos da front-page (archetype D feature stream).
+ * Carregado via enqueue condicional em functions.php (regra 4).
+ * ============================================================ */
+
+/* Slider hero: micro detalhes editoriais */
+.rr-hero__feature {
+	position: relative;
+}
+.rr-hero__feature::after {
+	content: '';
+	position: absolute;
+	top: 0; left: 0; right: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--rr-secondary) 0%, var(--rr-primary) 100%);
+	z-index: 1;
+	pointer-events: none;
+}
+
+/* Stream cards: alternancia visual sutil */
+.rr-stream-card:nth-child(odd) {
+	background: var(--rr-paper);
+}
+.rr-stream-card:nth-child(even) {
+	background: var(--rr-paper);
+	border-left: 3px solid var(--rr-secondary);
+}
+.rr-stream-card:nth-child(even) .rr-stream-card__body { padding-left: var(--rr-sp-sm); }
+
+/* Block (categoria intercalada): kicker com underline */
+.rr-block__kicker {
+	position: relative;
+	padding-bottom: 4px;
+}
+.rr-block__kicker::after {
+	content: '';
+	display: block;
+	width: 24px;
+	height: 2px;
+	background: var(--rr-secondary);
+	margin-top: 4px;
+}
+
+/* Animation entrada cards (subtle, respeitando prefers-reduced-motion) */
+@media (prefers-reduced-motion: no-preference) {
+	.rr-block__grid .rr-card,
+	.rr-stream__list .rr-stream-card {
+		opacity: 0;
+		transform: translateY(10px);
+		animation: rr-card-in .42s ease forwards;
+	}
+	.rr-block__grid .rr-card:nth-child(1) { animation-delay: .04s; }
+	.rr-block__grid .rr-card:nth-child(2) { animation-delay: .08s; }
+	.rr-block__grid .rr-card:nth-child(3) { animation-delay: .12s; }
+	.rr-block__grid .rr-card:nth-child(4) { animation-delay: .16s; }
+	.rr-block__grid .rr-card:nth-child(n+5) { animation-delay: .20s; }
+
+	.rr-stream__list .rr-stream-card:nth-child(n+1) { animation-delay: 0s; }
+
+	@keyframes rr-card-in {
+		to { opacity: 1; transform: translateY(0); }
+	}
+}
+
+/* Hero excerpt + small title: line clamp para evitar overflow visual */
+.rr-hero__excerpt {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.rr-hero__small-title {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.rr-hero__feature-title,
+.rr-stream-card__title {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* Breaking strip: marquee subtle quando longo, sem JS */
+@media (min-width: 901px) {
+	.rr-breaking__list {
+		flex-wrap: nowrap;
+		overflow: hidden;
+	}
+	.rr-breaking__list li {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 280px;
+	}
+}
+
+/* Newsletter CTA: detalhes finos */
+.rr-newsletter {
+	position: relative;
+	overflow: hidden;
+}
+.rr-newsletter::before {
+	content: '';
+	position: absolute;
+	top: -40px; right: -40px;
+	width: 220px; height: 220px;
+	background: radial-gradient(circle, rgba(226, 149, 120, .22) 0%, transparent 70%);
+	pointer-events: none;
+}

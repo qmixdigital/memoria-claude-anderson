@@ -1,0 +1,82 @@
+/* ============================================================
+ * Revista Rumo: single-only CSS overrides
+ * Ajustes especificos do single post (archetype III tabloid + mono_minimal typography).
+ * ============================================================ */
+
+/* Drop cap para body: primeiro paragrafo recebe inicial decorada */
+.rr-single__body > p:first-of-type::first-letter {
+	font-family: var(--rr-font-display);
+	font-size: 3.4em;
+	font-weight: 700;
+	line-height: .9;
+	float: left;
+	margin: .04em 10px 0 0;
+	color: var(--rr-secondary);
+	letter-spacing: -0.02em;
+}
+
+/* Tag cloud abaixo do conteudo */
+.rr-single__tags {
+	margin: var(--rr-sp-md) 0 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--rr-sp-xs);
+	align-items: center;
+	font-family: var(--rr-font-meta);
+	font-size: 13px;
+}
+.rr-single__tags-label {
+	font-family: var(--rr-font-meta);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--rr-primary);
+	font-size: 12px;
+}
+.rr-single__tags a {
+	display: inline-block;
+	padding: 6px 12px;
+	background: var(--rr-accent);
+	border: 1px solid transparent;
+	color: var(--rr-primary);
+	border-radius: var(--rr-r-pill);
+	font-weight: 600;
+}
+.rr-single__tags a:hover {
+	background: var(--rr-primary);
+	color: var(--rr-paper);
+	border-color: var(--rr-primary);
+}
+
+/* Reading progress bar (sutil topo) */
+.rr-reading-progress {
+	position: fixed;
+	top: 0; left: 0;
+	height: 3px;
+	width: 0;
+	background: linear-gradient(90deg, var(--rr-secondary) 0%, var(--rr-primary) 100%);
+	z-index: 200;
+	transition: width .08s linear;
+	pointer-events: none;
+}
+
+/* Auto-ads container (Google Auto Ads injeta sem slot manual, mas reservamos espaco visual) */
+.rr-single__body ins.adsbygoogle {
+	display: block;
+	margin: var(--rr-sp-md) auto;
+	min-height: 100px;
+	background: var(--rr-surface);
+}
+
+/* Floating author sidebar enhance */
+.rr-single__floating {
+	padding-top: 6px;
+}
+.rr-single__floating-avatar {
+	box-shadow: var(--rr-sh-soft);
+	border: 2px solid var(--rr-accent);
+}
+
+/* Smooth scroll into anchors (TOC se houver) */
+.rr-single__body h2,
+.rr-single__body h3 { scroll-margin-top: 80px; }

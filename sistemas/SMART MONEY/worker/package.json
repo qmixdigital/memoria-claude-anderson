@@ -1,0 +1,41 @@
+{
+  "name": "@qmix-invest/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "migrate": "tsx src/migrate.ts",
+    "seed": "tsx src/seeds/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@qmix-invest/db": "*",
+    "decimal.js": "^10.6.0",
+    "drizzle-orm": "^0.40.0",
+    "https-proxy-agent": "^7.0.0",
+    "papaparse": "^5.4.1",
+    "pdf-parse": "^1.1.4",
+    "pg-boss": "^10.0.0",
+    "pino": "^9.5.0",
+    "postgres": "^3.4.0",
+    "undici": "^6.20.0",
+    "unzipper": "^0.12.3",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/papaparse": "^5.3.15",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/unzipper": "^0.10.11",
+    "jszip": "^3.10.1",
+    "msw": "^2.6.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "qmix-invest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "app",
+    "worker",
+    "db"
+  ],
+  "scripts": {
+    "dev:app": "npm --workspace app run dev",
+    "dev:worker": "npm --workspace worker run dev",
+    "build": "npm --workspaces run build",
+    "test": "node scripts/test.mjs",
+    "typecheck": "node scripts/typecheck.mjs",
+    "db:generate": "npm --workspace db run generate",
+    "db:migrate": "npm --workspace worker run migrate",
+    "compose:up": "docker compose up -d",
+    "compose:down": "docker compose down",
+    "compose:logs": "docker compose logs -f --tail=200"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0",
+    "@types/node": "^22.0.0"
+  }
+}

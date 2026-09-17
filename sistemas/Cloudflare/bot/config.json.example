@@ -1,0 +1,6 @@
+{
+  "bot_token": "PEGAR_DO_BOTFATHER",
+  "authorized_chats": [
+    123456789
+  ]
+}

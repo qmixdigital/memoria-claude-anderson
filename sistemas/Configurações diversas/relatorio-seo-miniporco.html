@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Relatório SEO - miniporco.com.br/mini-cabra-preco-venda</title>
+<style>
+  @page { size: A4; margin: 20mm 18mm 20mm 18mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; font-size: 11px; line-height: 1.55; background: #fff; }
+
+  .cover { page-break-after: always; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #fff; padding: 40px; }
+  .cover h1 { font-size: 32px; margin-bottom: 10px; letter-spacing: -0.5px; }
+  .cover .subtitle { font-size: 16px; opacity: 0.85; margin-bottom: 30px; }
+  .cover .url { font-size: 13px; background: rgba(255,255,255,0.12); padding: 10px 24px; border-radius: 8px; font-family: monospace; margin-bottom: 40px; word-break: break-all; }
+  .cover .meta { font-size: 12px; opacity: 0.6; }
+  .cover .badge { display: inline-block; background: #e94560; color: #fff; padding: 6px 20px; border-radius: 20px; font-size: 14px; font-weight: 700; margin-top: 20px; }
+
+  .page { page-break-before: always; padding-top: 10px; }
+  .page:first-of-type { page-break-before: avoid; }
+
+  h2 { font-size: 17px; color: #302b63; border-bottom: 2px solid #e94560; padding-bottom: 4px; margin: 22px 0 10px 0; }
+  h3 { font-size: 13px; color: #e94560; margin: 14px 0 6px 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 14px 0; font-size: 10.5px; }
+  th { background: #302b63; color: #fff; text-align: left; padding: 6px 8px; font-weight: 600; }
+  td { padding: 5px 8px; border-bottom: 1px solid #e0e0e0; }
+  tr:nth-child(even) td { background: #f8f8fc; }
+
+  .status-ok { color: #27ae60; font-weight: 700; }
+  .status-warn { color: #f39c12; font-weight: 700; }
+  .status-fail { color: #e74c3c; font-weight: 700; }
+  .status-absent { color: #e74c3c; font-weight: 700; }
+
+  .score-box { display: inline-block; padding: 4px 12px; border-radius: 6px; font-weight: 700; font-size: 12px; color: #fff; }
+  .score-good { background: #27ae60; }
+  .score-ok { background: #f39c12; }
+  .score-bad { background: #e74c3c; }
+
+  .summary-box { background: #f0f0ff; border-left: 4px solid #302b63; padding: 12px 16px; margin: 10px 0 16px 0; border-radius: 0 6px 6px 0; font-size: 11px; }
+
+  .heading-tree { font-family: 'Consolas', 'Courier New', monospace; font-size: 10px; background: #f8f8fc; padding: 10px 14px; border-radius: 6px; margin: 8px 0 14px 0; line-height: 1.7; }
+
+  .priority-box { padding: 10px 14px; border-radius: 6px; margin: 6px 0 10px 0; }
+  .priority-urgent { background: #fde8e8; border-left: 4px solid #e74c3c; }
+  .priority-high { background: #fff5e0; border-left: 4px solid #f39c12; }
+  .priority-medium { background: #e8f4fd; border-left: 4px solid #3498db; }
+  .priority-low { background: #f0f8f0; border-left: 4px solid #27ae60; }
+  .priority-box h4 { margin: 0 0 6px 0; font-size: 12px; }
+  .priority-box ol { margin-left: 18px; font-size: 10.5px; }
+  .priority-box li { margin-bottom: 3px; }
+
+  .final-score { text-align: center; margin: 20px 0; }
+  .final-score .number { font-size: 48px; font-weight: 800; color: #e74c3c; }
+  .final-score .label { font-size: 14px; color: #666; }
+
+  .footer-note { margin-top: 30px; padding-top: 10px; border-top: 1px solid #ddd; font-size: 9px; color: #999; text-align: center; }
+
+  code { background: #f0f0f5; padding: 1px 5px; border-radius: 3px; font-size: 10px; font-family: 'Consolas', monospace; }
+
+  ul { margin-left: 18px; margin-bottom: 8px; }
+  li { margin-bottom: 2px; }
+  p { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<div class="cover">
+  <h1>Relatório de Auditoria SEO</h1>
+  <p class="subtitle">Análise completa de otimização para mecanismos de busca</p>
+  <div class="url">https://miniporco.com.br/mini-cabra-preco-venda/</div>
+  <p class="meta">Data da análise: 09 de abril de 2026</p>
+  <p class="meta">Plataforma detectada: WordPress + Elementor</p>
+  <div class="badge">Nota Geral: 4.2 / 10</div>
+</div>
+
+<!-- RESUMO EXECUTIVO -->
+<div class="page">
+  <h2>1. Resumo Executivo</h2>
+  <div class="summary-box">
+    A página possui uma base de SEO on-page razoável (title tag, meta description, canonical, Open Graph), porém apresenta <strong>falhas críticas</strong> em dados estruturados (JSON-LD completamente ausente), formato de imagens (todas em JPG, nenhuma em WebP), ausência total de conformidade com a LGPD e oportunidades significativas perdidas em linkagem interna contextual e featured snippets. O site não possui Google Analytics instalado, impossibilitando qualquer mensuração de resultados.
+  </div>
+
+  <h2>2. Title Tag</h2>
+  <table>
+    <tr><th>Item</th><th>Valor</th></tr>
+    <tr><td>Title atual</td><td><code>Mini cabra: Preço, informações e filhotes à venda!</code></td></tr>
+    <tr><td>Caracteres</td><td>54 (limite: 60)</td></tr>
+    <tr><td>Keyword no início?</td><td><span class="status-ok">SIM</span> — "Mini cabra"</td></tr>
+    <tr><td>Avaliação</td><td><span class="score-box score-good">8 / 10</span></td></tr>
+  </table>
+  <p><strong>Sugestão:</strong> Incluir a marca para reforçar autoridade: <code>Mini Cabra: Preço, Filhotes à Venda | Oinque</code> (47 caracteres)</p>
+
+  <h2>3. Meta Description</h2>
+  <table>
+    <tr><th>Item</th><th>Valor</th></tr>
+    <tr><td>Descrição atual</td><td><code>Procurando Mini Cabra? Confira o Preço de mini cabras, mini cabritos e mini bodes. Genética, certificado, microchip, e suporte vitalício.</code></td></tr>
+    <tr><td>Caracteres</td><td>140 (recomendado: 150-160)</td></tr>
+    <tr><td>CTA presente?</td><td><span class="status-warn">NÃO</span></td></tr>
+    <tr><td>Avaliação</td><td><span class="score-box score-ok">6 / 10</span></td></tr>
+  </table>
+  <p><strong>Sugestão:</strong> <code>Procurando Mini Cabra? Confira preços de mini cabras, mini cabritos e mini bodes com genética selecionada, certificado e microchip. Peça seu orçamento!</code> (155 caracteres)</p>
+
+  <h2>4. URL / Slug</h2>
+  <table>
+    <tr><th>Item</th><th>Valor</th></tr>
+    <tr><td>URL</td><td><code>/mini-cabra-preco-venda/</code></td></tr>
+    <tr><td>Keyword presente?</td><td><span class="status-ok">SIM</span></td></tr>
+    <tr><td>Curto e descritivo?</td><td><span class="status-ok">SIM</span> (4 palavras)</td></tr>
+    <tr><td>Avaliação</td><td><span class="score-box score-good">9 / 10</span></td></tr>
+  </table>
+
+  <h2>5. Canonical Tag</h2>
+  <p><span class="status-ok">PRESENTE</span> e correto: <code>https://miniporco.com.br/mini-cabra-preco-venda/</code></p>
+</div>
+
+<!-- OPEN GRAPH + TWITTER -->
+<div class="page">
+  <h2>6. Open Graph (Facebook / Redes Sociais)</h2>
+  <table>
+    <tr><th>Tag</th><th>Status</th><th>Valor / Observação</th></tr>
+    <tr><td>og:url</td><td><span class="status-ok">OK</span></td><td>URL correta</td></tr>
+    <tr><td>og:site_name</td><td><span class="status-ok">OK</span></td><td>Mini porco</td></tr>
+    <tr><td>og:locale</td><td><span class="status-ok">OK</span></td><td>pt_BR</td></tr>
+    <tr><td>og:type</td><td><span class="status-ok">OK</span></td><td>article</td></tr>
+    <tr><td>og:title</td><td><span class="status-ok">OK</span></td><td>Diferente do title tag (bom)</td></tr>
+    <tr><td>og:description</td><td><span class="status-ok">OK</span></td><td>Diferente do meta description (bom)</td></tr>
+    <tr><td>og:image</td><td><span class="status-warn">ATENÇÃO</span></td><td>JPG 640x360 — recomendado 1200x630 em WebP</td></tr>
+    <tr><td>og:image:alt</td><td><span class="status-ok">OK</span></td><td>Texto descritivo presente</td></tr>
+    <tr><td>fb:pages</td><td><span class="status-fail">VAZIO</span></td><td>Tag presente mas sem valor</td></tr>
+    <tr><td>fb:admins</td><td><span class="status-fail">VAZIO</span></td><td>Tag presente mas sem valor</td></tr>
+    <tr><td>fb:app_id</td><td><span class="status-fail">VAZIO</span></td><td>Tag presente mas sem valor</td></tr>
+  </table>
+  <p><strong>Ação:</strong> Remover tags fb: vazias ou preenchê-las. Criar og:image em 1200x630 no formato WebP.</p>
+
+  <h2>7. Twitter Cards</h2>
+  <table>
+    <tr><th>Tag</th><th>Status</th><th>Valor / Observação</th></tr>
+    <tr><td>twitter:card</td><td><span class="status-fail">PROBLEMA</span></td><td><code>summary</code> — deveria ser <code>summary_large_image</code></td></tr>
+    <tr><td>twitter:title</td><td><span class="status-ok">OK</span></td><td>Presente</td></tr>
+    <tr><td>twitter:description</td><td><span class="status-ok">OK</span></td><td>Presente</td></tr>
+    <tr><td>twitter:image</td><td><span class="status-ok">OK</span></td><td>Presente</td></tr>
+    <tr><td>twitter:site</td><td><span class="status-fail">AUSENTE</span></td><td>Não definido</td></tr>
+  </table>
+  <p><strong>Ação:</strong> Trocar para <code>summary_large_image</code> para exibir imagem grande no Twitter/X.</p>
+
+  <h2>8. Robots &amp; Indexação</h2>
+  <table>
+    <tr><th>Item</th><th>Status</th></tr>
+    <tr><td>Meta robots</td><td><span class="status-ok">OK</span> — <code>index, follow, max-snippet:-1, max-image-preview:large</code></td></tr>
+    <tr><td>Canonical</td><td><span class="status-ok">OK</span></td></tr>
+    <tr><td>Hreflang</td><td>Ausente (aceitável para site somente em pt-BR)</td></tr>
+    <tr><td>Meta keywords</td><td><span class="status-warn">AUSENTE</span> (impacto baixo)</td></tr>
+  </table>
+</div>
+
+<!-- HEADINGS -->
+<div class="page">
+  <h2>9. Hierarquia de Headings</h2>
+  <div class="heading-tree">
+    <strong>H1:</strong> MINI CABRA, MINI CABRITO (MINI BODE):<br>
+    &nbsp;&nbsp;<strong>H2:</strong> Preço e filhotes a venda para comprar aqui!<br>
+    &nbsp;&nbsp;<strong>H2:</strong> FOTOS DE MINI CABRAS E MINI CABRITOS ENTREGUES<br>
+    &nbsp;&nbsp;<strong>H2:</strong> Qual é o preço de uma mini cabra?<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<strong>H3:</strong> MINI CABRITO preço<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<strong>H3:</strong> MINI CABRA preço<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<strong>H3:</strong> PREÇO DO CASAL<br>
+    &nbsp;&nbsp;<strong>H2:</strong> Formas de pagamento e segurança<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<strong>H3:</strong> PIX EM 2X &nbsp;|&nbsp; CARTÃO DE CRÉDITO EM ATÉ 12X<br>
+    &nbsp;&nbsp;<strong>H2:</strong> ENTREGA E LOGÍSTICA: ONDE ATENDEMOS<br>
+    &nbsp;&nbsp;<strong>H2:</strong> INFORMAÇÕES ESSENCIAIS SOBRE O TRANSPORTE<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<strong>H3:</strong> Pagamento e Segurança &nbsp;|&nbsp; Valores &nbsp;|&nbsp; Dinâmica da Entrega &nbsp;|&nbsp; Responsabilidade<br>
+    &nbsp;&nbsp;<strong>H2:</strong> COM QUANTOS MESES OS MINI CAPRINOS SÃO ENTREGUES?<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<strong>H3:</strong> O Processo de Desmame &nbsp;|&nbsp; Por que respeitar esse prazo?<br>
+    &nbsp;&nbsp;<strong>H2:</strong> MINI CABRA: O QUE VOCÊ RECEBE COM O FILHOTE?<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<strong>H3:</strong> Microchip &nbsp;|&nbsp; Certificado &nbsp;|&nbsp; Genética &nbsp;|&nbsp; Saúde &nbsp;|&nbsp; Ebook &nbsp;|&nbsp; Entrega &nbsp;|&nbsp; Garantia &nbsp;|&nbsp; Suporte<br>
+    &nbsp;&nbsp;<strong>H2:</strong> MINI CABRA: PADRÃO OFICIAL<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<strong>H3:</strong> Características Técnicas &nbsp;|&nbsp; Alimentação &nbsp;|&nbsp; Indicação &nbsp;|&nbsp; Expectativa de vida<br>
+    &nbsp;&nbsp;<strong>H2:</strong> PERGUNTAS FREQUENTES<br>
+    &nbsp;&nbsp;<strong>H2:</strong> SOBRE MINI CABRA E MINI CABRITO<br>
+  </div>
+
+  <p><strong>Avaliação:</strong> <span class="score-box score-ok">5 / 10</span></p>
+
+  <h3>Problemas encontrados:</h3>
+  <ul>
+    <li><strong>H1 termina com dois pontos</strong> — parece incompleto. Deveria ser frase completa</li>
+    <li><strong>Primeiro H2 funciona como subtítulo do H1</strong> — deveria fazer parte do H1 ou ser removido como heading</li>
+    <li><strong>Headings em CAIXA ALTA (CAPS LOCK)</strong> — prejudica leitura e acessibilidade. Usar CSS para estilizar</li>
+    <li><strong>Erro de acentuação:</strong> "a venda" deveria ser "<strong>à venda</strong>" (com crase) — aparece em vários headings</li>
+    <li><strong>11 H2 na mesma página</strong> — conteúdo excessivo; considerar separar em páginas individuais</li>
+  </ul>
+
+  <h2>10. Dados Estruturados (JSON-LD / Schema Markup)</h2>
+  <table>
+    <tr><th>Tipo de Schema</th><th>Status</th></tr>
+    <tr><td>Product ou Service</td><td><span class="status-fail">AUSENTE</span></td></tr>
+    <tr><td>FAQPage</td><td><span class="status-fail">AUSENTE</span></td></tr>
+    <tr><td>BreadcrumbList</td><td><span class="status-fail">AUSENTE</span></td></tr>
+    <tr><td>Organization / LocalBusiness</td><td><span class="status-fail">AUSENTE</span></td></tr>
+    <tr><td>AggregateRating</td><td><span class="status-fail">AUSENTE</span></td></tr>
+  </table>
+  <div class="summary-box">
+    <strong>CRÍTICO:</strong> Não foi encontrado nenhum bloco <code>&lt;script type="application/ld+json"&gt;</code>. Sem schema, a página não pode aparecer como rich snippet no Google (FAQ expandido, preço, avaliações). Esta é a maior oportunidade perdida da página.
+  </div>
+</div>
+
+<!-- FAQ + IMAGENS -->
+<div class="page">
+  <h2>11. FAQ / Perguntas Frequentes</h2>
+  <table>
+    <tr><th>Item</th><th>Status</th></tr>
+    <tr><td>Seção FAQ presente?</td><td><span class="status-ok">SIM</span> (widget Toggle do Elementor)</td></tr>
+    <tr><td>Quantidade de perguntas</td><td><span class="status-warn">Apenas 2</span> (mínimo recomendado: 3-5)</td></tr>
+    <tr><td>Schema FAQPage em JSON-LD?</td><td><span class="status-fail">NÃO</span></td></tr>
+    <tr><td>Avaliação</td><td><span class="score-box score-bad">3 / 10</span></td></tr>
+  </table>
+  <p><strong>Perguntas encontradas:</strong></p>
+  <ul>
+    <li>"Qual tamanho fica uma mini cabra?"</li>
+    <li>"Pode ter mini cabra em casa?"</li>
+  </ul>
+  <p><strong>Perguntas que deveriam ser adicionadas:</strong></p>
+  <ul>
+    <li>"Quanto custa uma mini cabra?"</li>
+    <li>"Como comprar uma mini cabra?"</li>
+    <li>"Mini cabra precisa de espaço grande?"</li>
+    <li>"O que uma mini cabra come?"</li>
+    <li>"Mini cabra é legalizada como pet?"</li>
+    <li>"Qual a expectativa de vida de uma mini cabra?"</li>
+  </ul>
+
+  <h2>12. Imagens</h2>
+  <table>
+    <tr><th>Métrica</th><th>Valor</th><th>Status</th></tr>
+    <tr><td>Total de imagens</td><td>15</td><td>—</td></tr>
+    <tr><td>Formato JPG</td><td>39 referências</td><td><span class="status-fail">Deveria ser WebP</span></td></tr>
+    <tr><td>Formato PNG</td><td>5 referências</td><td><span class="status-fail">Deveria ser WebP</span></td></tr>
+    <tr><td>Formato WebP</td><td>0 (zero)</td><td><span class="status-fail">CRÍTICO</span></td></tr>
+    <tr><td>Alt text presente?</td><td>Todas as imagens</td><td><span class="status-ok">OK</span></td></tr>
+    <tr><td>Width/Height definidos?</td><td>Parcial</td><td><span class="status-warn">ATENÇÃO</span></td></tr>
+    <tr><td>fetchpriority="high" (hero)</td><td>1 imagem</td><td><span class="status-ok">OK</span></td></tr>
+    <tr><td>loading="lazy" nativo</td><td>0 (usa JS/Smush)</td><td><span class="status-warn">ATENÇÃO</span></td></tr>
+  </table>
+
+  <h3>Problemas com nomes de arquivos:</h3>
+  <table>
+    <tr><th>Nome atual (ruim)</th><th>Sugestão (SEO-friendly)</th></tr>
+    <tr><td><code>unnamed-1.jpg</code></td><td><code>mini-cabra-filhote-criador.webp</code></td></tr>
+    <tr><td><code>28_28_11zon.jpg</code></td><td><code>mini-cabra-brincando-jardim.webp</code></td></tr>
+    <tr><td><code>PSX_20230722_120445.jpg</code></td><td><code>mini-cabra-cliente-satisfeito.webp</code></td></tr>
+    <tr><td><code>PSX_20231025_230458.jpg</code></td><td><code>mini-bode-mini-porco-rs.webp</code></td></tr>
+  </table>
+  <p><strong>Ponto positivo:</strong> Todos os alt texts são descritivos e em português com acentos corretos.</p>
+</div>
+
+<!-- LINKAGEM + LGPD + ANALYTICS -->
+<div class="page">
+  <h2>13. Linkagem Interna</h2>
+  <table>
+    <tr><th>Destino</th><th>Status</th><th>Observação</th></tr>
+    <tr><td>Home (/)</td><td><span class="status-ok">SIM</span></td><td>Apenas no menu</td></tr>
+    <tr><td>Mini porco</td><td><span class="status-ok">SIM</span></td><td>Apenas no menu</td></tr>
+    <tr><td>Mini cabra (própria página)</td><td><span class="status-warn">SIM</span></td><td>Auto-link desnecessário</td></tr>
+    <tr><td>Mini ponei</td><td><span class="status-ok">SIM</span></td><td>Apenas no menu</td></tr>
+    <tr><td>Mini vaca</td><td><span class="status-ok">SIM</span></td><td>Apenas no menu</td></tr>
+    <tr><td>Emu australiano</td><td><span class="status-ok">SIM</span></td><td>Apenas no menu</td></tr>
+    <tr><td>Chinchilas</td><td><span class="status-ok">SIM</span></td><td>Apenas no menu</td></tr>
+    <tr><td>Transportadora</td><td><span class="status-ok">SIM</span></td><td>Apenas no menu</td></tr>
+    <tr><td>Contato</td><td><span class="status-ok">SIM</span></td><td>Apenas no menu</td></tr>
+    <tr><td>Política de privacidade</td><td><span class="status-fail">NÃO</span></td><td>Inexistente</td></tr>
+  </table>
+  <p><strong>Avaliação:</strong> <span class="score-box score-bad">3 / 10</span></p>
+  <h3>Problemas:</h3>
+  <ul>
+    <li><strong>Nenhum link interno contextual dentro do conteúdo</strong> — links existem apenas no menu de navegação</li>
+    <li>Sem seção "Veja também" ou "Animais relacionados" ao final</li>
+    <li>Textos âncora genéricos (nomes das páginas, sem variações de keyword)</li>
+    <li>Auto-link para a própria página (inútil para SEO)</li>
+  </ul>
+
+  <h2>14. Links Externos e Redes Sociais</h2>
+  <table>
+    <tr><th>Rede</th><th>URL</th></tr>
+    <tr><td>YouTube</td><td>youtube.com/@oinqueminipigs</td></tr>
+    <tr><td>Facebook</td><td>facebook.com/oinqueminipig</td></tr>
+    <tr><td>Instagram</td><td>instagram.com/miniporcobr/</td></tr>
+  </table>
+  <div class="summary-box">
+    <strong>Atenção:</strong> Foram encontrados <strong>dois números de WhatsApp diferentes</strong> na mesma página:<br>
+    • <code>(31) 99216-4429</code> (via wa.me)<br>
+    • <code>(31) 99600-1526</code> (via api.whatsapp.com)<br>
+    Verificar se ambos estão corretos ou se há um erro. Isso pode confundir o cliente.
+  </div>
+
+  <h2>15. Conformidade LGPD / Cookies</h2>
+  <table>
+    <tr><th>Item</th><th>Status</th></tr>
+    <tr><td>Banner de consentimento de cookies</td><td><span class="status-fail">AUSENTE</span></td></tr>
+    <tr><td>Página de política de privacidade</td><td><span class="status-fail">AUSENTE / NÃO LINKADA</span></td></tr>
+    <tr><td>Página de termos de uso</td><td><span class="status-fail">AUSENTE</span></td></tr>
+    <tr><td>Consentimento antes do analytics</td><td><span class="status-fail">NÃO</span></td></tr>
+  </table>
+  <div class="summary-box" style="border-left-color: #e74c3c;">
+    <strong>CRÍTICO — RISCO LEGAL:</strong> O site não está em conformidade com a Lei Geral de Proteção de Dados (LGPD). Não há banner de consentimento de cookies, não há link para política de privacidade e não existem termos de uso visíveis. Isso expõe o negócio a possíveis sanções.
+  </div>
+
+  <h2>16. Google Analytics / Rastreamento</h2>
+  <table>
+    <tr><th>Item</th><th>Status</th></tr>
+    <tr><td>Google Analytics (GA4)</td><td><span class="status-fail">NÃO DETECTADO</span></td></tr>
+    <tr><td>Google Tag Manager</td><td><span class="status-fail">NÃO DETECTADO</span></td></tr>
+    <tr><td>Outro analytics</td><td><span class="status-fail">NÃO DETECTADO</span></td></tr>
+  </table>
+  <p><strong>Impacto:</strong> Sem analytics, é impossível medir tráfego, conversões, comportamento do usuário ou retorno sobre investimento em SEO. Implementação urgente recomendada.</p>
+</div>
+
+<!-- PERFORMANCE + ACESSIBILIDADE + ITENS AUSENTES -->
+<div class="page">
+  <h2>17. Performance e Core Web Vitals</h2>
+  <table>
+    <tr><th>Item</th><th>Status</th><th>Observação</th></tr>
+    <tr><td>Imagens em WebP</td><td><span class="status-fail">NÃO</span></td><td>Todas JPG/PNG</td></tr>
+    <tr><td>Lazy loading nativo</td><td><span class="status-warn">PARCIAL</span></td><td>Usa JS (Smush) ao invés de atributo nativo</td></tr>
+    <tr><td>Preload hero image</td><td><span class="status-ok">SIM</span></td><td>fetchpriority="high" presente</td></tr>
+    <tr><td>Scripts async</td><td><span class="status-ok">SIM</span></td><td>12 scripts com async</td></tr>
+    <tr><td>Preconnect para fonts</td><td><span class="status-fail">NÃO</span></td><td>Google Fonts sem preconnect</td></tr>
+    <tr><td>Cache (LiteSpeed)</td><td><span class="status-ok">SIM</span></td><td>LiteSpeed Cache ativo</td></tr>
+    <tr><td>CDN</td><td><span class="status-ok">SIM</span></td><td>Jetpack CDN (i0.wp.com)</td></tr>
+    <tr><td>Tamanho do HTML</td><td><span class="status-fail">~370KB</span></td><td>Muito pesado (Elementor gera CSS/JS excessivo)</td></tr>
+  </table>
+
+  <h2>18. Acessibilidade (a11y)</h2>
+  <table>
+    <tr><th>Item</th><th>Status</th></tr>
+    <tr><td>lang="pt-BR"</td><td><span class="status-ok">OK</span></td></tr>
+    <tr><td>Alt text em imagens</td><td><span class="status-ok">OK</span></td></tr>
+    <tr><td>aria-expanded no FAQ</td><td><span class="status-ok">OK</span></td></tr>
+    <tr><td>aria-controls no FAQ</td><td><span class="status-ok">OK</span></td></tr>
+    <tr><td>Headings em CAPS LOCK</td><td><span class="status-warn">PROBLEMA</span> — dificulta leitura por leitores de tela</td></tr>
+  </table>
+
+  <h2>19. Itens Ausentes (Checklist)</h2>
+  <table>
+    <tr><th>Item</th><th>Status</th><th>Impacto</th></tr>
+    <tr><td>JSON-LD (qualquer tipo)</td><td><span class="status-fail">AUSENTE</span></td><td>CRÍTICO</td></tr>
+    <tr><td>FAQPage schema</td><td><span class="status-fail">AUSENTE</span></td><td>ALTO</td></tr>
+    <tr><td>BreadcrumbList schema</td><td><span class="status-fail">AUSENTE</span></td><td>ALTO</td></tr>
+    <tr><td>Product/Service schema</td><td><span class="status-fail">AUSENTE</span></td><td>ALTO</td></tr>
+    <tr><td>Google Analytics (GA4)</td><td><span class="status-fail">AUSENTE</span></td><td>CRÍTICO</td></tr>
+    <tr><td>Banner de cookies (LGPD)</td><td><span class="status-fail">AUSENTE</span></td><td>CRÍTICO (legal)</td></tr>
+    <tr><td>Política de privacidade</td><td><span class="status-fail">AUSENTE</span></td><td>CRÍTICO (legal)</td></tr>
+    <tr><td>Termos de uso</td><td><span class="status-fail">AUSENTE</span></td><td>ALTO</td></tr>
+    <tr><td>manifest.json (PWA)</td><td><span class="status-fail">AUSENTE</span></td><td>BAIXO</td></tr>
+    <tr><td>Links internos contextuais</td><td><span class="status-fail">AUSENTE</span></td><td>ALTO</td></tr>
+    <tr><td>Imagens WebP</td><td><span class="status-fail">AUSENTE</span></td><td>ALTO</td></tr>
+    <tr><td>Preconnect Google Fonts</td><td><span class="status-fail">AUSENTE</span></td><td>MÉDIO</td></tr>
+  </table>
+</div>
+
+<!-- PONTUAÇÃO + PRIORIDADES -->
+<div class="page">
+  <h2>20. Pontuação por Categoria</h2>
+  <table>
+    <tr><th>Categoria</th><th>Nota</th><th>Peso</th></tr>
+    <tr><td>Title Tag</td><td><span class="score-box score-good">8 / 10</span></td><td>Alto</td></tr>
+    <tr><td>Meta Description</td><td><span class="score-box score-ok">6 / 10</span></td><td>Alto</td></tr>
+    <tr><td>URL / Slug</td><td><span class="score-box score-good">9 / 10</span></td><td>Médio</td></tr>
+    <tr><td>Headings</td><td><span class="score-box score-ok">5 / 10</span></td><td>Alto</td></tr>
+    <tr><td>Open Graph</td><td><span class="score-box score-ok">6 / 10</span></td><td>Médio</td></tr>
+    <tr><td>Twitter Cards</td><td><span class="score-box score-ok">4 / 10</span></td><td>Baixo</td></tr>
+    <tr><td>Dados Estruturados (JSON-LD)</td><td><span class="score-box score-bad">0 / 10</span></td><td>CRÍTICO</td></tr>
+    <tr><td>FAQ</td><td><span class="score-box score-bad">3 / 10</span></td><td>Alto</td></tr>
+    <tr><td>Imagens</td><td><span class="score-box score-ok">4 / 10</span></td><td>Alto</td></tr>
+    <tr><td>Linkagem Interna</td><td><span class="score-box score-bad">3 / 10</span></td><td>Alto</td></tr>
+    <tr><td>LGPD / Privacidade</td><td><span class="score-box score-bad">0 / 10</span></td><td>CRÍTICO</td></tr>
+    <tr><td>Analytics</td><td><span class="score-box score-bad">0 / 10</span></td><td>CRÍTICO</td></tr>
+    <tr><td>Performance</td><td><span class="score-box score-ok">5 / 10</span></td><td>Alto</td></tr>
+    <tr><td>Conteúdo (volume e qualidade)</td><td><span class="score-box score-ok">7 / 10</span></td><td>Alto</td></tr>
+  </table>
+
+  <div class="final-score">
+    <div class="number">4.2 / 10</div>
+    <div class="label">NOTA GERAL DA PÁGINA</div>
+  </div>
+
+  <h2>21. Plano de Ação — Prioridades de Correção</h2>
+
+  <div class="priority-box priority-urgent">
+    <h4>🔴 URGENTE — Risco legal e sem mensuração</h4>
+    <ol>
+      <li>Implementar banner de cookies (LGPD) + criar página de Política de Privacidade</li>
+      <li>Instalar Google Analytics (GA4) com carregamento lazy (após interação do usuário)</li>
+    </ol>
+  </div>
+
+  <div class="priority-box priority-high">
+    <h4>🟠 ALTA PRIORIDADE — Impacto direto no ranking do Google</h4>
+    <ol start="3">
+      <li>Adicionar JSON-LD: FAQPage, Product/Service, BreadcrumbList, Organization</li>
+      <li>Converter todas as imagens para formato WebP</li>
+      <li>Expandir FAQ para 5-8 perguntas com schema FAQPage</li>
+      <li>Adicionar links internos contextuais dentro do conteúdo (não apenas no menu)</li>
+      <li>Renomear arquivos de imagem com nomes SEO-friendly</li>
+    </ol>
+  </div>
+
+  <div class="priority-box priority-medium">
+    <h4>🔵 MÉDIA PRIORIDADE — Otimizações importantes</h4>
+    <ol start="8">
+      <li>Corrigir headings: remover CAPS LOCK, corrigir "a venda" → "à venda" (crase)</li>
+      <li>Trocar Twitter Card para <code>summary_large_image</code></li>
+      <li>Resolver inconsistência dos 2 números de WhatsApp</li>
+      <li>Remover tags OG vazias (fb:pages, fb:admins, fb:app_id)</li>
+      <li>Criar og:image em 1200x630 (atualmente 640x360)</li>
+    </ol>
+  </div>
+
+  <div class="priority-box priority-low">
+    <h4>🟢 BAIXA PRIORIDADE — Melhorias complementares</h4>
+    <ol start="13">
+      <li>Adicionar manifest.json (PWA básico)</li>
+      <li>Implementar preconnect para Google Fonts</li>
+      <li>Adicionar meta keywords</li>
+      <li>Implementar <code>loading="lazy"</code> nativo nas imagens</li>
+    </ol>
+  </div>
+
+  <div class="footer-note">
+    Relatório gerado em 09/04/2026 — Análise técnica de SEO on-page.<br>
+    Página analisada: https://miniporco.com.br/mini-cabra-preco-venda/
+  </div>
+</div>
+
+</body>
+</html>

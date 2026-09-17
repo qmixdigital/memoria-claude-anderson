@@ -1,0 +1,2 @@
+- [Versionamento e deploy do QMIX Invest](repo-invest-defasado-vs-producao.md) — repo privado no GitHub, deploy key, os 4 bugs de deploy ja corrigidos, e por que sinais/IA sumiram
+- [Carteira: a planilha da B3 nao tem preco de compra](carteira-invest-fonte-de-verdade.md) — como atualizar posicao sem destruir o preco medio e a apuracao de imposto

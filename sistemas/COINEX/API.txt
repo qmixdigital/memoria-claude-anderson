@@ -1,0 +1,6 @@
+Seu API
+VS
+Access ID
+<<REMOVIDO>> 
+Secret Key
+<<REMOVIDO>> 

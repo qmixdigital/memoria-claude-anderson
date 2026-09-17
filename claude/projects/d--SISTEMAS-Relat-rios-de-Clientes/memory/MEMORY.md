@@ -1,0 +1,1 @@
+- [Abrir HTML no navegador](feedback-abrir-html-no-navegador.md) — todo relatório gerado abre sozinho no navegador dele

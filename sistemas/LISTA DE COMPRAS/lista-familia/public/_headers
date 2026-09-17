@@ -1,0 +1,11 @@
+# Cabeçalhos aplicados pela borda da Cloudflare em todo arquivo estático.
+# O X-Robots-Tag vale mais que a meta tag do HTML: alcança também imagens,
+# CSS e JavaScript, e não depende de o rastreador ler a página.
+
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: no-referrer
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  Cross-Origin-Opener-Policy: same-origin

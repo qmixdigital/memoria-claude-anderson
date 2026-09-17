@@ -1,0 +1,26 @@
+/* Home-only overrides for Desassossegada (carregado apenas em is_front_page/is_home). */
+
+/* Mais respiro entre secoes no home */
+.dsg-section,
+.dsg-cluster-grid,
+.dsg-feature-cat,
+.dsg-hero { margin-bottom: var(--dsg-sp-7); }
+
+/* Intro: ajuste tipografico exclusivo da home */
+.dsg-intro h1 {
+  font-size: clamp(26px, 4vw, 38px);
+}
+
+/* Hero: priorize LCP visual */
+.dsg-hero__grid > a:nth-child(1) .dsg-hero__overlay {
+  background: linear-gradient(to top, rgba(0, 56, 68, .96) 0%, rgba(0, 56, 68, .3) 70%, transparent 100%);
+}
+
+/* Cluster card hover */
+.dsg-cluster { transition: box-shadow .2s ease, transform .2s ease; }
+.dsg-cluster:hover { box-shadow: var(--dsg-shadow-md); transform: translateY(-2px); }
+
+/* No mobile, esconder timestamps do breaking para economizar linha */
+@media (max-width: 480px) {
+  .dsg-breaking li time { display: block; margin-right: 0; }
+}

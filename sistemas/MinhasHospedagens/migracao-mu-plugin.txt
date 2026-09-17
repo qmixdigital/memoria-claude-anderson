@@ -1,0 +1,116 @@
+# Migração plugin-artigos-v1-8 -> mu-plugin
+# Data: 2026-04-07
+# Total migrados: 99 sites
+# Falhas: 0
+# Hospedagens: VPS1, anderson.gna, qmixdigital, Hostverge
+
+## Sites migrados com sucesso
+
+### Teste inicial (5 sites)
+folhaum.com
+jornalexpresso.net
+diariodobrejo.com
+sejanoticia.com
+mundodasnoticias.net
+
+### VPS1 (31 sites)
+clickinfohub.com
+dataroomus.com
+diariodatv.com
+diariodegoiania.com
+edenoticias.com
+entrenoticia.com
+euvo.com.br
+filmeseseriesnovas.com
+gdsnoticias.com
+gpnoticias.com
+jornalacapital.com
+jornaldinamico.com
+jornalimigrantes.com
+jrnoticias.com
+maragoginoticias.com
+matogrossosaude.com.br
+mgnoticias.net
+nodiario.com
+noticias9.com
+noticiasdasemana.com
+noticiasdiarios.com
+noticiasdodia.net
+noticiasdojogo.com
+noticiasgoias.com
+osertaoenoticia.com
+portalnoticiasbh.com
+portalr5.com
+r10noticias.com
+rsnoticias.net
+rumourisnews.com
+topsulnoticias.com
+
+### anderson.gna (38 sites)
+advivo.com.br
+agencianacionaldenoticias.com
+azulmagazine.com.br
+blogse.com.br
+boxnoticias.net
+cameracotidiana.com.br
+curiosododia.com.br
+diariopernambucano.com.br
+divirto.com.br
+ebookcult.com.br
+editaldeconcurso.net
+gazetaalerta.com
+gazetadoconsumidor.com
+gazetaretina.com
+girodasnoticias.com
+incast.com.br
+jornaldabahia.net
+jornaldebarcelos.com
+jornaldobairroalto.com.br
+jornalistanofato.com
+jornalsaosimao.com
+manacultura.com
+nerddahora.com
+noticiasagoras.com
+noticiasubuntu.com
+olharmoderno.com
+opopularjornal.com.br
+professortic.com
+publisherbrasil.com.br
+qmixdigital.com.br
+revistarumo.com.br
+saberdefato.com.br
+semtedio.com
+setorenergetico.com.br
+tempusnoticias.com
+tribunainformativa.com
+tribunalpopular.org
+umjornal.com
+
+### qmixdigital (6 sites)
+barranews.com.br
+darkcyan-narwhal-224012.hostingersite.com
+desassossegada.com.br
+folhadonoroeste.com.br
+folhar.com.br
+oiempreendedores.com.br
+
+### Hostverge (19 sites)
+agoranoticias.net
+cirurgiacoracao.com.br
+cirurgiadecancer.com.br
+df8.com.br
+institutoortopedico.com.br
+jornalconceito.com
+medicinageriatrica
+ocontraditorio.com
+ortopediacoluna
+ortopedistadeombro
+planomedicosaude.com.br
+pontonaturalbrasil
+revistadeducao
+sabedoriaglobal
+saudeacessivel.com.br
+saudevitalidade
+saudicas.com.br
+viajenodetalhe
+wtw19

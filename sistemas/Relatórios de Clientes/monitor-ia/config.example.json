@@ -1,0 +1,72 @@
+{
+  "_nota": "Copie para config.json e edite. Os precos sao por 1 milhao de tokens e servem so para estimar custo; confirme no painel de cada fornecedor. Deixe null para nao calcular.",
+
+  "concorrentes": [
+    "Clínica Ortopédica Central",
+    { "nome": "Dr. Beltrano", "apelidos": ["Beltrano de Souza", "drbeltrano.com.br"] }
+  ],
+
+  "clientes": [
+    {
+      "id": "dr-exemplo",
+      "nome": "Dr. Fulano de Tal",
+      "apelidos": ["Fulano de Tal", "drfulano.com.br", "Clínica Fulano"],
+      "prompts": [
+        "Quem é o melhor ortopedista especialista em joelho em Goiânia?",
+        "Indique ortopedistas de confiança em Goiânia para cirurgia de joelho",
+        "Preciso de um ortopedista em Goiânia, quem você recomenda?"
+      ]
+    },
+    {
+      "id": "dra-exemplo-2",
+      "nome": "Dra. Ciclana",
+      "apelidos": ["Ciclana", "draciclana.com.br"],
+      "concorrentes": ["Clínica Derma Goiânia", "Dra. Sicrana"],
+      "prompts": [
+        "Melhor dermatologista em Goiânia para tratamento de melasma",
+        "Quais dermatologistas você indica em Goiânia?"
+      ]
+    }
+  ],
+
+  "provedores": {
+    "openai": {
+      "ativo": true,
+      "modelo": "gpt-4o",
+      "max_tokens": 2000,
+      "preco_entrada": 2.5,
+      "preco_saida": 10.0
+    },
+    "anthropic": {
+      "ativo": true,
+      "modelo": "claude-opus-5",
+      "esforco": "low",
+      "ferramenta_busca": "web_search_20260209",
+      "max_tokens": 2000,
+      "preco_entrada": 5.0,
+      "preco_saida": 25.0
+    },
+    "gemini": {
+      "ativo": true,
+      "modelo": "gemini-2.0-flash",
+      "max_tokens": 2000,
+      "preco_entrada": null,
+      "preco_saida": null
+    },
+    "perplexity": {
+      "ativo": true,
+      "modelo": "sonar",
+      "max_tokens": 2000,
+      "preco_entrada": null,
+      "preco_saida": null
+    },
+    "google_ai_overview": {
+      "ativo": false,
+      "modelo": "serper",
+      "pais": "br",
+      "idioma": "pt-br",
+      "preco_entrada": null,
+      "preco_saida": null
+    }
+  }
+}

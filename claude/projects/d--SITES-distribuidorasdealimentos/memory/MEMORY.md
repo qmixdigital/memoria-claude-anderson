@@ -1,0 +1,5 @@
+- [VPS Hosting](reference_vps_hosting.md) — Onde o site vive em produção desde 22/06/2026 (srv1166087)
+- [QMIX News Integration](reference_qmix_news.md) — API endpoint, credenciais e rewrite legado /wp-json/ → /api/wp-json/
+- [Postgres max_connections](reference_postgres_max_connections.md) — subido de 100 para 300 em 07/07/2026 para builds SSG não esgotarem slots
+- [Auto-link expandido](project_autolink_expandido.md) — src/lib/auto-link.ts cobre 12 tipos de link (produtos, marcas, safras, CEASAs, guias, ferramentas...) com cotas por tipo
+- [Nginx rate limit + fail2ban](reference_nginx_ratelimit.md) — 28/07/2026 zone `nextjs_ip` compartilhada por 18 sites Next.js do servidor + fail2ban jails (nginx-limit-req + recidive)

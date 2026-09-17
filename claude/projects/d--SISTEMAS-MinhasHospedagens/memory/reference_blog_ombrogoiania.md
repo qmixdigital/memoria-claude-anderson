@@ -1,0 +1,23 @@
+---
+name: reference_blog_ombrogoiania
+description: "blog.ombrogoiania.com.br (Dr. Thiago Caixeta, ortopedia ombro/cotovelo) — host, tema Jannah, publicidade removida, tag cirurgia-de-ombro"
+metadata: 
+  node_type: memory
+  type: reference
+  originSessionId: 275c97d9-ef2f-4298-a595-74a3b5880cd9
+---
+
+**blog.ombrogoiania.com.br** — blog de CLIENTE (Dr. Thiago Caixeta, ortopedista ombro/cotovelo, Goiânia). Parte dos 5 blogs pendentes de migração [[project_migracao_blogs_clientes]].
+
+- **Host:** `ssh opengravity`, HestiaCP user `qmix`, docroot `/home/qmix/web/blog.ombrogoiania.com.br/public_html`. ⚠️ wp-cli roda como root → usar **`--allow-root`** em todo comando (e filtrar o aviso YIKES do output).
+- **Stack:** WordPress + tema **Jannah** (TieLabs) ativo (jannah-child inativo). Plugins: jannah-optimization, seo-by-rank-math, redis-cache, xml-sitemap-feed. Opções do tema em `tie_jannah_options` (NÃO `tie_options`). Cache: Redis (`wp redis flush`) + Jannah + Cloudflare.
+- **Cloudflare:** account `b7827330baf3a3a92f02972b89523639`, zona `273d1aeb06ffda98885f0879303a11e5`, token `cfat_oKIqK…` (na doc de migração). `purge_everything` p/ limpar APO.
+
+**Estratégia de lead cirúrgico (2026-07-02):** o médico é cirurgião e reclamava de contatos de casos não-cirúrgicos. Plano: CTA/contato só em conteúdo cirúrgico; conteúdo de dor/informativo vira degrau de funil (link p/ cirurgia) sem contato direto.
+- **Publicidade automática REMOVIDA** (reversível): 5 slots de Ad do Jannah desligados (`banner_top_tab`, `banner_above_content`, `banner_category_below_posts`, `article_inline_ad_1/2` — códigos preservados, só toggles false) + 3 widgets "Stream Item" (banner "Dr. Thiago Caixeta/Saiba Mais") movidas p/ `wp_inactive_widgets` (sidebar + 2 seções da home). Backup: `opengravity:/home/qmix/tie_jannah_options.backup-20260702.json`. Banner HTML salvo em `D:\SISTEMAS\MinhasHospedagens\blog-ombrogoiania\banner-cta-original.html` (reusar no CTA seletivo).
+- **Tag `cirurgia-de-ombro`** (post_tag id **34**) aplicada a **72 posts** cirúrgicos/que levam à cirurgia do OMBRO (cirurgia/artroscopia/prótese/pós-op + manguito, luxação/instabilidade, Bankart/Hill-Sachs/SLAP/HAGL/labral, fratura úmero proximal/clavícula, ruptura de tendão, artrose/osteonecrose→prótese). Excluídos: anatomia, dor genérica/irradiada, infiltração/regenerativa, bursite/tendinite/capsulite simples, e conteúdo só de COTOVELO. Link: https://blog.ombrogoiania.com.br/tag/cirurgia-de-ombro/
+- **CTA SELETIVO ATIVO (mu-plugin `mc-cta-cirurgia.php`):** injeta CTA de contato via `the_content` SÓ em posts com tag `cirurgia-de-ombro` OU `cirurgia-de-cotovelo` (`has_term`). 2 posições (após 3º parágrafo + fim). Copy QUALIFICA o lead ("indicação de cirurgia / laudo de ressonância / não melhorou com conservador"; nota "atendimento p/ casos cirúrgicos, dor sem indicação começa pela fisioterapia") = o "cerco". WhatsApp/tel **5562991535719** (62 99153-5719) — número ÚNICO, blog + site principal (trocado 2026-07-02; antigos 556230890978/556291169657/99835-0080 aposentados, NÃO usar) — com msg pré-preenchida + título do artigo (rastreia origem do lead). Card roxo #6E417C, **botão verde WhatsApp #25D366** (trocado do dourado). Posts não-cirúrgicos ficam SEM contato.
+- **PENDENTE:** criar tag `cirurgia-de-cotovelo` p/ ~18 posts cirúrgicos de cotovelo (o mu-plugin já reconhece essa tag — é só criar + marcar). Opcional: CTA de FUNIL nos posts não-cirúrgicos (link p/ pilar cirúrgico, SEM contato).
+
+**Logo + avatar (fix 2026-07-02):** o logo do header apontava para `2025/11/Ortopedista-ombro-Dr-Thiago-Logo-cor.webp` que foi DELETADO (301→home). O wordmark horizontal sumiu do servidor do blog, mas o **site principal ombrogoiania.com.br tem a logo real** em `/img/Ortopedista-ombro-Dr-Thiago-Logo-cor.webp` (230×50 webp). Baixei p/ a mídia do blog (attachment 4802) e apontei as 4 chaves de logo do `tie_jannah_options` (logo/logo_retina/mobile_logo/mobile_logo_retina) para ela. ⚠️ NÃO usar o `cropped-cropped-...Logo-cor.webp` (512x512) — esse é o FAVICON/site-icon, não a logo do header.
+- **Avatar do autor** (Dr. Thiago, user ID 2, email fake local → sem Gravatar; simple-local-avatars NÃO está ativo aqui): baixei a foto do Dr. do site principal (`ombrogoiania.com.br/img/Ortopedista-Especialista-em-Ombro-em-Goiania-Dr.-Thiago-Caixeta.webp` = og:image) p/ a mídia (attachment 4801) e criei mu-plugin **`author-avatar.php`** que força essa foto via filtro `pre_get_avatar_data` p/ user 2 (independe de plugin). mu-plugins do blog: author-privacy, author-avatar, s2645dc-links, s2645dc-shield, stats-2645dc, tf-e26616, wp-password-bcrypt.

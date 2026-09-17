@@ -1,0 +1,26 @@
+name = "lista-familia"
+main = "src/index.ts"
+compatibility_date = "2026-08-01"
+
+# Conta Anderson Alves. Sem isso o wrangler pede para escolher entre as
+# dezenas de contas as quais o token tem acesso.
+account_id = "9ecbf885a61a34c6ac4d73033fa0f497"
+
+# Assets estaticos servidos direto pela borda da Cloudflare.
+# Requests que batem em um arquivo do /public nao invocam o Worker
+# e por isso nao consomem a cota diaria de requests.
+[assets]
+directory = "./public"
+binding = "ASSETS"
+# Só a página passa pelo Worker, para a portaria contra robô valer na entrada.
+# Deixar todos os arquivos passarem gastaria invocação à toa: CSS, JavaScript
+# e ícones continuam saindo direto da borda, de graça.
+run_worker_first = ["/", "/index.html"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lista-familia"
+database_id = "384cc516-fda8-4b7b-8008-d35243b8101f"
+
+[observability]
+enabled = true

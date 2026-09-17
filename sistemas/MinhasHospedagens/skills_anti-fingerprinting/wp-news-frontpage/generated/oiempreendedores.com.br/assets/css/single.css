@@ -1,0 +1,104 @@
+/* Single — refinos finos da matéria (Archetype IV — sidebar-rich). */
+
+.oie-post__content figure{
+    margin:var(--oie-sp-3) 0;
+}
+.oie-post__content figure img{
+    border-radius:var(--oie-r-card);
+}
+.oie-post__content figcaption{
+    font-family:var(--oie-font-meta);
+    font-size:12px;
+    color:var(--oie-muted);
+    margin-top:6px;
+    text-align:left;
+}
+
+.oie-post__content ul,
+.oie-post__content ol{
+    padding-left:24px;
+    margin:0 0 var(--oie-sp-2);
+}
+.oie-post__content li{ margin-bottom:6px; }
+
+.oie-post__content table{
+    border-collapse:collapse;
+    width:100%;
+    margin:var(--oie-sp-3) 0;
+    font-size:14px;
+}
+.oie-post__content table th,
+.oie-post__content table td{
+    padding:10px 12px;
+    border-bottom:1px solid var(--oie-line);
+    text-align:left;
+}
+.oie-post__content table th{
+    background:var(--oie-bg);
+    font-family:var(--oie-font-display);
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+}
+
+/* Dropcap (Bunyad shim) */
+.oie-dropcap{
+    float:left;
+    font-family:var(--oie-font-display);
+    font-size:54px;
+    line-height:1;
+    font-weight:900;
+    margin:6px 12px 0 0;
+    color:var(--oie-accent);
+}
+
+/* Pullquote (Bunyad shim) */
+.oie-pullquote{
+    border-left:3px solid var(--oie-accent);
+    margin:var(--oie-sp-3) 0;
+    padding:0 var(--oie-sp-3);
+    font-size:22px;
+    line-height:1.4;
+    font-style:italic;
+    color:var(--oie-ink);
+}
+
+/* Alert */
+.oie-alert{
+    background:#fff8e6;
+    border-left:3px solid #d4a017;
+    padding:var(--oie-sp-2);
+    margin:var(--oie-sp-2) 0;
+    font-size:14px;
+}
+
+/* Divider */
+.oie-divider{
+    border:none;
+    border-top:1px solid var(--oie-line);
+    margin:var(--oie-sp-3) 0;
+}
+
+/* Layout single (sidebar 320px à direita) */
+@media (min-width:981px){
+    .oie-post{
+        max-width:720px;
+    }
+}
+
+/* Comments — Facebook fallback nativo */
+.oie-comments .comment-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.oie-comments .comment-body{
+    padding:var(--oie-sp-2) 0;
+    border-bottom:1px solid var(--oie-line);
+}
+
+/* Print-friendly */
+@media print{
+    .oie-share-rail, .oie-floating-social, .oie-related, .oie-comments, .oie-header, .oie-footer{ display:none !important; }
+    .oie-post{ box-shadow:none; padding:0; }
+}

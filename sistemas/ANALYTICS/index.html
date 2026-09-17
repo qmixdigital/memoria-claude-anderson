@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA4 Realtime Dashboard</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <h1 class="header-title">GA4 Realtime</h1>
+      <span class="header-refresh" id="last-refresh"></span>
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav-link active">Realtime</a>
+        <a href="whatsapp.html" class="header-nav-link">Relatório WhatsApp</a>
+      </nav>
+    </div>
+    <div class="header-center">
+      <div class="header-stat">
+        <span class="stat-label">Usuarios ativos</span>
+        <span class="stat-value" id="total-users">--</span>
+      </div>
+      <div class="header-clock" id="clock">--:--:--</div>
+    </div>
+    <div class="header-right">
+      <div id="user-info" class="user-info" style="display:none;">
+        <span id="user-email"></span>
+        <button id="btn-logout" class="btn btn-logout">Sair</button>
+      </div>
+      <button id="btn-login" class="btn btn-login">Login com Google</button>
+    </div>
+  </header>
+
+  <div id="login-message" class="login-message">
+    Faca login para visualizar os dados
+  </div>
+
+  <main class="grid" id="cards-grid"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>

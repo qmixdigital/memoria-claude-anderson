@@ -1,0 +1,8 @@
+df8.com.br|cand=147
+exquisito|cand=2
+jornalconceito.com|cand=3
+pontonaturalbrasil|cand=11
+revistadeducao|cand=9
+sabedoriaglobal|cand=51
+viajenodetalhe|cand=31
+wtw19|cand=84

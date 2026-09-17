@@ -1,0 +1,1735 @@
+/*
+Theme Name: EUVO News
+Theme URI: https://euvo.com.br
+Template: neve
+Author: QMIX Digital
+Author URI: https://qmix.com.br
+Description: Tema editorial do portal EUVO News. Identidade propria, layout de jornal classico, tipografia serifada.
+Version: 1.0.0
+Requires PHP: 7.4
+Text Domain: euvo-news
+*/
+
+/*
+    Roll do portal (gerado por scripts/roll.py, nao editar a mao):
+    theme=neve | archetype=A | single=IV_sidebar_rich | archive=delta_hub_subcategories
+    header=H1_classic_3row | footer=F2_classic_4col | palette=P18 | fonts=F19
+    hero=bleed | card=image_right | ratio=21x9 | sidebar=floating | classes=utility (prefixo ev-)
+    breaking=tab_filter | schema=itemlist | pagination=load_more | date=relative
+    spacing=spacious | radius=subtle | shadow=flat
+*/
+
+/* ==========================================================================
+   1. Fontes auto-hospedadas (font_strategy=self_hosted_single)
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Libre Caslon Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/librecaslondisplay-400-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Libre Caslon Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/librecaslondisplay-400-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/spectral-400-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/fonts/spectral-400-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('assets/fonts/spectral-600-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Spectral';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('assets/fonts/spectral-600-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ==========================================================================
+   2. Variaveis de identidade (palette=P18, spacing=spacious, radius=subtle)
+   ========================================================================== */
+
+:root {
+    --ev-primary: #d62828;
+    --ev-primary-dark: #a81f1f;
+    --ev-secondary: #f77f00;
+    --ev-accent: #fcbf49;
+
+    /*
+     * Fundo branco, por escolha do operador. O creme da paleta rolada (#fff5e1)
+     * foi recusado.
+     *
+     * O papel fica um tom abaixo do fundo, e nao acima: com a pagina em branco
+     * puro, e a faixa do cabecalho que precisa se destacar do corpo, nao o
+     * contrario.
+     */
+    --ev-surface: #ffffff;
+    --ev-paper: #faf9f7;
+
+    --ev-ink: #2c0f0f;
+    --ev-ink-soft: #6e4444;
+
+    /*
+     * O fio era #e6d6bd, bege da familia do creme. Sobre branco ele lia como
+     * mancha amarelada, e num desenho onde o fio E a estrutura isso apareceria
+     * em cada linha da pagina. Neutro com um resto de calor para nao brigar
+     * com o vermelho e o ambar.
+     */
+    --ev-rule: #e3e0da;
+    --ev-rule-strong: #2c0f0f;
+
+    --ev-font-display: 'Libre Caslon Display', Georgia, 'Times New Roman', serif;
+    --ev-font-body: 'Spectral', Georgia, 'Times New Roman', serif;
+
+    /* spacing_scale=spacious */
+    --ev-s1: 12px;
+    --ev-s2: 19px;
+    --ev-s3: 31px;
+    --ev-s4: 49px;
+
+    /* border_radius=subtle */
+    --ev-r-sm: 2px;
+    --ev-r-md: 4px;
+
+    --ev-wrap: 1220px;
+    --ev-aside: 320px;
+}
+
+/*
+ * Ponte para o tema pai.
+ *
+ * O Neve nao estiliza body, link e botao com valor cru: ele le variaveis
+ * proprias (--nv-*, --body*), definidas num inline que sai depois de tudo.
+ * Brigar por especificidade regra a regra seria interminavel. Em vez disso,
+ * as variaveis dele passam a apontar para a identidade do portal, e o CSS do
+ * pai passa a pintar as cores certas sozinho.
+ *
+ * --maxwidth precisa de valor: o Neve faz img{max-width:var(--maxwidth)} e,
+ * sem definicao, a declaracao e invalida e a imagem estoura o container.
+ */
+:root {
+    --nv-site-bg: #ffffff;
+    --nv-light-bg: #faf9f7;
+    --nv-dark-bg: #2c0f0f;
+    --nv-text-color: #2c0f0f;
+    --nv-text-dark-bg: #fff5e1;
+    --nv-primary-accent: #d62828;
+    --nv-secondary-accent: #a81f1f;
+    --nv-fallback-ff: Georgia, 'Times New Roman', serif;
+
+    --bodyfontfamily: 'Spectral';
+    --bodyfontsize: 17px;
+    --bodylineheight: 1.65;
+    --bodyletterspacing: 0;
+    --bodyfontweight: 400;
+    --bodytexttransform: none;
+
+    --headingsfontfamily: 'Libre Caslon Display';
+    --headingsfontweight: 400;
+    --headingstexttransform: none;
+
+    /*
+     * --maxwidth precisa existir no :root. O Neve so o define dentro de
+     * .builder-item--logo, mas aplica img{max-width:var(--maxwidth)} em todo
+     * lugar: fora daquele escopo a declaracao fica invalida e a imagem estoura.
+     *
+     * --container fica de fora de proposito. O Neve o remapeia por breakpoint
+     * (748 / 992 / 1170) e um valor chapado aqui, carregado depois, atropelaria
+     * os tres. O portal nao usa .container, usa .ev-wrap com --ev-wrap.
+     */
+    --maxwidth: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --nv-site-bg: #1a0f0c;
+        --nv-light-bg: #241512;
+        --nv-text-color: #f6e9d8;
+
+        --ev-surface: #1a0f0c;
+        --ev-paper: #241512;
+        --ev-ink: #f6e9d8;
+        --ev-ink-soft: #c1a291;
+        --ev-rule: #432a22;
+        --ev-rule-strong: #f6e9d8;
+    }
+}
+
+/* ==========================================================================
+   3. Base
+   ========================================================================== */
+
+body {
+    background: var(--ev-surface);
+    color: var(--ev-ink);
+    font-family: var(--ev-font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Grao de papel.
+ *
+ * O creme chapado lia como um hex, nao como papel. Um ruido de 3% por cima de
+ * tudo quebra a chapa e da a superficie a textura que o resto do desenho
+ * promete. Vai em SVG embutido: nenhuma requisicao, nenhum arquivo.
+ * pointer-events: none e obrigatorio, senao a camada engole todo clique.
+ */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.032;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body::before {
+        display: none;
+    }
+}
+
+h1, h2, h3, h4, h5, h6,
+.ev-display {
+    font-family: var(--ev-font-display);
+    font-weight: 400;
+    color: var(--ev-ink);
+    line-height: 1.15;
+    letter-spacing: -0.005em;
+}
+
+/* link_underline_style=never */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--ev-primary);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:focus-visible {
+    outline: 3px solid var(--ev-secondary);
+    outline-offset: 2px;
+}
+
+.ev-skip {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 1200;
+    background: var(--ev-ink);
+    color: var(--ev-surface);
+    padding: var(--ev-s1) var(--ev-s2);
+}
+
+.ev-skip:focus {
+    left: 0;
+}
+
+.ev-wrap {
+    max-width: var(--ev-wrap);
+    margin: 0 auto;
+    padding-inline: var(--ev-s2);
+}
+
+.ev-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+/* ==========================================================================
+   4. Header H1_classic_3row
+   ========================================================================== */
+
+.ev-head {
+    background: var(--ev-paper);
+    border-bottom: 3px solid var(--ev-rule-strong);
+}
+
+/* Linha 1: logo + busca */
+.ev-head__brandrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--ev-s2);
+    padding-block: var(--ev-s2);
+}
+
+/* heading_hierarchy=p_logo: a marca nao e h1 fora da home */
+.ev-brand {
+    margin: 0;
+    line-height: 0;
+}
+
+.ev-brand img,
+.ev-brand .custom-logo {
+    display: block;
+    width: auto;
+    height: 44px;
+    max-height: 44px;
+}
+
+.ev-brand__txt {
+    font-family: var(--ev-font-display);
+    font-size: 30px;
+    line-height: 1;
+    color: var(--ev-ink);
+}
+
+/* header_search_treatment=visible_input_box */
+.ev-search {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid var(--ev-rule);
+    border-radius: var(--ev-r-md);
+    background: var(--ev-surface);
+    overflow: hidden;
+    max-width: 330px;
+    flex: 0 1 330px;
+}
+
+.ev-search input[type="search"] {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    color: var(--ev-ink);
+    font-family: var(--ev-font-body);
+    font-size: 15px;
+    padding: 9px var(--ev-s1);
+    min-width: 0;
+}
+
+.ev-search input[type="search"]:focus {
+    outline: none;
+}
+
+.ev-search button {
+    border: 0;
+    background: var(--ev-ink);
+    color: var(--ev-surface);
+    padding-inline: var(--ev-s2);
+    cursor: pointer;
+    font-family: var(--ev-font-body);
+    font-size: 14px;
+    min-height: 44px;
+}
+
+.ev-search button:hover {
+    background: var(--ev-primary);
+    border-color: var(--ev-primary);
+    color: #ffffff;
+}
+
+/* Linha 2: menu. menu_position_in_header=hidden_burger */
+.ev-head__navrow {
+    border-top: 1px solid var(--ev-rule);
+    display: flex;
+    align-items: center;
+    gap: var(--ev-s2);
+    padding-block: 6px;
+}
+
+.ev-burger {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: 1px solid var(--ev-rule);
+    border-radius: var(--ev-r-md);
+    color: var(--ev-ink);
+    font-family: var(--ev-font-body);
+    font-size: 15px;
+    padding: 8px var(--ev-s1);
+    min-height: 44px;
+    cursor: pointer;
+}
+
+/*
+ * O background precisa ser declarado aqui, nao herdado.
+ *
+ * O Neve aplica button:hover{background:var(--primarybtnhoverbg)} em todo
+ * <button> nu, e o inline dele aponta essa variavel para --nv-primary-accent,
+ * que a ponte reaponta para o vermelho do portal. Como este :hover so mexia em
+ * color e border-color, o fundo vinha do pai: texto vermelho sobre fundo
+ * vermelho, ilegivel. Todo botao do portal declara o proprio fundo no hover.
+ */
+.ev-burger:hover {
+    background: var(--ev-ink);
+    border-color: var(--ev-ink);
+    color: var(--ev-surface);
+}
+
+.ev-burger__bars {
+    display: block;
+    width: 17px;
+    height: 9px;
+    border-top: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+}
+
+/* menu_item_capitalization=title_case: sem text-transform, o valor do WP e usado como esta */
+.ev-nav {
+    display: none;
+}
+
+.ev-nav.is-open {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    background: var(--ev-paper);
+    border-bottom: 3px solid var(--ev-rule-strong);
+    border-top: 1px solid var(--ev-rule);
+    padding: var(--ev-s2) 0;
+}
+
+.ev-nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 var(--ev-s2);
+    max-width: var(--ev-wrap);
+    display: flex;
+    flex-wrap: wrap;
+    /* menu_separator_style=none_just_spacing */
+    gap: var(--ev-s1) var(--ev-s3);
+}
+
+.ev-nav a {
+    display: block;
+    font-family: var(--ev-font-display);
+    font-size: 19px;
+    padding: 6px 0;
+    color: var(--ev-ink);
+}
+
+.ev-nav a:hover {
+    color: var(--ev-primary);
+}
+
+/* Linha 3: data da edicao */
+.ev-head__metarow {
+    background: var(--ev-surface);
+    border-top: 1px solid var(--ev-rule);
+}
+
+.ev-head__metarow-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--ev-s2);
+    padding-block: 7px;
+}
+
+.ev-head__date,
+.ev-head__tag {
+    margin: 0;
+    color: var(--ev-ink-soft);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+}
+
+.ev-head.is-stuck .ev-head__metarow {
+    display: none;
+}
+
+/* Trilha, breadcrumb_style=chevron_icons */
+.ev-crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    color: var(--ev-ink-soft);
+    font-size: 13px;
+    margin-bottom: var(--ev-s2);
+}
+
+.ev-crumbs a {
+    color: var(--ev-primary);
+}
+
+.ev-crumbs__sep {
+    color: var(--ev-rule);
+}
+
+.ev-crumbs__now {
+    color: var(--ev-ink-soft);
+}
+
+/* header_sticky_behavior=sticky_after_scroll_300px */
+.ev-head.is-stuck {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 0 var(--ev-rule);
+}
+
+.ev-head.is-stuck .ev-head__brandrow {
+    padding-block: 8px;
+}
+
+.ev-head.is-stuck .ev-brand img,
+.ev-head.is-stuck .ev-brand .custom-logo {
+    height: 32px;
+    max-height: 32px;
+}
+
+.ev-head__spacer {
+    display: none;
+}
+
+.ev-head__spacer.is-on {
+    display: block;
+}
+
+/* ==========================================================================
+   5. Faixa de ultimas, breaking_strip=tab_filter
+   ========================================================================== */
+
+.ev-strip {
+    background: var(--ev-ink);
+    color: var(--ev-surface);
+    padding-block: var(--ev-s1);
+}
+
+.ev-strip__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: var(--ev-s1);
+}
+
+.ev-strip__tab {
+    background: transparent;
+    border: 1px solid rgba(255, 245, 225, 0.28);
+    border-radius: var(--ev-r-sm);
+    color: var(--ev-surface);
+    cursor: pointer;
+    font-family: var(--ev-font-body);
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    padding: 7px 13px;
+    min-height: 36px;
+}
+
+/* Fundo explicito pelo mesmo motivo do burger: senao o Neve pinta de vermelho. */
+.ev-strip__tab:hover {
+    background: rgba(255, 245, 225, 0.1);
+    border-color: var(--ev-accent);
+    color: var(--ev-accent);
+}
+
+.ev-strip__tab[aria-selected="true"] {
+    background: var(--ev-primary);
+    border-color: var(--ev-primary);
+    color: #fff;
+}
+
+.ev-strip__pane {
+    display: none;
+    gap: var(--ev-s2);
+}
+
+.ev-strip__pane.is-on {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.ev-strip__item {
+    border-left: 2px solid var(--ev-secondary);
+    padding-left: var(--ev-s1);
+}
+
+.ev-strip__item a {
+    color: var(--ev-surface);
+    font-family: var(--ev-font-display);
+    font-size: 16px;
+    line-height: 1.25;
+    display: block;
+}
+
+.ev-strip__item a:hover {
+    color: var(--ev-accent);
+}
+
+.ev-strip__when {
+    display: block;
+    color: var(--ev-accent);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   6. Layout. Regra dura: a ordem do HTML e a ordem das colunas.
+   ========================================================================== */
+
+.ev-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--ev-aside);
+    gap: var(--ev-s4);
+    align-items: start;
+    padding-block: var(--ev-s3);
+}
+
+.ev-main {
+    min-width: 0;
+}
+
+/* sidebar=floating. Sem position:sticky na home (bug conhecido de layout shift). */
+.ev-aside {
+    min-width: 0;
+    position: static;
+}
+
+.ev-section {
+    margin-bottom: var(--ev-s4);
+}
+
+/*
+ * Barra de secao. O fio pesado vai EM CIMA, nao embaixo: e assim que a pagina
+ * impressa abre uma editoria, e da a cada bloco um comeco inequivoco.
+ */
+.ev-section__h {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--ev-s2);
+    border-top: 3px solid var(--ev-rule-strong);
+    margin-bottom: var(--ev-s1);
+    padding-top: var(--ev-s1);
+}
+
+/* Title Case preservado: nenhum text-transform aqui. */
+.ev-section__h h2 {
+    font-size: clamp(21px, 1.9vw, 27px);
+    margin: 0;
+    line-height: 1.1;
+}
+
+.ev-section__more {
+    color: var(--ev-primary);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+}
+
+.ev-section__more:hover {
+    border-bottom: 1px solid var(--ev-primary);
+}
+
+/* ==========================================================================
+   7. Hero, hero_variant=bleed, image_ratio=21x9
+   ========================================================================== */
+
+.ev-hero {
+    position: relative;
+    background: var(--ev-paper);
+    border-bottom: 1px solid var(--ev-rule);
+}
+
+.ev-hero__media {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    max-height: 56vh;
+    min-height: 200px;
+    overflow: hidden;
+    background: var(--ev-rule);
+}
+
+.ev-hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ev-hero__box {
+    max-width: var(--ev-wrap);
+    margin: 0 auto;
+    padding: var(--ev-s3) var(--ev-s2) var(--ev-s4);
+}
+
+.ev-hero__kicker {
+    display: inline-block;
+    color: var(--ev-primary);
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    margin-bottom: var(--ev-s1);
+}
+
+.ev-hero__t {
+    font-size: clamp(32px, 5vw, 58px);
+    margin: 0 0 var(--ev-s1);
+    max-width: 20ch;
+}
+
+.ev-hero__x {
+    color: var(--ev-ink-soft);
+    font-size: 19px;
+    margin: 0 0 var(--ev-s1);
+    max-width: 62ch;
+}
+
+.ev-hero__when {
+    color: var(--ev-ink-soft);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+
+/*
+ * No desktop a manchete entra na imagem.
+ *
+ * Empilhada, ela cobrava duas contas: a foto sangrada em 21:9 comia ~600px de
+ * rolagem antes da primeira materia, e o titulo limitado a 20ch deixava metade
+ * da faixa vazia a direita. Sobreposta, o vazio vira foto e o hero encolhe pela
+ * metade. So a partir de 769px: abaixo disso a imagem tem ~170px de altura e
+ * nao cabe texto legivel em cima.
+ */
+@media (min-width: 769px) {
+    .ev-hero__media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            180deg,
+            rgba(28, 9, 9, 0) 34%,
+            rgba(28, 9, 9, 0.5) 62%,
+            rgba(28, 9, 9, 0.93) 100%
+        );
+        pointer-events: none;
+    }
+
+    .ev-hero__box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-block: var(--ev-s2) var(--ev-s3);
+    }
+
+    .ev-hero__t,
+    .ev-hero__t a {
+        color: #ffffff;
+        max-width: 26ch;
+    }
+
+    .ev-hero__kicker {
+        color: var(--ev-accent);
+    }
+
+    .ev-hero__x {
+        color: rgba(255, 245, 225, 0.85);
+        max-width: 54ch;
+    }
+
+    .ev-hero__when {
+        color: var(--ev-accent);
+    }
+}
+
+/* ==========================================================================
+   8. Cards, card_style=image_right
+   ========================================================================== */
+
+/*
+ * Jornal nao tem caixa, tem fio.
+ *
+ * A versao anterior embrulhava cada materia num retangulo com fundo, borda de
+ * 1px e canto arredondado. Somado a sidebar e aos widgets, a capa virava uma
+ * parede de caixas iguais: o visual de framework generico, brigando com a
+ * premissa (Libre Caslon sobre papel creme, arquetipo de jornal classico).
+ *
+ * Aqui a materia assenta direto no papel. Quem separa e o fio de cabelo, e
+ * quem hierarquiza e o corpo da fonte. E o que a pagina impressa faz ha um
+ * seculo, e o que essas fontes foram desenhadas para fazer.
+ */
+.ev-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 38%;
+    gap: var(--ev-s2);
+    align-items: start;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.ev-card__body {
+    min-width: 0;
+}
+
+.ev-card__media {
+    order: 2;
+    aspect-ratio: 21 / 9;
+    overflow: hidden;
+    border-radius: var(--ev-r-sm);
+    background: var(--ev-rule);
+}
+
+.ev-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.ev-card:hover .ev-card__media img {
+    transform: scale(1.03);
+}
+
+.ev-card__cat {
+    display: inline-block;
+    color: var(--ev-primary);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    margin-bottom: 6px;
+}
+
+/*
+ * Escala com vao de verdade.
+ *
+ * Antes tudo vivia entre 12 e 27px: manchete, secundaria, resumo e data quase
+ * do mesmo tamanho, e o olho nao tinha por onde entrar. Num jornal a distancia
+ * entre a chamada principal e a secundaria E a hierarquia. Agora sao tres
+ * degraus francos: 38 na chamada do bloco, 18 na secundaria, 15 na compacta.
+ */
+.ev-card__t {
+    font-size: 18px;
+    line-height: 1.22;
+    margin: 0 0 6px;
+}
+
+.ev-card__x {
+    color: var(--ev-ink-soft);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 7px;
+}
+
+/* meta_visibility=date_only */
+.ev-card__when {
+    color: var(--ev-ink-soft);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+}
+
+/*
+ * order: -1 e obrigatorio, nao cosmetico.
+ *
+ * O .ev-card__body vem primeiro no HTML (a manchete tem que preceder a imagem
+ * para leitor de tela) e nao declara order, logo vale 0. Um order: 0 na midia
+ * empata, o empate resolve pela ordem do codigo e a imagem fica sempre depois.
+ * Na variante compacta isso jogava o texto na coluna de 96px e a imagem na
+ * coluna larga. -1 tira a midia da frente sem mexer no HTML.
+ */
+
+/* Variante grande do bloco de editoria: imagem em cima */
+.ev-card--lg {
+    grid-template-columns: 1fr;
+}
+
+.ev-card--lg .ev-card__media {
+    order: -1;
+    margin-bottom: var(--ev-s2);
+}
+
+/* A chamada do bloco. E ela que segura a editoria inteira. */
+.ev-card--lg .ev-card__t {
+    font-size: clamp(27px, 2.7vw, 38px);
+    line-height: 1.1;
+    margin-bottom: var(--ev-s1);
+    max-width: 22ch;
+}
+
+.ev-card--lg .ev-card__x {
+    font-size: 16px;
+    max-width: 58ch;
+}
+
+.ev-card--lg .ev-card__cat {
+    font-size: 12px;
+}
+
+/* Variante compacta: imagem quadrada a esquerda */
+.ev-card--sm {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: var(--ev-s1);
+    padding: var(--ev-s1);
+    align-items: start;
+}
+
+.ev-card--sm .ev-card__media {
+    order: -1;
+    aspect-ratio: 1 / 1;
+}
+
+.ev-card--sm .ev-card__t {
+    font-size: 15px;
+    line-height: 1.28;
+}
+
+.ev-card--sm .ev-card__x {
+    display: none;
+}
+
+/*
+ * Grades com fio de calha.
+ *
+ * Sem gap: quem separa as celulas e o fio, nao o vazio. Fio horizontal entre
+ * linhas, fio vertical na calha entre colunas. E a assinatura da pagina
+ * impressa, e e o que devolve ordem a capa sem precisar de caixa nenhuma.
+ */
+.ev-grid-2,
+.ev-grid-3 {
+    display: grid;
+    column-gap: 0;
+    row-gap: 0;
+    align-items: stretch;
+}
+
+.ev-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ev-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ev-grid-2 > .ev-card,
+.ev-grid-3 > .ev-card {
+    align-items: stretch;
+    padding: var(--ev-s2);
+    border-top: 1px solid var(--ev-rule);
+}
+
+/* Fio da calha: so nas celulas que nao abrem a linha. */
+.ev-grid-2 > .ev-card:nth-child(2n),
+.ev-grid-3 > .ev-card:not(:nth-child(3n + 1)) {
+    border-left: 1px solid var(--ev-rule);
+}
+
+/*
+ * Secundaria de jornal e manchete e data, sem resumo.
+ *
+ * Com resumo, cada celula virava um paragrafo cortado no meio da frase
+ * ("...para a partida contra o"), as alturas ficavam irregulares e o olho
+ * perdia a linha. Tirando o resumo, a chamada respira e a leitura da grade
+ * vira varredura, que e o que a secundaria existe para permitir. O resumo
+ * continua onde tem funcao: na chamada do bloco e no card so de texto.
+ */
+.ev-grid-2 > .ev-card:not(.ev-card--lg):not(.ev-card--txt) .ev-card__x,
+.ev-grid-3 > .ev-card:not(.ev-card--lg):not(.ev-card--txt) .ev-card__x {
+    display: none;
+}
+
+/*
+ * Miniatura quadrada.
+ *
+ * A 38% de uma coluna de ~380px, o 21:9 dava uma tira de ~60px de altura. E
+ * height:100% resolvia a tira mas esticava a foto num retrato de 115x175
+ * conforme o corpo crescia: o corte mudava de formato a cada card. O quadrado
+ * e estavel e e o formato classico da miniatura de noticia. O 21:9 do roll
+ * fica onde tem escala para valer: hero e chamada de bloco.
+ */
+.ev-grid-2 > .ev-card:not(.ev-card--lg) .ev-card__media,
+.ev-grid-3 > .ev-card:not(.ev-card--lg) .ev-card__media {
+    aspect-ratio: 1 / 1;
+    height: auto;
+    align-self: start;
+}
+
+/* A variante grande empilha, e ali o 21:9 e o formato certo. */
+.ev-grid-2 > .ev-card--lg .ev-card__media,
+.ev-grid-3 > .ev-card--lg .ev-card__media {
+    aspect-ratio: 21 / 9;
+    height: auto;
+}
+
+.ev-catblock__lead {
+    margin-bottom: var(--ev-s2);
+}
+
+/* ==========================================================================
+   9. Sidebar / widgets, widgets_style=heavy
+   ========================================================================== */
+
+/* Widget tambem larga a caixa: fio pesado em cima, igual a barra de secao. */
+.ev-w {
+    background: none;
+    border: 0;
+    border-top: 3px solid var(--ev-rule-strong);
+    border-radius: 0;
+    padding: var(--ev-s1) 0 0;
+    margin-bottom: var(--ev-s3);
+}
+
+.ev-w__h {
+    font-size: 17px;
+    margin: 0 0 var(--ev-s1);
+}
+
+.ev-rank {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ev-rank li {
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: var(--ev-s1);
+    align-items: baseline;
+    padding-block: var(--ev-s1);
+    border-bottom: 1px solid var(--ev-rule);
+}
+
+.ev-rank li:last-child {
+    border-bottom: 0;
+}
+
+/* O algarismo e o elemento grafico do bloco, entao tem tamanho de gente. */
+.ev-rank__n {
+    font-family: var(--ev-font-display);
+    font-size: 34px;
+    color: var(--ev-accent);
+    line-height: 0.9;
+}
+
+.ev-rank li:first-child .ev-rank__n {
+    color: var(--ev-primary);
+}
+
+.ev-rank__t {
+    font-family: var(--ev-font-display);
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.ev-rank__t:hover {
+    color: var(--ev-primary);
+}
+
+/*
+ * A unica caixa da pagina, e de proposito.
+ *
+ * Com todo o resto assentado no papel, o bloco solido escuro para o olho e le
+ * como encarte. E o papel que ele tem: e o unico pedido de acao da capa.
+ */
+.ev-news {
+    background: var(--ev-ink);
+    border: 0;
+    color: var(--ev-surface);
+    padding: var(--ev-s2);
+}
+
+.ev-news .ev-w__h {
+    color: var(--ev-surface);
+    padding-bottom: var(--ev-s1);
+    border-bottom: 1px solid var(--ev-secondary);
+}
+
+.ev-news p {
+    color: rgba(255, 245, 225, 0.78);
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0 0 var(--ev-s2);
+}
+
+/* button_style=gradient */
+.ev-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--ev-primary), var(--ev-secondary));
+    color: #fff;
+    border: 0;
+    border-radius: var(--ev-r-md);
+    cursor: pointer;
+    font-family: var(--ev-font-body);
+    font-size: 15px;
+    padding: 12px var(--ev-s3);
+    min-height: 48px;
+    text-align: center;
+    transition: filter 0.25s ease;
+}
+
+/*
+ * O gradiente tem que ser reafirmado no hover: o button:hover do Neve traz um
+ * background chapado que apagaria o degrade.
+ */
+.ev-btn:hover {
+    background: linear-gradient(135deg, var(--ev-primary), var(--ev-secondary));
+    border-color: transparent;
+    filter: brightness(1.1);
+    color: #fff;
+}
+
+/* Indice de editorias: nome a esquerda, acervo a direita, fio no meio. */
+.ev-idx {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ev-idx li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--ev-s1);
+    padding-block: 9px;
+    border-bottom: 1px solid var(--ev-rule);
+}
+
+.ev-idx li:last-child {
+    border-bottom: 0;
+}
+
+.ev-idx a {
+    font-family: var(--ev-font-display);
+    font-size: 17px;
+}
+
+.ev-idx a:hover {
+    color: var(--ev-primary);
+}
+
+.ev-idx__n {
+    color: var(--ev-ink-soft);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Cards compactos empilhados dentro de widget: fio entre eles. */
+.ev-w .ev-card--sm {
+    padding: var(--ev-s1) 0;
+    border-top: 1px solid var(--ev-rule);
+}
+
+.ev-w .ev-card--sm:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.ev-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.ev-tags a {
+    border: 1px solid var(--ev-rule);
+    border-radius: var(--ev-r-sm);
+    color: var(--ev-ink-soft);
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.ev-tags a:hover {
+    border-color: var(--ev-primary);
+    color: var(--ev-primary);
+}
+
+/* ==========================================================================
+   9b. Arquivo, busca e 404
+   ========================================================================== */
+
+/* subcategory_strip_treatment=breadcrumb_chain */
+.ev-chain {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    border-block: 1px solid var(--ev-rule);
+    padding-block: var(--ev-s1);
+    margin-bottom: var(--ev-s3);
+}
+
+.ev-chain__i {
+    color: var(--ev-ink-soft);
+    font-size: 14px;
+}
+
+.ev-chain__i:hover {
+    color: var(--ev-primary);
+}
+
+.ev-chain__i.is-now {
+    color: var(--ev-primary);
+    border-bottom: 2px solid var(--ev-primary);
+}
+
+.ev-chain__sep {
+    color: var(--ev-rule);
+}
+
+.ev-arch__head {
+    margin-bottom: var(--ev-s3);
+    padding-bottom: var(--ev-s1);
+    border-bottom: 3px solid var(--ev-rule-strong);
+}
+
+.ev-arch__t {
+    font-size: clamp(30px, 4vw, 44px);
+    margin: 0 0 7px;
+}
+
+.ev-arch__n {
+    margin: 0;
+    color: var(--ev-ink-soft);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+}
+
+/* archive_card_density=4_2_1, mesma logica de fio da capa */
+.ev-arch__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 0;
+    row-gap: 0;
+}
+
+/*
+ * Coluna estreita nao comporta imagem ao lado do texto: dentro da grade do
+ * arquivo o card empilha, imagem em cima.
+ */
+.ev-arch__grid .ev-card {
+    grid-template-columns: 1fr;
+    padding: var(--ev-s2);
+    border-top: 1px solid var(--ev-rule);
+}
+
+.ev-arch__grid .ev-card:not(:nth-child(4n + 1)) {
+    border-left: 1px solid var(--ev-rule);
+}
+
+.ev-arch__grid .ev-card__media {
+    order: -1;
+    margin-bottom: var(--ev-s1);
+}
+
+.ev-arch__grid .ev-card__t {
+    font-size: 18px;
+}
+
+/*
+ * Card so de texto. Existe porque 3 de cada 4 materias do acervo nao tem capa.
+ * O filete quente ocupa o lugar da imagem para o card nao parecer defeituoso.
+ */
+/*
+ * Card sem foto tem que voltar a ser de coluna unica.
+ *
+ * As variantes reservam uma coluna para a midia: a padrao guarda 38% e a
+ * compacta guarda 96px fixos. Sem elemento de midia, quem cai na primeira
+ * coluna e o proprio texto, e na compacta ele ficava espremido em 96px,
+ * quebrando uma palavra por linha. Como .ev-card--txt vem depois das
+ * variantes na folha, esta regra vence sem precisar de !important.
+ */
+.ev-card--txt {
+    grid-template-columns: 1fr;
+    border-left: 3px solid var(--ev-accent);
+    padding-left: var(--ev-s1);
+}
+
+.ev-card--txt .ev-card__t {
+    font-size: 20px;
+}
+
+.ev-card--txt .ev-card__x {
+    font-size: 15px;
+}
+
+.ev-w__txt {
+    color: var(--ev-ink-soft);
+    font-size: 15px;
+}
+
+.ev-w__txt p {
+    margin: 0 0 var(--ev-s1);
+}
+
+.ev-empty {
+    background: var(--ev-paper);
+    border: 1px solid var(--ev-rule);
+    border-radius: var(--ev-r-md);
+    padding: var(--ev-s3);
+}
+
+.ev-empty__h {
+    font-size: 20px;
+    margin: var(--ev-s3) 0 var(--ev-s1);
+}
+
+.ev-empty__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--ev-s1) var(--ev-s3);
+}
+
+.ev-empty__list a {
+    color: var(--ev-primary);
+    font-family: var(--ev-font-display);
+    font-size: 18px;
+}
+
+.ev-search--wide {
+    max-width: none;
+    flex: 1 1 auto;
+    margin-block: var(--ev-s2);
+}
+
+/* ==========================================================================
+   9c. Página institucional
+   ========================================================================== */
+
+.ev-page {
+    padding-block: var(--ev-s3) var(--ev-s4);
+}
+
+.ev-page__head {
+    border-top: 3px solid var(--ev-rule-strong);
+    margin-bottom: var(--ev-s3);
+    padding-top: var(--ev-s1);
+}
+
+.ev-page__t {
+    font-size: clamp(29px, 4vw, 44px);
+    margin: 0;
+    line-height: 1.12;
+}
+
+.ev-page__when {
+    margin: 7px 0 0;
+    color: var(--ev-ink-soft);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+}
+
+/* Texto corrido: mesma medida de leitura da matéria. */
+.ev-page__body {
+    font-family: var(--ev-font-body);
+    font-size: 18px;
+    line-height: 1.75;
+    max-width: 68ch;
+}
+
+.ev-page__body h2 {
+    font-size: 27px;
+    margin: var(--ev-s4) 0 var(--ev-s1);
+}
+
+.ev-page__body h3 {
+    font-size: 21px;
+    margin: var(--ev-s3) 0 var(--ev-s1);
+}
+
+.ev-page__body p {
+    margin: 0 0 var(--ev-s2);
+}
+
+.ev-page__body ul,
+.ev-page__body ol {
+    margin: 0 0 var(--ev-s2);
+    padding-left: var(--ev-s3);
+}
+
+.ev-page__body li {
+    margin-bottom: 8px;
+}
+
+.ev-page__body a {
+    color: var(--ev-primary);
+    border-bottom: 1px solid var(--ev-accent);
+}
+
+.ev-page__body a:hover {
+    background: var(--ev-accent);
+    color: var(--ev-ink);
+}
+
+/*
+ * Página que traz o proprio desenho (equipe, sobre) nao pode ser espremida em
+ * 68ch nem herdar a tipografia do texto corrido: ela ja tem capa, grade e
+ * escala proprias. Aqui o template so segura a moldura e sai da frente.
+ */
+.ev-page__body--solta {
+    max-width: none;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.ev-404 {
+    padding-block: var(--ev-s4);
+}
+
+.ev-404__n {
+    font-family: var(--ev-font-display);
+    font-size: clamp(80px, 16vw, 170px);
+    line-height: 0.9;
+    margin: 0;
+    background: linear-gradient(135deg, var(--ev-primary), var(--ev-accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.ev-404__t {
+    font-size: clamp(27px, 4vw, 42px);
+    margin: 0 0 var(--ev-s1);
+}
+
+.ev-404__x {
+    color: var(--ev-ink-soft);
+    font-size: 18px;
+    margin: 0 0 var(--ev-s2);
+    max-width: 58ch;
+}
+
+.ev-404__cta {
+    margin: 0 0 var(--ev-s2);
+}
+
+.ev-404__cats {
+    margin-top: var(--ev-s4);
+}
+
+.ev-404 .ev-search--wide {
+    max-width: 460px;
+}
+
+/* ==========================================================================
+   10. Paginacao, pagination=load_more
+   ========================================================================== */
+
+.ev-more {
+    text-align: center;
+    padding-block: var(--ev-s3);
+}
+
+.ev-pager {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--ev-s2);
+    border-top: 2px solid var(--ev-rule-strong);
+    margin-top: var(--ev-s3);
+    padding-top: var(--ev-s2);
+}
+
+.ev-pager a {
+    color: var(--ev-primary);
+    font-family: var(--ev-font-display);
+    font-size: 17px;
+}
+
+/* ==========================================================================
+   11. Footer F2_classic_4col
+   ========================================================================== */
+
+.ev-foot {
+    background: var(--ev-ink);
+    color: rgba(255, 245, 225, 0.8);
+    margin-top: var(--ev-s4);
+    padding-block: var(--ev-s4) var(--ev-s2);
+}
+
+.ev-foot__cols {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: var(--ev-s4);
+}
+
+.ev-foot h4 {
+    color: var(--ev-surface);
+    font-size: 17px;
+    margin: 0 0 var(--ev-s1);
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 245, 225, 0.2);
+}
+
+.ev-foot p {
+    font-size: 14px;
+    margin: 0 0 var(--ev-s1);
+}
+
+.ev-foot ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ev-foot li {
+    margin-bottom: 9px;
+}
+
+.ev-foot a {
+    color: rgba(255, 245, 225, 0.8);
+    font-size: 14px;
+}
+
+.ev-foot a:hover {
+    color: var(--ev-accent);
+}
+
+.ev-foot__brand img {
+    height: 40px;
+    width: auto;
+    margin-bottom: var(--ev-s1);
+}
+
+.ev-foot__bar {
+    border-top: 1px solid rgba(255, 245, 225, 0.2);
+    margin-top: var(--ev-s3);
+    padding-top: var(--ev-s2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--ev-s1);
+    font-size: 13px;
+    color: rgba(255, 245, 225, 0.6);
+}
+
+/* ==========================================================================
+   12. Responsivo
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .ev-layout {
+        grid-template-columns: 1fr;
+        gap: var(--ev-s3);
+    }
+
+    .ev-strip__pane.is-on {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ev-foot__cols {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--ev-s3);
+    }
+
+    /* archive_card_density=4_2_1, degrau do tablet */
+    .ev-arch__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* O fio de calha tem que seguir a contagem nova de colunas. */
+    .ev-arch__grid .ev-card:not(:nth-child(4n + 1)) {
+        border-left: 0;
+    }
+
+    .ev-arch__grid .ev-card:nth-child(2n) {
+        border-left: 1px solid var(--ev-rule);
+    }
+}
+
+@media (max-width: 768px) {
+    .ev-head__brandrow {
+        flex-wrap: wrap;
+    }
+
+    .ev-search {
+        flex: 1 1 100%;
+        max-width: none;
+        order: 3;
+    }
+
+    .ev-grid-3,
+    .ev-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .ev-head__tag {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        font-size: 16px;
+    }
+
+    .ev-card {
+        grid-template-columns: 1fr;
+    }
+
+    .ev-card__media {
+        order: -1;
+        margin-bottom: var(--ev-s1);
+        height: auto;
+        aspect-ratio: 21 / 9;
+    }
+
+    /*
+     * O :not e obrigatorio. Esta media query fica no fim da folha, entao vence
+     * por ordem o .ev-card--txt{grid-template-columns:1fr} da secao 9b, que
+     * tem a mesma especificidade. Sem a exclusao, o card sem foto voltava a
+     * reservar 84px para uma midia que nao existe e o texto caia nessa coluna,
+     * quebrando uma palavra por linha. So no celular: no desktop nao ha regra
+     * posterior e o --txt ja vencia.
+     */
+    .ev-card--sm:not(.ev-card--txt) {
+        grid-template-columns: 84px minmax(0, 1fr);
+    }
+
+    .ev-card--sm .ev-card__media {
+        aspect-ratio: 1 / 1;
+    }
+
+    .ev-card--sm .ev-card__media {
+        margin-bottom: 0;
+    }
+
+    .ev-strip__pane.is-on {
+        grid-template-columns: 1fr;
+    }
+
+    .ev-foot__cols {
+        grid-template-columns: 1fr;
+    }
+
+    /* archive_card_density=4_2_1, degrau do celular */
+    .ev-arch__grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Coluna unica nao tem calha, logo nao tem fio vertical. */
+    .ev-arch__grid .ev-card:nth-child(2n),
+    .ev-grid-2 > .ev-card:nth-child(2n),
+    .ev-grid-3 > .ev-card:not(:nth-child(3n + 1)) {
+        border-left: 0;
+    }
+
+    .ev-grid-2 > .ev-card,
+    .ev-grid-3 > .ev-card,
+    .ev-arch__grid .ev-card {
+        padding-inline: 0;
+    }
+}
+
+/* ==========================================================================
+   13. Neve: reset do que o pai impoe e o portal nao quer
+   ========================================================================== */
+
+/*
+ * O header e o footer do portal sao proprios, entao o markup de layout do Neve
+ * nem chega a ser impresso. Estas regras existem so como rede de seguranca,
+ * para o caso de um plugin (WooCommerce, LifterLMS) acionar um template do pai.
+ */
+.neve-main > .container,
+.neve-main > .single-post-container,
+.container.archive-container {
+    max-width: none;
+    padding: 0;
+}
+
+.nv-single-post-wrap,
+.nv-index-posts,
+.nv-page-title-wrap,
+.nv-bc-count-wrap {
+    display: none;
+}
+
+/* shadow_style=flat: o Neve poe um halo em todo button. */
+button,
+.ev-btn,
+.ev-search button,
+.ev-burger,
+.ev-strip__tab {
+    box-shadow: none;
+}
+
+/* O fade do pai no hover briga com a mudanca de cor do portal. */
+a:hover {
+    opacity: 1;
+}
+
+/* O pai centraliza toda img. Dentro dos cards a imagem preenche a moldura. */
+.ev-card__media img,
+.ev-hero__media img,
+.ev-brand img {
+    margin: 0;
+}
+
+/* ==========================================================================
+   14. Anti scroll-reveal. Regiao nenhuma da home pode ser pulada na renderizacao.
+   ========================================================================== */
+
+.ev-main,
+.ev-section,
+.ev-layout,
+.ev-hero,
+.ev-strip,
+.ev-strip__pane.is-on,
+.ev-grid-2,
+.ev-grid-3,
+.ev-catblock,
+.ev-catblock__lead,
+.ev-card,
+.ev-card__body,
+.ev-card__media,
+.ev-aside,
+.ev-w {
+    content-visibility: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

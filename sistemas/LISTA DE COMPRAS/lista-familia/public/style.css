@@ -1,0 +1,461 @@
+/* Lista da Família
+   Paleta escura com verde neon, seguindo a identidade da QMIX Digital.
+   Tema único, sem alternância clara, igual ao site de referência. */
+
+:root {
+  --primary: #00e676;
+  --primary-soft: rgba(0, 230, 118, .12);
+  --primary-line: rgba(0, 230, 118, .28);
+  --primary-ink: #05130c;
+
+  --danger: #ff5c5c;
+  --warn: #ffb020;
+
+  --bg: #050806;
+  --surface: #0c110e;
+  --surface-2: #121a15;
+  --surface-3: #18231d;
+  --border: #1d2a23;
+  --border-soft: #16211b;
+
+  --text: #eef4f0;
+  --text-2: #b9c7c0;
+  --muted: #7d8f86;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 10px 30px rgba(0, 0, 0, .35);
+  --radius: 16px;
+  --tap: 48px;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+}
+
+* { box-sizing: border-box; }
+
+/* O atributo hidden precisa vencer qualquer display definido depois.
+   A regra [hidden]{display:none} vem da folha do navegador, e qualquer regra
+   de autor com display, como .center, passa na frente dela. Sem o !important,
+   uma tela marcada como oculta continua sendo desenhada. */
+[hidden] { display: none !important; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: contain;
+}
+
+body {
+  background-image:
+    radial-gradient(70% 40% at 50% 0%, rgba(0, 230, 118, .07), transparent 70%);
+  background-repeat: no-repeat;
+}
+
+h1 { font-size: 1.35rem; margin: 0; letter-spacing: -.02em; }
+h2 { font-size: 1rem; margin: 0 0 .5rem; }
+p { margin: 0 0 .75rem; }
+.muted { color: var(--muted); font-size: .9rem; }
+.error { color: var(--danger); font-size: .9rem; margin: .75rem 0 0; }
+svg { display: block; flex: none; }
+
+/* O 100dvh existe por causa do Safari do iPhone: com 100vh a conta inclui a
+   barra do navegador, que some ao rolar, e sobra rolagem no fim da tela. */
+.screen { min-height: 100vh; min-height: 100dvh; }
+.center {
+  display: flex; align-items: center; justify-content: center;
+  /* O recorte de cima importa no iPhone: a barra de status fica translúcida
+     sobre a página, e sem essa margem o conteúdo passa por baixo do relógio. */
+  padding: calc(24px + var(--safe-t)) 18px calc(24px + var(--safe-b));
+}
+
+/* ---------------- marca ---------------- */
+
+.marca {
+  display: flex; align-items: center; gap: 12px;
+  justify-content: center; margin-bottom: 22px;
+  color: var(--primary);
+}
+.marca-texto { display: grid; line-height: 1.15; text-align: left; }
+.marca-texto b { font-size: 1.1rem; color: var(--text); font-weight: 700; letter-spacing: -.02em; }
+.marca-texto span { font-size: 1.1rem; color: var(--primary); font-weight: 700; letter-spacing: -.02em; }
+
+/* ---------------- botões e campos ---------------- */
+
+button, input, select, textarea { font: inherit; color: inherit; }
+
+.btn {
+  min-height: var(--tap);
+  padding: 0 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: var(--surface-2);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  transition: transform .12s ease, background .2s ease, border-color .2s ease;
+}
+.btn:active { transform: scale(.97); }
+.btn.primary {
+  background: var(--primary); color: var(--primary-ink);
+  box-shadow: 0 6px 20px rgba(0, 230, 118, .18);
+}
+.btn.ghost { background: transparent; border-color: var(--border); color: var(--text-2); }
+.btn.ghost:active { background: var(--surface-2); }
+.btn.danger { background: transparent; color: var(--danger); border-color: var(--border); }
+.btn.block { display: flex; width: 100%; margin-top: 12px; }
+.btn:disabled { opacity: .45; cursor: not-allowed; }
+
+.icon-btn {
+  width: var(--tap); height: var(--tap);
+  display: grid; place-items: center;
+  background: none; border: 0; cursor: pointer;
+  color: var(--text); border-radius: 12px; flex: none;
+}
+.icon-btn:active { background: var(--surface-2); }
+
+input[type="text"], input[type="password"], input[type="date"], input[type="search"],
+select, textarea {
+  width: 100%;
+  min-height: var(--tap);
+  padding: 10px 14px;
+  margin: 6px 0 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+input::placeholder { color: var(--muted); }
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary-line);
+  box-shadow: 0 0 0 3px var(--primary-soft);
+}
+button:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+label { display: block; font-size: .82rem; font-weight: 600; color: var(--muted); margin-top: 12px; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+/* ---------------- login e primeiro acesso ---------------- */
+
+.auth-card { width: 100%; max-width: 420px; }
+.auth-card h1 { text-align: center; margin-bottom: 6px; }
+.auth-card > .muted { text-align: center; }
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.member-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 10px;
+  cursor: pointer;
+  display: grid; gap: 10px; justify-items: center;
+  font-weight: 600; color: var(--text);
+  transition: border-color .2s ease, transform .12s ease;
+}
+.member-btn:active { transform: scale(.97); }
+.member-btn:hover { border-color: var(--primary-line); }
+
+/* avatar por inicial, sem emoji */
+.avatar {
+  width: 46px; height: 46px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-weight: 700; font-size: 1.1rem;
+  background: var(--primary-soft); color: var(--primary);
+  border: 1px solid var(--primary-line);
+  flex: none;
+}
+.avatar.foto { object-fit: cover; background: var(--surface-2); padding: 0; }
+.avatar.sm { width: 26px; height: 26px; font-size: .72rem; }
+.avatar.xs { width: 18px; height: 18px; font-size: .58rem; border: 0; }
+
+.pin-dots { display: flex; gap: 12px; justify-content: center; margin: 24px 0 18px; min-height: 14px; }
+.pin-dots i {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--surface-3); border: 1px solid var(--border);
+  transition: background .15s ease, transform .15s ease;
+}
+.pin-dots i.on { background: var(--primary); border-color: var(--primary); transform: scale(1.1); }
+
+.keypad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.keypad button {
+  min-height: 60px;
+  font-size: 1.35rem; font-weight: 600;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--text);
+  cursor: pointer;
+  display: grid; place-items: center;
+}
+.keypad button:active { background: var(--surface-2); border-color: var(--primary-line); }
+.keypad button.acao { color: var(--primary); }
+/* O confirmar precisa parecer um botão de ação. Como visto sem cor, no canto
+   do teclado, ele passava despercebido e a pessoa achava que o app travou. */
+.keypad button.confirmar { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
+.dica { text-align: center; color: var(--muted); font-size: .82rem; margin: -8px 0 14px; }
+
+/* ---------------- estrutura do app ---------------- */
+
+.topbar {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; gap: 6px;
+  padding: 10px 12px;
+  padding-top: calc(10px + var(--safe-t));
+  background: rgba(5, 8, 6, .82);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-soft);
+}
+.topbar h1 { flex: 1; font-size: 1.1rem; min-width: 0; }
+.topbar .sub { display: block; font-size: .72rem; color: var(--muted); font-weight: 500; }
+
+.sync-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--primary); margin-right: 10px; flex: none;
+  box-shadow: 0 0 8px var(--primary);
+  transition: opacity .3s ease, background .3s ease;
+}
+.sync-dot.busy { opacity: .3; }
+.sync-dot.err { background: var(--danger); box-shadow: none; }
+
+.view { padding: 16px 14px calc(104px + var(--safe-b)); max-width: 760px; margin: 0 auto; }
+
+.tabbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+  display: flex;
+  background: rgba(10, 15, 12, .92);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--border);
+  padding-bottom: var(--safe-b);
+}
+.tab {
+  flex: 1; min-height: 60px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+  background: none; border: 0; cursor: pointer;
+  font-size: .68rem; font-weight: 600; color: var(--muted);
+  position: relative;
+}
+.tab[aria-selected="true"] { color: var(--primary); }
+.tab[aria-selected="true"]::before {
+  content: ''; position: absolute; top: 0; left: 22%; right: 22%; height: 2px;
+  background: var(--primary); border-radius: 0 0 3px 3px;
+}
+.badge {
+  position: absolute; top: 8px; right: 50%; transform: translateX(20px);
+  min-width: 17px; height: 17px; padding: 0 5px;
+  display: grid; place-items: center;
+  background: var(--primary); color: var(--primary-ink);
+  border-radius: 9px; font-size: .66rem; font-style: normal; font-weight: 700;
+}
+
+/* ---------------- painel de compras ---------------- */
+
+.resumo { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 6px; }
+.resumo div {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 12px 10px; text-align: center;
+}
+.resumo b { display: block; font-size: 1.5rem; color: var(--primary); line-height: 1.15; }
+.resumo span { font-size: .68rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+
+.grupo { margin-top: 22px; }
+.grupo-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.grupo-head .ic { color: var(--primary); }
+.grupo-head h2 { margin: 0; font-size: .95rem; flex: 1; color: var(--text); }
+.grupo-head .qt {
+  font-size: .72rem; color: var(--muted);
+  background: var(--surface-2); border-radius: 20px; padding: 3px 10px;
+}
+
+/* ---------------- categorias ---------------- */
+
+.cat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+@media (min-width: 620px) { .cat-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.cat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 14px;
+  min-height: 116px;
+  cursor: pointer;
+  display: flex; flex-direction: column; gap: 8px;
+  text-align: left; color: var(--text);
+  transition: border-color .2s ease, transform .12s ease;
+  position: relative; overflow: hidden;
+}
+.cat-card:active { transform: scale(.98); }
+.cat-card:hover { border-color: var(--primary-line); }
+.cat-card .ic { color: var(--primary); }
+.cat-card .nm { font-weight: 600; font-size: .95rem; }
+.cat-card .ct { color: var(--muted); font-size: .76rem; margin-top: auto; }
+.cat-card .ct b { color: var(--primary); }
+.cat-card.tem::after { content: ''; position: absolute; inset: 0 auto 0 0; width: 3px; background: var(--primary); }
+
+/* ---------------- adicionar e catálogo ---------------- */
+
+.add-row { display: flex; gap: 8px; align-items: center; }
+.add-row > input, .add-row > select { min-width: 0; }
+.add-row input.name { flex: 1 1 0; width: auto; }
+.add-row select, .add-row input[type="date"] { flex: 1 1 0; width: auto; }
+/* O seletor de categoria precisa de largura fixa: com flex livre ele encolhia
+   até mostrar só a primeira letra do nome. */
+.add-row select.cat { flex: 0 0 42%; }
+.add-row input.qty { flex: 0 0 86px; width: 86px; }
+.add-row .btn { flex: none; width: var(--tap); padding: 0; }
+
+.busca-wrap { position: relative; }
+.busca-wrap .lupa { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+.busca-wrap input { padding-left: 44px; }
+
+.catalogo { display: grid; gap: 6px; margin-top: 14px; }
+.cat-item {
+  display: flex; align-items: center; gap: 12px;
+  min-height: 46px; padding: 8px 12px;
+  background: var(--surface); border: 1px solid var(--border-soft);
+  border-radius: 12px; cursor: pointer; text-align: left;
+  color: var(--text-2); font-size: .92rem; width: 100%;
+  transition: border-color .15s ease, background .15s ease, color .15s ease;
+}
+.cat-item .marcador {
+  width: 22px; height: 22px; border-radius: 7px; flex: none;
+  border: 1.5px solid var(--border); display: grid; place-items: center;
+  color: transparent;
+}
+.cat-item .nome { flex: 1; min-width: 0; }
+/* A ação vai escrita na linha. Só o marcador mudando de cor não deixa claro
+   o que o toque faz, e a pessoa acaba tocando duas vezes. */
+.cat-item .acao {
+  display: inline-flex; align-items: center; gap: 4px; flex: none;
+  background: var(--primary); color: var(--primary-ink);
+  border-radius: 20px; padding: 5px 12px 5px 9px;
+  font-size: .78rem; font-weight: 700;
+}
+.cat-item .acao.dentro {
+  background: transparent; color: var(--primary);
+  border: 1px solid var(--primary-line);
+}
+.cat-item[aria-pressed="true"] { border-color: var(--primary-line); background: var(--primary-soft); color: var(--text); }
+.cat-item[aria-pressed="true"] .marcador { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 4px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 4px;
+  min-height: 36px; padding: 0 6px 0 12px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 20px; font-size: .85rem; color: var(--text-2); cursor: pointer;
+}
+.chip:active { border-color: var(--primary-line); }
+.chip .x { color: var(--muted); padding: 4px; display: grid; place-items: center; background: none; border: 0; cursor: pointer; }
+
+/* ---------------- listas ---------------- */
+
+.list { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
+
+.row {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 12px;
+  min-height: var(--tap);
+}
+.row .check {
+  width: 26px; height: 26px; flex: none;
+  border: 1.5px solid var(--border); border-radius: 50%;
+  background: none; cursor: pointer;
+  display: grid; place-items: center;
+  color: transparent; padding: 0;
+}
+.row.done { border-color: var(--border-soft); background: var(--surface-2); }
+.row.done .check { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
+.row .main { flex: 1; min-width: 0; cursor: pointer; }
+.row .nm { font-weight: 500; word-break: break-word; }
+.row .sub { font-size: .76rem; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 2px; }
+.row.done .nm { text-decoration: line-through; color: var(--muted); }
+.row .del { background: none; border: 0; cursor: pointer; color: var(--muted); width: 38px; height: 38px; flex: none; border-radius: 10px; display: grid; place-items: center; }
+.row .del:active { background: var(--surface-3); color: var(--danger); }
+.row.pending { opacity: .5; }
+.row.overdue { border-color: rgba(255, 92, 92, .35); }
+.row.overdue .nm { color: var(--danger); }
+.row.today .nm { color: var(--warn); }
+
+.section-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 24px 0 0; }
+.section-head h2 { margin: 0; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; }
+.link-btn {
+  background: none; border: 0; cursor: pointer;
+  color: var(--primary); font-weight: 600; font-size: .84rem;
+  min-height: 40px; padding: 0 4px;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+
+.empty { text-align: center; color: var(--muted); padding: 44px 16px; font-size: .92rem; }
+.empty .ic { display: inline-grid; place-items: center; color: var(--primary); opacity: .5; margin-bottom: 12px; }
+
+.qty-tag { background: var(--surface-3); border-radius: 6px; padding: 1px 7px; font-size: .74rem; font-weight: 600; color: var(--text-2); }
+
+/* ---------------- ajustes ---------------- */
+
+.settings-group { margin-bottom: 24px; }
+.settings-group > h2 { color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; }
+.person { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--border-soft); }
+.person:last-of-type { border-bottom: 0; }
+.person .nm { flex: 1; font-weight: 600; min-width: 0; }
+.person .ic { color: var(--primary); }
+.tag { font-size: .64rem; background: var(--primary-soft); color: var(--primary); border-radius: 6px; padding: 3px 8px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+
+/* ---------------- avisos ---------------- */
+
+.offline {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--danger); color: #fff;
+  text-align: center; padding: 8px 12px; font-size: .86rem; font-weight: 600;
+  padding-top: calc(8px + var(--safe-t));
+}
+
+.toast {
+  position: fixed; left: 50%; bottom: calc(80px + var(--safe-b));
+  transform: translateX(-50%);
+  z-index: 200; max-width: 90vw;
+  background: var(--surface-3); color: var(--text);
+  border: 1px solid var(--border);
+  padding: 12px 18px; border-radius: 12px;
+  font-size: .88rem; box-shadow: var(--shadow);
+  animation: sobe .22s ease;
+}
+@keyframes sobe { from { opacity: 0; transform: translate(-50%, 10px); } }
+
+.boot-box { width: 100%; max-width: 380px; display: grid; justify-items: center; gap: 8px; }
+.boot-box h1 { text-align: center; margin-bottom: 4px; }
+.boot-box #boot-fail { width: 100%; }
+.boot-box .error { text-align: center; }
+
+.spinner {
+  width: 32px; height: 32px; border-radius: 50%;
+  border: 2.5px solid var(--surface-3); border-top-color: var(--primary);
+  animation: gira .8s linear infinite;
+}
+@keyframes gira { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+/* App dark-only, alinhado à identidade visual da QMIX (qmix.com.br). */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  /* Fontes QMIX: Montserrat (display) + Open Sans (corpo) */
+  --font-sans: var(--font-open-sans);
+  --font-display: var(--font-montserrat);
+  --font-mono: var(--font-geist-mono);
+
+  /* Accent = verde neon QMIX (#00ff66). Sobrescreve a escala `emerald`,
+     que é usada como cor primária em todo o app — assim o accent inteiro
+     passa a ser o verde da marca sem tocar componente por componente. */
+  --color-emerald-50: #e8fff2;
+  --color-emerald-100: #c5ffdd;
+  --color-emerald-200: #93ffc1;
+  --color-emerald-300: #57ffa0;
+  --color-emerald-400: #1aff7e;
+  --color-emerald-500: #00ff66;
+  --color-emerald-600: #00e65c;
+  --color-emerald-700: #00c24d;
+  --color-emerald-800: #009e3f;
+  --color-emerald-900: #007a31;
+}
+
+/* --------------------------------------------------------------------------
+   Tokens QMIX (dark). O app é dark-only, como o site principal.
+--------------------------------------------------------------------------- */
+:root,
+[data-theme="dark"] {
+  --bg: #050a0f;
+  --fg: #e7f1ff;
+  --fg-muted: #8899aa;
+  --grid: rgba(255, 255, 255, 0.022);
+  --glow-a: rgba(0, 255, 102, 0.1);
+  --glow-b: rgba(0, 255, 102, 0.045);
+}
+
+html {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  /* brilho neon suave no topo + grade fina — profundidade sem poluir, igual QMIX */
+  background-image:
+    radial-gradient(62rem 42rem at 85% -10%, var(--glow-a), transparent 60%),
+    radial-gradient(48rem 34rem at 2% 2%, var(--glow-b), transparent 55%),
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    100% 100%,
+    44px 44px,
+    44px 44px;
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(0, 255, 102, 0.28);
+  color: #050a0f;
+}
+
+/* Display/títulos e números com Montserrat */
+.font-display {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 102, 0.35);
+  background-clip: padding-box;
+}
+
+/* --------------------------------------------------------------------------
+   Animações
+--------------------------------------------------------------------------- */
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-pop {
+  animation: pop-in 0.13s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: top left;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes sheen {
+  to {
+    background-position: 200% 0;
+  }
+}
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 25%,
+    rgba(255, 255, 255, 0.09) 37%,
+    rgba(255, 255, 255, 0.04) 63%
+  );
+  background-size: 200% 100%;
+  animation: sheen 1.3s linear infinite;
+}

@@ -1,0 +1,18 @@
+DATABASE_URL="<<REMOVIDO>>"
+NODE_ENV=production
+# DataForSEO — preencher depois para ligar o check de indexação
+DATAFORSEO_LOGIN="marketing@qmix.com.br"
+DATAFORSEO_PASSWORD="<<REMOVIDO>>"
+DEFAULT_LOCATION_CODE="2076"
+DEFAULT_LANGUAGE_CODE="pt"
+FETCH_USER_AGENT="Mozilla/5.0 (compatible; BacklinkGuard/1.0; +https://backlinkguard.dominioprovisorio.net.br)"
+APP_PASSWORD="<<REMOVIDO>>"
+APP_SESSION_SECRET="<<REMOVIDO>>"
+RESEND_API_KEY="<<REMOVIDO>>"
+ALERT_EMAIL_FROM="BacklinkGuard QMIX <nao-responder@smspix.com.br>"
+ALERT_EMAIL_TO="qmixdigital@gmail.com,marketing@qmix.com.br"
+DFS_BALANCE_WARN="0"
+DFS_BALANCE_CRITICAL="0.01"
+GOOGLE_SA_JSON_PATH="/var/www/backlinkguard-shared/google-sa.json"
+CSE_API_KEY=""
+CSE_CX=""

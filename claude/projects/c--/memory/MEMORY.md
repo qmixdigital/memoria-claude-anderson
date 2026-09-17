@@ -1,0 +1,5 @@
+- [GLM da Z.ai no Claude Code](glm-zai-claude-code.md) — como ligar o GLM por projeto, comando `claude-glm` e mapeamento de modelos
+- [Temp lotando o disco C:](temp-remotion-lotando-disco.md) — bundles do Remotion e scratchpads antigos sao os culpados recorrentes
+- [GitHub API para publicar repo](github-api-publicacao.md) — conta qmixdigital, token em Documents/APIs, gh nao instalado, JSON via Python
+- [Bot agenda Telegram](agenda-telegram-bot.md) — @agendaqmix_bot, d:\SISTEMASgenda-telegram, opengravity:3080; chave Anthropic do ambiente estava invalida
+- [Ideia engavetada: bot de matérias por voz](ideia-bot-materias-por-voz.md) — spec aprovada em 16/09/2026, nao construida; retomar direto no plano

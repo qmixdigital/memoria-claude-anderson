@@ -1,0 +1,22 @@
+---
+name: qmix-modulo-fiscal
+description: "QMIX Invest — módulo de planejamento tributário (ledger, apuração, alertas, export)"
+metadata: 
+  node_type: memory
+  type: project
+  originSessionId: 5d12783c-7348-4eef-ac92-10bc8fe1d654
+---
+
+O QMIX Invest tem um módulo fiscal de ganho de capital (ações à vista, swing) em produção desde 2026-06-29. Código em `worker/src/tax/` (lib pura com decimal.js): `ledger.ts` (reconstrói PM do ledger), `apuracao.ts`, `recomendacao.ts`, `calendario.ts` (dias úteis B3), `service.ts` (I/O), `alertas.ts` (jobs), `export.ts`, `mensagens.ts` (linguagem simples), `config.ts` (TAX_CONFIG + GLOSSARIO). Migração `0021_tax_module.sql`: tabelas `trades`, `corporate_events`, `tax_loss_carryforward`, `tax_due_pending` + `tickers.asset_class`.
+
+**Decisões fiscais (validadas por revisor externo):** isenção R$20k/mês só p/ `asset_class='acao'` (FII/ETF/BDR à parte); estouro tributa o lucro do MÊS INTEIRO a 15%; prejuízo de mês isento não compensa; DARF mínimo R$10 acumula; fee de compra entra no PM, fee de venda abate. Day trade está FORA do escopo (só detectado e avisado). Saldo de abertura = 18 ações como trades `is_opening=true`; carryforward inicial = R$0 (sem prejuízo anterior). FIIs HGLG11/KNCR11/RBRR11/XPML11 e o fundo de ouro ficaram de fora a pedido do user.
+
+**How to apply:** registro de trades é MANUAL via Claude Code (o user manda no formato `[data] [compra|venda] [qtd] [ticker] a [preço] | corretagem [R$] | [swing|day]` e eu insiro na tabela `trades` + confirmo com o acumulado do mês). Ao registrar uma VENDA: (1) perguntar se é "pra atualizar o preço médio (vou recomprar)" → grava `repurchase_intent=true`, ou "venda de verdade"; (2) ANTES de confirmar, checar com `checarLimiteMes` — se a venda faz o mês passar de R$20k, mostrar `msgAvisoEstouro` e pedir confirmação/cancelar; se passar de 90% (R$17.910) mas ainda isento, avisar. Inferir day trade quando há compra+venda do mesmo ticker/dia.
+
+Jobs (worker/src/tax/alertas.ts): oportunidade a cada tick de quote-watchlist (1x/dia/ticker via `watchlist_alerts_sent` alert_type='tax'); fim de mês `tax-fim-de-mes` (cron `30 20 25-31 * 1-5`, dispara só no penúltimo dia útil); `tax-lembrete-recompra` (`0 16 * * 1-5`, lembra recomprar após 2 dias úteis); `tax-lembrete-darf` (`0 13 20-31 * 1-5`, lembra 3 dias úteis antes do vencimento).
+
+**Aviso de proventos no giro (item dez/2026):** antes de sugerir vender-e-recomprar, o alerta checa dividendo/JCP futuro na tabela `qmix_invest.proventos` (que JÁ tem `com_date` futuras — não precisou de feed novo) dentro de PROVENTO_AVISO_DIAS=30; data-ex = `nextBusinessDay(com_date)`. **Critério de conflito = `com_date < recompraData` (recompra cai depois da data-com → perde o provento).** Mensagem usa a DATA-COM EXATA como limite ("recompre exatamente até DD/MM, a janela é esse dia, não 'amanhã ou depois'"), NÃO "próximo dia útil" genérico. Oportunidade e fim de mês usam o mesmo critério. Se a venda tinha provento e a data-com passa sem recompra, `runLembreteRecompra` envia `msgProventoPerdido` (1x via `repurchase_reminded_at`). Todo alerta de giro reforça "venda hoje, recompre no próximo dia útil, nunca no mesmo dia (day trade 20%)". `seriaDayTrade(ticker,side,date,trades)` (custos.ts) detecta venda+compra do mesmo papel/dia (ignora is_opening) — usar ANTES de confirmar um registro pra mostrar `msgAvisoDayTrade` e deixar cancelar.
+
+**Config nova (config.ts, parametrizável):** CUSTO_CORRETAGEM=0 (C6 não cobra), TAXA_B3=0.0003 (0,03%/operação), LIMITE_ALERTA_PCT=0.9, DIAS_UTEIS_RECOMPRA=2, DIAS_UTEIS_LEMBRETE_DARF=3, LIQUIDEZ_MINIMA_BRL=500000. Custo do giro = (venda+recompra)×TAXA_B3; benefício potencial = 15%×lucro (CONDICIONAL a vender >20k/mês). Dedo-duro NÃO entra no custo (é crédito recuperável). Toda sugestão de venda mostra custo + benefício. **Glossário** é fonte única em `@qmix-invest/db/glossario` (subpath dedicado — NUNCA importar do index '@qmix-invest/db', quebra em ESM por re-export sem .js). Comando `/ajuda` no bot mostra o glossário. Migração `0022` adicionou `trades.repurchase_intent` + `repurchase_reminded_at`.
+
+**Why (linguagem):** o user é LEIGO em mercado. TODA mensagem que ele lê (confirmação, oportunidade, fim de mês, export) deve usar linguagem simples com explicação curta entre parênteses na primeira vez que um termo técnico aparece — usar o GLOSSARIO de `config.ts` (sempre a mesma explicação). Alertas são SEMPRE "aviso, não ordem" — quem decide e executa é o user. Ver [[qmix-alertas-preco]] e [[qmix-invest-deploy]].

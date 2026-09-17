@@ -1,0 +1,2 @@
+/* Home — refinos finos do front-page (Archetype C). */
+.rde-front__cat-block + .rde-front__cat-block{ margin-top:var(--sp-5); }

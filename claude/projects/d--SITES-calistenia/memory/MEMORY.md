@@ -1,0 +1,1 @@
+- [URLs clicáveis ao entregar](urls-clicaveis-ao-entregar.md) — ele confere olhando a página, então toda entrega termina com os links completos

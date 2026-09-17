@@ -1,0 +1,181 @@
+name: qmix-invest
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: qmix-invest-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-qmix_invest}
+      POSTGRES_PASSWORD: <<REMOVIDO>> is required}
+      POSTGRES_DB: ${POSTGRES_DB:-qmix_invest}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - qmix-invest-postgres-data:/var/lib/postgresql/data
+      - ./backups:/backups
+    networks:
+      - qmix_invest_internal
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-qmix_invest}"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: "2.0"
+
+  app:
+    image: qmix-invest-app:${APP_VERSION:-latest}
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+      args:
+        APP_VERSION: ${APP_VERSION:-dev}
+    container_name: qmix-invest-app
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: <<REMOVIDO>>
+      NODE_ENV: production
+      MODE: ${MODE:-dry-run}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      APP_VERSION: ${APP_VERSION:-dev}
+      TELEGRAM_BOT_TOKEN: <<REMOVIDO>>
+      TELEGRAM_WEBHOOK_SECRET: <<REMOVIDO>>
+      TELEGRAM_OWNER_CHAT_ID: <<REMOVIDO>>
+      ANTHROPIC_API_KEY: <<REMOVIDO>>
+      AGENTE_PESQUISA_ATIVO: ${AGENTE_PESQUISA_ATIVO:-false}
+      ROBO_IA_ATIVO: ${ROBO_IA_ATIVO:-false}
+      ROBO_IA_CAPITAL: ${ROBO_IA_CAPITAL:-100000}
+      HOSTNAME: 0.0.0.0
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - qmix_invest_internal
+    ports:
+      - "127.0.0.1:3010:3000"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/api/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: "0.5"
+
+  app-b:
+    image: qmix-invest-app:${APP_VERSION:-latest}
+    build:
+      context: .
+      dockerfile: app/Dockerfile
+      args:
+        APP_VERSION: ${APP_VERSION:-dev}
+    container_name: qmix-invest-app-b
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: <<REMOVIDO>>
+      NODE_ENV: production
+      MODE: ${MODE:-dry-run}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      APP_VERSION: ${APP_VERSION:-dev}
+      TELEGRAM_BOT_TOKEN: <<REMOVIDO>>
+      TELEGRAM_WEBHOOK_SECRET: <<REMOVIDO>>
+      TELEGRAM_OWNER_CHAT_ID: <<REMOVIDO>>
+      ANTHROPIC_API_KEY: <<REMOVIDO>>
+      AGENTE_PESQUISA_ATIVO: ${AGENTE_PESQUISA_ATIVO:-false}
+      ROBO_IA_ATIVO: ${ROBO_IA_ATIVO:-false}
+      ROBO_IA_CAPITAL: ${ROBO_IA_CAPITAL:-100000}
+      HOSTNAME: 0.0.0.0
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - qmix_invest_internal
+    ports:
+      - "127.0.0.1:3011:3000"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:3000/api/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: "0.5"
+
+  worker:
+    image: qmix-invest-worker:${APP_VERSION:-latest}
+    build:
+      context: .
+      dockerfile: worker/Dockerfile
+    container_name: qmix-invest-worker
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: <<REMOVIDO>>
+      NODE_ENV: production
+      MODE: ${MODE:-dry-run}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      TELEGRAM_BOT_TOKEN: <<REMOVIDO>>
+      TELEGRAM_WEBHOOK_SECRET: <<REMOVIDO>>
+      TELEGRAM_OWNER_CHAT_ID: <<REMOVIDO>>
+      ANTHROPIC_API_KEY: <<REMOVIDO>>
+      AGENTE_PESQUISA_ATIVO: ${AGENTE_PESQUISA_ATIVO:-false}
+      ROBO_IA_ATIVO: ${ROBO_IA_ATIVO:-false}
+      ROBO_IA_CAPITAL: ${ROBO_IA_CAPITAL:-100000}
+      PROXY_POOL: ${PROXY_POOL:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - qmix_invest_internal
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: "2.0"
+
+  worker-b:
+    image: qmix-invest-worker:${APP_VERSION:-latest}
+    build:
+      context: .
+      dockerfile: worker/Dockerfile
+    container_name: qmix-invest-worker-b
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: <<REMOVIDO>>
+      NODE_ENV: production
+      MODE: ${MODE:-dry-run}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      TELEGRAM_BOT_TOKEN: <<REMOVIDO>>
+      TELEGRAM_WEBHOOK_SECRET: <<REMOVIDO>>
+      TELEGRAM_OWNER_CHAT_ID: <<REMOVIDO>>
+      ANTHROPIC_API_KEY: <<REMOVIDO>>
+      AGENTE_PESQUISA_ATIVO: ${AGENTE_PESQUISA_ATIVO:-false}
+      ROBO_IA_ATIVO: ${ROBO_IA_ATIVO:-false}
+      ROBO_IA_CAPITAL: ${ROBO_IA_CAPITAL:-100000}
+      PROXY_POOL: ${PROXY_POOL:-}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - qmix_invest_internal
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: "2.0"
+
+networks:
+  qmix_invest_internal:
+    driver: bridge
+
+volumes:
+  qmix-invest-postgres-data:

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Report - GA4</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-left">
+      <h1 class="header-title">Relatório WhatsApp</h1>
+      <span class="header-refresh" id="last-refresh"></span>
+      <nav class="header-nav">
+        <a href="index.html" class="header-nav-link">Realtime</a>
+        <a href="whatsapp.html" class="header-nav-link active">Relatório WhatsApp</a>
+      </nav>
+    </div>
+    <div class="header-center">
+      <div class="header-stat">
+        <span class="stat-label">Cliques no período</span>
+        <span class="stat-value" id="total-clicks">--</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div id="user-info" class="user-info" style="display:none;">
+        <span id="user-email"></span>
+        <button id="btn-logout" class="btn btn-logout">Sair</button>
+      </div>
+      <button id="btn-login" class="btn btn-login">Login com Google</button>
+    </div>
+  </header>
+
+  <div id="login-message" class="login-message">
+    Faça login para visualizar os dados
+  </div>
+
+  <div id="report-container" style="display:none;">
+    <div class="period-bar">
+      <div class="period-tabs">
+        <button class="period-tab active" data-period="today">Hoje</button>
+        <button class="period-tab" data-period="yesterday">Ontem</button>
+        <button class="period-tab" data-period="7d">7 dias</button>
+        <button class="period-tab" data-period="30d">30 dias</button>
+        <button class="period-tab" data-period="90d">90 dias</button>
+        <button class="period-tab" data-period="custom">Personalizado</button>
+      </div>
+      <div class="period-nav" id="period-nav">
+        <button class="nav-btn" id="btn-prev-day" title="Dia anterior">&larr;</button>
+        <span class="period-label" id="period-label">--</span>
+        <button class="nav-btn" id="btn-next-day" title="Próximo dia">&rarr;</button>
+      </div>
+      <div class="period-custom" id="period-custom" style="display:none;">
+        <label>
+          <span>De:</span>
+          <input type="date" id="custom-start">
+        </label>
+        <label>
+          <span>Até:</span>
+          <input type="date" id="custom-end">
+        </label>
+        <button class="btn btn-login" id="btn-apply-custom">Aplicar</button>
+      </div>
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-card">
+        <div class="summary-label">Total de cliques</div>
+        <div class="summary-value" id="summary-total">--</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Taxa de conversão</div>
+        <div class="summary-value" id="summary-conv">--</div>
+        <div class="summary-sub" id="summary-conv-sub">--</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Sites ativos</div>
+        <div class="summary-value" id="summary-sites">--</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Média diária</div>
+        <div class="summary-value" id="summary-avg">--</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Melhor dia</div>
+        <div class="summary-value" id="summary-best-day">--</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Melhor horário</div>
+        <div class="summary-value" id="summary-best-hour">--</div>
+        <div class="summary-sub" id="summary-best-hour-sub">--</div>
+      </div>
+    </div>
+
+    <div class="chart-container" id="chart-wrap">
+      <div class="chart-title">Cliques por dia (todos os sites)</div>
+      <canvas id="trend-chart"></canvas>
+    </div>
+
+    <div class="chart-container" id="hourly-wrap">
+      <div class="chart-title">Cliques por hora do dia (todos os sites)</div>
+      <canvas id="hourly-chart"></canvas>
+    </div>
+
+    <div class="chart-container" id="heatmap-wrap">
+      <div class="chart-title">Quando as pessoas clicam — dia da semana x hora</div>
+      <div class="heatmap" id="heatmap"></div>
+      <div class="heatmap-legend">
+        <span class="heatmap-legend-label">Menos</span>
+        <span class="heatmap-legend-cell" data-intensity="0"></span>
+        <span class="heatmap-legend-cell" data-intensity="1"></span>
+        <span class="heatmap-legend-cell" data-intensity="2"></span>
+        <span class="heatmap-legend-cell" data-intensity="3"></span>
+        <span class="heatmap-legend-cell" data-intensity="4"></span>
+        <span class="heatmap-legend-label">Mais</span>
+      </div>
+    </div>
+
+    <div id="sites-loading" class="login-message" style="padding:24px;">Carregando relatório...</div>
+    <main class="grid" id="sites-grid"></main>
+  </div>
+
+  <script src="whatsapp.js"></script>
+</body>
+</html>

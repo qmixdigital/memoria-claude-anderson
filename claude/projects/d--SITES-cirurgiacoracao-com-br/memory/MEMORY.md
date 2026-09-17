@@ -1,0 +1,8 @@
+- [Onde fica o cirurgiacoracao](cirurgiacoracao-onde-fica.md) — virou Next.js na VPS srv1166087, saiu da Hostverge, sem git e sem cópia local
+- [Linkagem interna é a última etapa](linkagem-interna-por-ultimo.md) — só depois de melhorar e ampliar o conteúdo; auto-link já desligado
+- [Critério de poda de conteúdo](cirurgiacoracao-criterio-poda.md) — o que conta como backlink a preservar e o que é só referência
+- [Conta Cloudflare cirurgiacoracao](cloudflare-conta-cirurgiacoracao.md) — token e account_id no contas.json, e o que esse token não faz
+- [www para o apex em um salto](cf-www-apex-um-salto.md) — o primeiro 301 é do Cloudflare, não do nginx; script pronto na pasta Cloudflare
+- [Acesso ao Search Console](gsc-service-account.md) — service account do backlinkguard, com 84 propriedades da rede
+- [Lighthouse na VPS não serve](lighthouse-na-vps-nao-serve.md) — medir performance pela API do PageSpeed, não dentro da máquina
+- [Onde fica o cirurgiadacatarata](catarata-onde-fica.md) — mesma VPS do de coração, portas 3140/3141, com cobrança real pela Asaas

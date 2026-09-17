@@ -1,0 +1,27 @@
+{
+  "name": "meta-ads-manager",
+  "version": "1.0.0",
+  "description": "Gestao de trafego pago Meta (Instagram/Facebook) por cliente via Marketing API",
+  "type": "module",
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "criar-campanha": "bun run scripts/criar-campanha.ts",
+    "criar": "bun run scripts/criar.ts",
+    "nova-campanha": "bun run scripts/nova-campanha.ts",
+    "puxar-insights": "bun run scripts/puxar-insights.ts",
+    "listar-contas": "bun run scripts/listar-contas.ts",
+    "listar-ativos": "bun run scripts/listar-ativos.ts",
+    "monitorar": "bun run scripts/monitorar-telegram.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "@types/node": "^25.9.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prisma": "^6.2.1",
+    "typescript": "^5.9.3"
+  }
+}

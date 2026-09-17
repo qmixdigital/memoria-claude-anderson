@@ -1,0 +1,18 @@
+/* Home-only overrides Revista QMIX */
+
+/* Mais respiro entre secoes */
+.stream-section, .cat-showcase, .popular-rail, .hero-boxed { margin-bottom: var(--rq-sp-6); }
+
+/* Hero LCP boost - background blush quando imagem ainda nao carregou */
+.hero-boxed__media { background: linear-gradient(135deg, var(--rq-cloud), var(--rq-cream)); }
+
+/* Stream card hover refinement */
+.stream-card:hover .stream-card__title a { color: var(--rq-coral); }
+
+/* Cat showcase title hover */
+.cat-showcase__title a:hover { color: var(--rq-coral); }
+
+/* Mobile breaking strip ajuste */
+@media (max-width: 560px) {
+  .breaking-strip__items a { font-size: 12px; padding-right: var(--rq-sp-3); }
+}

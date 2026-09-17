@@ -1,0 +1,1 @@
+- [Domínios novos → Projetos](dominios-vao-em-projetos.md) — regra padrão de categorização no QMIX Indexation

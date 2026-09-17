@@ -1,0 +1,46 @@
+/* Single-only overrides for Desassossegada. content_typography: magazine_serif. */
+
+/* Drop cap discreto no primeiro paragrafo do post */
+.dsg-post-body > p:first-of-type::first-letter {
+  font-family: var(--dsg-font-heading);
+  font-size: 3.2em;
+  line-height: 1;
+  float: left;
+  padding: 6px 10px 0 0;
+  color: var(--dsg-secondary);
+  font-weight: 600;
+}
+
+/* Featured image full bleed (sai do container central no desktop) */
+@media (min-width: 1100px) {
+  .dsg-post-image {
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+  .dsg-post-image img {
+    max-height: 80vh;
+  }
+  .dsg-post-image figcaption {
+    text-align: center;
+  }
+}
+
+/* Tabela legivel dentro de conteudo importado (SmartMag legacy) */
+.dsg-post-body table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: var(--dsg-sp-5) 0;
+  font-size: 16px;
+}
+.dsg-post-body table th,
+.dsg-post-body table td {
+  border: 1px solid var(--dsg-border);
+  padding: var(--dsg-sp-3) var(--dsg-sp-4);
+  text-align: left;
+}
+.dsg-post-body table th {
+  background: var(--dsg-surface);
+  font-family: var(--dsg-font-heading);
+  font-weight: 600;
+}

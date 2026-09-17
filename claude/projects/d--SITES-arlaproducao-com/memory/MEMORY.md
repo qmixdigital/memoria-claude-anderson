@@ -1,0 +1,1 @@
+- [Links sempre clicáveis e completos](links-clicaveis-sempre.md) — URL inteira com https e domínio, nunca só o caminho.

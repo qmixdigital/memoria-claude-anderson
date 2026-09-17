@@ -1,0 +1,38 @@
+- [Marca sempre por inteiro](qmix-marca-completa.md) — "QMIX Digital", nunca a sigla sozinha: o TTS erra e a legenda é indexada
+- [Cada vídeo, um motivo de capa](qmix-thumb-motivo-unico.md) — na thumbnail só o chassi se repete; motivo repetido já foi reclamado duas vezes
+- [Série de vídeos sobre backlinks](qmix-serie-backlinks.md) — ordem, URLs publicadas e o fluxo de produção que se firmou
+- [Título de trabalho é a escolha](qmix-titulo-de-trabalho.md) — se o briefing traz um título, ele entra como opção 1 sem reescrita
+- [Fatos da empresa já confirmados](qmix-fatos-confirmados.md) — 500+ portais, fundação 2020, zero garantia, Reclame Aqui limpo; não perguntar de novo
+- [Render de um video so](qmix-render-um-video.md) — id solto + `--scale=1`; `--only=` renderiza o catalogo inteiro em 4K
+- [Animação contínua nos blocos explicativos](qmix-animacao-continua.md) — cartão parado por mais de 3s é defeito, e o QA tem que caçar
+- [Janela de voz por tamanho de linha](qmix-janela-por-linha.md) — frase curta fala mais devagar; taxa única estoura o atempo
+- [Pronúncia se decide de ouvido](pronuncia-decidida-de-ouvido.md) — toda decisão vive no dicionário do repo; BYD é "Bil Ai Di", Volt é "vouti", SW é "esse dáblio"
+- [A voz do projeto não é a do .env](voz-do-projeto-nao-e-a-do-env.md) — usar a voz errada regrava o vídeo inteiro com outro locutor, sem erro nenhum
+- [Canal Radar Volt](radar-volt-canal.md) — segundo canal, veículos elétricos do mundo; identidade e contratos são separados da QMIX Digital
+- [Procedência de imagem já foi decidida](procedencia-de-imagem-decidida.md) — não levantar de novo; o Content ID passou limpo e a decisão é dele
+- [Perguntas de engajamento](perguntas-de-engajamento.md) — nunca repetir entre vídeos; tirar da imagem e responder no fim
+- [Entrega na pasta do modelo](entrega-na-pasta-do-modelo.md) — subpasta `entrega` dentro da pasta do veículo, nunca mais na Área de Trabalho
+- [Texto em tela começa em maiúscula](texto-em-tela-comeca-em-maiuscula.md) — caixa baixa no início é erro; vale para os dois canais
+- [Entrega só com legenda em português](entrega-so-legenda-em-portugues.md) — os cinco idiomas saíram do padrão em 23/08/2026
+- [Commons por objeto, nunca por conceito](commons-por-objeto-nao-conceito.md) — categoria com nome de coisa entrega; com nome de ideia vem lixo, e o Anderson prefere baixar
+- [Foto ampliada não é ilustração](foto-ampliada-nao-e-ilustracao.md) — ampliar foto real por IA entra sem tarja; imagem gerada entra com
+- [Revisão é quadro por fala](revisao-e-quadro-por-fala.md) — amostra não revisa vídeo; ler a folha inteira antes de dizer que está pronto
+- [Defeito silencioso: conferir o artefato](defeito-silencioso-conferir-artefato.md) — toda ferramenta daqui já disse "pronto" sem ter feito; medir o arquivo, não ler o log
+- [Grupo precisa da saída escrita](grupo-precisa-de-saida-escrita.md) — cartão sem `entre(a,b)` aterrissa na fala seguinte; foi o defeito mais repetido
+- [Imagem casa com a fala](imagem-casa-com-a-fala.md) — peneira de curadoria de pool; toda foto do lote vai para a tela
+- [Cama não se repete com stream_loop](cama-nao-se-repete-com-stream-loop.md) — os clipes têm final próprio; a música sumia a cada 63s e nem LUFS nem pico viam
+- [Pool por fala se confere no beats](pool-por-fala-confere-no-beats.md) — o roteiro.py quebra parágrafos e desloca o mapeamento; conferir no markdown não vale
+- [Brilho normaliza nos dois sentidos](brilho-normaliza-nos-dois-sentidos.md) — o scrim só funciona numa faixa; escura sobe, clara desce
+- [Cama: pedir sem final](cama-pedir-sem-final.md) — a frase certa no prompt quadruplica o platô útil e derruba as emendas de 11 para 1
+- [A marca do Radar Volt nasce em código](marca-do-radar-volt-nasce-em-codigo.md) — logo, favicon e capa por composição; um comando refaz o jogo
+- [Vídeo de terceiro vem sujo](video-de-terceiro-vem-sujo.md) — clipe de review chega espelhado e com marca do canal de origem; a marca cabe fora do meio da tomada
+- [Imagem é sempre Nano Banana Pro](imagem-sempre-nano-banana-pro.md) — google:4@2, sem escolher por assunto nem por custo; o barato erra a anatomia do objeto
+- [Material dele não se conserta](material-dele-nao-se-conserta.md) — formato eu ajusto, conteúdo (espelho, cor, enquadramento) só com pedido dele
+- [Artigo do vídeo no radarvolt](artigo-do-video-no-radarvolt.md) — rotina fixa: vídeo publicado vira artigo, com o player antes do primeiro H2; e as duas armadilhas do deploy
+- [Site radarvolt documentado](site-radarvolt-documentado.md) — acesso e rotina de publicação vivem em D:\SITES
+adarvolt.com.br, para a sessão do site
+- [Vídeos institucionais de cliente](cliente-video-institucional.md) — faixa nova em clientes/, kit e voz próprios; a Sunray foi a primeira
+- [Vertical: conteúdo entre 330 e 1240](vertical-conteudo-acima-da-legenda.md) — legenda e título comem o resto; uma cena serve as duas telas; filho absoluto pinta por cima
+- [qmix-24 GEO para afiliados](qmix-24-geo-afiliados.md) — venda sem contato, duas telas, sem ressalva; ChatGPT soletrado pendente de ouvido; trava do 'plano sob medida'
+- [Marca nova da QMIX (set/2026)](qmix-marca-nova-2026-09.md) — "GEO • SEO • BACKLINKS" com versão compacta para fechamento; a antiga não entra em vídeo novo
+- [Entrega: tudo numa pasta só](entrega-tudo-numa-pasta.md) — vídeo, capa e comparação de opções em demandas qmix/<slug>/; ele não procura em shorts/

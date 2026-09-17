@@ -1,0 +1,38 @@
+{
+  "defaults": {
+    "author": "[[User:Mauricio Nakamura OFC|Mauricio Nakamura]]",
+    "source": "{{own}}",
+    "licenca": "self|cc-by-sa-4.0",
+    "permission": "",
+    "comment": "Upload via script",
+    "categorias": [
+      "Photographs by Mauricio Nakamura"
+    ]
+  },
+  "imagens": [
+    {
+      "arquivo": "./fotos/DSC_0142.jpg",
+      "nome_commons": "Consultorio de ortopedia em Goiania 01.jpg",
+      "descricao_pt": "Sala de atendimento de uma clínica de ortopedia em Goiânia, Goiás, Brasil.",
+      "descricao_en": "Consultation room at an orthopedic clinic in Goiânia, Goiás, Brazil.",
+      "data": "2026-08-14",
+      "coords": "-16.6869|-49.2648|heading:180",
+      "categorias": [
+        "Photographs by Mauricio Nakamura",
+        "Health care in Goiás",
+        "Goiânia"
+      ]
+    },
+    {
+      "arquivo": "./fotos/DSC_0155.jpg",
+      "nome_commons": "Equipamento de dermatologia estetica 01.jpg",
+      "descricao_pt": "Equipamento de laser utilizado em procedimentos dermatológicos estéticos.",
+      "descricao_en": "Laser device used in aesthetic dermatology procedures.",
+      "data": "2026-08-14",
+      "categorias": [
+        "Photographs by Mauricio Nakamura",
+        "Dermatology equipment"
+      ]
+    }
+  ]
+}

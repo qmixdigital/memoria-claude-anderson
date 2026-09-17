@@ -1,0 +1,9 @@
+# Gerados pela VPS — não versionar
+status.js
+status.json
+gsc.js
+gsc.json
+
+# Sistema
+.DS_Store
+Thumbs.db

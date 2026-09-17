@@ -1,0 +1,1916 @@
+{
+  "id": "65b2a2fe-fdd0-4cca-870c-714b86e2ebcf",
+  "prevId": "01040b54-d076-4d1f-8233-2192c53a0177",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "qmix_invest.btc_lending_daily": {
+      "name": "btc_lending_daily",
+      "schema": "qmix_invest",
+      "columns": {
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date": {
+          "name": "date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "open_balance": {
+          "name": "open_balance",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "new_contracts": {
+          "name": "new_contracts",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "rate_avg_pct": {
+          "name": "rate_avg_pct",
+          "type": "numeric(8, 4)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source_hash": {
+          "name": "source_hash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "btc_lending_daily_pk": {
+          "name": "btc_lending_daily_pk",
+          "columns": [
+            {
+              "expression": "ticker",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "btc_lending_daily_source_hash_idx": {
+          "name": "btc_lending_daily_source_hash_idx",
+          "columns": [
+            {
+              "expression": "source_hash",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "btc_lending_daily_ticker_tickers_ticker_fk": {
+          "name": "btc_lending_daily_ticker_tickers_ticker_fk",
+          "tableFrom": "btc_lending_daily",
+          "tableTo": "tickers",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "ticker"
+          ],
+          "columnsTo": [
+            "ticker"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.companies": {
+      "name": "companies",
+      "schema": "qmix_invest",
+      "columns": {
+        "cnpj": {
+          "name": "cnpj",
+          "type": "varchar(14)",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sector": {
+          "name": "sector",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "subsector": {
+          "name": "subsector",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "cvm_code": {
+          "name": "cvm_code",
+          "type": "varchar(10)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "companies_name_trgm_idx": {
+          "name": "companies_name_trgm_idx",
+          "columns": [
+            {
+              "expression": "\"name\" gin_trgm_ops",
+              "asc": true,
+              "isExpression": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "gin",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.cusip_to_ticker": {
+      "name": "cusip_to_ticker",
+      "schema": "qmix_invest",
+      "columns": {
+        "cusip": {
+          "name": "cusip",
+          "type": "varchar(12)",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_adr": {
+          "name": "is_adr",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "cusip_to_ticker_ticker_tickers_ticker_fk": {
+          "name": "cusip_to_ticker_ticker_tickers_ticker_fk",
+          "tableFrom": "cusip_to_ticker",
+          "tableTo": "tickers",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "ticker"
+          ],
+          "columnsTo": [
+            "ticker"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.foreign_flow_daily": {
+      "name": "foreign_flow_daily",
+      "schema": "qmix_invest",
+      "columns": {
+        "date": {
+          "name": "date",
+          "type": "date",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "net_flow_brl": {
+          "name": "net_flow_brl",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "buy_brl": {
+          "name": "buy_brl",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "sell_brl": {
+          "name": "sell_brl",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_hash": {
+          "name": "source_hash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "foreign_flow_daily_source_hash_unique": {
+          "name": "foreign_flow_daily_source_hash_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "source_hash"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.fund_holdings_cvm": {
+      "name": "fund_holdings_cvm",
+      "schema": "qmix_invest",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "fund_holdings_cvm_id_seq",
+            "schema": "qmix_invest",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "fund_id": {
+          "name": "fund_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "reference_month": {
+          "name": "reference_month",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "quantity": {
+          "name": "quantity",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "market_value_brl": {
+          "name": "market_value_brl",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "pct_of_fund_aum": {
+          "name": "pct_of_fund_aum",
+          "type": "numeric(8, 4)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source_hash": {
+          "name": "source_hash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "fund_holdings_cvm_fund_month_idx": {
+          "name": "fund_holdings_cvm_fund_month_idx",
+          "columns": [
+            {
+              "expression": "fund_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "reference_month",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "fund_holdings_cvm_ticker_month_idx": {
+          "name": "fund_holdings_cvm_ticker_month_idx",
+          "columns": [
+            {
+              "expression": "ticker",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "reference_month",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "fund_holdings_cvm_fund_id_funds_id_fk": {
+          "name": "fund_holdings_cvm_fund_id_funds_id_fk",
+          "tableFrom": "fund_holdings_cvm",
+          "tableTo": "funds",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "fund_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "fund_holdings_cvm_ticker_tickers_ticker_fk": {
+          "name": "fund_holdings_cvm_ticker_tickers_ticker_fk",
+          "tableFrom": "fund_holdings_cvm",
+          "tableTo": "tickers",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "ticker"
+          ],
+          "columnsTo": [
+            "ticker"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "fund_holdings_cvm_source_hash_unique": {
+          "name": "fund_holdings_cvm_source_hash_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "source_hash"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.fund_holdings_sec_13f": {
+      "name": "fund_holdings_sec_13f",
+      "schema": "qmix_invest",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "fund_holdings_sec_13f_id_seq",
+            "schema": "qmix_invest",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "fund_id": {
+          "name": "fund_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "cusip": {
+          "name": "cusip",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "report_date": {
+          "name": "report_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "shares": {
+          "name": "shares",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "value_usd": {
+          "name": "value_usd",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "filing_date": {
+          "name": "filing_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "filing_url": {
+          "name": "filing_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source_hash": {
+          "name": "source_hash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "fund_holdings_13f_fund_date_idx": {
+          "name": "fund_holdings_13f_fund_date_idx",
+          "columns": [
+            {
+              "expression": "fund_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "report_date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "fund_holdings_13f_ticker_date_idx": {
+          "name": "fund_holdings_13f_ticker_date_idx",
+          "columns": [
+            {
+              "expression": "ticker",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "report_date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "fund_holdings_sec_13f_fund_id_funds_id_fk": {
+          "name": "fund_holdings_sec_13f_fund_id_funds_id_fk",
+          "tableFrom": "fund_holdings_sec_13f",
+          "tableTo": "funds",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "fund_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "fund_holdings_sec_13f_ticker_tickers_ticker_fk": {
+          "name": "fund_holdings_sec_13f_ticker_tickers_ticker_fk",
+          "tableFrom": "fund_holdings_sec_13f",
+          "tableTo": "tickers",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "ticker"
+          ],
+          "columnsTo": [
+            "ticker"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "fund_holdings_sec_13f_source_hash_unique": {
+          "name": "fund_holdings_sec_13f_source_hash_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "source_hash"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.funds": {
+      "name": "funds",
+      "schema": "qmix_invest",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "funds_id_seq",
+            "schema": "qmix_invest",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "cnpj_or_cik": {
+          "name": "cnpj_or_cik",
+          "type": "varchar(32)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "nationality": {
+          "name": "nationality",
+          "type": "fund_nationality",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_tier_one": {
+          "name": "is_tier_one",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "aum_brl_estimate": {
+          "name": "aum_brl_estimate",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "funds_nationality_idx": {
+          "name": "funds_nationality_idx",
+          "columns": [
+            {
+              "expression": "nationality",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "funds_tier_one_idx": {
+          "name": "funds_tier_one_idx",
+          "columns": [
+            {
+              "expression": "is_tier_one",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "where": "\"qmix_invest\".\"funds\".\"is_tier_one\" = true",
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "funds_name_trgm_idx": {
+          "name": "funds_name_trgm_idx",
+          "columns": [
+            {
+              "expression": "\"name\" gin_trgm_ops",
+              "asc": true,
+              "isExpression": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "gin",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "funds_cnpj_or_cik_unique": {
+          "name": "funds_cnpj_or_cik_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "cnpj_or_cik"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.insider_transactions": {
+      "name": "insider_transactions",
+      "schema": "qmix_invest",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "insider_transactions_id_seq",
+            "schema": "qmix_invest",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "cnpj": {
+          "name": "cnpj",
+          "type": "varchar(14)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "insider_name": {
+          "name": "insider_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "role": {
+          "name": "role",
+          "type": "insider_role",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tx_type": {
+          "name": "tx_type",
+          "type": "insider_tx_type",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "tx_date": {
+          "name": "tx_date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "quantity": {
+          "name": "quantity",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "price_per_share_brl": {
+          "name": "price_per_share_brl",
+          "type": "numeric(18, 4)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "total_value_brl": {
+          "name": "total_value_brl",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "reported_at": {
+          "name": "reported_at",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_hash": {
+          "name": "source_hash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "raw_json": {
+          "name": "raw_json",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "insider_tx_cnpj_date_idx": {
+          "name": "insider_tx_cnpj_date_idx",
+          "columns": [
+            {
+              "expression": "cnpj",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "tx_date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "insider_tx_ticker_date_idx": {
+          "name": "insider_tx_ticker_date_idx",
+          "columns": [
+            {
+              "expression": "ticker",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "tx_date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "insider_transactions_cnpj_companies_cnpj_fk": {
+          "name": "insider_transactions_cnpj_companies_cnpj_fk",
+          "tableFrom": "insider_transactions",
+          "tableTo": "companies",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "cnpj"
+          ],
+          "columnsTo": [
+            "cnpj"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "insider_transactions_ticker_tickers_ticker_fk": {
+          "name": "insider_transactions_ticker_tickers_ticker_fk",
+          "tableFrom": "insider_transactions",
+          "tableTo": "tickers",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "ticker"
+          ],
+          "columnsTo": [
+            "ticker"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "insider_transactions_source_hash_unique": {
+          "name": "insider_transactions_source_hash_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "source_hash"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.material_disclosures": {
+      "name": "material_disclosures",
+      "schema": "qmix_invest",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "material_disclosures_id_seq",
+            "schema": "qmix_invest",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "cnpj": {
+          "name": "cnpj",
+          "type": "varchar(14)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "type": {
+          "name": "type",
+          "type": "material_disclosure_type",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "published_at": {
+          "name": "published_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "fund_id": {
+          "name": "fund_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "stake_pct_after": {
+          "name": "stake_pct_after",
+          "type": "numeric(8, 4)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "stake_pct_before": {
+          "name": "stake_pct_before",
+          "type": "numeric(8, 4)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "pdf_url": {
+          "name": "pdf_url",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "summary": {
+          "name": "summary",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "raw_text": {
+          "name": "raw_text",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source_hash": {
+          "name": "source_hash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "material_disclosures_cnpj_published_idx": {
+          "name": "material_disclosures_cnpj_published_idx",
+          "columns": [
+            {
+              "expression": "cnpj",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "published_at",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "material_disclosures_type_idx": {
+          "name": "material_disclosures_type_idx",
+          "columns": [
+            {
+              "expression": "type",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "material_disclosures_cnpj_companies_cnpj_fk": {
+          "name": "material_disclosures_cnpj_companies_cnpj_fk",
+          "tableFrom": "material_disclosures",
+          "tableTo": "companies",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "cnpj"
+          ],
+          "columnsTo": [
+            "cnpj"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "material_disclosures_ticker_tickers_ticker_fk": {
+          "name": "material_disclosures_ticker_tickers_ticker_fk",
+          "tableFrom": "material_disclosures",
+          "tableTo": "tickers",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "ticker"
+          ],
+          "columnsTo": [
+            "ticker"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "material_disclosures_fund_id_funds_id_fk": {
+          "name": "material_disclosures_fund_id_funds_id_fk",
+          "tableFrom": "material_disclosures",
+          "tableTo": "funds",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "fund_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {
+        "material_disclosures_source_hash_unique": {
+          "name": "material_disclosures_source_hash_unique",
+          "nullsNotDistinct": false,
+          "columns": [
+            "source_hash"
+          ]
+        }
+      },
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.prices_daily": {
+      "name": "prices_daily",
+      "schema": "qmix_invest",
+      "columns": {
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date": {
+          "name": "date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "open": {
+          "name": "open",
+          "type": "numeric(18, 4)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "high": {
+          "name": "high",
+          "type": "numeric(18, 4)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "low": {
+          "name": "low",
+          "type": "numeric(18, 4)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "close": {
+          "name": "close",
+          "type": "numeric(18, 4)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "volume": {
+          "name": "volume",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "financial_volume_brl": {
+          "name": "financial_volume_brl",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "trades": {
+          "name": "trades",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "source": {
+          "name": "source",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "source_hash": {
+          "name": "source_hash",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "prices_daily_pk": {
+          "name": "prices_daily_pk",
+          "columns": [
+            {
+              "expression": "ticker",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "prices_daily_source_hash_idx": {
+          "name": "prices_daily_source_hash_idx",
+          "columns": [
+            {
+              "expression": "source_hash",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "prices_daily_date_idx": {
+          "name": "prices_daily_date_idx",
+          "columns": [
+            {
+              "expression": "date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "prices_daily_ticker_tickers_ticker_fk": {
+          "name": "prices_daily_ticker_tickers_ticker_fk",
+          "tableFrom": "prices_daily",
+          "tableTo": "tickers",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "ticker"
+          ],
+          "columnsTo": [
+            "ticker"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.scraper_runs": {
+      "name": "scraper_runs",
+      "schema": "qmix_invest",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "scraper_runs_id_seq",
+            "schema": "qmix_invest",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "source": {
+          "name": "source",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "started_at": {
+          "name": "started_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "finished_at": {
+          "name": "finished_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "status": {
+          "name": "status",
+          "type": "scraper_run_status",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'running'"
+        },
+        "items_fetched": {
+          "name": "items_fetched",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "items_inserted": {
+          "name": "items_inserted",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "items_skipped": {
+          "name": "items_skipped",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "default": 0
+        },
+        "error_message": {
+          "name": "error_message",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "metadata_json": {
+          "name": "metadata_json",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "scraper_runs_source_started_idx": {
+          "name": "scraper_runs_source_started_idx",
+          "columns": [
+            {
+              "expression": "source",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "started_at",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "scraper_runs_status_idx": {
+          "name": "scraper_runs_status_idx",
+          "columns": [
+            {
+              "expression": "status",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.signal_factor_weights": {
+      "name": "signal_factor_weights",
+      "schema": "qmix_invest",
+      "columns": {
+        "factor_id": {
+          "name": "factor_id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "direction": {
+          "name": "direction",
+          "type": "signal_direction",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "category": {
+          "name": "category",
+          "type": "factor_category",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "weight": {
+          "name": "weight",
+          "type": "numeric(6, 2)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "enabled": {
+          "name": "enabled",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "notes": {
+          "name": "notes",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "signal_factor_weights_direction_idx": {
+          "name": "signal_factor_weights_direction_idx",
+          "columns": [
+            {
+              "expression": "direction",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "where": "\"qmix_invest\".\"signal_factor_weights\".\"enabled\" = true",
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.signal_factors": {
+      "name": "signal_factors",
+      "schema": "qmix_invest",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "signal_factors_id_seq",
+            "schema": "qmix_invest",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "signal_id": {
+          "name": "signal_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "factor_id": {
+          "name": "factor_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "category": {
+          "name": "category",
+          "type": "factor_category",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "weight_applied": {
+          "name": "weight_applied",
+          "type": "numeric(6, 2)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "evidence_json": {
+          "name": "evidence_json",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {
+        "signal_factors_signal_id_idx": {
+          "name": "signal_factors_signal_id_idx",
+          "columns": [
+            {
+              "expression": "signal_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "signal_factors_factor_id_idx": {
+          "name": "signal_factors_factor_id_idx",
+          "columns": [
+            {
+              "expression": "factor_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "signal_factors_signal_id_signals_id_fk": {
+          "name": "signal_factors_signal_id_signals_id_fk",
+          "tableFrom": "signal_factors",
+          "tableTo": "signals",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "signal_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.signals": {
+      "name": "signals",
+      "schema": "qmix_invest",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "identity": {
+            "type": "always",
+            "name": "signals_id_seq",
+            "schema": "qmix_invest",
+            "increment": "1",
+            "startWith": "1",
+            "minValue": "1",
+            "maxValue": "2147483647",
+            "cache": "1",
+            "cycle": false
+          }
+        },
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date": {
+          "name": "date",
+          "type": "date",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "direction": {
+          "name": "direction",
+          "type": "signal_direction",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "score": {
+          "name": "score",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "convergence_count": {
+          "name": "convergence_count",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "small_cap_mult_applied": {
+          "name": "small_cap_mult_applied",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "computed_at": {
+          "name": "computed_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "signals_pk": {
+          "name": "signals_pk",
+          "columns": [
+            {
+              "expression": "ticker",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "direction",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": true,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "signals_score_date_idx": {
+          "name": "signals_score_date_idx",
+          "columns": [
+            {
+              "expression": "date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "score",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "signals_high_score_idx": {
+          "name": "signals_high_score_idx",
+          "columns": [
+            {
+              "expression": "score",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            },
+            {
+              "expression": "date",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "where": "\"qmix_invest\".\"signals\".\"score\" >= 60",
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "signals_ticker_tickers_ticker_fk": {
+          "name": "signals_ticker_tickers_ticker_fk",
+          "tableFrom": "signals",
+          "tableTo": "tickers",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "ticker"
+          ],
+          "columnsTo": [
+            "ticker"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "qmix_invest.tickers": {
+      "name": "tickers",
+      "schema": "qmix_invest",
+      "columns": {
+        "ticker": {
+          "name": "ticker",
+          "type": "varchar(12)",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "cnpj": {
+          "name": "cnpj",
+          "type": "varchar(14)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "class": {
+          "name": "class",
+          "type": "ticker_class",
+          "typeSchema": "qmix_invest",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_small_cap": {
+          "name": "is_small_cap",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "market_cap_brl": {
+          "name": "market_cap_brl",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "active": {
+          "name": "active",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {
+        "tickers_cnpj_idx": {
+          "name": "tickers_cnpj_idx",
+          "columns": [
+            {
+              "expression": "cnpj",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        },
+        "tickers_small_cap_idx": {
+          "name": "tickers_small_cap_idx",
+          "columns": [
+            {
+              "expression": "is_small_cap",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
+          ],
+          "isUnique": false,
+          "where": "\"qmix_invest\".\"tickers\".\"active\" = true",
+          "concurrently": false,
+          "method": "btree",
+          "with": {}
+        }
+      },
+      "foreignKeys": {
+        "tickers_cnpj_companies_cnpj_fk": {
+          "name": "tickers_cnpj_companies_cnpj_fk",
+          "tableFrom": "tickers",
+          "tableTo": "companies",
+          "schemaTo": "qmix_invest",
+          "columnsFrom": [
+            "cnpj"
+          ],
+          "columnsTo": [
+            "cnpj"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {
+    "qmix_invest.factor_category": {
+      "name": "factor_category",
+      "schema": "qmix_invest",
+      "values": [
+        "insider",
+        "institutional",
+        "technical",
+        "macro"
+      ]
+    },
+    "qmix_invest.fund_nationality": {
+      "name": "fund_nationality",
+      "schema": "qmix_invest",
+      "values": [
+        "BR",
+        "US",
+        "OTHER"
+      ]
+    },
+    "qmix_invest.insider_role": {
+      "name": "insider_role",
+      "schema": "qmix_invest",
+      "values": [
+        "director",
+        "officer",
+        "controller",
+        "related_party",
+        "other"
+      ]
+    },
+    "qmix_invest.insider_tx_type": {
+      "name": "insider_tx_type",
+      "schema": "qmix_invest",
+      "values": [
+        "buy",
+        "sell",
+        "gift_in",
+        "gift_out",
+        "inheritance",
+        "option_exercise",
+        "other"
+      ]
+    },
+    "qmix_invest.material_disclosure_type": {
+      "name": "material_disclosure_type",
+      "schema": "qmix_invest",
+      "values": [
+        "stake_5pct_acquired",
+        "stake_10pct_acquired",
+        "stake_15pct_acquired",
+        "stake_20pct_acquired",
+        "stake_5pct_reduced",
+        "stake_10pct_reduced",
+        "stake_15pct_reduced",
+        "merger",
+        "spin_off",
+        "tender_offer",
+        "dividend",
+        "earnings",
+        "other"
+      ]
+    },
+    "qmix_invest.scraper_run_status": {
+      "name": "scraper_run_status",
+      "schema": "qmix_invest",
+      "values": [
+        "running",
+        "success",
+        "failed",
+        "partial"
+      ]
+    },
+    "qmix_invest.signal_direction": {
+      "name": "signal_direction",
+      "schema": "qmix_invest",
+      "values": [
+        "entry",
+        "exit"
+      ]
+    },
+    "qmix_invest.ticker_class": {
+      "name": "ticker_class",
+      "schema": "qmix_invest",
+      "values": [
+        "ON",
+        "PN",
+        "UNT",
+        "OTHER"
+      ]
+    }
+  },
+  "schemas": {
+    "qmix_invest": "qmix_invest"
+  },
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

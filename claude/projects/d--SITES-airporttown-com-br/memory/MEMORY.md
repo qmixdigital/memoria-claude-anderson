@@ -1,0 +1,2 @@
+- [Redesign Airport Town](airporttown-redesign.md) — site estático; apagado do Cloudflare Pages em 17/09/2026, backup zip em d:/SITES/airporttown.com.br/backup.
+- [Dados divergentes no site original](airporttown-dados-divergentes.md) — metragens de mini galpões e escritórios se contradizem entre páginas; escolhas pendentes de confirmação do cliente.

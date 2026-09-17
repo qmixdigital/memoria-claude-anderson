@@ -1,0 +1,10 @@
+- [CLS de fonte: medir no alvo](cls-de-fonte-medir-no-alvo.md) — reserva com métrica ajustada não existe no Android; desktop dá falso 0
+- [Chave do PageSpeed já existe](chave-pagespeed-ja-existe.md) — está na skill pagespeed-audit; sem `&key=` cai na cota anônima
+- [Reservar espaço em vez de adivinhar breakpoint](reservar-espaco-em-vez-de-adivinhar-breakpoint.md) — calha no padding resolve por construção; max-width erra em tablet
+- [Validar JS antes de publicar](validar-js-antes-de-publicar.md) — erro de sintaxe mata o script inteiro; no tratamentodor isso apagou 21 seções da home
+- [Componente só funciona onde nasceu](componente-so-funciona-onde-nasceu.md) — cor fixa no seletor base quebra ao reusar em outro contexto
+- [Hover de card: medir por pixel](hover-de-card-medir-por-pixel.md) — fundo pode vir de background-image; backgroundColor computado mente
+- [Git Bash quebra argumento com barra](git-bash-quebra-argumento-com-barra.md) — `/bio/` vira caminho do Windows; usar MSYS_NO_PATHCONV=1
+- [SSH trunca comando longo](ssh-trunca-comando-longo.md) — `echo base64 | base64 -d` some com exit 0; usar scp
+- [Rolar devagar para medir revelação](rolar-devagar-para-medir-revelacao.md) — rolagem rápida acusa bloco invisível que não existe
+- [Cache do tratamentodor é no Cloudflare](cache-do-tratamentodor-e-no-cloudflare.md) — purge pelo WP é no-op; `curl -I` diz DYNAMIC e mente

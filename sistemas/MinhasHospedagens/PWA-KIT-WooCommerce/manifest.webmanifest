@@ -1,0 +1,19 @@
+{
+  "name": "Seguidores Brasil - Seguidores, Curtidas e Views",
+  "short_name": "Seguidores BR",
+  "description": "Seguidores, curtidas e visualizacoes para Instagram, TikTok, YouTube e mais. Entrega rapida com PIX. Ganhe 10% comprando pelo app.",
+  "start_url": "/?utm_source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1a5cff",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "categories": ["shopping", "social"],
+  "icons": [
+    { "src": "/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/app-icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

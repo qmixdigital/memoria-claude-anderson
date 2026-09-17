@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "exemplo1",
+    "nome": "Nome do Site 1",
+    "url": "https://site-um.com.br",
+    "usuario": "login_wp",
+    "senha_app": "<<REMOVIDO>>"
+  },
+  {
+    "slug": "exemplo2",
+    "nome": "Nome do Site 2",
+    "url": "https://site-dois.com.br",
+    "usuario": "login_wp",
+    "senha_app": "<<REMOVIDO>>"
+  }
+]

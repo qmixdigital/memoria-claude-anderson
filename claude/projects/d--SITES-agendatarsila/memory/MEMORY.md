@@ -1,0 +1,2 @@
+- [Runware Image API](reference_runware_api.md) — Image generation API (Runware.ai) with bearer token, found in skipark project
+- [SEO Image Pattern](feedback_seo_images.md) — User wants AI-generated hero images with keyword-rich alt text on all content pages

@@ -1,0 +1,198 @@
+[
+  {
+    "nome": "master",
+    "token": "<<REMOVIDO>>",
+    "account_id": null,
+    "nota": "TOKEN DE USUARIO - CHAVE DE MAIOR PODER DA OPERACAO. 78 contas, 473 zonas, escrita em WAF. Em caso de suspeita de vazamento, ROTACIONAR IMEDIATAMENTE. Origem: Cloudflare/.token_master",
+    "escopo": "token de usuario: enxerga varias contas"
+  },
+  {
+    "nome": "principal",
+    "token": "<<REMOVIDO>>",
+    "account_id": "9ecbf885a61a34c6ac4d73033fa0f497"
+  },
+  {
+    "nome": "teste",
+    "token": "<<REMOVIDO>>",
+    "account_id": "a2da896a380bdec758c4ac2cc3078713"
+  },
+  {
+    "nome": "conta3",
+    "token": "<<REMOVIDO>>",
+    "account_id": "0a107ac0726c16a763c318bf7a45b57d"
+  },
+  {
+    "nome": "conta4",
+    "token": "<<REMOVIDO>>",
+    "account_id": "d2aeda609bafa52c3e1152e2e349e0c1",
+    "nota": "Token ampliado 2026-06-30 (DNS+SSL+Settings edit). Dono de dominioprovisorio.net.br."
+  },
+  {
+    "nome": "conta5",
+    "token": "<<REMOVIDO>>",
+    "account_id": "7b55f3322fb7566caf4cb99b2510d03b"
+  },
+  {
+    "nome": "conta6",
+    "token": "<<REMOVIDO>>",
+    "account_id": "32444f7586c8574369173eb2bf2fad81"
+  },
+  {
+    "nome": "conta7",
+    "token": "<<REMOVIDO>>",
+    "account_id": "3167ec16d6b759a1bb6eb8d62e8025f5"
+  },
+  {
+    "nome": "conta8",
+    "token": "<<REMOVIDO>>",
+    "account_id": "661e92abfd0407127dc8527b1df5eff3"
+  },
+  {
+    "nome": "conta9",
+    "token": "<<REMOVIDO>>",
+    "account_id": "596a5e4f849bed8e02994fe62edebd2a"
+  },
+  {
+    "nome": "conta10",
+    "token": "<<REMOVIDO>>",
+    "account_id": "37b5f07b227c4fd026187d2e86b32d0e"
+  },
+  {
+    "nome": "conta11",
+    "token": "<<REMOVIDO>>",
+    "account_id": "f554283e1bb09f7be42a2a26d41d1e71"
+  },
+  {
+    "nome": "conta12",
+    "token": "<<REMOVIDO>>",
+    "account_id": "1684b54861c2eae5f9b41c580ccbdd33"
+  },
+  {
+    "nome": "conta13",
+    "token": "<<REMOVIDO>>",
+    "account_id": "bad26c56de2cf30c0c6890da6bd06368"
+  },
+  {
+    "nome": "conta14",
+    "token": "<<REMOVIDO>>",
+    "account_id": "2ff4c5d06407622c756c5b57c46924a5"
+  },
+  {
+    "nome": "conta15",
+    "token": "<<REMOVIDO>>",
+    "account_id": "2d77f3c4ec11e605cf5701e8d18d48ad",
+    "nota": "Token atualizado em 16/08/2026, para a virada dos 5 portais convertidos"
+  },
+  {
+    "nome": "conta16",
+    "token": "<<REMOVIDO>>",
+    "account_id": "862514f37ef20f4575c631621a1dd750"
+  },
+  {
+    "nome": "conta17",
+    "token": "<<REMOVIDO>>",
+    "account_id": "df8b666486d88a8149cc45dec0de1cf5"
+  },
+  {
+    "nome": "conta18",
+    "token": "<<REMOVIDO>>",
+    "account_id": "a5d7c26b6461a425e8eccd5cec0f0934"
+  },
+  {
+    "nome": "conta19",
+    "token": "<<REMOVIDO>>",
+    "account_id": "39a13af3f35978930626369e6091840e"
+  },
+  {
+    "nome": "conta20",
+    "token": "<<REMOVIDO>>",
+    "account_id": "cc8e5f3ba69ac10095c18b33771796f2"
+  },
+  {
+    "nome": "conta21",
+    "token": "<<REMOVIDO>>",
+    "account_id": "1e8c471e36de8438eb254ced93f8835e"
+  },
+  {
+    "nome": "conta22",
+    "token": "<<REMOVIDO>>",
+    "account_id": "7d3bd146212cd237730054dd43d07d7d"
+  },
+  {
+    "nome": "conta23",
+    "token": "<<REMOVIDO>>",
+    "account_id": "2ff4c5d06407622c756c5b57c46924a5"
+  },
+  {
+    "nome": "conta24",
+    "token": "<<REMOVIDO>>",
+    "account_id": "661def8c38215e9c037f6d145631ca0d"
+  },
+  {
+    "nome": "conta25",
+    "token": "<<REMOVIDO>>",
+    "account_id": "e1afd354b17fd5c336f44c6095f41081",
+    "token_name": "snowy-scene-9eb8",
+    "dominios": [
+      "cirurgiadojoelhogoiania.com"
+    ],
+    "nota": "Conta CF do blog.cirurgiadojoelhogoiania.com (NS anderson/frida). Token account-scoped: nao valida em /user/tokens/verify, mas funciona em zones/purge. Adicionado 2026-06-27."
+  },
+  {
+    "nome": "conta26",
+    "token": "<<REMOVIDO>>",
+    "account_id": "011fa32b46296a88d9ec00fc1b136f64"
+  },
+  {
+    "nome": "conta27",
+    "token": "<<REMOVIDO>>",
+    "account_id": "75a81880f2e1e1a7300ef71d7a4bc4e1",
+    "dominios": [
+      "danfemax.com.br"
+    ],
+    "nota": "Conta CF do projeto DanfeMax (danfemax.com.br). Token com DNS/SSL read. Adicionado 2026-06-30. Zona pending ate NS apontarem p/ elsa/grant.ns.cloudflare.com."
+  },
+  {
+    "nome": "conta28",
+    "token": "<<REMOVIDO>>",
+    "account_id": "aee94c572dbdd045d2320f24a04bcaac"
+  },
+  {
+    "nome": "conta29",
+    "token": "<<REMOVIDO>>",
+    "account_id": "02586bf98d769cb53405e4caf7dc6a85",
+    "dominios": [
+      "euvo.com.br"
+    ],
+    "nota": "Conta CF do euvo.com.br. Ate 09/08/2026 esta zona nao estava em nenhuma conta do arquivo, e por isso o purge do euvo so dava para fazer no painel. Token account-scoped: nao valida em /user/tokens/verify, mas lista zonas e purga normalmente. Adicionado 2026-08-09."
+  },
+  {
+    "nome": "conta30",
+    "token": "<<REMOVIDO>>",
+    "account_id": "b8e5af6f7edcfbe38ee1bc2844ac9f98",
+    "nota": "Conta CF do adonline.com.br (+ brmaisnews.com.br, diariodatv.com, topsulnoticias.com). Token enviado 2026-08-14, purge testado OK. Zona adonline: ef5c8c46746d9fceeaaa2448e0db1732."
+  },
+  {
+    "nome": "conta31",
+    "token": "<<REMOVIDO>>",
+    "account_id": "55dd51fb026f0eb537ee3c6c732227a5",
+    "nota": "Token atualizado em 16/08/2026, para a virada dos 5 portais convertidos"
+  },
+  {
+    "nome": "conta32",
+    "token": "<<REMOVIDO>>",
+    "account_id": "4e1503962fb7c89aea242e5e821459e8",
+    "nota": "Token atualizado em 16/08/2026, para a virada dos 5 portais convertidos"
+  },
+  {
+    "nome": "conta33",
+    "token": "<<REMOVIDO>>",
+    "account_id": "47ae5909b02eec644d8ffb5a1cb9e119",
+    "nota": "Token atualizado em 16/08/2026, para a virada dos 5 portais convertidos"
+  },
+  {
+    "nome": "cirurgiacoracao",
+    "token": "<<REMOVIDO>>",
+    "account_id": "47d685885d91e2c451f94027e9e3eb98"
+  }
+]

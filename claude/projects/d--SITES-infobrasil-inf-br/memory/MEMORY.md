@@ -1,0 +1,5 @@
+- [Redis compartilhado na srv1166087](redis-compartilhado-srv1166087.md) — fila BullMQ nunca na porta 6379, que e object cache de WordPress com allkeys-lru.
+- [ffmpeg-static segfalha na rede](ffmpeg-static-segfault-rede.md) — o binario morre lendo URL https; usar o ffmpeg de sistema nesse caminho.
+- [Credencial do Search Console](credencial-search-console.md) — chave da rede no Desktop (enjai-493011-*.json); rodar da maquina local, o servidor nao tem google-auth.
+- [Regras da cascata de download](cascata-download-regras.md) — nao mexer na ordem sem ordem dele; ffprobe decide, rotulo de API mente; nao reprocessar job vivo.
+- [Modelo do Gemini para conta nova](gemini-modelo-conta-nova.md) — 2.5-flash da 404, usar 3.6-flash; -latest deu 503.

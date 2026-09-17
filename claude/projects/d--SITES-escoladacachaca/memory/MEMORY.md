@@ -1,0 +1,2 @@
+- [IPTV Portugal Project](project_iptv_portugal.md) — Next.js static IPTV site for Portugal, dark theme, Cloudflare Pages deploy
+- [No Emojis](feedback_no_emojis.md) — Never use emojis as icons/decorative elements, always SVG

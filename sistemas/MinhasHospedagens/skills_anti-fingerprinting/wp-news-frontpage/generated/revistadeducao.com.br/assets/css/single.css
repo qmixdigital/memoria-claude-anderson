@@ -1,0 +1,30 @@
+/* Single — refinos. */
+.rde-dropcap{
+    float:left;
+    font-family:var(--serif);
+    font-weight:700;
+    font-size:62px;
+    line-height:.9;
+    margin:6px 12px 0 0;
+    color:var(--accent);
+}
+.rde-pullquote{
+    border-left:4px solid var(--accent);
+    margin:var(--sp-3) 0;
+    padding:0 var(--sp-3);
+    font-family:var(--serif);
+    font-style:italic;
+    font-size:24px;
+    line-height:1.45;
+}
+.rde-alert{
+    background:var(--bg);
+    border-left:3px solid var(--accent);
+    padding:var(--sp-2);
+    margin:var(--sp-2) 0;
+    font-size:14px;
+}
+@media print{
+    .rde-post__sharebar, .rde-related, .rde-comments, .rde-header, .rde-footer, .rde-sidebar, .rde-inline-ad, .rde-widget--ad{ display:none !important; }
+    .rde-post{ padding:0; }
+}

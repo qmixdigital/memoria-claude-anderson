@@ -1,0 +1,58 @@
+# Links Externos Removidos de Artigos (post_content)
+# Formato: DATA | DOMÍNIO | HOSPEDAGENS | TOTAL LINKS
+# Consultar este arquivo antes de remover links para evitar retrabalho.
+# =====================================================
+
+2026-04-05 | apec.pro.br | VPS1 (12 sites, 272 links), anderson.gna (26 sites, 353 links), qmixdigital (5 sites, 118 links) | 743
+2026-04-05 | assinariptv.com.br | VPS1, anderson.gna, qmixdigital | parte de 388
+2026-04-05 | bahiacontraofake.com.br | VPS1, anderson.gna, qmixdigital | parte de 388
+2026-04-05 | batiste.com.br | VPS1, anderson.gna, qmixdigital | parte de 388
+2026-04-05 | caminhoseescolhas.com.br | VPS1, anderson.gna, qmixdigital | parte de 388
+2026-04-05 | doladodeca.com.br | VPS1, anderson.gna, qmixdigital | parte de 388
+2026-04-05 | iptvprime.com.br | VPS1, anderson.gna, qmixdigital | parte de 388
+2026-04-05 | plusserverstv.com.br | VPS1, anderson.gna, qmixdigital | parte de 388
+2026-04-05 | qmix.com.br | anderson.gna (17 sites, 29 links), hostverge (1 site, 1 link) | 30
+2026-04-05 | viu-tvplus.com.br | VPS1, anderson.gna, qmixdigital | parte de 388
+2026-04-05 | abble.com.br | anderson.gna (18), qmixdigital | 18+
+2026-04-05 | abfh.com.br | anderson.gna (71), qmixdigital | 71+
+2026-04-05 | ahebrasil.com.br | anderson.gna (343), qmixdigital | 343+
+2026-04-05 | cinezencultural.com.br | anderson.gna (18), qmixdigital | 18+
+2026-04-05 | ctsmovmg.net.br | anderson.gna (258), qmixdigital (52) | 310
+2026-04-05 | enlaw.com.br | anderson.gna (75), qmixdigital (25) | 100
+2026-04-05 | eurochemfto.com.br | anderson.gna (207), qmixdigital (103) | 310
+2026-04-05 | latariasemgoiania.com | anderson.gna (16), qmixdigital | 16+
+2026-04-05 | livrariaatlantico.com.br | anderson.gna (17), qmixdigital | 17+
+2026-04-05 | luluteen.com.br | anderson.gna (51), qmixdigital | 51+
+2026-04-05 | mostraderiogrande.com.br | anderson.gna (121), qmixdigital | 121+
+2026-04-05 | neuclub.com.br | anderson.gna (18), qmixdigital | 18+
+2026-04-05 | paraibaonline.net.br | anderson.gna (52), qmixdigital | 52+
+2026-04-05 | portoesabertosbabr.com.br | anderson.gna (69), qmixdigital | 69+
+2026-04-05 | premioeducacaofinanceira.com.br | anderson.gna (18), qmixdigital | 18+
+2026-04-05 | reycastro.com.br | anderson.gna (18), qmixdigital | 18+
+2026-04-05 | sistemacorreioderadio.com.br | anderson.gna (109), qmixdigital | 109+
+2026-04-05 | sktprimer.com.br | anderson.gna (15), qmixdigital | 15+
+2026-04-05 | tecnonutrireceitas.com.br | anderson.gna (119), qmixdigital | 119+
+2026-04-06 | casasapostasregulamentadas.org | adonline.com.br (1 post deletado) | 1
+2026-04-06 | fenec.com.br | adonline.com.br (2 links + 23 posts deletados) | 25
+2026-04-06 | homerefill.com.br | adonline.com.br (3 links + 18 posts deletados) | 21
+2026-04-06 | iniciativanegra.com.br | adonline.com.br (2 links + 28 posts deletados) | 30
+2026-04-06 | milc.net.br | adonline.com.br (1 link + 21 posts deletados) | 22
+2026-04-06 | nt5.net.br | adonline.com.br (24 posts deletados) | 24
+2026-04-06 | redebh.com.br | adonline.com.br (1 link + 28 posts deletados) | 29
+2026-04-06 | saber.srv.br | adonline.com.br (5 links + 31 posts deletados) | 36
+2026-04-06 | seguidoresbrx.com | adonline.com.br (50 links removidos) | 50
+2026-04-06 | unidosdoviradouro.com.br | adonline.com.br (3 links + 25 posts deletados) | 28
+2026-04-06 | lepur.com.br | VPS1 (104 posts), anderson.gna (111 posts), qmixdigital (14 posts) — DELETADOS | 229
+2026-04-06 | quatrode15.com.br | VPS1 (69), anderson.gna (79), qmixdigital (9), hostverge (19) — LINKS REMOVIDOS | 176
+2026-04-06 | hostverge complemento (26 dominios) | hostverge: apec.pro.br (29), assinariptv (2), bahiacontraofake (6), batiste (8), caminhoseescolhas (18), doladodeca (4), iptvprime (1), abble (1), abfh (6), ahebrasil (10), cinezencultural (4), ctsmovmg (38), enlaw (19), eurochemfto (41), latariasemgoiania (1), livrariaatlantico (2), luluteen (14), mostraderiogrande (16), neuclub (3), paraibaonline (11), portoesabertosbabr (7), premioeducacaofinanceira (1), reycastro (5), sistemacorreioderadio (4), tecnonutrireceitas (10), lepur (9) | 270
+
+# Links removidos do rodapé (functions.php)
+# =====================================================
+
+2026-04-05 | msn.com (artigo backlinks) | advivo.com.br (rodapé), cameracotidiana.com.br (rodapé)
+2026-04-05 | rclick.com.br | setorenergetico.com.br (rodapé), adonline.com.br (rodapé)
+
+# Barra de copyright removida
+# =====================================================
+
+2026-04-05 | band.com.br | setorenergetico.com.br (copyright "Patrocínio: Band")

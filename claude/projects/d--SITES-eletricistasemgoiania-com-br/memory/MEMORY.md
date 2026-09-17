@@ -1,0 +1,7 @@
+- [Cloudflare Pages deploy](cloudflare-pages-deploy.md) — conta QMIX Backups, projeto eletricista-goiania, deploy por push na main
+- [Estratégia SEO em uma página](estrategia-seo-uma-pagina.md) — site fica com uma página só; bairros Jardim América, Aeroporto, Bueno e Sul; Aparecida não interessa; dados do GSC set/2026
+- [Não trocar imagens do cliente](nao-trocar-imagens-do-cliente.md) — reprovação de 11/09/2026: fotos do cliente ficam, sem banco de imagens sem pedido
+- [Cache CSS com hash no Pages](cache-css-hash-cloudflare-pages.md) — asset de nome fixo imutável ficou preso na borda; build gera nome com hash e purga depois
+- [Hero mobile à esquerda](hero-mobile-alinhado-esquerda.md) — neste site a hero fica alinhada à esquerda também no mobile e sem lista de bairros
+- [Git push trava no credential manager](git-push-credential-manager-trava.md) — empurrar com o token do github.txt na URL e credential.helper vazio
+- [Direção B aprovada](design-direcao-b-aprovada.md) — claro industrial, Barlow Condensed + Poppins, aplicada em 11/09/2026; não voltar ao tema escuro

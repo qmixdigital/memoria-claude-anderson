@@ -1,0 +1,2 @@
+- [Hospedagem do blog WordPress](blog-wordpress-hospedagem.md) — o blog está na mesma VPS, mas sob HestiaCP (`/home/boot/web/...`), com prefixo de tabela não-padrão.
+- [Uploads convertidos para WebP](favicon-webp-quebrado-blog.md) — PNGs originais foram apagados em massa; foi a causa do favicon sumir do Google.

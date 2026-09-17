@@ -1,0 +1,37 @@
+Success: The cache was flushed.
+FAIL [403]: agoranoticias.net | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 185.146.165.194","data":{"status":403}}
+Success: The cache was flushed.
+FAIL [403]: cirurgiacoracao.com.br | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 185.146.165.194","data":{"status":403}}
+Success: The cache was flushed.
+OK: cirurgiadacatarata.com.br (HTTP 401)
+Success: The cache was flushed.
+FAIL [000]: cirurgiadecancer.com.br | 
+Success: The cache was flushed.
+OK: df8.com.br (HTTP 401)
+SKIP (sem mu-plugins): exquisito.com.br
+Success: The cache was flushed.
+FAIL [403]: institutoortopedico.com.br | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 185.146.165.194","data":{"status":403}}
+Success: The cache was flushed.
+OK: jornalconceito.com (HTTP 401)
+SKIP (sem mu-plugins): medicinageriatrica.com.br
+Success: The cache was flushed.
+OK: medicodasmaos.com.br (HTTP 401)
+Success: The cache was flushed.
+FAIL [403]: ocontraditorio.com | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 185.146.165.194","data":{"status":403}}
+SKIP (sem mu-plugins): ortopediacoluna.com.br
+SKIP (sem mu-plugins): ortopedistadeombro.com.br
+Success: The cache was flushed.
+FAIL [403]: planomedicosaude.com.br | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 185.146.165.194","data":{"status":403}}
+SKIP (sem mu-plugins): pontonaturalbrasil.com.br
+SKIP (sem mu-plugins): revistadeducao.com.br
+Success: The cache was flushed.
+OK: revistatopsaude.com.br (HTTP 401)
+SKIP (sem mu-plugins): sabedoriaglobal.com.br
+Success: The cache was flushed.
+FAIL [403]: saudeacessivel.com.br | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 185.146.165.194","data":{"status":403}}
+SKIP (sem mu-plugins): saudeemalta.net.br
+SKIP (sem mu-plugins): saudevitalidade.com.br
+Success: The cache was flushed.
+FAIL [403]: saudicas.com.br | {"code":"forbidden_origin","message":"Origem n\u00e3o autorizada. IP: 185.146.165.194","data":{"status":403}}
+SKIP (sem mu-plugins): viajenodetalhe.com.br
+SKIP (sem mu-plugins): wtw19.com.br

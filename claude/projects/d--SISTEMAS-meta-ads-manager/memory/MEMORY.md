@@ -1,0 +1,3 @@
+- [Usuario e leigo em Ads](user-e-leigo-em-ads.md) — atender em portugues simples, passo a passo, automatizar o maximo
+- [Setup Meta concluido](setup-meta-concluido.md) — conexao Meta 100% pronta (negocio QMIX verificado, app live, cliente casa-itacaiu); nao refazer
+- [Monitoramento Telegram no VPS](monitoramento-telegram-vps.md) — relatorio da campanha vai pro @qmixdigital_bot via cron no VPS opengravity (06h-23h BRT)

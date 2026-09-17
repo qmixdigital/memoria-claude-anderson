@@ -1,0 +1,83 @@
+{
+  "geral": {
+    "_leia": "Este arquivo e recarregado a quente por mtime. Editar e salvar basta, nao precisa reiniciar o servico.",
+
+    "teto_mensal_brl": 500.0,
+    "cambio_usd_brl": 0,
+    "_cambio": "PREENCHER com a cotacao de referencia. Enquanto for 0 o motor NAO compara o gasto com o teto em reais e NAO pausa sozinho: ele so acumula e mostra o gasto em dolar no painel.",
+
+    "modelo_geracao": "claude-sonnet-5",
+    "modelo_mecanico": "claude-haiku-4-5",
+    "modelo_embedding": "text-embedding-3-small",
+    "modelo_imagem": "runware:100@1",
+    "thinking_geracao": "disabled",
+    "_thinking": "token de raciocinio e cobrado como saida. Em 1.950 materias/mes, ligar adaptativo leva o total de ~US$ 63 para ~US$ 83. O teste cego mede se compensa.",
+
+    "artigos_por_semana_por_portal": 3,
+    "intervalo_coleta_min": 20,
+    "min_dominios_por_fato": 2,
+    "limiar_cosseno": 0.82,
+    "janela_fato_horas": 48,
+    "throttle_publicacao_seg": 45,
+    "porta_painel": 3400,
+    "teste_cego_ativo": true,
+
+    "assuntos": [
+      {
+        "slug": "brasil",
+        "queries": ["Brasil governo federal", "Congresso Nacional votação"],
+        "idioma": "pt-BR", "pais": "BR", "ceid": "BR:pt-419", "janela": "2d"
+      },
+      {
+        "slug": "economia",
+        "queries": ["economia brasileira inflação", "Banco Central juros Selic"],
+        "idioma": "pt-BR", "pais": "BR", "ceid": "BR:pt-419", "janela": "2d"
+      },
+      {
+        "slug": "saude",
+        "queries": ["saúde pública Brasil Ministério da Saúde", "Anvisa aprovação"],
+        "idioma": "pt-BR", "pais": "BR", "ceid": "BR:pt-419", "janela": "2d"
+      },
+      {
+        "slug": "tecnologia",
+        "queries": ["tecnologia inteligência artificial Brasil"],
+        "idioma": "pt-BR", "pais": "BR", "ceid": "BR:pt-419", "janela": "2d"
+      }
+    ]
+  },
+
+  "sites": [
+    {
+      "_exemplo": "Modelo comentado. O onboard_portal.py gera entradas assim. Nao deixe este exemplo com ativo=true.",
+      "slug": "exemplo",
+      "nome": "Portal de Exemplo",
+      "dominio": "exemplo.com",
+      "base_url": "https://exemplo.com",
+      "instancia": "clinicas-vps",
+      "ativo": false,
+
+      "assuntos": ["brasil", "economia"],
+      "filtros_incluir": [],
+      "filtros_excluir": ["apostas", "iptv"],
+
+      "categorias_validas": ["Notícias", "Saúde", "Geral"],
+      "categoria_padrao": "Notícias",
+      "max_por_dia": 1,
+      "idade_maxima_horas": 48,
+
+      "perfil_redacao": {
+        "voz": "Reportagem seca e verificavel, sem adjetivo de opiniao, com preferencia por numero e fonte nomeada logo no primeiro terco do texto.",
+        "pessoa": "terceira pessoa",
+        "tamanho_palavras": 700,
+        "estrutura": "lide factual, contexto, desdobramento, o que acontece a seguir",
+        "registro": "formal acessivel",
+        "evitar": ["jargao de assessoria", "superlativo"]
+      },
+
+      "equipe": [
+        { "slug": "nome-da-assinatura", "nome": "Nome da Assinatura", "cats": ["noticias", "geral"] }
+      ],
+      "tags_padrao": []
+    }
+  ]
+}

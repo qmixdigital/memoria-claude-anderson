@@ -1,0 +1,4 @@
+- [camilafarias-deploy](camilafarias-deploy.md) — site é HTML estático em opengravity/Apache (NÃO Next.js), deploy manual via git archive+ssh, www em loop no Cloudflare
+- [camilafarias-gsc-acesso](camilafarias-gsc-acesso.md) — só a service account backlinkguard enxerga sc-domain:camilafarias.com.br (e ela cobre site + blog juntos)
+- [camilafarias-gsc-diagnostico-2026-08](camilafarias-gsc-diagnostico-2026-08.md) — tráfego dobrou puxado pelo blog, mas todas as queries travam entre a posição 4 e 15 com CTR de 0,1%
+- [links-sempre-clicaveis](links-sempre-clicaveis.md) — toda URL ou arquivo citado vai como link clicável em markdown, sem precisar pedir

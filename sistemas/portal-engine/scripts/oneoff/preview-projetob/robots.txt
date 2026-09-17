@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://projetob.net/sitemap.xml

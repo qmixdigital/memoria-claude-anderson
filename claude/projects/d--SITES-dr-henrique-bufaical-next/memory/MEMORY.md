@@ -1,0 +1,1 @@
+- [Fluxo da redatora via Google Drive](fluxo-redatora-drive.md) — formato do doc, links são meus, imagem de banco (nunca IA), entregar link no fim

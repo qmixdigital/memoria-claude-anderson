@@ -1,0 +1,193 @@
+{
+  "geladeirastop.com": {
+    "descricao": "Paginas de cidade no padrao conserto-geladeira-{cidade}-{uf}",
+    "url_regex": "^conserto-geladeira-(?P<cidade>.+)-(?P<uf>[a-z]{2})$",
+    "anchor_template": "conserto de geladeira em {cidade}",
+    "restaurar_acentos_cidade": true
+  },
+  "clinicasrecuperacaosaopaulo.com": {
+    "descricao": "Paginas de cidade (1 segmento) no padrao {cidade}-{uf}. Ancoras com variacao de keyword.",
+    "url_regex": "^(?P<cidade>[^/]+)-(?P<uf>[a-z]{2})$",
+    "restaurar_acentos_cidade": true,
+    "anchor_templates": [
+      "clínica de recuperação em {cidade}",
+      "clínicas de recuperação em {cidade}",
+      "centro de recuperação em {cidade}",
+      "centros de recuperação em {cidade}",
+      "clínica de reabilitação em {cidade}",
+      "clínica para dependentes químicos em {cidade}",
+      "tratamento para dependência química em {cidade}",
+      "internação para dependentes químicos em {cidade}",
+      "recuperação de dependentes químicos em {cidade}",
+      "clínica de recuperação em {cidade} - SP"
+    ]
+  },
+  "desentupidora.pro": {
+    "descricao": "Paginas de cidade no padrao empresas/cidades/{uf}/{cidade}. Multiplos estados. Ancoras com variacao de keyword.",
+    "url_regex": "^empresas/cidades/(?P<uf>[a-z]{2})/(?P<cidade>[^/]+)$",
+    "restaurar_acentos_cidade": true,
+    "anchor_templates": [
+      "desentupidora em {cidade}",
+      "desentupidora 24 horas em {cidade}",
+      "empresa de desentupimento em {cidade}",
+      "serviço de desentupimento em {cidade}",
+      "desentupimento de esgoto em {cidade}",
+      "limpa fossa em {cidade}",
+      "desentupidora em {cidade} - {uf}",
+      "desentupidora próxima em {cidade}",
+      "desentupidora barata em {cidade}",
+      "desentupimento de pia e vaso em {cidade}"
+    ]
+  },
+  "notebookx.com.br": {
+    "descricao": "Diretorio de assistencia tecnica de notebook. Paginas de cidade empresas/cidades/{uf}/{cidade}. Ancoras com variacao.",
+    "url_regex": "^empresas/cidades/(?P<uf>[a-z]{2})/(?P<cidade>[^/]+)$",
+    "restaurar_acentos_cidade": true,
+    "anchor_templates": [
+      "assistência técnica de notebook em {cidade}",
+      "conserto de notebook em {cidade}",
+      "manutenção de notebook em {cidade}",
+      "assistência técnica de notebook em {cidade} - {uf}",
+      "reparo de notebook em {cidade}",
+      "assistência técnica para notebook em {cidade}",
+      "conserto de notebook em {cidade} - {uf}",
+      "técnico de notebook em {cidade}",
+      "empresas de assistência técnica de notebook em {cidade}",
+      "assistência de notebook em {cidade}"
+    ]
+  },
+  "setorenergetico.com.br": {
+    "descricao": "Diretorio do setor energetico (solar, eolica, hidreletrica...). Paginas de cidade empresas/cidades/{uf}/{cidade}. Ancoras com variacao.",
+    "url_regex": "^empresas/cidades/(?P<uf>[a-z]{2})/(?P<cidade>[^/]+)$",
+    "restaurar_acentos_cidade": true,
+    "anchor_templates": [
+      "empresas de energia em {cidade}",
+      "empresas do setor energético em {cidade}",
+      "setor energético em {cidade}",
+      "empresas de energia em {cidade} - {uf}",
+      "empresas de energia renovável em {cidade}",
+      "mercado de energia em {cidade}",
+      "empresas do setor elétrico em {cidade}",
+      "empresas de energia solar em {cidade}",
+      "geração de energia em {cidade}",
+      "empresas de energia em {cidade}, {uf}"
+    ]
+  },
+  "cirurgiadecolunagoiania.com.br": {
+    "descricao": "Site medico (Goiania). Posts de blog; ancora vem do titulo real da pagina, inicial minuscula.",
+    "url_regex": "^blog/[^/]+$",
+    "anchor_source": "search_query",
+    "casing": "sentence",
+    "query_min_score": 0.34,
+    "titulo_cortar_dois_pontos": true
+  },
+  "blog.coegoiania.com.br": {
+    "descricao": "Site medico ortopedico. Artigos ficam no subdominio blog.*; paginas ficam em coegoiania.com.br (filtradas pelo host). Ancora = consulta real.",
+    "url_regex": "^[^/]+$",
+    "excluir_slugs": ["pagina-exemplo"],
+    "anchor_source": "search_query",
+    "casing": "sentence",
+    "query_min_score": 0.34,
+    "titulo_cortar_dois_pontos": true
+  },
+  "blog.drthiagotredicci.com.br": {
+    "descricao": "Site medico (gastro/cirurgia digestiva). Artigos no subdominio blog.*; paginas no host raiz (filtradas). Ancora = consulta real.",
+    "url_regex": "^[^/]+$",
+    "excluir_slugs": ["doutor", "pagina-exemplo"],
+    "anchor_source": "search_query",
+    "casing": "sentence",
+    "query_min_score": 0.34,
+    "titulo_cortar_dois_pontos": true
+  },
+  "drhenriquebufaical.com.br": {
+    "descricao": "Site medico (cirurgia da mao). Blog principal em /blog/ no host raiz; o subdominio blog.* e duplicata (excluido pelo filtro de host). Ancora = consulta real.",
+    "url_regex": "^blog/[^/]+$",
+    "anchor_source": "search_query",
+    "casing": "sentence",
+    "query_min_score": 0.34,
+    "titulo_cortar_dois_pontos": true
+  },
+  "concar.com.br": {
+    "descricao": "Consulta de placa/DETRAN. Ancoras de backlink NATURAIS: templates de frase p/ paginas de estado/servico + consultas naturalizadas p/ artigos.",
+    "url_regex": "^(blog|consulta-placa|ferramentas)/",
+    "anchor_source": "search_query",
+    "multiplas_ancoras": true,
+    "naturalizar_ancora": true,
+    "min_palavras_ancora": 2,
+    "casing": "sentence",
+    "query_min_score": 0.34,
+    "excluir_slugs": ["consulta-placa/pack-pf-10", "consulta-placa/pack-pf-5", "consulta-placa/essencial", "consulta-placa/gratis"],
+    "phrase_rules": [
+      ["^consulta-placa/detran/(?P<estado>[a-z-]+)/multas$", ["consultar multas de trânsito {loc}", "consultar multas pela placa {loc}", "ver multas do Detran {loc}", "pesquisar multas de veículo {loc}"]],
+      ["^consulta-placa/detran/(?P<estado>[a-z-]+)/ipva$", ["consultar IPVA pela placa {loc}", "consulta de IPVA {loc}", "verificar IPVA do veículo {loc}", "situação do IPVA {loc}"]],
+      ["^consulta-placa/detran/(?P<estado>[a-z-]+)/debitos$", ["consultar débitos do veículo {loc}", "verificar débitos de veículo {loc}", "pendências do veículo {loc}"]],
+      ["^consulta-placa/detran/(?P<estado>[a-z-]+)/licenciamento$", ["consultar licenciamento de veículo {loc}", "situação do licenciamento {loc}", "regularizar licenciamento {loc}"]],
+      ["^consulta-placa/detran/(?P<estado>[a-z-]+)$", ["consulta de placa {loc}", "consultar placa do Detran {loc}", "consulta veicular {loc}", "verificar placa de carro {loc}", "site para consultar placa {loc}", "informações do veículo pela placa {loc}", "pesquisar placa de veículo {loc}"]],
+      ["^consulta-placa/multas$", ["consultar multas pela placa do veículo"]],
+      ["^consulta-placa/gravame$", ["consultar gravame do veículo pela placa"]],
+      ["^consulta-placa/renavam$", ["consultar Renavam pela placa"]],
+      ["^consulta-placa/renajud$", ["consultar restrição Renajud pela placa"]],
+      ["^consulta-placa/leilao$", ["consulta de placa de carro de leilão"]],
+      ["^consulta-placa/moto$", ["consulta de placa de moto"]],
+      ["^consulta-placa/mercosul$", ["consulta de placa Mercosul"]],
+      ["^consulta-placa/dados-veiculo$", ["consultar dados do veículo pela placa"]],
+      ["^consulta-placa/proprietario-atual$", ["consultar proprietário atual pela placa"]],
+      ["^consulta-placa/consulta-nacional$", ["consulta nacional de veículo pela placa"]],
+      ["^consulta-placa/pre-compra$", ["consulta de placa para compra de carro"]],
+      ["^ferramentas/tabela-fipe$", ["consultar tabela FIPE do veículo"]],
+      ["^ferramentas/identificador-placa$", ["identificador de placa de veículo"]],
+      ["^ferramentas/gerador-recibo$", ["gerador de recibo de compra e venda"]],
+      ["^ferramentas/simulador-financiamento$", ["simulador de financiamento de veículo"]],
+      ["^ferramentas/calculadora-combustivel$", ["calculadora de consumo de combustível"]],
+      ["^ferramentas/gerador-placa-mercosul$", ["gerador de placa Mercosul"]],
+      ["^ferramentas/portabilidade-financiamento$", ["simulador de portabilidade de financiamento"]],
+      ["^ferramentas/simulador-pontos-cnh$", ["simulador de pontos na CNH"]],
+      ["^ferramentas/gerador-atpv$", ["gerador de ATPV-e digital"]]
+    ]
+  },
+  "marianacabraldermato.com.br": {
+    "descricao": "Site medico (dermatologia). Artigos na raiz misturados com paginas; muitos artigos deletados. Mantem so posts vivos via WP REST. Ancora = consulta real naturalizada.",
+    "url_regex": "^[^/]+$",
+    "manter_wp_posts": "https://marianacabraldermato.com.br/wp-json/wp/v2/posts",
+    "anchor_source": "search_query",
+    "multiplas_ancoras": true,
+    "casing": "sentence",
+    "query_min_score": 0.34,
+    "titulo_cortar_dois_pontos": true
+  },
+  "blog.camilafarias.com.br": {
+    "descricao": "Site medico (endocrinologia). Artigos no subdominio blog.*; paginas no host raiz (filtradas). Ancora = consulta real, naturalizada.",
+    "url_regex": "^[^/]+$",
+    "excluir_slugs": ["pagina-exemplo"],
+    "anchor_source": "search_query",
+    "casing": "sentence",
+    "query_min_score": 0.34,
+    "titulo_cortar_dois_pontos": true
+  },
+  "blog.drtiagobernardes.com.br": {
+    "descricao": "Site medico (cirurgia de quadril). Artigos no subdominio blog.*; paginas no host raiz (filtradas). Ancora = consulta real.",
+    "url_regex": "^[^/]+$",
+    "excluir_slugs": ["pagina-exemplo"],
+    "anchor_source": "search_query",
+    "casing": "sentence",
+    "query_min_score": 0.34,
+    "titulo_cortar_dois_pontos": true
+  },
+  "drbrunoair.com.br": {
+    "descricao": "Site medico (ortopedia pe/tornozelo). Blog em /blog/ no host raiz; paginas de servico ficam na raiz (excluidas pelo regex). Ancora = consulta real.",
+    "url_regex": "^blog/[^/]+$",
+    "anchor_source": "search_query",
+    "casing": "sentence",
+    "query_min_score": 0.34,
+    "titulo_cortar_dois_pontos": true
+  },
+  "totalcambio.com.br": {
+    "descricao": "Oficina de cambio automatico (Goiania). Site de 1 pagina: ancoras da homepage a partir das consultas reais do relatorio.",
+    "anchor_source": "query_list",
+    "target_url": "https://totalcambio.com.br/",
+    "proper_nouns": ["Goiânia", "Total Câmbio", "Total"],
+    "excluir_consultas": ["goiânia", "goiania", "em goiânia", "goiás", "so cambio goiania", "car service goiania"],
+    "min_impressoes": 2,
+    "max_anchors": 50
+  }
+}

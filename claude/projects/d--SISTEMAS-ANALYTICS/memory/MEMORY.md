@@ -1,0 +1,1 @@
+- [GA verification — não mencionar lazy-load](feedback_ga_verification.md) — ao conferir instalação de GA4 nos sites da rede, só confirmar ID; não falar de lazy-load

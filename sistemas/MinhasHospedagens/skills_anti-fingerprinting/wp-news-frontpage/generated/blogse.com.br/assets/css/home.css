@@ -1,0 +1,4 @@
+/* Home-only overrides Blog-Se */
+.bx-hero { background: var(--bx-purple-deep); }
+.bx-section { margin-bottom: var(--bx-sp-7); }
+.bx-card:hover .bx-card__title a { color: var(--bx-gold); }

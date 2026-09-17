@@ -1,0 +1,29 @@
+# Memory Index
+
+- [PageSpeed API key](pagespeed-api-key.md) — chave do PageSpeed em D:\SISTEMAS\Google\pagespeed.json
+- [INP comprar-backlinks](qmix-inp-comprar-backlinks.md) — causa da oscilação de ranking (INP mobile) e a otimização de 2026-06-23; re-medir ~2026-07-21
+- [Server actions multi-instância](qmix-server-actions-multiinstancia.md) — 2 instâncias PM2 exigem NEXT_SERVER_ACTIONS_ENCRYPTION_KEY compartilhada + max no pool postgres
+- [SSH ao VPS precisa sandbox off](ssh-vps-precisa-sandbox-off.md) — timeout na porta 22 do VPS é o sandbox de rede; usar dangerouslyDisableSandbox, não é ban de IP
+- [Subdomínio de ferramentas](ferramentas-subdominio.md) — ferramentas.qmix.com.br serve as 55 tools em raiz limpa via middleware host-routing + 301 cross-domain do qmixdigital
+- [URLs clicáveis](feedback-urls-clicaveis.md) — sempre entregar URLs criadas/alteradas como link markdown clicável
+- [Portais na raiz](portais-url-raiz.md) — produtos/portais agora em qmix.com.br/<slug> (301 de /comprar-backlinks/<slug>); soft-404 app-wide conhecido
+- [GSC service account](gsc-service-account.md) — JSON no Desktop com acesso à API do Search Console (14 propriedades, incl. ferramentas.qmix)
+- [Telegram notificações](qmix-telegram-notificacoes.md) — eventos do site vão pro Telegram do admin (bot @qmixmarktplace_bot, chat <<REMOVIDO>>); logEvent encaminha erros+negócio
+- [Multi-categoria](qmix-multicategoria.md) — portais agora têm VÁRIAS categorias (produtos_nicho múltiplo); API expõe nichos[]; filtro usa includes; admin editor ainda é single (falta multi-select)
+- [Deploy atômico](qmix-deploy-atomico.md) — SEMPRE usar ./deploy.sh; build direto no .next quebra server actions e derruba requisições
+- [Geração de conteúdo IA](qmix-geracao-conteudo-ia.md) — cliente gera o artigo no pós-compra (Opus 5); modelo antigo era inválido; Nginx precisa de 180s em /api/ai/
+- [Portais não expostos](qmix-portais-nao-expostos.md) — nome/slug de portal não pode sair em página pública, nem no JSON-LD; como conferir
+- [loading.tsx e Suspense](qmix-loading-suspense.md) — não recriar loading.tsx no grupo (frontend); fazia toda página indexável servir shell de spinner
+- [Embed do YouTube e LCP](qmix-embed-youtube-lcp.md) — iframe direto levava o LCP dos posts a 10s; sempre miniatura com player no clique
+- [Publicação automática](qmix-publicacao-automatica.md) — aprovado 2026-09-10: Telegram → portal (73 conectados) → Apex; 6 desativados; vale só para aprovações a partir dessa data
+- [Nome do produto = domínio](qmix-produto-nome-e-dominio.md) — `nome` é o domínio limpo desde 2026-09-10, antigo em `nome_original`; nunca exibir nome+URL juntos
+- [Qualidade do blog 2026-09](qmix-blog-qualidade-2026-09.md) — auditoria SEO+humanização concluída; exceções aceitas; 4 fusões com 301; backlinks-gratis é a página de "ferramenta de backlinks"
+- [Simulador de GEO](qmix-simulador-geo.md) — /geo#simulador com GPT+Gemini; chaves, modelos, custo US$ 0,02, limites 5/IP e 300/dia
+- [Plano de melhorias 2026-09](qmix-plano-melhorias-2026-09.md) — 9 itens priorizados para resolver um a um; itens 1 a 6 feitos 13/09; pendentes: indexação automática, publishers, blog
+- [Newsletter digest + rastreio próprio](qmix-newsletter-digest.md) — template claro, pixel/clique com cidade, agendamento terça 10h SP; #6 agendada 15/09
+- [Tema claro do site](qmix-blog-tema-claro.md) — site todo em tokens --q-* (claro padrão, escuro por toggle), admin forçado escuro; codemod e regras de papel; apagar .next/types antes do deploy ao mover rotas
+- [Regra do primeiro link](qmix-regra-primeiro-link.md) — link do cliente é sempre o 1º link da matéria, não necessariamente no 1º parágrafo; nunca prometer parágrafo
+- [Faturamento mensalistas](qmix-faturamento-mensalistas.md) — módulo de faturas migrado do Antônio (etapa 1 feita 14/09), regras de cobrança manual/NF, próximas etapas
+- [Moz API](qmix-moz-api.md) — plano Growth Medium 120k linhas/mês (reset mensal, overage US$ 20/10k); um token base64(access_id:secret) serve Links API v2 e Data API v3; scripts e o que já consumiu
+- [Proposta de portal ao cliente](feedback-proposta-portal-cliente.md) — formato curto aprovado (4 linhas: portal, DA/tráfego/link, matéria em lista para IA, preço fechado, pergunta)
+- [Regras dos sites do Jean](feedback-jean-credito-foto.md) — caption "Imagem de {Autor} via {Banco}", sem tags, pauta forçada em site nichado vai para Geral; MCP roda no gnd-motor (systemd wp-mcp.service)

@@ -1,0 +1,1 @@
+- [goiania.pro: onde vive](goiania-pro-onde-vive.md) — VPS srv1166087, repo qmixdigital/goiania.pro, clone d:\SITES\goiania.pro, ficha em MinhasHospedagens

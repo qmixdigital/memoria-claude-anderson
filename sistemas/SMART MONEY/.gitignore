@@ -1,0 +1,47 @@
+node_modules/
+.next/
+.env
+.env.local
+.env.production
+.env.staging
+.env.test
+.env.*.local
+dist/
+build/
+coverage/
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Backups e dumps locais
+backups/
+*.sql.gz
+*.dump
+
+# Outputs de scrapers em cache local
+.cache/
+tmp/
+
+# Secrets (nunca commitar)
+*.pem
+*.key
+.deploy-prev-commit
+
+# Node (package managers)
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js
+out/
+next-env.d.ts
+
+# Testes
+.vitest-cache/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# Drizzle Kit cache
+.drizzle/

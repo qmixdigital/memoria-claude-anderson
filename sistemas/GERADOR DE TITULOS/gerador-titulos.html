@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Títulos SEO</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:<<REMOVIDO>>;600&family=IBM+Plex+Sans:<<REMOVIDO>>;500;600&display=swap');
+
+  :root {
+    --bg: #0a0a0a;
+    --surface: #111111;
+    --border: #1e1e1e;
+    --accent: #00ff88;
+    --accent2: #0088ff;
+    --text: #e8e8e8;
+    --muted: #555;
+    --danger: #ff4455;
+    --warn: #ff8833;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    min-height: 100vh;
+    padding: 28px 24px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    width: 34px; height: 34px;
+    background: var(--accent);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 13px;
+    color: #000;
+    flex-shrink: 0;
+  }
+
+  h1 { font-size: 17px; font-weight: 600; }
+
+  .sub {
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    margin-top: 2px;
+  }
+
+  .badge {
+    margin-left: auto;
+    background: #001a0a;
+    border: 1px solid #003322;
+    color: var(--accent);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  /* API Key bar */
+  .api-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .api-bar.connected { border-color: #003322; }
+
+  .api-status {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--danger);
+    flex-shrink: 0;
+  }
+  .api-bar.connected .api-status { background: var(--accent); }
+
+  .api-bar label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+  }
+
+  .api-bar input {
+    flex: 1;
+    min-width: 200px;
+    background: #0a0a0a;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    padding: 8px 12px;
+    outline: none;
+  }
+  .api-bar input:focus { border-color: var(--accent2); }
+
+  .api-bar .btn-sm {
+    background: var(--accent);
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .api-bar .btn-sm:hover { background: #00e87a; }
+
+  .api-bar .btn-link {
+    background: none;
+    border: none;
+    color: var(--accent2);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    cursor: pointer;
+    text-decoration: underline;
+    white-space: nowrap;
+  }
+  .api-bar .btn-link:hover { color: #55aaff; }
+
+  .api-saved {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .input-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-end;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .field-label {
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  .field-tema { flex: 1; min-width: 200px; }
+
+  input[type="text"], input[type="number"], select, textarea {
+    background: #0a0a0a;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    padding: 10px 14px;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  input[type="text"] { width: 100%; }
+  input[type="number"] { width: 90px; }
+  select { width: 160px; }
+  input:focus, select:focus { border-color: var(--accent2); }
+  input::placeholder { color: var(--muted); }
+
+  .btn-generate {
+    background: var(--accent);
+    color: #000;
+    border: none;
+    border-radius: 7px;
+    padding: 11px 28px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+    align-self: flex-end;
+  }
+  .btn-generate:hover { background: #00e87a; }
+  .btn-generate:disabled { background: #1a3328; color: #2a5a44; cursor: not-allowed; }
+
+  .btn-stop {
+    background: transparent;
+    color: #ff4455;
+    border: 1px solid #ff4455;
+    border-radius: 7px;
+    padding: 11px 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: none;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+    align-self: flex-end;
+  }
+  .btn-stop:hover { background: #ff4455; color: #fff; }
+  .btn-stop.visible { display: flex; }
+
+  .output-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .output-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 18px;
+    border-bottom: 1px solid var(--border);
+    background: #0e0e0e;
+    flex-wrap: wrap;
+  }
+
+  .output-title {
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .stat {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--accent2);
+  }
+
+  .stat-warn { color: var(--warn); }
+
+  .btn-copy {
+    margin-left: auto;
+    background: #001533;
+    color: var(--accent2);
+    border: 1px solid #003366;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-copy:hover { background: #002244; }
+  .btn-copy:disabled { opacity: 0.35; cursor: not-allowed; }
+
+  .output-list {
+    padding: 0;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+
+  .output-list::-webkit-scrollbar { width: 4px; }
+  .output-list::-webkit-scrollbar-track { background: transparent; }
+  .output-list::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+
+  .title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 18px;
+    border-bottom: 1px solid #161616;
+    cursor: pointer;
+    transition: background 0.08s;
+  }
+  .title-row:hover { background: #161616; }
+  .title-row:last-child { border-bottom: none; }
+
+  .row-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: #333;
+    width: 28px;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .row-text {
+    flex: 1;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .row-len {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .ok  { background: #001a0a; color: var(--accent); }
+  .low { background: #1a1000; color: var(--warn); }
+  .hi  { background: #1a0000; color: var(--danger); }
+
+  .placeholder {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 2;
+  }
+
+  .loading {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .spinner {
+    width: 30px; height: 30px;
+    border: 2px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .loading-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    animation: blink 1.5s ease-in-out infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:0.3} 50%{opacity:1} }
+
+  .error {
+    margin: 20px;
+    background: #110008;
+    border: 1px solid #440022;
+    border-radius: 7px;
+    padding: 14px 18px;
+    color: var(--danger);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .progress-bar {
+    height: 2px;
+    background: #1a1a1a;
+    position: relative;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    width: 0%;
+    transition: width 0.4s;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--accent);
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.2s;
+    pointer-events: none;
+    z-index: 999;
+  }
+  .toast.show { opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">T</div>
+  <div>
+    <h1>Gerador de Títulos SEO</h1>
+    <div class="sub">Um tema, N ângulos diferentes / 55-65 caracteres / portais de notícias BR</div>
+  </div>
+  <div class="badge">GEMINI AI</div>
+</header>
+
+<!-- API Key bar -->
+<div class="api-bar" id="api-bar">
+  <div class="api-status"></div>
+  <label>Gemini API Key</label>
+  <div id="api-input-area" style="display:flex;flex:1;gap:10px;align-items:center;min-width:200px;">
+    <input type="password" id="api-key" placeholder="Cole sua API key aqui..." style="flex:1;min-width:150px;" />
+    <button class="btn-sm" onclick="saveKey()">Salvar</button>
+  </div>
+  <div id="api-saved-area" style="display:none;flex:1;align-items:center;gap:10px;min-width:200px;">
+    <span class="api-saved">Conectado (key salva)</span>
+    <button class="btn-link" onclick="editKey()">Alterar</button>
+    <button class="btn-link" onclick="removeKey()" style="color:var(--danger)">Remover</button>
+  </div>
+  <a class="btn-link" href="https://aistudio.google.com/apikey" target="_blank">Obter key gratis</a>
+</div>
+
+<div class="input-card">
+  <div class="field field-tema">
+    <span class="field-label">Tema principal</span>
+    <input type="text" id="tema" placeholder="Ex: filmes de terror, cirurgia de joelho, mercado imobiliário..." />
+  </div>
+  <div class="field">
+    <span class="field-label">Quantidade</span>
+    <input type="number" id="qty" value="30" min="5" max="300" />
+  </div>
+  <div class="field">
+    <span class="field-label">Tom</span>
+    <select id="tone">
+      <option value="variado" selected>Variado</option>
+      <option value="informativo">Informativo</option>
+      <option value="urgente">Urgente / Breaking</option>
+      <option value="analítico">Analítico</option>
+      <option value="popular">Popular / Tablóide</option>
+    </select>
+  </div>
+  <button class="btn-generate" id="gen-btn" onclick="run()">
+    Gerar Títulos
+  </button>
+  <button class="btn-stop" id="stop-btn" onclick="stopGen()">
+    Parar
+  </button>
+</div>
+
+<div class="output-card">
+  <div class="output-header">
+    <span class="output-title">Títulos</span>
+    <span class="stat" id="stat"></span>
+    <span class="stat stat-warn" id="stat-warn"></span>
+    <button class="btn-copy" id="copy-btn" onclick="copyAll()" disabled>Copiar tudo</button>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+  <div class="output-list" id="output">
+    <div class="placeholder">
+      1. Obtenha sua API key gratuita do Google AI Studio<br>
+      2. Cole a key acima e clique em Salvar<br>
+      3. Digite um tema e clique em "Gerar Títulos"
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const BATCH = 30;
+const API_BASE = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
+let titles = [];
+let stopped = false;
+
+// --- API Key management ---
+function getKey() {
+  return localStorage.getItem('gemini_api_key') || '';
+}
+
+function saveKey() {
+  const key = document.getElementById('api-key').value.trim();
+  if (!key) { alert('Cole a API key antes de salvar.'); return; }
+  localStorage.setItem('gemini_api_key', key);
+  renderKeyBar();
+  toast('API key salva com sucesso!');
+}
+
+function editKey() {
+  localStorage.removeItem('gemini_api_key');
+  renderKeyBar();
+  document.getElementById('api-key').focus();
+}
+
+function removeKey() {
+  localStorage.removeItem('gemini_api_key');
+  renderKeyBar();
+  toast('API key removida.');
+}
+
+function renderKeyBar() {
+  const key = getKey();
+  const bar = document.getElementById('api-bar');
+  const inputArea = document.getElementById('api-input-area');
+  const savedArea = document.getElementById('api-saved-area');
+  if (key) {
+    bar.classList.add('connected');
+    inputArea.style.display = 'none';
+    savedArea.style.display = 'flex';
+  } else {
+    bar.classList.remove('connected');
+    inputArea.style.display = 'flex';
+    savedArea.style.display = 'none';
+  }
+}
+
+// --- Gemini API call ---
+async function callGemini(prompt) {
+  const key = getKey();
+  if (!key) throw new Error('Configure sua API key do Gemini primeiro.');
+
+  const res = await fetch(API_BASE + '?key=' + encodeURIComponent(key), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: {
+        temperature: 1.0,
+        maxOutputTokens: 4000
+      }
+    })
+  });
+
+  const data = await res.json();
+
+  if (data.error) {
+    if (data.error.code === 400 && data.error.message.includes('API key')) {
+      throw new Error('API key inválida. Verifique sua key no Google AI Studio.');
+    }
+    throw new Error(data.error.message || 'Erro na API Gemini');
+  }
+
+  if (!data.candidates || !data.candidates[0] || !data.candidates[0].content) {
+    throw new Error('Resposta vazia da API. Tente novamente.');
+  }
+
+  const raw = data.candidates[0].content.parts.map(p => p.text || '').join('\n');
+
+  const lines = raw.split('\n')
+    .map(l => l
+      .replace(/^\d+[.)\-:]\s*/, '')
+      .replace(/^[-*•●▪]\s*/, '')
+      .replace(/^[""]|[""]$/g, '')
+      .replace(/^\s*>\s*/, '')
+      .trim()
+    )
+    .filter(l =>
+      l.length >= 20 &&
+      l.length <= 120 &&
+      l.includes(' ') &&
+      !l.match(/^(aqui|segue|abaixo|claro|certo|ok|pronto|vou|gerar|tarefa|regras|formato|ângulo|comprimento|tom:|obs:|nota:|dica:|total:)/i) &&
+      !l.match(/^(espero|esses|esses são|esses títulos|aqui estão)/i)
+    );
+
+  return lines;
+}
+
+// --- Main generation ---
+function stopGen() {
+  stopped = true;
+  document.getElementById('stop-btn').classList.remove('visible');
+  document.getElementById('gen-btn').disabled = false;
+  updateLoadingText('Parando após este lote...');
+}
+
+async function run() {
+  const tema = document.getElementById('tema').value.trim();
+  const qty  = parseInt(document.getElementById('qty').value) || 30;
+  const tone = document.getElementById('tone').value;
+
+  if (!getKey()) { alert('Configure sua API key do Gemini primeiro. Clique em "Obter key gratis" para conseguir uma.'); return; }
+  if (!tema) { alert('Digite o tema principal.'); return; }
+
+  titles = [];
+  stopped = false;
+  document.getElementById('gen-btn').disabled = true;
+  document.getElementById('stop-btn').classList.add('visible');
+  document.getElementById('copy-btn').disabled = true;
+  document.getElementById('stat').textContent = '';
+  document.getElementById('stat-warn').textContent = '';
+  setProgress(2);
+  showLoading('Iniciando geração de ' + qty + ' títulos sobre "' + tema + '"...');
+
+  const toneMap = {
+    'variado': 'Varie entre informativo, urgente, analítico e popular',
+    'informativo': 'Informativo e neutro, estilo jornalístico sério',
+    'urgente': 'Urgente, com senso de importância e novidade (breaking news)',
+    'analítico': 'Analítico e aprofundado, estilo colunista especializado',
+    'popular': 'Popular e chamativo, estilo tablóide (sem ser apelativo)'
+  };
+
+  let batchNum = 0;
+  let consecErrors = 0;
+  const MAX_CONSEC_ERRORS = 4;
+  const MAX_BATCHES = Math.ceil(qty / BATCH) + 10;
+
+  while (!stopped && titles.length < qty && consecErrors < MAX_CONSEC_ERRORS && batchNum < MAX_BATCHES) {
+    const needed = qty - titles.length;
+    const batchSize = Math.min(BATCH, needed);
+    batchNum++;
+
+    const pct = Math.round(5 + (titles.length / qty) * 90);
+    setProgress(pct);
+    updateLoadingText('Lote ' + batchNum + ': gerando ' + batchSize + '... (' + titles.length + '/' + qty + ' prontos)');
+
+    const recent = titles.slice(-15);
+    const previousBlock = recent.length > 0
+      ? '\n\nÂNGULOS JÁ USADOS (não repita estas abordagens):\n' + recent.map(function(t) { return '- ' + t; }).join('\n')
+      : '';
+
+    const prompt = 'Você é editor-chefe de um grande portal de notícias brasileiro (estilo G1, UOL, R7, Metrópoles), especialista em SEO.\n\n'
+      + 'TAREFA: Gere EXATAMENTE ' + batchSize + ' títulos de artigos sobre o tema: "' + tema + '"\n\n'
+      + 'REGRAS OBRIGATÓRIAS:\n'
+      + '1. COMPRIMENTO: cada título deve ter entre 55 e 65 caracteres (contando espaços e pontuação). Regra inegociável.\n'
+      + '2. ÂNGULO ÚNICO: cada título aborda subtema ou perspectiva diferente dentro de "' + tema + '". Nunca repita ângulos.\n'
+      + '3. TOM: ' + toneMap[tone] + '\n'
+      + '4. LINGUAGEM: português brasileiro natural, estilo portal de notícias real\n'
+      + '5. PROIBIDO: travessão (—), aspas duplas, dois pontos no início\n'
+      + '6. Busque variedade: subtemas, tendências, polêmicas, estudos, eventos, curiosidades, dicas, comparações\n\n'
+      + 'FORMATO DE SAÍDA:\n'
+      + '- Apenas os títulos, um por linha\n'
+      + '- Sem numeração, sem marcadores, sem explicações\n'
+      + '- Sem linhas em branco entre os títulos\n'
+      + '- NÃO inclua nenhum texto antes ou depois dos títulos\n\n'
+      + 'Gere os ' + batchSize + ' títulos agora:' + previousBlock;
+
+    try {
+      const lines = await callGemini(prompt);
+      if (lines.length > 0) {
+        consecErrors = 0;
+        titles.push.apply(titles, lines);
+        if (titles.length > qty) titles = titles.slice(0, qty);
+        renderTitles();
+      } else {
+        consecErrors++;
+        updateLoadingText('Lote ' + batchNum + ' sem resultado, tentando novamente... (' + titles.length + '/' + qty + ')');
+        await new Promise(function(r) { setTimeout(r, 1500); });
+      }
+    } catch (err) {
+      consecErrors++;
+      updateLoadingText('Erro ' + consecErrors + '/' + MAX_CONSEC_ERRORS + ': ' + err.message);
+      if (err.message.includes('API key')) {
+        showError('API key inválida. Verifique sua key e tente novamente.');
+        break;
+      }
+      await new Promise(function(r) { setTimeout(r, 2000); });
+    }
+  }
+
+  setProgress(100);
+  document.getElementById('gen-btn').disabled = false;
+  document.getElementById('stop-btn').classList.remove('visible');
+  if (titles.length > 0) document.getElementById('copy-btn').disabled = false;
+  setTimeout(function() { setProgress(0); }, 800);
+
+  if (titles.length > 0 && titles.length < qty && !stopped) {
+    var note = document.createElement('div');
+    note.className = 'error';
+    note.style.margin = '12px 18px';
+    note.textContent = 'Geração encerrada com ' + titles.length + '/' + qty + '. Clique em "Gerar Títulos" para gerar mais.';
+    document.getElementById('output').prepend(note);
+  }
+}
+
+// --- Render ---
+function renderTitles() {
+  if (!titles.length) return;
+
+  var ok   = titles.filter(function(t) { return t.length >= 55 && t.length <= 65; }).length;
+  var low  = titles.filter(function(t) { return t.length < 55; }).length;
+  var high = titles.filter(function(t) { return t.length > 65; }).length;
+
+  document.getElementById('stat').textContent = titles.length + ' títulos | ' + ok + ' no limite ideal';
+  var w = [];
+  if (low)  w.push(low + ' curtos');
+  if (high) w.push(high + ' longos');
+  document.getElementById('stat-warn').textContent = w.join(' · ');
+
+  var html = '';
+  titles.forEach(function(t, i) {
+    var len = t.length;
+    var cls = len >= 55 && len <= 65 ? 'ok' : (len < 55 ? 'low' : 'hi');
+    var safe = t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    html += '<div class="title-row" onclick="copyOne(this)" data-title="' + safe + '" title="Clique para copiar">'
+      + '<span class="row-num">' + (i + 1) + '</span>'
+      + '<span class="row-text">' + safe + '</span>'
+      + '<span class="row-len ' + cls + '">' + len + '</span>'
+      + '</div>';
+  });
+
+  document.getElementById('output').innerHTML = html;
+}
+
+// --- UI helpers ---
+function showLoading(msg) {
+  document.getElementById('output').innerHTML =
+    '<div class="loading">'
+    + '<div class="spinner"></div>'
+    + '<div class="loading-label" id="loading-text">' + msg + '</div>'
+    + '</div>';
+}
+
+function updateLoadingText(msg) {
+  var el = document.getElementById('loading-text');
+  if (el) el.textContent = msg;
+}
+
+function showError(msg) {
+  document.getElementById('output').innerHTML = '<div class="error">' + msg + '</div>';
+}
+
+function setProgress(pct) {
+  document.getElementById('progress').style.width = pct + '%';
+}
+
+function copyText(text, msg) {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function() { toast(msg); }).catch(function() { fallbackCopy(text, msg); });
+    } else {
+      fallbackCopy(text, msg);
+    }
+  } catch(e) { fallbackCopy(text, msg); }
+}
+
+function fallbackCopy(text, msg) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+  document.body.appendChild(ta);
+  ta.focus();
+  ta.select();
+  try { document.execCommand('copy'); toast(msg); }
+  catch(e) { toast('Erro ao copiar.'); }
+  document.body.removeChild(ta);
+}
+
+function copyAll() {
+  if (!titles.length) return;
+  copyText(titles.join('\n'), titles.length + ' títulos copiados');
+}
+
+function copyOne(row) {
+  var t = row.getAttribute('data-title');
+  copyText(t, 'Título copiado');
+}
+
+function toast(msg) {
+  var el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(function() { el.classList.remove('show'); }, 2000);
+}
+
+// --- Init ---
+renderKeyBar();
+document.getElementById('tema').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') run();
+});
+</script>
+</body>
+</html>

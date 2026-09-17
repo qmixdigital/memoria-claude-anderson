@@ -1,0 +1,2 @@
+- [feedback_design.md](feedback_design.md) — User rejects generic/wireframe mockups, demands full production-quality designs with premium typography
+- [project_nextjs_migration.md](project_nextjs_migration.md) — Site ativo em Next.js 15 na VPS 77.37.69.175, repo antigo arquivado em D:\SITES

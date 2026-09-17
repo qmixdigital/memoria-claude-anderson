@@ -1,0 +1,15 @@
+---
+name: qmix-regra-primeiro-link
+description: Como descrever a posição do link do cliente nas matérias da QMIX (é o primeiro link, não "no primeiro parágrafo")
+metadata:
+  type: feedback
+---
+
+O link do cliente numa matéria da QMIX é **sempre o primeiro link do texto**: nenhum link antes dele,
+interno ou externo. Mas **nem sempre está no primeiro parágrafo** (na maioria das vezes não está).
+
+**Why:** Anderson corrigiu em 14/09/2026 depois de a home dizer "seu link no 1º parágrafo da matéria";
+a promessa era falsa e podia virar reclamação.
+
+**How to apply:** em textos, mockups, e-mails e artigos, escrever "o primeiro link da matéria" /
+"seu link antes de qualquer outro"; nunca "no primeiro parágrafo". Ver também [[qmix-blog-tema-claro]].

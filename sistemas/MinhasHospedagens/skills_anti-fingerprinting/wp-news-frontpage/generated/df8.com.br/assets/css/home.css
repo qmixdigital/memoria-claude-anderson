@@ -1,0 +1,61 @@
+/* ============================================================
+ * DF8 News: home-only CSS overrides
+ * Ajustes especificos da front-page (archetype B magazine feature)
+ * Carregado via enqueue condicional em functions.php (optional).
+ * ============================================================ */
+
+/* Reforco visual do hero rail (sidebar de sub-manchetes) */
+.d8-hero__rail h3 {
+  position: relative;
+}
+.d8-hero__rail h3::after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: var(--d8-secondary);
+  margin-top: 6px;
+}
+
+/* Section head: variantes pequenas por contexto */
+.d8-section + .d8-section .d8-section__head {
+  margin-top: var(--d8-sp-md);
+}
+
+/* Animation entrada cards (subtle, respeitando prefers-reduced-motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .d8-features__grid .d8-card,
+  .d8-section__grid .d8-card {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: d8-card-in .35s ease forwards;
+  }
+  .d8-features__grid .d8-card:nth-child(1),
+  .d8-section__grid .d8-card:nth-child(1) { animation-delay: .04s; }
+  .d8-features__grid .d8-card:nth-child(2),
+  .d8-section__grid .d8-card:nth-child(2) { animation-delay: .08s; }
+  .d8-features__grid .d8-card:nth-child(3),
+  .d8-section__grid .d8-card:nth-child(3) { animation-delay: .12s; }
+  .d8-features__grid .d8-card:nth-child(4),
+  .d8-section__grid .d8-card:nth-child(4) { animation-delay: .16s; }
+
+  @keyframes d8-card-in {
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Hero excerpt: line clamp para evitar overflow visual */
+.d8-hero__excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Hero sublist: line clamp em titulos longos */
+.d8-hero__sublist a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

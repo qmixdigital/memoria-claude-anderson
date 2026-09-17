@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Lista da Família</title>
+<meta name="description" content="Lista de compras e tarefas compartilhada da família.">
+<meta name="theme-color" content="#050806">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Lista">
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/icons/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="/icons/icon-180.png">
+<link rel="stylesheet" href="/style.css?v=16">
+</head>
+<body data-app="16">
+
+<div id="offline" class="offline" hidden>Sem conexão. As alterações estão bloqueadas.</div>
+
+<noscript>
+  <div class="offline" style="position:static">
+    O JavaScript está bloqueado neste navegador e o aplicativo precisa dele para funcionar.
+  </div>
+</noscript>
+
+<!-- Carregando -->
+<section id="screen-loading" class="screen center">
+  <div class="boot-box">
+    <div class="spinner" id="boot-spinner" aria-label="Carregando"></div>
+    <div id="boot-fail" hidden>
+      <h1>Não consegui carregar</h1>
+      <p class="error" id="boot-error"></p>
+      <button class="btn primary block" id="boot-retry" type="button">Tentar de novo</button>
+      <button class="btn ghost block" id="boot-reset" type="button">Limpar dados do app e recarregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- Primeiro acesso -->
+<section id="screen-setup" class="screen center" hidden>
+  <form id="form-setup" class="auth-card">
+    <div class="marca" id="marca-setup"></div>
+    <h1>Primeiro acesso</h1>
+    <p class="muted">Crie o administrador da família. Ele cadastra os outros depois.</p>
+    <label for="setup-name">Seu nome</label>
+    <input id="setup-name" type="text" maxlength="40" required autocomplete="name" placeholder="Anderson">
+    <label for="setup-pin">Senha de 4 a 8 dígitos</label>
+    <input id="setup-pin" type="password" inputmode="numeric" pattern="\d{4,8}" maxlength="8" required autocomplete="new-password" placeholder="••••••">
+    <button class="btn primary block" type="submit">Criar e entrar</button>
+    <p class="error" id="setup-error" hidden></p>
+  </form>
+</section>
+
+<!-- Login -->
+<section id="screen-login" class="screen center" hidden>
+  <div class="auth-card">
+    <div class="marca" id="marca-login"></div>
+    <h1 id="login-title">Quem está usando?</h1>
+    <div id="login-members" class="member-grid"></div>
+
+    <div id="login-pin" hidden>
+      <div class="pin-dots" id="pin-dots" role="status" aria-live="polite"></div>
+      <p class="dica" id="pin-dica">Digite sua senha e toque em Entrar</p>
+      <div class="keypad" id="keypad"></div>
+      <button class="btn primary block" id="pin-entrar" type="button" disabled>Entrar</button>
+      <button class="btn ghost block" id="pin-cancel" type="button">Trocar de membro</button>
+    </div>
+    <p class="error" id="login-error" hidden></p>
+  </div>
+</section>
+
+<!-- Aplicativo -->
+<section id="screen-app" class="screen" hidden>
+  <header class="topbar">
+    <button class="icon-btn" id="btn-back" type="button" aria-label="Voltar" hidden></button>
+    <h1 id="view-title">Compras</h1>
+    <span class="sync-dot" id="sync-dot" title="Sincronizado"></span>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <nav class="tabbar" role="tablist">
+    <button class="tab" data-nav="compras" data-icone="lista" type="button" role="tab">Compras<i class="badge" id="compras-badge" hidden></i></button>
+    <button class="tab" data-nav="adicionar" data-icone="mais" type="button" role="tab">Adicionar</button>
+    <button class="tab" data-nav="tarefas" data-icone="tarefas" type="button" role="tab">Tarefas<i class="badge" id="tasks-badge" hidden></i></button>
+    <button class="tab" data-nav="ajustes" data-icone="ajustes" type="button" role="tab">Ajustes</button>
+  </nav>
+</section>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="/icones.js?v=16"></script>
+<script src="/catalogo.js?v=16"></script>
+<script src="/app.js?v=16"></script>
+</body>
+</html>

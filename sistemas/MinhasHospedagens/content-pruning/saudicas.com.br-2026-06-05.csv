@@ -1,0 +1,528 @@
+post_id,url,title,date,age_months,has_thumb_file,has_external_link,views_total,views_per_month,candidate_for_deletion
+3179,"https://saudicas.com.br/noticias/anvisa-recolhe-lote-de-agua-crystal-por-contaminacao-bacteriana/","Anvisa recolhe lote de água Crystal por contaminação bacteriana",2026-06-04 22:09:24,1,0,0,2,2,1
+3178,"https://saudicas.com.br/noticias/florianopolis-a-cidade-que-atrai-brasileiros-em-busca-de-qualidade-de-vida/","Florianópolis: a cidade que atrai brasileiros em busca de qualidade de vida",2026-06-04 22:03:11,1,0,0,2,2,1
+3177,"https://saudicas.com.br/noticias/5-protetores-de-farmacia-para-pele-apos-os-35/","5 protetores de farmácia para pele após os 35",2026-06-04 10:41:26,1,0,0,7,7,1
+3176,"https://saudicas.com.br/noticias/cremes-para-maos-hidratacao-rapida-sem-desconforto/","Cremes para mãos: hidratação rápida sem desconforto",2026-06-04 10:34:24,1,0,0,4,4,1
+3175,"https://saudicas.com.br/noticias/serum-corporal-o-novo-aliado-da-pele-apos-os-50/","Sérum corporal: o novo aliado da pele após os 50",2026-06-02 22:12:09,1,0,0,12,12,0
+3174,"https://saudicas.com.br/noticias/batom-ideal-como-escolher-a-cor-certa-para-sua-pele/","Batom ideal: como escolher a cor certa para sua pele",2026-06-02 22:11:11,1,0,0,8,8,1
+3173,"https://saudicas.com.br/noticias/anvisa-recolhe-lotes-de-remedio-para-pressao-alta-por-erro/","Anvisa recolhe lotes de remédio para pressão alta por erro",2026-06-02 10:02:25,1,0,0,11,11,0
+3172,"https://saudicas.com.br/noticias/blush-intenso-substitui-contorno-apos-os-40/","Blush intenso substitui contorno após os 40",2026-06-02 10:00:13,1,0,0,7,7,1
+3171,"https://saudicas.com.br/noticias/anvisa-proibe-23-produtos-da-now-foods-sem-registro/","Anvisa proíbe 23 produtos da Now Foods sem registro",2026-06-01 22:11:09,1,0,0,7,7,1
+3170,"https://saudicas.com.br/noticias/5-plantas-que-purificam-o-ar-e-filtram-poluentes-de-moveis/","5 plantas que purificam o ar e filtram poluentes de móveis",2026-06-01 22:07:09,1,0,0,6,6,1
+3169,"https://saudicas.com.br/noticias/caso-suspeito-de-ebola-e-descartado-pela-fiocruz-no-rj/","Caso suspeito de ebola é descartado pela Fiocruz no RJ",2026-06-01 10:06:25,1,0,0,9,9,1
+3168,"https://saudicas.com.br/noticias/anvisa-aprova-nurtec-odt-contra-enxaqueca-em-adultos/","Anvisa aprova Nurtec ODT contra enxaqueca em adultos",2026-06-01 10:03:25,1,0,0,10,10,0
+3167,"https://saudicas.com.br/noticias/anvisa-suspende-marcas-de-cafe-por-risco-a-saude-4/","Anvisa suspende marcas de café por risco à saúde",2026-05-31 21:57:09,1,0,0,10,10,0
+3166,"https://saudicas.com.br/noticias/acne-na-menopausa-por-que-surge-e-como-tratar/","Acne na menopausa: por que surge e como tratar",2026-05-31 21:56:09,1,0,0,6,6,1
+3165,"https://saudicas.com.br/noticias/6-esfoliantes-para-pele-sensivel-35-recomendados-por-dermato/","6 Esfoliantes para Pele Sensível 35+ Recomendados por Dermato",2026-05-31 10:07:24,1,0,0,10,10,0
+3164,"https://saudicas.com.br/noticias/congresso-aprova-marco-legal-de-protecao-ao-diabetes-tipo-1/","Congresso aprova marco legal de proteção ao Diabetes Tipo 1",2026-05-31 09:57:10,1,0,0,7,7,1
+3163,"https://saudicas.com.br/noticias/aaron-beck-como-interpretamos-a-realidade-define-o-sofrimento/","Aaron Beck: Como interpretamos a realidade define o sofrimento",2026-05-30 22:26:09,1,0,0,9,9,1
+3162,"https://saudicas.com.br/noticias/burnout-no-trabalho-empresa-pode-ser-punida/","Burnout no trabalho: empresa pode ser punida",2026-05-30 22:25:10,1,0,0,6,6,1
+3161,"https://saudicas.com.br/noticias/como-proteger-sua-noite-de-mensagens-e-pedidos-de-ultima-hora/","Como proteger sua noite de mensagens e pedidos de última hora",2026-05-30 10:10:24,1,0,0,7,7,1
+3160,"https://saudicas.com.br/noticias/estudo-revela-habitos-que-ajudam-mulheres-a-evitar-demencia/","Estudo revela hábitos que ajudam mulheres a evitar demência",2026-05-30 09:54:11,1,0,0,7,7,1
+3159,"https://saudicas.com.br/noticias/6-habitos-matinais-que-reduzem-inflamacao-e-melhoram-a-saude/","6 hábitos matinais que reduzem inflamação e melhoram a saúde",2026-05-29 22:03:10,1,0,0,7,7,1
+3158,"https://saudicas.com.br/noticias/planos-de-saude-sobem-ate-511-em-2026/","Planos de saúde sobem até 5;11% em 2026",2026-05-29 21:53:10,1,0,0,7,7,1
+3157,"https://saudicas.com.br/noticias/anvisa-suspende-marcas-de-cafe-em-supermercados-do-brasil/","Anvisa suspende marcas de café em supermercados do Brasil",2026-05-28 09:51:09,1,0,0,10,10,0
+3156,"https://saudicas.com.br/noticias/alerta-azeite-san-paolo-e-improprio-para-consumo/","Alerta: Azeite San Paolo é impróprio para consumo",2026-05-28 09:49:10,1,0,0,11,11,0
+3155,"https://saudicas.com.br/noticias/terapia-o-que-realmente-acontece-na-primeira-sessao/","Terapia: o que realmente acontece na primeira sessão?",2026-05-27 22:03:10,1,0,0,11,11,0
+3154,"https://saudicas.com.br/noticias/serum-hidratante-primeiro-o-segredo-para-uma-pele-transformada/","Sérum hidratante primeiro: o segredo para uma pele transformada",2026-05-27 22:00:10,1,0,0,10,10,0
+3148,"https://saudicas.com.br/saude/planejamento-familiar-e-saude-o-que-considerar-em-cada-fase-da-vida/","Planejamento familiar e saúde: o que considerar em cada fase da vida",2026-05-27 15:39:22,1,1,1,29,29,0
+3146,"https://saudicas.com.br/noticias/pressao-por-lazer-produtivo-adoece-mulheres/","Pressão por lazer produtivo adoece mulheres",2026-05-27 10:09:11,1,0,0,10,10,0
+3145,"https://saudicas.com.br/noticias/6-ajustes-na-alimentacao-para-queimar-gordura-abdominal/","6 ajustes na alimentação para queimar gordura abdominal",2026-05-27 10:08:10,1,0,0,11,11,0
+3144,"https://saudicas.com.br/noticias/5-usos-do-creme-nivea-para-pele-de-porcelana-ao-acordar/","5 usos do creme Nivea para pele de porcelana ao acordar",2026-05-26 22:08:10,1,0,0,10,10,0
+3143,"https://saudicas.com.br/noticias/cabelo-molhado-escova-errada-aumenta-a-quebra/","Cabelo molhado: escova errada aumenta a quebra",2026-05-26 21:58:13,1,0,0,10,10,0
+3142,"https://saudicas.com.br/noticias/freud-protecao-paterna-e-essencial-na-infancia/","Freud: Proteção paterna é essencial na infância",2026-05-26 09:58:09,1,0,0,9,9,1
+3141,"https://saudicas.com.br/noticias/anvisa-aprova-primeira-semaglutida-nacional-do-brasil/","Anvisa aprova primeira semaglutida nacional do Brasil",2026-05-26 09:54:23,1,0,0,9,9,1
+3140,"https://saudicas.com.br/noticias/anvisa-proibe-hidratante-facial-sem-registro-e-alerta-saloes/","Anvisa proíbe hidratante facial sem registro e alerta salões",2026-05-25 21:57:09,1,0,0,11,11,0
+3139,"https://saudicas.com.br/noticias/anvisa-recolhe-lote-de-aldomet-por-erro-na-dosagem/","Anvisa recolhe lote de Aldomet por erro na dosagem",2026-05-25 21:44:11,1,0,0,11,11,0
+3138,"https://saudicas.com.br/noticias/banho-quente-risco-oculto-para-o-coracao/","Banho quente: risco oculto para o coração",2026-05-25 09:57:11,1,0,0,6,6,1
+3137,"https://saudicas.com.br/noticias/fisico-brasileiro-propoe-rota-mais-rapida-ate-marte/","Físico brasileiro propõe rota mais rápida até Marte",2026-05-25 09:53:08,1,0,0,7,7,1
+3136,"https://saudicas.com.br/noticias/menopausa-cuidados-reais-para-pescoco-e-colo/","Menopausa: cuidados reais para pescoço e colo",2026-05-24 22:08:10,1,0,0,6,6,1
+3135,"https://saudicas.com.br/noticias/rotina-de-5-min-antes-de-dormir-acaba-com-rosto-inchado/","Rotina de 5 min antes de dormir acaba com rosto inchado",2026-05-23 21:41:10,1,0,0,9,9,1
+3134,"https://saudicas.com.br/noticias/ir-2026-despesas-medicas-na-dmed-podem-gerar-malha-fina-e-multa/","IR 2026: despesas médicas na DMED podem gerar malha fina e multa",2026-05-23 09:41:10,1,0,0,13,13,0
+3133,"https://saudicas.com.br/noticias/sabonetes-suaves-o-segredo-das-mulheres-35-para-pele-saudavel/","Sabonetes suaves: o segredo das mulheres 35+ para pele saudável",2026-05-22 21:38:10,1,0,0,7,7,1
+3132,"https://saudicas.com.br/noticias/hobbies-criativos-retardam-envelhecimento-aponta-estudo/","Hobbies criativos retardam envelhecimento; aponta estudo",2026-05-22 09:40:09,1,0,0,8,8,1
+3131,"https://saudicas.com.br/noticias/brad-pitt-e-a-cegueira-facial-o-que-e-prosopagnosia/","Brad Pitt e a cegueira facial: o que é prosopagnosia?",2026-05-22 09:38:09,1,0,0,6,6,1
+3130,"https://saudicas.com.br/noticias/anvisa-suspende-e-recolhe-azeite-de-oliva-afonso/","Anvisa suspende e recolhe azeite de oliva Afonso",2026-05-21 21:59:09,1,0,0,6,6,1
+3129,"https://saudicas.com.br/noticias/deolane-bezerra-o-novo-destino-apos-prisao-em-sp/","Deolane Bezerra: o novo destino após prisão em SP",2026-05-21 21:58:11,1,0,0,6,6,1
+3128,"https://saudicas.com.br/noticias/sindrome-do-sofa-de-segunda-por-que-descansar-gera-culpa/","Síndrome do Sofá de Segunda: por que descansar gera culpa?",2026-05-21 09:48:11,1,0,0,7,7,1
+3127,"https://saudicas.com.br/noticias/estudo-10-horas-de-exercicio-por-semana-fortalecem-o-coracao/","Estudo: 10 horas de exercício por semana fortalecem o coração",2026-05-21 09:44:25,1,0,0,5,5,1
+3126,"https://saudicas.com.br/noticias/oleo-de-rosa-mosqueta-no-rosto-como-usar-para-rugas/","Óleo de rosa mosqueta no rosto: como usar para rugas",2026-05-20 21:47:11,1,0,0,5,5,1
+3125,"https://saudicas.com.br/noticias/curitiba-lidera-ranking-de-qualidade-de-vida-porto-velho-e-a-pior/","Curitiba lidera ranking de qualidade de vida; Porto Velho é a pior",2026-05-20 21:44:10,1,0,0,9,9,1
+3124,"https://saudicas.com.br/noticias/anvisa-recolhe-lotes-de-remedios-para-colesterol-e-corticoide/","Anvisa recolhe lotes de remédios para colesterol e corticoide",2026-05-19 21:43:13,1,0,0,11,11,0
+3123,"https://saudicas.com.br/noticias/bolsa-familia-2026-novas-regras-para-evitar-suspensao/","Bolsa Família 2026: novas regras para evitar suspensão",2026-05-19 21:33:10,1,0,0,8,8,1
+3122,"https://saudicas.com.br/noticias/truque-de-30-segundos-no-banho-acaba-com-cara-de-cansaco/","Truque de 30 segundos no banho acaba com cara de cansaço",2026-05-19 09:34:10,1,0,0,4,4,1
+3121,"https://saudicas.com.br/noticias/anvisa-suspende-fitas-e-monitores-de-glicemia-da-bioland/","Anvisa suspende fitas e monitores de glicemia da Bioland",2026-05-18 21:42:23,1,0,0,6,6,1
+3120,"https://saudicas.com.br/noticias/anvisa-apreende-azeite-de-oliva-afonso-em-todo-o-brasil/","Anvisa apreende azeite de oliva Afonso em todo o Brasil",2026-05-18 21:30:11,1,0,0,5,5,1
+3119,"https://saudicas.com.br/noticias/anvisa-apreende-alecrim-e-mostarda-cepera-em-todo-o-brasil/","Anvisa apreende alecrim e mostarda Cepera em todo o Brasil",2026-05-18 09:41:24,1,0,0,8,8,1
+3118,"https://saudicas.com.br/noticias/anvisa-recolhe-lote-de-dipirona-por-falha-grave-na-composicao/","Anvisa recolhe lote de dipirona por falha grave na composição",2026-05-18 09:36:24,1,0,0,10,10,0
+3115,"https://saudicas.com.br/dicas/avancos-tecnologicos-em-equipamentos-de-diagnostico-por-imagem/","Avanços tecnológicos em equipamentos de diagnóstico por imagem",2026-05-18 08:57:32,1,1,1,17,17,0
+3114,"https://saudicas.com.br/noticias/anvisa-suspende-cafe-camara-por-risco-de-fragmentos-de-vidro/","Anvisa suspende café Câmara por risco de fragmentos de vidro",2026-05-17 21:28:08,1,0,0,6,6,1
+3113,"https://saudicas.com.br/noticias/anvisa-suspende-marcas-de-cafe-por-risco-a-saude-3/","Anvisa suspende marcas de café por risco à saúde",2026-05-17 09:29:09,1,0,0,3,3,1
+3112,"https://saudicas.com.br/noticias/anvisa-confirma-denuncias-da-unilever-contra-ype-antes-de-suspensao/","Anvisa confirma denúncias da Unilever contra Ypê antes de suspensão",2026-05-16 21:27:09,1,0,0,9,9,1
+3111,"https://saudicas.com.br/noticias/anvisa-proibe-venda-de-leite-popular-apos-fraude/","Anvisa proíbe venda de leite popular após fraude",2026-05-16 21:26:09,1,0,0,6,6,1
+3110,"https://saudicas.com.br/noticias/obscore-novo-calculo-pode-substituir-o-imc-e-prever-riscos/","OBSCORE: novo cálculo pode substituir o IMC e prever riscos",2026-05-16 09:37:10,1,0,0,6,6,1
+3109,"https://saudicas.com.br/noticias/anvisa-suspende-marca-de-sabao-em-po-vendida-em-todo-o-brasil/","Anvisa suspende marca de sabão em pó vendida em todo o Brasil",2026-05-16 09:27:10,1,0,0,7,7,1
+3108,"https://saudicas.com.br/noticias/filtro-do-instagram-envelhecendo-sua-saude-mental/","Filtro do Instagram envelhecendo sua saúde mental",2026-05-15 21:32:23,1,0,0,8,8,1
+3107,"https://saudicas.com.br/noticias/ype-inicia-reembolso-de-produtos-suspensos-pela-anvisa/","Ypê inicia reembolso de produtos suspensos pela Anvisa",2026-05-15 21:25:23,1,0,0,6,6,1
+3106,"https://saudicas.com.br/noticias/oms-confirma-cepa-mortal-andes-em-8-de-11-casos-em-cruzeiro/","OMS confirma cepa mortal Andes em 8 de 11 casos em cruzeiro",2026-05-15 09:24:10,1,0,0,9,9,1
+3105,"https://saudicas.com.br/noticias/anvisa-proibe-leite-famoso-apos-fraude-e-acende-alerta/","Anvisa proíbe leite famoso após fraude e acende alerta",2026-05-14 21:38:09,1,0,0,7,7,1
+3104,"https://saudicas.com.br/noticias/florianopolis-o-destino-dos-brasileiros-em-busca-de-qualidade-de-vida-em-2026/","Florianópolis: o destino dos brasileiros em busca de qualidade de vida em 2026",2026-05-14 21:22:10,1,0,0,11,11,0
+3101,"https://saudicas.com.br/saude/doencas-cronicas/","Doenças Crônicas: o que são e por que merecem nossa atenção todos os dias",2026-05-14 11:40:27,1,1,1,35,35,0
+3100,"https://saudicas.com.br/noticias/cientistas-descobrem-mecanismo-que-acelera-queima-de-gordura/","Cientistas descobrem mecanismo que acelera queima de gordura",2026-05-14 09:25:09,1,0,0,11,11,0
+3099,"https://saudicas.com.br/noticias/morte-em-cruzeiro-na-franca-deixa-1-700-confinados/","Morte em cruzeiro na França deixa 1.700 confinados",2026-05-13 21:34:09,1,0,0,13,13,0
+3098,"https://saudicas.com.br/noticias/cerveja-frequente-os-perigos-silenciosos-para-o-intestino/","Cerveja frequente: os perigos silenciosos para o intestino",2026-05-13 21:23:09,1,0,0,10,10,0
+3097,"https://saudicas.com.br/noticias/valdemar-neto-acusa-anvisa-de-prejudicar-a-ype/","Valdemar Neto acusa Anvisa de prejudicar a Ypê",2026-05-13 09:20:23,1,0,0,9,9,1
+3096,"https://saudicas.com.br/noticias/valdemar-acao-da-anvisa-foi-para-acabar-com-a-ype/","Valdemar: ação da Anvisa foi para acabar com a Ypê",2026-05-12 21:40:23,1,0,0,14,14,0
+3095,"https://saudicas.com.br/noticias/aos-60-perde-autonomia-mito-sobre-o-estatuto-do-idoso/","Aos 60; perde autonomia? Mito sobre o Estatuto do Idoso",2026-05-12 21:21:09,1,0,0,10,10,0
+3094,"https://saudicas.com.br/noticias/farmacia-popular-remedios-100-gratuitos-para-brasileiros/","Farmácia Popular: remédios 100% gratuitos para brasileiros",2026-05-12 09:34:24,1,0,0,20,20,0
+3093,"https://saudicas.com.br/noticias/2-exercicios-de-fisioterapeutas-para-acabar-com-a-dor-lombar/","2 exercícios de fisioterapeutas para acabar com a dor lombar",2026-05-12 09:18:11,1,0,0,12,12,0
+3092,"https://saudicas.com.br/noticias/anvisa-apreende-hidratante-facial-sem-registro-sanitario/","Anvisa apreende hidratante facial sem registro sanitário",2026-05-11 21:54:10,1,0,0,7,7,1
+3091,"https://saudicas.com.br/noticias/anjo-rafael-abencoa-4-signos-com-saude-e-protecao/","Anjo Rafael abençoa 4 signos com saúde e proteção",2026-05-11 21:31:23,1,0,0,10,10,0
+3090,"https://saudicas.com.br/noticias/cruzeiro-com-hantavirus-franca-em-alerta-apos-caso-confirmado/","Cruzeiro com hantavírus: França em alerta após caso confirmado",2026-05-11 09:28:09,1,0,0,12,12,0
+3089,"https://saudicas.com.br/noticias/michelle-bolsonaro-apoia-ype-apos-suspensao-da-anvisa/","Michelle Bolsonaro apoia Ypê após suspensão da Anvisa",2026-05-11 09:16:10,1,0,0,9,9,1
+3088,"https://saudicas.com.br/noticias/oleo-de-rosa-mosqueta-reduz-rugas-e-melhora-elasticidade/","Óleo de rosa mosqueta reduz rugas e melhora elasticidade",2026-05-10 21:19:09,1,0,0,8,8,1
+3087,"https://saudicas.com.br/noticias/direito-ao-esquecimento-apagar-o-passado-e-um-ato-de-amor-proprio/","Direito ao Esquecimento: apagar o passado é um ato de amor-próprio",2026-05-10 21:15:09,1,0,0,11,11,0
+3086,"https://saudicas.com.br/noticias/por-que-mosquitos-picam-mais-algumas-pessoas/","Por que mosquitos picam mais algumas pessoas?",2026-05-10 09:26:10,1,0,0,6,6,1
+3085,"https://saudicas.com.br/noticias/psicologia-do-consumo-por-que-compramos-o-que-nao-precisamos-a-noite/","Psicologia do consumo: por que compramos o que não precisamos à noite?",2026-05-10 09:14:10,1,0,0,10,10,0
+3084,"https://saudicas.com.br/noticias/anvisa-proibe-venda-do-cafe-melissa-e-alerta-consumidores/","Anvisa proíbe venda do Café Melissa e alerta consumidores",2026-05-09 21:15:10,1,0,0,6,6,1
+3083,"https://saudicas.com.br/noticias/hantavirus-dos-andes-medicos-revelam-como-ocorre-a-transmissao/","Hantavírus dos Andes: médicos revelam como ocorre a transmissão",2026-05-09 09:25:09,1,0,0,7,7,1
+3082,"https://saudicas.com.br/noticias/estudo-revela-qual-bebida-alcoolica-demora-mais-para-sair-do-corpo/","Estudo revela qual bebida alcoólica demora mais para sair do corpo",2026-05-09 09:24:10,1,0,0,13,13,0
+3081,"https://saudicas.com.br/noticias/5-tendencias-esteticas-que-substituem-os-cilios-posticos/","5 tendências estéticas que substituem os cílios postiços",2026-05-08 21:31:09,1,0,0,8,8,1
+3080,"https://saudicas.com.br/noticias/alimentos-que-turbinam-a-imunidade-e-como-consumi-los/","Alimentos que turbinam a imunidade e como consumi-los",2026-05-08 21:13:09,1,0,0,8,8,1
+3079,"https://saudicas.com.br/noticias/agu-amplia-auxilio-saude-e-inclui-academia-e-sogros/","AGU amplia auxílio-saúde e inclui academia e sogros",2026-05-08 09:13:08,1,0,0,10,10,0
+3078,"https://saudicas.com.br/noticias/anvisa-suspende-venda-de-produtos-ype-veja-lotes/","Anvisa suspende venda de produtos Ypê; veja lotes",2026-05-07 21:20:10,1,0,0,11,11,0
+3077,"https://saudicas.com.br/noticias/anvisa-proibe-hidratante-facial-clareador-sem-registro-no-brasil/","Anvisa proíbe hidratante facial clareador sem registro no Brasil",2026-05-07 21:15:24,1,0,0,8,8,1
+3076,"https://saudicas.com.br/noticias/grey-blending-cobre-brancos-e-rejuvenesce-sem-tintura/","Grey blending cobre brancos e rejuvenesce sem tintura",2026-05-07 09:10:10,1,0,0,7,7,1
+3075,"https://saudicas.com.br/noticias/cepa-andina-de-hantavirus-em-cruzeiro-acende-alerta-global/","Cepa andina de hantavírus em cruzeiro acende alerta global",2026-05-06 21:10:10,1,0,0,9,9,1
+3074,"https://saudicas.com.br/noticias/maquiagem-apos-40-evite-corretivo-craquelado/","Maquiagem após 40: evite corretivo craquelado",2026-05-06 21:07:10,1,0,0,7,7,1
+3073,"https://saudicas.com.br/noticias/skincare-em-3-passos-pele-equilibrada-apos-35-anos/","Skincare em 3 passos: pele equilibrada após 35 anos",2026-05-06 09:17:24,1,0,0,9,9,1
+3072,"https://saudicas.com.br/noticias/camu-camu-60x-mais-vitamina-c-que-a-laranja/","Camu-camu: 60x mais vitamina C que a laranja",2026-05-06 09:07:10,1,0,0,8,8,1
+3071,"https://saudicas.com.br/noticias/sua-pele-digital-detox-contra-envelhecimento-por-luz-azul/","Sua pele digital: detox contra envelhecimento por luz azul",2026-05-05 21:07:23,1,0,0,11,11,0
+3070,"https://saudicas.com.br/noticias/bolsonaro-volta-a-prisao-domiciliar-apos-alta/","Bolsonaro volta à prisão domiciliar após alta",2026-05-05 09:06:10,1,0,0,6,6,1
+3069,"https://saudicas.com.br/noticias/bolsonaro-tem-boa-recuperacao-apos-cirurgia-no-ombro/","Bolsonaro tem boa recuperação após cirurgia no ombro",2026-05-05 09:04:10,1,0,0,10,10,0
+3068,"https://saudicas.com.br/noticias/anvisa-apreende-fuba-alemao-por-irregularidades/","Anvisa apreende fubá Alemão por irregularidades",2026-05-04 21:19:23,1.1,0,0,7,6.36,1
+3067,"https://saudicas.com.br/noticias/florianopolis-atrai-quem-busca-seguranca-e-qualidade-apos-50/","Florianópolis atrai quem busca segurança e qualidade após 50",2026-05-04 21:15:24,1.1,0,0,10,9.09,1
+3066,"https://saudicas.com.br/noticias/governo-lula-atraso-na-coronavac-causa-prejuizo-de-r260-mi/","Governo Lula: atraso na Coronavac causa prejuízo de R$260 mi",2026-05-04 09:17:23,1.1,0,0,9,8.18,1
+3065,"https://saudicas.com.br/noticias/anvisa-suspende-leite-e-soro-natville-por-falhas/","Anvisa suspende leite e soro Natville por falhas",2026-05-04 09:08:22,1.1,0,0,9,8.18,1
+3064,"https://saudicas.com.br/noticias/aspirina-com-glicerina-o-truque-para-pes-hidratados/","Aspirina com glicerina: o truque para pés hidratados",2026-05-03 21:01:17,1.1,0,0,10,9.09,1
+3063,"https://saudicas.com.br/noticias/anvisa-proibe-leite-de-marca-popular-por-fraude/","Anvisa proíbe leite de marca popular por fraude",2026-05-02 20:59:09,1.1,0,0,8,7.27,1
+3062,"https://saudicas.com.br/noticias/anvisa-suspende-marcas-de-cafe-por-risco-a-saude-2/","Anvisa suspende marcas de café por risco à saúde",2026-05-02 09:00:11,1.1,0,0,7,6.36,1
+3061,"https://saudicas.com.br/noticias/skin-clutter-tecnica-de-1-minuto-limpa-poros-sem-esfoliar/","Skin-Clutter: técnica de 1 minuto limpa poros sem esfoliar",2026-05-02 08:59:09,1.1,0,0,7,6.36,1
+3060,"https://saudicas.com.br/noticias/insuficiencia-cardiaca-sinais-e-fatores-de-risco/","Insuficiência cardíaca: sinais e fatores de risco",2026-05-01 21:08:11,1.2,0,0,8,6.67,1
+3059,"https://saudicas.com.br/noticias/bolsa-familia-2026-novas-regras-evitam-suspensao-do-beneficio/","Bolsa Família 2026: novas regras evitam suspensão do benefício",2026-05-01 20:58:11,1.2,0,0,6,5,1
+3058,"https://saudicas.com.br/noticias/governo-lula-e-denunciado-nos-eua-por-trafico-de-medicos/","Governo Lula é denunciado nos EUA por 'tráfico de médicos",2026-05-01 09:08:10,1.2,0,0,6,5,1
+3057,"https://saudicas.com.br/noticias/marido-de-claudia-raia-revela-andropausa-sinais-e-idade/","Marido de Claudia Raia revela andropausa: sinais e idade",2026-05-01 08:57:11,1.2,0,0,5,4.17,1
+3056,"https://saudicas.com.br/noticias/indecisao-constante-pode-ser-sinal-de-burnout-silencioso/","Indecisão constante pode ser sinal de burnout silencioso",2026-04-30 20:36:10,1.2,0,0,7,5.83,1
+3055,"https://saudicas.com.br/noticias/luto-das-pequenas-coisas-acolha-mudancas-e-volte-a-sentir-paz/","Luto das Pequenas Coisas: acolha mudanças e volte a sentir paz",2026-04-30 20:23:10,1.2,0,0,9,7.5,1
+3054,"https://saudicas.com.br/noticias/tecnica-de-5-minutos-alivia-cansaco-da-alma/","Técnica de 5 minutos alivia cansaço da alma",2026-04-30 08:13:11,1.2,0,0,10,8.33,1
+3053,"https://saudicas.com.br/noticias/anvisa-suspende-marca-de-cafe-popular-devido-a-riscos-a-saude/","Anvisa suspende marca de café popular devido a riscos à saúde",2026-04-29 20:48:10,1.2,0,0,7,5.83,1
+3052,"https://saudicas.com.br/noticias/estudos-falta-de-limites-no-trabalho-gera-cansaco-sem-esforco/","Estudos: falta de limites no trabalho gera cansaço sem esforço",2026-04-29 08:22:22,1.2,0,0,13,10.83,0
+3051,"https://saudicas.com.br/noticias/elimine-moscas-em-casa-sem-pesticidas-segredo-natural/","Elimine moscas em casa sem pesticidas: segredo natural",2026-04-28 08:09:11,1.3,0,0,11,8.46,1
+3050,"https://saudicas.com.br/noticias/alisante-my-horizon-proibido-pela-anvisa-risco-ao-cabelo-e-saude/","Alisante My Horizon proibido pela Anvisa: risco ao cabelo e saúde",2026-04-27 20:58:24,1.3,0,0,14,10.77,0
+3049,"https://saudicas.com.br/noticias/qualidade-de-vida-impulsiona-migracao-para-florianopolis/","Qualidade de vida impulsiona migração para Florianópolis",2026-04-27 20:49:10,1.3,0,0,11,8.46,1
+3046,"https://saudicas.com.br/beleza/o-ativo-antienvelhecimento-que-pode-transformar-a-sua-pele/","O Ativo Antienvelhecimento Que Pode Transformar a Sua Pele",2026-04-27 16:07:48,1.3,1,1,37,28.46,0
+3044,"https://saudicas.com.br/noticias/anvisa-apreende-lote-falso-de-mounjaro-e-botox/","Anvisa apreende lote falso de Mounjaro e botox",2026-04-27 08:21:10,1.3,0,0,15,11.54,0
+3043,"https://saudicas.com.br/noticias/anvisa-suspende-marcas-de-cafe-por-riscos-a-saude/","Anvisa suspende marcas de café por riscos à saúde",2026-04-27 08:07:10,1.3,0,0,9,6.92,1
+3042,"https://saudicas.com.br/noticias/fraude-em-leite-anvisa-suspende-marca-popular-e-alerta/","Fraude em leite: Anvisa suspende marca popular e alerta",2026-04-26 20:16:10,1.3,0,0,11,8.46,1
+3041,"https://saudicas.com.br/noticias/anvisa-recolhe-e-suspende-azeite-afonso-em-supermercados/","Anvisa recolhe e suspende azeite Afonso em supermercados",2026-04-26 08:47:09,1.3,0,0,10,7.69,1
+3040,"https://saudicas.com.br/noticias/novo-estudo-horario-do-cafe-importa-mais-que-quantidade/","Novo estudo: horário do café importa mais que quantidade?",2026-04-26 08:06:08,1.3,0,0,12,9.23,1
+3039,"https://saudicas.com.br/noticias/menopausa-emocional-como-lidar-com-a-raiva-repentina/","Menopausa emocional: como lidar com a raiva repentina",2026-04-25 20:23:11,1.4,0,0,12,8.57,1
+3038,"https://saudicas.com.br/noticias/oleo-de-alecrim-na-nuca-segredo-para-cabelo-e-sono-em-3-min/","Óleo de alecrim na nuca: segredo para cabelo e sono em 3 min",2026-04-25 20:12:11,1.4,0,0,13,9.29,1
+3037,"https://saudicas.com.br/noticias/lula-passa-por-procedimentos-no-hospital-sirio-libanes/","Lula passa por procedimentos no Hospital Sírio-Libanês",2026-04-24 20:10:10,1.4,0,0,12,8.57,1
+3036,"https://saudicas.com.br/noticias/erros-na-academia-que-afetam-a-saude-sexual-masculina/","Erros na academia que afetam a saúde sexual masculina",2026-04-24 08:01:24,1.4,0,0,11,7.86,1
+3035,"https://saudicas.com.br/noticias/pf-confirma-daniel-vorcaro-vai-a-hospital-para-exames/","PF confirma: Daniel Vorcaro vai a hospital para exames",2026-04-23 20:08:09,1.4,0,0,9,6.43,1
+3034,"https://saudicas.com.br/noticias/grisalhas-maquiagem-com-truques-de-cor-poderosos/","Grisalhas: maquiagem com truques de cor poderosos",2026-04-23 07:59:09,1.4,0,0,6,4.29,1
+3033,"https://saudicas.com.br/noticias/burnout-invisivel-no-trabalho/","Burnout invisível no trabalho",2026-04-22 20:53:10,1.5,0,0,12,8,1
+3032,"https://saudicas.com.br/noticias/aposentado-constroi-barco-gigante-no-quintal-com-motor-de-onibus/","Aposentado constrói barco gigante no quintal com motor de ônibus",2026-04-22 20:14:10,1.5,0,0,10,6.67,1
+3031,"https://saudicas.com.br/noticias/detox-mental-guia-para-silenciar-a-cobranca-em-5-minutos/","Detox mental: guia para silenciar a cobrança em 5 minutos",2026-04-22 08:28:10,1.5,0,0,11,7.33,1
+3030,"https://saudicas.com.br/noticias/micro-alegrias-truque-emocional-para-melhorar-o-sono/","Micro-alegrias: truque emocional para melhorar o sono",2026-04-22 08:01:11,1.5,0,0,9,6,1
+3029,"https://saudicas.com.br/noticias/fortalecer-as-pernas-apos-os-50-melhora-a-saude/","Fortalecer as pernas após os 50 melhora a saúde",2026-04-21 20:31:10,1.5,0,0,7,4.67,1
+3028,"https://saudicas.com.br/noticias/fome-de-silencio-salva-saude-mental/","Fome de silêncio salva saúde mental",2026-04-21 20:08:11,1.5,0,0,10,6.67,1
+3027,"https://saudicas.com.br/noticias/apos-os-50-exercicios-leves-protegem-o-coracao/","Após os 50: exercícios leves protegem o coração",2026-04-21 08:27:11,1.5,0,0,8,5.33,1
+3026,"https://saudicas.com.br/noticias/novo-remedio-para-alzheimer-custa-r-11-mil-no-brasil/","Novo remédio para Alzheimer custa R$ 11 mil no Brasil",2026-04-21 07:58:10,1.5,0,0,8,5.33,1
+3025,"https://saudicas.com.br/noticias/anvisa-recolhe-mostarda-e-alecrim-com-insetos-e-fraude/","Anvisa recolhe mostarda e alecrim com insetos e fraude",2026-04-20 20:32:11,1.5,0,0,10,6.67,1
+3024,"https://saudicas.com.br/noticias/bicarbonato-e-calor-eliminam-acaros-do-colchao/","Bicarbonato e calor eliminam ácaros do colchão",2026-04-20 20:17:09,1.5,0,0,6,4,1
+3023,"https://saudicas.com.br/noticias/anvisa-proibe-fitoterapicos-irregulares-online/","Anvisa proíbe fitoterápicos irregulares online",2026-04-20 08:06:10,1.5,0,0,9,6,1
+3022,"https://saudicas.com.br/noticias/anvisa-proibe-venda-de-canabidiol-na-enjoei/","Anvisa proíbe venda de canabidiol na Enjoei",2026-04-20 07:53:10,1.5,0,0,7,4.67,1
+3021,"https://saudicas.com.br/noticias/micro-alegrias-o-segredo-para-mais-bem-estar/","Micro-alegrias: o segredo para mais bem-estar",2026-04-19 20:25:11,1.6,0,0,9,5.63,1
+3020,"https://saudicas.com.br/noticias/bolsa-familia-desvende-regras-do-beneficio-primeira-infancia/","Bolsa Família: desvende regras do Benefício Primeira Infância",2026-04-19 19:53:10,1.6,0,0,11,6.88,1
+3019,"https://saudicas.com.br/noticias/dinamarca-eleva-aposentadoria-para-70-anos-em-2040/","Dinamarca eleva aposentadoria para 70 anos em 2040",2026-04-19 07:51:10,1.6,0,0,11,6.88,1
+3018,"https://saudicas.com.br/noticias/perfumes-nacionais-que-duram-no-calor/","Perfumes nacionais que duram no calor",2026-04-18 20:05:12,1.6,0,0,12,7.5,1
+3017,"https://saudicas.com.br/noticias/anvisa-recolhe-azeite-afonso-em-supermercados/","Anvisa recolhe azeite Afonso em supermercados",2026-04-18 20:01:11,1.6,0,0,10,6.25,1
+3016,"https://saudicas.com.br/noticias/agua-de-arroz-segredo-de-beleza-para-a-pele/","Água de arroz: segredo de beleza para a pele",2026-04-18 08:09:10,1.6,0,0,9,5.63,1
+3015,"https://saudicas.com.br/noticias/descanso-sem-perfeicao-aceite-ser-imperfeita/","Descanso sem perfeição: aceite ser imperfeita",2026-04-18 07:49:22,1.6,0,0,11,6.88,1
+3014,"https://saudicas.com.br/noticias/como-dizer-nao-melhora-pele-e-reduz-estresse/","Como dizer 'não' melhora pele e reduz estresse",2026-04-17 19:59:10,1.6,0,0,14,8.75,1
+3013,"https://saudicas.com.br/noticias/3-exercicios-para-eliminar-gordura-abdominal-e-cuidar-do-coracao/","3 exercícios para eliminar gordura abdominal e cuidar do coração",2026-04-17 19:47:09,1.6,0,0,11,6.88,1
+3010,"https://saudicas.com.br/dicas/como-a-massagem-em-campinas-transforma-o-autocuidado-e-promove-relaxamento-profundo/","Como a massagem em Campinas transforma o autocuidado e promove relaxamento profundo?",2026-04-17 18:55:49,1.6,1,1,44,27.5,0
+3008,"https://saudicas.com.br/noticias/hospital-metropolitano-do-rn-recebe-r-200-mi-em-investimento/","Hospital Metropolitano do RN recebe R$ 200 mi em investimento",2026-04-15 19:05:09,1.7,0,0,17,10,0
+3007,"https://saudicas.com.br/noticias/anvisa-proibe-suplementos-capsul-brasil-em-todo-o-pais/","Anvisa proíbe suplementos Capsul Brasil em todo o país",2026-04-15 07:04:23,1.7,0,0,27,15.88,0
+3006,"https://saudicas.com.br/noticias/banho-quente-resseca-a-pele/","Banho quente resseca a pele",2026-04-15 07:04:11,1.7,0,0,23,13.53,0
+3005,"https://saudicas.com.br/noticias/anvisa-apreende-agua-oxigenada-e-gloss-por-falsas-promessas/","Anvisa apreende água oxigenada e gloss por falsas promessas",2026-04-14 07:03:11,1.7,0,0,16,9.41,1
+3004,"https://saudicas.com.br/noticias/vitamina-d-pode-reduzir-proteinas-do-alzheimer/","Vitamina D pode reduzir proteínas do Alzheimer",2026-04-13 19:01:23,1.8,0,0,11,6.11,1
+3003,"https://saudicas.com.br/noticias/anvisa-retira-mostarda-e-alecrim-com-insetos/","Anvisa retira mostarda e alecrim com insetos",2026-04-13 19:01:09,1.8,0,0,13,7.22,1
+3002,"https://saudicas.com.br/noticias/anvisa-recolhe-dipirona-por-falha-na-qualidade/","Anvisa recolhe dipirona por falha na qualidade",2026-04-13 07:01:09,1.8,0,0,29,16.11,0
+3001,"https://saudicas.com.br/noticias/anvisa-recolhe-azeite-irregular-em-supermercados/","Anvisa recolhe azeite irregular em supermercados",2026-04-13 07:00:10,1.8,0,0,28,15.56,0
+3000,"https://saudicas.com.br/noticias/acido-hialuronico-hidratacao-profunda-e-suaviza-linhas/","Ácido Hialurônico: Hidratação Profunda e Suaviza Linhas",2026-04-12 19:02:03,1.8,0,0,34,18.89,0
+2999,"https://saudicas.com.br/noticias/anvisa-suspende-marca-por-fraude-no-leite/","Anvisa suspende marca por fraude no leite",2026-04-12 19:00:04,1.8,0,0,36,20,0
+2998,"https://saudicas.com.br/noticias/luto-adiado-afeta-saude-das-mulheres/","Luto adiado afeta saúde das mulheres",2026-04-12 06:58:02,1.8,0,0,30,16.67,0
+2997,"https://saudicas.com.br/noticias/florianopolis-atrai-brasileiros-com-qualidade-de-vida/","Florianópolis atrai brasileiros com qualidade de vida",2026-04-12 06:58:02,1.8,0,0,29,16.11,0
+2996,"https://saudicas.com.br/noticias/controle-natural-de-pragas-para-uma-jardinagem-sustentavel/","Controle natural de pragas para uma jardinagem sustentável",2026-04-11 18:57:03,1.8,0,0,15,8.33,1
+2995,"https://saudicas.com.br/noticias/sinal-do-esgotamento-mental-tudo-vira-obrigacao/","Sinal do esgotamento mental: tudo vira obrigação",2026-04-11 18:57:03,1.8,0,0,26,14.44,0
+2994,"https://saudicas.com.br/noticias/anvisa-proibe-leite-de-marca/","Anvisa proíbe leite de marca",2026-04-11 06:56:03,1.8,0,0,31,17.22,0
+2993,"https://saudicas.com.br/noticias/anvisa-suspende-marcas-de-cafe-por-risco-a-saude/","Anvisa suspende marcas de café por risco à saúde",2026-04-11 06:56:02,1.8,0,0,7,3.89,1
+2992,"https://saudicas.com.br/noticias/zelensky-aceita-cessar-fogo-de-putin-na-pascoa/","Zelensky aceita cessar-fogo de Putin na Páscoa",2026-04-10 18:55:04,1.9,0,0,4,2.11,1
+2991,"https://saudicas.com.br/noticias/batom-lifting-renova-labios-50/","Batom lifting renova lábios 50+",2026-04-10 18:55:03,1.9,0,0,6,3.16,1
+2990,"https://saudicas.com.br/noticias/cansaco-excessivo-pode-ser-estresse-emocional/","Cansaço excessivo pode ser estresse emocional",2026-04-10 06:54:03,1.9,0,0,5,2.63,1
+2989,"https://saudicas.com.br/noticias/produtividade-cai-quando-mais-precisa-psicologia-explica/","Produtividade cai quando mais precisa: psicologia explica",2026-04-10 06:54:03,1.9,0,0,4,2.11,1
+2988,"https://saudicas.com.br/noticias/alimentos-que-danificam-o-esmalte-dentario/","Alimentos que danificam o esmalte dentário",2026-04-09 18:53:03,1.9,0,0,4,2.11,1
+2987,"https://saudicas.com.br/noticias/skincare-noturno-drenagem-e-hidratacao-revigoram-rosto/","Skincare Noturno: Drenagem e Hidratação Revigoram Rosto",2026-04-09 06:52:03,1.9,0,0,5,2.63,1
+2986,"https://saudicas.com.br/noticias/dinamarca-eleva-aposentadoria-para-70-anos/","Dinamarca eleva aposentadoria para 70 anos",2026-04-08 18:51:03,1.9,0,0,4,2.11,1
+2985,"https://saudicas.com.br/noticias/erros-que-roubam-o-brilho-da-pele-aos-40/","Erros que roubam o brilho da pele aos 40",2026-04-08 18:51:03,1.9,0,0,5,2.63,1
+2984,"https://saudicas.com.br/noticias/aposentadoria-2026-103-pontos-e-20-anos-de-contribuicao/","Aposentadoria 2026: 103 pontos e 20 anos de contribuição",2026-04-08 06:50:04,1.9,0,0,3,1.58,1
+2983,"https://saudicas.com.br/noticias/harvard-revela-exercicios-caseiros-para-saude/","Harvard revela exercícios caseiros para saúde",2026-04-08 06:50:04,1.9,0,0,4,2.11,1
+2982,"https://saudicas.com.br/noticias/anvisa-recolhe-azeites-irregulares-de-6-marcas/","Anvisa recolhe azeites irregulares de 6 marcas",2026-04-07 18:49:03,2,0,0,5,2.5,1
+2981,"https://saudicas.com.br/noticias/anvisa-recolhe-sal-por-risco-a-saude/","Anvisa recolhe sal por risco à saúde",2026-04-07 18:49:03,2,0,0,6,3,1
+2980,"https://saudicas.com.br/noticias/anvisa-proibe-alimentos-naturais-e-recolhe-azeite/","Anvisa proíbe alimentos naturais e recolhe azeite",2026-04-07 06:48:03,2,0,0,4,2,1
+2979,"https://saudicas.com.br/noticias/5-plantas-para-afastar-carrapatos-do-quintal/","5 plantas para afastar carrapatos do quintal",2026-04-07 06:48:03,2,0,0,3,1.5,1
+2978,"https://saudicas.com.br/noticias/caminhada-em-jejum-emagrece-a-barriga-mito-ou-verdade/","Caminhada em jejum emagrece a barriga? Mito ou verdade?",2026-04-06 18:47:03,2,0,0,1,0.5,1
+2977,"https://saudicas.com.br/noticias/revolucao-contra-cabelos-grisalhos/","Revolução contra cabelos grisalhos",2026-04-06 18:47:03,2,0,0,1,0.5,1
+2976,"https://saudicas.com.br/noticias/mobilidade-apos-os-50-exercicios-simples-melhoram-a-caminhada/","Mobilidade após os 50: exercícios simples melhoram a caminhada",2026-04-06 06:46:04,2,0,0,2,1,1
+2975,"https://saudicas.com.br/noticias/anvisa-suspende-30-dispositivos-medicos-afeta-insulina/","Anvisa suspende 30 dispositivos médicos; afeta insulina",2026-04-06 06:46:04,2,0,0,4,2,1
+2974,"https://saudicas.com.br/noticias/anvisa-reprova-4-produtos-por-excesso-de-conservantes/","Anvisa reprova 4 produtos por excesso de conservantes",2026-04-05 18:45:04,2,0,0,1,0.5,1
+2973,"https://saudicas.com.br/noticias/caes-que-vivem-mais-racas-segundo-especialistas/","Cães que vivem mais: raças segundo especialistas",2026-04-05 18:45:03,2,0,0,4,2,1
+2972,"https://saudicas.com.br/noticias/anvisa-proibe-phebo-alecrim-por-contaminacao/","Anvisa proíbe Phebo Alecrim por contaminação",2026-04-05 06:44:03,2,0,0,1,0.5,1
+2971,"https://saudicas.com.br/noticias/coloracao-sem-amonia-cobre-fios-brancos-com-brilho/","Coloração sem amônia cobre fios brancos com brilho",2026-04-05 06:44:03,2,0,0,1,0.5,1
+2970,"https://saudicas.com.br/noticias/anvisa-proibe-cafe-por-fungos-e-irregularidades/","Anvisa proíbe café por fungos e irregularidades",2026-04-04 18:43:02,2.1,0,0,1,0.48,1
+2969,"https://saudicas.com.br/noticias/anvisa-proibe-leite-com-fraude-e-alerta-brasil/","Anvisa proíbe leite com fraude e alerta Brasil",2026-04-04 18:43:02,2.1,0,0,4,1.9,1
+2968,"https://saudicas.com.br/noticias/anvisa-recolhe-azeite-com-fraude-em-mercados/","Anvisa recolhe azeite com fraude em mercados",2026-04-04 06:43:04,2.1,0,0,1,0.48,1
+2967,"https://saudicas.com.br/noticias/agachamento-bulgaro-o-segredo-contra-flacidez/","Agachamento búlgaro: o segredo contra flacidez",2026-04-04 06:42:03,2.1,0,0,1,0.48,1
+2966,"https://saudicas.com.br/noticias/anvisa-proibe-suplemento-rosabella-moringa-por-salmonella/","Anvisa proíbe suplemento Rosabella Moringa por Salmonella",2026-04-03 18:41:04,2.1,0,0,1,0.48,1
+2965,"https://saudicas.com.br/noticias/anvisa-aprova-anticorpo-contra-vsr-e-tratamento-para-artrite/","Anvisa aprova anticorpo contra VSR e tratamento para artrite",2026-04-03 18:41:04,2.1,0,0,1,0.48,1
+2964,"https://saudicas.com.br/noticias/anvisa-proibe-tinta-e-maquina-de-tatuagem/","Anvisa proíbe tinta e máquina de tatuagem",2026-04-03 06:40:03,2.1,0,0,3,1.43,1
+2963,"https://saudicas.com.br/noticias/revitalize-cabelos-grisalhos-com-vinagre-e-bicarbonato/","Revitalize cabelos grisalhos com vinagre e bicarbonato",2026-04-03 06:40:03,2.1,0,0,2,0.95,1
+2962,"https://saudicas.com.br/noticias/ar-condicionado-a-noite-conta-de-luz-sobe/","Ar-condicionado à noite: conta de luz sobe",2026-04-02 18:39:04,2.1,0,0,3,1.43,1
+2961,"https://saudicas.com.br/noticias/lula-comete-novo-deslize-em-discurso-no-ceara/","Lula comete novo deslize em discurso no Ceará",2026-04-02 18:39:04,2.1,0,0,1,0.48,1
+2960,"https://saudicas.com.br/noticias/4-tinturas-sem-amonia-para-cabelos-fortes-em-2026/","4 tinturas sem amônia para cabelos fortes em 2026",2026-04-02 06:38:04,2.1,0,0,3,1.43,1
+2959,"https://saudicas.com.br/noticias/anvisa-alerta-para-risco-hepatico-em-suplementos-de-curcuma/","Anvisa alerta para risco hepático em suplementos de cúrcuma",2026-04-02 06:38:04,2.1,0,0,3,1.43,1
+2958,"https://saudicas.com.br/noticias/vitima-de-transplante-com-hiv-morre-no-rj/","Vítima de transplante com HIV morre no RJ",2026-04-01 18:37:03,2.2,0,0,1,0.45,1
+2957,"https://saudicas.com.br/noticias/anvisa-proibe-venda-de-produtos-de-limpeza-irregulares/","Anvisa proíbe venda de produtos de limpeza irregulares",2026-04-01 18:37:03,2.2,0,0,1,0.45,1
+2954,"https://saudicas.com.br/saude/como-acabar-com-a-sede-excessiva/","Como acabar com a sede excessiva: ações práticas",2026-04-01 17:44:28,2.2,1,0,23,10.45,0
+2948,"https://saudicas.com.br/alimentacao/tabela-de-carboidratos-para-emagrecer/","Tabela de carboidratos para emagrecer: lista completa",2026-04-01 17:38:35,2.2,1,0,21,9.55,0
+2945,"https://saudicas.com.br/beleza/bioestimulador-de-colageno-funciona/","Bioestimulador de colágeno funciona: resultados e duração",2026-04-01 17:34:10,2.2,1,0,15,6.82,0
+2942,"https://saudicas.com.br/dicas/omega-3-ajuda-na-ansiedade/","Ômega 3 ajuda na ansiedade: o que se sabe até agora",2026-04-01 17:26:16,2.2,1,0,29,13.18,0
+2939,"https://saudicas.com.br/dicas/tomar-remedio-para-dormir-faz-mal/","Tomar remédio para dormir faz mal: quando se preocupar",2026-04-01 17:15:20,2.2,1,0,24,10.91,0
+2938,"https://saudicas.com.br/noticias/componente-de-medicamento-brasileiro-banido-em-cosmetico-portugues/","Componente de medicamento brasileiro banido em cosmético português",2026-04-01 06:37:03,2.2,0,0,1,0.45,1
+2937,"https://saudicas.com.br/noticias/fios-fortes-corte-a-cada-8-semanas-para-mulheres-maduras/","Fios Fortes: Corte a Cada 8 Semanas para Mulheres Maduras",2026-04-01 06:36:03,2.2,0,0,1,0.45,1
+2936,"https://saudicas.com.br/noticias/anvisa-interdita-empresa-de-suplementos-irregular-na-pb/","Anvisa interdita empresa de suplementos irregular na PB",2026-03-31 18:36:03,2.2,0,0,1,0.45,1
+2935,"https://saudicas.com.br/noticias/babosa-e-mel-receita-para-cabelos-apos-40/","Babosa e mel: receita para cabelos após 40",2026-03-31 18:35:04,2.2,0,0,3,1.36,1
+2932,"https://saudicas.com.br/dicas/doencas-que-afetam-o-crescimento-infantil/","Doenças que afetam o crescimento infantil",2026-03-31 14:21:29,2.2,1,0,10,4.55,0
+2929,"https://saudicas.com.br/saude/quem-usa-diu-pode-tomar-anticoncepcional/","Quem usa DIU pode tomar anticoncepcional?",2026-03-31 14:15:20,2.2,1,0,25,11.36,0
+2926,"https://saudicas.com.br/saude/quanto-custa-a-vacina-da-bronquiolite/","Quanto custa a vacina da bronquiolite: preço atualizado",2026-03-31 14:09:04,2.2,1,0,77,35,0
+2923,"https://saudicas.com.br/saude/quem-ja-teve-catapora-pega-de-novo/","Quem já teve catapora pega de novo? Descubra agora",2026-03-31 11:52:00,2.2,1,0,25,11.36,0
+2920,"https://saudicas.com.br/saude/cerveja-faz-mal-para-o-colesterol/","Cerveja faz mal para o colesterol: entenda os efeitos",2026-03-31 11:47:47,2.2,1,0,9,4.09,0
+2919,"https://saudicas.com.br/noticias/anvisa-proibe-500-cosmeticos-perigosos-para-unhas/","Anvisa proíbe 500 cosméticos perigosos para unhas",2026-03-31 06:35:04,2.2,0,0,3,1.36,1
+2918,"https://saudicas.com.br/noticias/anvisa-suspende-lotes-com-riscos-a-saude/","Anvisa suspende lotes com riscos à saúde",2026-03-31 06:34:02,2.2,0,0,3,1.36,1
+2916,"https://saudicas.com.br/noticias/vinagre-na-porta-protege-casa-de-insetos/","Vinagre na porta protege casa de insetos",2026-03-30 18:34:03,2.2,0,0,3,1.36,1
+2915,"https://saudicas.com.br/noticias/aumento-da-aposentadoria-x-doencas-apos-55-anos/","Aumento da aposentadoria x doenças após 55 anos",2026-03-30 18:33:03,2.2,0,0,1,0.45,1
+2912,"https://saudicas.com.br/dicas/como-aliviar-tensao-no-pescoco-e-ombros/","Como aliviar tensão no pescoço e ombros",2026-03-30 10:56:45,2.2,1,0,19,8.64,0
+2909,"https://saudicas.com.br/dietas/dificuldade-para-emagrecer-mesmo-fazendo-dieta/","Dificuldade para emagrecer mesmo fazendo dieta: o que pode ser?",2026-03-30 10:52:18,2.2,1,0,11,5,0
+2906,"https://saudicas.com.br/saude/azia-constante-e-arrotos/","Azia constante e arrotos: causas e tratamento",2026-03-30 10:46:43,2.2,1,0,20,9.09,0
+2903,"https://saudicas.com.br/alimentacao/dieta-para-disbiose-intestinal/","Dieta para disbiose intestinal: o que comer",2026-03-30 10:42:04,2.2,1,0,63,28.64,0
+2900,"https://saudicas.com.br/saude/o-que-e-sindrome-do-pensamento-acelerado/","O que é síndrome do pensamento acelerado: como identificar",2026-03-30 10:14:47,2.2,1,0,10,4.55,0
+2899,"https://saudicas.com.br/noticias/anvisa-proibe-produtos-de-limpeza-irregulares/","Anvisa proíbe produtos de limpeza irregulares",2026-03-30 06:33:04,2.2,0,0,4,1.82,1
+2898,"https://saudicas.com.br/noticias/anvisa-proibe-skinoren-e-azelan-na-shopee/","Anvisa proíbe Skinoren e Azelan na Shopee",2026-03-30 06:32:03,2.2,0,0,1,0.45,1
+2897,"https://saudicas.com.br/noticias/brasileiros-migram-para-o-nordeste-por-qualidade-de-vida/","Brasileiros migram para o Nordeste por qualidade de vida",2026-03-29 18:32:03,2.3,0,0,1,0.43,1
+2896,"https://saudicas.com.br/noticias/anvisa-determina-recolhimento-de-78-cosmeticos-irregulares/","Anvisa determina recolhimento de 78 cosméticos irregulares",2026-03-29 18:31:04,2.3,0,0,1,0.43,1
+2895,"https://saudicas.com.br/noticias/anvisa-retira-azeites-serrano-e-cordilheira/","Anvisa retira azeites Serrano e Cordilheira",2026-03-29 06:30:04,2.3,0,0,2,0.87,1
+2894,"https://saudicas.com.br/noticias/florianopolis-atrai-brasileiros-em-busca-de-qualidade-de-vida/","Florianópolis atrai brasileiros em busca de qualidade de vida",2026-03-29 06:30:04,2.3,0,0,3,1.3,1
+2893,"https://saudicas.com.br/noticias/anvisa-recolhe-leite-condensado-contaminado/","Anvisa recolhe leite condensado contaminado",2026-03-28 18:29:03,2.3,0,0,1,0.43,1
+2892,"https://saudicas.com.br/noticias/3-cidades-ideais-para-viver-perto-de-florianopolis/","3 cidades ideais para viver perto de Florianópolis",2026-03-28 18:29:03,2.3,0,0,3,1.3,1
+2891,"https://saudicas.com.br/noticias/anvisa-proibe-cosmeticos-perigosos-para-unhas/","Anvisa proíbe cosméticos perigosos para unhas",2026-03-28 06:29:03,2.3,0,0,2,0.87,1
+2890,"https://saudicas.com.br/noticias/5-plantas-que-espantam-mosquitos-em-casa/","5 plantas que espantam mosquitos em casa",2026-03-28 06:28:04,2.3,0,0,1,0.43,1
+2889,"https://saudicas.com.br/noticias/anvisa-suspende-sabonete-liquido-sem-registro/","Anvisa suspende sabonete líquido sem registro",2026-03-27 18:28:02,2.3,0,0,3,1.3,1
+2888,"https://saudicas.com.br/noticias/anvisa-recolhe-azeite-e-proibe-alimentos-por-fraude/","Anvisa recolhe azeite e proíbe alimentos por fraude",2026-03-27 18:27:04,2.3,0,0,2,0.87,1
+2885,"https://saudicas.com.br/dicas/remedio-caseiro-para-clarear-unhas-escuras-dos-pes/","Remédio caseiro para clarear unhas escuras dos pés",2026-03-27 09:17:51,2.3,1,0,8,3.48,0
+2882,"https://saudicas.com.br/beleza/alopecia-na-barba-tem-cura/","Alopecia na barba tem cura: o que esperar do tratamento",2026-03-27 09:11:31,2.3,1,0,9,3.91,0
+2879,"https://saudicas.com.br/saude/valor-de-uma-cirurgia-de-esporao/","Valor de uma cirurgia de esporão: o que influencia o preço",2026-03-27 09:06:20,2.3,1,0,14,6.09,0
+2876,"https://saudicas.com.br/dicas/como-correr-mais-rapido-e-cansar-menos/","Como correr mais rápido e cansar menos: dicas práticas",2026-03-27 08:59:11,2.3,1,0,8,3.48,0
+2873,"https://saudicas.com.br/alimentacao/arroz-branco-ou-integral-para-ganhar-massa-muscular/","Arroz branco ou integral para ganhar massa muscular?",2026-03-27 08:53:50,2.3,1,0,18,7.83,0
+2872,"https://saudicas.com.br/noticias/anvisa-retira-azeites-do-mercado/","Anvisa retira azeites do mercado",2026-03-27 06:43:03,2.3,0,0,1,0.43,1
+2871,"https://saudicas.com.br/noticias/quimica-no-cabelo-danifica-fios-4x-alerta-usp/","Química no cabelo danifica fios 4x; alerta USP",2026-03-27 06:27:04,2.3,0,0,1,0.43,1
+2870,"https://saudicas.com.br/noticias/anvisa-recolhe-cha-de-camomila-infestado-por-larvas/","Anvisa recolhe chá de camomila infestado por larvas",2026-03-26 18:26:03,2.4,0,0,1,0.42,1
+2869,"https://saudicas.com.br/noticias/mudanca-na-voz-de-bolsonaro-preocupa-aliados/","Mudança na voz de Bolsonaro preocupa aliados",2026-03-26 18:25:03,2.4,0,0,2,0.83,1
+2868,"https://saudicas.com.br/noticias/anvisa-apreende-produtos-capilares-irregulares/","Anvisa apreende produtos capilares irregulares",2026-03-26 06:25:03,2.4,0,0,1,0.42,1
+2867,"https://saudicas.com.br/noticias/uso-de-vape-entre-adolescentes-dispara/","Uso de vape entre adolescentes dispara",2026-03-26 06:24:03,2.4,0,0,1,0.42,1
+2866,"https://saudicas.com.br/noticias/anvisa-proibe-molho-com-vidro-e-suplementos-irregulares/","Anvisa proíbe molho com vidro e suplementos irregulares",2026-03-25 18:24:05,2.4,0,0,1,0.42,1
+2865,"https://saudicas.com.br/noticias/anvisa-apreende-13-mi-de-produtos-irregulares-em-sc/","Anvisa apreende 1;3 mi de produtos irregulares em SC",2026-03-25 18:23:03,2.4,0,0,1,0.42,1
+2864,"https://saudicas.com.br/noticias/anvisa-alerta-sobre-suplementos-comprados-online/","Anvisa alerta sobre suplementos comprados online",2026-03-25 06:23:02,2.4,0,0,2,0.83,1
+2863,"https://saudicas.com.br/noticias/familia-safra-vende-maior-jato-do-brasil-por-r-400-mi/","Família Safra vende maior jato do Brasil por R$ 400 mi",2026-03-25 06:22:03,2.4,0,0,4,1.67,1
+2862,"https://saudicas.com.br/noticias/anvisa-alerta-sobre-pomadas-de-cabelo-apos-casos-de-cegueira/","Anvisa alerta sobre pomadas de cabelo após casos de cegueira",2026-03-24 18:22:02,2.4,0,0,1,0.42,1
+2861,"https://saudicas.com.br/noticias/lei-autoriza-farmacias-em-supermercados-normas-divulgadas/","Lei autoriza farmácias em supermercados; normas divulgadas",2026-03-24 18:21:04,2.4,0,0,1,0.42,1
+2860,"https://saudicas.com.br/noticias/4-cremes-acessiveis-para-pele-aos-60-anos-combatem-flacidez/","4 cremes acessíveis para pele aos 60 anos combatem flacidez",2026-03-24 06:42:03,2.4,0,0,2,0.83,1
+2859,"https://saudicas.com.br/noticias/jair-bolsonaro-deixa-uti-e-vai-para-quarto/","Jair Bolsonaro deixa UTI e vai para quarto",2026-03-24 06:21:03,2.4,0,0,1,0.42,1
+2858,"https://saudicas.com.br/noticias/anvisa-retira-azeite-san-olivetto-do-mercado/","Anvisa retira azeite San Olivetto do mercado",2026-03-23 18:19:03,2.5,0,0,5,2,1
+2857,"https://saudicas.com.br/noticias/troque-a-escova-de-dentes-apos-gripe/","Troque a escova de dentes após gripe",2026-03-23 18:19:03,2.5,0,0,1,0.4,1
+2853,"https://saudicas.com.br/saude/o-que-e-rigidez-cognitiva/","O que é rigidez cognitiva: significado e como ela se manifesta",2026-03-23 17:38:59,2.5,1,0,64,25.6,0
+2850,"https://saudicas.com.br/saude/rouquidao-pode-ser-emocional/","Rouquidão pode ser emocional: entenda essa relação",2026-03-23 17:33:22,2.5,1,0,10,4,0
+2849,"https://saudicas.com.br/noticias/anvisa-proibe-formula-infantil-com-toxina-cereulida/","Anvisa proíbe fórmula infantil com toxina cereulida",2026-03-23 06:18:03,2.5,0,0,5,2,1
+2848,"https://saudicas.com.br/noticias/bolsonaro-esta-estavel-aponta-boletim/","Bolsonaro está estável; aponta boletim",2026-03-23 06:18:03,2.5,0,0,5,2,1
+2847,"https://saudicas.com.br/noticias/anvisa-apreende-167-geis-intimos-sem-registro/","Anvisa apreende 167 géis íntimos sem registro",2026-03-22 18:18:03,2.5,0,0,3,1.2,1
+2846,"https://saudicas.com.br/noticias/anvisa-proibe-mamadeiras-da-tudo-akilo-por-risco/","Anvisa proíbe mamadeiras da Tudo Akilo por risco",2026-03-22 18:17:03,2.5,0,0,3,1.2,1
+2845,"https://saudicas.com.br/noticias/perfumes-natura-e-o-boticario-fixam-10h-no-calor/","Perfumes Natura e O Boticário fixam 10h no calor",2026-03-22 06:17:02,2.5,0,0,1,0.4,1
+2844,"https://saudicas.com.br/noticias/bases-nacionais-baratas-duram-no-calor/","Bases nacionais baratas duram no calor",2026-03-22 06:16:03,2.5,0,0,1,0.4,1
+2843,"https://saudicas.com.br/noticias/anvisa-recolhe-suplementos-toxicos-do-mercado/","Anvisa recolhe suplementos tóxicos do mercado",2026-03-21 18:16:02,2.5,0,0,1,0.4,1
+2842,"https://saudicas.com.br/noticias/anvisa-suspende-cafes-por-riscos-a-saude/","Anvisa suspende cafés por riscos à saúde",2026-03-21 18:15:03,2.5,0,0,1,0.4,1
+2841,"https://saudicas.com.br/noticias/shampoo-japones-disfarca-cabelos-brancos-rapidamente/","Shampoo japonês disfarça cabelos brancos rapidamente",2026-03-21 06:15:02,2.5,0,0,1,0.4,1
+2840,"https://saudicas.com.br/noticias/batons-cremosos-para-labios-maduros-apos-os-50/","Batons cremosos para lábios maduros após os 50",2026-03-21 06:14:02,2.5,0,0,1,0.4,1
+2828,"https://saudicas.com.br/noticias/anvisa-proibe-clareadores-dentais-por-riscos/","Anvisa proíbe clareadores dentais por riscos",2026-03-20 18:14:02,2.6,0,0,2,0.77,1
+2827,"https://saudicas.com.br/noticias/ozempic-mais-barato-com-fim-da-patente/","Ozempic mais barato com fim da patente",2026-03-20 18:13:01,2.6,0,0,1,0.38,1
+2826,"https://saudicas.com.br/noticias/truques-naturais-para-acabar-com-papos-e-rugas-nos-olhos/","Truques naturais para acabar com papos e rugas nos olhos",2026-03-20 06:13:02,2.6,0,0,1,0.38,1
+2825,"https://saudicas.com.br/noticias/glow-acessivel-5-produtos-para-pele-40/","Glow acessível: 5 produtos para pele 40+",2026-03-20 06:12:03,2.6,0,0,1,0.38,1
+2824,"https://saudicas.com.br/noticias/anvisa-recolhe-azeites-clandestinos-no-mercado/","Anvisa recolhe azeites clandestinos no mercado",2026-03-19 18:12:02,2.6,0,0,1,0.38,1
+2823,"https://saudicas.com.br/noticias/anvisa-libera-mounjaro-em-caneta-multidose/","Anvisa libera Mounjaro em caneta multidose",2026-03-19 18:11:03,2.6,0,0,1,0.38,1
+2820,"https://saudicas.com.br/dicas/o-que-fazer-para-parar-de-cocar-a-garganta/","O que fazer para parar de coçar a garganta: formas de aliviar",2026-03-19 17:59:43,2.6,1,0,18,6.92,0
+2817,"https://saudicas.com.br/dicas/como-desinflamar-o-corpo-em-1-semana/","Como desinflamar o corpo em 1 semana: o que pode ajudar",2026-03-19 17:56:39,2.6,1,0,18,6.92,0
+2814,"https://saudicas.com.br/dicas/ritalina-pode-causar-infarto/","Ritalina pode causar infarto: o que se sabe sobre esse risco",2026-03-19 17:53:32,2.6,1,0,22,8.46,0
+2813,"https://saudicas.com.br/noticias/cremes-de-r-20-viram-febre-contra-pele-ressecada/","Cremes de R$ 20 viram febre contra pele ressecada",2026-03-19 06:11:03,2.6,0,0,1,0.38,1
+2812,"https://saudicas.com.br/noticias/seruns-de-vitamina-c-iluminam-em-7-dias-por-menos-de-r60/","Séruns de vitamina C iluminam em 7 dias por menos de R$60",2026-03-19 06:10:02,2.6,0,0,1,0.38,1
+2811,"https://saudicas.com.br/noticias/anvisa-proibe-azeite-san-olivetto-por-riscos/","Anvisa proíbe azeite San Olivetto por riscos",2026-03-18 18:10:03,2.6,0,0,2,0.77,1
+2810,"https://saudicas.com.br/noticias/bolsonaro-tem-melhora-com-comprometimento-moderado/","Bolsonaro tem melhora com comprometimento moderado",2026-03-18 18:09:02,2.6,0,0,1,0.38,1
+2807,"https://saudicas.com.br/dicas/saude-da-pele-protecao-e-cuidado-para-manter-sua-pele-saudavel-com-protetor-solar/","Saúde da pele: proteção e cuidado para manter sua pele saudável com protetor solar",2026-03-18 13:53:17,2.6,1,1,6,2.31,0
+2804,"https://saudicas.com.br/saude/comida-voltando-pela-garganta/","Comida voltando pela garganta: causas e quando investigar",2026-03-18 09:26:50,2.6,1,1,10,3.85,0
+2801,"https://saudicas.com.br/saude/intestino-solto-apos-histerectomia/","Intestino solto após histerectomia: o que pode explicar",2026-03-18 09:23:43,2.6,1,0,14,5.38,0
+2798,"https://saudicas.com.br/saude/tipos-de-lesoes-no-cotovelo/","Tipos de lesões no cotovelo: quais são as mais comuns",2026-03-18 09:19:41,2.6,1,0,15,5.77,0
+2795,"https://saudicas.com.br/dicas/compressa-gelada-e-bom-para-dor-de-cabeca/","Compressa gelada é bom para dor de cabeça: quando usar",2026-03-18 09:14:37,2.6,1,0,10,3.85,0
+2794,"https://saudicas.com.br/noticias/cremes-nacionais-hidratam-pele-oleosa-por-8h/","Cremes nacionais hidratam pele oleosa por 8h",2026-03-18 06:09:04,2.6,0,0,2,0.77,1
+2793,"https://saudicas.com.br/noticias/antissinais-baratos-com-fps-a-partir-de-r-25/","Antissinais baratos com FPS a partir de R$ 25",2026-03-18 06:08:03,2.6,0,0,1,0.38,1
+2792,"https://saudicas.com.br/noticias/anvisa-recolhe-queijo-e-proibe-suplemento-irregular-por-risco/","Anvisa recolhe queijo e proíbe suplemento irregular por risco",2026-03-17 18:08:03,2.7,0,0,1,0.37,1
+2791,"https://saudicas.com.br/noticias/bolsonaro-tem-evolucao-positiva-mas-sem-alta/","Bolsonaro tem evolução positiva; mas sem alta",2026-03-17 18:07:04,2.7,0,0,1,0.37,1
+2788,"https://saudicas.com.br/alimentacao/melao-e-bom-para-diarreia/","Melão é bom para diarreia: ajuda ou atrapalha",2026-03-17 17:59:08,2.7,1,0,21,7.78,0
+2787,"https://saudicas.com.br/noticias/saude-de-bolsonaro-segue-delicada-no-hospital/","Saúde de Bolsonaro segue delicada no hospital",2026-03-17 06:07:02,2.7,0,0,1,0.37,1
+2786,"https://saudicas.com.br/noticias/plantas-para-emagrecer-em-apartamento/","Plantas para emagrecer em apartamento",2026-03-17 06:06:04,2.7,0,0,3,1.11,1
+2785,"https://saudicas.com.br/noticias/boletim-medico-aponta-melhora-de-bolsonaro-na-uti/","Boletim médico aponta melhora de Bolsonaro na UTI",2026-03-16 18:05:03,2.7,0,0,1,0.37,1
+2784,"https://saudicas.com.br/noticias/vinhedo-qualidade-de-vida-no-interior-de-sp/","Vinhedo: qualidade de vida no interior de SP",2026-03-16 18:05:03,2.7,0,0,1,0.37,1
+2781,"https://saudicas.com.br/alimentacao/linhaca-emagrece-mesmo-ou-e-mito/","Linhaça Emagrece Mesmo ou É Mito?",2026-03-16 16:17:37,2.7,1,0,9,3.33,0
+2778,"https://saudicas.com.br/dicas/quem-tem-insuficiencia-cardiaca-pode-tomar-ibuprofeno/","Quem Tem Insuficiência Cardíaca Pode Tomar Ibuprofeno?",2026-03-16 16:13:06,2.7,1,0,13,4.81,0
+2775,"https://saudicas.com.br/saude/o-que-acontece-se-tomar-dipirona-sem-dor/","O Que Acontece Se Tomar Dipirona Sem Dor",2026-03-16 16:08:42,2.7,1,0,7,2.59,0
+2771,"https://saudicas.com.br/dicas/o-que-corta-efeito-do-antibiotico/","O Que Corta Efeito do Antibiótico",2026-03-16 16:03:51,2.7,1,0,11,4.07,0
+2768,"https://saudicas.com.br/alimentacao/como-saber-se-tenho-alergia-a-camarao-antes-de-comer/","Como Saber Se Tenho Alergia a Camarão Antes de Comer",2026-03-16 15:58:45,2.7,1,0,14,5.19,0
+2765,"https://saudicas.com.br/saude/a-saude-da-familia-em-pauta-quando-a-terapia-especializada-pode-fortalecer-os-vinculos/","A Saúde da Família em Pauta: Quando a Terapia Especializada Pode Fortalecer os Vínculos",2026-03-13 20:04:41,2.8,1,1,8,2.86,0
+2761,"https://saudicas.com.br/saude/como-tratar-dor-nas-juntas-dos-dedos-das-maos/","Como Tratar Dor nas Juntas dos Dedos das Mãos",2026-03-13 11:28:22,2.8,1,0,13,4.64,0
+2758,"https://saudicas.com.br/saude/anemia-faz-dormir-muito/","Anemia Faz Dormir Muito? Sim; e Esta é a Razão",2026-03-13 11:24:25,2.8,1,0,16,5.71,0
+2755,"https://saudicas.com.br/dicas/suplemento-para-tirar-vontade-de-comer-doce/","Suplemento para Tirar Vontade de Comer Doce: O Que Funciona e Por Quê",2026-03-13 11:20:28,2.8,1,0,11,3.93,0
+2752,"https://saudicas.com.br/saude/gripe-pode-dar-dor-de-ouvido/","Gripe Pode Dar Dor de Ouvido? Sim; e Aqui Está o Porquê",2026-03-13 11:16:21,2.8,1,0,15,5.36,0
+2749,"https://saudicas.com.br/saude/quem-toma-remedio-para-ansiedade-pode-beber/","Quem Toma Remédio Para Ansiedade Pode Beber",2026-03-13 11:00:34,2.8,1,0,16,5.71,0
+2711,"https://saudicas.com.br/saude/como-regular-o-cortisol-alto/","Como Regular o Cortisol Alto",2026-03-12 15:13:28,2.8,1,0,9,3.21,0
+2708,"https://saudicas.com.br/saude/lipedema-pode-causar-trombose/","Lipedema Pode Causar Trombose?",2026-03-12 15:06:27,2.8,1,0,9,3.21,0
+2705,"https://saudicas.com.br/alimentacao/quem-tem-glicose-alta-pode-comer-amendoim/","Quem Tem Glicose Alta Pode Comer Amendoim?",2026-03-12 14:59:56,2.8,1,0,10,3.57,0
+2702,"https://saudicas.com.br/dicas/como-fazer-respiracao-para-ansiedade/","Como Fazer Respiração para Ansiedade",2026-03-12 14:54:01,2.8,1,0,7,2.5,0
+2699,"https://saudicas.com.br/fitness/10-mil-passos-por-dia-emagrece/","10 Mil Passos por Dia Emagrece?",2026-03-12 14:45:34,2.8,1,0,10,3.57,0
+2662,"https://saudicas.com.br/saude/saude-mental-e-dependencia-onde-encontrar-um-grupo-de-reabilitacao-em-sao-paulo/","Saúde mental e dependência: onde encontrar um grupo de reabilitação em São Paulo",2026-02-12 14:33:00,3.8,1,1,10,2.63,0
+1021,"https://saudicas.com.br/saude/cisto-baker-atividade-fisica/","Cisto de Baker e Atividade Física: pode fazer?",2026-02-10 15:54:19,3.8,1,1,36,9.47,0
+979,"https://saudicas.com.br/saude/perimetro-cefalico-bebe-4-meses/","Perímetro Cefálico Bebê 4 Meses: preocupação das mães",2026-02-10 15:03:23,3.8,1,0,18,4.74,0
+2011,"https://saudicas.com.br/dicas/comparativo-dos-melhores-vaporizadores/","Comparativo dos Melhores Vaporizadores: Crafty; Mighty e Venty",2026-02-10 14:23:34,3.8,1,1,15,3.95,0
+1006,"https://saudicas.com.br/saude/normal-sangrar-muito-depois-primeira-vez/","É normal sangrar muito depois da primeira vez?",2026-02-10 08:26:00,3.8,1,0,32,8.42,0
+910,"https://saudicas.com.br/saude/como-tirar-hematoma-roxo/","Como tirar hematoma roxo? Maneiras rápidas de resolver",2026-02-10 08:05:00,3.8,1,0,56,14.74,0
+2117,"https://saudicas.com.br/saude/alcoolismo-e-hereditario/","Alcoolismo é hereditário: entenda a influência genética",2026-02-10 07:52:00,3.8,1,1,22,5.79,0
+1649,"https://saudicas.com.br/dicas/o-que-e-lombociatalgia/","O que é lombociatalgia e quais são os sintomas?",2026-02-09 17:50:58,3.9,1,1,14,3.59,0
+1993,"https://saudicas.com.br/saude/quando-o-bebe-nasce-cansado-o-que-pode-ser/","Quando o bebê nasce cansado o que pode ser: Causas e orientações médicas",2026-02-09 17:30:21,3.9,1,1,24,6.15,0
+1829,"https://saudicas.com.br/saude/ar-condicionado-resseca-a-garganta-o-que-fazer/","Ar condicionado resseca a garganta o que fazer? Dicas eficientes!",2026-02-09 16:57:56,3.9,1,1,28,7.18,0
+2383,"https://saudicas.com.br/dicas/melhor-remedio-para-diminuir-adenoide/","Qual é o Melhor Remédio para Diminuir Adenoide?",2026-02-09 16:21:50,3.9,1,0,51,13.08,0
+920,"https://saudicas.com.br/saude/pomada-para-unha-encravada-de-bebe/","Pomada para Unha Encravada de Bebê: qual e como usar?",2026-02-09 15:43:15,3.9,1,0,34,8.72,0
+1956,"https://saudicas.com.br/dicas/o-que-nao-pode-faltar-quando-o-bebe-nascer/","O que não pode faltar quando o bebê nascer: Lista essencial",2026-02-09 15:26:58,3.9,1,1,49,12.56,0
+2183,"https://saudicas.com.br/dicas/profissionais-de-massagem-no-rio-de-janeiro-despontam-no-cenario-de-tecnicas-holisticas/","Profissionais de massagem no Rio de Janeiro despontam no cenário de técnicas holísticas",2026-02-09 15:07:46,3.9,1,1,20,5.13,0
+1984,"https://saudicas.com.br/saude/vaporizador-de-ervas-secas-faz-mal/","Vaporizador de Ervas Secas Faz Mal? Saiba Mais",2026-02-09 14:39:41,3.9,1,1,11,2.82,0
+1655,"https://saudicas.com.br/saude/problemas-com-drogas/","Problemas com drogas: Entenda as consequências no corpo",2026-02-09 11:37:17,3.9,1,1,15,3.85,0
+2209,"https://saudicas.com.br/saude/transtornos-por-uso-de-alcool-e-outras-substancias/","Transtornos por uso de álcool e outras substâncias",2026-02-09 10:46:21,3.9,1,1,18,4.62,0
+2130,"https://saudicas.com.br/dicas/protese-de-joelho-pelo-sus/","Como fazer prótese de joelho pelo SUS",2026-02-09 10:22:16,3.9,1,1,20,5.13,0
+2332,"https://saudicas.com.br/saude/remedio-para-parar-de-beber-caseiro/","Remédio para parar de beber caseiro: Tratamento Natural",2026-02-09 09:57:23,3.9,1,0,30,7.69,0
+873,"https://saudicas.com.br/dicas/conheca-principais-tipos-ambulancias/","Ambulâncias: Guia completo dos principais tipos de ambulâncias",2026-02-09 09:28:08,3.9,1,1,54,13.85,0
+2386,"https://saudicas.com.br/dicas/remedio-para-diminuir-apetite/","Remédio para Diminuir Apetite: Opções Eficazes para Emagrecer",2026-02-09 08:49:18,3.9,1,0,96,24.62,0
+1947,"https://saudicas.com.br/saude/dor-muscular-perna-esquerda/","Dor Muscular Perna Esquerda – Causas e Tratamentos",2026-02-06 12:04:34,4,1,1,37,9.25,0
+2389,"https://saudicas.com.br/dicas/frutas-para-baixar-colesterol-e-triglicerideos/","Frutas para Baixar Colesterol e Triglicerídeos: o que comer e como usar sucos sem perder fibras",2026-02-06 11:50:31,4,1,0,73,18.25,0
+2362,"https://saudicas.com.br/dicas/remedio-para-diminuir-libido/","Remédio para Diminuir Libido: Tratamentos e Soluções",2026-02-06 11:15:03,4,1,0,52,13,0
+1641,"https://saudicas.com.br/saude/quem-tem-problema-no-nervo-ciatico-pode-correr/","Quem tem problema no nervo ciático pode correr: cuidados e recomendações",2026-02-06 10:46:27,4,1,1,15,3.75,0
+657,"https://saudicas.com.br/saude/fogo-selvagem/","Conheça os sintomas e tratamentos para o Fogo Selvagem; ou Pênfigo Foliáceo Endêmico",2026-02-06 10:19:35,4,1,0,38,9.5,0
+1823,"https://saudicas.com.br/saude/como-conseguir-uma-clinica-de-reabilitacao-gratuita/","Como conseguir uma clínica de reabilitação gratuita?",2026-02-06 09:53:05,4,1,1,41,10.25,0
+2042,"https://saudicas.com.br/dicas/pode-viajar-com-vaporizador-de-ervas/","Pode viajar com vaporizador de ervas: regras e restrições",2026-02-06 09:32:25,4,1,1,37,9.25,0
+901,"https://saudicas.com.br/saude/colocar-stent-e-perigoso/","Colocar Stent é perigoso? Entenda riscos; benefícios e cuidados após o procedimento",2026-02-06 09:09:42,4,1,1,87,21.75,0
+969,"https://saudicas.com.br/saude/remedio-contra-carrapato-em-humanos/","Remédio contra carrapato em humanos: Para que serve? Como usar?",2026-02-06 08:55:00,4,1,0,48,12,0
+992,"https://saudicas.com.br/saude/nao-pode-comer-quando-tem-pedra-vesicula/","O que não pode comer quando tem pedra na vesícula?",2026-02-06 08:35:02,4,1,0,68,17,0
+2270,"https://saudicas.com.br/dicas/bicarbonato-para-parar-de-beber-funciona/","Bicarbonato para parar de beber funciona?",2026-02-05 18:09:57,4,1,0,118,29.5,0
+916,"https://saudicas.com.br/saude/ca-19-9-acima-de-37/","CA 19-9 acima de 37: Qual a função e o que significa?",2026-02-05 17:46:08,4,1,0,33,8.25,0
+2052,"https://saudicas.com.br/dicas/faz-mal-usar-pod-queimado/","Faz mal usar pod queimado: riscos e problemas associados",2026-02-05 17:35:55,4,1,0,110,27.5,0
+2359,"https://saudicas.com.br/dicas/remedio-para-diminuir-fluxo-menstrual-intenso/","Remédio para diminuir fluxo menstrual intenso: o que funciona e quando procurar o ginecologista",2026-02-05 17:12:46,4,1,0,175,43.75,0
+2036,"https://saudicas.com.br/dicas/como-saber-se-o-pod-esta-me-fazendo-mal/","Como saber se o Pod está me fazendo mal: sinais de alerta",2026-02-05 16:45:54,4,1,0,99,24.75,0
+925,"https://saudicas.com.br/saude/remedio-para-diminuir-o-cortisol/","Remédio para diminuir cortisol: quando é indicado e quais são as opções",2026-02-05 15:54:04,4,1,0,192,48,0
+2522,"https://saudicas.com.br/saude/reversao-de-vasectomia/","Reversão de vasectomia: quando é possível e quais são as chances de sucesso",2026-01-26 11:09:34,4.3,1,1,7,1.63,0
+2502,"https://saudicas.com.br/saude/crack-e-cocaina/","Crack e cocaína: diferenças; riscos e como iniciar a recuperação",2026-01-08 05:48:00,4.9,1,1,6,1.22,0
+2498,"https://saudicas.com.br/saude/plano-de-saude-no-brasil-a-importancia-de-um-bom-corretor/","Plano de Saúde no Brasil: a Importância de um Bom Corretor",2025-12-22 16:41:54,5.5,1,1,10,1.82,0
+2496,"https://saudicas.com.br/saude/ansiedade-alta-todo-dia-9-gatilhos-que-quase-ninguem-nota/","Ansiedade alta todo dia? 9 gatilhos que quase ninguém nota",2025-12-19 12:53:06,5.6,1,1,3,0.54,0
+2492,"https://saudicas.com.br/saude/como-os-exames-de-imagem-contribuem-para-a-saude-preventiva-da-mulher/","Como os exames de imagem contribuem para a saúde preventiva da mulher?",2025-12-18 14:38:22,5.6,1,1,11,1.96,0
+2487,"https://saudicas.com.br/saude/vida-saudavel/","Vida Saudável: Benefícios; Hábitos e Como Começar Hoje",2025-12-15 15:47:42,5.7,1,1,49,8.6,0
+2482,"https://saudicas.com.br/saude/febre-infantil-o-que-as-maes-precisam-saber-segundo-o-clinico-geral-dr-magno-prado/","Febre infantil: o que as mães precisam saber; segundo o Clínico Geral Dr. Magno Prado",2025-12-11 08:54:26,5.9,1,1,5,0.85,0
+2472,"https://saudicas.com.br/saude/hernia-de-disco-tem-cura-um-olhar-sobre-o-tratamento-por-quiropraxia-e-a-busca-por-qualidade-de-vida/","Hérnia de Disco Tem Cura? Um Olhar Sobre o Tratamento por Quiropraxia e a Busca por Qualidade de Vida",2025-11-18 20:20:07,6.6,1,1,1,0.15,0
+2465,"https://saudicas.com.br/saude/reajuste-abusivo-em-plano-de-saude-sinais-de-que-seu-aumento-nao-e-legal/","Reajuste abusivo em plano de saúde: sinais de que seu aumento não é legal",2025-11-06 17:37:41,7,1,1,3,0.43,0
+2456,"https://saudicas.com.br/saude/depressao-e-psicoterapia/","Depressão e Psicoterapia: O Papel do Acolhimento no Processo de Recuperação",2025-10-28 17:38:27,7.3,1,1,3,0.41,0
+2453,"https://saudicas.com.br/dicas/erros-comuns-na-criacao-de-site-para-medicos/","Erros Comuns na Criação de Site para Médicos (e Como Evitá-los)",2025-10-28 17:10:05,7.3,1,1,6,0.82,0
+2450,"https://saudicas.com.br/saude/aumento-de-casos-de-cancer-colorretal-entre-jovens-e-como-exames-digestivos-salvam-vidas/","Aumento de casos de câncer colorretal entre jovens e como exames digestivos salvam vidas",2025-10-27 18:22:49,7.4,1,1,3,0.41,0
+2446,"https://saudicas.com.br/saude/bolinhas-de-pompoarismo-e-peridell-a-revolucao-silenciosa-no-autoconhecimento-feminino/","Bolinhas de Pompoarismo e Peridell: A Revolução Silenciosa no Autoconhecimento Feminino",2025-10-24 15:58:32,7.5,1,1,9,1.2,0
+2437,"https://saudicas.com.br/saude/o-que-ha-de-novo-para-o-tratamento-da-coluna/","O Que Há de Novo Para o Tratamento da Coluna ",2025-10-20 19:37:24,7.6,1,1,3,0.39,0
+2432,"https://saudicas.com.br/saude/a-revolucao-silenciosa-como-a-medicina-online-esta-redefinindo-o-acesso-a-saude-no-brasil/","A Revolução Silenciosa: Como a Medicina Online está Redefinindo o Acesso à Saúde no Brasil",2025-10-16 16:51:16,7.7,1,1,4,0.52,0
+2423,"https://saudicas.com.br/dicas/o-papel-das-farmacias-digitais-no-acesso-a-medicamentos/","O papel das farmácias digitais no acesso a medicamentos",2025-09-24 15:19:54,8.5,1,1,3,0.35,0
+2417,"https://saudicas.com.br/beleza/tirbanibulina-1/","Tirbanibulina 1%: área ampliada para ceratose actínica",2025-09-22 05:36:00,8.5,1,1,11,1.29,0
+2411,"https://saudicas.com.br/saude/osteotomia-de-mitchell/","Osteotomia de Mitchell: técnica; recuperação e riscos",2025-09-13 07:08:00,8.8,1,1,11,1.25,0
+2408,"https://saudicas.com.br/saude/sindrome-de-wartenberg-cheiralgia-parestesica/","Síndrome de Wartenberg (Cheiralgia Parestésica): explicado",2025-09-13 06:18:00,8.8,1,1,11,1.25,0
+2405,"https://saudicas.com.br/saude/plano-hapvida-em-campo-grande-ms-melhor-plano-de-saude/","Plano Hapvida em Campo Grande (MS): Melhor plano de saúde!",2025-09-09 17:23:58,9,1,1,6,0.67,0
+2397,"https://saudicas.com.br/saude/o-que-e-saude-preventiva-e-como-funciona-o-controle-do-uso-de-remedios/","O que é saúde preventiva: e como funciona o controle do uso de remédios",2025-08-25 13:36:42,9.5,1,1,28,2.95,0
+2393,"https://saudicas.com.br/saude/menopausa-efeitos-da-falta-de-estrogenio-e-como-viver-com-saude/","Menopausa: efeitos da falta de estrogênio e como viver com saúde",2025-08-21 14:28:24,9.6,1,1,4,0.42,0
+2347,"https://saudicas.com.br/beleza/umidade-e-cabelo/","Umidade e cabelo: como evitar frizz e danos em dias chuvosos",2025-08-19 08:24:13,9.7,1,1,13,1.34,0
+2344,"https://saudicas.com.br/saude/pressao-alta/","Pressão alta: sinais que você não deve ignorar",2025-08-19 08:19:40,9.7,1,1,7,0.72,0
+2341,"https://saudicas.com.br/saude/diagnostico-agil-e-tratamento-sob-medida-a-abordagem-do-dr-rodolfo-carneiro/","Diagnóstico Ágil e Tratamento Sob Medida: A Abordagem do Dr. Rodolfo Carneiro",2025-08-13 16:16:51,9.9,1,1,2,0.2,0
+2323,"https://saudicas.com.br/saude/riscos-e-complicacoes-da-protese-de-joelho/","Entenda os Riscos e Complicações da Prótese de Joelho",2025-08-12 05:23:00,9.9,1,1,10,1.01,0
+2317,"https://saudicas.com.br/dicas/teste-genetico-conheca-os-principais-testes-geneticos-e-para-quais-casos-eles-servem/","Teste genético: conheça os 7 principais testes genéticos e para quais casos eles servem",2025-08-07 20:25:44,10.1,1,1,39,3.86,0
+2313,"https://saudicas.com.br/dicas/aspirador-de-po-potencia-e-eficiencia-para-manter-sua-casa-sempre-limpa/","Aspirador de pó: potência e eficiência para manter sua casa sempre limpa",2025-07-22 12:45:43,10.6,1,1,4,0.38,0
+2309,"https://saudicas.com.br/dicas/manter-a-vitalidade/","Cuidados diários para manter a vitalidade por anos",2025-07-21 10:58:41,10.6,1,1,1,0.09,0
+2302,"https://saudicas.com.br/saude/glicose-alta-sem-comer-acucar/","Glicose alta sem comer açúcar? Entenda por quê",2025-07-17 06:17:00,10.8,1,1,14,1.3,0
+2299,"https://saudicas.com.br/saude/dor-no-quadril-depois-dos-40/","Dor no quadril depois dos 40: o que é comum e o que é preocupante",2025-07-12 06:20:00,10.9,1,1,16,1.47,0
+2293,"https://saudicas.com.br/saude/dedos-rigidos-ao-acordar/","Dedos rígidos ao acordar? Entenda as possíveis causas",2025-07-10 07:25:00,11,1,1,29,2.64,0
+2287,"https://saudicas.com.br/dicas/como-escolher-a-melhor-clinica-de-reabilitacao-para-quem-voce-ama/","Como escolher a melhor clínica de reabilitação para quem você ama",2025-06-19 06:22:00,11.7,1,1,9,0.77,0
+2284,"https://saudicas.com.br/dicas/aspirador-de-po-limpeza-eficiente-e-mais-saude-para-sua-casa-todos-os-dias-sem-esforco/","Aspirador de pó: limpeza eficiente e mais saúde para sua casa todos os dias sem esforço",2025-05-26 17:33:14,12.5,1,1,11,0.88,0
+2279,"https://saudicas.com.br/saude/como-o-estilo-de-vida-impacta-a-fertilidade-masculina/","Como o estilo de vida impacta a fertilidade masculina?",2025-05-02 13:04:58,13.3,1,1,4,0.3,0
+2274,"https://saudicas.com.br/saude/o-uso-do-cpap-pode-melhorar-o-humor-e-a-memoria/","O uso do CPAP pode melhorar o humor e a memória? Veja o que dizem os estudos",2025-04-23 15:46:45,13.6,1,1,6,0.44,0
+2263,"https://saudicas.com.br/saude/para-que-serve-o-colageno-do-tipo-2/","Para que serve o colágeno do tipo 2?",2025-02-25 11:20:44,15.5,1,1,4,0.26,0
+2260,"https://saudicas.com.br/saude/endocrinologista-em-palhoca-qual-e-a-funcao-desse-profissional/","Endocrinologista em Palhoça: Qual é a função desse profissional?",2025-02-20 14:01:30,15.7,1,1,10,0.64,0
+2256,"https://saudicas.com.br/dicas/guia-essencial-de-farmacia-de-manipulacao-no-brasil/","Guia Essencial de Farmácia de Manipulação no Brasil",2025-02-18 19:40:21,15.7,1,1,5,0.32,0
+2249,"https://saudicas.com.br/saude/11-doencas-onde-o-canabidiol-pode-ser-eficaz/","11 doenças onde o canabidiol pode ser eficaz: Guia completo",2025-02-10 14:11:55,16,1,1,2,0.13,0
+2245,"https://saudicas.com.br/dicas/vimedix-farmacia-de-manipulacao-no-espirito-santo/","Vimedix: referência em farmácia de manipulação no Espírito Santo",2025-02-08 12:25:00,16.1,1,1,18,1.12,0
+2239,"https://saudicas.com.br/dicas/queda-de-cabelo-pode-ser-falta-de-vitamina/","Queda de cabelo pode ser falta de vitamina: veja quais",2025-02-03 08:47:39,16.2,1,1,9,0.56,0
+2235,"https://saudicas.com.br/beleza/qual-anestesia-e-usada-para-fazer-tatuagem/","Qual anestesia é usada para fazer tatuagem?",2025-02-01 18:52:03,16.3,1,1,9,0.55,0
+2231,"https://saudicas.com.br/beleza/a-ascensao-da-cirurgia-plastica-em-belo-horizonte-o-lifting-facial-como-tendencia/","A Ascensão da Cirurgia Plástica em Belo Horizonte: O Lifting Facial como Tendência",2025-01-31 13:55:03,16.3,1,1,5,0.31,0
+2225,"https://saudicas.com.br/dicas/brindes-personalizados-destaque-sua-marca-em-eventos-e-acoes-promocionais/","Brindes Personalizados: Destaque Sua Marca em Eventos e Ações Promocionais",2025-01-01 11:24:33,17.3,1,1,7,0.4,0
+2186,"https://saudicas.com.br/saude/pneus-antigos-e-risco-de-lesoes/","Pneus antigos e risco de lesões: informações importantes",2024-12-20 17:51:00,17.7,1,1,2,0.11,0
+2206,"https://saudicas.com.br/saude/principais-cuidados-aos-40-como-garantir-bem-estar-e-qualidade-de-vida/","Principais cuidados aos 40+: como garantir bem-estar e qualidade de vida",2024-12-16 17:11:23,17.9,1,1,12,0.67,0
+2203,"https://saudicas.com.br/saude/exames-de-rotina-quais-os-principais-e-por-que-faze-los/","Exames de rotina: quais os principais e por que fazê-los?",2024-12-16 17:07:09,17.9,1,1,8,0.45,0
+2200,"https://saudicas.com.br/saude/quanto-tempo-leva-para-se-recuperar-de-um-vicio/","Quanto tempo leva para se recuperar de um vício?",2024-12-16 17:02:06,17.9,1,1,11,0.61,0
+2197,"https://saudicas.com.br/saude/dicas-para-evitar-a-dor-muscular-pos-treino/","Dicas para evitar a dor muscular pós-treino",2024-12-16 16:57:44,17.9,1,1,4,0.22,0
+2194,"https://saudicas.com.br/dicas/comece-2025-com-dinheiro-no-bolso-e-saude-pra-dar-e-vender/","Comece 2025 com dinheiro no bolso e saúde pra dar e vender",2024-12-16 16:49:03,17.9,1,1,2,0.11,0
+1979,"https://saudicas.com.br/saude/joelho-rangendo-ao-subir-escada/","Joelho rangendo ao subir escada: Entenda as causas",2024-12-12 09:47:37,18,1,1,3,0.17,0
+2178,"https://saudicas.com.br/saude/cosmeticos-veganos-e-cruelty-free-saude-para-o-couro-cabeludo-oportunidades-e-desafios/","Cosméticos Veganos e Cruelty-Free: Oportunidades e Desafios",2024-11-28 09:24:20,18.5,1,1,11,0.59,0
+2175,"https://saudicas.com.br/saude/dicas-para-encontrar-um-cirurgiao-plastico-certificado-e-evitar-riscos/","Dicas para Encontrar um Cirurgião Plástico Certificado e Evitar Riscos",2024-11-28 09:16:30,18.5,1,1,11,0.59,0
+2172,"https://saudicas.com.br/saude/terapias-integrativas-como-o-mercado-de-saude-esta-incorporando-novas-abordagens/","Terapias integrativas: como o mercado de saúde está incorporando novas abordagens",2024-11-28 09:12:33,18.5,1,1,6,0.32,0
+2169,"https://saudicas.com.br/saude/estrategias-e-cuidados-para-envelhecer-com-saude-e-qualidade-de-vida/","Estratégias e Cuidados para Envelhecer com Saúde e Qualidade de Vida",2024-11-28 09:08:16,18.5,1,1,13,0.7,0
+2160,"https://saudicas.com.br/saude-bucal/coloquei-lentes-de-contato-dental-e-me-arrependi/","Coloquei lentes de contato dental e me arrependi - O que Fazer?",2024-11-26 11:44:06,18.5,1,1,16,0.86,0
+2156,"https://saudicas.com.br/saude/dores-nas-articulacoes-das-maos/","Dores nas articulações das mãos: possíveis razões",2024-11-20 13:32:00,18.7,1,1,29,1.55,0
+2153,"https://saudicas.com.br/dicas/ar-condicionado-12000-btus-resfriamento-eficiente-para-saude-e-bem-estar-em-casa/","Ar condicionado 12000 BTUs: Resfriamento Eficiente para Saúde e Bem-estar em Casa",2024-11-12 18:12:55,19,1,1,7,0.37,0
+2145,"https://saudicas.com.br/saude/beneficios-do-pilates-para-homens/","Benefícios do pilates para homens na força e flexibilidade",2024-11-08 10:33:00,19.1,1,1,10,0.52,0
+2108,"https://saudicas.com.br/saude/ergonomia-nos-estudos-para-pericia-grafotecnica/","Ergonomia nos estudos para perícia grafotécnica",2024-11-06 11:56:00,19.2,1,1,5,0.26,0
+2142,"https://saudicas.com.br/beleza/dicas-de-como-fazer-a-sombra-durar-o-dia-inteiro/","Dicas de como fazer a sombra durar o dia inteiro",2024-11-05 09:33:12,19.2,1,1,9,0.47,0
+2139,"https://saudicas.com.br/beleza/depilacao-a-laser-em-pele-negra/","Depilação a laser em pele negra: cuidados e recomendações",2024-11-05 09:11:47,19.2,1,1,12,0.63,0
+2127,"https://saudicas.com.br/dicas/quem-usa-protese-total-no-joelho-pode-dancar/","Quem usa prótese total no joelho pode dançar",2024-10-31 16:26:30,19.4,1,1,4,0.21,0
+2122,"https://saudicas.com.br/dicas/seguro-de-vida-para-empresas/","Seguro de vida para empresas: Como Garantir a Continuidade em Caso de Imprevistos",2024-10-30 14:21:14,19.4,1,1,5,0.26,0
+1971,"https://saudicas.com.br/saude/alimentacao-balanceada-dicas-essenciais-para-a-sua-saude/","Alimentação balanceada: dicas essenciais para a sua saúde",2024-10-28 22:35:16,19.5,1,1,14,0.72,0
+2025,"https://saudicas.com.br/dietas/conheca-os-beneficios-da-dieta-enteral-em-po/","Conheça os benefícios da dieta enteral em pó",2024-10-27 16:45:49,19.5,1,1,14,0.72,0
+1893,"https://saudicas.com.br/dicas/beneficios-e-precaucoes-ao-usar-lentes-de-contato-e-oculos/","Saúde ocular em destaque: benefícios e precauções ao usar lentes de contato e óculos",2024-10-26 10:51:38,19.6,1,1,6,0.31,0
+2097,"https://saudicas.com.br/dicas/sistemas-de-seguranca-eletronica-para-clinicas-esteticas/","Sistemas de segurança eletrônica para clínicas estéticas: dicas e opções",2024-10-22 17:31:05,19.7,1,1,11,0.56,0
+2059,"https://saudicas.com.br/dicas/quais-atividades-contribuem-para-a-saude-fisica-e-mental/","Quais atividades contribuem para a saúde física e mental?",2024-10-18 08:52:46,19.8,1,1,8,0.4,0
+2094,"https://saudicas.com.br/saude/como-o-seguro-de-vida-familiar-protege/","Entenda Como o Seguro de Vida Familiar Protege Seus Entes Queridos",2024-10-04 11:23:08,20.3,1,1,7,0.34,0
+2033,"https://saudicas.com.br/dicas/quanto-gasta-um-ar-condicionado-industrial/","Quanto gasta um ar-condicionado industrial: Saiba o custo energético",2024-10-02 21:43:00,20.4,1,1,4,0.2,0
+2166,"https://saudicas.com.br/dicas/como-implementar-principios-de-economia-circular-em-sua-empresa/","Como Implementar Princípios de Economia Circular em Sua Empresa",2024-10-01 09:00:48,20.4,1,1,1,0.05,0
+2081,"https://saudicas.com.br/saude/por-que-alguns-vicios-sao-mais-dificeis-de-largar-do-que-outros/","Por que alguns vícios são mais difíceis de largar do que outros?",2024-09-25 12:08:52,20.6,1,1,5,0.24,0
+2076,"https://saudicas.com.br/saude/quando-o-consumo-de-drogas-se-torna-uma-doenca/","Quando o consumo de drogas se torna uma doença?",2024-09-25 11:39:28,20.6,1,1,9,0.44,0
+2070,"https://saudicas.com.br/saude/quais-sao-os-transtornos-mentais-causados-pelo-alcool/","Quais são os transtornos mentais causados pelo álcool?",2024-09-25 11:23:01,20.6,1,1,8,0.39,0
+2065,"https://saudicas.com.br/saude/se-parar-de-beber-o-figado-volta-ao-normal/","Se parar de beber o fígado volta ao normal: Fatores envolvidos",2024-09-25 10:53:08,20.6,1,1,9,0.44,0
+2029,"https://saudicas.com.br/saude/como-o-vaporizador-de-ervas-pode-ajudar-apos-o-exercicio/","Recuperação Muscular: Como o Vaporizador de Ervas Pode Ajudar Após o Exercício",2024-09-16 15:17:00,20.9,1,1,9,0.43,0
+2048,"https://saudicas.com.br/dicas/como-aliviar-a-dor-no-ciatico-de-forma-natural/","Dicas Eficazes de Como Aliviar a Dor no Ciático de Forma Natural",2024-09-10 08:14:10,21.1,1,1,4,0.19,0
+2022,"https://saudicas.com.br/dicas/capacetes-e-prevencao-de-lesoes-a-importancia-da-protecao-em-atividades-fisicas/","Capacetes e prevenção de lesões: a importância da proteção em atividades físicas",2024-08-22 15:03:50,21.7,1,1,6,0.28,0
+2017,"https://saudicas.com.br/dicas/oxbar/","Oxbar: Inovação e Design em Dispositivos de Vaping para Todos os Perfis",2024-08-21 08:28:00,21.8,1,1,2,0.09,0
+2008,"https://saudicas.com.br/dicas/pax-labs/","Pax Labs: A Revolução dos Vaporizadores de Ervas",2024-08-07 07:52:00,22.2,1,1,3,0.14,0
+2004,"https://saudicas.com.br/beleza/cuidados-com-a-pele-dicas-essenciais-para-uma-rotina-eficaz/","Cuidados com a pele: dicas essenciais para uma rotina eficaz",2024-07-31 11:00:38,22.5,0,1,9,0.4,0
+2001,"https://saudicas.com.br/saude/exercicios-para-fazer-em-casa-como-manter-a-motivacao/","Exercícios para fazer em casa: como manter a motivação",2024-07-30 21:07:26,22.5,1,1,8,0.36,0
+1989,"https://saudicas.com.br/dietas/7-tipos-de-dietas-especiais/","7 tipos de dietas especiais",2024-07-23 09:47:56,22.7,1,1,24,1.06,0
+1965,"https://saudicas.com.br/beleza/quais-sao-os-beneficios-do-shampoo-wella/","Quais são os benefícios do Shampoo Wella?",2024-06-03 12:21:11,24.4,1,1,9,0.37,0
+1960,"https://saudicas.com.br/saude/quais-a-importancia-de-uma-locao-para-foliculite/","Quais a importância de uma loção para foliculite: Tratamento e Prevenção Eficazes",2024-05-24 16:08:27,24.7,1,1,11,0.45,0
+1942,"https://saudicas.com.br/saude/automedicacao-segura-guia-para-o-uso-responsavel-de-medicamentos/","Automedicação segura: guia para o uso responsável de medicamentos",2024-04-30 19:30:48,25.5,1,1,9,0.35,0
+1939,"https://saudicas.com.br/saude/tratamentos-naturais-para-dores-cronicas-o-que-e-possivel-fazer/","Tratamentos naturais para dores crônicas: o que é possível fazer?",2024-04-30 19:28:06,25.5,1,1,17,0.67,0
+1927,"https://saudicas.com.br/dicas/como-conseguir-medicamentos-com-desconto/","Como Conseguir Medicamentos com Desconto: Estratégias Eficazes",2024-04-23 09:23:00,25.8,1,1,9,0.35,0
+1924,"https://saudicas.com.br/dicas/confira-como-a-tecnologia-pode-evitar-a-queda-na-melhor-idade/","Confira como a tecnologia pode evitar a queda na melhor idade",2024-04-09 14:35:32,26.2,1,1,6,0.23,0
+1920,"https://saudicas.com.br/dicas/como-tratar-a-ludomania/","Como tratar a Ludomania? Guia Prático para Enfrentar o Vício em Jogos",2024-03-30 15:38:12,26.6,1,1,7,0.26,0
+1916,"https://saudicas.com.br/saude/quais-sao-os-principais-exames-de-rotina/","Quais são os principais exames de rotina?",2024-03-18 18:36:24,27,1,1,11,0.41,0
+1913,"https://saudicas.com.br/saude/descubra-como-a-saude-mental-afeta-a-qualidade-de-vida-e-o-que-fazer/","Descubra como a saúde mental afeta a qualidade de vida e o que fazer",2024-03-18 18:26:22,27,1,1,5,0.19,0
+1908,"https://saudicas.com.br/dicas/doenca-transmitida-por-alimentos-ou-agua-contaminada/","Doença Transmitida por Alimentos ou Água Contaminada: Alerta",2024-03-14 18:44:00,27.1,1,1,9,0.33,0
+1904,"https://saudicas.com.br/saude/qual-a-melhor-creatina-para-diabeticos/","Qual a Melhor Creatina para Diabéticos: Opções Seguras",2024-03-12 07:43:00,27.2,1,1,7,0.26,0
+1901,"https://saudicas.com.br/saude/qual-a-diferenca-entre-a-creatina-monohidratada-e-a-creapure/","Qual a diferença entre a creatina monohidratada e a Creapure: Entenda as Particularidades",2024-03-08 17:32:53,27.3,1,1,6,0.22,0
+1846,"https://saudicas.com.br/fitness/a-creatina-da-integralmedica-e-boa-analise-e-beneficios/","A creatina da Integralmedica é boa? Análise e Benefícios",2024-03-01 09:17:12,27.5,1,1,17,0.62,0
+1851,"https://saudicas.com.br/saude/efeitos-do-alcool-no-cerebro-a-longo-prazo/","Efeitos do álcool no cérebro a longo prazo: Entenda tudo agora",2024-01-21 17:22:00,28.9,1,1,12,0.42,0
+1843,"https://saudicas.com.br/saude/seguro-de-vida-o-que-e/","Seguro de vida o que é?",2024-01-10 13:03:57,29.2,1,1,13,0.45,0
+1839,"https://saudicas.com.br/dicas/o-impacto-do-cnpj-na-prestacao-de-servicos-medicos-autonomos/","O Impacto do CNPJ na Prestação de Serviços Médicos Autônomos",2024-01-03 08:18:23,29.5,1,1,9,0.31,0
+1835,"https://saudicas.com.br/saude/remedio-caseiro-para-tirar-vicio-de-droga/","Remédio caseiro para tirar vício de droga: Descubra!",2023-12-17 08:38:00,30,1,1,9,0.3,0
+1820,"https://saudicas.com.br/saude/melhores-planos-de-saude-unimed-sao-paulo/","Melhores Planos de Saúde Unimed São Paulo",2023-11-10 18:14:44,31.3,1,1,7,0.22,0
+1612,"https://saudicas.com.br/saude/como-parar-de-usar-craque-sozinho/","Como Parar de Usar Craque Sozinho: Um Guia Abrangente",2023-10-16 14:23:49,32.1,1,1,6,0.19,0
+1646,"https://saudicas.com.br/saude/remedio-caseiro-para-diarreia/","Remédio caseiro para diarreia: confira dicas",2023-08-04 18:42:00,34.5,1,1,5,0.14,0
+1637,"https://saudicas.com.br/saude/porque-fico-doente-quando-muda-o-tempo/","Porque fico doente quando muda o tempo? Entenda a relação entre as mudanças climáticas e a saúde",2023-08-01 10:54:44,34.6,1,1,11,0.32,0
+1631,"https://saudicas.com.br/dicas/qual-exame-de-sangue-detecta-cancer/","Qual exame de sangue detecta câncer?",2023-07-24 11:22:00,34.9,1,1,13,0.37,0
+1624,"https://saudicas.com.br/dicas/a-importancia-das-vitaminas/","A Importância das Vitaminas: Um Guia para o Bem-Estar",2023-06-26 09:43:24,35.8,1,1,5,0.14,0
+1619,"https://saudicas.com.br/saude/psiquiatra-e-psicologo-diferenca/","Psiquiatra e psicólogo diferença: Descubra agora!",2023-06-20 16:15:59,36,1,1,5,0.14,0
+1609,"https://saudicas.com.br/dicas/qual-o-melhor-omega-3-para-criancas/","Qual o melhor Omega 3 para crianças: guia completo para pais e responsáveis",2023-06-06 19:59:00,36.5,1,1,13,0.36,0
+1605,"https://saudicas.com.br/saude/como-identificar-e-tratar-o-ronco-em-criancas/","Como identificar e tratar o ronco em crianças",2023-06-06 14:51:11,36.5,1,1,4,0.11,0
+1592,"https://saudicas.com.br/saude/pediatria-perto-de-mim-escolher-clinica-pediatria/","Pediatria perto de mim: Dicas para escolher a melhor clínica de pediatria",2023-05-26 12:41:07,36.9,1,1,12,0.33,0
+1589,"https://saudicas.com.br/dicas/air-fryer-ajuda-a-melhorar-sua-alimentacao/","Air fryer ajuda a melhorar sua alimentação? Confira algumas dicas",2023-05-24 16:24:32,36.9,1,1,4,0.11,0
+1597,"https://saudicas.com.br/dicas/lente-suja-prejudica-a-visao/","Lente suja prejudica a visão: 8 dicas para limpar os óculos de grau",2023-05-22 11:34:19,37,1,1,9,0.24,0
+1583,"https://saudicas.com.br/dicas/mais-saude-com-proteina/","Mais saúde com proteína: 7 carnes de churrasco que você não conhecia",2023-05-17 15:25:13,37.2,1,1,5,0.13,0
+1577,"https://saudicas.com.br/saude/curso-na-area-da-saude-para-aperfeicoamento/","Por que fazer curso na área da saúde para aperfeiçoamento pode ser uma boa",2023-05-15 14:38:56,37.2,1,1,7,0.19,0
+1568,"https://saudicas.com.br/dicas/colchao-bom-para-coluna/","Escolhendo o colchão bom para coluna: Guia completo para dormir melhor e sem dores",2023-04-20 16:40:16,38.1,1,1,5,0.13,0
+1551,"https://saudicas.com.br/saude/exercicio-para-estimular-leite-materno/","Exercício para estimular leite materno: como ajudar na amamentação",2023-03-10 11:16:45,39.4,1,1,7,0.18,0
+1541,"https://saudicas.com.br/alimentacao/ainda-nao-conhece-o-oleo-de-semente-de-abobora/","Ainda não conhece o óleo de semente de abóbora? Não perca mais tempo e saiba tudo sobre!",2023-02-23 16:10:43,39.9,1,1,13,0.33,0
+1522,"https://saudicas.com.br/dicas/como-um-temporizador-online-pode-ajuda-lo/","Como um temporizador online pode ajudá-lo a ser mais produtivo",2023-01-02 15:20:28,41.7,1,1,4,0.1,0
+1516,"https://saudicas.com.br/saude-bucal/como-cuidar-do-sorriso-na-melhor-idade/","Como cuidar do sorriso na melhor idade?",2022-12-28 14:24:31,41.8,1,1,17,0.41,0
+1507,"https://saudicas.com.br/saude-bucal/como-saber-se-um-dentista-e-bom/","Como saber se um dentista é bom?",2022-12-21 17:28:57,42.1,1,1,22,0.52,0
+1482,"https://saudicas.com.br/saude/melatonina-funcionamento/","Melatonina: entenda o funcionamento do hormônio do sono como suplemento",2022-11-23 16:49:55,43,1,1,12,0.28,0
+1478,"https://saudicas.com.br/saude-bucal/carie-oculta/","Cárie oculta: o que é e quais os tratamentos",2022-11-23 16:33:32,43,1,1,17,0.4,0
+1474,"https://saudicas.com.br/dicas/como-administrar-um-laboratorio-de-analises-clinicas/","<strong>Como administrar um laboratório de análises clínicas</strong>",2022-11-17 15:59:15,43.2,1,1,4,0.09,0
+1470,"https://saudicas.com.br/saude/como-e-feita-uma-polissonografia/","<strong>Como é feita uma polissonografia?</strong>",2022-11-17 15:31:55,43.2,1,1,8,0.19,0
+1439,"https://saudicas.com.br/saude/omega-3-e-bom-para-que-conheca-13-usos/","Ômega 3 é bom para quê: conheça 13 usos",2022-11-01 16:22:52,43.7,1,1,12,0.27,0
+1434,"https://saudicas.com.br/saude/melatonina/","Melatonina: redefina o “relógio” do seu corpo com o hormônio do sono",2022-10-27 08:18:46,43.9,1,1,13,0.3,0
+1425,"https://saudicas.com.br/saude/como-fazer-dieta-vegana/","Como fazer uma dieta vegana e ter uma alimentação adequada",2022-09-19 08:14:41,45.2,1,1,19,0.42,0
+1413,"https://saudicas.com.br/beleza/quantas-vezes-se-deve-lavar-a-barba/","Quantas vezes se deve lavar a barba? Entenda!",2022-09-15 16:33:58,45.3,1,1,7,0.15,0
+1405,"https://saudicas.com.br/saude/depressao-catatonica-tem-cura/","Depressão catatônica tem cura? Conheça aqui a resposta!",2022-09-14 19:35:10,45.3,1,1,15,0.33,0
+1395,"https://saudicas.com.br/saude/quanto-tempo-dura-abstinencia/","Quanto tempo dura a abstinência? Saiba aqui!",2022-09-05 15:39:37,45.6,1,1,12,0.26,0
+1391,"https://saudicas.com.br/saude/exercicios-para-quadril/","3 exercícios para quadril que vão aliviar a sua dor",2022-09-01 18:55:03,45.8,1,1,5,0.11,0
+1381,"https://saudicas.com.br/dietas/melhor-programa-de-emagrecimento-online/","Qual o melhor programa de emagrecimento online?",2022-08-10 14:44:20,46.5,1,1,9,0.19,0
+1375,"https://saudicas.com.br/saude/como-posso-dormir-com-artrite-reumatoide-saiba-dicas-para-prevenir-ou-reduzir-a-insonia/","Como posso dormir com artrite reumatoide? Saiba dicas para prevenir ou reduzir a insônia ",2022-08-05 16:00:00,46.7,1,1,6,0.13,0
+1368,"https://saudicas.com.br/alimentacao/cuide-do-seu-bem-estar-confira-todas-as-vantagens-fornecidas-pela-riboflavina-no-organismo/","Cuide do seu bem-estar! Confira todas as vantagens fornecidas pela riboflavina no organismo",2022-08-01 10:15:02,46.8,1,1,8,0.17,0
+1362,"https://saudicas.com.br/alimentacao/dicas-para-comer-saudavel-sem-furar-o-orcamento/","8 dicas para comer saudável sem furar o orçamento",2022-07-20 18:21:03,47.2,1,1,8,0.17,0
+1357,"https://saudicas.com.br/saude/como-saber-se-rompi-o-ligamento-do-tornozelo/","Como saber se rompi o ligamento do tornozelo?",2022-06-26 10:04:18,48,1,1,6,0.13,0
+1353,"https://saudicas.com.br/beleza/botox-principais-duvidas-sobre-toxina-botulinica/","Botox: principais dúvidas sobre toxina botulínica",2022-06-07 09:13:16,48.6,1,1,14,0.29,0
+1342,"https://saudicas.com.br/dicas/especializacao-em-cirurgia-robotica/","A especialização em cirurgia robótica está ajudando a mudar a medicina",2022-06-01 23:09:53,48.8,1,1,3,0.06,0
+1115,"https://saudicas.com.br/beleza/hidratante-para-pele-seca/","Hidratante para pele seca: como manter a hidratação da pele",2022-05-12 18:31:19,49.5,1,1,16,0.32,0
+1101,"https://saudicas.com.br/saude/acupuntura-ajudar-aliviar-dor-artrite/","A acupuntura pode ajudar a aliviar a dor da artrite?",2022-05-02 17:48:33,49.8,1,1,4,0.08,0
+1094,"https://saudicas.com.br/dicas/5g-na-saude-4-casos-de-uso-revolucionarios-da-assistencia-5g/","5G na saúde - 4 Casos de Uso Revolucionários da Assistência 5G",2022-05-02 04:31:07,49.8,1,1,4,0.08,0
+1080,"https://saudicas.com.br/saude/atualizacao-proped-saude-crianca/","Atualização pelo PROPED auxilia família a lidar com a saúde da criança",2022-04-21 06:30:45,50.2,1,1,5,0.1,0
+1076,"https://saudicas.com.br/alimentacao/como-se-alimentar-bem-gastando-pouco/","Como se alimentar bem gastando pouco?",2022-04-11 15:11:26,50.5,1,1,10,0.2,0
+1065,"https://saudicas.com.br/saude/como-saber-tenho-anemia/","Como saber se eu tenho anemia: quais os sintomas?",2022-04-08 06:30:50,50.6,1,1,7,0.14,0
+1060,"https://saudicas.com.br/saude/como-manter-saudavel-ferias/","Como se manter saudável nas férias?",2022-03-28 15:39:47,51,1,1,4,0.08,0
+1047,"https://saudicas.com.br/saude/5-habitos-essenciais-saude-olhos/","5 hábitos essenciais para manter a saúde dos olhos",2022-03-02 16:05:15,51.9,1,1,7,0.13,0
+1039,"https://saudicas.com.br/alimentacao/o-que-posso-comer-dieta-low-carb/","O que posso comer na dieta low carb? Descubra!",2022-02-15 14:59:51,52.4,1,1,12,0.23,0
+1012,"https://saudicas.com.br/saude/menstruacao-marrom-e-pouco-fluxo/","Menstruação marrom é pouco fluxo? O que pode ser?",2021-11-29 18:57:23,55,1,1,19,0.35,0
+987,"https://saudicas.com.br/saude/remedio-caseiro-parar-fumar-urgente/","Remédio Caseiro para Parar de Fumar Urgente: saiba fazer",2021-11-11 16:08:03,55.6,1,1,11,0.2,0
+983,"https://saudicas.com.br/fitness/a-importancia-do-esporte-para-uma-vida-saudavel/","A importância do esporte para uma vida saudável",2021-11-05 18:05:46,55.8,1,1,16,0.29,0
+965,"https://saudicas.com.br/saude/barriga-inchada-menstruacao-nao-desce-2/","Barriga Inchada é Menstruação não Desce? saiba o que pode ser",2021-10-22 14:17:26,56.2,1,1,10,0.18,0
+905,"https://saudicas.com.br/saude/pomada-para-cicatrizar-corte-de-cirurgia/","Pomada para cicatrizar corte de cirurgia: como usar e para que serve?",2021-10-21 08:55:58,56.3,1,1,12,0.21,0
+893,"https://saudicas.com.br/saude/cirurgia-refrativa-qual-correcao-visao-ideal/","Cirurgia refrativa: qual tipo de correção da visão é ideal para você?",2021-10-20 18:02:27,56.3,1,1,5,0.09,0
+888,"https://saudicas.com.br/saude/terapias-alternativas-o-que-sao/","Terapias alternativas: o que são?",2021-10-06 16:27:45,56.8,1,1,11,0.19,0
+883,"https://saudicas.com.br/saude/problemas-visao-causados-diabetes/","Problemas de visão causados ​​pelo diabetes: quais são os principais?",2021-09-24 17:53:25,57.2,1,1,5,0.09,0
+879,"https://saudicas.com.br/saude/ortopedista-especialista-ombro-pratico-esportes/","Ortopedista especialista em ombro: pratico esportes; quando devo me consultar?",2021-09-24 17:24:36,57.2,1,1,12,0.21,0
+870,"https://saudicas.com.br/saude/vicio-alcool-drogas-clinicas-recuperacao/","Vício de álcool e drogas: causas; tratamentos e clínicas de recuperação",2021-09-16 15:56:00,57.4,1,1,5,0.09,0
+857,"https://saudicas.com.br/saude/4-tecnologias-podem-prevenir-doencas/","4 tecnologias que podem ajudar a prevenir doenças",2021-08-24 15:10:30,58.2,1,1,5,0.09,0
+853,"https://saudicas.com.br/dietas/15-maneiras-simples-cortar-calorias/","15 maneiras simples de cortar calorias",2021-08-23 16:20:43,58.2,1,1,17,0.29,0
+15,"https://saudicas.com.br/saude/cirurgia-coluna-o-que-voce-precisa-saber/","Considerando a cirurgia da coluna? O que você precisa saber",2021-07-27 08:00:00,59.1,1,1,5,0.08,0
+708,"https://saudicas.com.br/saude/importancia-probioticos-dieta/","A importância dos probióticos para uma dieta saudável",2021-04-30 19:34:38,62.1,1,1,9,0.14,0
+704,"https://saudicas.com.br/saude/terapias-alternativas-como-contribuem-saude/","Terapias alternativas: o que são e como elas contribuem para a saúde",2021-04-30 19:27:29,62.1,1,1,7,0.11,0
+697,"https://saudicas.com.br/fitness/crossfit-perder-peso/","CrossFit é bom para perder peso?",2021-04-26 17:58:02,62.2,1,1,8,0.13,0
+691,"https://saudicas.com.br/saude/saude-trabalho-5-atitudes-melhorar-produtividade/","Saúde no trabalho: 5 atitudes para você melhorar sua produtividade",2021-04-19 19:51:23,62.4,1,1,8,0.13,0
+683,"https://saudicas.com.br/saude-bucal/vantagens-protese-dentaria/","Saiba as vantagens de usar uma prótese dentária",2021-04-09 15:14:42,62.8,1,1,24,0.38,0
+670,"https://saudicas.com.br/saude/tipos-comuns-catarata/","Conheça neste artigo os 3 diferentes tipos mais comuns de catarata",2021-03-24 22:10:32,63.3,1,1,8,0.13,0
+663,"https://saudicas.com.br/dietas/dietas-na-moda-beneficios/","Dietas da moda não trazem benefícios a longo prazo",2021-03-05 17:45:12,63.9,1,1,13,0.2,0
+631,"https://saudicas.com.br/beleza/dicas-para-perder-a-barriga/","Dicas para quem quer perder a barriga de uma vez por todas",2021-03-02 18:27:24,64,1,1,9,0.14,0
+651,"https://saudicas.com.br/dietas/emagrecer-de-forma-gradual-ajuda-corpo/","Emagrecer de forma gradual ajuda o corpo a se preparar melhor para o novo peso",2021-03-01 20:02:10,64.1,1,1,8,0.12,0
+650,"https://saudicas.com.br/alimentacao/oque-sao-produtos-light-e-diet/","Entenda o que são produtos light e diet",2021-03-01 19:45:08,64.1,1,1,10,0.16,0

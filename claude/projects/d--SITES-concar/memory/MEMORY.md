@@ -1,0 +1,4 @@
+- [Concar — padrão SEO/GEO e escopo](concar-seo-geo-padrao.md) — siga docs/09 (padrão do parceiro); não remova FAQPage nem reescreva conteúdo sem OK
+- [Concar — infra do parceiro](concar-infra-parceiro.md) — VPS é do parceiro; deploy manual no Coolify (sem webhook); token em ~/coolify_token.txt (local, fora do repo)
+- [Concar — preços e combos](concar-precos-e-combos.md) — margem 50% é PISO não alvo; leilão/sinistro/recall são avulsos (não em combo); monitor de custo em /admin/custos-fornecedor
+- [Concar — integrações Google/Telegram](concar-integracoes-google-telegram.md) — bot Telegram @concar_avisos_bot (avisos do site); GA4 tracking no ar; dashboards GA/GSC pendentes do grant do service account

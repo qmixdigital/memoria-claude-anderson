@@ -1,0 +1,3 @@
+- [Armadilhas do deploy no Pages](deploy-pages-armadilhas.md) — dist vazia deu 404 em 10/09; sempre `&&`, nunca servir dist/ local; hash nos assets; edge cache preso
+- [Heredoc corrompe escapes](heredoc-escapes-quebram.md) — editar build-*.py com Edit/Write, nunca via heredoc; posts.json compacto sem indent
+- [URLs clicáveis no resumo](urls-clicaveis-no-resumo.md) — toda entrega fecha com as URLs absolutas de cada página criada ou alterada, para ele conferir no navegador

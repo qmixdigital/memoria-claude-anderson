@@ -1,0 +1,2 @@
+- [BYTX: não expor domínios da rede](bytx-nao-expor-dominios.md) — site institucional só mostra tipos de diretório, nunca nome/link/nicho
+- [BYTX: versionar ?v= no CSS/JS](bytx-cache-immutable.md) — mudou styles.css ou script.js, sobe o ?v= nas 4 páginas

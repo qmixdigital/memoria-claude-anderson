@@ -1,0 +1,25 @@
+{
+  "name": "agenda-telegram",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bot Telegram que transforma áudio ou texto em evento no Google Calendar (transcrição Whisper + extração com Claude).",
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node --env-file=.env dist/index.js",
+    "test": "node --test --import tsx test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "googleapis": "latest",
+    "grammy": "latest",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "tsx": "^4",
+    "typescript": "^5"
+  }
+}

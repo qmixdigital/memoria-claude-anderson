@@ -1,0 +1,182 @@
+REMOÇÃO DE LINKS IPTV - 2026-05-30
+=====================================
+
+Total geral:
+- 88 sites afetados
+- 3.411 posts modificados
+- 3.624 links removidos
+- 134 domínios alvo (lista em iptv-domains-rede-rescan-2026-05-30.txt)
+
+Operação: strip <a href> mantendo texto âncora. Post mantido intacto.
+Backup: _postmeta.oie_link_removed_<TS> em cada post modificado.
+post_modified preservado (via $wpdb->update).
+
+Por hosting:
+- anderson:  38 sites | 1.728 posts | 1.824 links
+- vps1:      36 sites | 1.046 posts | 1.116 links
+- hostverge: 10 sites |   464 posts |   499 links
+- qmix:       4 sites |   173 posts |   185 links
+
+Reports detalhados por hospedagem:
+- iptv-final-anderson.txt
+- iptv-final-qmix.txt
+- iptv-final-vps1.txt
+- iptv-final-hostverge.txt
+
+
+AMOSTRAGEM DE 120 POSTS PRA VERIFICAÇÃO MANUAL
+================================================
+(Permalinks aleatórios de 494 únicos coletados)
+
+  1. https://exquisito.com.br/insights/gene-hackman-ator-piloto-formula-ford-24-daytona/
+  2. https://agoranoticias.net/objetos-modernos-aparecendo-em-filmes-de-epoca-classicos/
+  3. https://barranews.com.br/como-os-testes-nucleares-aparecem-nos-filmes-de-espionagem/
+  4. https://viajenodetalhe.com.br/entretenimento/os-atores-de-novela-que-fizeram-carreira-no-cinema-tambem/
+  5. https://oiempreendedores.com.br/insights/suburra-stefano-sollima-roma-crime-politica-corrupcao-ostia/
+  6. https://df8.com.br/iptv-por-25-reais/
+  7. https://oiempreendedores.com.br/insights/billy-elliot-filme-resumo-sem-spoilers-e-cenas-marcantes/
+  8. https://folhar.com.br/frozen-2-elsa-e-anna-desvendam-o-enigma-da-jornada-disney/
+  9. https://exquisito.com.br/insights/hereditario-aster-e-a-maldicao-familiar-da-qual-ninguem-escapa/
+ 10. https://jornalconceito.com/as-telenovelas-internacionais-que-conquistaram-o-brasil-todo/
+ 11. https://folhar.com.br/historias-cruzadas-no-resumo-sem-spoilers-bem-direto/
+ 12. https://gazetadoconsumidor.com/os-late-night-shows-mais-assistidos-e-comentados-no-mundo/
+ 13. https://barranews.com.br/como-o-filme-bohemian-rhapsody-abriu-caminho-para-os-biopics/
+ 14. https://pontonaturalbrasil.com.br/insights/a-freira-resumo-do-filme-sem-spoilers-bem-direto-em-1-min/
+ 15. https://exquisito.com.br/insights/penelope-amor-proprio-e-cenas-fofas-para-maratona-imediata/
+ 16. https://sabedoriaglobal.com.br/insights/leis-da-atracao-bastidores-elenco-e-momentos-que-marcam/
+ 17. https://folhar.com.br/aventura-2004-reviravoltas-essenciais-explicadas-detalhadamente/
+ 18. https://ocontraditorio.com/como-as-novelas-brasileiras-conquistaram-audiencias-no-mundo/
+ 19. https://wtw19.com.br/alien-romulus-fede-alvarez-traz-o-horror-xenomorfo-assustador/
+ 20. https://wtw19.com.br/noa-owen-teague-a-emocionante-jornada-de-descoberta-animal/
+ 21. https://jornalimigrantes.com/fale-com-ela-no-cinema-resumo-sem-spoilers-bem-direto/
+ 22. https://wtw19.com.br/miyazaki-nausicaa-princesa-pos-apocaliptica-e-essencia-ghibli/
+ 23. https://exquisito.com.br/insights/estrada-perdida-o-enigma-surreal-de-david-lynch-e-a-mente/
+ 24. https://pontonaturalbrasil.com.br/entretenimento/os-personagens-de-novela-mais-amados-pelo-publico-brasileiro/
+ 25. https://sabedoriaglobal.com.br/entretenimento/as-series-animadas-que-viraram-fenomeno-entre-adultos-tambem/
+ 26. https://barranews.com.br/carroll-shelby-genio-por-tras-da-cobra-gt40-descubra-a-historia/
+ 27. https://df8.com.br/ken-miles-piloto-britanico-que-brilhou-em-le-mans-imperdivel/
+ 28. https://oiempreendedores.com.br/insights/gene-hackman-ator-piloto-formula-ford-24-daytona/
+ 29. https://ocontraditorio.com/os-filmes-de-acao-mais-assistidos-nos-ultimos-anos/
+ 30. https://wtw19.com.br/microfones-e-cameras-que-aparecem-acidentalmente-em-cenas/
+ 31. https://pontonaturalbrasil.com.br/insights/o-impossivel-retrata-tsunami-de-2004-2/
+ 32. https://jornalconceito.com/os-melhores-filmes-de-animacao-produzidos-e-lancados-nos-anos-60/
+ 33. https://revistadeducao.com.br/insights/juno-o-romance-humano-e-diferente-analise-completa-sem-spoilers/
+ 34. https://pontonaturalbrasil.com.br/entretenimento/os-melhores-desenhos-animados-classicos-disponiveis-na-tv/
+ 35. https://ocontraditorio.com/play-brasil-destaca-organizacao-para-reduzir-conteudo-irrelevante/
+ 36. https://ocontraditorio.com/a-proposta-no-cinema-filme-resumo-sem-spoilers-bem-direto/
+ 37. https://exquisito.com.br/insights/billy-elliot-filme-resumo-sem-spoilers-e-cenas-marcantes/
+ 38. https://revistadeducao.com.br/insights/cidadao-kane-revolucionou-tecnicas-de-camera/
+ 39. https://exquisito.com.br/entretenimento/as-personagens-femininas-mais-inteligentes-dos-filmes-de-espionagem/
+ 40. https://folhadonoroeste.com.br/dicas/quero-matar-meu-chefe-resumo-do-filme-sem-spoilers-direto/
+ 41. https://sabedoriaglobal.com.br/insights/wild-wild-country-filme-resumo-sem-spoilers-bem-direto/
+ 42. https://tempusnoticias.com/como-o-medo-nuclear-gerou-os-melhores-thrillers-da-historia/
+ 43. https://jornalconceito.com/miss-simpatia-2-no-cinema-resumo-sem-spoilers-bem-direto/
+ 44. https://viajenodetalhe.com.br/entretenimento/os-filmes-com-roteiros-mais-complexos-e-surpreendentes/
+ 45. https://revistadeducao.com.br/insights/james-dean-a-tragedia-do-porsche-spyder-icone-ator-e-corredor/
+ 46. https://jornalconceito.com/o-que-fica-de-fora-do-quadro-durante-as-filmagens-de-filmes/
+ 47. https://folhar.com.br/um-dia-no-cinema-filme-resumo-sem-spoilers-bem-direto/
+ 48. https://rumourisnews.com/como-os-musicais-classicos-continuam-encantando-novas-geracoes/
+ 49. https://oiempreendedores.com.br/insights/planeta-dos-macacos-reinado-o-legado-duradouro-de-cesar/
+ 50. https://ocontraditorio.com/como-a-franquia-james-bond-retratou-a-corrida-armamentista/
+ 51. https://pontonaturalbrasil.com.br/insights/acab-stefano-sollima-policia-roma-manifestacao-violencia-brutalidade/
+ 52. https://pontonaturalbrasil.com.br/insights/o-assassinato-de-jonbenet-resumo-sem-spoilers-bem-direto/
+ 53. https://barranews.com.br/o-leitor-no-cinema-filme-resumo-sem-spoilers-bem-direto/
+ 54. https://oiempreendedores.com.br/insights/o-ritual-resumo-do-filme-sem-spoilers-bem-direto-em-1-min/
+ 55. https://viajenodetalhe.com.br/entretenimento/como-o-documentario-this-is-it-mostrou-mj-nos-ultimos-ensaios/
+ 56. https://opopularjornal.com.br/aventura-2004-adaptacoes-de-livros-imperdiveis-para-ver-hoje-mesmo/
+ 57. https://oiempreendedores.com.br/insights/chani-e-paul-conflito-amor-e-o-messias-fremen-em-duna-2/
+ 58. https://pontonaturalbrasil.com.br/insights/aladdin-live-action-filme-resumo-sem-spoilers-bem-direto/
+ 59. https://sabedoriaglobal.com.br/insights/alien-romulus-fede-alvarez-e-o-horror-xenomorfo-aterrorizante/
+ 60. https://df8.com.br/as-series-de-animacao-mais-assistidas-pelas-criancas-hoje/
+ 61. https://revistadeducao.com.br/insights/ferrugem-osso-jacques-audiard-marion-cotillard-boxe-amor/
+ 62. https://sabedoriaglobal.com.br/entretenimento/como-os-filmes-de-acao-criam-cenas-de-queda-livre-realistas/
+ 63. https://jornalconceito.com/como-o-thriller-de-espionagem-definiu-um-genero-no-cinema/
+ 64. https://folhar.com.br/como-configurar-iptv-no-roku-para-acessar-canais-online/
+ 65. https://filmeseseriesnovas.com/ele-nao-esta-tao-a-fim-de-voce-sinais-que-o-filme-revela-ja/
+ 66. https://agoranoticias.net/agentes-de-talentos-influenciam-escalacoes-polemicas/
+ 67. https://boxnoticias.net/doce-novembro-por-que-esse-romance-ainda-divide-o-publico-hoje/
+ 68. https://ocontraditorio.com/as-musicas-tema-dos-filmes-de-007-que-fizeram-mais-sucesso/
+ 69. https://oiempreendedores.com.br/entretenimento/o-futuro-do-iptv-com-inteligencia-artificial-e-personalizacao/
+ 70. https://tempusnoticias.com/como-o-medo-nuclear-gerou-os-melhores-thrillers-da-historia/
+ 71. https://sabedoriaglobal.com.br/insights/inception-nolan-dicaprio-e-a-complexa-arquitetura-dos-sonhos/
+ 72. https://barranews.com.br/como-o-cinema-retrata-a-vida-de-artistas-musicais-famosos/
+ 73. https://exquisito.com.br/viajar/bastidores-de-filmes-de-super-herois-que-voce-nao-sabia/
+ 74. https://wtw19.com.br/the-social-dilemma-filme-resumo-sem-spoilers-bem-direto/
+ 75. https://diariodegoiania.com/filmes-de-crescimento-pessoal-para-mudar-sua-visao-de-vida-hoje/
+ 76. https://pontonaturalbrasil.com.br/entretenimento/como-o-iptv-substituiu-a-tv-a-cabo-em-muitas-residencias/
+ 77. https://df8.com.br/os-campeonatos-de-volei-mais-importantes-transmitidos-na-tv/
+ 78. https://folhadonoroeste.com.br/entretenimento/os-filmes-mais-premiados-no-oscar-de-todos-os-tempos/
+ 79. https://www.tribunalpopular.org/insidious-james-wan-patrick-wilson-filho-coma-astral-demonios/
+ 80. https://agoranoticias.net/como-funciona-tecnicamente-o-iptv-guia-completo-para-leigos/
+ 81. https://revistadeducao.com.br/insights/amor-e-outras-drogas-resumo-sem-spoilers-bem-direto/
+ 82. https://gazetaalerta.com/war-room-resumo-do-filme-sem-spoilers-bem-direto-em-1-min/
+ 83. https://ocontraditorio.com/o-que-fazer-para-nao-perder-series-durante-uma-viagem-longa/
+ 84. https://viajenodetalhe.com.br/insights/enzo-ferrari-adam-driver-biografia-2023-automobilismo-paixao/
+ 85. https://sabedoriaglobal.com.br/insights/filmes-sobre-pornografia-abordam-industria-alternativa/
+ 86. https://wtw19.com.br/delirios-do-passado-resumo-sem-spoilers-bem-direto/
+ 87. https://opopularjornal.com.br/tarzan-resumo-sem-spoilers-e-final-explicado-hoje/
+ 88. https://ocontraditorio.com/os-filmes-musicais-mais-premiados-da-historia-do-cinema/
+ 89. https://entrenoticia.com/o-predestinado-resumo-sem-spoilers-bem-direto-em-1-minuto/
+ 90. https://df8.com.br/shrek-terceiro-quem-sera-o-proximo-rei-trama-desvendada/
+ 91. https://wtw19.com.br/o-lutador-no-cinema-filme-resumo-sem-spoilers-bem-direto/
+ 92. https://barranews.com.br/luisa-madrigal-forca-e-pressao-familiar-no-coracao-de-encanto/
+ 93. https://folhar.com.br/carros-2-espionagem-e-corridas-o-final-explicado-agora/
+ 94. https://agoranoticias.net/como-contratar-um-servico-de-iptv-confiavel-e-seguro/
+ 95. https://diariodobrejo.com/trolls-a-busca-pela-felicidade-final-surpreendente-aqui/
+ 96. https://sabedoriaglobal.com.br/entretenimento/os-videoclipes-que-transformaram-musicas-em-narrativas-visuais/
+ 97. https://df8.com.br/como-os-reality-shows-de-renovacao-de-casas-conquistaram-fas/
+ 98. https://pontonaturalbrasil.com.br/insights/sobrenatural-resumo-do-filme-sem-spoilers-bem-direto/
+ 99. https://folhar.com.br/buscando-honra-o-drama-intenso-de-mma-de-marshall-que-voce-viu/
+100. https://folhadonoroeste.com.br/dicas/12-anos-de-escravidao-ganhou-oscar-de-que/
+101. https://agoranoticias.net/como-filmes-com-criancas-lidam-com-os-imprevistos-no-set/
+102. https://folhadonoroeste.com.br/dicas/de-volta-para-o-futuro-4-quem-seria-o-elenco-do-filme-tao-aguardado/
+103. https://oiempreendedores.com.br/insights/batalha-van-damme-no-auge-do-kickboxing-que-voce-precisa-rever/
+104. https://folhar.com.br/as-historias-reais-de-bandas-famosas-retratadas-no-cinema/
+105. https://oiempreendedores.com.br/insights/bridget-jones-por-que-a-personagem-ainda-e-tao-real-atualmente/
+106. https://viajenodetalhe.com.br/entretenimento/as-series-sobre-lifestyle-que-mais-fazem-sucesso-na-tv-hoje/
+107. https://exquisito.com.br/entretenimento/os-filmes-ambientados-nos-anos-80-que-fizeram-mais-sucesso/
+108. https://wtw19.com.br/irma-dulce-resumo-do-filme-sem-spoilers-bem-direto-hoje-2/
+109. https://barranews.com.br/o-que-e-epg-no-iptv-e-como-ele-melhora-sua-experiencia/
+110. https://revistadeducao.com.br/entretenimento/como-a-guerra-fria-na-asia-foi-retratada-pelo-cinema-mundial/
+111. https://jornalconceito.com/o-poderoso-chefao-no-cinema-resumo-sem-spoilers-bem-direto/
+112. https://sabedoriaglobal.com.br/insights/oliver-robins-ator-mirim-quase-morreu-no-set-de-poltergeist/
+113. https://oiempreendedores.com.br/insights/beetlejuice-teria-sequencia-no-havai/
+114. https://ocontraditorio.com/os-melhores-programas-de-satira-politica-disponiveis-na-tv/
+115. https://darkcyan-narwhal-224012.hostingersite.com/a-princesa-e-o-sapo-resumo-sem-spoilers-bem-direto/
+116. https://sabedoriaglobal.com.br/entretenimento/como-a-corrida-espacial-entre-eua-e-urss-virou-tema-de-cinema/
+117. https://jornalconceito.com/12-anos-de-escravidao-resumo-sem-spoilers-bem-direto/
+118. https://diariopernambucano.com.br/na-natureza-selvagem-e-historia-real/
+119. https://r10noticias.com/os-programas-de-moda-que-definiram-tendencias-na-televisao/
+120. https://adonline.com.br/o-auto-da-compadecida-resumo-do-filme-sem-spoilers-bem-direto/
+
+
+COMO VERIFICAR
+==============
+1. Abrir 5-10 links random
+2. Procurar palavra "IPTV", "teste IPTV", "testar IPTV" no texto do artigo
+3. O texto ainda deve aparecer NORMAL (sem ser link clicável)
+4. Post deve manter título, conteúdo, imagens, links internos
+
+
+REVERSÃO (se precisar)
+======================
+Backup em _postmeta.oie_link_removed_<TS> por post.
+Reverter um post:
+  wp eval '
+  $id = <ID>;
+  global $wpdb;
+  $bk = $wpdb->get_var("SELECT meta_value FROM {$wpdb->postmeta} WHERE post_id=$id AND meta_key LIKE \"oie_link_removed_%\" ORDER BY meta_id DESC LIMIT 1");
+  if ($bk) {
+      $wpdb->update($wpdb->posts, ["post_content" => $bk], ["ID" => $id]);
+      clean_post_cache($id);
+      echo "restored\n";
+  }
+  '
+
+Reverter rodada inteira (todos posts da data 2026-05-30):
+  wp db query "
+  UPDATE wp_posts p
+  JOIN wp_postmeta m ON m.post_id = p.ID
+  SET p.post_content = m.meta_value
+  WHERE m.meta_key LIKE 'oie_link_removed_178%';
+  "

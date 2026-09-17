@@ -1,0 +1,5 @@
+- [error_page 410 do HestiaCP intercepta return 410](nginx-error-page-410-hestiacp.md) — regex de `.html` no vhost captura a URI interna `/error/410.html` e vira 301 silencioso
+- [not-found.tsx em route group nao funciona no Next 16](next-not-found-route-group.md) — 404 sai com corpo vazio; precisa do arquivo na raiz de `app/`
+- [Pool do Drizzle sem handler derruba o Node](drizzle-pool-sem-handler-derruba-node.md) — conexao ociosa morta pelo Postgres virava uncaughtException e 365 restarts no PM2
+- [Nunca usar travessao em texto do usuario](nunca-usar-travessao.md) — corrigir exige refazer a frase, e o texto vive em tres lugares (banco, codigo, config)
+- [Marcador de texto de IA e moldura repetida, nao palavra](marcadores-de-texto-de-ia.md) — medir repeticao de estrutura de frase, porque clichê de vocabulario rende quase nada

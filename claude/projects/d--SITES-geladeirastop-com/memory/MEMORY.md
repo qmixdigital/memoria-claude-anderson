@@ -1,0 +1,4 @@
+- [Par PM2 compartilha o .next](deploy-next-pm2-par-compartilha-next.md) — build interrompido derruba as duas instâncias; nunca canalizar `npm run build` para `head`.
+- [Link de SEO nasce no servidor](link-seo-precisa-nascer-no-servidor.md) — componente client que monta href em useEffect não passa link equity nem aparece no crawl.
+- [Service account do Search Console](gsc-service-account.md) — JSON em DocumentsAPIs, acesso a 83 propriedades incluindo sc-domain:geladeirastop.com.
+- [Planilha de backlinks no Sheets](planilha-backlinks-sheets.md) — só a SA seoqmix escreve; colunas E/F/H, G fica vazia; conferir destinos e âncoras já usados.

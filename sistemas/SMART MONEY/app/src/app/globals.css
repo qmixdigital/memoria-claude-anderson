@@ -1,0 +1,471 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #050a0f;
+  --bg-alt: #0a111c;
+  --card: #ffffff0a;
+  --card-hover: #ffffff14;
+
+  --foreground-hex: #e7f1ff;
+  --text-secondary: #c7d5e5;
+  --text-muted: #8899aa;
+
+  --primary-hex: #00ff66;
+  --primary-hover: #00dd55;
+  --primary-fg: #03101e;
+  --border-hex: #ffffff1a;
+  --border-accent: #00ff6633;
+
+  --radius: 0.75rem;
+  --shadow: 0 25px 60px rgba(0, 0, 0, 0.30);
+  --glow: 0 0 30px rgba(0, 255, 102, 0.10);
+
+  /* Compatibility shims for existing inline styles using hsl(var(--…)) */
+  --foreground: 210 30% 95%;
+  --background: 210 50% 4%;
+  --surface: 0 0% 100% / 0.04;
+  --surface-2: 0 0% 100% / 0.08;
+  --border: 0 0% 100% / 0.10;
+  --muted: 210 12% 60%;
+  --primary: 140 100% 50%;
+  --success: 140 100% 50%;
+  --danger: 0 72% 58%;
+  --warning: 38 92% 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  color-scheme: dark;
+  /* Bloqueia scroll horizontal global — overflow só nos containers que querem (tabelas) */
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground-hex);
+  background: var(--bg);
+  font-family: "Open Sans", system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Subtle radial glow no fundo pra evitar plano chato */
+  background-image:
+    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(0, 255, 102, 0.04), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 100% 100%, rgba(0, 255, 102, 0.02), transparent 60%);
+  background-attachment: fixed;
+}
+
+/* Prevenção universal de overflow forçado em flex/grid containers */
+* {
+  min-width: 0;
+}
+
+/* Imagens nunca estouram o container */
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--foreground-hex);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-alt);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-hex);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-accent);
+}
+
+/* Table base — estilo "data-dense terminal" (Bloomberg/TradingView) */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-feature-settings: 'tnum', 'cv11';  /* tabular numerals + alternate styles */
+}
+
+th, td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-hex);
+  vertical-align: middle;
+  line-height: 1.3;
+}
+
+th {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  /* Cabeçalho NÃO sticky — combinação com overflow-x do container quebrava
+     o posicionamento em Chrome. Header fica fixo no topo da tabela. */
+  background: var(--bg-alt);
+  background-image: linear-gradient(180deg, rgba(0, 255, 102, 0.04) 0%, transparent 100%);
+  border-bottom: 1px solid var(--border-accent);
+  position: relative;
+  z-index: 1;
+}
+
+tbody tr {
+  transition: background 0.12s ease;
+}
+tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.012);
+}
+tbody tr:hover td {
+  background: var(--card-hover) !important;
+}
+
+/* Números financeiros — JetBrains Mono pra alinhamento perfeito */
+.fin-num {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* Cores tipográficas pra dados financeiros */
+.fin-pos { color: var(--primary-hex); }
+.fin-neg { color: #ff6b6b; }
+.fin-neutral { color: var(--text-secondary); }
+
+/* Stack vertical compacto pra colunas combinadas */
+.cell-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1.15;
+}
+.cell-stack .primary { font-size: 0.85rem; font-weight: 600; }
+.cell-stack .secondary { font-size: 0.68rem; opacity: 0.75; }
+
+/* Sticky first column (ticker) — opaco com sombra lateral pra separar */
+.sticky-col {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+  background: var(--bg) !important;
+  box-shadow: 4px 0 12px -6px rgba(0, 0, 0, 0.6), 1px 0 0 var(--border-hex);
+}
+tbody tr:nth-child(even) .sticky-col { background: #060c11 !important; }
+tbody tr:hover .sticky-col { background: var(--card-hover) !important; }
+/* sticky-col no header — destaque visual */
+thead .sticky-col,
+thead th.sticky-col {
+  background: var(--bg-alt) !important;
+  z-index: 4;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* Compact icon button group */
+.icon-row {
+  display: inline-flex;
+  gap: 2px;
+  align-items: center;
+}
+.icon-row button,
+.icon-row a {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.12s;
+  line-height: 1;
+}
+.icon-row button:hover,
+.icon-row a:hover {
+  background: var(--card-hover);
+  border-color: var(--border-accent);
+  color: var(--primary-hex);
+}
+
+/* ──────────────────────────────────────────────────────────────────────
+   MOBILE FIRST — adaptações progressivas
+   ────────────────────────────────────────────────────────────────────── */
+
+/* Tablet (até 1024px) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 14.5px;
+  }
+  main {
+    padding: 16px 16px !important;
+  }
+  th, td {
+    padding: 7px 9px;
+    font-size: 0.82rem;
+  }
+}
+
+/* Mobile (até 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  main {
+    padding: 12px 12px !important;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  /* Forms com grid de várias colunas viram 1 coluna em mobile */
+  form#watchlist-form {
+    grid-template-columns: 1fr !important;
+  }
+  form#watchlist-form button[type="submit"] {
+    width: 100%;
+  }
+  /* Forms inline com gap múltiplo flex-wrap */
+  form, .row, [style*="display: flex"][style*="gap"] {
+    flex-wrap: wrap;
+  }
+  /* Inputs e textareas largura total em mobile */
+  input[type="text"], input[type="number"], input[type="email"],
+  input[type="search"], input[type="tel"], input[type="url"],
+  input[type="date"], textarea, select {
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 1.3rem !important;
+  }
+  h2 {
+    font-size: 1.05rem !important;
+  }
+  /* Tabelas mais compactas */
+  th, td {
+    padding: 6px 8px;
+    font-size: 0.78rem;
+    line-height: 1.3;
+  }
+  th {
+    font-size: 0.62rem;
+    letter-spacing: 0.05em;
+  }
+  /* Sticky col mais estreita pra deixar mais espaço */
+  .sticky-col {
+    max-width: 110px;
+    box-shadow: 3px 0 8px -4px rgba(0, 0, 0, 0.7), 1px 0 0 var(--border-hex);
+  }
+  .cell-stack .primary { font-size: 0.78rem; }
+  .cell-stack .secondary { font-size: 0.62rem; }
+  /* Inputs e selects maiores pra touch */
+  select, input[type="text"], input[type="number"], input[type="date"],
+  input[type="email"], input[type="search"], input[type="tel"], textarea {
+    font-size: 16px; /* evita zoom in iOS */
+    padding: 10px 12px;
+    min-height: 44px;
+  }
+  /* Touch targets: botões mínimos 44×44 */
+  button {
+    min-height: 36px;
+  }
+  .btn-primary {
+    padding: 12px 18px;
+    font-size: 0.92rem;
+    width: auto;
+  }
+  /* Modais fullscreen em mobile */
+  [role="dialog"] > div,
+  .modal-overlay > div {
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    border-radius: 0 !important;
+  }
+  /* Cards KPI: 1-2 colunas */
+  .grid-kpi {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  /* Grids com minmax >= 320px estouram em mobile — força 1 coluna */
+  div[style*="minmax(420px"],
+  div[style*="minmax(380px"],
+  div[style*="minmax(350px"],
+  div[style*="minmax(320px"],
+  div[style*="minmax(300px"],
+  div[style*="minmax(280px"] {
+    grid-template-columns: 1fr !important;
+  }
+  /* Cards com max-width grande viram fluidos */
+  div[style*="max-width: 760px"],
+  div[style*="maxWidth: '760px'"] {
+    max-width: 100% !important;
+  }
+}
+
+/* Mobile compact (até 480px) */
+@media (max-width: 480px) {
+  main {
+    padding: 10px 10px !important;
+  }
+  h1 {
+    font-size: 1.15rem !important;
+  }
+  /* Tabelas ainda mais compactas */
+  th, td {
+    padding: 5px 6px;
+    font-size: 0.74rem;
+  }
+  th {
+    font-size: 0.58rem;
+  }
+  /* Sticky col bem reduzida */
+  .sticky-col {
+    max-width: 96px;
+  }
+  /* KPI cards: 1 coluna */
+  .grid-kpi {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Indicador "deslize" em tabelas com overflow-x scroll */
+@media (max-width: 1024px) {
+  div[style*="overflow-x"]:has(table)::after,
+  div[style*="overflowX"]:has(table)::after {
+    /* Apenas demarca visualmente que pode rolar */
+    pointer-events: none;
+  }
+}
+
+/* Links */
+a {
+  color: var(--primary-hex);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+/* Surfaces (cards) — global utility */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border-hex);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card-glow {
+  background: var(--card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow), var(--glow);
+}
+
+/* Primary button */
+.btn-primary {
+  background: var(--primary-hex);
+  color: var(--primary-fg);
+  border: none;
+  border-radius: var(--radius);
+  padding: 10px 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.btn-primary:hover {
+  background: var(--primary-hover);
+  box-shadow: var(--glow);
+}
+.btn-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Selection */
+::selection {
+  background: var(--primary-hex);
+  color: var(--primary-fg);
+}
+
+/* Form controls — força tema escuro consistente em todo o app */
+select,
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input:not([type]),
+textarea {
+  background-color: var(--bg-alt);
+  color: var(--foreground-hex);
+  border: 1px solid var(--border-hex);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color-scheme: dark;
+}
+
+select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+/* Dropdown items — Firefox/Chrome/Edge respeitam color-scheme; reforço aqui */
+select option,
+select optgroup {
+  background-color: var(--bg-alt);
+  color: var(--foreground-hex);
+}
+
+/* Foco: usa o accent verde QMIX */
+select:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-hex);
+  box-shadow: 0 0 0 1px var(--primary-hex);
+}
+
+/* Placeholder discreto */
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+/* Range slider */
+input[type="range"] {
+  accent-color: var(--primary-hex);
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Checkbox e radio */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--primary-hex);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}

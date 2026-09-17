@@ -1,0 +1,9 @@
+0 9 * * * /var/www/backlinkguard/scripts/check-balance.sh
+---
+total 24
+drwxr-xr-x+  2 root root 4096 Jul 24 16:10 .
+drwxr-xr-x+ 37 root root 4096 Aug  3 19:40 ..
+-rw-r--r--   1 root root   33 Jul 25 09:00 .balance-alert-state.json
+-rw-------   1 root root  892 Jul 24 15:48 .env
+-rw-r--r--   1 root root  121 Jul 24 20:44 check-all-status.json
+-rw-------   1 root root 2359 Jul 23 20:54 google-sa.json

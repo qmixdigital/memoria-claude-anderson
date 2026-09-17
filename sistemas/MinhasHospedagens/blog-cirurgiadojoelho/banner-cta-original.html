@@ -1,0 +1,87 @@
+<style>
+  :root {
+    --joelho-blue: #024E70;
+    --joelho-yellow: #FAC01F;
+    --joelho-yellow-darker: #f0b400;
+    --joelho-light-text: #FFFFFF;
+  }
+
+  .banner-joelho-author-blue-bg {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: var(--joelho-blue);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-left: 5px solid var(--joelho-yellow);
+  }
+
+  .banner-author-text-blue-bg {
+    flex-grow: 1;
+  }
+
+  .banner-joelho-author-blue-bg .author-name {
+    display: block;
+    font-size: 1.3rem;
+    color: var(--joelho-light-text);
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+    line-height: 1.3;
+  }
+
+  .banner-joelho-author-blue-bg p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .banner-joelho-author-blue-bg a.banner-button-author {
+    display: inline-block;
+    background-color: var(--joelho-yellow);
+    color: var(--joelho-blue);
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .banner-joelho-author-blue-bg a.banner-button-author:hover {
+    background-color: var(--joelho-yellow-darker);
+    transform: translateY(-2px);
+  }
+
+  @media (min-width: 768px) {
+    .banner-joelho-author-blue-bg {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      padding: 1.5rem 2rem;
+    }
+  }
+</style>
+
+<div class="banner-joelho-author-blue-bg">
+  <div class="banner-author-text-blue-bg">
+    <span class="author-name">Dr. Ulbiramar Correia</span>
+    <p>Especialista em Cirurgia do Joelho em Goiânia.</p>
+  </div>
+  <a href="https://cirurgiadojoelhogoiania.com/"
+     class="banner-button-author"
+     target="_blank"
+     rel="noopener noreferrer nofollow">
+     Conheça o Ortopedista
+  </a>
+</div>

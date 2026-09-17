@@ -1,0 +1,6 @@
+services:
+  postgres:
+    ports:
+      # Em dev, expõe Postgres em localhost para você poder conectar com DBeaver/psql.
+      # Em produção este override NÃO é aplicado, mantendo Postgres não exposto.
+      - "127.0.0.1:5432:5432"

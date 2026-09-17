@@ -1,0 +1,2 @@
+sintaxe OK
+66:echo "==> Subindo instancia efemera $APP_B na porta $PORTA_B"

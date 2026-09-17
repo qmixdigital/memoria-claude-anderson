@@ -1,0 +1,11 @@
+[
+  {
+    "nome": "cirurgiacoracao",
+    "account_id": "47d685885d91e2c451f94027e9e3eb98",
+    "endpoint": "https://47d685885d91e2c451f94027e9e3eb98.r2.cloudflarestorage.com",
+    "access_key_id": "ff0904be3287077b2c927d53bd1b0153",
+    "secret_access_key": "<<REMOVIDO>>",
+    "region": "auto",
+    "observacao": "Credenciais S3 do R2. O token de API desta mesma conta fica em contas.json com o nome 'cirurgiacoracao'."
+  }
+]

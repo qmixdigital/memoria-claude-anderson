@@ -1,0 +1,47 @@
+SITES CLOUDFLARE COM ORIGEM MORTA - 19/07/2026
+(re-testados 2x, 0 falsos positivos. NADA foi deletado.)
+==============================================================================
+
+GRUPO A - PBN/IPTV/teste descartavel:
+  caminhoseescolhas.com.br           conta=principal  origem=pages:testeiptvce.pages.dev  erro=CONN
+  foxxplay.com                       conta=principal  origem=192.0.2.1                    erro=TIMEOUT
+  playpro.mov                        conta=conta7     origem=?                            erro=451
+  reycastro.com.br                   conta=principal  origem=pages:iptv-reycastro.pages.dev erro=CONN
+  saber.srv.br                       conta=conta5     origem=pages:saber-srv-br.pages.dev erro=403
+  testeiptvlista.online              conta=principal  origem=192.0.2.1                    erro=TIMEOUT
+
+GRUPO B - nome de empresa/possivel cliente (CONFERIR ANTES):
+  ablutec.com.br                     conta=conta3     origem=pages:ablutec.pages.dev      erro=CONN
+  bitcao.com.br                      conta=conta26    origem=SEM-ORIGEM                   erro=CONN
+  cadeirastop.com                    conta=conta23    origem=82.112.247.158               erro=403
+  canalcarro.net.br                  conta=conta3     origem=SEM-ORIGEM                   erro=CONN
+  cienciadotreinamento.com.br        conta=conta26    origem=SEM-ORIGEM                   erro=CONN
+  cinezencultural.com.br             conta=conta13    origem=?                            erro=404
+  conini.com.br                      conta=conta21    origem=?                            erro=522
+  cordeiropolisemfoco.com.br         conta=conta3     origem=SEM-ORIGEM                   erro=CONN
+  daydreameventos.com.br             conta=conta3     origem=pages:daydream-9ds.pages.dev erro=CONN
+  dfmanchetes.com.br                 conta=conta20    origem=?                            erro=CONN
+  docsbrasil.work                    conta=conta23    origem=89.116.73.250                erro=SSL
+  dotecosmeticos.com.br              conta=conta3     origem=pages:dotecosmeticos.pages.dev erro=CONN
+  elfolivre.com.br                   conta=conta26    origem=SEM-ORIGEM                   erro=CONN
+  essenzedipozzi.com.br              conta=conta3     origem=pages:dipozzi.pages.dev      erro=CONN
+  estudiounidesign.com.br            conta=conta26    origem=SEM-ORIGEM                   erro=CONN
+  falaseriocanaa.com.br              conta=conta26    origem=SEM-ORIGEM                   erro=CONN
+  igamtec.com.br                     conta=conta21    origem=?                            erro=CONN
+  infecto2023.com.br                 conta=conta21    origem=?                            erro=CONN
+  infobrasil.inf.br                  conta=conta27    origem=SEM-ORIGEM                   erro=CONN
+  inteligenciacompetitivarev.com.br  conta=conta26    origem=SEM-ORIGEM                   erro=CONN
+  jornalpovo.com.br                  conta=conta3     origem=SEM-ORIGEM                   erro=CONN
+  kmpress.com.br                     conta=conta3     origem=pages:kmpress.pages.dev      erro=CONN
+  luminapdv.com.br                   conta=conta3     origem=pages:luminapdv.pages.dev    erro=522
+  masterjuris.com.br                 conta=conta26    origem=SEM-ORIGEM                   erro=CONN
+  municipiosconsultoria.com.br       conta=conta4     origem=34.111.179.208               erro=525
+  museudomarajo.com.br               conta=conta21    origem=?                            erro=CONN
+  oculospravc.com.br                 conta=conta20    origem=?                            erro=CONN
+  pastoraldasaudenacional.com.br     conta=conta3     origem=pages:nacional.pages.dev     erro=CONN
+  prattein.com.br                    conta=conta7     origem=?                            erro=CONN
+  sindcoco.com.br                    conta=conta3     origem=pages:sindcoco.pages.dev     erro=CONN
+  ticketson.com.br                   conta=conta26    origem=SEM-ORIGEM                   erro=CONN
+  truenet.com.br                     conta=conta26    origem=SEM-ORIGEM                   erro=CONN
+  tvsnota10.com                      conta=conta23    origem=147.79.91.52                 erro=403
+  zoonews.com.br                     conta=conta21    origem=?                            erro=CONN

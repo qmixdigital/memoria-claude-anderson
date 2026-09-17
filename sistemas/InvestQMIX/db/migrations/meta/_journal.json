@@ -1,0 +1,188 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1777912606587,
+      "tag": "0000_create_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1777940270467,
+      "tag": "0001_reference_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1777940382522,
+      "tag": "0002_time_series",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1777940509604,
+      "tag": "0003_event_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1777947385933,
+      "tag": "0004_signals",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1777947445933,
+      "tag": "0005_alerts",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1777947505933,
+      "tag": "0006_ai",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1777947565933,
+      "tag": "0007_user_data",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1777947625933,
+      "tag": "0008_deep_analyses",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1777947685933,
+      "tag": "0009_quote_and_purchase",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1777947715933,
+      "tag": "0009b_fix_stub_cnpj",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1777947745933,
+      "tag": "0010_watchlist_alerts",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1777947805933,
+      "tag": "0011_proventos",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1777947865933,
+      "tag": "0012_watchlist_purchase_qty",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1777947925933,
+      "tag": "0013_proventos_a_receber",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1777947985933,
+      "tag": "0014_followed_funds",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1777948045933,
+      "tag": "0015_notable_managers",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1777948105933,
+      "tag": "0016_price_alerts",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1777948165933,
+      "tag": "0017_rename_watchlist_to_portfolio",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1777948225933,
+      "tag": "0018_classify_notable_gestoras",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "7",
+      "when": 1777948285933,
+      "tag": "0019_movement_alerts_sent",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1777948345933,
+      "tag": "0020_remove_signals_ai_smartmoney",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "7",
+      "when": 1777948405933,
+      "tag": "0021_tax_module",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1777948465933,
+      "tag": "0022_trade_repurchase_intent",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1777948585933,
+      "tag": "0023_darfs",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1777948645933,
+      "tag": "0024_paper_trading",
+      "breakpoints": true
+    }
+  ]
+}

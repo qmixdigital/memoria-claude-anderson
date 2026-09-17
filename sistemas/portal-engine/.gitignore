@@ -1,0 +1,21 @@
+# === SEGREDOS — nunca commitar (esta pasta contém chaves de produção) ===
+# Chaves SSH (caso alguém coloque aqui por engano)
+*id_ed25519*
+*.pem
+*.key
+acesso/
+# Arquivos de redirect gerados na conversão de WP (podem conter URLs internas)
+redirects-*.txt
+map-*.txt
+
+# === Lixo de SO / editor ===
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.bak-*
+
+# ATENÇÃO: sites.json CONTÉM segredos (apikeys, resendKey). Ele é necessário para operar e
+# por isso NÃO está ignorado — mas trate a pasta inteira como confidencial e use repositório PRIVADO.

@@ -1,0 +1,175 @@
+// BacklinkGuard — schema
+// Multi-tenant desde já (Account) para viabilizar revenda futura.
+// learn more: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// PostgreSQL (produção no VPS QMIX e Neon). Modelos portáveis — sem enum nativo,
+// então dá para rodar em SQLite no dev trocando só este provider se necessário.
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// Tenant: o "dono" de uma carteira de clientes.
+/// Na v1 interna existe um único Account (QMIX). Na revenda, cada
+/// revendedor/assinante vira um Account isolado.
+model Account {
+  id        String   @id @default(cuid())
+  name      String
+  createdAt DateTime @default(now())
+  clients   Client[]
+}
+
+/// Cliente de SEO cujos backlinks são monitorados.
+model Client {
+  id        String     @id @default(cuid())
+  accountId String
+  account   Account    @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  name      String
+  /// Domínio do site do cliente que os backlinks devem apontar (ex: coegoiania.com.br)
+  domain    String
+  createdAt DateTime   @default(now())
+  backlinks Backlink[]
+
+  @@index([accountId])
+}
+
+model Backlink {
+  id             String   @id @default(cuid())
+  clientId       String
+  client         Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  /// URL do artigo/página que hospeda o backlink
+  articleUrl     String
+  /// Âncora esperada (texto do link). Opcional.
+  expectedAnchor String?
+  /// URL completa e EXATA de destino do link (ex: https://cliente.com.br/pagina).
+  /// O check "link presente" verifica que o artigo aponta exatamente para cá.
+  expectedTarget String   @default("")
+  /// Domínio registrável de destino do backlink. Para import de CSV = domínio
+  /// do Client; para detecção automática = domínio externo linkado. Usado como
+  /// fallback e para o check de indexação.
+  targetDomain   String   @default("")
+  /// "DIRECT" | "REDIRECT_301" (ver src/lib/types.ts). String em vez de enum
+  /// nativo para manter o schema portável entre SQLite (dev) e Postgres (prod).
+  type           String   @default("DIRECT")
+  /// Como o backlink entrou: "csv" (importado) | "crawl" (detecção automática).
+  source         String   @default("csv")
+  createdAt      DateTime @default(now())
+
+  checks Check[]
+
+  // Snapshot do último check (desnormalizado para ordenar/filtrar a tabela rápido)
+  lastCheckAt   DateTime?
+  lastPublished Boolean?
+  lastLinkOk    Boolean?
+  lastIndexed   Boolean?
+  /// Quando a INDEXAÇÃO foi de fato conferida (o check devolveu sim ou não).
+  /// Não confundir com lastCheckAt: a trava de custo pula a consulta de
+  /// indexação em várias rodadas, então a data do check geral não diz nada
+  /// sobre há quanto tempo esse dado específico foi olhado.
+  lastIndexCheckAt DateTime?
+
+  // Correção MANUAL. Quando o robô é bloqueado pelo site (403/WAF) o resultado
+  // automático fica "não confirmado"; aqui o usuário registra o que viu com os
+  // próprios olhos. Fica em colunas separadas de propósito: nenhuma rodada de
+  // verificação encosta nelas, então a correção nunca é sobrescrita. null =
+  // sem correção (vale o automático).
+  manualPublished Boolean?
+  manualLinkOk    Boolean?
+  manualIndexed   Boolean?
+  /// quando a última correção manual foi feita (mostrado como "conferido em…")
+  manualAt        DateTime?
+
+  /// Atributo `rel` do link do cliente no último check. "" = sem rel (passa
+  /// autoridade); "nofollow"/"sponsored"/"ugc" = NÃO passa autoridade, que é o
+  /// que interessa em SEO. null = ainda não avaliado.
+  lastLinkRel     String?
+  /// Texto âncora realmente encontrado na página. Comparado com expectedAnchor
+  /// para detectar quando o portal trocou a âncora contratada.
+  lastFoundAnchor String?
+  /// URL do cliente que o artigo linkou quando NÃO é a contratada. Guardada
+  /// para o botão "aceitar": adotar a página que o portal de fato linkou em
+  /// vez de conviver com o alerta para sempre.
+  lastFoundTarget String?
+
+  // Envio ao Rapid URL Indexer (empurrar indexação em site de terceiro).
+  // Um envio por vez, decidido link a link pelo operador, porque cada URL
+  // custa crédito. O resultado NAO sobrescreve lastIndexed: quem diz se
+  // indexou continua sendo o nosso check.
+  /// id do projeto criado na API (null = nunca enviado)
+  rapidProjectId   Int?
+  /// último status conhecido do projeto: submitted | completed | failed | refunded
+  rapidStatus      String?
+  /// quando foi enviado pela última vez
+  rapidSubmittedAt DateTime?
+  /// créditos gastos no último envio
+  rapidCredits     Int?
+  /// quantas vezes esta URL já foi enviada (evita gastar crédito repetido)
+  rapidSubmitCount Int       @default(0)
+  /// última vez que o status foi sincronizado com a API
+  rapidSyncedAt    DateTime?
+
+  @@unique([clientId, articleUrl, expectedTarget])
+  @@index([clientId])
+}
+
+/// Quem pode entrar na ferramenta.
+///
+/// Antes existia uma senha única compartilhada (APP_PASSWORD), sem identidade:
+/// não dava para saber quem conferiu o quê, nem limitar o que cada pessoa faz.
+/// A senha do .env continua valendo como acesso de emergência de admin, para
+/// não ficar trancado do lado de fora se o banco cair.
+model User {
+  id       String @id @default(cuid())
+  name     String
+  /// login, minúsculo e sem espaço
+  username String @unique
+  /// scrypt: "scrypt$<salt hex>$<hash hex>" — nunca a senha em texto
+  passwordHash String
+  /// "admin" = tudo | "auxiliar" = não apaga nada e não dispara gasto
+  role        String    @default("auxiliar")
+  createdAt   DateTime  @default(now())
+  lastLoginAt DateTime?
+}
+
+/// Julgamento MANUAL sobre um domínio de portal.
+///
+/// A ferramenta calcula sozinha a taxa de remoção de cada domínio, mas a
+/// decisão de "não compro mais aqui" é sua — pode haver contexto que o número
+/// não mostra. Marcado aqui, o domínio passa a ser avisado na importação.
+model DomainNote {
+  id String @id @default(cuid())
+  /// domínio registrável, minúsculo, sem "www." (ex: guairanews.com)
+  domain String @unique
+  /// "nao_recomendado" | "confiavel"
+  status    String
+  note      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Check {
+  id         String   @id @default(cuid())
+  backlinkId String
+  backlink   Backlink @relation(fields: [backlinkId], references: [id], onDelete: Cascade)
+
+  // Os 3 estados. null = não foi possível verificar (bloqueio/timeout/sem fonte).
+  articlePublished Boolean? // true=2xx, false=404/410 (deletado), null=inacessível
+  linkPresent      Boolean? // só avaliado quando a página foi lida
+  indexed          Boolean? // null quando sem fonte de indexação ou falha
+
+  // Diagnóstico
+  httpStatus  Int? // status HTTP da URL do artigo
+  finalUrl    String? // URL final após redirects
+  foundAnchor String? // âncora efetivamente encontrada
+  linkRel     String? // `rel` do link do cliente ("" = dofollow, null = não avaliado)
+  error       String? // mensagem de erro se algum check falhou tecnicamente
+  costCents   Int     @default(0) // custo DataForSEO deste check
+
+  checkedAt DateTime @default(now())
+
+  @@index([backlinkId, checkedAt])
+}

@@ -1,0 +1,8 @@
+df8.com.br|deleted=146|backup=\/tmp\/qmix_iptv_deleted_1780137057.json
+exquisito|deleted=2|backup=\/tmp\/qmix_iptv_deleted_1780137065.json
+jornalconceito.com|deleted=3|backup=\/tmp\/qmix_iptv_deleted_1780137073.json
+pontonaturalbrasil|deleted=11|backup=\/tmp\/qmix_iptv_deleted_1780137089.json
+revistadeducao|deleted=9|backup=\/tmp\/qmix_iptv_deleted_1780137097.json
+sabedoriaglobal|deleted=51|backup=\/tmp\/qmix_iptv_deleted_1780137105.json
+viajenodetalhe|deleted=31|backup=\/tmp\/qmix_iptv_deleted_1780137119.json
+wtw19|deleted=83|backup=\/tmp\/qmix_iptv_deleted_1780137126.json

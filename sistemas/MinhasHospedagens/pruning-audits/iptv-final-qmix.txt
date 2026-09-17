@@ -1,0 +1,4 @@
+barranews.com.br|posts=43|links=46
+folhadonoroeste.com.br|posts=44|links=48
+folhar.com.br|posts=42|links=44
+oiempreendedores.com.br|posts=44|links=47

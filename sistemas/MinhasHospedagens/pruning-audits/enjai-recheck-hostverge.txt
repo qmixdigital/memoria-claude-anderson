@@ -1,0 +1,4 @@
+df8.com.br|hostverge|0
+ocontraditorio.com|hostverge|0
+jornalconceito.com|hostverge|0
+agoranoticias.net|hostverge|0

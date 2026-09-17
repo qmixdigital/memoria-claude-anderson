@@ -1,0 +1,3 @@
+- [Rapid URL Indexer API](rapidurlindexer-api.md) — chave, base URL wp-json e o 403 do LiteSpeed contra o User-Agent do curl
+- [SerpApi](serpapi-credentials.md) — chave da conta qmixdigital para checar indexacao no Google via site:
+- [Modo economico sempre](modo-economico-indexacao.md) — enviar ao Rapid URL Indexer sem Apex Mode, 1 credito por URL

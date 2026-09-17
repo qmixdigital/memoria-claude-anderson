@@ -1,0 +1,6 @@
+- [Antes e depois é permitido](antes-e-depois-permitido.md) — com autorização do paciente e texto de isenção; a recusa anterior estava errada
+- [Páginas que negam antes e depois](paginas-negam-antes-e-depois.md) — 9 páginas com texto que ficou em conflito com a política atual
+- [Artigo sobre queda de cabelo com Mounjaro](artigo-queda-cabelo-mounjaro.md) — pauta pedida pela clínica, com o protocolo de eflúvio telógeno
+- [Equipamentos da clínica](equipamentos-da-clinica.md) — Alma Prime vendido, Oligio é facial, XERF corporal em aberto
+- [Dados jurídicos da clínica](dados-juridicos-clinica.md) — CNPJ, razão social, endereço oficial e o CEP inválido que o site usava
+- [GA4 e rastreio do site](ga4-e-rastreio.md) — property, chave de escrita e como vídeos e CTAs são medidos

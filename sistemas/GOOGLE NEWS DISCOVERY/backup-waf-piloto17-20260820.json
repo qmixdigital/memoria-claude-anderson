@@ -1,0 +1,1402 @@
+{
+  "viajenodetalhe.com.br": {
+    "zona": "6a84252bd9b5c1b2f5c76fab5c9cd5a8",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "b4e328cb7eee402cba624603a74b21b8",
+        "last_updated": "2026-07-29T14:47:00.036097Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "b4e328cb7eee402cba624603a74b21b8",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")\n",
+        "id": "6c191ff37c6b4c1f98e831525d615f32",
+        "last_updated": "2026-07-29T14:47:00.036097Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "6c191ff37c6b4c1f98e831525d615f32",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "3555649ea6bb424d944ecc16ba3b6e76",
+        "last_updated": "2026-07-29T14:47:00.036097Z",
+        "ref": "3555649ea6bb424d944ecc16ba3b6e76",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "3493581cc4e841b0a3f3aacdc9214a4f",
+        "last_updated": "2026-07-29T14:47:00.036097Z",
+        "ref": "3493581cc4e841b0a3f3aacdc9214a4f",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "bcccd71b102a4781b31fd739e736b765",
+        "last_updated": "2026-07-29T14:47:00.036097Z",
+        "ref": "bcccd71b102a4781b31fd739e736b765",
+        "version": "1"
+      }
+    ]
+  },
+  "qmixdigital.com.br": {
+    "zona": "a01698cf4eabc028c879ca82f27570e9",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "6fb5306bc60a4d5cb15837a7253fd663",
+        "last_updated": "2026-07-29T14:43:31.758138Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "6fb5306bc60a4d5cb15837a7253fd663",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Method Fix",
+        "enabled": true,
+        "expression": "(http.user_agent eq \"109e15941c57\") or (http.user_agent eq \"d1b2df322c91\") or (http.request.uri.query eq \"--+\") or (http.user_agent eq \"84bd2cfee733\") or (http.request.uri.query eq \"d=1\") or (http.user_agent eq \"Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)\") or (http.request.uri.query eq \"daksldlkdsadas=1\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00/*\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00Cookie: mstshash=Administr\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"T\\\\x83\\\\xF8\\\\xCCu\\\\x18\\\\xA8\\\\xABw*w\\\\xF5j\\\\x91\\\\xE4[\") or (http.request.full_uri contains \"-\\\\x11\\\\xBERB#:\\\\xE4.\\\\xC6\\\\xFFHA\\\\x1A\\\\x03\\\\xD7\") or (http.request.full_uri contains \"MGLNDD_\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00\\\\x13\\\\x0E\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x01\\\\x00\\\\x08\\\\x00\\\\x03\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"fI4y\") or (http.request.full_uri contains \"o\\\\xFA\\\\xC0\\\\xBE\\\\xB8\\\\xC0\\\\xA4\\\\xC9\\\\x89\\\\xA2\\\\xC2\\\\x8F\\\\x83\\\\xAF\\\\x91\\\\x97\\\\xBE\\\\xCD\\\\xB9\\\\xCF\\\\xAC\\\\x9B\\\\xB0\\\\xAB\\\\xA0\\\\xB6\\\\xB1\\\\xAA\\\\x9D\\\\x9C\\\\x9F\\\\x96\\\\x8D\\\\x93\\\\xCE\\\\xB4\\\\xB3\\\\xB5\\\\x98\\\\xCD\\\\xA6\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x12\\\\xFD\\\\xD8\\\\xF8\\\\xFA\\\\xFA\\\\xC2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x1Af\\\\xEC\\\\xF9\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFB\\\\xE5q\\\\xF2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xF9wh\\\\x97ui\\\\xBA\\\\xEA=E\\\\xF0\\\\x1B/\\\\xA7XJ\\\\xF11Y\\\\x0B\\\\xBF\\\\xB1K\\\\x1F\\\\x00\\\\xFA\\\\xF8\\\\xAF5Y\\\\xDB\\\\xA1\\\\xA2 \\\\xE00\\\\xCC\\\\xBAU]<\\\\x15\\\\x14\\\\xBA\\\\xC7W7c\\\\x02\\\\x98\\\\xC996\\\\x95\\\\x1C\\\\xC5\\\\x164yR\\\\xE7\\\\x8C\\\\x90\\\\x8E\\\\x06\\\\x92w\\\\xCD\\\\xE9\\\\x0E\\\\x14!\\\\x19\\\\x87KE\\\\xE1\\\\x86 ,)\\\\xEA\\\\x85_\\\\x16I(\\\\x86\\\\x8B?\\\\xADXx\\\\xD7\\\\xE7\\\\xB67\\\\x83\\\\xF1\\\\xFC;\\\\x83\\\\xC8\\\\x0F\\\\xAE\\\\xDD\\\\x1A\\\\xCA\\\\xBF\\\\xD3\\\\xF0\\\\x98\\\\xAA\\\\xD9=\\\\xD0\\\\xD0\\\\xD6\\\\xEF\\\\xABQZ`\\\\xBCrhc@[\\\\x9Cz\\\\xEA\\\\x8AJ|\\\\x8F\\\\xEF\\\\x86V\\\\x11\\\\xDC\\\\xBB\\\\x5C\\\\xF8T\\\\xF3=\\\\x9B\\\\xAF\\\\x11\\\\xBD8\\\\x96\\\\xAD\\\\xE7e~`ov\\\\xCC\\\\xB6\\\\xCA\\\\xDE\\\\xB78\\\\xDC\\\\xD88w9\\\\x91\\\\x8C\\\\xD1\\\\xDE/\\\\x98\\\\xCA\\\\x8D%\\\\xDC\\\\x85+sb\\\\xAE\\\\xE5&\\\\xCA\\\\x08\\\\x06\\\\xFF\\\\x9Ev\\\\xA5\\\\x96\\\\xED\\\\x0F\\\\xBC\\\\xEA2\\\\xFA\\\\x1F7\\\\x03\\\\xC9g\\\\x83)TF$H\\\\xA8\\\\xD2\\\\xA24\\\\x91\\\\x80\\\\xABg\\\\x0CF+\\\\xBFx*w\\\\x19\\\\x01\\\\x0E\\\\xFF\\\\xCF\\\\x1B\\\\xA8\\\\x9AJrF.\\\\x0B\\\\x9D\\\\x84\\\\xF2\\\\xEE\\\\x80Y\\\\x18\\\\xD4\\\\x12\\\\xFE\\\\x14\\\\x89\\\\x9B\\\\x8C\\\\x9AL6\\\\x17\\\\x09\\\\xF25\\\\x5C\\\\xEDb\\\\x02\\\\x89\\\\xCD\\\\xA7|\\\\xC9zL\\\\x97\\\\x81\\\\x92\\\\x96\\\\xA3\\\\xC4g\\\\xB4(\\\\xE3k\\\\x82Gk\\\\xC1\\\\x90B\\\\xE6][\\\\xE1\\\\x02\\\\x9B\\\\x86?Tua\\\\x1C\\\\xE0\\\\xFC\\\\x9F\\\\x8D\\\\xEB\\\\x01\\\\xAB\\\\xC0\\\\xE5\\\\xD6\\\\x98\\\\xD5\\\\xE0<\\\\x93\\\\xEA\\\\x00\\\\x8DT\\\\xE9\\\\x05\\\\x04y-G\\\\x0E\\\\xC5R\\\\x0E\\\\x18\\\\xF4\\\\xC1\\\\xD6\\\\x8E\\\\xBDi\\\\xBBf\\\\xBC1Z-\\\\xFD\\\\x90N\\\\x16\\\\x81\\\\x07C*mk\\\\x11\\\\xBCZ\\\\x02\\\\x85\\\\x95a\\\\xDE\\\\xAB\\\\xA8\\\\xB7\\\\xA3\\\\xA7;\\\\x19\\\\xDE\\\\xB3\\\\xD7\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"\\\\x02\") or (http.request.full_uri contains \"v\\\\xF0m\\\\xB0b\\\\xAF\\\\x8F\\\\x883\\\\xE4U)8\\\\x99E\\\\x14\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"!\\\\xFA\\\\xAC\\\\x8E\\\\x12^\\\\x87\\\\x1F9E\\\\xF8\\\\xBBT5\\\\x18\\\\xBF\\\\xE3\\\\x0Fc\\\\xB0\\\\xC3+!\\\\xB0y\\\\xA7\\\\xE0\\\\x1B\\\\xCF+!\\\\xB0\\\\xC2/c\\\\xB0\\\\xC3+\\\\x22\\\\xB8\\\\xC3+!\\\\xB0\\\\xC3+!\\\\xB0i+!\\\\xB0\\\\xC3+\") or (http.request.full_uri contains \"\\\\x00\\\\x0E8\\\\x89\\\\x99\\\\xDCZFS\\\\xEDM\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"j\\\\x00\\\\xFD U\\\\x8De\\\\xC2G\\\\xB6\\\\x9A\\\\x83g\\\\xA3-\\\\xB6\") or (http.request.full_uri contains \"SSTP_DUPLEX_POST\")",
+        "id": "a21f2f7edb1f4173b503c2a6af0a1e2f",
+        "last_updated": "2026-07-29T14:43:31.758138Z",
+        "ref": "a21f2f7edb1f4173b503c2a6af0a1e2f",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Exploting fix",
+        "enabled": true,
+        "expression": "(http.request.uri.query contains \")/*\") or (http.request.uri.query contains \")--\") or (http.request.uri.query contains \"benchmark(\") or (http.request.uri.query contains \"'0:0:20'\") or (http.request.uri.query contains \"MD5(\") or (http.request.uri.query contains \"%20waitfor%20delay%20\") or (http.request.uri.query contains \"%22\") or (http.request.uri.query contains \"%20/*\") or (http.request.uri.query contains \"%20--\") or (http.request.uri.query contains \"%20%23\") or (http.request.uri.query contains \")%23\") or (http.request.uri.query contains \"script>\") or (http.request.uri.query contains \"%40\") or (http.request.uri.query contains \"%00\") or (http.request.uri.query contains \"<?php\") or (http.request.uri.query contains \"0x00\") or (http.request.uri.query contains \"0x08\") or (http.request.uri.query contains \"0x09\") or (http.request.uri.query contains \"0x0a\") or (http.request.uri.query contains \"0x0d\") or (http.request.uri.query contains \"0x1a\") or (http.request.uri.query contains \"0x22\") or (http.request.uri.query contains \"0x25\") or (http.request.uri.query contains \"0x27\") or (http.request.uri.query contains \"0x5c\") or (http.request.uri.query contains \"0x5f\") or (http.request.uri.query contains \"SELECT\") or (http.request.uri.query contains \"concat\") or (http.request.uri.query contains \"union\") or (http.request.uri.query contains \"0x50\") or (http.request.uri.query contains \"DROP\") or (http.request.uri.query contains \"WHERE\") or (http.request.uri.query contains \"ONION\") or (http.request.uri.query contains \"0x3c62723e3c62723e3c62723e\") or (http.request.uri.query contains \"0x3c696d67207372633d22\") or (http.request.uri.query contains \"OR\") or (http.request.uri.query contains \"0x3e\") or (http.request.uri.query contains \"<img\") or (http.request.uri.query contains \"<image\") or (http.request.uri.query contains \"document.cookie\") or (http.request.uri.query contains \"onerror()\") or (http.request.uri.query contains \"alert(\") or (http.request.uri.query contains \"window.\") or (http.request.uri.query contains \"String.fromCharCode(\") or (http.request.uri.query contains \"javascript:\") or (http.request.uri.query contains \"onmouseover=\") or (http.request.uri.query contains \"<BODY onload\") or (http.request.uri.query contains \"<style\")",
+        "id": "953ee55c8c76494d9409a320da929463",
+        "last_updated": "2026-07-29T14:43:31.758138Z",
+        "ref": "953ee55c8c76494d9409a320da929463",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "34177bcab1774ed48e50f6f2db08c4cb",
+        "last_updated": "2026-07-29T14:43:31.758138Z",
+        "ref": "34177bcab1774ed48e50f6f2db08c4cb",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "Managed Challenge IPs com threat score >30 (human-safe)",
+        "enabled": true,
+        "expression": "(cf.threat_score gt 30)",
+        "id": "11d5b61e8954469a92d39dd9056ac4ac",
+        "last_updated": "2026-07-29T14:43:31.758138Z",
+        "ref": "11d5b61e8954469a92d39dd9056ac4ac",
+        "version": "1"
+      }
+    ]
+  },
+  "ebookcult.com.br": {
+    "zona": "140f134854688bac1e0a4f91111a3bc9",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")\n",
+        "id": "f1b32100625e469da2c4cfba55adba5d",
+        "last_updated": "2026-01-14T19:38:59.588072Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "f1b32100625e469da2c4cfba55adba5d",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "287cd8fc57d342eb9f57cd470919a61a",
+        "last_updated": "2026-01-14T19:39:26.998584Z",
+        "ref": "287cd8fc57d342eb9f57cd470919a61a",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")\n",
+        "id": "307ba0b35be248b5860e3dc4dcb1e32a",
+        "last_updated": "2026-01-14T19:39:14.653398Z",
+        "ref": "307ba0b35be248b5860e3dc4dcb1e32a",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Method Fix",
+        "enabled": true,
+        "expression": "(http.user_agent eq \"109e15941c57\") or (http.user_agent eq \"d1b2df322c91\") or (http.request.uri.query eq \"--+\") or (http.user_agent eq \"84bd2cfee733\") or (http.request.uri.query eq \"d=1\") or (http.user_agent eq \"Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)\") or (http.request.uri.query eq \"daksldlkdsadas=1\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00/*\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00Cookie: mstshash=Administr\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"T\\\\x83\\\\xF8\\\\xCCu\\\\x18\\\\xA8\\\\xABw*w\\\\xF5j\\\\x91\\\\xE4[\") or (http.request.full_uri contains \"-\\\\x11\\\\xBERB#:\\\\xE4.\\\\xC6\\\\xFFHA\\\\x1A\\\\x03\\\\xD7\") or (http.request.full_uri contains \"MGLNDD_\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00\\\\x13\\\\x0E\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x01\\\\x00\\\\x08\\\\x00\\\\x03\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"fI4y\") or (http.request.full_uri contains \"o\\\\xFA\\\\xC0\\\\xBE\\\\xB8\\\\xC0\\\\xA4\\\\xC9\\\\x89\\\\xA2\\\\xC2\\\\x8F\\\\x83\\\\xAF\\\\x91\\\\x97\\\\xBE\\\\xCD\\\\xB9\\\\xCF\\\\xAC\\\\x9B\\\\xB0\\\\xAB\\\\xA0\\\\xB6\\\\xB1\\\\xAA\\\\x9D\\\\x9C\\\\x9F\\\\x96\\\\x8D\\\\x93\\\\xCE\\\\xB4\\\\xB3\\\\xB5\\\\x98\\\\xCD\\\\xA6\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x12\\\\xFD\\\\xD8\\\\xF8\\\\xFA\\\\xFA\\\\xC2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x1Af\\\\xEC\\\\xF9\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFB\\\\xE5q\\\\xF2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xF9wh\\\\x97ui\\\\xBA\\\\xEA=E\\\\xF0\\\\x1B/\\\\xA7XJ\\\\xF11Y\\\\x0B\\\\xBF\\\\xB1K\\\\x1F\\\\x00\\\\xFA\\\\xF8\\\\xAF5Y\\\\xDB\\\\xA1\\\\xA2 \\\\xE00\\\\xCC\\\\xBAU]<\\\\x15\\\\x14\\\\xBA\\\\xC7W7c\\\\x02\\\\x98\\\\xC996\\\\x95\\\\x1C\\\\xC5\\\\x164yR\\\\xE7\\\\x8C\\\\x90\\\\x8E\\\\x06\\\\x92w\\\\xCD\\\\xE9\\\\x0E\\\\x14!\\\\x19\\\\x87KE\\\\xE1\\\\x86 ,)\\\\xEA\\\\x85_\\\\x16I(\\\\x86\\\\x8B?\\\\xADXx\\\\xD7\\\\xE7\\\\xB67\\\\x83\\\\xF1\\\\xFC;\\\\x83\\\\xC8\\\\x0F\\\\xAE\\\\xDD\\\\x1A\\\\xCA\\\\xBF\\\\xD3\\\\xF0\\\\x98\\\\xAA\\\\xD9=\\\\xD0\\\\xD0\\\\xD6\\\\xEF\\\\xABQZ`\\\\xBCrhc@[\\\\x9Cz\\\\xEA\\\\x8AJ|\\\\x8F\\\\xEF\\\\x86V\\\\x11\\\\xDC\\\\xBB\\\\x5C\\\\xF8T\\\\xF3=\\\\x9B\\\\xAF\\\\x11\\\\xBD8\\\\x96\\\\xAD\\\\xE7e~`ov\\\\xCC\\\\xB6\\\\xCA\\\\xDE\\\\xB78\\\\xDC\\\\xD88w9\\\\x91\\\\x8C\\\\xD1\\\\xDE/\\\\x98\\\\xCA\\\\x8D%\\\\xDC\\\\x85+sb\\\\xAE\\\\xE5&\\\\xCA\\\\x08\\\\x06\\\\xFF\\\\x9Ev\\\\xA5\\\\x96\\\\xED\\\\x0F\\\\xBC\\\\xEA2\\\\xFA\\\\x1F7\\\\x03\\\\xC9g\\\\x83)TF$H\\\\xA8\\\\xD2\\\\xA24\\\\x91\\\\x80\\\\xABg\\\\x0CF+\\\\xBFx*w\\\\x19\\\\x01\\\\x0E\\\\xFF\\\\xCF\\\\x1B\\\\xA8\\\\x9AJrF.\\\\x0B\\\\x9D\\\\x84\\\\xF2\\\\xEE\\\\x80Y\\\\x18\\\\xD4\\\\x12\\\\xFE\\\\x14\\\\x89\\\\x9B\\\\x8C\\\\x9AL6\\\\x17\\\\x09\\\\xF25\\\\x5C\\\\xEDb\\\\x02\\\\x89\\\\xCD\\\\xA7|\\\\xC9zL\\\\x97\\\\x81\\\\x92\\\\x96\\\\xA3\\\\xC4g\\\\xB4(\\\\xE3k\\\\x82Gk\\\\xC1\\\\x90B\\\\xE6][\\\\xE1\\\\x02\\\\x9B\\\\x86?Tua\\\\x1C\\\\xE0\\\\xFC\\\\x9F\\\\x8D\\\\xEB\\\\x01\\\\xAB\\\\xC0\\\\xE5\\\\xD6\\\\x98\\\\xD5\\\\xE0<\\\\x93\\\\xEA\\\\x00\\\\x8DT\\\\xE9\\\\x05\\\\x04y-G\\\\x0E\\\\xC5R\\\\x0E\\\\x18\\\\xF4\\\\xC1\\\\xD6\\\\x8E\\\\xBDi\\\\xBBf\\\\xBC1Z-\\\\xFD\\\\x90N\\\\x16\\\\x81\\\\x07C*mk\\\\x11\\\\xBCZ\\\\x02\\\\x85\\\\x95a\\\\xDE\\\\xAB\\\\xA8\\\\xB7\\\\xA3\\\\xA7;\\\\x19\\\\xDE\\\\xB3\\\\xD7\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"\\\\x02\") or (http.request.full_uri contains \"v\\\\xF0m\\\\xB0b\\\\xAF\\\\x8F\\\\x883\\\\xE4U)8\\\\x99E\\\\x14\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"!\\\\xFA\\\\xAC\\\\x8E\\\\x12^\\\\x87\\\\x1F9E\\\\xF8\\\\xBBT5\\\\x18\\\\xBF\\\\xE3\\\\x0Fc\\\\xB0\\\\xC3+!\\\\xB0y\\\\xA7\\\\xE0\\\\x1B\\\\xCF+!\\\\xB0\\\\xC2/c\\\\xB0\\\\xC3+\\\\x22\\\\xB8\\\\xC3+!\\\\xB0\\\\xC3+!\\\\xB0i+!\\\\xB0\\\\xC3+\") or (http.request.full_uri contains \"\\\\x00\\\\x0E8\\\\x89\\\\x99\\\\xDCZFS\\\\xEDM\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"j\\\\x00\\\\xFD U\\\\x8De\\\\xC2G\\\\xB6\\\\x9A\\\\x83g\\\\xA3-\\\\xB6\") or (http.request.full_uri contains \"SSTP_DUPLEX_POST\")",
+        "id": "d22b497e011e42eda28fbdaf3aa405c3",
+        "last_updated": "2024-04-22T22:56:56.617626Z",
+        "ref": "d22b497e011e42eda28fbdaf3aa405c3",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Exploting fix",
+        "enabled": true,
+        "expression": "(http.request.uri.query contains \")/*\") or (http.request.uri.query contains \")--\") or (http.request.uri.query contains \"benchmark(\") or (http.request.uri.query contains \"'0:0:20'\") or (http.request.uri.query contains \"MD5(\") or (http.request.uri.query contains \"%20waitfor%20delay%20\") or (http.request.uri.query contains \"%22\") or (http.request.uri.query contains \"%20/*\") or (http.request.uri.query contains \"%20--\") or (http.request.uri.query contains \"%20%23\") or (http.request.uri.query contains \")%23\") or (http.request.uri.query contains \"script>\") or (http.request.uri.query contains \"%40\") or (http.request.uri.query contains \"%00\") or (http.request.uri.query contains \"<?php\") or (http.request.uri.query contains \"0x00\") or (http.request.uri.query contains \"0x08\") or (http.request.uri.query contains \"0x09\") or (http.request.uri.query contains \"0x0a\") or (http.request.uri.query contains \"0x0d\") or (http.request.uri.query contains \"0x1a\") or (http.request.uri.query contains \"0x22\") or (http.request.uri.query contains \"0x25\") or (http.request.uri.query contains \"0x27\") or (http.request.uri.query contains \"0x5c\") or (http.request.uri.query contains \"0x5f\") or (http.request.uri.query contains \"SELECT\") or (http.request.uri.query contains \"concat\") or (http.request.uri.query contains \"union\") or (http.request.uri.query contains \"0x50\") or (http.request.uri.query contains \"DROP\") or (http.request.uri.query contains \"WHERE\") or (http.request.uri.query contains \"ONION\") or (http.request.uri.query contains \"0x3c62723e3c62723e3c62723e\") or (http.request.uri.query contains \"0x3c696d67207372633d22\") or (http.request.uri.query contains \"OR\") or (http.request.uri.query contains \"0x3e\") or (http.request.uri.query contains \"<img\") or (http.request.uri.query contains \"<image\") or (http.request.uri.query contains \"document.cookie\") or (http.request.uri.query contains \"onerror()\") or (http.request.uri.query contains \"alert(\") or (http.request.uri.query contains \"window.\") or (http.request.uri.query contains \"String.fromCharCode(\") or (http.request.uri.query contains \"javascript:\") or (http.request.uri.query contains \"onmouseover=\") or (http.request.uri.query contains \"<BODY onload\") or (http.request.uri.query contains \"<style\")",
+        "id": "110f2acccf6d41d58edb72e34ffb2448",
+        "last_updated": "2024-04-22T22:57:05.930743Z",
+        "ref": "110f2acccf6d41d58edb72e34ffb2448",
+        "version": "1"
+      }
+    ]
+  },
+  "adonline.com.br": {
+    "zona": "ef5c8c46746d9fceeaaa2448e0db1732",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "e3ff1b36a0d446178ee4733e10ebe3ba",
+        "last_updated": "2026-07-29T14:28:32.069864Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "e3ff1b36a0d446178ee4733e10ebe3ba",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "84257c0c2cf54e4fa0e7b3a70558a639",
+        "last_updated": "2026-07-29T14:28:32.069864Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "84257c0c2cf54e4fa0e7b3a70558a639",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "cd905bff4bd64a3682c5ccd6ecaf2262",
+        "last_updated": "2026-07-29T14:28:32.069864Z",
+        "ref": "cd905bff4bd64a3682c5ccd6ecaf2262",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "5844ac97834a47928e5f9c8fc8c3c6d3",
+        "last_updated": "2026-07-29T14:28:32.069864Z",
+        "ref": "5844ac97834a47928e5f9c8fc8c3c6d3",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "d814300a0fcb46ba88880a122eaf9fb1",
+        "last_updated": "2026-07-29T14:28:32.069864Z",
+        "ref": "d814300a0fcb46ba88880a122eaf9fb1",
+        "version": "1"
+      }
+    ]
+  },
+  "barranews.com.br": {
+    "zona": "5e5b9ce91ae796c18a72c9ab76c71215",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "fa896547fd0f495da2533cf84235e580",
+        "last_updated": "2026-07-29T14:32:00.76816Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "fa896547fd0f495da2533cf84235e580",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "679f5ec39fb846d7acc97ad50fd8f476",
+        "last_updated": "2026-07-29T14:32:00.76816Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "679f5ec39fb846d7acc97ad50fd8f476",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "88e41b4687774158bcd001e12899a9e6",
+        "last_updated": "2026-07-29T14:32:00.76816Z",
+        "ref": "88e41b4687774158bcd001e12899a9e6",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "589e66cee2014bfdb443bb64ac3318b2",
+        "last_updated": "2026-07-29T14:32:00.76816Z",
+        "ref": "589e66cee2014bfdb443bb64ac3318b2",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "0813371653974ebcbe59d502c35a640c",
+        "last_updated": "2026-07-29T14:32:00.76816Z",
+        "ref": "0813371653974ebcbe59d502c35a640c",
+        "version": "1"
+      }
+    ]
+  },
+  "sabedoriaglobal.com.br": {
+    "zona": "71e80ee7997f38d43776579a329141b7",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "4370a4f71fe548da9a1ff4f8391ff939",
+        "last_updated": "2026-07-29T14:44:33.392003Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "4370a4f71fe548da9a1ff4f8391ff939",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "382ec545bb0740e5af6ec3ec5378c678",
+        "last_updated": "2026-07-29T14:44:33.392003Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "382ec545bb0740e5af6ec3ec5378c678",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "4cd6542a897743bba1fecad3630aba09",
+        "last_updated": "2026-07-29T14:44:33.392003Z",
+        "ref": "4cd6542a897743bba1fecad3630aba09",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "027a3f1a9c684d01814df71bc3484701",
+        "last_updated": "2026-07-29T14:44:33.392003Z",
+        "ref": "027a3f1a9c684d01814df71bc3484701",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "104f1219abfe4280924febfa4fd2886e",
+        "last_updated": "2026-07-29T14:44:33.392003Z",
+        "ref": "104f1219abfe4280924febfa4fd2886e",
+        "version": "1"
+      }
+    ]
+  },
+  "exquisito.com.br": {
+    "zona": "306a54388fa08f98e58067aab0db3c2b",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "85480991e4a6455b833c80b008a5f5a2",
+        "last_updated": "2026-07-29T14:36:41.249956Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "85480991e4a6455b833c80b008a5f5a2",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Method Fix",
+        "enabled": true,
+        "expression": "(http.user_agent eq \"109e15941c57\") or (http.user_agent eq \"d1b2df322c91\") or (http.request.uri.query eq \"--+\") or (http.user_agent eq \"84bd2cfee733\") or (http.request.uri.query eq \"d=1\") or (http.user_agent eq \"Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)\") or (http.request.uri.query eq \"daksldlkdsadas=1\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00/*\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00Cookie: mstshash=Administr\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"T\\\\x83\\\\xF8\\\\xCCu\\\\x18\\\\xA8\\\\xABw*w\\\\xF5j\\\\x91\\\\xE4[\") or (http.request.full_uri contains \"-\\\\x11\\\\xBERB#:\\\\xE4.\\\\xC6\\\\xFFHA\\\\x1A\\\\x03\\\\xD7\") or (http.request.full_uri contains \"MGLNDD_\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00\\\\x13\\\\x0E\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x01\\\\x00\\\\x08\\\\x00\\\\x03\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"fI4y\") or (http.request.full_uri contains \"o\\\\xFA\\\\xC0\\\\xBE\\\\xB8\\\\xC0\\\\xA4\\\\xC9\\\\x89\\\\xA2\\\\xC2\\\\x8F\\\\x83\\\\xAF\\\\x91\\\\x97\\\\xBE\\\\xCD\\\\xB9\\\\xCF\\\\xAC\\\\x9B\\\\xB0\\\\xAB\\\\xA0\\\\xB6\\\\xB1\\\\xAA\\\\x9D\\\\x9C\\\\x9F\\\\x96\\\\x8D\\\\x93\\\\xCE\\\\xB4\\\\xB3\\\\xB5\\\\x98\\\\xCD\\\\xA6\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x12\\\\xFD\\\\xD8\\\\xF8\\\\xFA\\\\xFA\\\\xC2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x1Af\\\\xEC\\\\xF9\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFB\\\\xE5q\\\\xF2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xF9wh\\\\x97ui\\\\xBA\\\\xEA=E\\\\xF0\\\\x1B/\\\\xA7XJ\\\\xF11Y\\\\x0B\\\\xBF\\\\xB1K\\\\x1F\\\\x00\\\\xFA\\\\xF8\\\\xAF5Y\\\\xDB\\\\xA1\\\\xA2 \\\\xE00\\\\xCC\\\\xBAU]<\\\\x15\\\\x14\\\\xBA\\\\xC7W7c\\\\x02\\\\x98\\\\xC996\\\\x95\\\\x1C\\\\xC5\\\\x164yR\\\\xE7\\\\x8C\\\\x90\\\\x8E\\\\x06\\\\x92w\\\\xCD\\\\xE9\\\\x0E\\\\x14!\\\\x19\\\\x87KE\\\\xE1\\\\x86 ,)\\\\xEA\\\\x85_\\\\x16I(\\\\x86\\\\x8B?\\\\xADXx\\\\xD7\\\\xE7\\\\xB67\\\\x83\\\\xF1\\\\xFC;\\\\x83\\\\xC8\\\\x0F\\\\xAE\\\\xDD\\\\x1A\\\\xCA\\\\xBF\\\\xD3\\\\xF0\\\\x98\\\\xAA\\\\xD9=\\\\xD0\\\\xD0\\\\xD6\\\\xEF\\\\xABQZ`\\\\xBCrhc@[\\\\x9Cz\\\\xEA\\\\x8AJ|\\\\x8F\\\\xEF\\\\x86V\\\\x11\\\\xDC\\\\xBB\\\\x5C\\\\xF8T\\\\xF3=\\\\x9B\\\\xAF\\\\x11\\\\xBD8\\\\x96\\\\xAD\\\\xE7e~`ov\\\\xCC\\\\xB6\\\\xCA\\\\xDE\\\\xB78\\\\xDC\\\\xD88w9\\\\x91\\\\x8C\\\\xD1\\\\xDE/\\\\x98\\\\xCA\\\\x8D%\\\\xDC\\\\x85+sb\\\\xAE\\\\xE5&\\\\xCA\\\\x08\\\\x06\\\\xFF\\\\x9Ev\\\\xA5\\\\x96\\\\xED\\\\x0F\\\\xBC\\\\xEA2\\\\xFA\\\\x1F7\\\\x03\\\\xC9g\\\\x83)TF$H\\\\xA8\\\\xD2\\\\xA24\\\\x91\\\\x80\\\\xABg\\\\x0CF+\\\\xBFx*w\\\\x19\\\\x01\\\\x0E\\\\xFF\\\\xCF\\\\x1B\\\\xA8\\\\x9AJrF.\\\\x0B\\\\x9D\\\\x84\\\\xF2\\\\xEE\\\\x80Y\\\\x18\\\\xD4\\\\x12\\\\xFE\\\\x14\\\\x89\\\\x9B\\\\x8C\\\\x9AL6\\\\x17\\\\x09\\\\xF25\\\\x5C\\\\xEDb\\\\x02\\\\x89\\\\xCD\\\\xA7|\\\\xC9zL\\\\x97\\\\x81\\\\x92\\\\x96\\\\xA3\\\\xC4g\\\\xB4(\\\\xE3k\\\\x82Gk\\\\xC1\\\\x90B\\\\xE6][\\\\xE1\\\\x02\\\\x9B\\\\x86?Tua\\\\x1C\\\\xE0\\\\xFC\\\\x9F\\\\x8D\\\\xEB\\\\x01\\\\xAB\\\\xC0\\\\xE5\\\\xD6\\\\x98\\\\xD5\\\\xE0<\\\\x93\\\\xEA\\\\x00\\\\x8DT\\\\xE9\\\\x05\\\\x04y-G\\\\x0E\\\\xC5R\\\\x0E\\\\x18\\\\xF4\\\\xC1\\\\xD6\\\\x8E\\\\xBDi\\\\xBBf\\\\xBC1Z-\\\\xFD\\\\x90N\\\\x16\\\\x81\\\\x07C*mk\\\\x11\\\\xBCZ\\\\x02\\\\x85\\\\x95a\\\\xDE\\\\xAB\\\\xA8\\\\xB7\\\\xA3\\\\xA7;\\\\x19\\\\xDE\\\\xB3\\\\xD7\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"\\\\x02\") or (http.request.full_uri contains \"v\\\\xF0m\\\\xB0b\\\\xAF\\\\x8F\\\\x883\\\\xE4U)8\\\\x99E\\\\x14\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"!\\\\xFA\\\\xAC\\\\x8E\\\\x12^\\\\x87\\\\x1F9E\\\\xF8\\\\xBBT5\\\\x18\\\\xBF\\\\xE3\\\\x0Fc\\\\xB0\\\\xC3+!\\\\xB0y\\\\xA7\\\\xE0\\\\x1B\\\\xCF+!\\\\xB0\\\\xC2/c\\\\xB0\\\\xC3+\\\\x22\\\\xB8\\\\xC3+!\\\\xB0\\\\xC3+!\\\\xB0i+!\\\\xB0\\\\xC3+\") or (http.request.full_uri contains \"\\\\x00\\\\x0E8\\\\x89\\\\x99\\\\xDCZFS\\\\xEDM\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"j\\\\x00\\\\xFD U\\\\x8De\\\\xC2G\\\\xB6\\\\x9A\\\\x83g\\\\xA3-\\\\xB6\") or (http.request.full_uri contains \"SSTP_DUPLEX_POST\")",
+        "id": "440475a15c894e98aaffc2fc66ddab19",
+        "last_updated": "2026-07-29T14:36:41.249956Z",
+        "ref": "440475a15c894e98aaffc2fc66ddab19",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Exploting fix",
+        "enabled": true,
+        "expression": "(http.request.uri.query contains \")/*\") or (http.request.uri.query contains \")--\") or (http.request.uri.query contains \"benchmark(\") or (http.request.uri.query contains \"'0:0:20'\") or (http.request.uri.query contains \"MD5(\") or (http.request.uri.query contains \"%20waitfor%20delay%20\") or (http.request.uri.query contains \"%22\") or (http.request.uri.query contains \"%20/*\") or (http.request.uri.query contains \"%20--\") or (http.request.uri.query contains \"%20%23\") or (http.request.uri.query contains \")%23\") or (http.request.uri.query contains \"script>\") or (http.request.uri.query contains \"%40\") or (http.request.uri.query contains \"%00\") or (http.request.uri.query contains \"<?php\") or (http.request.uri.query contains \"0x00\") or (http.request.uri.query contains \"0x08\") or (http.request.uri.query contains \"0x09\") or (http.request.uri.query contains \"0x0a\") or (http.request.uri.query contains \"0x0d\") or (http.request.uri.query contains \"0x1a\") or (http.request.uri.query contains \"0x22\") or (http.request.uri.query contains \"0x25\") or (http.request.uri.query contains \"0x27\") or (http.request.uri.query contains \"0x5c\") or (http.request.uri.query contains \"0x5f\") or (http.request.uri.query contains \"SELECT\") or (http.request.uri.query contains \"concat\") or (http.request.uri.query contains \"union\") or (http.request.uri.query contains \"0x50\") or (http.request.uri.query contains \"DROP\") or (http.request.uri.query contains \"WHERE\") or (http.request.uri.query contains \"ONION\") or (http.request.uri.query contains \"0x3c62723e3c62723e3c62723e\") or (http.request.uri.query contains \"0x3c696d67207372633d22\") or (http.request.uri.query contains \"OR\") or (http.request.uri.query contains \"0x3e\") or (http.request.uri.query contains \"<img\") or (http.request.uri.query contains \"<image\") or (http.request.uri.query contains \"document.cookie\") or (http.request.uri.query contains \"onerror()\") or (http.request.uri.query contains \"alert(\") or (http.request.uri.query contains \"window.\") or (http.request.uri.query contains \"String.fromCharCode(\") or (http.request.uri.query contains \"javascript:\") or (http.request.uri.query contains \"onmouseover=\") or (http.request.uri.query contains \"<BODY onload\") or (http.request.uri.query contains \"<style\")",
+        "id": "bdfc5ffe15f34da483be937f8722237f",
+        "last_updated": "2026-07-29T14:36:41.249956Z",
+        "ref": "bdfc5ffe15f34da483be937f8722237f",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "012ff0da1d49470d9d888b3fdfc685e4",
+        "last_updated": "2026-07-29T14:36:41.249956Z",
+        "ref": "012ff0da1d49470d9d888b3fdfc685e4",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "Managed Challenge IPs com threat score >30 (human-safe)",
+        "enabled": true,
+        "expression": "(cf.threat_score gt 30)",
+        "id": "d48488b08d6a46b99bb20156bc254e4d",
+        "last_updated": "2026-07-29T14:36:41.249956Z",
+        "ref": "d48488b08d6a46b99bb20156bc254e4d",
+        "version": "1"
+      }
+    ]
+  },
+  "jornaldobairroalto.com.br": {
+    "zona": "d3d31f271df061484e7f17ab754563eb",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "2357b6c8cef14315a16013bf96e70ab8",
+        "last_updated": "2026-07-29T14:39:09.778307Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "2357b6c8cef14315a16013bf96e70ab8",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "f77a5627a7a8434e9ae29b9fc1fe315a",
+        "last_updated": "2026-07-29T14:39:09.778307Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "f77a5627a7a8434e9ae29b9fc1fe315a",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "34d63978d72c47729c93b66ddde2d42a",
+        "last_updated": "2026-07-29T14:39:09.778307Z",
+        "ref": "34d63978d72c47729c93b66ddde2d42a",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "40acc32f293f45a480041b1a7b8cf23c",
+        "last_updated": "2026-07-29T14:39:09.778307Z",
+        "ref": "40acc32f293f45a480041b1a7b8cf23c",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "b92de8a8d2cf444599c0aa794b2b7645",
+        "last_updated": "2026-07-29T14:39:09.778307Z",
+        "ref": "b92de8a8d2cf444599c0aa794b2b7645",
+        "version": "1"
+      }
+    ]
+  },
+  "pontonaturalbrasil.com.br": {
+    "zona": "6a38f056a5036d0dfdb48fa70127be17",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "products": [
+            "bic",
+            "hot",
+            "rateLimit",
+            "securityLevel",
+            "uaBlock",
+            "waf",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "((http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")\n) or (cf.client.bot)",
+        "id": "d4aa1cffb5694387b732c7fe3d2dd9d5",
+        "last_updated": "2026-07-29T14:54:16.846563Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "d4aa1cffb5694387b732c7fe3d2dd9d5",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "eaa3cf75697b450aa708019bf4ed9130",
+        "last_updated": "2026-01-14T19:09:12.92978Z",
+        "ref": "eaa3cf75697b450aa708019bf4ed9130",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")\n",
+        "id": "049415551efc4d058493ef77adcd0b3e",
+        "last_updated": "2026-01-14T19:09:00.328717Z",
+        "ref": "049415551efc4d058493ef77adcd0b3e",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Exploting fix",
+        "enabled": true,
+        "expression": "(http.request.uri.query contains \")/*\") or (http.request.uri.query contains \")--\") or (http.request.uri.query contains \"benchmark(\") or (http.request.uri.query contains \"'0:0:20'\") or (http.request.uri.query contains \"MD5(\") or (http.request.uri.query contains \"%20waitfor%20delay%20\") or (http.request.uri.query contains \"%22\") or (http.request.uri.query contains \"%20/*\") or (http.request.uri.query contains \"%20--\") or (http.request.uri.query contains \"%20%23\") or (http.request.uri.query contains \")%23\") or (http.request.uri.query contains \"script>\") or (http.request.uri.query contains \"%40\") or (http.request.uri.query contains \"%00\") or (http.request.uri.query contains \"<?php\") or (http.request.uri.query contains \"0x00\") or (http.request.uri.query contains \"0x08\") or (http.request.uri.query contains \"0x09\") or (http.request.uri.query contains \"0x0a\") or (http.request.uri.query contains \"0x0d\") or (http.request.uri.query contains \"0x1a\") or (http.request.uri.query contains \"0x22\") or (http.request.uri.query contains \"0x25\") or (http.request.uri.query contains \"0x27\") or (http.request.uri.query contains \"0x5c\") or (http.request.uri.query contains \"0x5f\") or (http.request.uri.query contains \"SELECT\") or (http.request.uri.query contains \"concat\") or (http.request.uri.query contains \"union\") or (http.request.uri.query contains \"0x50\") or (http.request.uri.query contains \"DROP\") or (http.request.uri.query contains \"WHERE\") or (http.request.uri.query contains \"ONION\") or (http.request.uri.query contains \"0x3c62723e3c62723e3c62723e\") or (http.request.uri.query contains \"0x3c696d67207372633d22\") or (http.request.uri.query contains \"OR\") or (http.request.uri.query contains \"0x3e\") or (http.request.uri.query contains \"<img\") or (http.request.uri.query contains \"<image\") or (http.request.uri.query contains \"document.cookie\") or (http.request.uri.query contains \"onerror()\") or (http.request.uri.query contains \"alert(\") or (http.request.uri.query contains \"window.\") or (http.request.uri.query contains \"String.fromCharCode(\") or (http.request.uri.query contains \"javascript:\") or (http.request.uri.query contains \"onmouseover=\") or (http.request.uri.query contains \"<BODY onload\") or (http.request.uri.query contains \"<style\")",
+        "id": "ee8cb6f760d0432bb0ff904f139c5e35",
+        "last_updated": "2024-07-17T21:30:46.463819Z",
+        "ref": "ee8cb6f760d0432bb0ff904f139c5e35",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Method Fix",
+        "enabled": true,
+        "expression": "(http.user_agent eq \"109e15941c57\") or (http.user_agent eq \"d1b2df322c91\") or (http.request.uri.query eq \"--+\") or (http.user_agent eq \"84bd2cfee733\") or (http.request.uri.query eq \"d=1\") or (http.user_agent eq \"Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)\") or (http.request.uri.query eq \"daksldlkdsadas=1\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00/*\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00Cookie: mstshash=Administr\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"T\\\\x83\\\\xF8\\\\xCCu\\\\x18\\\\xA8\\\\xABw*w\\\\xF5j\\\\x91\\\\xE4[\") or (http.request.full_uri contains \"-\\\\x11\\\\xBERB#:\\\\xE4.\\\\xC6\\\\xFFHA\\\\x1A\\\\x03\\\\xD7\") or (http.request.full_uri contains \"MGLNDD_\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00\\\\x13\\\\x0E\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x01\\\\x00\\\\x08\\\\x00\\\\x03\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"fI4y\") or (http.request.full_uri contains \"o\\\\xFA\\\\xC0\\\\xBE\\\\xB8\\\\xC0\\\\xA4\\\\xC9\\\\x89\\\\xA2\\\\xC2\\\\x8F\\\\x83\\\\xAF\\\\x91\\\\x97\\\\xBE\\\\xCD\\\\xB9\\\\xCF\\\\xAC\\\\x9B\\\\xB0\\\\xAB\\\\xA0\\\\xB6\\\\xB1\\\\xAA\\\\x9D\\\\x9C\\\\x9F\\\\x96\\\\x8D\\\\x93\\\\xCE\\\\xB4\\\\xB3\\\\xB5\\\\x98\\\\xCD\\\\xA6\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x12\\\\xFD\\\\xD8\\\\xF8\\\\xFA\\\\xFA\\\\xC2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x1Af\\\\xEC\\\\xF9\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFB\\\\xE5q\\\\xF2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xF9wh\\\\x97ui\\\\xBA\\\\xEA=E\\\\xF0\\\\x1B/\\\\xA7XJ\\\\xF11Y\\\\x0B\\\\xBF\\\\xB1K\\\\x1F\\\\x00\\\\xFA\\\\xF8\\\\xAF5Y\\\\xDB\\\\xA1\\\\xA2 \\\\xE00\\\\xCC\\\\xBAU]<\\\\x15\\\\x14\\\\xBA\\\\xC7W7c\\\\x02\\\\x98\\\\xC996\\\\x95\\\\x1C\\\\xC5\\\\x164yR\\\\xE7\\\\x8C\\\\x90\\\\x8E\\\\x06\\\\x92w\\\\xCD\\\\xE9\\\\x0E\\\\x14!\\\\x19\\\\x87KE\\\\xE1\\\\x86 ,)\\\\xEA\\\\x85_\\\\x16I(\\\\x86\\\\x8B?\\\\xADXx\\\\xD7\\\\xE7\\\\xB67\\\\x83\\\\xF1\\\\xFC;\\\\x83\\\\xC8\\\\x0F\\\\xAE\\\\xDD\\\\x1A\\\\xCA\\\\xBF\\\\xD3\\\\xF0\\\\x98\\\\xAA\\\\xD9=\\\\xD0\\\\xD0\\\\xD6\\\\xEF\\\\xABQZ`\\\\xBCrhc@[\\\\x9Cz\\\\xEA\\\\x8AJ|\\\\x8F\\\\xEF\\\\x86V\\\\x11\\\\xDC\\\\xBB\\\\x5C\\\\xF8T\\\\xF3=\\\\x9B\\\\xAF\\\\x11\\\\xBD8\\\\x96\\\\xAD\\\\xE7e~`ov\\\\xCC\\\\xB6\\\\xCA\\\\xDE\\\\xB78\\\\xDC\\\\xD88w9\\\\x91\\\\x8C\\\\xD1\\\\xDE/\\\\x98\\\\xCA\\\\x8D%\\\\xDC\\\\x85+sb\\\\xAE\\\\xE5&\\\\xCA\\\\x08\\\\x06\\\\xFF\\\\x9Ev\\\\xA5\\\\x96\\\\xED\\\\x0F\\\\xBC\\\\xEA2\\\\xFA\\\\x1F7\\\\x03\\\\xC9g\\\\x83)TF$H\\\\xA8\\\\xD2\\\\xA24\\\\x91\\\\x80\\\\xABg\\\\x0CF+\\\\xBFx*w\\\\x19\\\\x01\\\\x0E\\\\xFF\\\\xCF\\\\x1B\\\\xA8\\\\x9AJrF.\\\\x0B\\\\x9D\\\\x84\\\\xF2\\\\xEE\\\\x80Y\\\\x18\\\\xD4\\\\x12\\\\xFE\\\\x14\\\\x89\\\\x9B\\\\x8C\\\\x9AL6\\\\x17\\\\x09\\\\xF25\\\\x5C\\\\xEDb\\\\x02\\\\x89\\\\xCD\\\\xA7|\\\\xC9zL\\\\x97\\\\x81\\\\x92\\\\x96\\\\xA3\\\\xC4g\\\\xB4(\\\\xE3k\\\\x82Gk\\\\xC1\\\\x90B\\\\xE6][\\\\xE1\\\\x02\\\\x9B\\\\x86?Tua\\\\x1C\\\\xE0\\\\xFC\\\\x9F\\\\x8D\\\\xEB\\\\x01\\\\xAB\\\\xC0\\\\xE5\\\\xD6\\\\x98\\\\xD5\\\\xE0<\\\\x93\\\\xEA\\\\x00\\\\x8DT\\\\xE9\\\\x05\\\\x04y-G\\\\x0E\\\\xC5R\\\\x0E\\\\x18\\\\xF4\\\\xC1\\\\xD6\\\\x8E\\\\xBDi\\\\xBBf\\\\xBC1Z-\\\\xFD\\\\x90N\\\\x16\\\\x81\\\\x07C*mk\\\\x11\\\\xBCZ\\\\x02\\\\x85\\\\x95a\\\\xDE\\\\xAB\\\\xA8\\\\xB7\\\\xA3\\\\xA7;\\\\x19\\\\xDE\\\\xB3\\\\xD7\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"\\\\x02\") or (http.request.full_uri contains \"v\\\\xF0m\\\\xB0b\\\\xAF\\\\x8F\\\\x883\\\\xE4U)8\\\\x99E\\\\x14\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"!\\\\xFA\\\\xAC\\\\x8E\\\\x12^\\\\x87\\\\x1F9E\\\\xF8\\\\xBBT5\\\\x18\\\\xBF\\\\xE3\\\\x0Fc\\\\xB0\\\\xC3+!\\\\xB0y\\\\xA7\\\\xE0\\\\x1B\\\\xCF+!\\\\xB0\\\\xC2/c\\\\xB0\\\\xC3+\\\\x22\\\\xB8\\\\xC3+!\\\\xB0\\\\xC3+!\\\\xB0i+!\\\\xB0\\\\xC3+\") or (http.request.full_uri contains \"\\\\x00\\\\x0E8\\\\x89\\\\x99\\\\xDCZFS\\\\xEDM\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"j\\\\x00\\\\xFD U\\\\x8De\\\\xC2G\\\\xB6\\\\x9A\\\\x83g\\\\xA3-\\\\xB6\") or (http.request.full_uri contains \"SSTP_DUPLEX_POST\")",
+        "id": "b3bd6454e1d646b2913d357b1afc6188",
+        "last_updated": "2024-07-17T21:30:54.032793Z",
+        "ref": "b3bd6454e1d646b2913d357b1afc6188",
+        "version": "1"
+      }
+    ]
+  },
+  "advivo.com.br": {
+    "zona": "c6659ca218517345ce8ab06c26318650",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "610a24045d5f4346b2da2c4bf40e4de5",
+        "last_updated": "2026-07-29T14:28:37.042413Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "610a24045d5f4346b2da2c4bf40e4de5",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "9acf2f784b3644f99b6df0d6831ad90f",
+        "last_updated": "2026-07-29T14:28:37.042413Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "9acf2f784b3644f99b6df0d6831ad90f",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "26b0f3453d454bc68241fdeb9ff68738",
+        "last_updated": "2026-07-29T14:28:37.042413Z",
+        "ref": "26b0f3453d454bc68241fdeb9ff68738",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "41dceac7bb4647f3b0bef4e9a1f79c33",
+        "last_updated": "2026-07-29T14:28:37.042413Z",
+        "ref": "41dceac7bb4647f3b0bef4e9a1f79c33",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "af258c20bc7c4fb2a3c21fc5cfacb8c8",
+        "last_updated": "2026-07-29T14:28:37.042413Z",
+        "ref": "af258c20bc7c4fb2a3c21fc5cfacb8c8",
+        "version": "1"
+      }
+    ]
+  },
+  "desassossegada.com.br": {
+    "zona": "cd0a1c210d389049b069494a6e7476f9",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "86985658849c447bb57860f53dd4c9bb",
+        "last_updated": "2026-07-29T14:34:56.154837Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "86985658849c447bb57860f53dd4c9bb",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Method fix",
+        "enabled": true,
+        "expression": "(http.user_agent eq \"109e15941c57\") or (http.user_agent eq \"d1b2df322c91\") or (http.request.uri.query eq \"--+\") or (http.user_agent eq \"84bd2cfee733\") or (http.request.uri.query eq \"d=1\") or (http.user_agent eq \"Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)\") or (http.request.uri.query eq \"daksldlkdsadas=1\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00/*\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00Cookie: mstshash=Administr\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"T\\\\x83\\\\xF8\\\\xCCu\\\\x18\\\\xA8\\\\xABw*w\\\\xF5j\\\\x91\\\\xE4[\") or (http.request.full_uri contains \"-\\\\x11\\\\xBERB#:\\\\xE4.\\\\xC6\\\\xFFHA\\\\x1A\\\\x03\\\\xD7\") or (http.request.full_uri contains \"MGLNDD_\") or (http.request.full_uri contains \"\\\\x03\\\\x00\\\\x00\\\\x13\\\\x0E\\\\xE0\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x01\\\\x00\\\\x08\\\\x00\\\\x03\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"fI4y\") or (http.request.full_uri contains \"o\\\\xFA\\\\xC0\\\\xBE\\\\xB8\\\\xC0\\\\xA4\\\\xC9\\\\x89\\\\xA2\\\\xC2\\\\x8F\\\\x83\\\\xAF\\\\x91\\\\x97\\\\xBE\\\\xCD\\\\xB9\\\\xCF\\\\xAC\\\\x9B\\\\xB0\\\\xAB\\\\xA0\\\\xB6\\\\xB1\\\\xAA\\\\x9D\\\\x9C\\\\x9F\\\\x96\\\\x8D\\\\x93\\\\xCE\\\\xB4\\\\xB3\\\\xB5\\\\x98\\\\xCD\\\\xA6\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x12\\\\xFD\\\\xD8\\\\xF8\\\\xFA\\\\xFA\\\\xC2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\x1Af\\\\xEC\\\\xF9\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFB\\\\xE5q\\\\xF2\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xFA\\\\xF9wh\\\\x97ui\\\\xBA\\\\xEA=E\\\\xF0\\\\x1B/\\\\xA7XJ\\\\xF11Y\\\\x0B\\\\xBF\\\\xB1K\\\\x1F\\\\x00\\\\xFA\\\\xF8\\\\xAF5Y\\\\xDB\\\\xA1\\\\xA2 \\\\xE00\\\\xCC\\\\xBAU]<\\\\x15\\\\x14\\\\xBA\\\\xC7W7c\\\\x02\\\\x98\\\\xC996\\\\x95\\\\x1C\\\\xC5\\\\x164yR\\\\xE7\\\\x8C\\\\x90\\\\x8E\\\\x06\\\\x92w\\\\xCD\\\\xE9\\\\x0E\\\\x14!\\\\x19\\\\x87KE\\\\xE1\\\\x86 ,)\\\\xEA\\\\x85_\\\\x16I(\\\\x86\\\\x8B?\\\\xADXx\\\\xD7\\\\xE7\\\\xB67\\\\x83\\\\xF1\\\\xFC;\\\\x83\\\\xC8\\\\x0F\\\\xAE\\\\xDD\\\\x1A\\\\xCA\\\\xBF\\\\xD3\\\\xF0\\\\x98\\\\xAA\\\\xD9=\\\\xD0\\\\xD0\\\\xD6\\\\xEF\\\\xABQZ`\\\\xBCrhc@[\\\\x9Cz\\\\xEA\\\\x8AJ|\\\\x8F\\\\xEF\\\\x86V\\\\x11\\\\xDC\\\\xBB\\\\x5C\\\\xF8T\\\\xF3=\\\\x9B\\\\xAF\\\\x11\\\\xBD8\\\\x96\\\\xAD\\\\xE7e~`ov\\\\xCC\\\\xB6\\\\xCA\\\\xDE\\\\xB78\\\\xDC\\\\xD88w9\\\\x91\\\\x8C\\\\xD1\\\\xDE/\\\\x98\\\\xCA\\\\x8D%\\\\xDC\\\\x85+sb\\\\xAE\\\\xE5&\\\\xCA\\\\x08\\\\x06\\\\xFF\\\\x9Ev\\\\xA5\\\\x96\\\\xED\\\\x0F\\\\xBC\\\\xEA2\\\\xFA\\\\x1F7\\\\x03\\\\xC9g\\\\x83)TF$H\\\\xA8\\\\xD2\\\\xA24\\\\x91\\\\x80\\\\xABg\\\\x0CF+\\\\xBFx*w\\\\x19\\\\x01\\\\x0E\\\\xFF\\\\xCF\\\\x1B\\\\xA8\\\\x9AJrF.\\\\x0B\\\\x9D\\\\x84\\\\xF2\\\\xEE\\\\x80Y\\\\x18\\\\xD4\\\\x12\\\\xFE\\\\x14\\\\x89\\\\x9B\\\\x8C\\\\x9AL6\\\\x17\\\\x09\\\\xF25\\\\x5C\\\\xEDb\\\\x02\\\\x89\\\\xCD\\\\xA7|\\\\xC9zL\\\\x97\\\\x81\\\\x92\\\\x96\\\\xA3\\\\xC4g\\\\xB4(\\\\xE3k\\\\x82Gk\\\\xC1\\\\x90B\\\\xE6][\\\\xE1\\\\x02\\\\x9B\\\\x86?Tua\\\\x1C\\\\xE0\\\\xFC\\\\x9F\\\\x8D\\\\xEB\\\\x01\\\\xAB\\\\xC0\\\\xE5\\\\xD6\\\\x98\\\\xD5\\\\xE0<\\\\x93\\\\xEA\\\\x00\\\\x8DT\\\\xE9\\\\x05\\\\x04y-G\\\\x0E\\\\xC5R\\\\x0E\\\\x18\\\\xF4\\\\xC1\\\\xD6\\\\x8E\\\\xBDi\\\\xBBf\\\\xBC1Z-\\\\xFD\\\\x90N\\\\x16\\\\x81\\\\x07C*mk\\\\x11\\\\xBCZ\\\\x02\\\\x85\\\\x95a\\\\xDE\\\\xAB\\\\xA8\\\\xB7\\\\xA3\\\\xA7;\\\\x19\\\\xDE\\\\xB3\\\\xD7\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"\\\\x02\") or (http.request.full_uri contains \"v\\\\xF0m\\\\xB0b\\\\xAF\\\\x8F\\\\x883\\\\xE4U)8\\\\x99E\\\\x14\") or (http.request.full_uri contains \"\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"!\\\\xFA\\\\xAC\\\\x8E\\\\x12^\\\\x87\\\\x1F9E\\\\xF8\\\\xBBT5\\\\x18\\\\xBF\\\\xE3\\\\x0Fc\\\\xB0\\\\xC3+!\\\\xB0y\\\\xA7\\\\xE0\\\\x1B\\\\xCF+!\\\\xB0\\\\xC2/c\\\\xB0\\\\xC3+\\\\x22\\\\xB8\\\\xC3+!\\\\xB0\\\\xC3+!\\\\xB0i+!\\\\xB0\\\\xC3+\") or (http.request.full_uri contains \"\\\\x00\\\\x0E8\\\\x89\\\\x99\\\\xDCZFS\\\\xEDM\\\\x00\\\\x00\\\\x00\\\\x00\\\\x00\") or (http.request.full_uri contains \"j\\\\x00\\\\xFD U\\\\x8De\\\\xC2G\\\\xB6\\\\x9A\\\\x83g\\\\xA3-\\\\xB6\") or (http.request.full_uri contains \"SSTP_DUPLEX_POST\")",
+        "id": "1ec32886b4c24a69abfef07e180bbd6a",
+        "last_updated": "2026-07-29T14:34:56.154837Z",
+        "ref": "1ec32886b4c24a69abfef07e180bbd6a",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Exploting Fix",
+        "enabled": true,
+        "expression": "(http.request.uri.query contains \")/*\") or (http.request.uri.query contains \")--\") or (http.request.uri.query contains \"benchmark(\") or (http.request.uri.query contains \"'0:0:20'\") or (http.request.uri.query contains \"MD5(\") or (http.request.uri.query contains \"%20waitfor%20delay%20\") or (http.request.uri.query contains \"%22\") or (http.request.uri.query contains \"%20/*\") or (http.request.uri.query contains \"%20--\") or (http.request.uri.query contains \"%20%23\") or (http.request.uri.query contains \")%23\") or (http.request.uri.query contains \"script>\") or (http.request.uri.query contains \"%40\") or (http.request.uri.query contains \"%00\") or (http.request.uri.query contains \"<?php\") or (http.request.uri.query contains \"0x00\") or (http.request.uri.query contains \"0x08\") or (http.request.uri.query contains \"0x09\") or (http.request.uri.query contains \"0x0a\") or (http.request.uri.query contains \"0x0d\") or (http.request.uri.query contains \"0x1a\") or (http.request.uri.query contains \"0x22\") or (http.request.uri.query contains \"0x25\") or (http.request.uri.query contains \"0x27\") or (http.request.uri.query contains \"0x5c\") or (http.request.uri.query contains \"0x5f\") or (http.request.uri.query contains \"SELECT\") or (http.request.uri.query contains \"concat\") or (http.request.uri.query contains \"union\") or (http.request.uri.query contains \"0x50\") or (http.request.uri.query contains \"DROP\") or (http.request.uri.query contains \"WHERE\") or (http.request.uri.query contains \"ONION\") or (http.request.uri.query contains \"0x3c62723e3c62723e3c62723e\") or (http.request.uri.query contains \"0x3c696d67207372633d22\") or (http.request.uri.query contains \"OR\") or (http.request.uri.query contains \"0x3e\") or (http.request.uri.query contains \"<img\") or (http.request.uri.query contains \"<image\") or (http.request.uri.query contains \"document.cookie\") or (http.request.uri.query contains \"onerror()\") or (http.request.uri.query contains \"alert(\") or (http.request.uri.query contains \"window.\") or (http.request.uri.query contains \"String.fromCharCode(\") or (http.request.uri.query contains \"javascript:\") or (http.request.uri.query contains \"onmouseover=\") or (http.request.uri.query contains \"<BODY onload\") or (http.request.uri.query contains \"<style\")",
+        "id": "3b120b58dd04469e8713fd4ed504b07d",
+        "last_updated": "2026-07-29T14:34:56.154837Z",
+        "ref": "3b120b58dd04469e8713fd4ed504b07d",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "6045d9e86fc7403f99a15d68bec6f95c",
+        "last_updated": "2026-07-29T14:34:56.154837Z",
+        "ref": "6045d9e86fc7403f99a15d68bec6f95c",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "Managed Challenge IPs com threat score >30 (human-safe)",
+        "enabled": true,
+        "expression": "(cf.threat_score gt 30)",
+        "id": "132bb0fc3d1a479d9df83bcc473a9621",
+        "last_updated": "2026-07-29T14:34:56.154837Z",
+        "ref": "132bb0fc3d1a479d9df83bcc473a9621",
+        "version": "1"
+      }
+    ]
+  },
+  "oiempreendedores.com.br": {
+    "zona": "47086821a922b39d11c162acd9b8b5c0",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "5f4a6605781d455aa2533d2ef776541d",
+        "last_updated": "2026-07-29T14:41:41.778254Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "5f4a6605781d455aa2533d2ef776541d",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "7625a1932c52451ea1215328e54a9ef4",
+        "last_updated": "2026-07-29T14:41:41.778254Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "7625a1932c52451ea1215328e54a9ef4",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "28be271105e342e59da654c393ccfda3",
+        "last_updated": "2026-07-29T14:41:41.778254Z",
+        "ref": "28be271105e342e59da654c393ccfda3",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")\n",
+        "id": "10562af3ef3a42daa30be27dc896a78b",
+        "last_updated": "2026-07-29T14:41:41.778254Z",
+        "ref": "10562af3ef3a42daa30be27dc896a78b",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "20005573224448e3b596daa40a36b277",
+        "last_updated": "2026-07-29T14:41:41.778254Z",
+        "ref": "20005573224448e3b596daa40a36b277",
+        "version": "1"
+      }
+    ]
+  },
+  "clickinfohub.com": {
+    "zona": "a0901ceb2689071a7997d63b0797af09",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "78164bdd2a2f499d96de687a7cd74935",
+        "last_updated": "2026-07-29T14:33:37.554699Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "78164bdd2a2f499d96de687a7cd74935",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "c6144369cf5845db9a9fa3fc310e7e25",
+        "last_updated": "2026-07-29T14:33:37.554699Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "c6144369cf5845db9a9fa3fc310e7e25",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "63795b89167149189fb089b9ccd60f7d",
+        "last_updated": "2026-07-29T14:33:37.554699Z",
+        "ref": "63795b89167149189fb089b9ccd60f7d",
+        "version": "1"
+      },
+      {
+        "action": "challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "917867e599ab4a0cb74ef8ba1abbcef1",
+        "last_updated": "2026-07-29T14:33:37.554699Z",
+        "ref": "917867e599ab4a0cb74ef8ba1abbcef1",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "8b1e72d0e5a04d75b24694c32ffc2f4a",
+        "last_updated": "2026-07-29T14:33:37.554699Z",
+        "ref": "8b1e72d0e5a04d75b24694c32ffc2f4a",
+        "version": "1"
+      }
+    ]
+  },
+  "folhadonoroeste.com.br": {
+    "zona": "fcf50fd7784ea7b20a2940e34a6ab7cc",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "61caecf6614b4692aee5c6c64b6d1ef1",
+        "last_updated": "2026-07-29T14:37:21.035723Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "61caecf6614b4692aee5c6c64b6d1ef1",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "3779d052425d49bda0503d07a95e5ff2",
+        "last_updated": "2026-07-29T14:37:21.035723Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "3779d052425d49bda0503d07a95e5ff2",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "f8a398d0ac014a1ea98b589faac20fea",
+        "last_updated": "2026-07-29T14:37:21.035723Z",
+        "ref": "f8a398d0ac014a1ea98b589faac20fea",
+        "version": "1"
+      },
+      {
+        "action": "managed_challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")\n",
+        "id": "d3baf6f0186f4a618e20fa71db39ff7c",
+        "last_updated": "2026-07-29T14:37:21.035723Z",
+        "ref": "d3baf6f0186f4a618e20fa71db39ff7c",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "4feec83591404c80a67a4c13f8917f92",
+        "last_updated": "2026-07-29T14:37:21.035723Z",
+        "ref": "4feec83591404c80a67a4c13f8917f92",
+        "version": "1"
+      }
+    ]
+  },
+  "gpnoticias.com": {
+    "zona": "edd43f1ea19192d428fd1632088d6ef8",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "bff8cde79655429f88c509231a6e34a2",
+        "last_updated": "2026-07-29T14:37:51.332366Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "bff8cde79655429f88c509231a6e34a2",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_sbfm",
+            "http_request_firewall_managed"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "f8e5981c44fd41329e095e57fb66d400",
+        "last_updated": "2026-07-29T14:37:51.332366Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "f8e5981c44fd41329e095e57fb66d400",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "00ce8321d4da4cc9a9b14cd3fd7038eb",
+        "last_updated": "2026-07-29T14:37:51.332366Z",
+        "ref": "00ce8321d4da4cc9a9b14cd3fd7038eb",
+        "version": "1"
+      },
+      {
+        "action": "challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "499b0bbdc57d4efab2eae4f848248d33",
+        "last_updated": "2026-07-29T14:37:51.332366Z",
+        "ref": "499b0bbdc57d4efab2eae4f848248d33",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "5b72316e064c4a21822fb07df03e0869",
+        "last_updated": "2026-07-29T14:37:51.332366Z",
+        "ref": "5b72316e064c4a21822fb07df03e0869",
+        "version": "1"
+      }
+    ]
+  },
+  "jornalconceito.com": {
+    "zona": "03f26c63abe4992bad9aaa77bd74ab69",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "2b0dee0a288347c997a7dba252cba3d8",
+        "last_updated": "2026-07-29T14:38:55.475092Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "2b0dee0a288347c997a7dba252cba3d8",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "15ca5068b6b148ff84905ea195dbd03b",
+        "last_updated": "2026-07-29T14:38:55.475092Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "15ca5068b6b148ff84905ea195dbd03b",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "29da5db106704bf9936793ffe959c562",
+        "last_updated": "2026-07-29T14:38:55.475092Z",
+        "ref": "29da5db106704bf9936793ffe959c562",
+        "version": "1"
+      },
+      {
+        "action": "challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "ef86cd30964941aea2782790ddedc608",
+        "last_updated": "2026-07-29T14:38:55.475092Z",
+        "ref": "ef86cd30964941aea2782790ddedc608",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "5afd7f83c37046cc8f23299b3a3dda62",
+        "last_updated": "2026-07-29T14:38:55.475092Z",
+        "ref": "5afd7f83c37046cc8f23299b3a3dda62",
+        "version": "1"
+      }
+    ]
+  },
+  "ocontraditorio.com": {
+    "zona": "0a8f037be95e6d132d7ae35c84a35738",
+    "conta": "master",
+    "regras": [
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed"
+          ],
+          "products": [
+            "waf",
+            "rateLimit",
+            "securityLevel",
+            "bic",
+            "uaBlock",
+            "hot",
+            "zoneLockdown"
+          ],
+          "ruleset": "current"
+        },
+        "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+        "enabled": true,
+        "expression": "(cf.client.bot)",
+        "id": "0c99bd4a69cc4144ab9edd68d14a4939",
+        "last_updated": "2026-07-29T14:41:34.29274Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "0c99bd4a69cc4144ab9edd68d14a4939",
+        "version": "1"
+      },
+      {
+        "action": "skip",
+        "action_parameters": {
+          "phases": [
+            "http_ratelimit",
+            "http_request_firewall_managed",
+            "http_request_sbfm"
+          ],
+          "ruleset": "current"
+        },
+        "description": "[WP] Bypass para Admin e Ads",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")",
+        "id": "bf53f542ce2b4bf787fa97b481fedc2e",
+        "last_updated": "2026-07-29T14:41:34.29274Z",
+        "logging": {
+          "enabled": true
+        },
+        "ref": "bf53f542ce2b4bf787fa97b481fedc2e",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "[WP] Bloqueio de Ameaças Comuns",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\")",
+        "id": "8ebde5fc94254d85854587196dfb098e",
+        "last_updated": "2026-07-29T14:41:34.29274Z",
+        "ref": "8ebde5fc94254d85854587196dfb098e",
+        "version": "1"
+      },
+      {
+        "action": "challenge",
+        "description": "[WP] Desafio em Páginas Sensíveis",
+        "enabled": true,
+        "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")\n",
+        "id": "2fe43d7840f146709fe35acade8a2035",
+        "last_updated": "2026-07-29T14:41:34.29274Z",
+        "ref": "2fe43d7840f146709fe35acade8a2035",
+        "version": "1"
+      },
+      {
+        "action": "block",
+        "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+        "enabled": true,
+        "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+        "id": "e66255fb274342babacd08aa8dbdf734",
+        "last_updated": "2026-07-29T14:41:34.29274Z",
+        "ref": "e66255fb274342babacd08aa8dbdf734",
+        "version": "1"
+      }
+    ]
+  }
+}
