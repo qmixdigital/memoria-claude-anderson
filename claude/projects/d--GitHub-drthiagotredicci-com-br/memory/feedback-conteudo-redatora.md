@@ -1,19 +1,27 @@
 ---
 name: feedback-conteudo-redatora
-description: "Ao publicar conteúdo refeito pela redatora no blog Tredicci (Jannah), atualizar a data de publicação para o dia do trabalho e gravar a linha fina no campo tie_post_sub_title"
-metadata: 
-  node_type: memory
+description: Fluxo para publicar os textos da redatora no blog do Dr. Thiago Tredicci (desde 19/09/2026 o blog é HTML estático em /blog/ no repositório; data = dia do trabalho, linha fina no cabeçalho, links internos automáticos)
+metadata:
   type: feedback
-  originSessionId: 193e321b-b707-4579-8710-d0f6dece65eb
-  modified: 2026-09-15T17:50:52.458Z
 ---
 
-Quando um conteúdo refeito pela redatora (pasta do Drive `tredicci-15092026`, lida com a conta de serviço `seoqmix@seoqmix.iam.gserviceaccount.com`) substitui um post do blog https://blog.drthiagotredicci.com.br:
+O blog do Tredicci deixou de ser WordPress em 19/09/2026: os artigos vivem em
+`D:\GitHub\drthiagotredicci.com.br\conteudo\blog\<slug>.html` e saem em
+`https://drthiagotredicci.com.br/blog/<slug>/` pelo `_nao-deploy/gerar-blog.py`.
 
-1. **Data de publicação = dia em que o trabalho é feito** (`post_date` e `post_date_gmt`, com `current_time('mysql')` do WP; o relógio do servidor opengravity é UTC, não usar `date` do shell).
-2. **Linha fina vai no meta `tie_post_sub_title`** (campo "Subtitle" do Jannah), que é o que aparece abaixo do H1. Gravar no `post_excerpt` sozinho não muda nada na página.
-3. O resto do fluxo: texto integral dela em blocos Gutenberg, FAQ em JSON-LD, imagem indicada na "Observação" do doc (Pexels/Pixabay via API), links internos com âncora de keyword, `rank_math_title`/`description`/`focus_keyword`, purge (WP + LiteSpeed + `cf_purge.py drthiagotredicci.com.br`), IndexNow.
+Fluxo para um Doc da redatora (pasta do Drive `tredicci-15092026`, conta de serviço
+`seoqmix@seoqmix.iam.gserviceaccount.com`):
+1. `python _nao-deploy/drive-baixar.py` (baixa Docs novos para `_nao-deploy/redatora/`).
+2. `python _nao-deploy/publicar-doc.py <doc>.html --slug <slug>` (post existente) ou `--novo --categoria <cat>`.
+   Ele já aplica: primeiro link do corpo = página de venda do tema, na abertura; artigos irmãos com
+   âncora de keyword (≤ 2 usos por âncora no blog); data de publicação = dia do trabalho; linha fina
+   no cabeçalho; capa da "Observação" do Doc (Pexels/Pixabay) em 1216x640 WebP; sem travessão.
+3. `python _nao-deploy/gerar-blog.py && git add -A && git commit && git push`, depois
+   `python d:/SISTEMAS/Cloudflare/cf_purge.py drthiagotredicci.com.br` e IndexNow.
 
-**Why:** Anderson pediu em 15/09/2026, após a primeira entrega sair com a data antiga (2025) e a linha fina antiga ainda visível.
+**Why:** Anderson pediu (15/09) data do dia e linha fina visível, e (19/09) que a redatora entregue
+sem links, com a inserção feita aqui. A migração para estático (19/09) trocou o `wp eval-file` pelo
+`publicar-doc.py`; o WordPress na opengravity ficou só como backup.
 
-**How to apply:** o script `aplicar_post.php` no scratchpad já faz os itens 1 e 2; ao recriá-lo em outra sessão, incluir os dois. Ver também [[feedback-links-clicaveis]].
+**How to apply:** nunca mais editar posts via wp-cli; editar `conteudo/blog/` e rebuildar. Ver
+[[feedback-links-clicaveis]].

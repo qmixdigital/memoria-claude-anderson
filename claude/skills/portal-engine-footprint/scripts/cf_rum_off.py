@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """Desliga o Cloudflare Web Analytics (RUM) das zonas dos portais do Pages.
 Usa o token do Pages (ganhou Account Settings Write em 17/09/2026).
-uso: python cf_rum_off.py dominios-pages.txt [--so-ver]
+uso (pelo cofre_run, segredos=["cloudflare-pages"]): python cf_rum_off.py dominios-pages.txt [--so-ver]
 """
-import json, sys, urllib.request, urllib.error
-pg = open('C:/Users/User/Documents/APIs/cloudflare-pages.txt', encoding='utf-8').read()
+import json, os, sys, urllib.request, urllib.error
+# token vem do cofre: rodar via cofre_run com segredos=["cloudflare-pages"] (injeta CLOUDFLARE_PAGES)
+pg = os.environ.get('CLOUDFLARE_PAGES') or sys.exit('sem CLOUDFLARE_PAGES no ambiente: rode pelo cofre_run com segredos=["cloudflare-pages"]')
 tok = 'cfut_' + pg.split('cfut_')[1].strip().split()[0]
 H = {'Authorization': 'Bearer ' + tok, 'Content-Type': 'application/json'}
 def call(m, u, body=None):

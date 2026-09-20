@@ -1,1 +1,2 @@
 - [URLs sempre clicaveis](urls-sempre-clicaveis.md) — nunca entregar URL como texto cru ou em bloco de codigo, sempre `[texto](url)`
+- [Rota Ambiental: público não residencial](rota-publico-nao-residencial.md) — só indústria, comércio, hospital, hotel, condomínio e órgão público; nunca casa

@@ -27,6 +27,7 @@ Sem travessão em nenhum texto. Sem citar a agência. Texto em pt-BR com acento.
 | arquitetura (DOM, CSS) | `archs.js`, letra por portal | a letra só é única dentro de cada VPS; a mesma arch aparece em até 3 servidores |
 | 410 no Pages | `pages_pack.js` `gone()` | serve `public/410.html` do portal com status 410; o HTML cru só se o arquivo faltar |
 | cabeçalhos de segurança | `pages_pack.js` `cabecalhosSeguranca(slug)` | Referrer-Policy sempre (o Pages põe um padrão), CSP/XFO/Permissions/HSTS sorteados e embaralhados; a regra igual da zona foi apagada (`cf_zonas_footprint.py`) |
+| esqueleto das páginas do motor (institucional, autor, mapa, busca) | `V.esqueleto`, `V.ultimasDe` (patch_esqueleto.py) | envelope article/section/div, `<header>` ou não, linha de atualização em 4 posições e 8 textos, avatar com ou sem envelope, `hr`, lista `ul`/`ol` em `section`/`aside` |
 | fontes | `fontes_locais.js <slug>` + `V.fontes` | woff2 em `public/<pasta por portal>/`, CSS local, sem fonts.googleapis; sem manifesto cai no Google |
 
 `variacoes.js` é o mesmo arquivo nas 3 máquinas (`/opt/portal-engine/src/`). Cópia de
@@ -80,10 +81,10 @@ Pendente, por ordem de peso (decidir com o Anderson):
 5. ~~Nomes de variável CSS~~ feito 17/09: `V.passadaFinal` (chamada no fim do
    `_renomClasses`) renomeia as custom properties definidas nos `<style>` com palavras de
    CSS por portal, e troca "Todos os direitos reservados" por 13 redações.
-6. **Sequência de tags do `<article>`** igual em grupos de 25 a 27 portais: mesma
-   arquitetura em VPS diferentes. Só arquitetura nova resolve; registrar em
-   `D:\PORTAIS\pages\FOOTPRINT-PAGES-<data>.md` quais grupos existem antes de escolher
-   a arch de um portal novo.
+6. ~~Grupos de 25 a 27 portais com o mesmo `<article>`~~ era a página de autor (molde
+   do motor), não arquitetura. Feito 17/09: `V.esqueleto` e `V.ultimasDe` (envelope,
+   linha de atualização, avatar, bloco "Últimas de" por portal). O auditor agora mede
+   `autor:esqueleto` e `contato:esqueleto` (maior grupo: 5 e 6 em 104).
 
 ## Regras ao mexer no motor ou converter portal
 

@@ -60,3 +60,32 @@ agora confere o `pm_uptime` e repete o reload.
 - Casa da Toalha marcada como `recorrente` e planilha dela importada (94 linhas, 43 novas). Planilha do Dr. Ulbiramar: ele apagou o CSV do Desktop antes da importação; pedir de novo.
 
 **Agenda de envios (15/09/2026):** `fatura_itens.envio_previsto/enviado_em/enviado_por`. Na fatura: botão "Programar envios (um por dia)" (data inicial, pula fim de semana), chip de data por item e "marcar enviado". No dashboard, bloco "Envios aos portais" (Atrasados / Hoje / Amanhã / Próximos) para quem tem acesso ao faturamento (Kátia = gerente); botão "✓ Enviado" tira da lista. Código: `src/lib/envios-programados.ts`, `faturamento/[id]/Envios.tsx`, `EnviosDoDia.tsx`.
+
+**Importação das planilhas dos fixos (18/09/2026):** 12 CSVs do Desktop importados em `backlinks_clientes` com a mesma
+regra do `importarPlanilhaBacklinks` (URL normalizada, insere nova, preenche vazio; sem conferir link, sem indexação,
+sem Apex). Parser próprio em `D:/tmp/backlinks-import/parse.py` (cabeçalhos variam: Link Guest Post / LINK GUEST /
+URL PUBLICAÇÃO / LINK POST / PUBLICAÇÃO / Referring page URL do Ahrefs) + `importar.mjs` na VPS. Resultado: +1.464 linhas
+(Mariana 149, Camila 104, Tiago Bernardes 116, Tredicci 320, Ulbiramar 306, Caixeta 134, Bruno Air 232, Concept 23,
+Aurélio 267, Prudente 12, Rota 160). Criado cliente **id 42 "QMIX Digital (site próprio)"** (avulso) com os 379
+backlinks do qmix.com.br (export Ahrefs, sem valor). Linhas de planilha sem URL (pool de portais, pautas com âncora +
+link do cliente) NÃO entram: são planejamento, não backlink. Valor 0 em ~1.100 linhas antigas (planilhas com "-").
+
+**Regra do Anderson (18/09/2026):** em `backlinks_clientes` só entra backlink cujo `link_cliente` aponta para o domínio
+do site do cliente (ou subdomínio). Link para Instagram, YouTube, outro site do cliente ou outro cliente sai; linha sem
+`link_cliente` fica. Limpeza feita: 122 apagadas (116 Instagram) e 2 do Ulbiramar que apontavam para coegoiania.com.br
+movidas para o cliente COE (id 7). Script `D:/tmp/backlinks-import/limpar-fora-do-site.mjs` (dry-run sem `--apagar`);
+vale rodar depois de cada importação de planilha.
+
+**Preenchimento automático (18/09/2026):** `D:/tmp/backlinks-import/preencher.mjs` (mesma lógica do
+`inspecionarMateria`) leu 970 matérias com tema/âncora/link vazios: 549 preenchidas, 242 fora do ar (169 HTTP 404,
+64 domínio morto), 36 bloqueadas por anti-robô, 170 no ar sem link para o cliente. Marca `no_ar`, `link_ativo`,
+`conferido_em`. Não usar para indexação. Achado: QMIX tem 87 backlinks mortos e 50 sem link; Aurélio 42 mortos,
+Bruno Air 36, Caixeta 26, Rota 20 (planilhas antigas de 2021-2023).
+
+**Planilha do cliente no admin (19/09/2026, pedido do Anderson):** `/admin/faturamento/backlinks`. No cartão, botão
+vermelho EXCLUIR (só administrador, digita a quantidade de linhas) apaga a planilha inteira (`excluirPlanilhaAction`,
+logEvent). Na tabela: seleção por caixa + barra de lote (indexado/não indexado, no ar com link/sem o link/fora do ar,
+remover); coluna Google com ✓ ✗ ○ para marcar à mão; Situação clicável para marcar à mão; ✎ abre modal de edição
+(domínio, âncora, link do cliente, data, valor, tema); "+ Adicionar backlink à mão". Colunas novas `indexado_fonte`
+('api'|'manual') e `conferido_fonte` ('robo'|'manual'): **as conferências em lote pulam o que foi marcado à mão**; o
+botão ↻ por linha sobrescreve (fonte volta a 'api').

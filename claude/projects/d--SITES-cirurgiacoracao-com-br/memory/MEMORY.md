@@ -6,3 +6,4 @@
 - [Acesso ao Search Console](gsc-service-account.md) — service account do backlinkguard, com 84 propriedades da rede
 - [Lighthouse na VPS não serve](lighthouse-na-vps-nao-serve.md) — medir performance pela API do PageSpeed, não dentro da máquina
 - [Onde fica o cirurgiadacatarata](catarata-onde-fica.md) — mesma VPS do de coração, portas 3140/3141, com cobrança real pela Asaas
+- [Deploy local apagou o servidor](deploy-local-apagou-servidor.md) — deploy.sh substitui a release pela cópia local; conferir os arquivos de 19/08 antes de mexer e sincronizar do servidor antes de deployar

@@ -54,6 +54,7 @@ class Artigo(HTMLParser):
         self.h2 = []
         self.links = []           # (indice_paragrafo, href, ancora)
         self.bullets = 0
+        self.rankings = 0  # <ol>: lista ordenada de ranking (featured snippet), no maximo uma
         self.title = []
         self._pilha = []
         self._buf = []
@@ -68,8 +69,10 @@ class Artigo(HTMLParser):
         elif tag == "a":
             self._link_href = d.get("href", "")
             self._link_buf = []
-        elif tag in ("ul", "ol"):
+        elif tag == "ul":
             self.bullets += 1
+        elif tag == "ol":
+            self.rankings += 1
         elif tag == "br":
             self._buf.append(" ")
 
@@ -197,6 +200,10 @@ def camada_a(art, corpo, titulo, n_links_esperado):
     # bullets e headings
     if art.bullets:
         bloqueios.append(f"{art.bullets} lista(s) com bullets no corpo (proibido)")
+    # <ol> e permitido uma vez, como resumo de ranking logo abaixo do H2 da lista
+    # (CLAUDE.md global: lista ordenada para "melhores X", alvo de featured snippet)
+    if art.rankings > 1:
+        bloqueios.append(f"{art.rankings} listas ordenadas no corpo (maximo 1, o resumo do ranking)")
     if len(art.h2) < 4:
         avisos.append(f"apenas {len(art.h2)} H2 (recomendado 5 a 7)")
 

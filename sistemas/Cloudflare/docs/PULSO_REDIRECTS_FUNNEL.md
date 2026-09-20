@@ -572,3 +572,60 @@ mesma troca em qualquer zona da rede que precise bloquear bot verificado** — c
 
 Resultado: de ~52 k req/h para ~7 k/h logo após o bloqueio de IA, e para
 algumas dezenas por minuto depois da correção do skip.
+
+---
+
+## 15. Pages Functions em toda requisição: o furo dos 104 portais (17/09/2026)
+
+Alerta da Cloudflare: conta `Revistadeducao` a 90% do limite diário de 100 mil
+requisições de Workers/Pages Functions. Investigação: **48 contas** com uso de
+Functions naquele dia e **zero no dia anterior**. Causa: o `pages_pack.js` do
+portal-engine gera `functions/_middleware.js` com `onRequest` sem restrição de
+rota, então **cada HTML, CSS e imagem** de cada portal virava uma invocação. No
+Free, ao bater 100 mil, o Pages **derruba o site** até 00:00 UTC.
+
+Correção estrutural, no `pages_pack.js` das 3 VPS (opengravity, clinicas-vps,
+hostinger-vps-srv1166087), backups `.bak-20260917`:
+
+1. **`public/_routes.json`** — só estas rotas invocam o middleware: `/api/contato`,
+   `/wp-json/*`, `/<ns>/*` (API de artigos), `/<beacon>`, apps do portal, e os
+   caminhos do WordPress que recebem 410 (`/wp-content/*`, `/wp-admin/*`,
+   `/tag/*`, `xmlrpc.php`, feeds, sitemaps antigos). Todo o resto é estático,
+   sem Function, sem limite.
+2. **Host canônico virou Redirect Rule na zona** (www→apex ou apex→www conforme
+   `baseUrl`), criada nas 104 zonas via `CF_USER_TOKEN`. Antes era o middleware.
+3. **301 da migração** (`redirects.json`) foram para o `_redirects`, 2 linhas por
+   URL (com e sem barra). Se não couber em 1.900 linhas, cai para 1 linha na
+   forma exata; se ainda não couber, o portal fica **sem** `_routes.json` e o
+   pack avisa `AVISO <slug>`.
+4. **Beacon do contador** (64 portais) é injetado no HTML **em pack time**, antes
+   do `</body>`, idempotente. Antes era `HTMLRewriter` no middleware.
+
+O que se perdeu de propósito: `noindex` no `*.pages.dev` (o `<link rel=canonical>`
+cobre), cache-bust `_d=` (o purge da zona no fim do pack cobre) e **410 de slug
+podado, que agora é 404** (só rotas listadas passam pelo middleware; para o
+Google o efeito é o mesmo).
+
+Resultado: 104 portais redeployados, 0 falhas. **102 com `_routes.json`**.
+Ficaram de fora **`diariodegoiania` (2.993 redirects) e `folhaum` (3.425)**,
+conta Anderson Alves (~52 mil/dia, abaixo do limite mas sem folga). Saída para
+eles: Bulk Redirects da conta ou poda da lista.
+
+`render.js` chama o `pages_pack.js` a cada rebuild, então tudo isso persiste nos
+deploys seguintes. Auditoria de consumo por conta (Functions + Workers, ontem e
+hoje): ver o script da seção 14 adaptado, ou pedir "audite Functions".
+
+### 15.x Apps de diretório fora do Pages (18/09/2026)
+
+Revistadeducao (`/contadores/`) e Desassossegada (`/saloes/` etc.) estouravam os
+100k/dia sozinhos: cada requisição do app passa pela Function. Em vez de Workers
+Paid, os apps vão para subdomínio direto na VPS (`contadores.revistadeducao.com.br`
+e `diretorio.desassossegada.com.br`), com 301 estático no `_redirects` via chave
+`appsMovidos` do `pages.json` (suporte no `pages_pack.js` das 3 VPSs).
+
+Feito em 18/09/2026 às 23:45. Scripts: `scripts/criar_dns_cert_subdominios.py` (DNS + Origin
+Cert; o classificador de permissão do Claude Code barra essa ação, o Anderson rodou) e depois
+`scripts/ativar_subdominios_diretorios.sh` (nginx, troca de release dos apps,
+config dos portais, redeploy). Estado e detalhes em
+`d:\SITES\revistadeducao.com.br\MUDANCA-SUBDOMINIO-2026-09-18.md` e
+`d:\SITES\desassossegada.com.br\MUDANCA-SUBDOMINIO-2026-09-18.md`.

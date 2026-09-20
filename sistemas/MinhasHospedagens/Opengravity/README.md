@@ -1631,6 +1631,18 @@ antiga por 30 minutos.
 `404.html` e `site.webmanifest`. Conferido apos esta alteracao: todos sairam
 corretos, inclusive a linha do AdSense com `pub-3880875536722698`.
 
+**Regressao achada em 19/09/2026:** o `sites.json` do euvo estava com
+`destaqueCategoria.eventos.url` e os links de `rodapeExtra` apontando para
+`/categoria/eventos/` e `/categoria/shows/`, e nao para `/agenda/`. Todos os
+backups desde 03/09 ja estavam assim, entao a troca aconteceu entre 20/08 e
+03/09, sem registro. Efeito: **nenhuma pagina do portal linkava para a
+agenda**, e as paginas de cidade ficaram na posicao 50 a 73 no Google.
+Restaurado: destaque para `/agenda/`, rodape com `/agenda/`,
+`/agenda/sao-paulo/shows/` e `/agenda/rio-de-janeiro/`, e `sitemapsExtra`
+com `https://euvo.com.br/agenda/sitemap.xml` (entra no `robots.txt`). Backup
+`sites.json.bak-agenda-links-20260919-*`. Se algum script regravar o
+`sites.json` do euvo, conferir esses tres campos.
+
 ### Credencial do Search Console e relatorio semanal da agenda
 
 **Arquivo:** `/etc/euvo-agenda/searchconsole-sa.json`, `600`, `root:root`, em
@@ -1682,6 +1694,30 @@ inspecao, cuja cota e baixa. Isso fica dito dentro do proprio relatorio.
 | `euvo-memoria` | diario 9h | RAM, swap e PSI em `/var/log/euvo-memoria.csv` |
 | `euvo-gasto-api` | diario 6h30 | consumo da API, Telegram a cada US$ 5 |
 | `euvo-relatorio-semanal` | segunda 9h | indexacao da agenda, por Telegram |
+
+### 17/09/2026: euvo.com.br foi para o Cloudflare Pages, e a agenda ficou para tras
+
+O DNS do euvo passou de `A 77.37.69.175` para `CNAME euvo.pages.dev`. O portal
+estatico foi junto; a agenda, que e app Node nesta VPS, ficou **dois dias em
+404 na borda** sem monitor nenhum perceber.
+
+**Como esta agora:** Worker `euvo-agenda-proxy` nas rotas `/agenda*`,
+`/evento/*` e `/_next/*`, mandando para `origem.euvo.com.br` (A para esta VPS,
+proxied) por `resolveOverride`. Host segue `euvo.com.br`, entao o vhost
+`portal-euvo.conf` e o certificado continuam valendo. **O Nginx desta VPS
+ainda precisa servir `euvo.com.br`**: nao apagar o vhost achando que o portal
+foi embora.
+
+Origin Rule nao serviu: plano Free nao inclui override de origem.
+
+**Regra que fica para toda a rede:** antes de migrar qualquer dominio para o
+Pages ou mudar DNS, conferir se ha app dinamico nesta VPS pendurado nele.
+Hoje: euvo.com.br tem a agenda. Lista de portas em uso no PM2 e o lugar de
+olhar.
+
+**Vigia:** `/etc/cron.d/euvo-vigia`, a cada 10 minutos, bate no dominio
+publico e avisa por Telegram ao cair e ao voltar. Existe por causa deste
+incidente.
 
 ### Cloudflare: duas armadilhas confirmadas
 

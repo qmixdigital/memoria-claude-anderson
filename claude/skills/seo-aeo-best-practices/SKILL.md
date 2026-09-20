@@ -42,3 +42,33 @@ Origem: github.com/sanity-io/agent-toolkit (skills.sh). Vale sobretudo pelas ref
 AEO (AI Overviews, ChatGPT, Perplexity) e E-E-A-T, que complementam a skill seo-optimizer e
 o produto de GEO da QMIX (qmix.com.br/geo). Onde conflitar com o CLAUDE.md global (title de
 60 caracteres, meta 150 a 160, schema por nicho, sem travessão), vale o CLAUDE.md.
+
+## Regra do link mais forte (Anderson, 18/09/2026)
+
+**O primeiro link do conteúdo é o link mais importante da página.** O Google trata o
+primeiro link para cada destino como o que conta, e a ordem dos links no corpo é um
+sinal de prioridade. Não precisa estar no primeiro parágrafo; precisa ser o **primeiro
+`<a>` do corpo do texto**, antes de qualquer outro link interno ou externo. Vale para
+artigo de blog, página institucional, matéria em portal parceiro e guest post.
+
+**Antes de escrever qualquer conteúdo com esta skill, perguntar, em uma linha:**
+
+> Qual é o link mais importante desta página, o que deve vir em primeiro?
+
+O Anderson responde de um destes três jeitos, e cada um se resolve assim:
+
+| resposta | o que fazer |
+|---|---|
+| uma URL | usar essa URL como primeiro link, com âncora de keyword da página de destino |
+| um texto ("a página de comprar backlinks", "o produto X") | resolver para a URL correspondente e confirmar na entrega |
+| "você escolhe" | escolher a página de dinheiro mais próxima do tema (no site da QMIX, quase sempre `/comprar-backlinks`; em matéria de cliente, a URL do cliente) e dizer qual foi na entrega |
+
+Não perguntar de novo quando o briefing já diz qual é o link (ex.: matéria de cliente com
+URL e âncora no pedido: o link do cliente é o primeiro, ver memória `qmix-regra-primeiro-link`).
+
+**Ao entregar, listar os links na ordem em que aparecem**, com o primeiro marcado. Se o
+validador ou a distância mínima entre links obrigar a mover algum, o que se move é o
+secundário; o mais forte não sai da primeira posição.
+
+Continuam valendo as regras de sempre: um link por destino por página, âncora com a
+keyword do destino e variação entre páginas, nada de "clique aqui".

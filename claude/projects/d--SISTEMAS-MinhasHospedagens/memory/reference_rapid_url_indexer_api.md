@@ -71,3 +71,7 @@ Uso registrado: 12/09/2026, projeto **1177933** com os 36 guest posts do lote 8 
 - 13/09/2026 projeto 1181427: truenet lote 1 (20 URLs, 60 creditos, saldo 4519->4459)
 - 15/09/2026 projeto 1184713: instagram-drthiagocaixeta rodada 1 (20 URLs; cobrou 20 creditos, nao 60 — a tarifa caiu para 1/URL; saldo 4454->4434)
 - 15/09/2026 projeto 1184910: instagram-josemario rodada 1 (20 URLs, 20 creditos, saldo 4434->4414)
+
+- 18/09/2026: projeto 1194404 (medicinageriatrica.com.br, 20 URLs). Conta recarregada: saldo 4.039 antes; cobrou 1 crédito por URL (20), não mais 3. Saldo 4.019.
+- 19/09/2026: projeto 1194526 (revistamsaude.com.br, 20 URLs, 20 créditos). Saldo 3996.
+- 1195438 (19/09/2026): personalverificado rodada 2, 20 URLs, 20 créditos (saldo ~3.974)

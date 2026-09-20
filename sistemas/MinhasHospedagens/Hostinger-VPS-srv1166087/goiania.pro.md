@@ -25,8 +25,8 @@ nginx próprios. Ficha criada em 13/09/2026.
 |---|---|
 | GitHub | https://github.com/qmixdigital/goiania.pro (privado, branch `main`) |
 | Conta | `qmixdigital`, token em `C:\Users\User\Documents\APIs\github.txt` |
-| Clone local | `d:\SITES\goiania.pro` (já com `origin` apontando para o repo) |
-| Histórico | até 16/07/2025 o repo guardava só o `public/_redirects` da versão estática no Cloudflare Pages. Em 13/09/2026 recebeu o app Next.js completo copiado da VPS |
+| Clone local | `d:\SITES\goiania.pro`; **o app fica em `app/`** (raiz tem briefing, docs e `_design`) |
+| Histórico | em 14/09/2026 o repositório original do projeto (app em `app/`, STATUS.md, PLANO.md, briefing) voltou ao GitHub por cima do meu import; em 18/09 reconciliei colocando todo o trabalho de 13 a 18/09 dentro de `app/` (commit `02f3701`). O histórico do import de 13/09 (`b2a6b82`…) foi descartado |
 
 O servidor **não tem `.git`**. O deploy sobe um tarball da máquina local, então o
 fluxo é: editar no clone local, commitar, `bun run deploy`.
@@ -94,13 +94,11 @@ Roda da máquina local, dentro do clone:
 
 ```bash
 cd d:/SITES/goiania.pro
-bun install            # primeira vez
-bun run deploy         # typecheck + build local, tarball, release nova, migrate, build, troca atômica, restart em rolagem
-bun run deploy -- --fast      # pula build e typecheck locais
-bun run deploy -- --rollback  # volta para /var/www/goiania-prev
+bash app/scripts/deploy.sh --fast      # build no servidor, release nova, migrate, troca atômica, restart em rolagem
+bash app/scripts/deploy.sh --rollback  # volta para /var/www/goiania-prev
 ```
 
-`scripts/deploy.sh` fala com `root@31.97.173.40` pela chave
+`app/scripts/deploy.sh` fala com `root@31.97.173.40` pela chave
 `<<REMOVIDO>>` (a mesma do alias; a `id_ed25519_vps` que o
 script usava antes não autentica nesse servidor). Sem Bun local, rodar
 `bash scripts/deploy.sh --fast` no Git Bash: o build acontece no servidor, em
@@ -146,6 +144,10 @@ Em 09/2026 cerca de 80% das impressões ainda chegam pelos subdomínios antigos
 (`categoria.goiania.pro`), que fazem 301 para `/categoria/`.
 
 ## Política de indexação (13/09/2026)
+
+Ficha reivindicada pelo dono abre a lista da categoria, do bairro e dos
+destaques (regra de 18/09/2026, `ordemPadrao` e `listaEmpresas` em
+`src/lib/queries.ts`).
 
 Tudo indexável: fichas (inclusive sem telefone ou número), categorias, páginas
 categoria+bairro (`MIN_CAT_BAIRRO = 1` em `src/lib/queries.ts`) e bairros com

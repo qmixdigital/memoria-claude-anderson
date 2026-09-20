@@ -1,2 +1,2 @@
 - [Links clicáveis sempre](feedback-links-clicaveis.md) — citar páginas/URLs sempre com a URL completa clicável, nunca só o caminho
-- [Conteúdo da redatora: data e linha fina](feedback-conteudo-redatora.md) — ao publicar texto refeito, data = dia do trabalho e linha fina em tie_post_sub_title
+- [Fluxo da redatora no blog estático](feedback-conteudo-redatora.md) — blog é HTML em /blog/ desde 19/09/2026; publicar-doc.py aplica data do dia, linha fina e links automáticos

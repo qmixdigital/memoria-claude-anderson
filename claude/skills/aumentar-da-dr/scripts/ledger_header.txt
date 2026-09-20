@@ -1,0 +1,1 @@
+data,site,destino,ancora,tipo_ancora,formato,host,portal,dominio_portal,url_hospedeira,motivo,dr,da,as,obs,rel

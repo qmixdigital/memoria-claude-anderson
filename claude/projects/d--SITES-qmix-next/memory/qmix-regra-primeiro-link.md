@@ -13,3 +13,9 @@ a promessa era falsa e podia virar reclamação.
 
 **How to apply:** em textos, mockups, e-mails e artigos, escrever "o primeiro link da matéria" /
 "seu link antes de qualquer outro"; nunca "no primeiro parágrafo". Ver também [[qmix-blog-tema-claro]].
+
+**Ampliação (18/09/2026):** a regra vale para todo conteúdo, não só matéria de cliente. O primeiro `<a>` do corpo
+é o link mais forte da página (no blog da QMIX, em geral `/comprar-backlinks`). Antes de escrever, perguntar ao
+Anderson qual é o link mais importante; ele responde com URL, com texto ou com "você escolhe". Procedimento completo
+na skill `seo-aeo-best-practices` (seção "Regra do link mais forte"). O estudo `/blog/preco-de-backlink` foi
+reordenado nesse dia para o marketplace ser o primeiro link.

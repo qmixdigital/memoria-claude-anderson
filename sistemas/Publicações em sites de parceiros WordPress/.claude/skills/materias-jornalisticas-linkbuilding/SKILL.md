@@ -211,7 +211,9 @@ duas vezes seguidas.
 ### Tom
 
 Terceira pessoa. Parágrafos de 3 a 5 linhas, uma ideia cada. **Zero travessões**
-(nem `—` nem `–`) em qualquer ponto. Sem bullets no corpo. Sem "Primeiramente... Por fim".
+(nem `—` nem `–`) em qualquer ponto. Sem bullets no corpo. Exceção (18/09/2026): em artigo de
+ranking ("os 10 melhores X"), **uma** `<ol>` com os nomes logo abaixo do H2 da lista, como
+resumo extraível para featured snippet e AI Overview; `<ul>` continua proibida. Sem "Primeiramente... Por fim".
 Sem pergunta retórica respondida na sequência. Sem "Você sabia que".
 
 Fontes citadas no corpo, integradas: "segundo a Pesquisa Nacional de Saúde de 2019".

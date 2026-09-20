@@ -1,2 +1,4 @@
 - [Hospedagem do blog WordPress](blog-wordpress-hospedagem.md) — o blog está na mesma VPS, mas sob HestiaCP (`/home/boot/web/...`), com prefixo de tabela não-padrão.
 - [Uploads convertidos para WebP](favicon-webp-quebrado-blog.md) — PNGs originais foram apagados em massa; foi a causa do favicon sumir do Google.
+- [Migração para Cloudflare Pages](migracao-cloudflare-pages.md) — 19/09/2026: site + 747 posts viraram estático no Pages; cutover feito 19/09 10h27; armadilha do domínio "deactivated" no Pages; zona endurecida.
+- [Limites do Pages medidos](pages-limites-medidos.md) — um splat por regra no `_redirects`, ~8 arquivos por rota no export do Next 16, alturas do header fixo do COE.

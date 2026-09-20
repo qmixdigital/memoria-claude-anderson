@@ -1,7 +1,7 @@
 # Memory Index
 
 - [PageSpeed API key](pagespeed-api-key.md) — chave do PageSpeed em D:\SISTEMAS\Google\pagespeed.json
-- [INP comprar-backlinks](qmix-inp-comprar-backlinks.md) — causa da oscilação de ranking (INP mobile) e a otimização de 2026-06-23; re-medir ~2026-07-21
+- [INP comprar-backlinks](qmix-inp-comprar-backlinks.md) — oscilação de 2026-06 atribuída ao INP mobile; corrigido 2026-06-23 (ver também o diagnóstico de 2026-09)
 - [Server actions multi-instância](qmix-server-actions-multiinstancia.md) — 2 instâncias PM2 exigem NEXT_SERVER_ACTIONS_ENCRYPTION_KEY compartilhada + max no pool postgres
 - [SSH ao VPS precisa sandbox off](ssh-vps-precisa-sandbox-off.md) — timeout na porta 22 do VPS é o sandbox de rede; usar dangerouslyDisableSandbox, não é ban de IP
 - [Subdomínio de ferramentas](ferramentas-subdominio.md) — ferramentas.qmix.com.br serve as 55 tools em raiz limpa via middleware host-routing + 301 cross-domain do qmixdigital
@@ -22,8 +22,16 @@
 - [Plano de melhorias 2026-09](qmix-plano-melhorias-2026-09.md) — 9 itens priorizados para resolver um a um; itens 1 a 6 feitos 13/09; pendentes: indexação automática, publishers, blog
 - [Newsletter digest + rastreio próprio](qmix-newsletter-digest.md) — template claro, pixel/clique com cidade, agendamento terça 10h SP; #6 agendada 15/09
 - [Tema claro do site](qmix-blog-tema-claro.md) — site todo em tokens --q-* (claro padrão, escuro por toggle), admin forçado escuro; codemod e regras de papel; apagar .next/types antes do deploy ao mover rotas
-- [Regra do primeiro link](qmix-regra-primeiro-link.md) — link do cliente é sempre o 1º link da matéria, não necessariamente no 1º parágrafo; nunca prometer parágrafo
+- [Regra do primeiro link](qmix-regra-primeiro-link.md) — link mais forte é sempre o 1º link do corpo (cliente na matéria, /comprar-backlinks no blog); perguntar qual é antes de escrever; nunca prometer parágrafo
 - [Faturamento mensalistas](qmix-faturamento-mensalistas.md) — módulo de faturas migrado do Antônio (etapa 1 feita 14/09), regras de cobrança manual/NF, próximas etapas
 - [Moz API](qmix-moz-api.md) — plano Growth Medium 120k linhas/mês (reset mensal, overage US$ 20/10k); um token base64(access_id:secret) serve Links API v2 e Data API v3; scripts e o que já consumiu
 - [Proposta de portal ao cliente](feedback-proposta-portal-cliente.md) — formato curto aprovado (4 linhas: portal, DA/tráfego/link, matéria em lista para IA, preço fechado, pergunta)
 - [Regras dos sites do Jean](feedback-jean-credito-foto.md) — caption "Imagem de {Autor} via {Banco}", sem tags, pauta forçada em site nichado vai para Geral; MCP roda no gnd-motor (systemd wp-mcp.service)
+- [Aba Apostas](qmix-apostas-precos.md) — preços por dono (rede R$180, Jean/Yon/Diego R$240, 1news/tvprime/horanews só especial R$1.600); compra via produto espelho inativo; pendente: levar os 3 para a lista normal
+- [Mobile: admin e listas](qmix-mobile-admin-e-listas.md) — gaveta do admin, rotulador genérico de tabelas → cards, cards em grid nas listas, barra de compra na ficha; script de medição em D:\tmp\mob-shots.mjs
+- [Ferramentas: GSC 2026-09](qmix-ferramentas-gsc-2026-09.md) — 6 páginas otimizadas com consultas do GSC (letras 400k imp, símbolos 273k), FAQs estavam vazias, regra de sobreposição de SERP para página nova vs H2; pendente páginas novas
+- [Estudo de preço de backlink](qmix-estudo-preco-backlink.md) — artigo de citação (18/09/2026) com 447 portais; números-chave, tabelas no Lexical, schema Dataset, como refazer o corte
+- [Diagnóstico /comprar-backlinks 2026-09](qmix-comprar-backlinks-diagnostico-2026-09.md) — oscilação 5↔34 não é autoridade (239 domínios); âncoras sujas por 301, página pesada, LCP regrediu com fontes do redesign (corrigido); inlineCss do Next triplica o CSS, não usar
+- [Auditoria Ahrefs 2026-09](qmix-ahrefs-auditoria-2026-09.md) — links para 301 (header /ferramentas, 400 hrefs nas tools, 66 artigos), OG type/site_name/locale por layout (Next não faz merge), metas; órfãs são as fichas de portal, por decisão
+- [Landing médicos SP](qmix-landing-medicos-sp.md) — /geo/medicos-sao-paulo no route group (landing), simulador pré-preenchido, WhatsApp único; pixel do Meta não está no código
+- [SSH: cofre KeePassXC e fail2ban](ssh-cofre-e-fail2ban.md) — chave no cofre (ssh-add -l = 17 chaves), timeout intermitente na porta 22 é bloqueio de IP por muitos scp; tar único por deploy

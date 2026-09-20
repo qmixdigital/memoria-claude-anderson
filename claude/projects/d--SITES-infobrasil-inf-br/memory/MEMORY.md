@@ -3,3 +3,4 @@
 - [Credencial do Search Console](credencial-search-console.md) — chave da rede no Desktop (enjai-493011-*.json); rodar da maquina local, o servidor nao tem google-auth.
 - [Regras da cascata de download](cascata-download-regras.md) — nao mexer na ordem sem ordem dele; ffprobe decide, rotulo de API mente; nao reprocessar job vivo.
 - [Modelo do Gemini para conta nova](gemini-modelo-conta-nova.md) — 2.5-flash da 404, usar 3.6-flash; -latest deu 503.
+- [Cortes IA em pausa](cortes-ia-em-pausa.md) — pausada em 18/09/2026 a pedido dele; nao reativar nem gastar API sem ordem; roteiro em COMO-REATIVAR.md no servidor.

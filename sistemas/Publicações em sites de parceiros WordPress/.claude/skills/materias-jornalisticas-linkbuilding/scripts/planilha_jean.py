@@ -51,8 +51,9 @@ def preco(s, dominio, apostas=False):
     return None
 
 
-def enviar(s, dominio, titulo, link, apostas=False, aba=ABA_PEDIDOS):
-    p = preco(s, dominio, apostas)
+def enviar(s, dominio, titulo, link, apostas=False, aba=ABA_PEDIDOS, sem_valor=False):
+    # --sem-valor: o Jean confirma o preço depois (ex.: matéria de aposta, que tem valor próprio)
+    p = "" if sem_valor else preco(s, dominio, apostas)
     if p is None:
         print(f"AVISO: {dominio} não está na aba {ABA_PRECOS} (ou sem preço na coluna); gravando valor em branco")
         p = ""
@@ -68,13 +69,14 @@ def main():
     a = sub.add_parser("preco"); a.add_argument("dominio"); a.add_argument("--apostas", action="store_true")
     b = sub.add_parser("enviar"); b.add_argument("dominio"); b.add_argument("titulo"); b.add_argument("link")
     b.add_argument("--apostas", action="store_true"); b.add_argument("--aba", default=ABA_PEDIDOS)
+    b.add_argument("--sem-valor", action="store_true", help="grava o valor em branco (o Jean confirma depois)")
     c = sub.add_parser("ultimas"); c.add_argument("n", type=int, nargs="?", default=5); c.add_argument("--aba", default=ABA_PEDIDOS)
     args = ap.parse_args()
     s = sessao()
     if args.cmd == "preco":
         print(preco(s, args.dominio, args.apostas))
     elif args.cmd == "enviar":
-        enviar(s, args.dominio, args.titulo, args.link, args.apostas, args.aba)
+        enviar(s, args.dominio, args.titulo, args.link, args.apostas, args.aba, args.sem_valor)
     else:
         rows = valores(s, f"'{args.aba}'!A1:E1100")
         for i, row in enumerate(rows[-args.n:], len(rows) - args.n + 1):

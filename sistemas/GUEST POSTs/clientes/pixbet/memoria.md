@@ -62,3 +62,21 @@ Cópias em `materias/<slug>.json`, `materias/<slug>.html` e `materias/<slug>.web
 - 15/09/2026: acritica.com (R$ 140, linha 241) e oimparcial.com.br (R$ 300, linha 242) enviados à planilha do Jean (Pedidos Fevereiro), com os links do painel.
 
 - 15/09/2026: Band publicada (https://www.band.com.br/noticias/pixbet-autenticacao-por-face-id-no-cadastro-no-login-e-no-saque). Baixa dada na planilha do Jean (coluna E da linha 237), item 2317 da fatura FAT-202609-0009 (Lucas Ayala) já com a URL, backlinks_clientes registrado.
+
+## Lote de 18/09/2026 (5 matérias, aguardando conferência do Anderson e aprovação do Lucas)
+
+Todas com âncora "Pixbet" na 1ª menção (1º parágrafo) → matéria da Band, e "Fonte: PixBet" → https://x.com/pixbet no fim. Fotos Pixabay (adultos ou sem rosto). Validador: 0 bloqueios, humanização 75 a 90. Itens da fatura FAT-202609-0009 já apontam para os links. DM (dm.com.br) recusou publicar: fica fora até o Anderson trocar o portal.
+
+| portal | título | keyword | link da entrega |
+|---|---|---|---|
+| tvprime.com.br | Pixbet: o Face ID no dia a dia do apostador, passo a passo no celular | Face ID no dia a dia | https://conteudo.qmix.com.br/fa5272ace7e041933962ffe276075519 |
+| 1news.com.br | Por que a Pixbet decidiu proteger o saque com Face ID | proteger o saque com Face ID | https://conteudo.qmix.com.br/9d37bac24f28a48b2508c57e7236946b |
+| rondoniadinamica.com | Pixbet e a segurança no celular: 5 hábitos que o Face ID não substitui | segurança no celular | https://conteudo.qmix.com.br/36661492b1ec7ac4111ade3230ec8684 |
+| tudorondonia.com | Apostar pelo celular ficou mais seguro: o caso do Face ID da Pixbet | apostar pelo celular ficou mais seguro | https://conteudo.qmix.com.br/4502df8bc9419d19f9c5d1751c44fdcf |
+| sopacultural.com | Apontar a câmera virou hábito: como o Face ID chegou à Pixbet | apontar a câmera | https://conteudo.qmix.com.br/73e775922117fea4bef6a8efe8f2a2ae |
+
+Publicadas antes (marcadas no painel em 18/09): band (14/09), oimparcial e acritica (15/09).
+
+**Ajuste de 18/09/2026 (ordem do Anderson):** nas 5 matérias do lote a linha "Fonte: PixBet" saiu e o link do canal oficial entrou dentro do último parágrafo: tvprime → https://blog.pix.bet.br/ (âncora "blog da Pixbet"); 1news → https://x.com/pixbet ("perfil oficial da Pixbet no X"); rondoniadinamica → https://www.linkedin.com/company/pixbet2 ("página da Pixbet no LinkedIn"); tudorondonia → LinkedIn ("Casa de Apostas PixBet"); sopacultural → LinkedIn ("PixBet, casa de apostas"). O LinkedIn canônico é /company/pixbet2 (mesma página que /company/pixbet).
+
+**18/09/2026:** rondoniadinamica (linha 249) e tudorondonia (linha 250) enviados à planilha do Jean **sem valor** (matéria de aposta tem preço próprio; o Jean confirma). Publicados até aqui: band, oimparcial, acritica, sopacultural, 1news. Pendentes: tvprime (Anderson), os dois do Jean, e dm.com.br (recusou; trocar portal).

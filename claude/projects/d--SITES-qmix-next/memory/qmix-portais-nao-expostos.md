@@ -29,3 +29,7 @@ vazamento está em slug, e vice-versa. Para números em schema, usar `Service` c
 identificar veículo.
 
 Relacionado: [[qmix-loading-suspense]], [[portais-url-raiz]]
+
+**4º vazamento (18/09/2026):** o mural de avaliações de `/comprar-backlinks` (`MuralAvaliacoes` + `/api/avaliacoes/recentes`)
+mostrava domínio e link do portal avaliado. A API agora devolve só `portalDa` e `portalEstado`; nome/slug saíram
+de `getAvaliacoesRecentes`. Conferir também endpoints públicos em `/api/*`, não só o HTML.

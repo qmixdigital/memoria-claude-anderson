@@ -57,3 +57,17 @@ O que foi feito:
 
 Agora `generate_lead` é o único evento de contato e vem exclusivamente do
 `rastreio.js`, nos dois hosts.
+
+## 19/09/2026: blog migrado para HTML estático no domínio principal
+
+O WordPress deste diretório **não recebe mais tráfego**. Os 182 posts foram exportados
+(`_nao-deploy/export-wp.json` + `wp-content/uploads`) para o repositório
+`github.com/qmixdigital/drthiagotredicci.com.br` e passaram a ser gerados como HTML estático em
+`https://drthiagotredicci.com.br/blog/<slug>/` (Cloudflare Pages). Detalhes e fluxo de publicação:
+README.md do repositório, seção "Blog".
+
+- Redirect Rule na zona do Cloudflare (`blog.drthiagotredicci.com.br` → `drthiagotredicci.com.br/blog/<caminho>`, 301, 1 salto)
+  responde na borda antes de chegar à VPS; o DNS do `blog` continua apontando para a opengravity só para a regra disparar.
+- Os mu-plugins, o Rank Math e o Jannah não têm mais função. Manter a instalação como backup por 30 dias;
+  depois: `wp db export` para `/root/bkp/` e remover o web domain no Hestia.
+- Fluxo da redatora agora: Google Doc → `python _nao-deploy/publicar-doc.py` → `gerar-blog.py` → `git push`.

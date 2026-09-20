@@ -13,3 +13,5 @@
 - [GSC: migração de abril/2026 zerou os pilares](gsc-migracao-abril-2026.md) — 3 artigos perdidos, 10 pilares a zero desde a migração; convênio (Unimed) é o maior cluster
 - [28 matérias publicadas em 11/09/2026](conteudo-publicado-2026-09-11.md) — perdidas recriadas, pilares reescritos, novas com data de 2025 fora da home; fluxo agentes + validador
 - [Acesso ao GSC da COE e clientes](gsc-coe-acesso.md) — contas de serviço do app de indexação na VPS enxergam coegoiania e outros ortopedistas; COE teve spam de invasão
+- [Relatório GSC 18/09/2026](gsc-relatorio-2026-09-18.md) — 14 pautas novas e 7 reescritas em docs/relatorio-gsc-2026-09-18.md; impressões dobraram após as 48 matérias
+- [Autores e redatores](autores-e-redatores.md) — quem assina cada tema (Juliana Borges nutrição, Camila Farias endocrino, Tredicci digestivo, Bufaiçal/Caixeta/Ulbiramar ortopedia, Tiago Brito o resto); site do autor é o primeiro link

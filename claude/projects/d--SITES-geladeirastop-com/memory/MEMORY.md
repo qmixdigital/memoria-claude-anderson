@@ -2,3 +2,4 @@
 - [Link de SEO nasce no servidor](link-seo-precisa-nascer-no-servidor.md) — componente client que monta href em useEffect não passa link equity nem aparece no crawl.
 - [Service account do Search Console](gsc-service-account.md) — JSON em DocumentsAPIs, acesso a 83 propriedades incluindo sc-domain:geladeirastop.com.
 - [Planilha de backlinks no Sheets](planilha-backlinks-sheets.md) — só a SA seoqmix escreve; colunas E/F/H, G fica vazia; conferir destinos e âncoras já usados.
+- [Modo magro, sem build na VPS](modo-magro-sem-build.md) — site no srv1166087 desde 14/09; build lá custa 15 GB; automação desligada; poda por status; 87 destinos de backlink intocáveis.

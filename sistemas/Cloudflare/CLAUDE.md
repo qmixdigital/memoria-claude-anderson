@@ -119,3 +119,11 @@ com **Zone → Dynamic Redirect → Edit**.
 > alguns segundos a cerca de um minuto. Meça de novo antes de concluir que a
 > regra perdeu para o Always Use HTTPS. Foi o que aconteceu no
 > cirurgiacoracao.com.br: a primeira medição deu 2 saltos e a seguinte, 1.
+
+## Diretórios em subdomínio (revistadeducao / desassossegada)
+
+Os apps Next desses dois portais saem do Cloudflare Pages para subdomínio
+(18/09/2026). Ordem: `python scripts/criar_dns_cert_subdominios.py` e depois
+`bash scripts/ativar_subdominios_diretorios.sh`. Detalhes em
+[docs/PULSO_REDIRECTS_FUNNEL.md](docs/PULSO_REDIRECTS_FUNNEL.md) §15.x e nas
+pastas `d:\SITES\revistadeducao.com.br` e `d:\SITES\desassossegada.com.br`.

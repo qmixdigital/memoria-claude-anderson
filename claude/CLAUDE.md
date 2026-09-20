@@ -290,13 +290,14 @@ Google, nao deixa a marca de "ilustracao sintetica" e nao custa credito.
 
 | fonte | licenca | onde esta a chave |
 |---|---|---|
-| **Pixabay** | propria, sem credito; a API **proibe hotlink** e exige baixar | `C:/Users/User/Documents/APIs/pixabay.txt` |
-| **Pexels** | propria, sem credito | `C:/Users/User/Documents/APIs/pexels.txt` |
+| **Pixabay** | propria, sem credito; a API **proibe hotlink** e exige baixar | cofre, entrada `pixabay` (variavel `PIXABAY`) |
+| **Pexels** | propria, sem credito | cofre, entrada `pexels` (variavel `PEXELS`) |
 | **Wikimedia Commons** | so **CC0 e dominio publico** (CC BY exige credito e sai) | sem chave |
 
 O modulo pronto e `~/.claude/skills/guest-post-rede/scripts/banco_img.py`
 (`buscar` e `pegar`): junta as tres fontes, sorteia a ordem por portal, baixa,
 recorta em WebP e devolve a ficha. Serve para qualquer projeto, nao so guest post.
+Rodar SEMPRE pelo `cofre_run` com `segredos=["pixabay","pexels"]` (ver secao Cofre).
 
 **Regras:**
 
@@ -316,8 +317,9 @@ recorta em WebP e devolve a ficha. Serve para qualquer projeto, nao so guest pos
 
 ### Geracao de Imagens com IA (Runware API): SO COM ORDEM EXPRESSA
 
-Quando eu pedir para gerar/criar imagens, usar a API da Runware. A chave e
-`<<REMOVIDO>>` e ela da acesso a plataforma inteira, que
+Quando eu pedir para gerar/criar imagens, usar a API da Runware. A chave esta
+no cofre, entrada `runware` (variavel `RUNWARE_API_KEY`): rodar o curl pelo
+`cofre_run` com `segredos=["runware"]`. Ela da acesso a plataforma inteira, que
 revende BFL, Google, OpenAI e ByteDance. Nao existe "comprar outra IA": e so
 trocar o `model`.
 
@@ -361,7 +363,7 @@ com o modelo barato:
 #### Chamada
 
 ```bash
-curl -s -X POST "https://api.runware.ai/v1"   -H "Content-Type: application/json"   -H "Authorization: Bearer <<REMOVIDO>>"   -d '[{
+curl -s -X POST "https://api.runware.ai/v1"   -H "Content-Type: application/json"   -H "Authorization: Bearer $RUNWARE_API_KEY"   -d '[{
     "taskType": "imageInference",
     "taskUUID": "'$(uuidgen || python3 -c "import uuid; print(uuid.uuid4())")'",
     "model": "runware:100@1",
@@ -865,6 +867,104 @@ Atencao no Next.js App Router: `not-found.tsx` e `error.tsx` sao entregues pelo
 Nessas telas o flag precisa ser setado por componente cliente, nao por markup.
 Em pagina com HTML de servidor (admin, painel) o `<script>` inline funciona.
 
+## Banners de Afiliado (consulta de CPF e similares)
+
+Regra fixada pelo Anderson em 19/09/2026, depois de aprovar a implementacao no
+consultarimovel.ia.br. Vale para **qualquer site** da rede. Quando ele pedir
+"insira o banner de consulta de CPF", "banner de afiliado" ou mandar um link
+com `?promo=` de plataforma de consulta (Consulte Facil, Mega Consultas,
+consultar.cpf ou similar), e ISTO que ele quer, sem precisar explicar de novo.
+
+### O que e o produto
+
+Plataforma de consulta por CPF/CNPJ: dividas, protestos, acoes judiciais,
+falencia, score. O Anderson e afiliado e ganha por cadastro. Dois links com o
+**mesmo UUID de promo** sao a mesma plataforma sob marcas diferentes: usar UM
+so, o que diz o que vende (lista as consultas na pagina). Anunciar os dois e
+repetir o mesmo produto duas vezes.
+
+### Onde entra (a regra dele: "o lugar que da clique e no inicio")
+
+- **Faixa compacta no TOPO**: uma linha, logo depois da primeira frase de
+  abertura da pagina, ANTES da listagem ou do artigo. E o slot de maior clique.
+  (O texto longo de SEO, ao contrario, vai para o FIM: sao duas decisoes
+  diferentes e as duas sao dele.)
+- **Painel completo no FIM** da pagina, depois do texto e da FAQ.
+- **In-feed**: uma faixa a cada N linhas de tabela ou N itens de lista longa,
+  como linha ou item de largura inteira. Nunca na primeira linha.
+- **In-article**: uma faixa antes do H2 que abre a secao 3, 5, 7... Nunca antes
+  da primeira secao, que responde a pergunta do titulo.
+- **Ancora fixa no celular**: barra de uma linha acima da navegacao inferior,
+  com botao de fechar; o fechamento vale a sessao (sessionStorage via
+  `useSyncExternalStore`, sem setState em efeito). So abaixo de 720px.
+- **Nunca** acima do produto pago do proprio site (na ficha, a faixa entra
+  DEPOIS dos botoes de PDF/KML), e **nunca** em checkout, conta, login,
+  relatorio pago, admin nem na pagina de planos: anuncio de terceiro no meio
+  de uma venda da casa e dinheiro trocando de bolso na direcao errada.
+
+E "como o AdSense automatico": proporcional ao conteudo, nunca empilhado, dobra
+de cima com uma unidade so, e com **teto por lista** (6), senao pagina com 800
+itens vira dezena de anuncios e o algoritmo de layout do Google le como
+"dominada".
+
+### Densidade em UM lugar
+
+Constantes num arquivo so (`lib/afiliados.ts`): `linhasPorUnidade` (20),
+`itensPorUnidade` (50), `secoesPorUnidade` (2), `maxPorLista` (6),
+`ancoraCelular` (true), mais `ativo`, `url`, textos por contexto. Se o Search
+Console cair nas semanas seguintes, o ajuste e subir os numeros, nao cacar
+unidade por unidade no codigo.
+
+### Texto
+
+- Por **contexto** de pagina (municipio, estado, ficha, embargos, consulta,
+  cpf, geral): anuncio que fala do que a pessoa esta vendo converte melhor e
+  nao vira faixa identica que se aprende a pular.
+- O angulo e sempre **a outra parte do negocio**: "conferiu o imovel? confira
+  quem vende: dividas, protestos, processos por CPF". Nunca prometer o que o
+  site diz que nao existe (ex.: "descubra os imoveis de alguem pelo CPF" num
+  site que declara que a base publica nao expoe CPF).
+- Rotulo visivel **"Publicidade"** e aviso em letra miuda de que e servico de
+  terceiro, pago, sem relacao com os orgaos citados na pagina.
+
+### Tecnica (obrigatorio)
+
+- `rel="sponsored nofollow noopener"` e `target="_blank"` em todo link de
+  afiliado. Sem `sponsored`, para o Google e esquema de links, e a punicao cai
+  em quem hospeda.
+- **HTML e CSS, sem imagem e sem script** (a excecao e o botao de fechar da
+  ancora). Peca de servidor de terceiro traz requisicao externa e CLS. Medido:
+  a pagina subiu de 97 para 99 no PageSpeed com o banner, CLS zero.
+- Sem pixel de rastreamento: o `?promo=` na URL ja identifica a indicacao, e
+  pixel exigiria consentimento de cookie sem mudar a comissao.
+- Nada de `font-stretch` ou fonte diferente da do site na peca: muda a medida
+  do texto na troca de fonte e gera CLS.
+
+### Design: o "carimbo", na paleta DE CADA SITE
+
+O conceito aprovado e um **carimbo pressionado sobre a pagina**: painel na cor
+de tinta escura do site (inversao = contraste maximo sem cor estrangeira),
+regua de cor de acento na borda esquerda como fita de selo, rotulo em caixa
+alta com entreletra, textura sutil feita com um token que o site ja tenha
+(no consultarimovel foi a graticula com `--ink-grid`), botao na cor de acento,
+levantar leve no hover e nada de animacao de entrada.
+
+**Em outro site, usar a paleta daquele site**: tinta, papel e acento vem dos
+tokens do `:root` dele. Nunca introduzir cor nova so para o anuncio: e o
+caminho curto para o site parecer alugado. O anuncio precisa se destacar
+(pela inversao) e ao mesmo tempo pertencer (pelas cores). Borda tracejada ou
+regua e o rotulo dizem que aquilo e anuncio; anuncio que imita o conteudo em
+volta e o que o Google chama de publicidade enganosa.
+
+### Implementacao de referencia
+
+`consultarimovel.ia.br`, repo `qmixdigital/consultarimovel.ia.br`, em `app/`:
+`src/lib/afiliados.ts` (config, densidade, textos por contexto),
+`src/components/BannerAfiliado.tsx` (faixa e painel),
+`src/components/AnuncioAncora.tsx` (ancora do celular),
+`src/app/globals.css` (blocos `.ads*` e `.ancora*`). Copiar a estrutura e
+trocar tokens e textos; nao reinventar.
+
 ## LGPD / Cookie Consent
 
 Todo site DEVE ter banner de consentimento de cookies (LGPD):
@@ -1052,6 +1152,75 @@ Quando eu apontar um site/projeto como referencia para copiar, a regra e:
 - Quando criar uma pagina nova, JA incluir SEO completo, linkagem cruzada e schema JSON-LD
 - Quando editar conteudo, MANTER a acentuacao correta
 - Sempre usar portugues para conteudo do site, ingles para codigo (nomes de variaveis, componentes)
+
+## Cofre de segredos (chaves SSH e tokens de API)
+
+Desde 19/09/2026 **nao existe mais chave em texto puro** nesta maquina. Tudo esta
+em `C:\Users\User\Cofre\cofre.kdbx` (KeePassXC, KDBX 4, AES-256 + Argon2).
+`Documents\APIs\` foi apagada e as chaves privadas sairam de `~/.ssh` (so os
+`.pub` ficaram). **Nunca recriar arquivo de token em texto puro**, nem em
+`.env` fora do projeto, nem em memoria, nem neste CLAUDE.md.
+
+### SSH: nada muda no uso
+
+`ssh <alias>`, `scp` e `sftp` continuam iguais. O KeePassXC carrega as chaves
+no OpenSSH Agent do Windows quando o Anderson destrava o cofre (ele abre no
+login) e as remove quando tranca. Os `.pub` em `~/.ssh` + `IdentitiesOnly yes`
+no config fazem o ssh pegar a chave certa no agente.
+
+- No Bash, `ssh`/`scp`/`sftp`/`ssh-add` sao wrappers em `~/bin` que chamam o
+  OpenSSH do Windows (`C:\Windows\System32\OpenSSH`). O ssh do Git nao enxerga
+  o agente do Windows; **nao** chamar `/usr/bin/ssh` direto.
+- Se `ssh` falhar com "Permission denied (publickey)": `ssh-add -l`. Se listar
+  so 1 chave (`user@GIGABYTE`), o cofre esta trancado. Pedir ao Anderson para
+  destravar o KeePassXC (icone na bandeja). Nao ha outro caminho.
+
+### Tokens de API: pelo MCP `cofre`, nunca pelo valor
+
+Ferramentas do MCP `cofre` (registrado em escopo de usuario):
+
+| ferramenta | o que faz | protecao |
+|---|---|---|
+| `cofre_listar` | nomes, grupo, variavel de ambiente e tipo de cada segredo | senha mestra 1x por login (no servico) |
+| `cofre_run` | roda um comando com o segredo injetado como variavel de ambiente e **apaga o valor da saida** | janela de aprovacao na 1a vez por segredo; depois lembrada enquanto o KeePassXC estiver aberto |
+| `cofre_get` | devolve o valor bruto | Anderson redigita a senha mestra |
+| `cofre_status` / `cofre_trancar` | estado e trava manual | - |
+
+**Regra: usar `cofre_run`. `cofre_get` so quando for impossivel resolver por
+variavel de ambiente** (ex.: colar a chave num arquivo de configuracao de
+servidor), e sem repetir o valor no chat.
+
+```
+cofre_run(comando='curl -s "https://pixabay.com/api/?key=$PIXABAY&q=clinic"', segredos=["pixabay"])
+cofre_run(comando='python banco_img.py pegar --termo "..." ...', segredos=["pixabay","pexels"])
+cofre_run(comando='python cf_rum_off.py dominios.txt', segredos=["cloudflare-pages"])
+cofre_run(comando='curl ... -H "Authorization: Bearer $RUNWARE_API_KEY" ...', segredos=["runware"])
+cofre_run(comando='python publicar.py', segredos=["seoqmix-024e9465e9d9"])   # JSON: a variavel recebe o caminho de um arquivo temporario
+```
+
+- `shell="bash"` (padrao) usa `$VAR`; `shell="powershell"` usa `$env:VAR`.
+- Segredo do tipo `arquivo` (service accounts do Google, em JSON) vira arquivo
+  temporario apagado ao fim; a variavel recebe o caminho.
+- Nome da variavel = campo `variavel` do `cofre_listar` (ex.: `PIXABAY`,
+  `PEXELS`, `GITHUB`, `SERPER_DEV`, `CLOUDFLARE_PAGES`, `RUNWARE_API_KEY`,
+  `TELEGRAM_AGENDA_BOT`, `ANTHROPIC`, `GROQ`).
+- **Um servico so para todas as janelas** (`cofre_daemon.py`, sobe no login e
+  sob demanda): a senha mestra e digitada uma vez por login; as aprovacoes
+  valem para todas as janelas. O servico so responde com o **KeePassXC
+  destravado**; se ele trancar (bloqueio de tela), o cofre responde
+  "KeePassXC esta trancado" e volta sozinho quando o Anderson destravar, sem
+  pedir senha de novo. Toda chamada fica em `C:\Users\User\Cofre\acessos.log`.
+- Segredo novo: o Anderson cadastra no KeePassXC (grupo APIs, titulo em
+  minusculas, campo "usuario" = nome da variavel). O servico recarrega sozinho.
+- Chave SSH nova: `python C:\Users\User\Cofre\adicionar_ssh.py CAMINHO` (pede
+  a senha, importa, apaga a privada; depois recarregar e travar/destravar o
+  KeePassXC).
+
+Arquivos: `C:\Users\User\Cofre\cofre_daemon.py` (servico unico, named pipe
+`\\.\pipe\cofre-anderson`), `mcp_cofre.py` (cliente fino, um por janela),
+`setup_cofre.py` (criacao inicial; nao rodar de novo), `teste_cliente.py`
+(teste de ponta a ponta; rodar pelo **PowerShell**, nao pelo Bash: o sandbox
+do Bash nao enxerga o pipe do servico).
 
 ## Modo Autonomo (CRITICO - acelera tudo)
 

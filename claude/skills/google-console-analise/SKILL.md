@@ -1,6 +1,6 @@
 ---
 name: google-console-analise
-description: Análise especializada de exportações do Google Search Console para diagnóstico SEO de clientes e projetos próprios. Use sempre que o usuário enviar arquivos zip ou CSV exportados do Google Search Console, mencionar "GSC", "Search Console", "relatório de desempenho na pesquisa", pedir análise de evolução de cliques/impressões/posição de um site, diagnóstico de queda de tráfego orgânico, detecção de canibalização de keywords, ou análise de oportunidades de link building baseada em dados de posição. Também use quando o usuário pedir relatório SEO mensal de cliente da QMIX Digital com base em dados do Search Console.
+description: Análise especializada de exportações do Google Search Console para diagnóstico SEO de clientes e projetos próprios. Use sempre que o usuário enviar arquivos zip ou CSV exportados do Google Search Console, mencionar "GSC", "Search Console", "relatório de desempenho na pesquisa", pedir análise de evolução de cliques/impressões/posição de um site, diagnóstico de queda de tráfego orgânico, detecção de canibalização de keywords, ou análise de oportunidades de link building baseada em dados de posição. Também use quando o usuário pedir relatório SEO mensal de cliente da QMIX Digital com base em dados do Search Console, ou quando pedir "revisita", "o que o Google já associou à página", "expandir o conteúdo pelo GSC", plano de conteúdo novo ou de atualização a partir do Search Console, ou revisão de guest posts e páginas de cliente 30 a 60 dias depois de publicados. Lê tanto exportação (zip/CSV) quanto a API, pelas service accounts da QMIX.
 ---
 
 # Análise Especializada de Google Search Console
@@ -14,6 +14,17 @@ O usuário (Anderson) é fundador da QMIX Digital, agência de SEO e link buildi
 - Escrever a marca sempre como "QMIX Digital", nunca "QMIX" sozinha
 - Conectar diagnósticos de autoridade a oportunidades de link building quando fizer sentido (backlinks editoriais em portais de notícias são o produto da agência)
 - Ser escritas em português brasileiro
+
+## Duas formas de entrada: exportação ou API
+
+**API (preferir quando o domínio é da rede ou de cliente com acesso concedido).** As três service accounts em `C:\Users\User\Documents\APIs\` (backlinkguard, enjai, seoqmix) cobrem os 103 domínios. `scripts/gsc_api.py` descobre sozinho qual chave enxerga a propriedade (`sc-domain:` ou prefixo `https://`) e devolve `query + page`, que a exportação não dá. Isso elimina o Passo 4 por Jaccard e torna o Passo 7 possível.
+
+```
+python scripts/gsc_api.py --propriedades        # o que cada chave enxerga
+python scripts/gsc_api.py DOMINIO [dias]        # páginas com impressão
+```
+
+**Exportação (zip/CSV)** continua valendo para cliente sem acesso concedido. Formato abaixo.
 
 ## Formato dos arquivos de entrada
 
@@ -53,7 +64,9 @@ Classificar cada query com 500+ impressões:
 A "click zone" é posição 1 a 3 para termos pequenos e 1 a 7 (até 16) para termos de altíssimo volume. Fora dela, o title é irrelevante porque ninguém vê.
 
 ### Passo 4: Detecção de canibalização
-Duas páginas do mesmo site disputando o mesmo índice de keyword se bloqueiam em rotação e nenhuma consolida posição. Método com dados de exportação (que não têm o cruzamento query x página):
+Duas páginas do mesmo site disputando o mesmo índice de keyword se bloqueiam em rotação e nenhuma consolida posição. Com acesso pela API este passo é direto: `consultar(s, prop, ["query","page"])` mostra as páginas que rotacionam em cada consulta; o método por Jaccard abaixo é só para exportação.
+
+Método com dados de exportação (que não têm o cruzamento query x página):
 
 1. Tokenizar slugs removendo stopwords pt-BR (de, da, do, na, no, a, o, e, em, que, para, das, dos, nas, nos, ao, pode, ser, com, um, uma, por)
 2. Calcular similaridade Jaccard entre pares de páginas com 1000+ impressões
@@ -71,6 +84,35 @@ Páginas com posição <= 8, impressões altas (definir corte pelo porte do site
 ### Passo 6: Relevância x autoridade
 Páginas cujo title/slug não batem com o índice dominante desperdiçam autoridade (relevância de 50% usa só 50% da autoridade). Identificar páginas ranqueando para queries que não estão no slug/title e recomendar republicação com alinhamento total, desindexando a versão antiga.
 
+### Passo 7: Plano de conteúdo pelo que o Google já associou (revisita)
+
+Origem: podcast de James Dooley sobre query augmentation (notas em `D:\PORTAIS\BACKLINKS\QUERY-AUGMENTATION-notas-20260918.md`). O Google associa a uma página consultas cujo termo não está no texto; incorporar esses termos na própria página faz o balde crescer mais rápido do que criar página nova, porque a página já tem trust. Só depois disso vem a página nova.
+
+Exige `query + page`, portanto API (ou exportação da interface com filtro de página, uma a uma).
+
+```
+python scripts/revisita.py DOMINIO [--url URL ...] [--dias 90] [--min-imp 3] [--top 30] [--md saida.md]
+```
+
+O script baixa cada página, normaliza o texto (acentos, hífen, espaço) e classifica cada consulta:
+
+| Classe | Significado | Ação |
+|---|---|---|
+| COBRE | frase exata já está no texto | nada |
+| GRAFIA | está no texto com outra grafia (qrcode x QR Code, wifi x Wi-Fi) | escrever uma vez como o usuário digita |
+| REFORÇAR | todas as palavras estão, a frase exata não | ajustar uma frase para conter a consulta |
+| EXPANDIR | falta palavra da consulta | H2, parágrafo ou item de FAQ na mesma página |
+| CRIAR? | falta palavra e há modificador de intenção (preço, como fazer, vs, o que é, onde) | página nova só se a SERP da consulta for diferente da SERP que mostra a página atual; confirmar na SERP antes |
+| CTR | posição 1 a 10 com CTR abaixo da metade do esperado | reescrever title e a frase que vira snippet; anotar a data para medir em 3 a 4 semanas |
+
+Regra de decisão H2 x página nova: abrir as duas consultas no Google. Mesmas páginas na SERP = H2 na página existente. Páginas diferentes = página própria, mesmo com 200 palavras, com link interno para a comercial. Em dúvida 50/50, abrir página e recolher com 301 se canibalizar.
+
+Ao incorporar termos: H2 na ordem em que os atributos aparecem nos títulos da SERP (o próprio Dooley relata página que trocou de balde só reordenando H2); resposta curta e verificável logo abaixo do H2; nada de enchimento para bater contagem de palavras. Página de serviço não tem mínimo de palavras; guest post na rede continua em 1.100 a 1.400 porque precisa parecer matéria.
+
+Quando rodar: 30 e 60 dias depois de cada lote de guest post (nas propriedades dos portais e na do cliente) e mensalmente nas páginas comerciais de cada cliente. Com menos de 30 dias e site novo, o `query + page` vem vazio ou com 1 a 2 impressões; não tirar conclusão. Consultas `site:` e de marca são ignoradas pelo script.
+
+Saída: o `.md` gerado vai para `D:\PORTAIS\BACKLINKS\<cliente>-REVISITA-<data>.md`, e o plano de ação do relatório ganha uma seção "expandir" (URL, termos, onde) e uma "criar" (pauta, página comercial que ela linka).
+
 ## Formato do relatório de saída
 
 Estrutura em prosa com seções numeradas, sem excesso de bullets:
@@ -79,7 +121,8 @@ Estrutura em prosa com seções numeradas, sem excesso de bullets:
 3. Diagnóstico por posição (com destaque para o bucket vazio ou cheio de autoridade)
 4. Canibalizações confirmadas (lista com ação por caso)
 5. Oportunidades de CTR
-6. Plano de ação em ordem de prioridade (custo baixo primeiro)
+6. Plano de conteúdo: expandir (por URL) e criar (por pauta), com a regra da SERP aplicada
+7. Plano de ação em ordem de prioridade (custo baixo primeiro: reforçar e grafia, depois expandir, depois criar)
 
 Quando for relatório para cliente da QMIX Digital, incluir a conexão entre o bucket "porta da click zone" e a recomendação de campanha de backlinks nas páginas específicas listadas, com o dado que justifica.
 

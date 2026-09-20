@@ -249,3 +249,4 @@
 - [pages.dev nem sempre é o slug](pages-dev-nem-sempre-e-o-slug.md) — projeto ganha sufixo se o nome já é de outro; CNAME errado dá 1014 e derruba o site
 - [Pages tem dois caches](pages-tem-dois-caches.md) — o de assets do Pages não renova no deploy e a zona cacheia o 404; purge na zona + marca do deploy na query
 - [Footprint dos portais do motor](footprint-portais-do-motor.md) — texto institucional, 404, 410, robots e JSON-LD saíam iguais nos 104; variacoes.js e a skill portal-engine-footprint
+- [Deploy no Pages nunca como root](deploy-pages-nunca-como-root.md) — arquivo de root em public/ trava o gancho do motor com EACCES; conserta_dono.sh + alerta no Telegram

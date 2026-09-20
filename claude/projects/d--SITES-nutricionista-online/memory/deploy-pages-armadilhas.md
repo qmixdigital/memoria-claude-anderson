@@ -17,3 +17,7 @@ Deploy do nutricionista.digital: `python tools/preparar-dist.py && npx wrangler 
 Terceira armadilha (10/09/2026): testar URL nova com curl logo depois do `wrangler deploy` devolve 404 enquanto o domínio ainda aponta para o deployment anterior, e esse 404 fica no edge. Ordem certa: deploy, esperar uns 10 s, purge, só então conferir; se já conferiu cedo demais, purge de novo resolve.
 
 Outras duas armadilhas já vistas: (1) `_headers` cacheia `/assets/*` por um ano como immutable, por isso o build gera `site-<hash>.css` e `<nome>-<hash>.js` via `tools/otimizar-saida.py`; nunca linkar CSS/JS sem hash na saída. (2) Caminho removido do Pages pode continuar servindo 200 velho do edge, imune a purge; a saída é uma regra em `_redirects` para o Pages produzir resposta nova. Ver também [[heredoc-escapes-quebram]].
+
+Quarta (18/09/2026): `npx wrangler pages deploy` em sessão não interativa exige `CLOUDFLARE_API_TOKEN`; usar o token `master` de `D:/SISTEMAS/Cloudflare/contas.json` (ler por Python, nunca imprimir) com `CLOUDFLARE_ACCOUNT_ID=2ff4c5d06407622c756c5b57c46924a5` (conta QMIX, dona do projeto). Purge da zona pela API com o mesmo token.
+
+Ruído do `build-nav.py`: cada rodada acrescenta uma linha em branco antes do botão flutuante em todas as 116 páginas. Antes de commitar, restaurar os arquivos cujo diff é só espaço (`git diff -w --ignore-blank-lines --numstat`), senão o commit leva 30 arquivos sem mudança real.
