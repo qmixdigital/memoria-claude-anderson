@@ -19,3 +19,8 @@ a promessa era falsa e podia virar reclamação.
 Anderson qual é o link mais importante; ele responde com URL, com texto ou com "você escolhe". Procedimento completo
 na skill `seo-aeo-best-practices` (seção "Regra do link mais forte"). O estudo `/blog/preco-de-backlink` foi
 reordenado nesse dia para o marketplace ser o primeiro link.
+
+**Link interno em matéria de portal parceiro (Anderson, 21/09/2026):** o link interno do portal (JBr, DM etc.)
+tem de apontar para matéria de **cliente nosso** publicada naquele portal, nunca para matéria qualquer do acervo.
+Fonte: `backlinks_clientes` filtrando pelo domínio do portal (as URLs de dm.com.br com id numérico antigo
+redirecionam para `/brasil/<slug>/`; conferir 200 e h1). Inserir inline, depois do link do cliente.

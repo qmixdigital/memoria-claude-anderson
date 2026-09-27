@@ -51,7 +51,7 @@ Ela pede 3 a 5 links internos e links externos de autoridade. Aqui é **exatamen
 ## Arquivos
 
 - `scripts/auditar.py` — o portão. 24 checagens, local e no ar.
-- `scripts/banco_img.py` — a foto de destaque: Pixabay, Pexels e Commons em CC0/domínio público, todas sem crédito. Chaves no cofre: rodar pelo `cofre_run` com `segredos=["pixabay","pexels"]` (injeta `PIXABAY` e `PEXELS`).
+- `scripts/banco_img.py` — a foto de destaque: Pixabay, Pexels e Commons em CC0/domínio público, todas sem crédito. Chaves em `C:/Users/User/Documents/APIs/`.
 - `scripts/commons_img.py` — busca crua no Commons. `legenda()` e `bloco_credito()` estão **desativadas**.
 - `reference/padrao-editorial.md` — o contrato do artigo, com as medidas.
 - `reference/armadilhas.md` — o que quebra no portal-engine e por quê.

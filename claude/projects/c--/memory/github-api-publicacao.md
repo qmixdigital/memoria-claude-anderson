@@ -1,6 +1,6 @@
 ---
 name: github-api-publicacao
-description: "Como criar repositorio no GitHub do Anderson (conta qmixdigital): token no cofre (entrada github, variavel GITHUB, via cofre_run), gh nao instalado, JSON com acento via Python"
+description: "Como criar repositorio no GitHub do Anderson (conta qmixdigital): token em Documents/APIs/github.txt, gh nao instalado, JSON com acento via Python"
 metadata: 
   node_type: memory
   type: reference
@@ -8,9 +8,9 @@ metadata:
   modified: 2026-09-19T22:35:05.395Z
 ---
 
-Conta GitHub do Anderson: **qmixdigital**. Token classic (`ghp_...`) no cofre,
-entrada `github`: rodar o curl pelo `cofre_run` com `segredos=["github"]` e usar
-`$GITHUB` no header (ver [[cofre-keepassxc-licoes]]). O `gh` CLI
+Conta GitHub do Anderson: **qmixdigital**. Token classic (`ghp_...`) em
+`C:/Users/User/Documents/APIs/github.txt` (ler com `tr -d '
+ '`). O `gh` CLI
 **nao esta instalado**; criar repo e topics pela REST API.
 
 **Why:** montar o JSON do `curl -d` direto no Bash do Windows quebra quando a

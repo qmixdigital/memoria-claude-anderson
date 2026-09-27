@@ -1,0 +1,14 @@
+---
+name: reference-contadores-remocao-lgpd
+description: Diretorio de contadores (contadores.revistadeducao.com.br) - onde roda e como atender pedido de remocao de dados do titular
+metadata:
+  type: reference
+---
+
+**Onde roda:** app Next em `/var/www/contadores` na **srv1166087** (PM2 `contadores`, porta 3210; `contadores-b` na 3211 fica parada fora de deploy). Banco Postgres local `contadores`. O dominio entra pelo **opengravity**, em `/etc/nginx/conf.d/app-contadores.revistadeducao.com.br.conf`, que faz proxy pelo upstream `revista_dir_backend` (31.97.173.40:3210/3211). Build com `bun` em `/root/.bun/bin` (nao esta no PATH do SSH nao interativo).
+
+**A politica original era so noindex.** Pedido de remocao marcava `removalRequested` e a ficha continuava respondendo 200, com telefone e endereco na tela, "para nao quebrar link externo". Para quem pede remocao por exposicao de dado pessoal, isso nao resolve nada.
+
+**Mudanca de 26/09/2026:** campos `isRemoved` e `removedAt` em `acc_offices` (migration `20260926200128_remocao_efetiva`). Atender um pedido de remocao no painel passa a apagar telefone, endereco, CEP, bairro, whatsapp, site, descricao, hash de e-mail e socios, marcar `isRemoved` e derrubar reivindicacao pendente. A ficha responde 404 e o importador da Receita **pula o CNPJ** (por isso a linha nao e deletada: e ela que bloqueia a reinsercao).
+
+**Armadilha do cache:** limpar o banco nao tira o dado do ar. A ficha e ISR com `stale-while-revalidate` de um ano, e o processo guarda copia **em memoria**; apagar `.next/server/app/escritorio/<slug>.{html,rsc,meta,segments}` nao basta enquanto o processo nao reinicia. Contencao imediata, sem deploy: `location = /escritorio/<slug>/ { return 410; }` no vhost do opengravity (410, nao 404: diz ao Google que saiu de proposito). Tirar essa regra depois que o app for reconstruido.

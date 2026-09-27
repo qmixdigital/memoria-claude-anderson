@@ -5,3 +5,4 @@
 - [Search Console via conta de serviço](gsc-conta-de-servico.md) — seoqmix é siteFullUser da propriedade de domínio; script gsc.py pronto
 - [GA4 rastreio do joelho](ga4-rastreio-joelho.md) — generate_lead {metodo, local, texto_botao} desde 17/09/2026; conta enjai edita a propriedade
 - [GBP categoria 17/09/2026](gbp-categoria-2026-09-17.md) — principal virou Cirurgião ortopédico; baseline do Search Console para comparar em outubro
+- [Pages: splats por último no _redirects](pages-redirects-splat-ordem.md) — regra estática depois de um splat vira dinâmica; acima de 100 o Pages descarta o resto em silêncio (21/09/2026)

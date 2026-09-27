@@ -98,7 +98,7 @@ v-restart-proxy
 **Localização:** São Paulo, Brasil
 **Porta SSH:** `22` (bloqueada pelo ISP — usar deploy via HTTP)
 **Usuário SSH:** `root`
-**Chave SSH:** `~/.ssh/id_ed25519_deploy` (sem passphrase)
+**Chave SSH:** `~/.ssh/<<REMOVIDO>>` (sem passphrase)
 **API Token Hostinger:** `<<REMOVIDO>>`
 **Validade:** até 2027-08-30
 
@@ -112,7 +112,7 @@ Host clinicas-vps
     HostName 31.97.162.199
     User root
     Port 80
-    IdentityFile ~/.ssh/id_ed25519_deploy
+    IdentityFile ~/.ssh/<<REMOVIDO>>
 ```
 
 Para usar SSH na porta 80 (temporário, derruba o site):

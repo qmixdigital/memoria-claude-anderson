@@ -77,3 +77,12 @@ Sempre auditar **mobile** primeiro (o Google indexa e rankeia por mobile). Rode 
 ## Relacionadas
 - `seo-optimizer` — CWV é sinal de ranking; parte do SEO técnico.
 - `react-best-practices` / `nextjs-best-practices` — fixes de LCP/INP no código.
+
+## Sites estáticos da rede (HTML + style.css + js/main.js): `scripts/static_site_fix.py`
+
+Uso: `python <skill-dir>/scripts/static_site_fix.py <pasta-do-site> <porta-livre>` (precisa de Playwright e Pillow).
+Aplicado em 20/09/2026 em korpem.com.br, henriquecembranelli.com e dreduardocembranelli.com. O que faz, idempotente:
+1. **Imagens**: variantes 480/800 (fotos) e 320/480 (logos, com alfa preservado) + `srcset`/`sizes`; preload do hero ganha `imagesrcset`; ícones reduzidos a 128px em disco.
+2. **Banner de cookies imediato**: o `setTimeout` de 600ms fazia o `<p>` do banner virar o elemento LCP com 2,3s de atraso de renderização.
+3. **CSS crítico inline por página** (`<style data-critical>`), medido por cobertura CDP em 390 e 1280 e filtrado pelos elementos da primeira tela; `style.css` passa a carregar por `preload as=style` + `noscript`. **Reexecutar sempre que o `style.css` mudar**, senão o inline fica defasado (a página ainda funciona, porque o CSS completo carrega logo depois).
+Armadilha: os offsets do CDP são do arquivo servido; ler o CSS com `newline=""` para não perder o CRLF.

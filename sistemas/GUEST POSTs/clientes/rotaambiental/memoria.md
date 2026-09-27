@@ -106,5 +106,5 @@ Nunca repetir a mesma âncora mais de 2 vezes no total. Variar com adjetivo, ord
 ## Matérias entregues
 
 Lote 1 (2026-09-10): 20 guest posts na rede própria, registrados em D:/PORTAIS/BACKLINKS/rotaambiental.com.br.xlsx.
-Lote 2 (2026-09-19): 20 guest posts industriais, arquivos em D:/PORTAIS/BACKLINKS/rotaambiental2/ (rNN.html, out/, img/, pub.sh, pos_pub.sh, finaliza_r.py). Publicação na rede própria pelo portal-engine; registro na planilha e no ledger só depois de conferido no ar.
+Lote 2 (2026-09-19): 20 guest posts industriais, arquivos em D:/PORTAIS/BACKLINKS/rotaambiental2/ (rNN.html, out/, img/, pub.sh, pos_pub.sh, finaliza_r.py). Publicação na rede própria pelo portal-engine; 20/20 no ar em 20/09, planilha e ledger gravados, Apex projeto 1196577.
 Cópias dos HTML em `materias/`.

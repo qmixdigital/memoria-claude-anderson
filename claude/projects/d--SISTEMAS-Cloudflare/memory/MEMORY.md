@@ -5,3 +5,4 @@
 - [cf_user_token_master.md](cf_user_token_master.md) — Token de usuário CF amplo (77 contas/326 zonas) guardado no .env como CF_USER_TOKEN
 - [feedback_sem_challenge_usuario.md](feedback_sem_challenge_usuario.md) — Hardening CF nunca pode inserir desafio/fricção ao usuário (derruba conversão); usar suavizar_conta.py
 - [project_funnel_pulse.md](project_funnel_pulse.md) — Padrão de pulso de redirects funnel temporário (funnel_162 → alvos, round-robin, reverter em ~1h via schtasks)
+- [Conta Médicos BH](project_conta_medicosbh.md) — conta CF exclusiva de clientes (medicosbh); onboard_cliente.py; nunca no cf-bot; sem IP dedicado

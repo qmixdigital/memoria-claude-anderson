@@ -127,3 +127,42 @@ Os apps Next desses dois portais saem do Cloudflare Pages para subdomínio
 `bash scripts/ativar_subdominios_diretorios.sh`. Detalhes em
 [docs/PULSO_REDIRECTS_FUNNEL.md](docs/PULSO_REDIRECTS_FUNNEL.md) §15.x e nas
 pastas `d:\SITES\revistadeducao.com.br` e `d:\SITES\desassossegada.com.br`.
+
+## Conta `medicosbh` ("Médicos BH", criada em 20/09/2026)
+
+Conta Cloudflare **exclusiva para clientes** (ortopedistas de Belo Horizonte),
+`account_id` `db7f7f1b755edba76754fd154439b50e`, cadastrada no `contas.json`
+como `medicosbh` com o `CF_USER_TOKEN`. Separação é de conta e de par de
+nameservers; **não existe IP dedicado** fora do plano Enterprise (IP da borda é
+compartilhado em qualquer conta).
+
+Zona criada em 20/09/2026: **korpem.com.br** (`cc514b9aba8e6271f2213b69dc823cc4`,
+NS `evan` / `zariyah.ns.cloudflare.com`), status pending. Origem atual:
+HostGator `69.6.248.143`, e-mail no Google Workspace. O scanner do Cloudflare
+importou 0 registros; use `python importar_dns_cliente.py korpem.com.br`
+(`--dry` para so listar) ANTES da troca de NS, senao site e e-mail caem na virada.
+
+**Pré-visualização para aprovação do cliente (padrão dos três sites):** projeto
+Pages `<dominio>-preview` na conta medicosbh, upload direto com
+`wrangler pages deploy . --project-name <dominio>-preview --branch main`
+(env `CLOUDFLARE_API_TOKEN` = token medicosbh, `CLOUDFLARE_ACCOUNT_ID`).
+Existentes: `henriquecembranelli-preview`, `dreduardocembranelli-preview`,
+`korpem-preview` (20/09/2026, repo `qmixdigital/korpem.com.br`).
+🔴 **Não usar `wrangler pages project create` no wrangler 4.135+**: ele cria
+um Worker com assets (e grava um `wrangler.jsonc` na pasta do site), não um
+projeto Pages, e recusa `_redirects` com URL absoluta. Criar o projeto pela API
+(`POST /accounts/{id}/pages/projects` com `name` e `production_branch`) e só
+então rodar o `pages deploy`. O `_redirects` do Pages só aceita origem relativa:
+www -> apex vai por Redirect Rule na zona (`cf_www_apex.py`), não pelo arquivo.
+
+Para colocar um domínio de cliente nela:
+
+```bash
+python onboard_cliente.py dominio.com.br          # cria a zona e mostra os NS
+python onboard_cliente.py dominio.com.br          # de novo, depois de trocar os NS: aplica segurança
+```
+
+Regras: essa conta **nunca entra** no `/opt/cf-bot` da VPS (pulso de redirects
+e bloqueio em massa) e nunca recebe desafio ao visitante (o script já roda
+`suavizar_conta.py`). Se o Anderson pedir IP exclusivo de verdade, é VPS
+própria para a origem, não Cloudflare.

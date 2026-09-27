@@ -1,0 +1,4 @@
+- [Conta Cloudflare Médicos BH](conta-cloudflare-medicos-bh.md) — conta exclusiva dos ortopedistas de BH, previews no Pages, DNS ainda no Wix
+- [Classificador e credenciais do contas.json](classificador-credenciais-contas-json.md) — ler token por script, nunca colar no comando nem imprimir a entrada
+- [Redesign direção A aprovada](redesign-direcao-a-aprovada.md) — sistema aplicado em 20/09/2026, processo com dois mockups e revisor; layout é próprio de cada site, não portar (Anderson, 21/09/2026)
+- [CSS crítico com --mobile-full e portas livres](css-critico-mobile-full-e-portas.md) — iPhone "transformava" a página; gerar crítico com --mobile-full e conferir porta antes (servidores órfãos)

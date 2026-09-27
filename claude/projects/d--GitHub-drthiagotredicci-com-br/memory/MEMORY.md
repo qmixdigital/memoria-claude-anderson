@@ -1,2 +1,4 @@
 - [Links clicáveis sempre](feedback-links-clicaveis.md) — citar páginas/URLs sempre com a URL completa clicável, nunca só o caminho
 - [Fluxo da redatora no blog estático](feedback-conteudo-redatora.md) — blog é HTML em /blog/ desde 19/09/2026; publicar-doc.py aplica data do dia, linha fina e links automáticos
+- [Blog é gerado por script](projeto-blog-gerado-por-script.md) — nunca editar blog/*/index.html; a fonte é conteudo/blog/ e o gerador lê header/footer/GA de index.html
+- [CSP x Transform Rule da zona](projeto-csp-sobrescrita-pelo-cloudflare.md) — resolvido restringindo o escopo, não desligando; padrão reaproveitável em qualquer site da rede no Pages

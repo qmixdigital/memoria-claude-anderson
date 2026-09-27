@@ -290,14 +290,13 @@ Google, nao deixa a marca de "ilustracao sintetica" e nao custa credito.
 
 | fonte | licenca | onde esta a chave |
 |---|---|---|
-| **Pixabay** | propria, sem credito; a API **proibe hotlink** e exige baixar | cofre, entrada `pixabay` (variavel `PIXABAY`) |
-| **Pexels** | propria, sem credito | cofre, entrada `pexels` (variavel `PEXELS`) |
+| **Pixabay** | propria, sem credito; a API **proibe hotlink** e exige baixar | `C:/Users/User/Documents/APIs/pixabay.txt` |
+| **Pexels** | propria, sem credito | `C:/Users/User/Documents/APIs/pexels.txt` |
 | **Wikimedia Commons** | so **CC0 e dominio publico** (CC BY exige credito e sai) | sem chave |
 
 O modulo pronto e `~/.claude/skills/guest-post-rede/scripts/banco_img.py`
 (`buscar` e `pegar`): junta as tres fontes, sorteia a ordem por portal, baixa,
 recorta em WebP e devolve a ficha. Serve para qualquer projeto, nao so guest post.
-Rodar SEMPRE pelo `cofre_run` com `segredos=["pixabay","pexels"]` (ver secao Cofre).
 
 **Regras:**
 
@@ -317,10 +316,9 @@ Rodar SEMPRE pelo `cofre_run` com `segredos=["pixabay","pexels"]` (ver secao Cof
 
 ### Geracao de Imagens com IA (Runware API): SO COM ORDEM EXPRESSA
 
-Quando eu pedir para gerar/criar imagens, usar a API da Runware. A chave esta
-no cofre, entrada `runware` (variavel `RUNWARE_API_KEY`): rodar o curl pelo
-`cofre_run` com `segredos=["runware"]`. Ela da acesso a plataforma inteira, que
-revende BFL, Google, OpenAI e ByteDance. Nao existe "comprar outra IA": e so
+Quando eu pedir para gerar/criar imagens, usar a API da Runware. A chave esta em
+`C:/Users/User/Documents/APIs/runware.txt` (ler com `tr -d '\r\n '`) e ela da
+acesso a plataforma inteira, que revende BFL, Google, OpenAI e ByteDance. Nao existe "comprar outra IA": e so
 trocar o `model`.
 
 #### 🔴 O padrao e o modelo BARATO. Nano Banana Pro so com autorizacao
@@ -363,7 +361,7 @@ com o modelo barato:
 #### Chamada
 
 ```bash
-curl -s -X POST "https://api.runware.ai/v1"   -H "Content-Type: application/json"   -H "Authorization: Bearer $RUNWARE_API_KEY"   -d '[{
+curl -s -X POST "https://api.runware.ai/v1"   -H "Content-Type: application/json"   -H "Authorization: Bearer $(tr -d '\r\n ' < /c/Users/User/Documents/APIs/runware.txt)"   -d '[{
     "taskType": "imageInference",
     "taskUUID": "'$(uuidgen || python3 -c "import uuid; print(uuid.uuid4())")'",
     "model": "runware:100@1",
@@ -762,37 +760,53 @@ HIT da borda devolveria 200 mesmo com o backend quebrado.
 - SEMPRE implementar GA4 com **lazy-load** (nunca carregar no page load)
 - Carregar somente apos primeira interacao do usuario (scroll, click, touch, keydown)
 - Isso evita impacto nos Core Web Vitals
+- **O GA4 mede SEMPRE, com cookie e sessao completa. Nao depende de aceite
+  de banner.** Ordem do Anderson em 22/09/2026: "eu quero saber quem esta
+  navegando no site; aqui e Brasil". A regra antiga ("GA4 so carrega SE o
+  usuario aceitar") esta REVOGADA, e Consent Mode com `denied` por padrao
+  tambem NAO se usa: os dois deixavam de fora quem ignorava o banner, que e a
+  maioria no celular, e o relatorio mensal mostrava uma fracao do real. Base
+  legal: legitimo interesse (art. 7o, IX, da LGPD), declarado na politica de
+  privacidade. O banner de cookies continua existindo, mas so informa.
+- **`window.gtag` e `window.dataLayer` SEMPRE globais e definidos ANTES de o
+  script do Google chegar.** Um `function gtag()` local ao loader nao e visto
+  pelo `rastreio.js` de contato e o clique no WhatsApp se perde.
+- Instalar tambem o `rastreio.js` de contato
+  (`d:/SISTEMAS/Relatórios de Clientes/rastreio-cliques/rastreio.js`) antes de
+  `</body>`, marcar `generate_lead` como evento-chave na propriedade e subir a
+  retencao de dados de 2 para 14 meses (o padrao de 2 meses apaga o historico
+  do relatorio).
 
-**Sites HTML estaticos:**
+**Sites HTML estaticos** (implementacao de referencia:
+`d:/SITES/henriquecembranelli.com/js/main.js`):
 ```html
 <script>
 (function(){
+  var GA_ID = 'G-XXXXXXXXXX';
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   var loaded = false;
   function loadGA(){
-    if(loaded) return;
+    if(loaded || GA_ID === 'G-XXXXXXXXXX') return;
     loaded = true;
+    window.gtag('js', new Date());
+    window.gtag('config', GA_ID);
     var s = document.createElement('script');
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
     s.async = true;
     document.head.appendChild(s);
-    s.onload = function(){
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    };
   }
   ['scroll','click','touchstart','keydown'].forEach(function(e){
     window.addEventListener(e, loadGA, {once:true, passive:true});
   });
 })();
 </script>
+<script src="/js/rastreio.js" defer></script>
 ```
 
-**Next.js:**
-```tsx
-<Script src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" strategy="afterInteractive" />
-```
+**Next.js:** mesmo desenho num componente cliente, com o gtag.js por loader
+`createElement` apos a primeira interacao (ver a secao de Consent Mode no
+AdSense: o React 19 ica `<script src>` para o topo do `<head>`).
 
 - Perguntar o ID do GA4 (G-XXXXXXXXXX) ao iniciar o projeto, ou deixar placeholder para preencher depois
 
@@ -967,16 +981,23 @@ trocar tokens e textos; nao reinventar.
 
 ## LGPD / Cookie Consent
 
-Todo site DEVE ter banner de consentimento de cookies (LGPD):
+Todo site DEVE ter aviso de cookies (LGPD), **informativo**: ele nao controla
+a medicao. O GA4 mede sempre (secao Google Analytics); a base legal e o
+legitimo interesse, declarado na politica de privacidade.
 
 - Banner fixo no bottom da pagina, aparece na primeira visita
-- Opcoes: "Aceitar todos" e "Apenas necessarios"
-- Categorias visuais: Necessarios (sempre ativos), Analiticos (GA4), Terceiros (WhatsApp, Maps, YouTube)
-- Salvar preferencia em cookie `cookie_consent` com validade de 1 ano (`max-age=31536000; SameSite=Lax`)
-- Link para a pagina de politica de privacidade dentro do banner
-- GA4 e scripts de terceiros so carregam SE o usuario aceitar
-- Banner desaparece com animacao suave apos escolha
+- Um botao so: "Entendi". Sem "Apenas necessarios", sem categorias para
+  marcar: nao existe o que desligar
+- Texto: "Usamos cookies para o funcionamento do site e para estatisticas de
+  acesso" + link para a politica de privacidade
+- Guardar que a pessoa ja viu em cookie `cookie_consent=ok` com validade de
+  1 ano (`max-age=31536000; SameSite=Lax`)
+- Banner desaparece com animacao suave apos o clique
 - NAO exibir novamente se o cookie ja existe
+- Politica de privacidade: dizer que o Google Analytics mede paginas, origem
+  e cliques de contato, com IP anonimizado, por legitimo interesse (art. 7o,
+  IX), e que a pessoa pode bloquear cookies no navegador. Modelo em
+  `d:/SITES/henriquecembranelli.com/politica-de-privacidade.html`
 
 ## Pagina 404 Customizada
 
@@ -1152,75 +1173,6 @@ Quando eu apontar um site/projeto como referencia para copiar, a regra e:
 - Quando criar uma pagina nova, JA incluir SEO completo, linkagem cruzada e schema JSON-LD
 - Quando editar conteudo, MANTER a acentuacao correta
 - Sempre usar portugues para conteudo do site, ingles para codigo (nomes de variaveis, componentes)
-
-## Cofre de segredos (chaves SSH e tokens de API)
-
-Desde 19/09/2026 **nao existe mais chave em texto puro** nesta maquina. Tudo esta
-em `C:\Users\User\Cofre\cofre.kdbx` (KeePassXC, KDBX 4, AES-256 + Argon2).
-`Documents\APIs\` foi apagada e as chaves privadas sairam de `~/.ssh` (so os
-`.pub` ficaram). **Nunca recriar arquivo de token em texto puro**, nem em
-`.env` fora do projeto, nem em memoria, nem neste CLAUDE.md.
-
-### SSH: nada muda no uso
-
-`ssh <alias>`, `scp` e `sftp` continuam iguais. O KeePassXC carrega as chaves
-no OpenSSH Agent do Windows quando o Anderson destrava o cofre (ele abre no
-login) e as remove quando tranca. Os `.pub` em `~/.ssh` + `IdentitiesOnly yes`
-no config fazem o ssh pegar a chave certa no agente.
-
-- No Bash, `ssh`/`scp`/`sftp`/`ssh-add` sao wrappers em `~/bin` que chamam o
-  OpenSSH do Windows (`C:\Windows\System32\OpenSSH`). O ssh do Git nao enxerga
-  o agente do Windows; **nao** chamar `/usr/bin/ssh` direto.
-- Se `ssh` falhar com "Permission denied (publickey)": `ssh-add -l`. Se listar
-  so 1 chave (`user@GIGABYTE`), o cofre esta trancado. Pedir ao Anderson para
-  destravar o KeePassXC (icone na bandeja). Nao ha outro caminho.
-
-### Tokens de API: pelo MCP `cofre`, nunca pelo valor
-
-Ferramentas do MCP `cofre` (registrado em escopo de usuario):
-
-| ferramenta | o que faz | protecao |
-|---|---|---|
-| `cofre_listar` | nomes, grupo, variavel de ambiente e tipo de cada segredo | senha mestra 1x por login (no servico) |
-| `cofre_run` | roda um comando com o segredo injetado como variavel de ambiente e **apaga o valor da saida** | janela de aprovacao na 1a vez por segredo; depois lembrada enquanto o KeePassXC estiver aberto |
-| `cofre_get` | devolve o valor bruto | Anderson redigita a senha mestra |
-| `cofre_status` / `cofre_trancar` | estado e trava manual | - |
-
-**Regra: usar `cofre_run`. `cofre_get` so quando for impossivel resolver por
-variavel de ambiente** (ex.: colar a chave num arquivo de configuracao de
-servidor), e sem repetir o valor no chat.
-
-```
-cofre_run(comando='curl -s "https://pixabay.com/api/?key=$PIXABAY&q=clinic"', segredos=["pixabay"])
-cofre_run(comando='python banco_img.py pegar --termo "..." ...', segredos=["pixabay","pexels"])
-cofre_run(comando='python cf_rum_off.py dominios.txt', segredos=["cloudflare-pages"])
-cofre_run(comando='curl ... -H "Authorization: Bearer $RUNWARE_API_KEY" ...', segredos=["runware"])
-cofre_run(comando='python publicar.py', segredos=["seoqmix-024e9465e9d9"])   # JSON: a variavel recebe o caminho de um arquivo temporario
-```
-
-- `shell="bash"` (padrao) usa `$VAR`; `shell="powershell"` usa `$env:VAR`.
-- Segredo do tipo `arquivo` (service accounts do Google, em JSON) vira arquivo
-  temporario apagado ao fim; a variavel recebe o caminho.
-- Nome da variavel = campo `variavel` do `cofre_listar` (ex.: `PIXABAY`,
-  `PEXELS`, `GITHUB`, `SERPER_DEV`, `CLOUDFLARE_PAGES`, `RUNWARE_API_KEY`,
-  `TELEGRAM_AGENDA_BOT`, `ANTHROPIC`, `GROQ`).
-- **Um servico so para todas as janelas** (`cofre_daemon.py`, sobe no login e
-  sob demanda): a senha mestra e digitada uma vez por login; as aprovacoes
-  valem para todas as janelas. O servico so responde com o **KeePassXC
-  destravado**; se ele trancar (bloqueio de tela), o cofre responde
-  "KeePassXC esta trancado" e volta sozinho quando o Anderson destravar, sem
-  pedir senha de novo. Toda chamada fica em `C:\Users\User\Cofre\acessos.log`.
-- Segredo novo: o Anderson cadastra no KeePassXC (grupo APIs, titulo em
-  minusculas, campo "usuario" = nome da variavel). O servico recarrega sozinho.
-- Chave SSH nova: `python C:\Users\User\Cofre\adicionar_ssh.py CAMINHO` (pede
-  a senha, importa, apaga a privada; depois recarregar e travar/destravar o
-  KeePassXC).
-
-Arquivos: `C:\Users\User\Cofre\cofre_daemon.py` (servico unico, named pipe
-`\\.\pipe\cofre-anderson`), `mcp_cofre.py` (cliente fino, um por janela),
-`setup_cofre.py` (criacao inicial; nao rodar de novo), `teste_cliente.py`
-(teste de ponta a ponta; rodar pelo **PowerShell**, nao pelo Bash: o sandbox
-do Bash nao enxerga o pipe do servico).
 
 ## Modo Autonomo (CRITICO - acelera tudo)
 

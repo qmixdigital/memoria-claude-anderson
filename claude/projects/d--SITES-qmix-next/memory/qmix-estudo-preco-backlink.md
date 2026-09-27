@@ -67,3 +67,11 @@ do podcast com Mike Martin (GBP loop: perfil completo espelhando o site, posts, 
 constância; perfil individual por profissional; avaliação respondida entra no AI Overview em 24-48h). Dois CTAs:
 WhatsApp (1º link) e `/contato` (final); o conversor aceita `data-titulo/data-texto/data-botao/data-msg` nos
 `data-cta`. Ideia guardada para clientes: perfil individual por médico do COE.
+
+**Quinto artigo (20/09/2026):** `/blog/listas-de-melhores` (id 137, categoria 2, Apex 1196763), keyword "listas de
+melhores". Origem: podcast Edward Sturm com Kristiyan (Above Apex) sobre link building para SaaS; só a tese das
+listas/roundups como atalho para a IA virou artigo (o resto o blog já cobria: HARO, LinkedIn, SaaS, troca). SERP da
+keyword é de filmes/GPTW (sem intenção comercial): artigo serve ao cluster GEO e à citação, não a volume. Capa do
+Pexels (7267573) pelo `banco_img.py` (as chaves entram pelo ambiente; funcionou sem cofre). Apex: endpoint certo é
+`https://rapidurlindexer.com/wp-json/api/v1/projects` (o `/api/v1/` dá 404). Segundo artigo possível do mesmo
+podcast, ainda não feito: "análise de lacuna de links" (sites que linkam para 2+ concorrentes).

@@ -33,3 +33,5 @@
 - [CLIQUEX: sites trabalhonojapao + fanese](cliquex-japao-fanese.md) — 7º e 8º money sites Teste IPTV (conta Endrick), no ar em .pages.dev; falta domínio custom + IndexNow quando propagar
 - [CLIQUEX: os 25 provedores (clientes) do ranking](cliquex-provedores-clientes.md) — nomes/notas/links reais do rblc e onde entra o link de cada um; nunca inventar nome de plataforma
 - [CLIQUEX: figa2023 em Next.js](cliquex-figa2023-next.md) — site convertido p/ Next 15 static export (fonte D:/SITES/figa2023-next, gerador do HTML→JSON); catch-all precisa excluir /_next e .xml; sitemap secreto estava em 301 e foi corrigido
+- [CLIQUEX: conta Juliomiguel (5 zonas novas)](cliquex-conta-juliomiguel.md) — token 'provisoria' (expira 2027-01-31), account 73e793c5; 4 landings de provedor (modelo teste-iptv.mov) NO AR com CTA nulo, fonte em D:/SITES/teste-iptv-landings; redireto.click ainda vazio
+- [Alinhamento de cards com texto longo](alinhamento-cards-texto-longo.md) — feedback: card com 3+ linhas fica à ESQUERDA; centralizar só títulos de seção, números, chips e cards de 1 linha

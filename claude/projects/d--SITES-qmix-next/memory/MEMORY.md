@@ -23,7 +23,7 @@
 - [Newsletter digest + rastreio próprio](qmix-newsletter-digest.md) — template claro, pixel/clique com cidade, agendamento terça 10h SP; #6 agendada 15/09
 - [Tema claro do site](qmix-blog-tema-claro.md) — site todo em tokens --q-* (claro padrão, escuro por toggle), admin forçado escuro; codemod e regras de papel; apagar .next/types antes do deploy ao mover rotas
 - [Regra do primeiro link](qmix-regra-primeiro-link.md) — link mais forte é sempre o 1º link do corpo (cliente na matéria, /comprar-backlinks no blog); perguntar qual é antes de escrever; nunca prometer parágrafo
-- [Faturamento mensalistas](qmix-faturamento-mensalistas.md) — módulo de faturas migrado do Antônio (etapa 1 feita 14/09), regras de cobrança manual/NF, próximas etapas
+- [Faturamento mensalistas](qmix-faturamento-mensalistas.md) — módulo de faturas migrado do Antônio (14/09), orçamento mensal + saldo azul/vermelho e cron do dia 1 (21/09), regras de cobrança manual/NF
 - [Moz API](qmix-moz-api.md) — plano Growth Medium 120k linhas/mês (reset mensal, overage US$ 20/10k); um token base64(access_id:secret) serve Links API v2 e Data API v3; scripts e o que já consumiu
 - [Proposta de portal ao cliente](feedback-proposta-portal-cliente.md) — formato curto aprovado (4 linhas: portal, DA/tráfego/link, matéria em lista para IA, preço fechado, pergunta)
 - [Regras dos sites do Jean](feedback-jean-credito-foto.md) — caption "Imagem de {Autor} via {Banco}", sem tags, pauta forçada em site nichado vai para Geral; MCP roda no gnd-motor (systemd wp-mcp.service)
@@ -35,3 +35,7 @@
 - [Auditoria Ahrefs 2026-09](qmix-ahrefs-auditoria-2026-09.md) — links para 301 (header /ferramentas, 400 hrefs nas tools, 66 artigos), OG type/site_name/locale por layout (Next não faz merge), metas; órfãs são as fichas de portal, por decisão
 - [Landing médicos SP](qmix-landing-medicos-sp.md) — /geo/medicos-sao-paulo no route group (landing), simulador pré-preenchido, WhatsApp único; pixel do Meta não está no código
 - [SSH: cofre KeePassXC e fail2ban](ssh-cofre-e-fail2ban.md) — chave no cofre (ssh-add -l = 17 chaves), timeout intermitente na porta 22 é bloqueio de IP por muitos scp; tar único por deploy
+- [chatbotbrx (bot WhatsApp do Antônio)](chatbotbrx-plataforma.md) — srv1166087, PHP+MySQL+Baileys; 'API própria' = Baileys, não Meta oficial; o que já tem e o que falta para CRM (análise 21/09)
+- [Demandas do admin](qmix-demandas.md) — todos criam; janela início/fim; só aparece no dashboard a partir do início e não some ao vencer
+- [Descontos do checkout](qmix-descontos-checkout.md) — crédito da avaliação é 1 por cliente; brechas de preço fechadas em 24/09; empilhamento (PIX + promo + mínimo R$ 60) é decisão pendente do Anderson
+- [Links internos só nossos](feedback-links-internos-planilha-jean.md) — link interno em portal parceiro aponta só para matéria nossa da planilha do Jean, priorizando as mais recentes

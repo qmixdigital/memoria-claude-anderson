@@ -32,9 +32,8 @@ O "buscar" lista candidatos aptos, em ordem. O "pegar" escolhe o primeiro
 em JSON. A ficha traz `credito_obrigatorio: false` sempre: se uma fonte devolver
 algo que exija credito, ela e recusada aqui dentro.
 
-Chaves: vem do cofre (KeePassXC + MCP cofre), injetadas como variaveis de
-ambiente PIXABAY e PEXELS. Rodar via cofre_run com segredos=["pixabay","pexels"].
-Tambem aceita PIXABAY_KEY / PEXELS_KEY. Nao existe mais arquivo em texto puro.
+Chaves: C:/Users/User/Documents/APIs/pixabay.txt e pexels.txt, ou as variaveis
+PIXABAY_KEY e PEXELS_KEY.
 """
 import argparse, hashlib, io, json, os, re, sys, time, urllib.parse, urllib.request, urllib.error
 
@@ -44,7 +43,7 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
 import commons_img  # noqa: E402
 
-# chaves vem do ambiente (cofre); nao ha mais pasta de chaves em texto puro
+PASTA_CHAVES = "C:/Users/User/Documents/APIs"
 CACHE = os.path.join(AQUI, ".cache_banco")
 # a API do Pixabay exige cache de 24 h por consulta. Vale para as tres.
 CACHE_TTL = 24 * 3600
@@ -64,12 +63,13 @@ FONTES = ("pixabay", "pexels", "commons")
 
 
 def chave(nome):
-    for var in (nome.upper(), nome.upper() + "_KEY"):
-        v = os.environ.get(var)
-        if v:
-            return v.strip()
-    raise SystemExit(f"sem chave do {nome}: rode pelo cofre_run com segredos=[\"{nome}\"] "
-                     f"(injeta {nome.upper()}) ou exporte {nome.upper()}_KEY")
+    v = os.environ.get(nome.upper() + "_KEY")
+    if v:
+        return v.strip()
+    p = os.path.join(PASTA_CHAVES, nome + ".txt")
+    if not os.path.exists(p):
+        raise SystemExit(f"sem chave do {nome}: crie {p} ou exporte {nome.upper()}_KEY")
+    return io.open(p, encoding="utf-8").read().strip()
 
 
 def _cache_get(k):

@@ -1,0 +1,1 @@
+- [Chaves GSC/Bing/IndexNow e SSH do deploy](garopaba-chaves-gsc-bing-indexnow.md) — seoqmix é a única que vê o GSC; deploy usa <<REMOVIDO>>

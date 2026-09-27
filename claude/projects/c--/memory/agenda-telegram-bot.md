@@ -11,10 +11,9 @@ Criado em 16/09/2026. Codigo em `d:\SISTEMAS\agenda-telegram` (TypeScript, gramm
 location `/agenda-bot/` dentro do server da `api-indexation.qmix.com.br` (evitou
 mexer em DNS). Deploy: `./deploy.sh` (tar por ssh, sem rsync no Windows).
 
-Chat autorizado: <<REMOVIDO>> (Anderson). Token do bot no cofre,
-entrada `telegram-agenda-bot` (variavel `TELEGRAM_AGENDA_BOT`, via `cofre_run`).
-Service account usada: `qmix-seo@qmix-diversos.iam.gserviceaccount.com` (cofre,
-entrada `qmix-diversos-f14b156e6b10`, tipo arquivo).
+Chat autorizado: <<REMOVIDO>> (Anderson). Token do bot em
+`Documents/APIs/telegram-agenda-bot.txt`. Service account usada:
+`qmix-seo@qmix-diversos.iam.gserviceaccount.com`.
 
 **Why:** Anderson quer mandar audio na rua e cadastrar tarefa na agenda com titulo
 e descricao. Fluxo com confirmacao por botao porque transcricao de rua erra.

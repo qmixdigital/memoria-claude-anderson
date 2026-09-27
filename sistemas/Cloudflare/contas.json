@@ -194,5 +194,16 @@
     "nome": "cirurgiacoracao",
     "token": "<<REMOVIDO>>",
     "account_id": "47d685885d91e2c451f94027e9e3eb98"
+  },
+  {
+    "nome": "medicosbh",
+    "token": "<<REMOVIDO>>",
+    "account_id": "db7f7f1b755edba76754fd154439b50e"
+  },
+  {
+    "nome": "juliomiguel",
+    "token": "<<REMOVIDO>>",
+    "account_id": "73e793c57b5d49b0a0e87b0482704afb",
+    "nota": "Conta Juliomiguel6742@gmail.com. Token 'provisoria' (expira 2027-01-31) copiado do .env em 2026-09-20. Zonas: redireto.click + teste-iptv-agora.com, teste-iptv-barato.com, teste-iptv-gratis.com, teste-iptv-site.com (rede CLIQUEX)."
   }
 ]

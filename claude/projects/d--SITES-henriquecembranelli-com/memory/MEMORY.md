@@ -1,0 +1,8 @@
+# Memória
+- [Projeto henriquecembranelli.com](projeto-henriquecembranelli.md) — Wix → HTML estático; repo qmixdigital, conta CF db7f7f1b, preview temporário, no ar em drhenriquecembranelli.com.br (22/09); .com faz 301 pela VPS; pendente regra www e SSL strict na zona (token sem permissão)
+- [gh não instalado, token GitHub](gh-nao-instalado-token-github.md) — criar repo pela API com Documents/APIs/github.txt; wrangler só para deploy
+- [Projeto dreduardocembranelli.com](projeto-dreduardocembranelli.md) — irmão do Henrique, outro chat mantém; perfil + 6 tratamentos feitos em 20/09
+- [Mobile alinhado à esquerda](mobile-alinhado-esquerda.md) — Anderson não gosta de tudo centralizado no celular; centralizar só CTA curto
+- [Sem negrito no conteúdo](sem-negrito-no-conteudo.md) — Anderson não quer strong/b em texto de site; destaque estrutural só por classe
+- [Crédito QMIX no rodapé](credito-qmix-rodape.md) — link qmix.com.br/qmix, nofollow, nova aba, discreto, centralizado no celular
+- [Faixa equipe Körpem no rodapé](faixa-equipe-korpem-rodape.md) — 7 sites, clínica dofollow hub, colegas nofollow, o que trocar quando nascer site novo

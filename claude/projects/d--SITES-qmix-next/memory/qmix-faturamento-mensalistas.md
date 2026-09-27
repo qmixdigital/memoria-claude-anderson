@@ -89,3 +89,27 @@ remover); coluna Google com ✓ ✗ ○ para marcar à mão; Situação clicáve
 (domínio, âncora, link do cliente, data, valor, tema); "+ Adicionar backlink à mão". Colunas novas `indexado_fonte`
 ('api'|'manual') e `conferido_fonte` ('robo'|'manual'): **as conferências em lote pulam o que foi marcado à mão**; o
 botão ↻ por linha sobrescreve (fonte volta a 'api').
+
+**Orçamento mensal e abertura automática (21/09/2026, pedido do Anderson):** `faturas.orcamento_mensal` (copiado da
+`mensalidade` do cliente ao abrir o rascunho; fatura antiga sem ele usa a mensalidade atual; editável no detalhe pelo
+nível total, `salvarOrcamentoFatura`). `saldoOrcamento()` em `faturamento-format.ts` e componente `SaldoOrcamento`:
+passou da cota = **azul** `+ R$ X`, abaixo = vermelho `− R$ X faltam`, exato = verde; embaixo "lançado de orçamento".
+Aparece na coluna "Orçamento mensal" de `/admin/faturamento` (com resumo "N na cota ou acima · N abaixo (faltam R$)"),
+no detalhe da fatura (bloco de totais) e em Mensalistas. `fecharFatura` usa o orçamento da fatura antes da mensalidade.
+Cron `/api/cron/abrir-faturas-mensalistas` no crontab `10 3 1 * *` (UTC = 00:10 SP): abre rascunho para todo mensalista
+ativo sem fatura do mês (qualquer status), idempotente, avisa no Telegram. Rodado à mão em 21/09: abriu 5 de setembro.
+Regras do cron fixadas em 21/09: (a) "já tem fatura do mês" = qualquer fatura fora de rascunho
+cuja referência cita o mês OU emitida no mês. VENCIMENTO NÃO CONTA (tentei e apagou por engano os rascunhos de
+Bruno Air e Pedro Paulo: a fatura de agosto vence 03/09 e continua sendo a de agosto); (b) abre UMA vez por mês por cliente
+(`faturamento_clientes.cron_ultimo_mes`): fatura excluída à mão (cliente inadimplente) não volta, ele reabre em
+Mensalistas; (c) rascunho vazio que o próprio cron abriu para cliente já faturado é removido na rodada seguinte.
+Dra. Ana Paula Brandão virou `recorrente` (21/09). Script ad hoc que faz DELETE no banco é barrado pelo classificador:
+colocar a limpeza no código da rota, não em node -e.
+
+**21/09/2026, decisões do Anderson sobre o que NÃO fazer:** não gosta de cobrar, clientes pagam com atraso mas pagam:
+sem aviso de inadimplência. Clientes não usam e-mail: sem envio por e-mail. Cobrança Asaas + NF ficam para quando a
+prefeitura liberar a NFS-e. Não quer alerta de "fatura esquecida" (ele acompanha). Feito no mesmo dia: cadastro completo
+do cliente em `/admin/faturamento/clientes/[id]` (e `/novo`; Kátia preenche depois); "Ritmo do mês" em Mensalistas
+(faltam N entregas ao preço típico do cliente = moda dos últimos 90 dias, R$ por dia útil, ordenado por quem está mais
+atrasado) e botão "Fechar N na cota" (`fecharFaturasNaCota`); sincronização da planilha agora inclui "ARTIGOS DE BLOG
+SITES TERCEIROS" e exclui "REDES SOCIAIS"/"TIER 2", também na troca de categoria; retroativo +50 linhas.

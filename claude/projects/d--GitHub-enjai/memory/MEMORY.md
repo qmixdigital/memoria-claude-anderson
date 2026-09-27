@@ -38,5 +38,6 @@
 - [reference_dominios_sites.md](reference_dominios_sites.md) — Domínios reais: portuga = portugaldigital.com.br (não portuga.com.br); enjai/truenet/skipark = *.com.br
 
 ## Reference (novo)
+- [reference_bug_partial_check_smm.md](reference_bug_partial_check_smm.md) — Bug corrigido 2026-09-21: cron check-smm não tratava "partial" → pedidos pagos presos; fix nos 4 sites (marca ERRO + alerta ENTREGA PARCIAL, sem risco de reenvio). OpenPix caiu 4min, sem fallback (MP desabilitado)
 - [reference_bug_upsell_subscription.md](reference_bug_upsell_subscription.md) — Bug corrigido 2026-08-15: upsell adicionava produto de assinatura (posts futuros) sem dados obrigatórios → cobrava e falhava no painel; fix #1 (upsell coleta) + #2 (guard checkout) em portuga/enjai/truenet; skipark já desativava
 - [project_app_pwa.md](project_app_pwa.md) — App PWA instalável (barra topo + cupom 10% ao instalar/abrir + SW/offline + push + avisos Telegram) — completo no truenet 2026-08-21, replicar nos outros 3

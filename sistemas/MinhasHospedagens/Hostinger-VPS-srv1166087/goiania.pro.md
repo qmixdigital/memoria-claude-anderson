@@ -137,7 +137,7 @@ separado.
 | | |
 |---|---|
 | Propriedade | `sc-domain:goiania.pro` |
-| Leitura por API | conta de serviço `seoqmix@seoqmix.iam.gserviceaccount.com` (siteFullUser), chave em `C:/Users/User/Documents/APIs/seoqmix-024e9465e9d9.json` |
+| Leitura por API | conta de serviço `seoqmix@seoqmix.iam.gserviceaccount.com` (siteFullUser), chave em `C:/Users/User/<<REMOVIDO>>` |
 | Script | `C:/Users/User/.claude/skills/diretorios-do-zero/scripts/gsc.py` com `GSC_CREDENCIAL` apontando para a chave acima |
 
 Em 09/2026 cerca de 80% das impressões ainda chegam pelos subdomínios antigos

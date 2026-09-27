@@ -76,3 +76,35 @@ Planilha: D:/PORTAIS/BACKLINKS/jose-mario-tier2.xlsx. Pipeline em D:/tmp/jmt2. A
 | https://www.portaldenoticias.com.br/noticia/44834/sao-jeronimo-rs/esportes/quanto-custa-a-hora-de-um-personal-trainer-e-quando-vale-pagar.html | edenoticias | quantas repetições para hipertrofia | quando vale pagar um personal trainer online | https://edenoticias.com/saude/quantas-repeticoes-para-hipertrofia/ |
 | https://www.saoroquenoticias.com.br/o-que-esperar-de-um-personal-trainer-nos-tres-primeiros-meses/ | publisherbrasil | como tomar whey e creatina | o que esperar de um personal trainer online | https://publisherbrasil.com.br/saude/como-tomar-whey-e-creatina/ |
 | https://www.saoroquenoticias.com.br/o-que-esperar-de-um-personal-trainer-nos-tres-primeiros-meses/ | universoneo | como saber se o treino está funcionando | primeiros meses com personal trainer online | https://universoneo.com.br/como-saber-se-o-treino-esta-funcionando/ |
+
+## Rodada 2 (22/09/2026): 20 guest posts diretos para o perfil
+
+10 na rede própria (portal-engine) e 10 nos parceiros do Jean (MCP). Planilha: D:/PORTAIS/BACKLINKS/instagram-josemario.xlsx (40 linhas). Pipeline: D:/PORTAIS/BACKLINKS/josemario-instagram2.
+
+Os 44 domínios que o operador marcou para exclusão em 22/09/2026 ficaram de fora da escolha de portais.
+
+| rede | portal | pauta (keyword) | âncora | URL |
+|---|---|---|---|---|
+| Jean | amadahipertrofia.com | como montar treinos de musculação | personal online de musculação | https://amadahipertrofia.com/como-montar-treinos-de-musculacao/ |
+| Jean | vivofutebol.com.br | como tratar estiramento na panturrilha | personal trainer online que ajusta o treino | https://vivofutebol.com.br/noticias-gerais/como-tratar-estiramento-na-panturrilha/ |
+| Jean | babyou.com.br | como melhorar a flacidez da barriga | personal trainer online no pós-parto | https://babyou.com.br/como-melhorar-a-flacidez-da-barriga/ |
+| Jean | portoenoticias.com.br | o que comer à noite para emagrecer | personal trainer online para perder gordura | https://portoenoticias.com.br/geral/o-que-comer-a-noite-para-emagrecer/ |
+| Jean | noticiasdaserra.com.br | quem tem artrose pode fazer caminhada | personal trainer online para quem tem dor | https://noticiasdaserra.com.br/geral/artrose-pode-fazer-caminhada/ |
+| Jean | jornalpreliminar.com.br | como ficar com a barriga chapada | personal trainer online para definição | https://jornalpreliminar.com.br/geral/como-ficar-com-a-barriga-chapada/ |
+| Jean | tcfoco.com.br | como calcular a quantidade de proteína | nutricionista e personal trainer online | https://tcfoco.com.br/geral/como-calcular-a-quantidade-de-proteina/ |
+| Jean | webcitizen.com.br | quem tem arritmia pode fazer academia | personal trainer online com acompanhamento semanal | https://webcitizen.com.br/arritmia-pode-fazer-academia/ |
+| Jean | alertasocial.com.br | quem tem esporão pode fazer caminhada | personal trainer online para treinar em casa | https://alertasocial.com.br/geral/esporao-pode-fazer-caminhada/ |
+| Jean | brasilnovonoticias.com.br | onde encontrar creatina nos alimentos | personal trainer online para hipertrofia | https://brasilnovonoticias.com.br/geral/onde-encontrar-creatina-nos-alimentos/ |
+| própria | wtw19 | quanto cobra um personal trainer | personal trainer online de musculação | https://wtw19.com.br/quanto-cobra-um-personal-trainer/ |
+| própria | folhar | como perder gordura da perna | personal trainer online para mulheres | https://folhar.com.br/como-perder-gordura-da-perna/ |
+| própria | barranews | quem tem anemia pode fazer academia | personal trainer online do Instagram | https://barranews.com.br/anemia-pode-fazer-academia/ |
+| própria | olharmoderno | como escolher um bom whey protein | personal trainer online para ganho de massa | https://www.olharmoderno.com/como-escolher-um-bom-whey-protein/ |
+| própria | agoranoticias | quem tem bursite pode fazer musculação | acompanhamento online de musculação | https://agoranoticias.net/bursite-pode-fazer-musculacao/ |
+| própria | boxnoticias | quem tem hemorroida pode fazer agachamento | personal trainer online que monta treino personalizado | https://boxnoticias.net/hemorroida-pode-fazer-agachamento/ |
+| própria | jornalistanofato | como recuperar massa muscular em idosos | personal trainer online para idosos | https://jornalistanofato.com/recuperar-massa-muscular-em-idosos/ |
+| própria | jornalconceito | como funciona o processo de emagrecimento | treinador online de Goiânia | https://jornalconceito.com/como-funciona-o-processo-de-emagrecimento/ |
+| própria | maragoginoticias | como desfazer nó muscular nas costas | personal trainer online que corrige a execução | https://maragoginoticias.com/como-desfazer-no-muscular-nas-costas/ |
+| própria | semtedio | quem tem osteoporose pode fazer agachamento | personal trainer online especialista em hipertrofia | https://semtedio.com/osteoporose-pode-fazer-agachamento/ |
+
+Âncoras novas usadas nesta rodada (nenhuma repetida, todas inéditas para o cliente): acompanhamento online de musculação, nutricionista e personal trainer online, personal online de musculação, personal trainer online com acompanhamento semanal, personal trainer online de musculação, personal trainer online do Instagram, personal trainer online especialista em hipertrofia, personal trainer online no pós-parto, personal trainer online para definição, personal trainer online para ganho de massa, personal trainer online para hipertrofia, personal trainer online para idosos, personal trainer online para mulheres, personal trainer online para perder gordura, personal trainer online para quem tem dor, personal trainer online para treinar em casa, personal trainer online que ajusta o treino, personal trainer online que corrige a execução, personal trainer online que monta treino personalizado, treinador online de Goiânia.
+

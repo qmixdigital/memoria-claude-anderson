@@ -16,3 +16,5 @@ Análise completa feita em 11/09/2026 (GSC: cliques caíram de 735 para 434 por 
 6. 137 dos 170 profissionais ativos não têm matéria vinculada; última edição da revista é de maio/2026.
 
 Ver [[seo-titles-e-checagens]] e [[deploy-workflow]].
+
+**20/09/2026, página /especialidade/ortopedia redesenhada (Direção A "prontuário editorial", aprovada pelo Anderson por screenshot):** layout diretório = abertura curta + selo + filtro por área (componente cliente `EspecialidadeLista.tsx`) + lista compacta (card 121 a 141 px no celular, lista 1.395 px contra 9.000 antes) + guia SEO com índice, cards de convênio, FAQ em `<details>` e relacionadas. Ativado por `conteudo.diretorio` em `especialidadeConteudo.ts` (áreas, mapa slug→área/local, planos, duplas); as outras especialidades continuam com a grade antiga até ganharem esse bloco. CSS com prefixo `.esp-` no globals.css. Mockups e medições em scratchpad/design/. 301 de /materia/ortopedia-em-goiania (2021) para a página. Header: submenu ancorado à direita; footer: e-mail com break-all (transbordavam em 1024 px). Próximo passo natural: replicar o bloco `diretorio` em nutrição, dermatologia, acupuntura e nutrologia.

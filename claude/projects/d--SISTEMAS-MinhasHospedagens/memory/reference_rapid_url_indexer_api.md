@@ -75,3 +75,11 @@ Uso registrado: 12/09/2026, projeto **1177933** com os 36 guest posts do lote 8 
 - 18/09/2026: projeto 1194404 (medicinageriatrica.com.br, 20 URLs). Conta recarregada: saldo 4.039 antes; cobrou 1 crédito por URL (20), não mais 3. Saldo 4.019.
 - 19/09/2026: projeto 1194526 (revistamsaude.com.br, 20 URLs, 20 créditos). Saldo 3996.
 - 1195438 (19/09/2026): personalverificado rodada 2, 20 URLs, 20 créditos (saldo ~3.974)
+- 20/09/2026: projeto 1196577, rotaambiental.com.br lote 2 (20 guest posts industriais na rede própria), 20 créditos, saldo 3964 -> 3944.
+
+20/09/2026: projeto 1196788, drthiagocaixeta Instagram rodada 2, 20 créditos, saldo 3941 -> 3921.
+
+20/09/2026: projeto 1197018, advdobrasil rodada 3 (10 Jean + 10 rede), 20 créditos, saldo 3921 -> 3901.
+
+21/09/2026: projeto 1197988, Casa da Toalha tier 2 (6 posts -> matéria do r7), 6 créditos, saldo 3901 -> 3895.
+- projeto 1201075 (22/09/2026): Jose Mario rodada 2, 20 URLs, 20 creditos (3951 -> 3931)
