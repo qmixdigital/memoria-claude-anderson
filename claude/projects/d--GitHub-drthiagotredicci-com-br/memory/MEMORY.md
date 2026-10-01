@@ -2,3 +2,4 @@
 - [Fluxo da redatora no blog estático](feedback-conteudo-redatora.md) — blog é HTML em /blog/ desde 19/09/2026; publicar-doc.py aplica data do dia, linha fina e links automáticos
 - [Blog é gerado por script](projeto-blog-gerado-por-script.md) — nunca editar blog/*/index.html; a fonte é conteudo/blog/ e o gerador lê header/footer/GA de index.html
 - [CSP x Transform Rule da zona](projeto-csp-sobrescrita-pelo-cloudflare.md) — resolvido restringindo o escopo, não desligando; padrão reaproveitável em qualquer site da rede no Pages
+- [FAQ em todos os posts](projeto-faq-em-todos-os-posts.md) — post novo precisa nascer com a seção; o gerador a converte em acordeão e FAQPage sozinho

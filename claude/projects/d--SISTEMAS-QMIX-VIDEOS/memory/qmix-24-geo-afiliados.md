@@ -38,3 +38,19 @@ reclamação de quem comprou pelo anúncio.
 
 **How to apply:** ver [[vertical-conteudo-acima-da-legenda]] para a produção
 nas duas telas e [[cliente-video-institucional]] para a faixa de institucional.
+
+**Variantes de 30/09/2026, todas em `demandas qmix/`:**
+- `qmix-24-ad-goiania/`: o anúncio de 20 s com a pergunta fixa "em Goiânia" e o
+  kicker "Médicos e clínicas de Goiânia", nas duas telas (a cena do anúncio
+  virou `ad.tsx`, parametrizada por praça e formato).
+- `qmix-24-geo-goiania/`: o vídeo longo com "cardiologista em Goiânia"; só a
+  primeira fala regravada. Sem PUBLICAR, ele guarda para usar depois.
+- `qmix-24-geo-apresentacao/`: **a versão SEM venda**, para parceiro (revista
+  Mais Saúde) enviar a médicos como serviço novo. Sem pacote, sem preço, sem
+  "sem reunião" (ele: "talvez ele não queira conversar agora"), sem citar a
+  revista (a peça circula por outros parceiros) e **sem contato da QMIX na
+  tela**: o fecho é "fale com quem enviou este vídeo". 2:17.
+
+**Regra que saiu disso:** vídeo que um parceiro distribui não leva CTA da
+QMIX; o retorno vai para quem enviou.
+

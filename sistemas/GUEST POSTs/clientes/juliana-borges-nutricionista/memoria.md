@@ -31,6 +31,6 @@ Nunca repetir a mesma âncora mais de 2 vezes no total. Variar com adjetivo, ord
 
 | data | portal | âncora | URL do cliente | link da entrega | URL publicada |
 |---|---|---|---|---|---|
-| 24/09/2026 | dm.com.br | Juliana Borges (+ internos "dermatologista em Goiânia", "melhores personal trainers online do Brasil") | https://nutricionista.digital/ | https://conteudo.qmix.com.br/a6fec0864fb67c70f22f7753a4c3da69 | (enviada à planilha do Jean em 24/09/2026, linha 282, R$ 120) |
+| 24/09/2026 | dm.com.br | Juliana Borges (+ internos "dermatologista em Goiânia", "melhores personal trainers online do Brasil") | https://nutricionista.digital/ | https://conteudo.qmix.com.br/a6fec0864fb67c70f22f7753a4c3da69 | https://www.dm.com.br/dicas/nutricionista-em-goiania-os-10-melhores-em-2026/ (no ar em 28/09/2026; planilha do Jean linha 282, R$ 120; DM trocou o título para "Nutricionista em Goiânia: os 10 melhores em 2026") |
 
 Cópias em `materias/<slug>.json`, `materias/<slug>.html` e `materias/<slug>.webp`.

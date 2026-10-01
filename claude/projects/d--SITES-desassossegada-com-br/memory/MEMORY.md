@@ -1,0 +1,1 @@
+- [Remoção LGPD sem e-mail](remocao-lgpd-sem-email.md) — pedido de remoção colado: deletar direto, sem e-mail, responder "Deletado."

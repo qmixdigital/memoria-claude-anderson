@@ -10,6 +10,7 @@
 
 - [project_resend_dominios.md](project_resend_dominios.md) — Resend = 1 conta p/ 4 sites (Pro 50k/mês); portuga+skipark tinham e-mail QUEBRADO (domínio não verificado) → corrigido via Cloudflare API 2026-08-04; truenet ainda pendente
 
+- [project_reposicionamento_sem_comprar.md](project_reposicionamento_sem_comprar.md) — 2026-09-29: tirar "comprar" dos 4 sites SMM; FASE 1 (vitrine) FEITA e no ar nos 4; backups .bak-semcomprar; fase 2 = corpo das landings/FAQ/categoria-content
 - [project_fluxos_email.md](project_fluxos_email.md) — 3 fluxos automáticos de e-mail (pós-entrega, lead ferramenta, win-back 2+ pedidos) via Resend, cron diário 11:30 BRT nos 3 sites; tabela EmailFluxo; implantado 2026-09-11 (autorização total); enjai perdeu 99% do orgânico no Spam Update ago/2026
 - [project_campanha_app_lancamento.md](project_campanha_app_lancamento.md) — Campanha e-mail "app chegou" (10%+7d, Resend) — portuga OK 637 envios 2026-08-21; replicar truenet/skipark/enjai; script /tmp/camp/campanha_app.py
 - [project_campanha_reativacao.md](project_campanha_reativacao.md) — EM CONSTRUÇÃO: campanha cupom 30% (link único, compra única) p/ ~4.309 clientes que compraram 1x; funil→2ª campanha p/ 2 compras; VIP fica em 3 pedidos (opção A); disparo via API transacional + descadastro próprio

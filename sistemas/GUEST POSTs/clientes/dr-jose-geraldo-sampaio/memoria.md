@@ -31,6 +31,25 @@ Nunca repetir a mesma âncora mais de 2 vezes no total. Variar com adjetivo, ord
 
 | data | portal | âncora | URL do cliente | link da entrega | URL publicada |
 |---|---|---|---|---|---|
-| 24/09/2026 | dm.com.br | Dr. José Geraldo Sampaio (+ internos "cirurgião do aparelho digestivo em Goiânia", "médicos especialistas em dor crônica em Goiânia") | https://www.drjosegeraldo.com.br/ | https://conteudo.qmix.com.br/818dfe0861dfb9f07ff79450189648b7 | (enviada à planilha do Jean em 24/09/2026, linha 283, R$ 120) |
+| 24/09/2026 | dm.com.br | Dr. José Geraldo Sampaio (+ internos "cirurgião do aparelho digestivo em Goiânia", "médicos especialistas em dor crônica em Goiânia") | https://www.drjosegeraldo.com.br/ | https://conteudo.qmix.com.br/818dfe0861dfb9f07ff79450189648b7 | https://www.dm.com.br/dicas/desfazer-cirurgia-bariatrica-quando-a-reversao-do-bypass-e-indicada/ (no ar em 28/09/2026, versão final com Órion e FAQ; planilha do Jean linha 283, R$ 120) |
 
 Cópias em `materias/<slug>.json`, `materias/<slug>.html` e `materias/<slug>.webp`.
+
+## Tier 2 na rede própria para a matéria do DM (30/09/2026)
+
+10 posts em portais de saúde da QMIX apontando para https://www.dm.com.br/dicas/desfazer-cirurgia-bariatrica-quando-a-reversao-do-bypass-e-indicada/ , todos com "Goiânia" na âncora (o título do DM ficou sem a cidade e não ranqueou). Nenhum cita o médico. Registro completo em `D:\PORTAIS\BACKLINKS\drjosegeraldo.com.br.txt` e pasta `drjosegeraldo-tier2`.
+
+| portal | URL | âncora | keyword |
+|---|---|---|---|
+| seuguiadesaude | https://seuguiadesaude.com.br/hipoglicemia-apos-bariatrica/ | reversão do bypass gástrico em Goiânia | hipoglicemia após bariátrica |
+| saudeemalta | https://saudeemalta.net.br/bariatrica-e-mounjaro/ | desfazer a cirurgia bariátrica em Goiânia | bariátrica e Mounjaro |
+| saudeacessivel | https://saudeacessivel.com.br/dicas/reganho-de-peso-apos-bypass/ | reversão de bariátrica em Goiânia | reganho de peso após bypass |
+| saudicas | https://saudicas.com.br/saude/sleeve-ou-bypass/ | cirurgia para reverter o bypass em Goiânia | sleeve ou bypass |
+| medicodasmaos | https://medicodasmaos.com.br/sindrome-de-dumping/ | reverter a bariátrica em Goiânia | síndrome de dumping |
+| revistatopsaude | https://revistatopsaude.com.br/saude/cirurgia-revisional-bariatrica/ | reversão da cirurgia bariátrica em Goiânia | cirurgia revisional bariátrica |
+| matogrossosaude | https://www.matogrossosaude.com.br/bariatrica-pelo-sus/ | desfazer o bypass em Goiânia | bariátrica pelo SUS |
+| advivo | https://advivo.com.br/saude-beleza/gravidez-apos-bariatrica/ | indicação de reversão do bypass em Goiânia | gravidez após bariátrica |
+| blogse | https://blogse.com.br/fome-depois-da-bariatrica/ | especialistas em reversão do bypass em Goiânia | fome depois da bariátrica |
+| folhar | https://folhar.com.br/estomago-volta-a-crescer-depois-da-bariatrica/ | desfazer bariátrica em Goiânia | estômago volta a crescer |
+
+Apex: projeto 1224573, 10 URLs enviadas em 30/09/2026 (10 créditos). Sugerido pedir ao Jean para incluir "em Goiânia" no título do DM mantendo a URL.

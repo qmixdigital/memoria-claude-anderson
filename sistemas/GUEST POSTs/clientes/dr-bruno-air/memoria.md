@@ -57,7 +57,7 @@ mensalista R$ 1.200). **Atualizar aqui** a cada matéria: âncora, URL, portal, 
 
 | data | portal | âncora | URL do cliente | link da entrega | URL publicada |
 |---|---|---|---|---|---|
-| 21/09/2026 | jornaldebrasilia.com.br | cirurgia do pé e tornozelo | https://drbrunoair.com.br/ | https://conteudo.qmix.com.br/24c77fbc32738e0e5515880a9a2b13e4 | |
+| 21/09/2026 | jornaldebrasilia.com.br | cirurgia do pé e tornozelo | https://drbrunoair.com.br/ | https://conteudo.qmix.com.br/24c77fbc32738e0e5515880a9a2b13e4 | (enviado à planilha do Jean só em 30/09/2026, linha 290, R$ 175; tinha ficado de fora) |
 | 21/09/2026 | dm.com.br | ortopedista especialista em pé | https://drbrunoair.com.br/ | https://conteudo.qmix.com.br/6c6719149b452ecf4dbe8131998dd0ba | https://www.dm.com.br/dicas/ortopedista-especialista-em-pe-em-goiania-os-7-melhores-em-2026/ (publicado 21/09/2026) |
 
 Cópias em `materias/<slug>.json`, `materias/<slug>.html` e `materias/<slug>.webp`.

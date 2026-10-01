@@ -1,0 +1,1 @@
+- [Primeiro link não vale para home/serviço](primeiro-link-nao-vale-home-servico.md) — regra do link mais forte é para conteúdo editorial

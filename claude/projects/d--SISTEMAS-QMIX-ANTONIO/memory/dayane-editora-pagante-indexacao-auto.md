@@ -24,3 +24,9 @@ impede o `cron-indexacao-status.php` de devolver credito. **Diego Augusto**
 molde: pagante R$ 50, 42 dominios do Jean, indexacao_auto = 1. Ela **nao** tem chave
 da API nem usuario no MCP (so o Jean tem, ver [[api-editor-mcp-jean]]).
 Ver [[faturamento-editores-asaas]] e [[indexacao-rapid-url-indexer]].
+
+**Armadilha que a flag criou (28/09/2026):** o campo de CPF/CNPJ, exigido pelo
+Asaas, morava so em `indexacao.php`. Esconder a area de Indexacao tirou dos dois
+o unico caminho para informar o documento, e a cobranca falhava sem explicacao.
+Corrigido levando o bloco para `pagamentos.php`. Licao geral: ao esconder uma
+tela de um editor, conferir se nao existe passo obrigatorio so dentro dela.

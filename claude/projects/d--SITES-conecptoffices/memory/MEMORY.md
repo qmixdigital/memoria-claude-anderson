@@ -1,0 +1,1 @@
+- [Concept Offices: site gerado](conceptoffices-site-gerado.md) — fonte em conecptoffices-build, build.py publica em conecptoffices; keywords Brasília/Fortaleza

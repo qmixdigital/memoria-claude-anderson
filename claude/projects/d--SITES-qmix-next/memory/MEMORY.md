@@ -27,7 +27,7 @@
 - [Moz API](qmix-moz-api.md) — plano Growth Medium 120k linhas/mês (reset mensal, overage US$ 20/10k); um token base64(access_id:secret) serve Links API v2 e Data API v3; scripts e o que já consumiu
 - [Proposta de portal ao cliente](feedback-proposta-portal-cliente.md) — formato curto aprovado (4 linhas: portal, DA/tráfego/link, matéria em lista para IA, preço fechado, pergunta)
 - [Regras dos sites do Jean](feedback-jean-credito-foto.md) — caption "Imagem de {Autor} via {Banco}", sem tags, pauta forçada em site nichado vai para Geral; MCP roda no gnd-motor (systemd wp-mcp.service)
-- [Aba Apostas](qmix-apostas-precos.md) — preços por dono (rede R$180, Jean/Yon/Diego R$240, 1news/tvprime/horanews só especial R$1.600); compra via produto espelho inativo; pendente: levar os 3 para a lista normal
+- [Aba Apostas](qmix-apostas-precos.md) — VENDAS PAUSADAS desde 28/09/2026 (MP 1.394); preços por dono (rede R$180, Jean/Yon/Diego R$240, 1news/tvprime/horanews só especial R$1.600); compra via produto espelho inativo; pendente: levar os 3 para a lista normal
 - [Mobile: admin e listas](qmix-mobile-admin-e-listas.md) — gaveta do admin, rotulador genérico de tabelas → cards, cards em grid nas listas, barra de compra na ficha; script de medição em D:\tmp\mob-shots.mjs
 - [Ferramentas: GSC 2026-09](qmix-ferramentas-gsc-2026-09.md) — 6 páginas otimizadas com consultas do GSC (letras 400k imp, símbolos 273k), FAQs estavam vazias, regra de sobreposição de SERP para página nova vs H2; pendente páginas novas
 - [Estudo de preço de backlink](qmix-estudo-preco-backlink.md) — artigo de citação (18/09/2026) com 447 portais; números-chave, tabelas no Lexical, schema Dataset, como refazer o corte
@@ -39,3 +39,5 @@
 - [Demandas do admin](qmix-demandas.md) — todos criam; janela início/fim; só aparece no dashboard a partir do início e não some ao vencer
 - [Descontos do checkout](qmix-descontos-checkout.md) — crédito da avaliação é 1 por cliente; brechas de preço fechadas em 24/09; empilhamento (PIX + promo + mínimo R$ 60) é decisão pendente do Anderson
 - [Links internos só nossos](feedback-links-internos-planilha-jean.md) — link interno em portal parceiro aponta só para matéria nossa da planilha do Jean, priorizando as mais recentes
+- [Cadastro e PIX do afiliado](qmix-afiliado-cadastro-pix.md) — aprovação e saque só com nome/CPF/endereço/chave PIX confirmada por PIX de teste de centavos (29/09/2026)
+- [Keyword da matéria ≠ âncora](feedback-keyword-materia-diferente-da-ancora.md) — matéria mira termo vizinho; âncora exata do cliente só no link, para o portal não competir com a página dele

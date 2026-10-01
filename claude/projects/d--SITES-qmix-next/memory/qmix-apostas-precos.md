@@ -23,3 +23,5 @@ Aba `/lista-de-backlinks/apostas` (tabela `apostas_portais`), regras dadas pelo 
 **Why:** os preços não seguem uma regra única; a coluna `fornecedor` é o que diz de quem é o portal. `reaplicarRegraDePreco()` no admin recalcula TUDO por custo x 2 e apagaria essas exceções; não usar sem reaplicar as regras acima.
 
 **How to apply:** ao mexer em preço de apostas, olhar `fornecedor` primeiro. Ver [[qmix-produto-nome-e-dominio]] para casar domínio com `produtos.nome`.
+
+**Vendas PAUSADAS desde 28/09/2026** (ordem do Anderson), por causa da MP 1.394/2026 (25/09/2026: proíbe oferta e publicidade de apostas em qualquer meio; saída do ar a partir de 06/10; Congresso tem 120 dias). Chave `site_settings.apostas_vendas_pausadas` (botão "Pausar/Retomar vendas" em /admin/apostas, só administrador). Com ela ligada: aba e /backlinks-apostas-esportivas mostram `AvisoPausaApostas` (texto único em `src/lib/apostas-aviso.ts`), botão Comprar vira "Vendas pausadas", ficha `apostas-*` redireciona para a aba, checkout recusa item de apostas. Retomar só depois que a regra for definida; revisar o texto do aviso se a MP virar lei ou caducar.

@@ -113,3 +113,6 @@ do cliente em `/admin/faturamento/clientes/[id]` (e `/novo`; Kátia preenche dep
 (faltam N entregas ao preço típico do cliente = moda dos últimos 90 dias, R$ por dia útil, ordenado por quem está mais
 atrasado) e botão "Fechar N na cota" (`fecharFaturasNaCota`); sincronização da planilha agora inclui "ARTIGOS DE BLOG
 SITES TERCEIROS" e exclui "REDES SOCIAIS"/"TIER 2", também na troca de categoria; retroativo +50 linhas.
+
+
+**Redatora (Lúcia, users.id 5, role redator), 30/09/2026:** tem o botão "Nova fatura" e só vê/abre/edita as faturas que ela criou (`faturas.criado_por` = nome dela; `faturaDoUsuario` em `lib/faturamento-acesso.ts`), sempre em rascunho e sem valores. Exceção de propósito: na agenda "Envios aos portais" do painel ela marca enviado e cola URL em itens de QUALQUER fatura (é o trabalho de auxiliar). No "ver como", a fatura criada fica no nome do usuário personificado.

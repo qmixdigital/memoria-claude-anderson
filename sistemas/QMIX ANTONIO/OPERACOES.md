@@ -1183,3 +1183,44 @@ do fornecedor de 4271 para 4268, créditos da Dayane em 0.
 
 Backups dos arquivos alterados: `editor.../private/bak-20260917/` e
 `acesso.../private/bak-20260917/`.
+
+---
+
+## Indicadores do painel do editor (28/09/2026)
+
+Saíram **"Aguardando revisão"** e **"Rascunhos"**: desde o fim da revisão prévia
+o artigo publica direto e os dois viviam zerados. Entrou **"A pagar · R$ X"**,
+que conta os posts com `pw_transfer = 2` e `cobranca_id` nulo vezes o
+`valor_post` do editor, a mesma regra do painel Cobranças dos Editores. O número
+grande é a quantidade de posts, o valor vai no rótulo. Clicar leva a
+`pagamentos.php`, onde ele gera o PIX.
+
+O cartão sai do editor **visualizado**, não do logado: abrindo
+`dashboard.php?ver=N` você enxerga quanto aquele editor deve. Só aparece para
+`tipo_cobranca = 'pagante'`; para parceiro nem é calculado. Fora do próprio
+painel o link não aponta para `pagamentos.php`, senão levaria o administrador
+para a cobrança dele mesmo.
+
+Arquivo: `editor.../public_html/dashboard.php`, backup em
+`editor.../private/bak-20260928/dashboard.php.bak`.
+
+---
+
+## CPF/CNPJ na tela de Pagamentos (28/09/2026)
+
+O campo de documento existia **só em `indexacao.php`**. Quem completou o
+cadastro ali conseguia cobrar (caso do Felipe, que informou o CNPJ ao comprar
+créditos em 01/09); quem nunca abriu aquela tela batia num erro ao clicar em
+"Gerar pagamento", porque o Asaas exige CPF ou CNPJ e não havia onde informar.
+
+Ficou pior para **Dayane (10) e Diego (11)**: com `indexacao_auto = 1` a área de
+Indexação é escondida e redireciona, então eles não tinham **nenhum** caminho
+para o campo. Beco sem saída criado pela própria indexação automática.
+
+O bloco "Complete seu cadastro" foi portado de `indexacao.php` para
+`pagamentos.php`, com o mesmo `documentoLimpo()` / `documentoValido()` de
+`/opt/qmix/lib/documento.php`. Some sozinho depois de salvo. A geração passou a
+recusar antes de falar com o Asaas, com mensagem que diz onde preencher, em vez
+de devolver o erro cru do banco.
+
+Backup: `editor.../private/bak-20260928/pagamentos.php.bak`.

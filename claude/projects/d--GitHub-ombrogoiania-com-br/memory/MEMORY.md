@@ -3,3 +3,4 @@
 - [Migração do blog para o Pages](migracao-blog-pages.md) — /blog/ estático gerado de wp-export.json; legado do WP na Function; virada feita 19/09/2026 (Redirect Rule blog.→apex, A record fica); WP apagado 19/09/2026; backup = site HTML (GitHub/Pages/local).
 - [Tráfego concentrado no blog](trafego-concentrado-no-blog.md) — 23 mil dos 23,4 mil cliques anuais são do blog; home 316, páginas de serviço ~4; convênio (Ipasgo/Unimed) está nas consultas que convertem.
 - [Chaves do Search Console em disco](gsc-chaves-em-disco.md) — "nenhuma chave tem acesso" quase sempre é variável de ambiente faltando, não permissão; os .json estão em Documents/APIs.
+- [Armadilhas de JSON-LD médico](jsonld-armadilhas-medicas.md) — @id não resolve entre <script> separados; MedicalSpecialty é Musculoskeletal (não Orthopedic); MedicalClinic não aceita campo de documento.
