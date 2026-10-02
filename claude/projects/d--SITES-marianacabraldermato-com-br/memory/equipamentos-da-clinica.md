@@ -48,3 +48,14 @@ médica, verbalmente, repassada pelo cliente duas vezes. **Nunca chegou document
 indicações faciais. Por isso toda a redação no site atribui o uso corporal à prática da
 clínica, nunca ao fabricante. Se um dia for questionado, essa distinção é o que
 protege a médica.
+
+**01/10/2026, indicações oficiais do XERF conferidas na fonte.** A página da Contourline
+(distribuidor no Brasil) é resumida e só fala em lifting facial e papada; escrevi o artigo
+`/xerf-antes-e-depois/` em cima dela e ficou restrito a queixo e mandíbula, o que o Anderson
+contestou. A fonte completa é a Cynosure Lutronic (cynosurelutronicemea.com/product/xerf) e o
+comunicado do FDA de 18/08/2025: indicações são **linhas e rugas faciais, elevação da
+sobrancelha e flacidez de face e pescoço**; aplicação em rosto completo e pescoço (testa,
+região dos olhos com ponteiras menores, bochechas, mandíbula, submento). Fabricante: 1 sessão
+já melhora, recomenda 2 com 4 a 6 semanas de intervalo, rosto completo em até 45 min, duração
+de 6 a 9 meses. **Ao escrever sobre equipamento, consultar o fabricante global, não só o
+distribuidor.** Corpo segue fora do material do fabricante.

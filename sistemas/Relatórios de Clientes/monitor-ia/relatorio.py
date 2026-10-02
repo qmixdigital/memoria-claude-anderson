@@ -13,6 +13,7 @@ Uso:
 import argparse
 import base64
 import html
+import itertools
 import json
 import os
 import sqlite3
@@ -370,6 +371,10 @@ a:focus-visible{outline:2px solid var(--alta); outline-offset:2px}
         font-size:14px; vertical-align:top; background:transparent}
 .tab td.n, .tab th.n{text-align:right; white-space:nowrap}
 .tab tbody tr:first-child td{border-top:0}
+/* Segunda linha dentro da celula: quantas vezes o site apareceu naquela
+   posicao. Sem ela, "4,6o" nao diz se veio de 2 buscas ou de 10 mil. */
+.tab td .sub{display:block; font-size:11.5px; color:var(--tinta3);
+   font-weight:400; letter-spacing:0; margin-top:3px}
 .sim{color:var(--alta); font-weight:600}
 .chave-nao{color:var(--baixa); font-weight:600}
 .nao{color:var(--tinta3)}
@@ -385,7 +390,9 @@ a:focus-visible{outline:2px solid var(--alta); outline-offset:2px}
 .subtotal .t{font-size:13.5px; color:var(--tinta2)}
 .fonte-dado{display:inline-flex; align-items:center; gap:8px; padding:6px 13px 6px 9px;
    background:var(--carta); border:1px solid var(--regua); border-radius:3px;
-   font-size:12.5px; font-weight:600; color:var(--tinta); margin-bottom:16px}
+   font-size:12.5px; font-weight:600; color:var(--tinta); margin-bottom:16px;
+   /* o rotulo cresceu com a janela de 24 horas e passava da tela no celular */
+   max-width:100%; flex-wrap:wrap; row-gap:2px}
 .fonte-dado svg{flex:0 0 auto}
 .artigos{background:var(--carta); border:1px solid var(--regua2); border-radius:3px;
    padding:6px 24px 12px}
@@ -1198,6 +1205,161 @@ def bloco_posicoes(d):
 </section>"""
 
 
+def bloco_termos(d):
+    """Posição das palavras-chave acompanhadas, lida do Search Console.
+
+    Diferença para o rastreador de posição: aqui a posição é a que gente de
+    verdade viu, no aparelho e no lugar dela. Termo sem linha não é posição
+    ruim: é o site não ter aparecido para aquela busca exata.
+
+    A coluna principal é a da semana, não a das 24 horas. Num único dia a
+    maioria dos termos não recebe busca nenhuma, e os que recebem poucas
+    oscilam: num teste real, um termo marcou 14,8º no dia com 5 aparicões e
+    2,9º no mês. A leitura de 24 horas entra como complemento, para mostrar
+    movimento recente onde existe volume.
+    """
+    if not d or not d.get("termos"):
+        return ""
+
+    cartoes = kpi(d["top3"], f'Palavras no top 3, de {d["total"]} acompanhadas')
+    cartoes += kpi(d["top10"], "Na primeira página do Google")
+    cartoes += kpi(d["medidos_7d"], "Com busca na última semana")
+    # Só entra na conta o termo com amostra suficiente nos dois meses, mesmo
+    # piso usado na coluna de movimento da tabela.
+    comparaveis = [t for t in d["termos"] if t["variacao"] is not None
+                   and min(t["impressoes"], t.get("impressoes_anterior", 0)) >= 5]
+    subiram = sum(1 for t in comparaveis if t["variacao"] < 0)
+    cairam = sum(1 for t in comparaveis if t["variacao"] > 0)
+    saldo = subiram - cairam
+    if subiram or cairam:
+        selo = (f'<span class="chip sobe">▲ {subiram} subiram</span>'
+                if subiram >= cairam
+                else f'<span class="chip desce">▼ {cairam} caíram</span>')
+    else:
+        selo = '<span class="chip igual">sem movimento</span>'
+    cartoes += kpi(f"{saldo:+d}" if saldo else "0",
+                   "Saldo de posições contra o mês anterior", selo)
+
+    def aparicoes(n):
+        return f'{num(n)} {"aparição" if n == 1 else "aparições"}'
+
+    linhas = ""
+    for t in d["termos"]:
+        if t["posicao_7d"]:
+            agora = (f'<strong>{decimal(t["posicao_7d"], "º")}</strong>'
+                     f'<span class="sub">{aparicoes(t["impressoes_7d"])}</span>')
+        elif t["posicao"]:
+            agora = '<span class="nao">sem busca na semana</span>'
+        else:
+            agora = '<span class="nao">não apareceu</span>'
+
+        if t["posicao_24h"]:
+            ontem = (f'{decimal(t["posicao_24h"], "º")}'
+                     f'<span class="sub">{aparicoes(t["impressoes_24h"])}</span>')
+        else:
+            ontem = '<span class="nao">sem busca</span>'
+
+        if t["posicao"]:
+            mes = (f'{decimal(t["posicao"], "º")}'
+                   f'<span class="sub">{aparicoes(t["impressoes"])}</span>')
+        else:
+            mes = '<span class="nao">não apareceu</span>'
+
+        # Com meia dúzia de aparições a média balança sozinha: dois meses com
+        # 2 e 3 buscas já produzem "caiu 8 posições" sem nada ter mudado no
+        # Google. Abaixo desse piso o movimento não é informação.
+        amostra = min(t["impressoes"], t.get("impressoes_anterior", 0))
+        if t["variacao"] is None:
+            mov = '<span class="nao">sem base anterior</span>'
+        elif amostra < 5:
+            mov = '<span class="nao">amostra pequena</span>'
+        elif t["variacao"] == 0:
+            mov = '<span class="nao">manteve</span>'
+        elif t["variacao"] < 0:
+            n = abs(t["variacao"])
+            mov = (f'<span class="sim">▲ subiu {decimal(n)} '
+                   f'{"posição" if n == 1 else "posições"}</span>')
+        else:
+            n = t["variacao"]
+            mov = (f'<span class="chave-nao">▼ caiu {decimal(n)} '
+                   f'{"posição" if n == 1 else "posições"}</span>')
+
+        if t["pagina"]:
+            caminho = t["pagina"].split("//")[-1].split("/", 1)[-1]
+            pagina = link(t["pagina"], "/" + caminho if caminho else "página inicial")
+        else:
+            pagina = '<span class="nao">nenhuma ainda</span>'
+
+        # Quando a leitura não é da frase exata, a linha precisa dizer de onde
+        # veio. Posição de "túnel do carpo" no Brasil inteiro não é posição de
+        # "túnel do carpo em Goiânia", e o cliente leria como se fosse.
+        origem = ""
+        if t.get("aproximado") and t.get("escopo") == "tema":
+            origem = ('<span class="sub">Ninguém buscou com a cidade no período. '
+                      'Leitura do tema, em todo o Brasil.</span>')
+        elif t.get("aproximado"):
+            exemplo = f', como “{esc(t["exemplo"])}”' if t.get("exemplo") else ""
+            origem = (f'<span class="sub">Soma de {num(t["variantes"])} '
+                      f'{"busca parecida" if t["variantes"] == 1 else "buscas parecidas"}'
+                      f'{exemplo}.</span>')
+
+        linhas += (f'<tr><td data-rotulo="Palavra-chave">'
+                   f'{link(busca_google(t["termo"]), t["termo"])}{origem}</td>'
+                   f'<td class="n" data-rotulo="Na última semana">{agora}</td>'
+                   f'<td class="n" data-rotulo="Nas últimas 24 horas">{ontem}</td>'
+                   f'<td class="n" data-rotulo="Média do mês">{mes}</td>'
+                   f'<td data-rotulo="Contra o mês anterior">{mov}</td>'
+                   f'<td data-rotulo="Página que aparece">{pagina}</td></tr>')
+
+    sem_dado = d["total"] - d["com_posicao"]
+    nota = ""
+    if sem_dado:
+        nota = (f'<div class="nota"><strong>Sobre as {sem_dado} palavras marcadas '
+                f'como "não apareceu".</strong> Não é posição ruim, é ausência de '
+                f'aparição: ou o site ainda não alcança a altura em que o Google '
+                f'mostra o resultado, ou ninguém pesquisou exatamente aquela '
+                f'expressão no período. São as que pedem conteúdo e links no '
+                f'próximo ciclo.</div>')
+    if d.get("so_tema"):
+        n = d["so_tema"]
+        nota += (f'<div class="nota"><strong>Sobre '
+                 f'{"a palavra lida" if n == 1 else f"as {n} palavras lidas"} pelo '
+                 f'tema.</strong> Quando ninguém pesquisou o termo com o nome da '
+                 f'cidade, a linha mostra a posição do site para o mesmo assunto '
+                 f'em todo o Brasil. É uma medida de autoridade no tema, não de '
+                 f'busca local, e por isso essas linhas ficam fora da contagem '
+                 f'de top 3 e de primeira página acima.</div>')
+
+    return f"""<section>
+  <div class="cab"><span class="idx mono">02</span><h2>Posição das palavras-chave <<REMOVIDO>>
+  <div class="fonte-dado">{SELO_GSC} Search Console · semana de {esc(d.get("semana", ""))}</div>
+  <p class="linhafina">Posição em que o site apareceu para quem pesquisou cada
+     termo. Não é a medição de um robô em um ponto fixo: é a posição que as
+     pessoas realmente viram, no aparelho e no lugar delas, por isso a média
+     muda conforme quem busca.</p>
+  <div class="kpis">{cartoes}</div>
+
+  <h3>Palavra por palavra</h3>
+  <p class="linhafina">A leitura da semana é a posição atual: tem busca
+     suficiente para não oscilar. A das últimas 24 horas mostra o movimento mais
+     recente e fica vazia quando ninguém pesquisou o termo no dia. A do mês é a
+     base de comparação com o mês anterior.</p>
+  <div class="tabwrap"><table class="tab" role="table">
+    <caption>Posição na semana, nas últimas 24 horas e no mês, com o movimento
+       contra o mês anterior. O número menor indica a quantidade de vezes em que
+       o site apareceu naquela busca.</caption>
+    <thead role="rowgroup"><tr role="row">
+      <th scope="col">Palavra-chave</th>
+      <th scope="col" class="n">Na última semana</th>
+      <th scope="col" class="n">Nas últimas 24 horas</th>
+      <th scope="col" class="n">Média do mês</th>
+      <th scope="col">Contra o mês anterior</th>
+      <th scope="col">Página que aparece</th>
+    </tr></thead><tbody role="rowgroup">{linhas}</tbody>
+  </table></div>{nota}
+</section>"""
+
+
 def bloco_gsc(d, idx_gsc="02"):
     if not d:
         return ""
@@ -1542,7 +1704,7 @@ def bloco_engajamento(eng):
 
 def bloco_ga4(d, dominio=None, rastreio_completo=True,
               mostrar_contatos=False, mostrar_video=False, idx_ga4="03",
-              texto_geografia=None):
+              texto_geografia=None, aviso_ga4=None):
     # Sem leitura propria no config, fica a descricao neutra. Texto
     # interpretativo fixo aqui ja viajou de um cliente para os outros.
     texto_geografia = texto_geografia or (
@@ -1627,12 +1789,24 @@ def bloco_ga4(d, dominio=None, rastreio_completo=True,
             rotulo = "Site" if host and not host.startswith("blog.") else "Blog"
             return f'<td data-rotulo="Onde">{esc(rotulo)}</td>' if host else                    '<td data-rotulo="Onde">todo o site</td>'
 
+        # Estes eventos disparam no MESMO clique: o nosso rastreio e a medição
+        # automática do Google. Marcar mais de um como objetivo faria a conta
+        # contar a mesma pessoa duas vezes, então, havendo um marcado, os
+        # outros são conferência e não pendência de configuração.
+        tem_objetivo = any(e["conversoes"] for e in contato)
+
+        def papel(e):
+            if e["conversoes"]:
+                return "Sim"
+            if tem_objetivo:
+                return '<span class="nao">medição paralela</span>'
+            return '<span class="chave-nao">Ainda não</span>'
+
         linhas_ct = "".join(
             f'<tr><td data-rotulo="Ação do paciente">{esc(nome_evento(e["nome"]))}</td>'
             f'{celula_origem(e)}'
             f'<td class="n num" data-rotulo="Vezes">{num(e["contagem"])}</td>'
-            f'<td data-rotulo="Conta como conversão">'
-            f'{"Sim" if e["conversoes"] else "<span class=chave-nao>Ainda não</span>"}</td></tr>'
+            f'<td data-rotulo="Conta como conversão">{papel(e)}</td></tr>'
             for e in contato)
         cab_origem = '<th scope="col">Onde</th>' if col_origem else ""
         if rastreio_completo:
@@ -1644,8 +1818,11 @@ def bloco_ga4(d, dominio=None, rastreio_completo=True,
             else:
                 detalhe = ('Um mesmo clique pode disparar mais de um evento, '
                            'então contamos o maior deles em vez de somar.')
-            legenda_contato = (f'contatos no período, {str(taxa).replace(".", ",")}% '
-                               f'das sessões. {detalhe}')
+            if aviso_ga4:
+                legenda_contato = f'contatos no período. {detalhe}'
+            else:
+                legenda_contato = (f'contatos no período, {str(taxa).replace(".", ",")}% '
+                                   f'das sessões. {detalhe}')
         else:
             # Divulgar taxa de conversao com rastreio parcial produz um numero
             # que parece pessimo e nao e verdadeiro. Melhor nao publicar a taxa.
@@ -1661,6 +1838,15 @@ def bloco_ga4(d, dominio=None, rastreio_completo=True,
                         'não são contabilizados, portanto este valor é um piso, não '
                         'o total de pacientes que procuraram o consultório. A '
                         'cobertura completa entra na próxima atualização do site.</div>')
+        elif sem_chave and tem_objetivo:
+            aviso_ct = ('<div class="nota"><strong>O que significa "medição '
+                        'paralela".</strong> O mesmo clique é registrado por mais '
+                        'de um medidor: o nosso, instalado no site, e o automático '
+                        'do Google. Apenas um fica marcado como objetivo da conta, '
+                        'de propósito, senão o Google contaria a mesma pessoa duas '
+                        'vezes. Os demais seguem no relatório como conferência, e é '
+                        'por isso que o total acima usa o maior valor, nunca a '
+                        'soma.</div>')
         elif sem_chave:
             aviso_ct = ('<div class="nota"><strong>O que significa "ainda não" '
                         'na última coluna.</strong> O contato está sendo contado '
@@ -1747,6 +1933,7 @@ def bloco_ga4(d, dominio=None, rastreio_completo=True,
   <div class="cab"><span class="idx mono">{idx_ga4}</span><h2>Todas as visitas ao site</h2></div>
   <div class="fonte-dado">{SELO_GA4} Google Analytics 4</div>
   <p class="linhafina">Período de {esc(d['periodo'])}.</p>
+  {f'<div class="nota alerta"><strong>Leia antes de comparar estes números.</strong> {esc(aviso_ga4)}</div>' if aviso_ga4 else ''}
   <div class="explica">
     <strong>O que esta seção mede, e por que difere da anterior</strong>
     Aqui entra <em>toda visita ao site, venha de onde vier</em>: busca do Google,
@@ -1793,11 +1980,26 @@ def bloco_ga4(d, dominio=None, rastreio_completo=True,
 
 # ------------------------------------------------------------------ pagina
 
+def numerar_secoes(html):
+    """Renumera as seções na ordem em que ficaram: 01, 02, 03...
+
+    Os blocos são opcionais e mudam de cliente para cliente, então numerar na
+    chamada de cada um já produziu duas seções "03" no mesmo relatório. Aqui
+    a conta sai uma vez só, sobre o que de fato entrou. Os marcadores de
+    símbolo (diagnóstico, pauta, vídeo) ficam de fora de propósito: não são
+    etapas da leitura, são anexos.
+    """
+    contador = itertools.count(1)
+    return re.sub(r'(<span class="idx mono">)\d{2}(</span>)',
+                  lambda m: f"{m.group(1)}{next(contador):02d}{m.group(2)}", html)
+
+
 def montar_html(nome, dias, linhas, anteriores, falhas, google, termos=None,
                 dominio=None, rastreio_completo=True, mostrar_contatos=False,
                 historico=None, trabalho=None, video=None,
                 recomendacoes=None, pauta=None, mostrar_video=False,
-                posicoes=None, texto_geografia=None):
+                posicoes=None, texto_geografia=None, termos_gsc=None,
+                aviso_ga4=None):
     termos = termos or [nome]
     a = resumir_ia(linhas) if linhas else None
     gsc, ga4 = google.get("gsc"), google.get("ga4")
@@ -1829,13 +2031,17 @@ def montar_html(nome, dias, linhas, anteriores, falhas, google, termos=None,
     corpo = (bloco_recomendacoes(recomendacoes)
              + bloco_trabalho(trabalho)
              + bloco_ia(linhas, anteriores, falhas, nome, termos, historico, dominio)
-             + bloco_posicoes(posicoes)
-             + bloco_gsc(gsc, "03" if posicoes else "02")
+             # Havendo leitura do Search Console, o CSV do rastreador sai: sao
+             # as mesmas palavras, e duas tabelas com numeros diferentes para
+             # o mesmo termo so confundem. O CSV ainda envelhece na pasta.
+             + ("" if termos_gsc else bloco_posicoes(posicoes))
+             + bloco_termos(termos_gsc)
+             + bloco_gsc(gsc)
              + bloco_ga4(ga4, dominio, rastreio_completo, mostrar_contatos,
-                         mostrar_video, "04" if posicoes else "03",
-                         texto_geografia)
+                         mostrar_video, "00", texto_geografia, aviso_ga4)
              + bloco_pauta(pauta)
              + bloco_video(video))
+    corpo = numerar_secoes(corpo)
     if not corpo:
         corpo = ('<section><div class="ausente">Nenhuma fonte de dados '
                  'disponível para este período.</div></section>')
@@ -2026,12 +2232,24 @@ def main():
         posicoes = ranking_serprobot.get(dominio_cli)
 
         google = {"gsc": None, "ga4": None, "erros": []}
+        termos_gsc = None
         if not args.sem_google and por_id.get(cid, {}).get("google"):
             import google_dados
             print(f"Coletando Search Console e GA4 de {cnome}...")
             google = google_dados.coletar(cfg, por_id[cid], args.dias)
             for e in google["erros"]:
                 print(f"  aviso: {e}")
+            # Posicao das palavras-chave acompanhadas, inclusive a leitura das
+            # ultimas 24 horas, que nao existe no relatorio padrao do Google.
+            import gsc_termos
+            lista = gsc_termos.termos_do_cliente(por_id[cid])
+            if lista and (por_id[cid].get("google") or {}).get("search_console"):
+                try:
+                    termos_gsc = gsc_termos.coletar(
+                        cfg, por_id[cid]["google"]["search_console"], lista, args.dias)
+                except Exception as e:
+                    google["erros"].append(f"Posicoes no Search Console: {str(e)[:200]}")
+                    print(f"  aviso: posicoes: {str(e)[:150]}")
 
         if not linhas and not google["gsc"] and not google["ga4"]:
             print(f"[SEM RELATÓRIO] {cnome}: nenhuma fonte de dados no período "
@@ -2052,7 +2270,9 @@ def main():
                            dados_cliente.get("pauta"),
                            dados_cliente.get("mostrar_video", False),
                            posicoes,
-                           dados_cliente.get("texto_geografia")))
+                           dados_cliente.get("texto_geografia"),
+                           termos_gsc,
+                           dados_cliente.get("aviso_ga4")))
         gerados += 1
 
     con.close()

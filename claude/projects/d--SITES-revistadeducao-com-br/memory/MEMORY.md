@@ -1,0 +1,1 @@
+- [Remoção de ficha no diretório de contadores](remocao-de-ficha-contadores.md) — banco + 410 no nginx; build no ar é anterior ao `isRemoved`, cópia local defasada

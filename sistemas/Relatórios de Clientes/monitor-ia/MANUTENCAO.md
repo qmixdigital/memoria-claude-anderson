@@ -54,6 +54,8 @@ Duas exceções que o auditor entende:
 | `video` | ausente | incorpora o vídeo relatório no fim |
 | `recomendacoes` | ausente | seção de diagnóstico, usada em cliente novo |
 | `pauta` | ausente | seção de sugestões de conteúdo para portais |
+| `termos_acompanhados` | ausente | palavras-chave do bloco de posição, lidas do Search Console |
+| `aviso_ga4` | ausente | alerta no topo da seção do Analytics (medição trocada no meio do mês); também esconde a taxa de contatos |
 | `grupo` | ausente | clientes irmãos, para o auditor não acusar vazamento |
 | `dominio` | do Search Console | necessário quando não há Search Console |
 | `agencia` | ausente | `true` no cliente que é a própria agência; o auditor ignora a assinatura dela nos outros relatórios |
@@ -109,6 +111,53 @@ Search Console (URL-prefix) e a sua propriedade GA4, ligados por `grupo`.
 Prompts diferentes: a loja recebe pergunta de compra, o blog recebe pergunta de
 cuidado, que é a que faz a IA ler artigo.
 
+**Posição de palavra-chave pelo Search Console, inclusive 24 horas.**
+`gsc_termos.py` lê a lista de `termos_acompanhados` do cliente e devolve a
+posição nas últimas 24 horas e no mês. A janela de 24 horas usa
+`"dataState": "HOURLY_ALL"`, que a API só aceita com a dimensão `HOUR`: para
+ter posição por termo é preciso pedir `HOUR + query` e somar depois,
+ponderando a posição pelas impressões. Média simples de hora daria o mesmo
+peso a uma hora com 300 aparições e a outra com 2.
+
+Duas diferenças que precisam estar claras para o cliente, e já estão no texto
+do bloco: a posição do Search Console é a que gente real viu, média entre
+lugares e aparelhos, então não bate com a do rastreador fixado numa cidade; e
+termo ausente não é posição ruim, é o site não ter aparecido para aquela busca
+exata.
+
+**A coluna principal do bloco de posição é a da semana, não a de 24 horas.**
+Num único dia a maioria dos termos não recebe busca nenhuma (31 de 46 no
+primeiro teste), e os que recebem poucas oscilam: "Laser CO2" marcou 14,8º no
+dia com 5 aparições e 2,9º no mês. A janela de 24 horas fica como complemento,
+para mostrar movimento recente onde existe volume.
+
+**Movimento com menos de 5 aparições no mês não é exibido.** Dois meses com 2
+e 3 buscas produzem "caiu 8 posições" sem nada ter mudado no Google. Abaixo
+desse piso a tabela diz "amostra pequena" e o termo fica fora do saldo.
+
+**Evento de contato duplicado: marcar só um como evento-chave.** O clique no
+WhatsApp é registrado pelo nosso `generate_lead` e pela medição automática do
+Google (`click`), e às vezes também por um `clique_whatsapp` antigo do site.
+Marcar mais de um faz o GA4 contar a mesma pessoa duas vezes. Fica marcado o
+`generate_lead`, com contagem "uma vez por evento" para bater com o número do
+relatório; os outros aparecem como "medição paralela". O evento `purchase` é
+evento-chave fixo do GA4 e não aceita remoção, mas como nunca dispara não
+polui número nenhum.
+
+**Palavra acompanhada raramente é a frase que o paciente digita.** A lista
+vem do rastreador e costuma ser título de página ("Tratamentos para Rizartrose
+em Goiânia"). No Search Console essa frase exata quase nunca existe, e a tabela
+saía inteira "não apareceu" num site com 3 mil cliques. A leitura tem três
+degraus, e a linha diz qual valeu: frase exata; buscas parecidas (todas as
+palavras do termo, sem artigo, plural nem a palavra "tratamento"); e tema, sem
+a cidade, quando ninguém buscou com ela. Linha de tema fica fora dos contadores
+de top 3 e primeira página: é autoridade no assunto, não busca local.
+
+**Numeração das seções sai de `numerar_secoes`**, no fim da montagem. Numerar
+na chamada de cada bloco já produziu duas seções "03" no mesmo relatório
+quando entrou um bloco opcional novo. Marcador de símbolo (◆ ✎ ▶) fica fora da
+contagem de propósito.
+
 ## Rotina mensal
 
 ```bash
@@ -126,6 +175,7 @@ precisa renomear nem configurar.
 ## Ferramentas auxiliares
 
 ```bash
+python gsc_termos.py --cliente id     # posição das palavras acompanhadas, 24h e mês
 python google_dados.py --listar        # o que cada conta de serviço enxerga
 python ga4_admin.py --diagnostico      # eventos-chave faltando em toda a rede
 python ga4_admin.py --auto --aplicar   # marca o evento certo em cada propriedade

@@ -1,1 +1,2 @@
 - [Abrir HTML no navegador](feedback-abrir-html-no-navegador.md) — todo relatório gerado abre sozinho no navegador dele
+- [Ajustar GA4 sem pedir](feedback-ajustar-ga4-sem-pedir.md) — configuração errada no Analytics de cliente, corrigir na hora e avisar depois

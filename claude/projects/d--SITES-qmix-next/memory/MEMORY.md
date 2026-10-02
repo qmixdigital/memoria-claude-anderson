@@ -36,8 +36,10 @@
 - [Landing médicos SP](qmix-landing-medicos-sp.md) — /geo/medicos-sao-paulo no route group (landing), simulador pré-preenchido, WhatsApp único; pixel do Meta não está no código
 - [SSH: cofre KeePassXC e fail2ban](ssh-cofre-e-fail2ban.md) — chave no cofre (ssh-add -l = 17 chaves), timeout intermitente na porta 22 é bloqueio de IP por muitos scp; tar único por deploy
 - [chatbotbrx (bot WhatsApp do Antônio)](chatbotbrx-plataforma.md) — srv1166087, PHP+MySQL+Baileys; 'API própria' = Baileys, não Meta oficial; o que já tem e o que falta para CRM (análise 21/09)
-- [Demandas do admin](qmix-demandas.md) — todos criam; janela início/fim; só aparece no dashboard a partir do início e não some ao vencer
+- [Demandas do admin](qmix-demandas.md) — todos criam; cards por estado; Iniciar/Concluir com aviso no Telegram; comentários em camadas e estado "parada"; página de detalhe; aparece no dashboard de todos os cargos
 - [Descontos do checkout](qmix-descontos-checkout.md) — crédito da avaliação é 1 por cliente; brechas de preço fechadas em 24/09; empilhamento (PIX + promo + mínimo R$ 60) é decisão pendente do Anderson
 - [Links internos só nossos](feedback-links-internos-planilha-jean.md) — link interno em portal parceiro aponta só para matéria nossa da planilha do Jean, priorizando as mais recentes
 - [Cadastro e PIX do afiliado](qmix-afiliado-cadastro-pix.md) — aprovação e saque só com nome/CPF/endereço/chave PIX confirmada por PIX de teste de centavos (29/09/2026)
 - [Keyword da matéria ≠ âncora](feedback-keyword-materia-diferente-da-ancora.md) — matéria mira termo vizinho; âncora exata do cliente só no link, para o portal não competir com a página dele
+- [Indexação só com ordem](feedback-indexacao-so-com-ordem.md) — nunca enviar ao Apex por conta própria, nem ao lançar link publicado; o campo de URL do pedido indexa sozinho
+- [Sem troca após publicado](feedback-sem-troca-apos-publicado.md) — matéria que já saiu no portal não tem troca de link/âncora/texto; ajuste de cliente só vale antes de publicar
