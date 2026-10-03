@@ -8,3 +8,4 @@
 - [Faixa equipe Körpem no rodapé](faixa-equipe-korpem-rodape.md) — 7 sites, clínica dofollow hub, colegas nofollow, o que trocar quando nascer site novo
 - [Pasta Drive MAOS dos artigos](pasta-drive-artigos-henrique.md) — artigos do Dr. Henrique chegam aí; acesso pela service account seoqmix, marcar publicado no nome do arquivo
 - [Linkagem de artigo: serviço e home](linkagem-artigos-servico-home.md) — keyword nunca aponta para o perfil do autor; link externo = fonte de autoridade no texto
+- [Ajustes pequenos no texto da redatora](ajustes-pequenos-texto-redatora.md) — pode ajustar poucas palavras para linkagem; sem reescrita grande e sem acionar a redatora

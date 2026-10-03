@@ -32,3 +32,10 @@ o que já tem o prefixo.
 
 Publicação no site: ver [[projeto-henriquecembranelli]] e o passo a passo do blog no
 README do repo (cards em `/blog`, schema, sitemap, linkagem cruzada).
+
+**Lotes grandes (02/10/2026: 17 artigos de uma vez).** O fluxo está em scripts no scratchpad da sessão e vale recriar igual: exportar os docs em HTML e converter (`parse_docs.py`), uma foto Pexels por artigo sem repetir ID e conferida em folha de contato, config por artigo (slug, title ≤60, description 150 a 160, tag, alt, cluster, âncora do serviço, âncora da home) e linkagem automática por correspondência exata: 1º link = página de serviço do cluster, home na frase do "ortopedista especialista", depois internos e até 5 externos. "Veja também" com 4 destinos do mesmo cluster. Depois: cards no `/blog` e os 3 mais recentes na home, sitemap, cards nas páginas de serviço, `critical.py` + conserto do noscript aninhado, deploy, marcar no Drive, sitemap no GSC e URLs no Bing. A redatora sobe ao longo do dia; se a pasta parecer vazia, listar de novo antes de dizer que não há nada.
+
+**Depois de qualquer rebuild dos artigos, rodar também `cards_extra.py` (cards extras de Veja também) e `alts_fix.py` (alt das fotos com a keyword do artigo, pedido do Anderson em 02/10/2026). Alt de foto de artigo = descrição honesta da cena + a keyword do artigo; foto do médico sempre com "Dr. Henrique Cembranelli, ortopedista especialista em mão em Belo Horizonte" ou variação.
+
+**IndexNow (desde 02/10/2026):** chave em `C:/Users/User/Documents/APIs/indexnow-drhenriquecembranelli.txt`, arquivo `<chave>.txt` na raiz do site. Ao publicar, além do sitemap no GSC e do SubmitUrlBatch no Bing, disparar `POST https://api.indexnow.org/indexnow` com host, key, keyLocation e urlList (202 = aceito).
+

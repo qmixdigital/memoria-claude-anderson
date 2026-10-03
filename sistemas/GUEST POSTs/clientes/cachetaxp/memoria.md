@@ -33,3 +33,4 @@ Nunca repetir a mesma âncora mais de 2 vezes no total. Variar com adjetivo, ord
 | 30/09/2026 | dm.com.br | caixeta online (+ internos "sites para consultar placa de veículo", "lojas para comprar brincos na internet") | https://cachetaxp.com/ | https://conteudo.qmix.com.br/e8af96dea8f8730d1fe4acc167f8c659 | |
 
 Cópias em `materias/<slug>.json`, `materias/<slug>.html` e `materias/<slug>.webp`.
+- 02/10/2026: matéria do painel (token e8af96de...) APAGADA a pedido do Anderson, antes de qualquer publicação. Cópias locais em materias/ mantidas.

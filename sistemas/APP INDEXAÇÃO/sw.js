@@ -1,4 +1,4 @@
-const CACHE_NAME = 'qmix-indexation-v46';
+const CACHE_NAME = 'qmix-indexation-v47';
 const EXTRA_ASSETS = ['/gsc.js', '/gsc.json'];
 const ASSETS = [
   '/',

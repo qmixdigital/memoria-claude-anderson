@@ -43,3 +43,5 @@
 - [Keyword da matéria ≠ âncora](feedback-keyword-materia-diferente-da-ancora.md) — matéria mira termo vizinho; âncora exata do cliente só no link, para o portal não competir com a página dele
 - [Indexação só com ordem](feedback-indexacao-so-com-ordem.md) — nunca enviar ao Apex por conta própria, nem ao lançar link publicado; o campo de URL do pedido indexa sozinho
 - [Sem troca após publicado](feedback-sem-troca-apos-publicado.md) — matéria que já saiu no portal não tem troca de link/âncora/texto; ajuste de cliente só vale antes de publicar
+- [Conteúdos proibidos](qmix-conteudos-proibidos.md) — diploma sem cursar, rateio de cursos, documentos falsos: não se publica em nenhum portal; aviso sempre visível na ficha, checkout e envio de dados
+- [Sessão do cliente e cache](qmix-sessao-cliente-cache.md) — API/áreas logadas com private no-store (SWR devolvia /api/clientes/me antigo); rotas login/logout criadas; checkout identifica só pela sessão
