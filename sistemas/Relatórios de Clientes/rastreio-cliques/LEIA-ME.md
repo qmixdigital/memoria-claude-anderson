@@ -64,6 +64,18 @@ Nenhum botão precisa ser alterado. Para nomear um CTA específico, opcionalment
 <div data-rastreio-local="cta_pos_depoimentos"> ... </div>
 ```
 
+## Clínica com mais de um endereço (opcional)
+
+Marque o link (ou um elemento pai) com `data-rastreio-unidade="nome_da_unidade"`
+e o `generate_lead` passa a levar o parâmetro `unidade`. Registre `unidade` como
+dimensão personalizada. Primeiro uso: drjoaolopo.com.br (barro_preto e
+belvedere), 03/10/2026.
+
+O `engajamento.js` também ganhou, no mesmo dia: parâmetro `destino` no
+`cta_click` (página ou âncora interna clicada) e o atributo
+`data-rastreio-leitura` para marcar o corpo de texto de páginas que não usam
+as classes de blog. Registre `destino` como dimensão.
+
 ## Instalar também no blog
 
 O blog é onde o paciente chega pelo Google e pela IA, então é lá que a maior

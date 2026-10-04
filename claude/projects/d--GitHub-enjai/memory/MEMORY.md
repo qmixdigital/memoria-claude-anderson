@@ -11,6 +11,10 @@
 - [project_resend_dominios.md](project_resend_dominios.md) — Resend = 1 conta p/ 4 sites (Pro 50k/mês); portuga+skipark tinham e-mail QUEBRADO (domínio não verificado) → corrigido via Cloudflare API 2026-08-04; truenet ainda pendente
 
 - [project_reposicionamento_sem_comprar.md](project_reposicionamento_sem_comprar.md) — 2026-09-29: tirar "comprar" dos 4 sites SMM; FASE 1 (vitrine) FEITA e no ar nos 4; backups .bak-semcomprar; fase 2 = corpo das landings/FAQ/categoria-content
+- [project_migracao_dominio_enjai_social.md](project_migracao_dominio_enjai_social.md) — 2026-10-03: enjai MIGROU para enjai.social (virada feita); enjai.com.br responde 301 menos /api/ (webhook OpenPix fica lá); NÃO trocar sentinela anonimo@enjai.com.br; OAuth Google e Mudança de endereço no GSC feitos; manter 301 e domínio antigo até abr/2027
+- [project_aviso_dominio_email.md](project_aviso_dominio_email.md) — Aviso por e-mail da troca p/ enjai.social + reinstalar app p/ manter 10%; 1ª leva (20 do app) enviada 2026-10-03; 5.405 clientes + 2.561 leads em rampa diária (cron 12:10 BRT, ~3 semanas)
+- [project_skipark_aviso_mudanca_enjai.md](project_skipark_aviso_mudanca_enjai.md) — 2026-10-03: SkiPark, Portuga e TrueNet vão migrar p/ enjai.social "em breve" e depois ser eliminados (decisão do Anderson); aviso enviado a 1.095 usuários dos três; migração ainda NÃO feita; lista do que o e-mail prometeu
+- [project_estrategia_trafego_enjai_social.md](project_estrategia_trafego_enjai_social.md) — Estratégia de tráfego aprovada 2026-10-03: afiliados reativados (saque mín. R$ 20, e-mail em rampa) + consolidar 93 landings em ~37 na semana de 20/10/2026 (plano em docs/plano-consolidacao-landings.md; só executo se ele chamar)
 - [project_fluxos_email.md](project_fluxos_email.md) — 3 fluxos automáticos de e-mail (pós-entrega, lead ferramenta, win-back 2+ pedidos) via Resend, cron diário 11:30 BRT nos 3 sites; tabela EmailFluxo; implantado 2026-09-11 (autorização total); enjai perdeu 99% do orgânico no Spam Update ago/2026
 - [project_campanha_app_lancamento.md](project_campanha_app_lancamento.md) — Campanha e-mail "app chegou" (10%+7d, Resend) — portuga OK 637 envios 2026-08-21; replicar truenet/skipark/enjai; script /tmp/camp/campanha_app.py
 - [project_campanha_reativacao.md](project_campanha_reativacao.md) — EM CONSTRUÇÃO: campanha cupom 30% (link único, compra única) p/ ~4.309 clientes que compraram 1x; funil→2ª campanha p/ 2 compras; VIP fica em 3 pedidos (opção A); disparo via API transacional + descadastro próprio
@@ -36,7 +40,7 @@
 - [reference_validacao_reels_video.md](reference_validacao_reels_video.md) — Causa raiz tickets Reels: link /p/ (foto/carrossel) em produto de vídeo falha 52% no painel; validação via post_info (media_type)
 - [reference_tickets_regras.md](reference_tickets_regras.md) — Tickets exigem pedido válido + anti-duplicata por pedido (anexa ao aberto); anônimo valida só pelo número; deploy usa `next build` direto (npm run build quebra no Node 18)
 
-- [reference_dominios_sites.md](reference_dominios_sites.md) — Domínios reais: portuga = portugaldigital.com.br (não portuga.com.br); enjai/truenet/skipark = *.com.br
+- [reference_dominios_sites.md](reference_dominios_sites.md) — Domínios reais: enjai = enjai.social (desde 2026-10-03); portuga = portugaldigital.com.br (não portuga.com.br); truenet/skipark = *.com.br
 
 ## Reference (novo)
 - [reference_bug_partial_check_smm.md](reference_bug_partial_check_smm.md) — Bug corrigido 2026-09-21: cron check-smm não tratava "partial" → pedidos pagos presos; fix nos 4 sites (marca ERRO + alerta ENTREGA PARCIAL, sem risco de reenvio). OpenPix caiu 4min, sem fallback (MP desabilitado)

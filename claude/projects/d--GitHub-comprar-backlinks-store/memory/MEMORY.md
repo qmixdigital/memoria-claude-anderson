@@ -1,0 +1,2 @@
+- [Redesign direto, sem design-fable](redesign-direto-sem-design-fable.md) — com /frontend-design, implementar direto; design-fable só se chamado pelo nome
+- [Gosto visual: claro e técnico](gosto-visual-claro-e-tecnico.md) — rejeita preto + dourado com serifa "de IA"; quer claro, clean, linhas e listas

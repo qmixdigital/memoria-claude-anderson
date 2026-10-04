@@ -1,3 +1,5 @@
 - [Armadilhas do deploy no Pages](deploy-pages-armadilhas.md) — dist vazia deu 404 em 10/09; sempre `&&`, nunca servir dist/ local; hash nos assets; edge cache preso
 - [Heredoc corrompe escapes](heredoc-escapes-quebram.md) — editar build-*.py com Edit/Write, nunca via heredoc; posts.json compacto sem indent
 - [URLs clicáveis no resumo](urls-clicaveis-no-resumo.md) — toda entrega fecha com as URLs absolutas de cada página criada ou alterada, para ele conferir no navegador
+- [Chaves do GSC por variável de ambiente](gsc-chaves-por-variavel.md) — sem exportar as três variáveis o gsc_api falha com NoneType; propriedade na chave enjai
+- [Visual moderno, sem arco](visual-moderno-sem-arco.md) — reprovou foto em arco, creme e serifa itálica; padrão é o painel digital com Poppins, verde/teal e ícones SVG de nutrição

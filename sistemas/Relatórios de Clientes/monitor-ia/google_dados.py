@@ -383,6 +383,16 @@ def coletar_ga4(cfg, conf, dias):
         # share: botao de compartilhar do artigo (method = whatsapp | copiar_link)
         "compartilhar": corte_evento("share", "customEvent:method", 6),
         "compartilhar_paginas": corte_evento("share", "pagePath", 8),
+        # Extras do engajamento.js ampliado (03/10/2026, Dr. Henrique Cembranelli).
+        # Site sem esses eventos devolve lista vazia e o relatorio nao mostra o bloco.
+        "secoes": corte_evento("secao_vista", "customEvent:secao", 20),
+        "permanencia": corte_evento("permanencia", "customEvent:segundos", 6),
+        "cta_visto": corte_evento("cta_visto", "customEvent:local", 15),
+        "lead_local": corte_evento("generate_lead", "customEvent:local", 15),
+        "copiado": corte_evento("copiar_texto", "customEvent:trecho", 10),
+        "paginas_404": corte_evento("pagina_404", "pagePath", 10),
+        "tipo_pagina": corte_evento("page_view", "contentGroup", 8),
+        "tema": corte_evento("page_view", "customEvent:tema", 8),
     }
     engajamento["total_social"] = sum(x["contagem"] for x in engajamento["social"])
     engajamento["total_faq"] = sum(x["contagem"] for x in engajamento["faq"])

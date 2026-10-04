@@ -1,0 +1,37 @@
+{
+ "https://revistamsaude.com.br/materia/ortopedista-de-joelho-em-goiania": {
+  "url": "https://revistamsaude.com.br/materia/ortopedista-de-joelho-em-goiania",
+  "status": "nao_indexado",
+  "detalhe": "Google hasn't returned any results for this query."
+ },
+ "https://revistamsaude.com.br/materia/complexo-disco-osteofitario-o-que-e": {
+  "url": "https://revistamsaude.com.br/materia/complexo-disco-osteofitario-o-que-e",
+  "status": "indexado",
+  "posicao": 1
+ },
+ "https://revistamsaude.com.br/materia/remedio-para-hernia-de-disco-inflamada": {
+  "url": "https://revistamsaude.com.br/materia/remedio-para-hernia-de-disco-inflamada",
+  "status": "indexado",
+  "posicao": 1
+ },
+ "https://revistamsaude.com.br/materia/l5-s1-o-que-significa-na-coluna": {
+  "url": "https://revistamsaude.com.br/materia/l5-s1-o-que-significa-na-coluna",
+  "status": "indexado",
+  "posicao": 1
+ },
+ "https://revistamsaude.com.br/materia/nervo-ciatico-afeta-a-bexiga": {
+  "url": "https://revistamsaude.com.br/materia/nervo-ciatico-afeta-a-bexiga",
+  "status": "nao_indexado",
+  "detalhe": "Google hasn't returned any results for this query."
+ },
+ "https://revistamsaude.com.br/materia/espondilopatia-degenerativa-o-que-e": {
+  "url": "https://revistamsaude.com.br/materia/espondilopatia-degenerativa-o-que-e",
+  "status": "nao_indexado",
+  "detalhe": "Google hasn't returned any results for this query."
+ },
+ "https://revistamsaude.com.br/materia/dormencia-nas-costas-o-que-pode-ser": {
+  "url": "https://revistamsaude.com.br/materia/dormencia-nas-costas-o-que-pode-ser",
+  "status": "indexado",
+  "posicao": 1
+ }
+}

@@ -120,11 +120,16 @@
     var tipo = tipoDoLink(alvo.getAttribute("href"));
     if (!tipo) return;
 
-    despachar("generate_lead", {
+    var parametros = {
       metodo: tipo,                        // whatsapp | telefone | email
       local: localDoBotao(alvo),           // hero, rodape, botao_flutuante...
       texto_botao: texto(alvo),
       pagina: location.pathname
-    });
+    };
+    // Opcional: clinica com mais de um endereco marca o botao com
+    // data-rastreio-unidade="nome_da_unidade" (no proprio link ou num pai).
+    var unidade = alvo.closest("[data-rastreio-unidade]");
+    if (unidade) parametros.unidade = unidade.getAttribute("data-rastreio-unidade");
+    despachar("generate_lead", parametros);
   }, true);   // fase de captura: registra mesmo se outro script parar o evento
 })();

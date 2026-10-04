@@ -83,3 +83,5 @@ Uso registrado: 12/09/2026, projeto **1177933** com os 36 guest posts do lote 8 
 
 21/09/2026: projeto 1197988, Casa da Toalha tier 2 (6 posts -> matéria do r7), 6 créditos, saldo 3901 -> 3895.
 - projeto 1201075 (22/09/2026): Jose Mario rodada 2, 20 URLs, 20 creditos (3951 -> 3931)
+
+- 03/10/2026: projeto 1230289 (José Mário, Instagram, rodada 3), 20 URLs, 20 créditos cobrados (1 por URL), saldo 1853 → 1833. Enviado com ordem expressa do Anderson.

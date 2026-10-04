@@ -10,7 +10,7 @@ metadata:
 
 Domínios públicos reais dos 4 sites SMM (para curl/verificação ao vivo):
 
-- **enjai** → `www.enjai.com.br`
+- **enjai** → `enjai.social` (desde 2026-10-03; `enjai.com.br` só redireciona 301, ver [[project_migracao_dominio_enjai_social]])
 - **truenet** → `www.truenet.com.br`
 - **skipark** → `www.skipark.com.br`
 - **portuga** → `www.portugaldigital.com.br` ⚠️ (NÃO é `portuga.com.br` — bater no domínio errado retorna 000/timeout e parece que o site caiu, mas é só domínio inexistente)

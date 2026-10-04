@@ -1484,6 +1484,17 @@ LOCAIS_PT = {
     "pagina_legal": "Páginas de política e termos",
     "pagina_404": "Página de erro 404",
     "conteudo": "Corpo do conteúdo",
+    "menu_desktop": "Menu do topo (computador)",
+    "menu_celular": "Menu do celular",
+    "barra_fixa_celular": "Barra fixa no celular",
+    "veja_tambem": "Veja também",
+    "artigo": "Texto do artigo",
+    "lista_artigos": "Lista de artigos do blog",
+    "blog_home": "Artigos na página inicial",
+    "rodape_equipe": "Equipe no rodapé",
+    "breadcrumb": "Trilha de navegação",
+    "familia": "Bloco da família",
+    "aviso_cookies": "Aviso de cookies",
     "formulario": "Formulário",
     "faq": "Perguntas frequentes",
     "cta_post": "Chamada no fim do artigo",
@@ -1597,7 +1608,8 @@ def bloco_engajamento(eng):
     buscas = eng.get("buscas") or []
     saidas = eng.get("saidas") or []
     compartilhar = eng.get("compartilhar") or []
-    if not (social or cta or faq or leitura or buscas or compartilhar):
+    if not (social or cta or faq or leitura or buscas or compartilhar
+            or eng.get("cta_visto") or eng.get("secoes")):
         return ""
 
     def rotulo_local(n):
@@ -1692,6 +1704,75 @@ def bloco_engajamento(eng):
             '  <p class="linhafina">Links externos clicados, sem contar WhatsApp e redes sociais.</p>\n  '
             + barras([(s["nome"], s["contagem"]) for s in saidas],
                      formato=lambda x: f"{num(x)} cliques"))
+
+    # ---- extras do engajamento.js ampliado: so aparecem quando o site envia
+    cta_visto = eng.get("cta_visto") or []
+    if cta_visto:
+        leads = {x["nome"]: x["contagem"] for x in (eng.get("lead_local") or [])}
+
+        def taxa(v):
+            if not v["contagem"]:
+                return "-"
+            return str(round(100 * leads.get(v["nome"], 0) / v["contagem"], 1)).replace(".", ",") + "%"
+
+        linhas = "".join(
+            f'<tr><td data-rotulo="Botão">{esc(rotulo_local(v["nome"]))}</td>'
+            f'<td class="n num" data-rotulo="Vezes visto">{num(v["contagem"])}</td>'
+            f'<td class="n num" data-rotulo="Cliques">{num(leads.get(v["nome"], 0))}</td>'
+            f'<td class="n num" data-rotulo="Taxa de clique">{taxa(v)}</td></tr>'
+            for v in cta_visto)
+        partes += f"""
+  <h4>Taxa de clique de cada botão de contato</h4>
+  <p class="linhafina">Quantas vezes cada botão apareceu na tela do visitante e quantas
+     vezes foi clicado. Botão muito visto e pouco clicado é o primeiro a rever.</p>
+  <div class="tabwrap"><table class="tab" role="table">
+    <caption>Botões de contato por posição na página, com exibições, cliques e taxa de clique.</caption>
+    <thead role="rowgroup"><tr role="row">
+      <th scope="col">Botão</th><th scope="col" class="n">Vezes visto</th>
+      <th scope="col" class="n">Cliques</th><th scope="col" class="n">Taxa de clique</th>
+    </tr></thead><tbody role="rowgroup">{linhas}</tbody>
+  </table></div>"""
+    if eng.get("secoes"):
+        partes += (
+            "\n  <h4>Até onde o visitante desce nas páginas</h4>\n"
+            '  <p class="linhafina">Cada seção conta uma vez por visita quando entra na tela. '
+            "A queda de uma seção para a seguinte mostra onde a página perde o leitor.</p>\n  "
+            + barras([(rotulo_local(s["nome"]), s["contagem"]) for s in eng["secoes"]],
+                     formato=lambda x: f"{num(x)} visitas"))
+    if eng.get("permanencia"):
+        ordem = {"30": "Ficou 30 segundos", "60": "Ficou 1 minuto",
+                 "180": "Ficou 3 minutos", "300": "Ficou 5 minutos"}
+        tempo = {x["nome"]: x["contagem"] for x in eng["permanencia"]}
+        partes += (
+            "\n  <h4>Quanto tempo as pessoas ficam com a página aberta</h4>\n"
+            '  <p class="linhafina">Tempo com a aba visível, contado em quatro marcos.</p>\n  '
+            + barras([(ordem[k], tempo[k]) for k in ("30", "60", "180", "300") if k in tempo],
+                     formato=lambda x: f"{num(x)} visitas"))
+    if eng.get("tema"):
+        partes += (
+            "\n  <h4>Temas mais vistos</h4>\n"
+            '  <p class="linhafina">Visualizações de página agrupadas pelo assunto.</p>\n  '
+            + barras([(t["nome"].replace("_", " ").capitalize(), t["contagem"]) for t in eng["tema"]],
+                     formato=lambda x: f"{num(x)} visualizações"))
+    if eng.get("tipo_pagina"):
+        partes += (
+            "\n  <h4>Tipos de página mais vistos</h4>\n  "
+            + barras([(t["nome"].replace("_", " ").capitalize(), t["contagem"]) for t in eng["tipo_pagina"]],
+                     formato=lambda x: f"{num(x)} visualizações"))
+    if eng.get("copiado"):
+        partes += (
+            "\n  <h4>Textos copiados do site</h4>\n"
+            '  <p class="linhafina">Quem copia endereço, telefone ou um trecho costuma estar '
+            "perto de entrar em contato.</p>\n  "
+            + barras([(c["nome"], c["contagem"]) for c in eng["copiado"]],
+                     formato=lambda x: f"{num(x)} vezes"))
+    if eng.get("paginas_404"):
+        partes += (
+            "\n  <h4>Endereços que não existem e foram acessados</h4>\n"
+            '  <p class="linhafina">Cada um é um link quebrado em algum lugar, que pode virar '
+            "redirecionamento.</p>\n  "
+            + barras([(c["nome"], c["contagem"]) for c in eng["paginas_404"]],
+                     formato=lambda x: f"{num(x)} acessos"))
 
     return f"""
   <h3>Engajamento no site</h3>

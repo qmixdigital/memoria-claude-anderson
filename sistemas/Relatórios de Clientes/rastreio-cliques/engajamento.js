@@ -11,7 +11,7 @@
  *   social_click   rede, local, texto_botao, pagina
  *                  clique em Instagram, YouTube, Facebook, Doctoralia, Google
  *                  Maps, LinkedIn, TikTok
- *   cta_click      texto_botao, local, pagina
+ *   cta_click      texto_botao, local, destino (link interno), pagina
  *                  clique em botao de chamada que NAO e contato direto
  *                  (ex.: "Agendar Consulta" que rola ate a secao)
  *   faq_open       pergunta, pagina
@@ -135,7 +135,10 @@
     }
 
     if (alvo.matches && alvo.matches(SELETOR_CTA)) {
-      despachar("cta_click", { texto_botao: texto(alvo), local: localDoBotao(alvo) });
+      var dados = { texto_botao: texto(alvo), local: localDoBotao(alvo) };
+      // destino: para onde o clique leva (pagina interna ou ancora da pagina)
+      if (href && (href.charAt(0) === "/" || href.charAt(0) === "#")) dados.destino = href.slice(0, 100);
+      despachar("cta_click", dados);
     }
   }, true);
 
@@ -150,7 +153,7 @@
 
   // ------------------------------------------------------------- leitura
   // So em pagina de artigo: mede ate onde o leitor chegou no corpo do texto.
-  var artigo = document.querySelector(".post-conteudo, article .entry-content, article.post");
+  var artigo = document.querySelector(".post-conteudo, article .entry-content, article.post, [data-rastreio-leitura]");
   if (artigo && "IntersectionObserver" in window) {
     var marcos = [25, 50, 75, 100];
     var enviados = {};

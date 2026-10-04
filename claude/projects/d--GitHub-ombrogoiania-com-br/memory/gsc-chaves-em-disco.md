@@ -19,7 +19,7 @@ Quando o MCP `cofre` não está disponível na sessão, os mesmos arquivos estã
 
 ```bash
 export BACKLINKGUARD_GOOGLE_SA="C:/Users/User/Documents/APIs/backlinkguard-google-sa.json"
-export ENJAI_493011_5BC78FF8F355="C:/Users/User/Documents/APIs/enjai-493011-5bc78ff8f355.json"
+export ENJAI_493011_5BC78FF8F355="<<REMOVIDO>>"
 export SEOQMIX_024E9465E9D9="C:/Users/User/<<REMOVIDO>>"
 python scripts/gsc_api.py --propriedades      # 190 propriedades visíveis
 python scripts/gsc_api.py DOMINIO 365

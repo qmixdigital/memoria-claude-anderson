@@ -108,3 +108,39 @@ Os 44 domínios que o operador marcou para exclusão em 22/09/2026 ficaram de fo
 
 Âncoras novas usadas nesta rodada (nenhuma repetida, todas inéditas para o cliente): acompanhamento online de musculação, nutricionista e personal trainer online, personal online de musculação, personal trainer online com acompanhamento semanal, personal trainer online de musculação, personal trainer online do Instagram, personal trainer online especialista em hipertrofia, personal trainer online no pós-parto, personal trainer online para definição, personal trainer online para ganho de massa, personal trainer online para hipertrofia, personal trainer online para idosos, personal trainer online para mulheres, personal trainer online para perder gordura, personal trainer online para quem tem dor, personal trainer online para treinar em casa, personal trainer online que ajusta o treino, personal trainer online que corrige a execução, personal trainer online que monta treino personalizado, treinador online de Goiânia.
 
+## Rodada 3 (03/10/2026): 20 guest posts diretos para o perfil
+
+15 nos parceiros do Jean (MCP) e 5 na rede própria (portal-engine, clinicas-vps). Planilha: D:/PORTAIS/BACKLINKS/instagram-josemario.xlsx (60 linhas). Pipeline: D:/PORTAIS/BACKLINKS/josemario-instagram3.
+
+A rede própria está quase esgotada para este cliente (portais livres sem tráfego ou na lista de exclusão); por isso o peso foi para o Jean. Sobram no Jean, sem uso para este cliente: achixclip, afnewss, agenciadivulgar, aguabrancaemfoco, alagoas200, alagoasdiario, apucarananoticias, astralassessoria, canaljustica, ciberlex, professortrabalhista.
+
+Observações: saopauloaberta não tem plugin de SEO (sai sem meta description e sem og:image, a imagem destacada aparece); xthor publica sem a categoria na URL; portalgc tem sufixo de 30 caracteres no title, manter título até 38.
+
+| rede | portal | pauta (keyword) | âncora | URL |
+|---|---|---|---|---|
+| Jean | jornal.seg.br | quanto pesa a barra do supino | personal trainer online para ganhar força | https://jornal.seg.br/saude/quanto-pesa-a-barra-do-supino/ |
+| Jean | abadianoticia.com.br | quem tem varizes pode fazer agachamento | personal trainer online que adapta o exercício | https://abadianoticia.com.br/saude/varizes-pode-fazer-agachamento/ |
+| Jean | jornalnoticiaonline.com.br | como preparar whey com leite | consultoria de musculação a distância | https://jornalnoticiaonline.com.br/saude/como-preparar-whey-com-leite/ |
+| Jean | noticiasdefloriano.com.br | quem tem nervo ciático pode fazer academia | personal trainer online com avaliação física inicial | https://noticiasdefloriano.com.br/saude/nervo-ciatico-pode-fazer-academia/ |
+| Jean | jornalbahia.com.br | quem tem desgaste no joelho pode fazer caminhada | personal trainer online para quem voltou a treinar | https://jornalbahia.com.br/saude/desgaste-no-joelho-pode-fazer-caminhada/ |
+| Jean | noticiasdetimon.com.br | quem tem artrite reumatoide pode fazer musculação | personal trainer online para maiores de 40 | https://noticiasdetimon.com.br/saude/artrite-reumatoide-pode-fazer-musculacao/ |
+| Jean | itapenoticias.com.br | quem tem lesão no menisco pode fazer caminhada | plano de treino com personal trainer online | https://itapenoticias.com.br/saude/lesao-no-menisco-pode-fazer-caminhada/ |
+| Jean | saopauloaberta.com.br | como ativar o hormônio do emagrecimento | personal trainer online para quem tem pouco tempo | https://saopauloaberta.com.br/saude/como-ativar-o-hormonio-do-emagrecimento/ |
+| Jean | itapecurunoticias.com.br | quem tem hérnia de hiato pode fazer musculação | personal trainer online com vídeo de execução | https://itapecurunoticias.com.br/saude/hernia-de-hiato-pode-fazer-musculacao/ |
+| Jean | cocaisnoticias.com.br | quem tem pedra no rim pode fazer academia | personal trainer online para rotina de academia | https://cocaisnoticias.com.br/saude/pedra-no-rim-pode-fazer-academia/ |
+| Jean | luiziananoticias.com.br | como faz panqueca de whey | treinador online de força e hipertrofia | https://luiziananoticias.com.br/saude/como-faz-panqueca-de-whey/ |
+| Jean | sp2040.net.br | como emagrecer com hipotireoidismo | acompanhamento de treino a distância | https://sp2040.net.br/saude/como-emagrecer-com-hipotireoidismo/ |
+| Jean | teixeiraemfoco.com.br | como eliminar gordura nas coxas | personal trainer online para treino de pernas | https://teixeiraemfoco.com.br/saude/como-eliminar-gordura-nas-coxas/ |
+| Jean | portalgc.com.br | como tirar gordura do braço | personal trainer online para quem treina sozinho | https://portalgc.com.br/saude/como-tirar-gordura-do-braco/ |
+| Jean | xthor.com.br | quem fez abdominoplastia pode fazer agachamento | personal trainer online com liberação médica | https://xthor.com.br/abdominoplastia-pode-fazer-agachamento/ |
+| própria | ortopedistadeombro | como dormir com tendinite no ombro | personal trainer online que adapta o treino à lesão | https://ortopedistadeombro.com.br/dor/como-dormir-com-tendinite-no-ombro/ |
+| própria | gpnoticias | onde fica a panturrilha | personal trainer online que monta a semana de treino | https://gpnoticias.com/onde-fica-a-panturrilha/ |
+| própria | agencianacional | como queimar calorias | treino online acompanhado por profissional | https://agencianacionaldenoticias.com/como-queimar-calorias/ |
+| própria | noticiasagoras | quem tem sacroileíte pode fazer musculação | personal trainer online para quem sente dor nas costas | https://noticiasagoras.com/sacroileite-pode-fazer-musculacao/ |
+| própria | noticiasdodia | como aliviar dor na panturrilha | personal trainer online para quem corre | https://noticiasdodia.net/como-aliviar-dor-na-panturrilha/ |
+
+Âncoras novas usadas nesta rodada (nenhuma repetida, todas inéditas para o cliente): acompanhamento de treino a distância, consultoria de musculação a distância, personal trainer online com avaliação física inicial, personal trainer online com liberação médica, personal trainer online com vídeo de execução, personal trainer online para ganhar força, personal trainer online para maiores de 40, personal trainer online para quem corre, personal trainer online para quem sente dor nas costas, personal trainer online para quem tem pouco tempo, personal trainer online para quem treina sozinho, personal trainer online para quem voltou a treinar, personal trainer online para rotina de academia, personal trainer online para treino de pernas, personal trainer online que adapta o exercício, personal trainer online que adapta o treino à lesão, personal trainer online que monta a semana de treino, plano de treino com personal trainer online, treinador online de força e hipertrofia, treino online acompanhado por profissional.
+
+Links de entrada (rede própria): 3 em ortopedistadeombro, gpnoticias e noticiasdodia; 2 em agencianacional e noticiasagoras. Apex: projeto 1230289, 20 URLs, 20 créditos, enviado em 03/10/2026 por ordem do operador.
+
+Linkagem interna nos 15 do Jean (cobrada pelo operador em 03/10/2026): cada post recebeu 2 links internos do próprio portal num parágrafo antes do último, depois do link do cliente, com rótulo variado. Regra passa a valer para toda matéria no Jean.
