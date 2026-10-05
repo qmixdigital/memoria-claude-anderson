@@ -45,3 +45,6 @@
 - [Sem troca após publicado](feedback-sem-troca-apos-publicado.md) — matéria que já saiu no portal não tem troca de link/âncora/texto; ajuste de cliente só vale antes de publicar
 - [Conteúdos proibidos](qmix-conteudos-proibidos.md) — diploma sem cursar, rateio de cursos, documentos falsos: não se publica em nenhum portal; aviso sempre visível na ficha, checkout e envio de dados
 - [Sessão do cliente e cache](qmix-sessao-cliente-cache.md) — API/áreas logadas com private no-store (SWR devolvia /api/clientes/me antigo); rotas login/logout criadas; checkout identifica só pela sessão
+- [Economia de tokens](feedback-economia-de-tokens.md) — limite semanal: nada de agentes em massa sem ele pedir; conferir por script; parar na hora se reclamar
+- [Listas divididas com o COE](qmix-pedido-listas-joelho-2026-10.md) — coluna entregue 04/10/2026 (faturas 203/204, demandas da Kátia); joelho do Ulbiramar aguardando pesquisa de médicos; regras do formato
+- [Pedido mão/pé/dor 2026-10](qmix-pedido-mao-pe-dor-2026-10.md) — 10 listas prontas em D:\tmp\joelho\art4, faltam portais e preço do Anderson

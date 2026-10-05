@@ -9,7 +9,7 @@ Criada em 19/09/2026. **Atualizar aqui** a cada matéria: âncora, URL, portal, 
 - **Credenciais verificadas:** nenhuma citada; o cliente entra só pela âncora, nunca como fonte.
 - **Regras editoriais:** um link do cliente por post, primeiro link do conteúdo; sem travessão; nunca "solução" (filtro do validador); âncora com keyword da página de destino, sem repetir mais de 2x.
 - **Fatos e dados úteis recorrentes:** Portaria GM/MS 888/2021 (dureza 300 mg/L, ferro 0,3, manganês 0,1, nitrato 10 mg/L N, SDT 500); CONAMA 430/2011 (pH 5-9, temp <40 °C, óleos minerais 20 mg/L, vegetais 50, DBO remoção 60%); Lei 9.433/1997 (outorga); Lei 14.026/2020 (90% esgoto tratado até 2033); SNIS 2022 (~52% do esgoto tratado); NR-13 (água de caldeira); NBR 7229/13969 (fossa e tratamento complementar); NBR 12212/12244 (poço); RDC 275/2002 (BPF alimentos); RDC 6/2012 (lavanderia hospitalar); Programa Água Doce (dessalinizadores no semiárido); osmose 95-99% rejeição, 10-20 bar salobra, 55-70 bar mar, recuperação 50-75% poço e 40-50% mar; escala de dureza USGS 60/120/180.
-- **Ângulos ainda não usados:** hotéis e hemodiálise (páginas /sistema-de-tratamento-de-agua-para-hoteis/ e /-hemodialise/), água de lavagem de veículos, reúso em condomínio, torre de resfriamento isolada, filtro de flúor/alumínio industrial, /equipamentos-para-tratamento-de-agua/ (hub), /osmose-reversa/agua-destilada/ (1.298 imp).
+- **Ângulos ainda não usados:** água de lavagem de veículos, reúso em condomínio, torre de resfriamento isolada, filtro de flúor/alumínio industrial.
 
 ## Âncoras já usadas
 
@@ -55,6 +55,21 @@ Criada em 19/09/2026. **Atualizar aqui** a cada matéria: âncora, URL, portal, 
 | tratamento de água para lavanderia industrial | https://rotaambiental.com.br/sistema-de-tratamento-de-agua-em-lavanderias/ | barranews.com.br | 2026-09-19 (lote 2, aguardando publicação) |
 | filtro para retirar nitrato da água | https://rotaambiental.com.br/filtro-para-retirar-nitrato-da-agua/ | pontonaturalbrasil.com.br | 2026-09-19 (lote 2, aguardando publicação) |
 | tratamento de água para indústria têxtil | https://rotaambiental.com.br/sistema-de-tratamento-de-agua-para-industria-textil/ | gpnoticias.com | 2026-09-19 (lote 2, aguardando publicação) |
+| sistema de tratamento de água para hemodiálise | https://rotaambiental.com.br/sistema-de-tratamento-de-agua-para-hemodialise/ | seuguiadesaude.com.br | 2026-10-04 (lote 3) |
+| filtro para remoção de flúor | https://rotaambiental.com.br/filtro-para-remocao-de-fluor/ | saudeemalta.net.br | 2026-10-04 (lote 3) |
+| filtro para remoção de alumínio da água | https://rotaambiental.com.br/filtros-para-remocao-de-aluminio-da-agua/ | revistatopsaude.com.br | 2026-10-04 (lote 3) |
+| diferença entre osmose reversa e água destilada | https://rotaambiental.com.br/osmose-reversa/agua-destilada/ | olharmoderno.com | 2026-10-04 (lote 3) |
+| sistema de deionização da água | https://rotaambiental.com.br/deionizacao-da-agua/ | wtw19.com.br | 2026-10-04 (lote 3) |
+| mini estação de tratamento de esgoto | https://rotaambiental.com.br/estacao-de-tratamento-de-esgoto-compacta/ | qmixdigital.com.br | 2026-10-04 (lote 3) |
+| filtro para água de poço artesiano | https://rotaambiental.com.br/filtro-para-poco-artesiano/ | euvo.com.br | 2026-10-04 (lote 3) |
+| tratamento de água para hotéis | https://rotaambiental.com.br/sistema-de-tratamento-de-agua-para-hoteis/ | viajenodetalhe.com.br | 2026-10-04 (lote 3) |
+| abrandador de água | https://rotaambiental.com.br/filtro-abrandador-de-agua/ | revistadeducao.com.br | 2026-10-04 (lote 3) |
+| filtro para ferro e manganês | https://rotaambiental.com.br/filtro-para-remocao-de-ferro-e-manganes/ | desassossegada.com.br | 2026-10-04 (lote 3) |
+| filtro de água para indústria de alimentos | https://rotaambiental.com.br/filtro-de-agua-para-industria-alimenticia/ | oiempreendedores.com.br | 2026-10-04 (lote 3) |
+| sistemas de tratamento de efluentes | https://rotaambiental.com.br/sistemas-de-tratamento-de-efluentes/ | canaljustica.jor.br (Jean) | 2026-10-04 (lote 3) |
+| tratamento de água de poço artesiano | https://rotaambiental.com.br/estacao-de-tratamento-de-agua-de-poco-artesiano/ | ciberlex.adv.br (Jean) | 2026-10-04 (lote 3) |
+| equipamentos para tratamento de água | https://rotaambiental.com.br/equipamentos-para-tratamento-de-agua/ | professortrabalhista.adv.br (Jean) | 2026-10-04 (lote 3) |
+| tratamento de água para caldeiras | https://rotaambiental.com.br/tratamento-de-agua-para-caldeiras-e-torres-de-resfriamento/ | jornal.seg.br (Jean) | 2026-10-04 (lote 3) |
 
 Nunca repetir a mesma âncora mais de 2 vezes no total. Variar com adjetivo, ordem ou localidade.
 
@@ -100,6 +115,21 @@ Nunca repetir a mesma âncora mais de 2 vezes no total. Variar com adjetivo, ord
 - lavanderia industrial: Lavanderia industrial: como a água dura encarece cada ciclo de lavagem (barranews, lote 2)
 - nitrato na água: Nitrato na água: de onde vem, por que ameaça bebês e como remover de verdade (pontonaturalbrasil, lote 2)
 - água na indústria têxtil: Água na indústria têxtil: tingimento, vapor, efluente e reúso (gpnoticias, lote 2)
+- água para hemodiálise: Água para hemodiálise: o que a norma exige e como a clínica trata cada litro (seuguiadesaude, lote 3)
+- excesso de flúor na água: Excesso de flúor na água: como reconhecer a fluorose e proteger as crianças (saudeemalta, lote 3)
+- alumínio na água: Alumínio na água: o que o laudo quer dizer, quem corre risco e como tratar (revistatopsaude, lote 3)
+- água destilada pode beber: Água destilada pode beber? O que ela é, para que serve e quando evitar (olharmoderno, lote 3)
+- água desmineralizada: Água desmineralizada: o que é, como é feita e onde a tecnologia depende dela (wtw19, lote 3)
+- mini estação de tratamento: Mini estação de tratamento de esgoto: como funciona, custo e norma (qmixdigital, lote 3)
+- água de poço barrenta: Água de poço barrenta: como descobrir a causa e clarear sem gastar à toa (euvo, lote 3)
+- água da torneira do hotel: Água da torneira do hotel: quando dá para beber e o que observar no quarto (viajenodetalhe, lote 3)
+- dureza da água: Dureza da água: o que é, como medir e por que ela queima o chuveiro (revistadeducao, lote 3)
+- água ferruginosa: Água ferruginosa: da fonte de estância ao poço que mancha a casa inteira (desassossegada, lote 3)
+- água para cervejaria: Água para cervejaria: o tratamento que define sabor, custo e licença (oiempreendedores, lote 3)
+- lançamento de efluentes: Lançamento de efluentes: multa, crime e defesa (canaljustica.jor.br, Jean, lote 3)
+- outorga de poço artesiano: Outorga de poço artesiano: quando é obrigatória (ciberlex.adv.br, Jean, lote 3)
+- água potável no trabalho: Água potável no trabalho: o que a lei garante (professortrabalhista.adv.br, Jean, lote 3)
+- inspeção de caldeiras: Inspeção de caldeiras: o que a NR-13 exige (jornal.seg.br, Jean, lote 3)
 
 ---
 
@@ -108,3 +138,5 @@ Nunca repetir a mesma âncora mais de 2 vezes no total. Variar com adjetivo, ord
 Lote 1 (2026-09-10): 20 guest posts na rede própria, registrados em D:/PORTAIS/BACKLINKS/rotaambiental.com.br.xlsx.
 Lote 2 (2026-09-19): 20 guest posts industriais, arquivos em D:/PORTAIS/BACKLINKS/rotaambiental2/ (rNN.html, out/, img/, pub.sh, pos_pub.sh, finaliza_r.py). Publicação na rede própria pelo portal-engine; 20/20 no ar em 20/09, planilha e ledger gravados, Apex projeto 1196577.
 Cópias dos HTML em `materias/`.
+Lote 3 (2026-10-04): 15 guest posts, 11 na rede própria (4 domínios novos com tráfego + 7 segundos artigos nos portais de maior tráfego) e 4 nos sites do Jean que ainda não linkavam o cliente (canaljustica, ciberlex, professortrabalhista, jornal.seg.br). Arquivos em D:/PORTAIS/BACKLINKS/rotaambiental3/ (tNN.html rede, jN.html Jean, plano_r.json, plano_jean.json). Os 4 do Jean foram publicados por script no gnd-motor (scripts/publicar-posts.ts), porque o conector MCP não conectou na sessão. Em 04/10 também foram corrigidos direto nos posts 10 links antigos do Jean (3 em 404, 7 por 301); os 33 links antigos estão na aba 'Links antigos Jean' da planilha.
+Apex do lote 3: projeto 1232788, 15 URLs, enviado em 04/10/2026.

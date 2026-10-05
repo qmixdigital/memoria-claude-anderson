@@ -42,9 +42,9 @@ Memória do cliente para matérias em portais de terceiros. Fonte inicial: `clie
 
   - OMS: lombalgia afetou 619 milhões em 2020, projeção 843 milhões até 2050
 
-  - PNS 2019: 23,4% dos adultos brasileiros com problema crônico de coluna
+  - PNS 2019: 21,6% dos adultos brasileiros (34,3 milhões) com problema crônico de coluna (corrigido em 04/10/2026: o 23,4% que constava aqui estava errado; fonte IBGE/SciELO rbepid)
 
-  - Pandemia elevou esse número para 33,9%
+  - (não verificado, não usar) Pandemia elevou esse número para 33,9%
 
   - 70-85% da população terá algum episódio de dor nas costas na vida
 
@@ -70,3 +70,7 @@ Cópias em `materias/<slug>.json`, `materias/<slug>.html` e `materias/<slug>.web
   Demais: Edgar Utino (SP), Abel Ferreira Carneiro (RJ), Jonas Lenzi (Curitiba), Felipe Loss (POA), Tiago Argolo (Salvador),
   Túlio Rangel (Recife), Luis Sombra (Fortaleza), Diego Zanin (SP/ABC). Sem COE nesta. Portal já tinha 7 matérias nossas no
   canal Saúde; era o único dos 10 domínios pedidos sem link do Aurélio.
+
+- patoshoje.com.br, 04/10/2026 (pedido compartilhado Aurélio + COE, outubro): "10 melhores ortopedistas de coluna do Brasil e como escolher o seu". Lista com Aurélio 1º e Dr. Guilherme Gontijo (Körpem, BH) 2º fixos em todas as 13 listas do pedido; do 3º em diante nenhum nome repete entre artigos (aba Listas da planilha <<REMOVIDO>>). Nomes já usados na Revista Fator Brasil (Utino, Carneiro, Lenzi, Loss, Argolo, Rangel, Sombra, Zanin) ficam fora. Âncora Aurélio: "ortopedista de escoliose em Goiânia" (2º parágrafo). Link do COE no fim ("ortopedista Ipasgo em Goiânia" -> coegoiania.com.br/equipe). Sem link interno: patoshoje não tem matéria nossa. Entrega: https://conteudo.qmix.com.br/ce1972d4a2e6b64c4c8213bc1be0f34b
+
+- Pedido compartilhado de outubro/2026 (04/10): 13 listas 'melhores ortopedistas' em painel (todas com Aurélio 1º, Dr. Guilherme Gontijo 2º, COE só em link perto do fim): amambainoticias.com.br https://conteudo.qmix.com.br/3a646867e0f689cc4312f8f28f28a8b8; folhadevilhena.com.br https://conteudo.qmix.com.br/19398b6ffbfd4d84f5107db7a84fb352; folhapatoense.com https://conteudo.qmix.com.br/7f8766b03ad88b4c7c758439b061a8b0; gazetadevotorantim.com.br https://conteudo.qmix.com.br/5d86e5f3b17769b7355f952deb77c601; giro.matanorte.com https://conteudo.qmix.com.br/3f671dd58b3645dd907bf0d1b40127d0; guairanews.com https://conteudo.qmix.com.br/9d1603d769c8dd6a3cd5ebca4e698efa; oitomeia.com.br https://conteudo.qmix.com.br/a2173e0d0759f3ad49e52d0bf7a97e2b; onortao.com.br https://conteudo.qmix.com.br/e81dad159ab7f1ecbc28f06542d7062b; patoshoje.com.br https://conteudo.qmix.com.br/ce1972d4a2e6b64c4c8213bc1be0f34b; pontaporainforma.com.br https://conteudo.qmix.com.br/80fc14ef86c1e1bd8bdd05470e214956; portalpalotina.com.br https://conteudo.qmix.com.br/1b0c87f80d72991d21d266b1e31c1837; toledonews.com.br https://conteudo.qmix.com.br/bec568d733e6351ad6ba24cb59596b79; vitoriadaconquistanoticias.com.br https://conteudo.qmix.com.br/8f1ea76ae74a05ed0ac641cf64a618e3. Nomes vetados (Vista geral de IA: Pellegrino, Ricardo Teixeira, Flores, Noronha) trocados por reservas. Planilha de controle: <<REMOVIDO>> (abas Listas e Médicos).

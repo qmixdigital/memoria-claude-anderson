@@ -43,3 +43,11 @@ Cópias em `materias/<slug>.json`, `materias/<slug>.html` e `materias/<slug>.web
 | 30/09/2026 | seuguiadesaude.com.br | preços de acupuntura (1º parágrafo) | https://coegoiania.com.br/blog/quanto-custa-uma-sessao-de-acupuntura | https://seuguiadesaude.com.br/acupuntura-pelo-sus/ | acupuntura pelo SUS | 169, item 2533, R$ 200 (BACKLINKS DE BLOGS SIMPLES) |
 
 Internos: fibromialgia-pode-fazer-academia e massoterapia. Entradas: massoterapia, fibromialgia-pode-fazer-academia, dor-de-cabeca-constante. Apex: projeto 1224399, enviado em 30/09/2026. Já existe "acupuntura-pelo-plano-de-saude" em sabedoriaglobal (opengravity): não repetir essa pauta.
+
+- patoshoje.com.br, 04/10/2026: link "ortopedista Ipasgo em Goiânia" -> https://coegoiania.com.br/equipe, no fim da matéria "10 melhores ortopedistas de coluna do Brasil e como escolher o seu" (pedido compartilhado com o Dr. Aurélio; COE não entra na lista). Entrega: https://conteudo.qmix.com.br/ce1972d4a2e6b64c4c8213bc1be0f34b
+
+- Pedido compartilhado de outubro/2026 (04/10): link do COE (equipe, âncoras da planilha) em 13 matérias de lista, sempre perto do fim e fora da lista de médicos. Links em dr-aurelio-arantes/memoria.md.
+
+- Pedido compartilhado de joelho com o Dr. Ulbiramar (04/10/2026): link da página de joelho do COE em 17 matérias de lista, perto do fim, fora da lista de médicos. Links em dr-ulbiramar-correia/memoria.md.
+
+- Acupuntura COE (04/10/2026): 3 matérias com link para /acupuntura (ocorreio, portaldenoticias, jornaldebeltrao), fatura 205. Links em dr-ulbiramar-correia/memoria.md.

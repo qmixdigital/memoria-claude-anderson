@@ -1,0 +1,102 @@
+{
+ "description": "",
+ "id": "bf2f8f1a8a024bb1a723f2051f593ef1",
+ "kind": "zone",
+ "last_updated": "2026-09-17T12:12:43.294701Z",
+ "name": "default",
+ "phase": "http_request_firewall_custom",
+ "rules": [
+  {
+   "action": "skip",
+   "action_parameters": {
+    "phases": [
+     "http_ratelimit",
+     "http_request_firewall_managed"
+    ],
+    "products": [
+     "waf",
+     "rateLimit",
+     "securityLevel",
+     "bic",
+     "uaBlock",
+     "hot",
+     "zoneLockdown"
+    ],
+    "ruleset": "current"
+   },
+   "description": "ALLOW verified SEARCH bots (Googlebot/Bing) - nunca bloquear; SEO e IA nao entram",
+   "enabled": true,
+   "expression": "(cf.verified_bot_category eq \"Search Engine Crawler\")",
+   "id": "b59b1b5fa02340f99ddffca99a784546",
+   "last_updated": "2026-09-17T12:10:11.12266Z",
+   "logging": {
+    "enabled": true
+   },
+   "ref": "b59b1b5fa02340f99ddffca99a784546",
+   "version": "2"
+  },
+  {
+   "action": "skip",
+   "action_parameters": {
+    "phases": [
+     "http_ratelimit",
+     "http_request_firewall_managed",
+     "http_request_sbfm"
+    ],
+    "ruleset": "current"
+   },
+   "description": "[WP] Bypass para Admin e Ads",
+   "enabled": true,
+   "expression": "(http.request.full_uri contains \"/wp-admin/\" and http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"/wp-json/rankmath/\" and http.cookie contains \"wordpress_logged_in_\") or (http.host contains \"googlesyndication.com\") or (http.host contains \"doubleclick.net\") or (http.host contains \"googleadservices.com\") or (http.host contains \"pagead2.googlesyndication.com\")\n",
+   "id": "a05cab42b3d94e38a1e2a0d6db6e0fb7",
+   "last_updated": "2026-07-29T14:28:34.542885Z",
+   "logging": {
+    "enabled": true
+   },
+   "ref": "a05cab42b3d94e38a1e2a0d6db6e0fb7",
+   "version": "1"
+  },
+  {
+   "action": "block",
+   "description": "[WP] Bloqueio de Ameaças Comuns + bots de SEO (Ahrefs/Semrush/etc)",
+   "enabled": true,
+   "expression": "(http.request.full_uri contains \"author=\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"readme.html\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"license.txt\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".git\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-config\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \".bak\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.user_agent contains \"AhrefsBot\") or (http.user_agent contains \"SemrushBot\") or (http.user_agent contains \"RSiteAuditor\") or (http.user_agent contains \"MJ12bot\") or (http.user_agent contains \"DotBot\") or (http.user_agent contains \"DataForSeoBot\") or (http.user_agent contains \"BLEXBot\") or (http.user_agent contains \"PetalBot\") or (http.user_agent contains \"trendictionbot\") or (http.user_agent contains \"KeenableBot\") or (http.user_agent contains \"Amazonbot\")",
+   "id": "0ce2ddd7aa884678bc87826ca28c6869",
+   "last_updated": "2026-09-17T12:12:43.294701Z",
+   "ref": "0ce2ddd7aa884678bc87826ca28c6869",
+   "version": "3"
+  },
+  {
+   "action": "managed_challenge",
+   "description": "[WP] Desafio em Páginas Sensíveis",
+   "enabled": true,
+   "expression": "(http.request.full_uri contains \"wp-login.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"xmlrpc.php\" and not http.cookie contains \"wordpress_logged_in_\") or (http.request.full_uri contains \"wp-admin/admin-ajax.php\" and not http.cookie contains \"wordpress_logged_in_\")\n",
+   "id": "1ed66a8051dc4bc0be12f33631485e74",
+   "last_updated": "2026-07-29T14:28:34.542885Z",
+   "ref": "1ed66a8051dc4bc0be12f33631485e74",
+   "version": "1"
+  },
+  {
+   "action": "managed_challenge",
+   "description": "Tráfego",
+   "enabled": false,
+   "expression": "(not ip.geoip.country in {\"AO\" \"AR\" \"BO\" \"BR\" \"CV\" \"CL\" \"CO\" \"EC\" \"GQ\" \"GW\" \"GY\" \"MO\" \"MZ\" \"PY\" \"PE\" \"PT\" \"ST\" \"SR\" \"TL\" \"US\" \"UY\" \"VE\" \"CA\"})",
+   "id": "5c8b2e516c0b4e8596c069606a0ea992",
+   "last_updated": "2026-07-29T14:28:34.542885Z",
+   "ref": "5c8b2e516c0b4e8596c069606a0ea992",
+   "version": "1"
+  },
+  {
+   "action": "block",
+   "description": "Block arquivos sensiveis (.env, .git, wp-config)",
+   "enabled": true,
+   "expression": "(http.request.uri.path contains \"/.env\" or http.request.uri.path contains \"/.git\" or http.request.uri.path contains \"/wp-config.php\")",
+   "id": "8fb93a2a41d14c1da1fac52e2cb24311",
+   "last_updated": "2026-07-29T14:28:34.542885Z",
+   "ref": "8fb93a2a41d14c1da1fac52e2cb24311",
+   "version": "1"
+  }
+ ],
+ "source": "firewall_custom",
+ "version": "12"
+}

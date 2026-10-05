@@ -1,0 +1,1424 @@
+[
+ {
+  "nome": "Paulo Cunha",
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "crm": "CRM-SP 36.065",
+  "rqe": "",
+  "areas": [
+   "LCA",
+   "menisco",
+   "cartilagem"
+  ],
+  "sbcj": false,
+  "sbot": true,
+  "formacao_bruta": [
+   "Paulo Cunha - CRM: 36.065 Médico Ortopedista e Traumatologista graduado pela Faculdade de Medicina de Ribeirão Preto da USP - Universidade de São Paulo em 1978, dedica-se atualmente às Cirurgias do Joelho, ao tratamento das fraturas e suas complicações."
+  ],
+  "fonte_primaria": "https://www.drpaulocunha.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM 36.065",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "oitomeia.com.br",
+   "jornaldebeltrao.com.br"
+  ]
+ },
+ {
+  "nome": "Luiz Gabriel Guglielmetti",
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "crm": "CRM-SP 117180",
+  "rqe": "153220",
+  "areas": [
+   "LCA",
+   "menisco",
+   "prótese",
+   "patela",
+   "artroscopia",
+   "cartilagem"
+  ],
+  "sbcj": true,
+  "sbot": false,
+  "formacao_bruta": [
+   "Luiz Gabriel Betoni Guglielmetti é médico graduado pela Faculdade de Ciências Médicas da Santa Casa de São Paulo (1999 a 2004).",
+   "Realizou residência médica em Ortopedia e Traumatologia e especialização em Cirurgia do Joelho também na Santa Casa de São Paulo.",
+   "Permaneceu vinculado a este Hospital no Grupo de Joelho do Departamento, onde ainda realiza atividades ambulatoriais e atua como instrutor cirúrgico de residentes e médicos em especialização em cirurgia do joelho."
+  ],
+  "fonte_primaria": "https://drluizgabriel.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-SP 117180 RQE 153220",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "alegretetudo.com.br",
+   "jornaldebeltrao.com.br"
+  ]
+ },
+ {
+  "nome": "Amir Daher",
+  "cidade": "São Paulo",
+  "uf": "SP",
+  "crm": "CRM-SP 173.106",
+  "rqe": "81.297",
+  "areas": [
+   "LCA",
+   "menisco",
+   "prótese",
+   "patela",
+   "artroscopia",
+   "osteotomia",
+   "infiltração"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://www.amirdaher.com/ortopedista-joelho-sao-paulo",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-SP 173.106 RQE 81.297",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "alegretetudo.com.br",
+   "folhapatoense.com"
+  ]
+ },
+ {
+  "nome": "Rodrigo Nunes",
+  "cidade": "Campinas",
+  "uf": "SP",
+  "crm": "CRM-SP 105373",
+  "rqe": "",
+  "areas": [],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Rodrigo Pereira da Silva Nunes, ortopedista e traumatologista formado pela PUC-Campinas em 2001.",
+   "Minha especializa&ccedil;&atilde;o em cirurgia do joelho, tanto pela PUC-Campinas quanto pelo Centro M&eacute;dico de Campinas, foi complementada por um fellowship internacional na renomada Escola de Cirurgia de Joelho de Lyon, na Fran&ccedil;a."
+  ],
+  "fonte_primaria": "https://www.drrodrigonunes.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-SP 105373",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "gazetadevotorantim.com.br",
+   "jmais.com.br"
+  ]
+ },
+ {
+  "nome": "Matheus Sawan",
+  "cidade": "Campinas",
+  "uf": "SP",
+  "crm": "",
+  "rqe": "101231",
+  "areas": [
+   "LCA",
+   "menisco",
+   "patela",
+   "artroscopia",
+   "cartilagem",
+   "osteotomia"
+  ],
+  "sbcj": false,
+  "sbot": true,
+  "formacao_bruta": [
+   "Matheus Sawan TEOT 18675 | RQE 101231 Graduado em medicina pela Faculdade de Ciências da Saúde de Barretos no ano de 2017.",
+   "Especialização em cirurgia do joelho pela PUC Campinas e pós-graduado em Medicina Esportiva pelo Instituto Vita."
+  ],
+  "fonte_primaria": "https://www.drmatheussawan.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: RQE 101231",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "oitomeia.com.br",
+   "folhapatoense.com"
+  ]
+ },
+ {
+  "nome": "Renato Morelli",
+  "cidade": "Campinas",
+  "uf": "SP",
+  "crm": "CRM-SP 75629",
+  "rqe": "",
+  "areas": [
+   "prótese",
+   "cartilagem"
+  ],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://renatomorelli.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM 75629",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "toledonews.com.br",
+   "giro.matanorte.com"
+  ]
+ },
+ {
+  "nome": "Murilo Toledo Moreira",
+  "cidade": "Ribeirão Preto",
+  "uf": "SP",
+  "crm": "CRM-SP 121075",
+  "rqe": "38298",
+  "areas": [
+   "LCA",
+   "menisco",
+   "prótese",
+   "artroscopia",
+   "cartilagem"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Formado pela USP e especializado no Hospital das Cl&iacute;nicas de Ribeir&atilde;o Preto."
+  ],
+  "fonte_primaria": "https://drmurilomoreira.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM 121075 RQE 38298",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "patoshoje.com.br",
+   "correiodointerior.com.br"
+  ]
+ },
+ {
+  "nome": "Fabricio Fogagnolo",
+  "cidade": "Ribeirão Preto",
+  "uf": "SP",
+  "crm": "",
+  "rqe": "",
+  "areas": [
+   "menisco",
+   "patela",
+   "cartilagem",
+   "osteotomia",
+   "infiltração"
+  ],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://www.joelhoetrauma.com/en",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "André Siqueira Campos",
+  "cidade": "Niterói",
+  "uf": "RJ",
+  "crm": "CRM-RJ 52.75390-4",
+  "rqe": "",
+  "areas": [
+   "menisco",
+   "prótese",
+   "artroscopia",
+   "cartilagem"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://andresiqueiracampos.com/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RJ 52.75390-4",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "alegretetudo.com.br",
+   "folhapatoense.com"
+  ]
+ },
+ {
+  "nome": "Rodrigo Lazzarini",
+  "cidade": "Belo Horizonte",
+  "uf": "MG",
+  "crm": "",
+  "rqe": "",
+  "areas": [
+   "menisco",
+   "patela"
+  ],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://www.lazzarinicirurgiadojoelho.com.br/",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "Otávio Melo",
+  "cidade": "Belo Horizonte",
+  "uf": "MG",
+  "crm": "CRM-MG 41116",
+  "rqe": "25306",
+  "areas": [
+   "LCA",
+   "artroscopia",
+   "cartilagem",
+   "infiltração"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Lair Ribeiro Mestrado em Medicina – Santa Casa de Belo Horizonte Doutorado em Saúde Baseada em Evidências (Creditos) – UNIFESP Medicina Funcional Integrativa – Dr."
+  ],
+  "fonte_primaria": "https://otaviomelo.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM 41116 RQE 25306",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "patoshoje.com.br",
+   "onortao.com.br"
+  ]
+ },
+ {
+  "nome": "Eduardo Louzada da Costa",
+  "cidade": "Juiz de Fora",
+  "uf": "MG",
+  "crm": "",
+  "rqe": "",
+  "areas": [
+   "artroscopia"
+  ],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://imotbh.com.br/dr-eduardo-louzada/",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "Eduardo Valias Schmitt",
+  "cidade": "Cascavel",
+  "uf": "PR",
+  "crm": "CRM-PR 35137",
+  "rqe": "25114",
+  "areas": [],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "PR Especialização em Cirurgia do Joelho pelo CTEA/ Hospital das Clínicas (UFPR) / Hospital do Trabalhador (HT) &#8211;",
+   "Pensilvânia) Especialização em Medicina Esportiva pelo Hospital das clínicas e CTEA Curitiba (PR);"
+  ],
+  "fonte_primaria": "https://ceot.com.br/medico/dr-eduardo-valias-schmitt/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-PR 35137 RQE 25114",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "patoshoje.com.br",
+   "jmais.com.br"
+  ]
+ },
+ {
+  "nome": "Silvio Passarini Jr",
+  "cidade": "Florianópolis",
+  "uf": "SC",
+  "crm": "CRM-SC 24058",
+  "rqe": "14505",
+  "areas": [
+   "LCA",
+   "menisco",
+   "prótese",
+   "patela",
+   "artroscopia",
+   "cartilagem",
+   "infiltração"
+  ],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [
+   "Silvio Passarini Jr CRM-SC 24058 | TEOT 10070 | RQE 14505 Formado em 2001 pela Universidade Federal do Rio de Janeiro, completei minha residência médica em Ortopedia pela Santa Casa de Misericórdia do Rio de Janeiro em Janeiro/2005.",
+   "Na busca de complementar minha formação nas áreas de Cirurgia do Joelho e Trauma do Esporte, participei de um Fellowship na renomada Clínica Campbell em Memphis, Tennessee, EUA, durante o ano de 2005, retornando no início de 2006."
+  ],
+  "fonte_primaria": "https://drsilviopassarinijr.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-SC 24058 RQE 14505",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "oitomeia.com.br",
+   "folhapatoense.com"
+  ]
+ },
+ {
+  "nome": "César Martins",
+  "cidade": "Florianópolis",
+  "uf": "SC",
+  "crm": "",
+  "rqe": "11.941",
+  "areas": [
+   "LCA",
+   "menisco",
+   "prótese",
+   "patela",
+   "artroscopia",
+   "cartilagem",
+   "osteotomia"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Revisor do peri&oacute;dico Clinical Anatomy -Wiley (ISSN: 1098-235) ​ Research Fellow em Sports Medicine pela Universidade de Pittsburgh-USA, com Freddie Fu M.D."
+  ],
+  "fonte_primaria": "https://www.cesarmartins.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: RQE 11.941 (CREMESC 20.789 na busca)",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "oitomeia.com.br",
+   "anoticiamais.com.br"
+  ]
+ },
+ {
+  "nome": "José Mauro Zimmermann Jr",
+  "cidade": "Porto Alegre",
+  "uf": "RS",
+  "crm": "CRM-RS 34036",
+  "rqe": "25179",
+  "areas": [
+   "LCA",
+   "menisco",
+   "prótese",
+   "artroscopia",
+   "cartilagem",
+   "infiltração"
+  ],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [
+   "Zimmermann +15 anos de experiência 4 hospitais top POA Robótica Cirurgia de Precisão UFRGS Mestrado em Cirurgia Dr.",
+   "Formação Top Tier Graduado e mestre pela UFRGS, residente no Hospital de Clínicas de POA — melhor centro de formação do Sul."
+  ],
+  "fonte_primaria": "https://www.zimmermannjoelho.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RS 34036 RQE 25179",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "alegretetudo.com.br",
+   "correiodointerior.com.br"
+  ]
+ },
+ {
+  "nome": "Robson Souza",
+  "cidade": "Feira de Santana",
+  "uf": "BA",
+  "crm": "CRM-BA 11553",
+  "rqe": "",
+  "areas": [
+   "artroscopia",
+   "osteotomia",
+   "infiltração"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://www.drrobsonsouza.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-BA 11553 (busca 11553)",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "gazetadevotorantim.com.br",
+   "jmais.com.br"
+  ]
+ },
+ {
+  "nome": "Filipe Belfort",
+  "cidade": "Recife",
+  "uf": "PE",
+  "crm": "",
+  "rqe": "",
+  "areas": [
+   "menisco",
+   "prótese",
+   "patela",
+   "artroscopia",
+   "cartilagem"
+  ],
+  "sbcj": false,
+  "sbot": true,
+  "formacao_bruta": [
+   "Filipe Belfort é médico graduado pela UFPE - Universidade Federal de Pernambuco."
+  ],
+  "fonte_primaria": "https://www.filipebelfort.com.br/",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "Wagner Costa",
+  "cidade": "Recife",
+  "uf": "PE",
+  "crm": "CRM-PE 26.588",
+  "rqe": "11.918",
+  "areas": [
+   "menisco",
+   "prótese",
+   "infiltração"
+  ],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://drwagnercosta.com/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-PE 26.588 RQE 11.918",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "toledonews.com.br",
+   "correiodointerior.com.br"
+  ]
+ },
+ {
+  "nome": "Matheus Crispim",
+  "cidade": "Recife",
+  "uf": "PE",
+  "crm": "CRM-PE 31110",
+  "rqe": "",
+  "areas": [
+   "LCA",
+   "menisco",
+   "prótese",
+   "patela",
+   "cartilagem",
+   "osteotomia",
+   "infiltração"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Matheus Sobre mim Sou médico ortopedista, com residência médica em Ortopedia e Traumatologia pelo Hospital Getúlio Vargas – PE e subespecialização em Cirurgia do Joelho pelo Instituto de Medicina Integral Professor Fernando Figueira (IMIP) – PE."
+  ],
+  "fonte_primaria": "https://drmatheuscrispim.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-PE 31110",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "oitomeia.com.br",
+   "anoticiamais.com.br"
+  ]
+ },
+ {
+  "nome": "João Bosco",
+  "cidade": "Fortaleza",
+  "uf": "CE",
+  "crm": "CRM-CE 10639",
+  "rqe": "5529",
+  "areas": [
+   "artroscopia"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Formação Médica Base acadêmica e títulos Médico Mestre Doutor Ver detalhes (expandir) • Médico graduado pela Universidade Federal do Ceará (UFC).",
+   "Acessar dissertação (PDF) • Doutor em Cirurgia — Programa de Pós-Graduação em Cirurgia (UFC)."
+  ],
+  "fonte_primaria": "https://drjoaobosco.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-CE 10639 RQE 5529",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "gazetadevotorantim.com.br",
+   "giro.matanorte.com"
+  ]
+ },
+ {
+  "nome": "Everton Coqueiro",
+  "cidade": "Porto Velho",
+  "uf": "RO",
+  "crm": "CRM-RO 3613",
+  "rqe": "869",
+  "areas": [
+   "LCA",
+   "menisco",
+   "patela",
+   "artroscopia",
+   "cartilagem"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Everton Coqueiro Médico Ortopedista, Traumatologista, Especialista em Cirurgia do Joelho CRM-RO: 3613 TEOT: 13491 RQE: 869 Formado em Medicina pela Universidade Federal do Amazonas (2008);",
+   "Professor da Residência Médica de Ortopedia e Traumatologia no Hospital Ary Pinheiro RO-Porto Velho;",
+   "Professor na Graduação de Medicina na Universidade São Lucas."
+  ],
+  "fonte_primaria": "https://drevertoncoqueirojoelho.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RO 3613 RQE 869",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "oitomeia.com.br",
+   "anoticiamais.com.br"
+  ]
+ },
+ {
+  "nome": "Marcelo Quarteiro",
+  "cidade": "Campo Grande",
+  "uf": "MS",
+  "crm": "CRM-MS 4527",
+  "rqe": "3106",
+  "areas": [
+   "LCA",
+   "menisco",
+   "patela",
+   "artroscopia",
+   "cartilagem"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Marcelo Quarteiro Possui graduação em Medicina pela Universidade Federal de Mato Grosso do Sul (UFMS)."
+  ],
+  "fonte_primaria": "https://marceloquarteiro.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-MS 4527 RQE 3106",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "oitomeia.com.br",
+   "anoticiamais.com.br"
+  ]
+ },
+ {
+  "nome": "Rodolfo Zambolin",
+  "cidade": "Campo Grande",
+  "uf": "MS",
+  "crm": "CRM-MS 6180",
+  "rqe": "4300",
+  "areas": [
+   "prótese",
+   "osteotomia",
+   "infiltração"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Experiência e Qualificação Formado em medicina pela UFMS, com especialização em cirurgia do joelho, e membro das sociedades médicas como SBOT, SBCJ e SLARD."
+  ],
+  "fonte_primaria": "https://drrodolfozambolin.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-MS 6180 RQE 4300",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "toledonews.com.br",
+   "giro.matanorte.com"
+  ]
+ },
+ {
+  "nome": "Jorge Augustin",
+  "cidade": "São José do Rio Preto",
+  "uf": "SP",
+  "crm": "CRM-SP 131088",
+  "rqe": "",
+  "areas": [
+   "LCA",
+   "prótese",
+   "patela",
+   "artroscopia",
+   "cartilagem"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "MEDICINA Formado pela Faculdade de Medicina de São José do Rio Preto, SP (FAMERP) no ano de 2007 | CRM 131088.",
+   "ORTOPEDIA E TRAUMATOLOGIA Residência médica em Ortopedia e Traumatologia na Faculdade de Medicina de São José do Rio Preto (2008-2011).",
+   "CIRURGIA DE JOELHO Residência médica em Cirurgia do Joelho na Faculdade de Medicina de São José do Rio Preto (2011-2012)."
+  ],
+  "fonte_primaria": "https://drjorgeaugustin.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM 131088",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "patoshoje.com.br",
+   "jmais.com.br"
+  ]
+ },
+ {
+  "nome": "Adilio Bernardes",
+  "cidade": "Sorocaba",
+  "uf": "SP",
+  "crm": "CRM-SP 000000",
+  "rqe": "",
+  "areas": [
+   "LCA",
+   "prótese",
+   "artroscopia",
+   "infiltração"
+  ],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://dradiliobernardes.com.br/",
+  "fonte_secundaria": "",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "toledonews.com.br",
+   "giro.matanorte.com"
+  ]
+ },
+ {
+  "nome": "Bernardo Barroso",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "crm": "",
+  "rqe": "",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://drbernardobarroso.com.br/",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "Rafael Magalhães",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "crm": "",
+  "rqe": "",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://drrafaelmagalhaes.com.br/",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "Gustavo Salomão",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "crm": "",
+  "rqe": "",
+  "areas": [],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Residência Médica em Ortopedia e Traumatologia pela Fundação Benjamin Guimarães – Hospital da Baleia (Belo Horizonte/MG) entre 2013 e 2016."
+  ],
+  "fonte_primaria": "https://drgustavosalomao.com.br/",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "Saulo Gomes",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "crm": "",
+  "rqe": "",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://www.drsaulogomes.com.br",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "Francisco Carvalho",
+  "cidade": "Vitória",
+  "uf": "ES",
+  "crm": "",
+  "rqe": "",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://drfranciscocarvalho.com/",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "Fausto Fernandes",
+  "cidade": "Uberaba",
+  "uf": "MG",
+  "crm": "CRM-MG 63589",
+  "rqe": "43600",
+  "areas": [
+   "LCA",
+   "menisco",
+   "prótese",
+   "patela",
+   "artroscopia",
+   "cartilagem",
+   "infiltração"
+  ],
+  "sbcj": false,
+  "sbot": true,
+  "formacao_bruta": [
+   "Gradua&ccedil;&otilde;es em Fisioterapia e Medicina pela Universidade de Uberaba (UNIUBE);",
+   "Mestrado e Doutorado , pelo departamento de Ortopedia e Traumatologia da Faculdade de Medicina de Ribeir&atilde;o Preto, Universidade de S&atilde;o Paulo (FMRP/USP)."
+  ],
+  "fonte_primaria": "https://www.drfaustofernandes.com.br/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-MG 63589 RQE 43600",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "oitomeia.com.br",
+   "correiodointerior.com.br"
+  ]
+ },
+ {
+  "nome": "Pedro Saraiva Roldão",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "crm": "CRM-RJ 5282618-9",
+  "rqe": "16973",
+  "areas": [
+   "menisco",
+   "prótese",
+   "patela",
+   "artroscopia",
+   "cartilagem",
+   "infiltração"
+  ],
+  "sbcj": true,
+  "sbot": true,
+  "formacao_bruta": [
+   "Letícia Araujo Consulta Pedro Saraiva Roldão Júnior - Doctoralia.com.br CONSULTE VOCÊ TAMBÉM E MUDE SUA VIDA PRA MELHOR CURRÍCULO E FORMAÇÃO PROFISSIONAL Gradua&ccedil;&atilde;o em medicina, Unig- Campos Itaperuna / 2001 A 2006."
+  ],
+  "fonte_primaria": "https://drpedrosaraivaroldao.com.br/",
+  "fonte_secundaria": "",
+  "verificado": "parcial",
+  "pendencias": "site lido; formação a conferir na leitura do texto; sem 2ª fonte para a formação",
+  "lista": [
+   "toledonews.com.br",
+   "jmais.com.br"
+  ]
+ },
+ {
+  "nome": "Pedro Bastos",
+  "cidade": "Salvador",
+  "uf": "BA",
+  "crm": "CRM-BA 18766",
+  "rqe": "11016",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "LinkedIn + Doctoralia + site (busca) | diretório (Doctoralia/Boa Consulta) pela busca: CRM 18766 RQE 11016",
+  "verificado": "parcial",
+  "pendencias": "formação vista em 2 ou 3 diretórios/perfis (busca), sem leitura de site próprio. Nome completo: Pedro Gouveia Bastos",
+  "lista": [
+   "gazetadevotorantim.com.br",
+   "guairanews.com"
+  ],
+  "formacao": "Medicina na Escola Bahiana (2006); residência em ortopedia na Casa de Saúde Santa Marcelina (SP); membro titular da SBOT (2009); fellowship em cirurgia do joelho no HSPE (SP); segunda subespecialização em reconstrução e alongamento ósseo na AACD (2011). Equipe do Hospital Português e outros."
+ },
+ {
+  "nome": "Moacir Araripe",
+  "cidade": "Fortaleza",
+  "uf": "CE",
+  "crm": "CRM-CE 9511",
+  "rqe": "5311",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "Doctoralia + LinkedIn + MedBook (buscas) | diretório (Doctoralia/Boa Consulta) pela busca: CRM-CE 9511 RQE 5311",
+  "verificado": "parcial",
+  "pendencias": "formação vista em 2 ou 3 diretórios/perfis (busca), sem leitura de site próprio.",
+  "lista": [
+   "portalpalotina.com.br",
+   "guairanews.com"
+  ],
+  "formacao": "Medicina na UFC (2004); especialista em ortopedia e traumatologia pela UFC (2009); subespecialização em cirurgia do joelho na Université Claude Bernard Lyon I, França (2011). Atende no Centro de Reabilitação Funcional (CRF), Meireles."
+ },
+ {
+  "nome": "Marcos Xerez",
+  "cidade": "Fortaleza",
+  "uf": "CE",
+  "crm": "CRM-CE 11273",
+  "rqe": "7723",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-CE 11273 RQE 7723",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "portalpalotina.com.br",
+   "guairanews.com"
+  ]
+ },
+ {
+  "nome": "Giovannini Figueiredo",
+  "cidade": "Campina Grande",
+  "uf": "PB",
+  "crm": "CRM-PB 4021",
+  "rqe": "1289",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-PB 4021 RQE 1289",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "portalpalotina.com.br",
+   "guairanews.com"
+  ]
+ },
+ {
+  "nome": "Fábio Gondim Nepomuceno",
+  "cidade": "Campina Grande",
+  "uf": "PB",
+  "crm": "CRM-PB 5429",
+  "rqe": "3061",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-PB 5429 RQE 3061",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "portalpalotina.com.br",
+   "guairanews.com"
+  ]
+ },
+ {
+  "nome": "Danilo Leite",
+  "cidade": "Teresina",
+  "uf": "PI",
+  "crm": "CRM-PI 4827",
+  "rqe": "2819",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-PI 4827 RQE 2819",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "amambainoticias.com.br",
+   "guairanews.com"
+  ]
+ },
+ {
+  "nome": "Pablo Barreto Prata",
+  "cidade": "Aracaju",
+  "uf": "SE",
+  "crm": "CRM-SE 3349",
+  "rqe": "3332",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "Escavador + Doctoralia + Artro Ortopedia (busca) | diretório (Doctoralia/Boa Consulta) pela busca: CRM-SE 3349 RQE 3332",
+  "verificado": "parcial",
+  "pendencias": "formação vista em 2 ou 3 diretórios/perfis (busca), sem leitura de site próprio.",
+  "lista": [
+   "amambainoticias.com.br",
+   "folhadevilhena.com.br"
+  ],
+  "formacao": "Medicina na UFS (2007); residência em ortopedia na Santa Casa da Bahia (2008-2011); fellowship em cirurgia do joelho e trauma no IOT-USP (SP); membro titular da SBOT e da SBCJ (2021); preceptor da residência no Hospital Universitário de Lagarto (UFS). Rede Artro Ortopedia, Aracaju e Itabaiana."
+ },
+ {
+  "nome": "Renan Cantanhede Salles Rosa",
+  "cidade": "Porto Velho",
+  "uf": "RO",
+  "crm": "CRM-RO 5269",
+  "rqe": "1614",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RO 5269 RQE 1614",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "amambainoticias.com.br",
+   "folhadevilhena.com.br"
+  ]
+ },
+ {
+  "nome": "Dayvid Kauffman",
+  "cidade": "Cuiabá",
+  "uf": "MT",
+  "crm": "CRM-MT 8518",
+  "rqe": "6300",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-MT 8518 RQE 6300",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "amambainoticias.com.br",
+   "folhadevilhena.com.br"
+  ]
+ },
+ {
+  "nome": "Thomas Dal Ponte",
+  "cidade": "Caxias do Sul",
+  "uf": "RS",
+  "crm": "CRM-RS 32849",
+  "rqe": "25049",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "Doctoralia + Intermédicos (busca) | diretório (Doctoralia/Boa Consulta) pela busca: CRM-RS 32849 RQE 25049",
+  "verificado": "parcial",
+  "pendencias": "formação vista em 2 ou 3 diretórios/perfis (busca), sem leitura de site próprio. Fontes divergem sobre a graduação (UEL 2017 num diretório; UFRGS em outro): não citar a graduação",
+  "lista": [
+   "patosnoticias.com.br",
+   "portaldenoticias.com.br"
+  ],
+  "formacao": "Membro da SBOT e da SBCJ; residência em ortopedia e especialização em joelho; estágios no HCOR/Unifesp e no Hospital for Special Surgery (Nova York). Atende em Caxias do Sul e Florianópolis."
+ },
+ {
+  "nome": "Aloir de Oliveira Júnior",
+  "cidade": "Caxias do Sul",
+  "uf": "RS",
+  "crm": "CRM-RS 46079",
+  "rqe": "39636",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RS 46079 RQE 39636",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "patosnoticias.com.br",
+   "portaldenoticias.com.br"
+  ]
+ },
+ {
+  "nome": "João Pedro Marques",
+  "cidade": "Pelotas",
+  "uf": "RS",
+  "crm": "CRM-RS 44340",
+  "rqe": "38818",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RS 44340 RQE 38818",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "vitoriadaconquistanoticias.com.br",
+   "ocorreio.com.br"
+  ]
+ },
+ {
+  "nome": "Mauricio Fabiani",
+  "cidade": "Chapecó",
+  "uf": "SC",
+  "crm": "CRM-SC 20388",
+  "rqe": "14997",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-SC 20388 RQE 14997",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "patosnoticias.com.br",
+   "portaldenoticias.com.br"
+  ]
+ },
+ {
+  "nome": "Daniel Betu",
+  "cidade": "Chapecó",
+  "uf": "SC",
+  "crm": "CRM-SC 19943",
+  "rqe": "15855",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-SC 19943 RQE 15855",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "patosnoticias.com.br",
+   "portaldenoticias.com.br"
+  ]
+ },
+ {
+  "nome": "Gabriel Vitor Kulevicz",
+  "cidade": "Joinville",
+  "uf": "SC",
+  "crm": "CRM-SC 22223",
+  "rqe": "20297",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "Doctoralia (busca); site próprio drgabrielkulevicz.com.br existe e não foi lido | diretório (Doctoralia/Boa Consulta) pela busca: CRM-SC 22223 RQE 20297",
+  "verificado": "parcial",
+  "pendencias": "formação vista em 2 ou 3 diretórios/perfis (busca), sem leitura de site próprio.",
+  "lista": [
+   "vitoriadaconquistanoticias.com.br",
+   "ocorreio.com.br"
+  ],
+  "formacao": "Medicina na Faculdade Assis Gurgacz (Cascavel); residência em ortopedia e traumatologia no Hospital Municipal São José de Joinville, onde é preceptor; especialização em cirurgia do joelho em SC e SP."
+ },
+ {
+  "nome": "Darci Duarte Lopes Junior",
+  "cidade": "Florianópolis",
+  "uf": "SC",
+  "crm": "CRM-SC 14222",
+  "rqe": "7159",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-SC 14222 RQE 7159",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "vitoriadaconquistanoticias.com.br",
+   "florestanoticias.com"
+  ]
+ },
+ {
+  "nome": "Alexandre de Oliveira Queiroz",
+  "cidade": "Londrina",
+  "uf": "PR",
+  "crm": "CRM-PR 17905",
+  "rqe": "12742",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "Doctoralia + Acesso Médico + Intermédicos (busca) | diretório (Doctoralia/Boa Consulta) pela busca: CRM-PR 17905 RQE 12742",
+  "verificado": "parcial",
+  "pendencias": "formação vista em 2 ou 3 diretórios/perfis (busca), sem leitura de site próprio. Diretórios o listam também como clínico geral; não afirmar \"exclusivo em joelho\"",
+  "lista": [
+   "portalpalotina.com.br",
+   "florestanoticias.com"
+  ],
+  "formacao": "Medicina na PUC-PR; residência em ortopedia e traumatologia no Hospital Novo Mundo (Curitiba); título de especialista em cirurgia do joelho pela SBCJ. Atende em quatro endereços de Londrina."
+ },
+ {
+  "nome": "Olinto Lago",
+  "cidade": "Curitiba",
+  "uf": "PR",
+  "crm": "CRM-PR 18960",
+  "rqe": "13954",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "Doctoralia + Boa Consulta (busca) | diretório (Doctoralia/Boa Consulta) pela busca: CRM-PR 18960 RQE 13954",
+  "verificado": "parcial",
+  "pendencias": "formação vista em 2 ou 3 diretórios/perfis (busca), sem leitura de site próprio. Atua também em ombro: apresentar como joelho e ombro",
+  "lista": [
+   "portalpalotina.com.br",
+   "florestanoticias.com"
+  ],
+  "formacao": "Medicina na PUCPR; trauma ortopédico no HT-UFPR; residência em cirurgia do joelho e ombro; estágio de ombro na Flórida (EUA); membro da SBOT e da SBCJ. Também opera ombro e cotovelo."
+ },
+ {
+  "nome": "Frederico Fedatto",
+  "cidade": "Curitiba",
+  "uf": "PR",
+  "crm": "CRM-PR 19980",
+  "rqe": "14465",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-PR 19980 RQE 14465",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "patosnoticias.com.br",
+   "portalgazetaregional.com.br"
+  ]
+ },
+ {
+  "nome": "Heitor Marques Sabatine",
+  "cidade": "Bauru",
+  "uf": "SP",
+  "crm": "CRM-SP 161985",
+  "rqe": "81254",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-SP 161985 RQE 81254",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "onortao.com.br",
+   "florestanoticias.com"
+  ]
+ },
+ {
+  "nome": "Gunter Sgarboza",
+  "cidade": "São José do Rio Preto",
+  "uf": "SP",
+  "crm": "CRM-SP 96273",
+  "rqe": "70360",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "Escavador + Doctoralia + site doutoresportista.com.br (busca) | diretório (Doctoralia/Boa Consulta) pela busca: CRM-SP 96273 RQE 70360",
+  "verificado": "parcial",
+  "pendencias": "formação vista em 2 ou 3 diretórios/perfis (busca), sem leitura de site próprio.",
+  "lista": [
+   "onortao.com.br",
+   "florestanoticias.com"
+  ],
+  "formacao": "Medicina na FAMERP (1993-1998); ortopedia no Hospital de Base de Rio Preto (1999-2001); especialização em cirurgia do joelho e traumatologia do esporte no HCOR (2004-2005); medicina do esporte na Universidade de Pittsburgh. Atende em São José do Rio Preto."
+ },
+ {
+  "nome": "Paulo Henrique Rebuli",
+  "cidade": "Vila Velha",
+  "uf": "ES",
+  "crm": "CRM-ES 15723",
+  "rqe": "12832",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-ES 15723 RQE 12832",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "onortao.com.br",
+   "portalgazetaregional.com.br"
+  ]
+ },
+ {
+  "nome": "Gustavo Nascimento Ottoni",
+  "cidade": "Vila Velha",
+  "uf": "ES",
+  "crm": "CRM-ES 11371",
+  "rqe": "7264",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-ES 11371 RQE 7264",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "onortao.com.br",
+   "portalgazetaregional.com.br"
+  ]
+ },
+ {
+  "nome": "Luciano Leduc",
+  "cidade": "Belo Horizonte",
+  "uf": "MG",
+  "crm": "CRM-MG 48829",
+  "rqe": "32771",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-MG 48829 RQE 32771",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "patosnoticias.com.br",
+   "ocorreio.com.br"
+  ]
+ },
+ {
+  "nome": "Daniel M. Cota",
+  "cidade": "Juiz de Fora",
+  "uf": "MG",
+  "crm": "CRM-MG 39235",
+  "rqe": "",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-MG 39235",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "patosnoticias.com.br",
+   "ocorreio.com.br"
+  ]
+ },
+ {
+  "nome": "Tallys Campos",
+  "cidade": "Governador Valadares",
+  "uf": "MG",
+  "crm": "CRM-MG 43.847",
+  "rqe": "",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-MG 43.847",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "onortao.com.br",
+   "portalgazetaregional.com.br"
+  ]
+ },
+ {
+  "nome": "Rodrigo Tavares Cardozo",
+  "cidade": "Uberaba",
+  "uf": "MG",
+  "crm": "CRM-MG 46723",
+  "rqe": "",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "https://www.umcenter.com.br/profissionais/rodrigo-tavares-cardozo-/joelho-ortopedia-e-traumatologia-quadril/uberlandia/",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-MG 46723",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ },
+ {
+  "nome": "Fabricio Cardoso de Souza",
+  "cidade": "Campos dos Goytacazes",
+  "uf": "RJ",
+  "crm": "CRM-RJ 738093",
+  "rqe": "14392",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RJ 738093 RQE 14392",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "onortao.com.br"
+  ]
+ },
+ {
+  "nome": "Vitor Mudesto Fonseca",
+  "cidade": "Campos dos Goytacazes",
+  "uf": "RJ",
+  "crm": "CRM-RJ 840106",
+  "rqe": "17695",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RJ 840106 RQE 17695",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "onortao.com.br"
+  ]
+ },
+ {
+  "nome": "Alexandre Campello",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "crm": "CRM-RJ 450738",
+  "rqe": "4795",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RJ 450738 RQE 4795",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "jornaldebeltrao.com.br"
+  ]
+ },
+ {
+  "nome": "Sandra Minamoto",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "crm": "CRM-RJ 1001060",
+  "rqe": "47292",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RJ 1001060 RQE 47292",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "jornaldebeltrao.com.br"
+  ]
+ },
+ {
+  "nome": "Guilherme da Silveira Bruno",
+  "cidade": "Rio de Janeiro",
+  "uf": "RJ",
+  "crm": "CRM-RJ 1095102",
+  "rqe": "43524",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "diretório (Doctoralia/Boa Consulta) pela busca: CRM-RJ 1095102 RQE 43524",
+  "verificado": "so_busca",
+  "pendencias": "só registro de diretório; sem fonte primária lida; formação não coletada",
+  "lista": [
+   "folhapatoense.com"
+  ]
+ },
+ {
+  "nome": "Wilson Abou Rejaili",
+  "cidade": "São José do Rio Preto",
+  "uf": "SP",
+  "crm": "",
+  "rqe": "",
+  "areas": [],
+  "sbcj": false,
+  "sbot": false,
+  "formacao_bruta": [],
+  "fonte_primaria": "",
+  "fonte_secundaria": "",
+  "verificado": "sem_dados",
+  "pendencias": "sem dados confiáveis",
+  "lista": []
+ }
+]

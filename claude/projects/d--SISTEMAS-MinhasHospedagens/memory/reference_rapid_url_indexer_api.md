@@ -85,3 +85,4 @@ Uso registrado: 12/09/2026, projeto **1177933** com os 36 guest posts do lote 8 
 - projeto 1201075 (22/09/2026): Jose Mario rodada 2, 20 URLs, 20 creditos (3951 -> 3931)
 
 - 03/10/2026: projeto 1230289 (José Mário, Instagram, rodada 3), 20 URLs, 20 créditos cobrados (1 por URL), saldo 1853 → 1833. Enviado com ordem expressa do Anderson.
+- 04/10/2026: projeto 1232788 (rotaambiental.com.br lote 3, 11 rede própria + 4 Jean), 15 URLs, 15 créditos (1 por URL), saldo 1824 → 1809. Enviado com ordem expressa do Anderson.
