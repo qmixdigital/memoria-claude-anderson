@@ -17,3 +17,4 @@
 - [Autores e redatores](autores-e-redatores.md) — quem assina cada tema (Juliana Borges nutrição, Camila Farias endocrino, Tredicci digestivo, Bufaiçal/Caixeta/Ulbiramar ortopedia, Tiago Brito o resto); site do autor é o primeiro link
 - [IndexNow e Bing](indexnow-bing.md) — chaves e endpoints para submeter URLs e sitemap ao Bing, IndexNow e Google
 - [Matéria assinada = primeira pessoa](materia-assinada-primeira-pessoa.md) — texto na voz do médico; link forte para a página de serviço do site dele; site nofollow na assinatura (correção forte do Anderson, 21/09)
+- [Loop 301/308 em /api/media](nginx-api-media-loop.md) — campo Foto do painel travado e upload falhando; bloco de cache do nginx tem de ser /api/media/file/
