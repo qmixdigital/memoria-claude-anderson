@@ -1,0 +1,1 @@
+- [Drive e Sheets pela SA seoqmix](drive-sheets-via-seoqmix.md) — sem conector do Drive, a service account seoqmix lê pastas e escreve planilhas; IDs da pauta da Körpem e env vars do gsc_api.py
