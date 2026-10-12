@@ -499,3 +499,20 @@ Bot criado pelo Renato pra receber tudo que acontece no site (estilo enjai).
 - Ao mexer aqui, sempre confirmar com o Renato antes de alterações intrusivas em código de plugin (Smmloja é proprietário e tem update mechanism — mudanças no plugin se perdem em update; preferir mu-plugins).
 - Os arquivos `.bak-*` em `/etc/php/*/fpm/pool.d/` são versionamento manual de configs antes de cada change.
 - Tabelas `*_bak_YYYYMMDD` em `Seg_Br_*` são backups dos fixes do dia — limpar após 7 dias se nada deu errado.
+
+---
+
+## rekaseguros.com.br (site estático novo, 09/10/2026)
+
+- Site CloudPanel id 6, usuário `rekaseguros`, docroot `/home/rekaseguros/htdocs/rekaseguros.com.br`, vhost `/etc/nginx/sites-enabled/rekaseguros.com.br.conf`.
+- DNS A → 31.97.20.252 (Cloudflare NS, não proxiado). www → 301 para raiz.
+- **Encontrado:** site criado como Node.js (proxy :3000 sem app) = 502, cert autoassinado.
+- **Feito:** projeto estático em `D:\SITES\rekaseguros.com.br` (docs em `docs/`), vhost trocado para estático
+  (`try_files $uri $uri.html`, `error_page 404 /404.html`, 301 de `.html` → limpo, cache de assets); template
+  também trocado no SQLite do CloudPanel (`site.vhost_template`, type=static) para o painel não regenerar o proxy.
+  Backup do vhost antigo em `/root/vhost-backups/`. Let's Encrypt emitido (`clpctl lets-encrypt:install:certificate`),
+  renovação coberta pelo `le-auto-renew.sh`.
+- **Gotcha:** `systemctl reload nginx` não bastou para parar de proxiar (workers antigos seguravam a conexão h2);
+  `systemctl restart nginx` resolveu.
+- **Publicar atualização:** `tar czf - --exclude=_dev --exclude=docs --exclude=.htaccess . | ssh renato-novo "tar xzf - -C /home/rekaseguros/htdocs/rekaseguros.com.br && chown -R rekaseguros:rekaseguros /home/rekaseguros/htdocs/rekaseguros.com.br"` (rsync não está instalado localmente).
+- Pendências do cliente (telefone, SUSEP, GA4, seguradoras reais): `D:\SITES\rekaseguros.com.br\docs\DADOS-PENDENTES.md`.

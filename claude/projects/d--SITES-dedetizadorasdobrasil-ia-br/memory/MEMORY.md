@@ -1,0 +1,1 @@
+- [Deploy: token BYTX não publica o Worker](deploy-token-bytx.md) — token de contas.json só lê DNS/SSL; deploy é do coordenador; correções de titular em src/data/correcoes.json

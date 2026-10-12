@@ -48,3 +48,5 @@
 - [Economia de tokens](feedback-economia-de-tokens.md) — limite semanal: nada de agentes em massa sem ele pedir; conferir por script; parar na hora se reclamar
 - [Listas divididas com o COE](qmix-pedido-listas-joelho-2026-10.md) — coluna entregue 04/10/2026 (faturas 203/204, demandas da Kátia); joelho do Ulbiramar aguardando pesquisa de médicos; regras do formato
 - [Pedido mão/pé/dor 2026-10](qmix-pedido-mao-pe-dor-2026-10.md) — 10 listas prontas em D:\tmp\joelho\art4, faltam portais e preço do Anderson
+- [AdSense nas ferramentas](qmix-adsense-ferramentas.md) — ligado 09/10/2026: 3 unidades por DOM no layout (tools), posições, política com opt-out, script de conferência
+- [Um portal por cliente](feedback-um-portal-por-cliente.md) — nunca duas matérias do mesmo cliente no mesmo portal; cruzar listas de campanhas compartilhadas antes de criar (erro jornaldebeltrao 09/10/2026)

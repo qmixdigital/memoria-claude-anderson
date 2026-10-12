@@ -75,3 +75,4 @@ A SerpAPI **não indexa**, ela lê a SERP. Ver [[serpapi-chave]].
 | 16/08/2026 | 1106049, agoranoticias Casa (novos) | 30 | 30 créditos | 871 |
 | 16/08/2026 | 1106050, agoranoticias atualizados | 32 | 32 créditos | 839 |
 | 16/08/2026 | 1106174, clickinfohub Manutenção (novos) | 30 | 30 créditos | 809 |
+| 09/10/2026 | 1242944, rotaambiental paginas novas (locais + produtos) | 20 | 20 créditos | 1811 |

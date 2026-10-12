@@ -86,3 +86,12 @@ Uso registrado: 12/09/2026, projeto **1177933** com os 36 guest posts do lote 8 
 
 - 03/10/2026: projeto 1230289 (José Mário, Instagram, rodada 3), 20 URLs, 20 créditos cobrados (1 por URL), saldo 1853 → 1833. Enviado com ordem expressa do Anderson.
 - 04/10/2026: projeto 1232788 (rotaambiental.com.br lote 3, 11 rede própria + 4 Jean), 15 URLs, 15 créditos (1 por URL), saldo 1824 → 1809. Enviado com ordem expressa do Anderson.
+- 10/10/2026: projeto 1245152 (wtw19 IPTV lote 3: 9 guest posts para geracaoconsciente/museudalampada/empilhando), 9 URLs, 9 créditos, saldo 1756 → 1747. Enviado com ordem expressa do Anderson.
+- 10/10/2026: projeto 1245340 (lote 4 IPTV em 9 portais da rede para geracaoconsciente/museudalampada/empilhando), 9 URLs, 9 créditos, saldo 1744 → 1735. Enviado com ordem expressa do Anderson depois da conferência de SEO e AEO.
+- 10/10/2026: projeto 1245394 (lote 6 IPTV em 4 portais da rede para geracaoconsciente/museudalampada/empilhando), 8 URLs, 8 créditos, saldo 1735 → 1727. Enviado com ordem expressa do Anderson depois da auditoria no ar.
+- 10/10/2026: projeto 1245463 (lote 8 cidades em 6 portais da rede para geracaoconsciente/museudalampada/empilhando), 6 URLs, 6 créditos, saldo 1727 → 1721. Enviado com ordem expressa do Anderson depois da auditoria no ar.
+- 10/10/2026: projeto 1245557 (lote 10 artigos novos em 8 portais da rede para geracaoconsciente/museudalampada/empilhando), 8 URLs, 8 créditos, saldo 377 → 369. Enviado com ordem expressa do Anderson depois da auditoria no ar. ATENÇÃO: o saldo estava em 1721 no envio anterior (projeto 1245463); a queda de ~1344 créditos entre os dois não veio desta sessão.
+- 10/10/2026: projeto 1245571 (páginas teste-iptv-xciptv nos 3 domínios novos: geracaoconsciente, museudalampada, empilhando), 3 URLs, 3 créditos, saldo 369 → 366. Enviado com ordem expressa do Anderson.
+- 10/10/2026: projeto 1245753 (procrie.com.br lote 10: 8 guest posts em 8 portais da rede + página /teste-iptv-xciptv), 9 URLs, 9 créditos, saldo 366 → 357. Enviado com ordem expressa do Anderson depois da auditoria no ar.
+- 10/10/2026: projeto 1245879 (empilhando.com.br home lote 12: 8 guest posts em portais novos do clinicas-vps e srv1166087), 8 URLs, 8 créditos, saldo 357 → 349. Enviado com ordem expressa do Anderson depois da auditoria no ar.
+- 10/10/2026: projeto 1246357 (empilhando.com.br home lote 13: 7 guest posts em portais novos do clinicas-vps e srv1166087), 7 URLs, 7 créditos, saldo 349 → 342. Enviado com ordem expressa do Anderson depois da auditoria no ar.

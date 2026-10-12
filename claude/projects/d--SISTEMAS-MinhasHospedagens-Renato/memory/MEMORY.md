@@ -1,0 +1,1 @@
+- [Projeto rekaseguros.com.br](projeto-rekaseguros.md) — site estático da corretora, pasta D:\SITES\rekaseguros.com.br, placeholders pendentes, deploy na renato-novo

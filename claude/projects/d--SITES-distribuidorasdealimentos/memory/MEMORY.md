@@ -3,3 +3,4 @@
 - [Postgres max_connections](reference_postgres_max_connections.md) — subido de 100 para 300 em 07/07/2026 para builds SSG não esgotarem slots
 - [Auto-link expandido](project_autolink_expandido.md) — src/lib/auto-link.ts cobre 12 tipos de link (produtos, marcas, safras, CEASAs, guias, ferramentas...) com cotas por tipo
 - [Nginx rate limit + fail2ban](reference_nginx_ratelimit.md) — 28/07/2026 zone `nextjs_ip` compartilhada por 18 sites Next.js do servidor + fail2ban jails (nginx-limit-req + recidive)
+- [Situação cadastral da Receita](project_receita_situacao.md) — rotina mensal (scripts/receita-*), fichas encerradas, limpeza de nomes trocados; baixar os zips é passo manual

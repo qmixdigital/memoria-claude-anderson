@@ -6,3 +6,4 @@
 - [GA4 rastreio do joelho](ga4-rastreio-joelho.md) — generate_lead {metodo, local, texto_botao} desde 17/09/2026; conta enjai edita a propriedade
 - [GBP categoria 17/09/2026](gbp-categoria-2026-09-17.md) — principal virou Cirurgião ortopédico; baseline do Search Console para comparar em outubro
 - [Pages: splats por último no _redirects](pages-redirects-splat-ordem.md) — regra estática depois de um splat vira dinâmica; acima de 100 o Pages descarta o resto em silêncio (21/09/2026)
+- [Rapid URL Indexer do joelho](rapid-url-indexer-joelho.md) — 30 artigos novos enviados em modo Apex em 10/10/2026 (projeto 1244885); conferir URLs por projeto antes de reenviar

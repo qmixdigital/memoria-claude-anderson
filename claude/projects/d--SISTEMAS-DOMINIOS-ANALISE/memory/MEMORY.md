@@ -1,0 +1,1 @@
+- [Análise de lista de domínios na Moz](analise-lista-dominios-moz.md) — script standalone, custo de cota, filtro de diretórios/PBN, ranking de 09/10/2026
