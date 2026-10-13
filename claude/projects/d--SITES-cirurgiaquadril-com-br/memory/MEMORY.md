@@ -1,0 +1,2 @@
+- [Projeto cirurgiaquadril](projeto-cirurgiaquadril.md) — site Calábria & Bernardes, deploy Pages e pendências
+- [Hero sempre à esquerda](feedback-hero-alinhado-esquerda.md) — nunca centralizar texto do hero, nem no mobile

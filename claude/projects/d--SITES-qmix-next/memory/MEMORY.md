@@ -50,3 +50,4 @@
 - [Pedido mão/pé/dor 2026-10](qmix-pedido-mao-pe-dor-2026-10.md) — 10 listas prontas em D:\tmp\joelho\art4, faltam portais e preço do Anderson
 - [AdSense nas ferramentas](qmix-adsense-ferramentas.md) — ligado 09/10/2026: 3 unidades por DOM no layout (tools), posições, política com opt-out, script de conferência
 - [Um portal por cliente](feedback-um-portal-por-cliente.md) — nunca duas matérias do mesmo cliente no mesmo portal; cruzar listas de campanhas compartilhadas antes de criar (erro jornaldebeltrao 09/10/2026)
+- [Transcrição só para insights](feedback-transcricao-so-insights.md) — nunca citar apresentador/convidado/episódio de YouTube no artigo; tese vira "o que circula" + dado próprio + fonte primária (12/10/2026)

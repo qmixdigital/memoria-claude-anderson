@@ -61,7 +61,7 @@ description: Padrao de construcao dos sites do Anderson (HTML estatico e Next.js
 
 | Elemento | Desktop | Mobile |
 |----------|---------|--------|
-| Hero (h1, paragrafo, CTA) | **Esquerda** | **Centralizado** |
+| Hero (h1, paragrafo, CTA) | **Esquerda** | **Esquerda** (NUNCA centralizar o texto do hero, nem no mobile; o Anderson acha desorganizado) |
 | Titulos de secao (h2) | **Centralizado** | **Centralizado** |
 | Texto dentro de cards | **Centralizado** | **Centralizado** |
 | Paragrafos de conteudo longo | **Esquerda** | **Esquerda** |
