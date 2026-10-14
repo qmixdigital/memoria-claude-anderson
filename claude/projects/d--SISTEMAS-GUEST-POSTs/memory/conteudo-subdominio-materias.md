@@ -67,7 +67,7 @@ Correção sem trocar o link: `scripts/atualizar-materia.mjs <token> json`.
 **Planilha do Jean (14/09/2026):** planilha Google `<<REMOVIDO>>`,
 aba de pedidos "Pedidos Fevereiro" (nome fixo, segue em uso), preços na aba "DOMÍNIOS"
 (colunas NORMAL e APOSTAS). Escrita pela conta de serviço `seoqmix`
-(`C:\Users\User\Documents\APIs\seoqmix-024e9465e9d9.json`; Sheets API ativada e planilha
+(`<<REMOVIDO>>`; Sheets API ativada e planilha
 compartilhada como editor). Script `scripts/planilha_jean.py enviar <dominio> "<título>" <link>`
 na skill materias-jornalisticas-linkbuilding. Só enviar quando o Anderson mandar.
 jornaldebeltrao.com.br não está na aba de preços (perguntar o valor).

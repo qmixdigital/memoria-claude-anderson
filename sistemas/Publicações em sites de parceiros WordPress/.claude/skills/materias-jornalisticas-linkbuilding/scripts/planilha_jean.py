@@ -16,7 +16,7 @@ import argparse
 from google.oauth2 import service_account
 from google.auth.transport.requests import AuthorizedSession
 
-SA = r"C:\Users\User\Documents\APIs\seoqmix-024e9465e9d9.json"
+SA = r"<<REMOVIDO>>"
 ID = "<<REMOVIDO>>"
 ABA_PEDIDOS = "Pedidos Fevereiro"  # a aba em uso continua com esse nome mesmo fora de fevereiro
 ABA_PRECOS = "DOMÍNIOS"

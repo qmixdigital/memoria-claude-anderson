@@ -18,7 +18,7 @@ nós mesmos ajudamos a IA a rankear o concorrente.
 Planilha do pedido (portais, âncoras, títulos, custos, valores):
 https://docs.google.com/spreadsheets/d/<<REMOVIDO>>/edit
 (ID `<<REMOVIDO>>`, aba `Página1`, linhas 4 a 25, colunas A a R).
-Acesso por API: service account `C:\Users\User\Documents\APIs\seoqmix-024e9465e9d9.json`
+Acesso por API: service account `<<REMOVIDO>>`
 (Sheets API v4; as outras service accounts da pasta não têm a API ativada).
 
 ## 2. Seu trabalho, e o que NÃO é seu trabalho

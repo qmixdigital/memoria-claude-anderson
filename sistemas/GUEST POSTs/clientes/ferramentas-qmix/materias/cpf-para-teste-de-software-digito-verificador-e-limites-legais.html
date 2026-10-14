@@ -1,0 +1,71 @@
+<p>Todo formulário de cadastro, loja virtual ou sistema de atendimento do país pede CPF, e quem desenvolve esses sistemas precisa testar o campo com números que passem na validação. Usar o documento de uma pessoa real nesses testes é inadequado e desnecessário. Um <a href="https://ferramentas.qmix.com.br/gerador-de-cpf">gerador de CPF válido</a> cria sequências que respeitam o cálculo oficial sem pertencer a ninguém conhecido, e resolve o problema da equipe de testes.</p>
+
+<p>Mas o CPF para teste de software tem limites claros, tanto técnicos quanto legais. Entender como o número é montado ajuda a testar melhor, e saber o que a lei diz evita usos indevidos.</p>
+
+<h2>Como o número do CPF para teste de software é montado</h2>
+
+<p>O Cadastro de Pessoas Físicas tem 11 algarismos. Os oito primeiros são um número de sequência, o nono indica a região fiscal onde o documento foi emitido, e os dois últimos são os dígitos verificadores. Na forma escrita, aparecem separados por pontos e um traço, como 000.000.000-00, mas a pontuação é apenas formatação.</p>
+
+<p>O nono dígito remete a um conjunto de estados. O número 1, por exemplo, corresponde a Distrito Federal, Goiás, Mato Grosso, Mato Grosso do Sul e Tocantins. O 8 corresponde a São Paulo, e o 0, ao Rio Grande do Sul. Assim, o CPF carrega uma pista da origem do registro, embora isso não revele nada sobre a pessoa.</p>
+
+<p>Esse detalhe é útil para testes mais completos, em que o sistema precisa lidar com CPFs de todas as regiões do país.</p>
+
+<h2>Como se calculam os dígitos verificadores</h2>
+
+<p>O cálculo usa o módulo 11, em duas etapas. Para o primeiro dígito, multiplica-se cada um dos nove primeiros algarismos por pesos decrescentes, de 10 a 2, soma-se o resultado e calcula-se o resto da divisão por 11. Se o resto for menor que 2, o dígito é zero. Nos demais casos, é 11 menos o resto.</p>
+
+<p>Para o segundo dígito, repete-se a conta com dez algarismos, agora incluindo o primeiro dígito verificador, e pesos de 11 a 2. O par de dígitos resultante é o que o validador confere quando alguém digita um CPF.</p>
+
+<p>Esse mecanismo pega a maioria dos erros de digitação, como um algarismo trocado ou dois invertidos. Ele não confirma que o CPF existe na base da Receita, e apenas atesta que o número é matematicamente coerente.</p>
+
+<h2>CPF para teste de software: o que verificar no sistema</h2>
+
+<p>O primeiro teste é o de aceitação: o campo recebe um CPF válido com e sem máscara e o armazena corretamente. O segundo é o de rejeição: números com dígitos verificadores errados, tamanho diferente de 11 e letras devem gerar mensagens de erro claras.</p>
+
+<p>Um caso clássico é o das sequências repetidas, como 111.111.111-11 ou 000.000.000-00. Embora passem no cálculo do módulo 11, são considerados inválidos pelo costume e pelas regras de validação, e um bom sistema precisa rejeitá-los. Esquecer esse detalhe é uma falha frequente.</p>
+
+<p>Vale testar também a duplicidade, para garantir que o sistema impede dois cadastros com o mesmo CPF quando a regra de negócio exige. E, por fim, os fluxos de ponta a ponta: cadastro, compra, emissão de nota e recuperação de conta.</p>
+
+<h2>Por que não usar o CPF de gente de verdade</h2>
+
+<p>O CPF é um dado pessoal, protegido pela Lei Geral de Proteção de Dados. O princípio da necessidade, previsto na lei, orienta a usar o mínimo de dados reais possível, e o ambiente de testes é o lugar mais óbvio para dispensá-los. Um banco de testes com CPFs reais pode vazar, ser acessado por pessoas sem autorização ou disparar mensagens para quem não deveria.</p>
+
+<p>Dados fictícios eliminam esse risco. Se o banco de testes vaza, o que se expõe são números sem dono, e não pessoas.</p>
+
+<p>Há, porém, uma nuance. Como o número é gerado por cálculo, pode coincidir com o CPF de uma pessoa real. A chance é pequena para cada número, mas existe. Por isso, é prudente nunca disparar mensagens, cobranças ou consultas externas com dados de teste.</p>
+
+<h2>O que a lei diz sobre usar CPF falso</h2>
+
+<p>Um CPF gerado não é documento. Não foi emitido pela Receita Federal e não tem valor perante nenhum órgão. Usá-lo para abrir conta, fazer compras, receber benefícios ou se identificar em qualquer situação real é fraude, com consequências que podem envolver crimes como falsidade ideológica e estelionato.</p>
+
+<p>Por isso, as ferramentas sérias avisam que o gerador existe para desenvolvimento e homologação. A recomendação vale também para equipes: deixar claro no manual interno que os números de teste servem apenas para ambientes de teste.</p>
+
+<p>Em dúvida sobre o enquadramento legal de uma prática, a orientação é consultar o setor jurídico da empresa ou um advogado.</p>
+
+<h2>Boas práticas para equipes de qualidade</h2>
+
+<p>Mantenha um conjunto fixo de CPFs de teste, documentado, com casos de cada região fiscal, números com zeros à esquerda e exemplos inválidos conhecidos. Isso facilita testes repetíveis e reduz a dependência de gerar números a cada execução.</p>
+
+<p>Automatize a validação do dígito verificador nos testes, de modo que qualquer alteração no código seja checada contra o cálculo oficial. Revise as mensagens de erro: o usuário precisa entender o problema sem conhecer o algoritmo.</p>
+
+<p>E lembre que a validação do número é só uma parte da qualidade. A experiência do usuário ao digitar, a clareza das mensagens e a segurança do armazenamento têm tanto peso quanto o cálculo.</p>
+
+<h2>CPF para teste de software em diferentes tipos de sistema</h2>
+
+<p>Em lojas virtuais, o CPF aparece no cadastro do cliente e na emissão da nota fiscal. Testar esse fluxo exige números válidos, porque o sistema de pagamento costuma validar o documento antes de aprovar a compra. Em sistemas de saúde e de benefícios, o CPF é a chave de busca do cadastro, e os testes precisam cobrir buscas com e sem pontuação.</p>
+
+<p>Em aplicativos de banco e de pagamento, o CPF costuma servir de chave Pix, o que exige atenção ao formato do campo. Um teste útil é cadastrar o CPF como chave em ambiente de homologação e conferir se o sistema impede duplicidades. Esses cenários são frequentes em equipes que trabalham com meios de pagamento.</p>
+
+<p>Também há testes de interface: máscaras que se aplicam enquanto o usuário digita, mensagens de erro em tempo real e comportamento ao colar um número já formatado. O gerador ajuda a repetir esses cenários com rapidez.</p>
+
+<h2>Uma tabela mental das regiões fiscais</h2>
+
+<p>Para quem precisa de variedade, o nono dígito é um bom critério. Os dígitos de 1 a 9 e o zero correspondem a conjuntos de estados: 1 para o Centro-Oeste e o Tocantins, 2 para parte do Norte, 3 para Ceará, Maranhão e Piauí, 4 para Alagoas, Paraíba, Pernambuco e Rio Grande do Norte, 5 para Bahia e Sergipe, 6 para Minas Gerais, 7 para Rio de Janeiro e Espírito Santo, 8 para São Paulo, 9 para Paraná e Santa Catarina, e 0 para o Rio Grande do Sul.</p>
+
+<p>Uma regra de negócio que dependa do estado do cliente, como imposto ou frete, pode ser testada com CPFs de regiões diferentes. Mas é importante lembrar que o dígito indica apenas onde o documento foi emitido, e não onde a pessoa mora.</p>
+
+<h2>Um resumo para guardar</h2>
+
+<p>O CPF tem 11 algarismos, com o nono indicando a região fiscal e os dois últimos validando o conjunto pelo módulo 11. Geradores criam números que passam nesse cálculo, e servem exclusivamente para testar sistemas.</p>
+
+<p>Para quem desenvolve, o gerador economiza tempo e protege dados reais. Para quem lê sobre o tema, fica a lição de que um número válido não é um documento verdadeiro, e que o uso fora do teste tem consequências sérias.</p>

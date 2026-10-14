@@ -51,3 +51,6 @@
 - [AdSense nas ferramentas](qmix-adsense-ferramentas.md) — ligado 09/10/2026: 3 unidades por DOM no layout (tools), posições, política com opt-out, script de conferência
 - [Um portal por cliente](feedback-um-portal-por-cliente.md) — nunca duas matérias do mesmo cliente no mesmo portal; cruzar listas de campanhas compartilhadas antes de criar (erro jornaldebeltrao 09/10/2026)
 - [Transcrição só para insights](feedback-transcricao-so-insights.md) — nunca citar apresentador/convidado/episódio de YouTube no artigo; tese vira "o que circula" + dado próprio + fonte primária (12/10/2026)
+- [Pedido interno de 30 matérias](qmix-pedido-interno-30-portais.md) — pedidos 146 (cartorio), 147 (ferramentas.qmix), 148 (psicologosperto), 149 (seuguiadesaude) e 150 (revistamsaude) feitos 13/10; semana de 19/10 mais 30 em outros domínios; método de lote
+- [Nicho do portal manda](feedback-nicho-do-portal.md) — tema da matéria tem que casar com o nicho do portal; erro de 13/10 (terapia em portal de carros) corrigido nos pedidos 147 e 148; sobra vira reserva
+- [Só parceiros no painel](feedback-so-parceiros-no-painel.md) — domínio de matéria do painel tem que estar nas listas rodrigo/gustavo/lucas.txt; rede própria só com ordem (erro do pedido 150, 13/10/2026)

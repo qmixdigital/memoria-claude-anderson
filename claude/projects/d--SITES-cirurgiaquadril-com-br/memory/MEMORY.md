@@ -1,2 +1,4 @@
 - [Projeto cirurgiaquadril](projeto-cirurgiaquadril.md) — site Calábria & Bernardes, deploy Pages e pendências
 - [Hero sempre à esquerda](feedback-hero-alinhado-esquerda.md) — nunca centralizar texto do hero, nem no mobile
+- [Artigos do blog no Drive](referencia-artigos-drive.md) — pasta de entrega da redatora e script para conferir novos artigos
+- [Regras dos artigos do blog](feedback-artigos-blog-regras.md) — não editar texto da redatora, sem Goiânia no título, fotos de banco, links verificados

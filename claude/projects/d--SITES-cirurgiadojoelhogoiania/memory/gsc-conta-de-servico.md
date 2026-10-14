@@ -5,7 +5,7 @@ metadata:
   type: reference
 ---
 
-`seoqmix@seoqmix.iam.gserviceaccount.com` (chave em `C:\Users\User\Documents\APIs\seoqmix-024e9465e9d9.json`)
+`seoqmix@seoqmix.iam.gserviceaccount.com` (chave em `<<REMOVIDO>>`)
 e **siteFullUser** da propriedade de dominio `sc-domain:cirurgiadojoelhogoiania.com`, que cobre apex,
 www e blog. Da para listar/enviar/remover sitemaps e inspecionar URLs pela API.
 

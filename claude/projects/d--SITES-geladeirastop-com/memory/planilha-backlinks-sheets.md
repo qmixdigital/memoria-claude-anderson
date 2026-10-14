@@ -10,7 +10,7 @@ Planilha de backlinks do geladeirastop.com no Google Sheets:
 aba única `BACKLINKS geladeirastop.com` (gid 368752481).
 
 **Só a service account `seoqmix@seoqmix.iam.gserviceaccount.com`**
-(`C:\Users\User\Documents\APIs\seoqmix-024e9465e9d9.json`) consegue escrever:
+(`<<REMOVIDO>>`) consegue escrever:
 é a única com a API do Sheets ativa no projeto dela, e a planilha está
 compartilhada com ela como editor. As outras (`backlinkguard`, `qmix-seo`) têm o
 projeto sem a API, e a conta Google do Anderson não é dona desses projetos para

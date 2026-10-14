@@ -1,0 +1,14 @@
+{
+ "id": 26,
+ "portal": "solutydigital.com.br",
+ "titulo": "Código de barras EAN-13: como o dígito verificador é calculado",
+ "linha_fina": "O código de barras EAN-13 tem 13 dígitos, e o último é calculado a partir dos outros doze.",
+ "palavra_chave": "código de barras EAN-13",
+ "ancora": "gerador de código de barras",
+ "url": "https://ferramentas.qmix.com.br/gerador-de-codigo-de-barras",
+ "imagem_termo": "barcode scanner supermarket checkout product",
+ "imagem_alt": "Corredor de supermercado com prateleiras de produtos",
+ "imagem_fonte": "Pixabay",
+ "imagem_fonte_url": "https://pixabay.com/photos/supermarket-shelves-shopping-507295/",
+ "imagem_autor": "reverent"
+}

@@ -18,3 +18,4 @@
 - [IndexNow e Bing](indexnow-bing.md) — chaves e endpoints para submeter URLs e sitemap ao Bing, IndexNow e Google
 - [Matéria assinada = primeira pessoa](materia-assinada-primeira-pessoa.md) — texto na voz do médico; link forte para a página de serviço do site dele; site nofollow na assinatura (correção forte do Anderson, 21/09)
 - [Loop 301/308 em /api/media](nginx-api-media-loop.md) — campo Foto do painel travado e upload falhando; bloco de cache do nginx tem de ser /api/media/file/
+- [Checar indexação pelo GSC](checar-indexacao-gsc.md) — SerpApi oscila e gasta Apex à toa; usar Inspeção de URL do Search Console

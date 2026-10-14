@@ -35,4 +35,21 @@ Fluxo que funcionou em 07/09/2026:
 FII com codigo terminado em 13 (ex: HGLG13) e **recibo de subscricao**, nao cota.
 Nao existe em `tickers` e converte na cota normal depois. Nao vale cadastrar.
 
+**Extrato de movimentacao (13/10/2026, periodo 31/10/2025 a 09/10/2026):**
+devolucao de emprestimo de acoes (doador) aparece como "Transferencia -
+Liquidacao" credito COM preco, igual a compra. O sinal e a linha de
+"Emprestimo" credito + "Transferencia" deb/cred sem preco dias antes, com a
+MESMA quantidade. Em 13/10/2026 as cinco compras fantasmas (BBAS3 2239, BBDC4
+833, SYNE3 600, ITSA4 510, RECV3 100) foram removidas de `trades` (copia em
+`qmix_invest.trades_removidos_20261013`) e o ledger passou a bater com
+`user_portfolio`. Isso mudou a apuracao: prejuizo de julho/2026 caiu de
+9.145,04 para 7.593,39 e as DARF em aberto de jan e fev/2026 foram reapuradas
+(97,89 e 418,82). Backup da carteira anterior em
+`qmix_invest.user_portfolio_bak_20261013`.
+
+Subscricao entra em `corporate_events` com `new_quantity` e `new_pm_brl`
+absolutos (o ledger nao soma, substitui). Feito em 13/10 para HGLG11 (31 @
+156,70) e BBDC3 (2848 @ 16,33). Pendente: KNCR11 +8 cotas (pedido em
+09/10/2026, preco do exercicio ainda nao saiu no extrato).
+
 Ver [[repo-invest-defasado-vs-producao]].
