@@ -1,0 +1,15 @@
+{
+  "titulo": "Vacina durante a gravidez: o que diz o calendário do PNI",
+  "kw": "vacina durante a gravidez",
+  "resumo": "Entenda quais vacinas protegem mãe e bebê, quais ficam de fora e quando repor a vacina durante a gravidez.",
+  "slug": "vacina-durante-a-gravidez",
+  "fontes": [
+    {"afirmacao": "dTpa recomendada em todas as gestações, a partir da 20ª semana gestacional, com possibilidade de aplicação até 45 dias após o parto quando não feita na gravidez", "url": "https://www.gov.br/saude/pt-br/vacinacao/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-gestante"},
+    {"afirmacao": "Hepatite B em esquema de 3 doses ajustado ao histórico vacinal da gestante; influenza em dose única por temporada, podendo ser aplicada em qualquer trimestre", "url": "https://sbim.org.br/images/gestante-Calend-SBIm-2025-251124-web.pdf_2025-11-24.pdf"},
+    {"afirmacao": "Vacinas de vírus vivo atenuado (tríplice viral, varicela, dengue) não recomendadas na gestação; febre amarela só em situação de risco elevado de exposição, com avaliação individual", "url": "https://www.febrasgo.org.br/images/pec/CNE_pdfs/fps2024/Protocolos%20cole%C3%A7%C3%A3o%202024-2025/n14%20-%20O%20-%20Imunizacoes%20ativa%20e%20passiva%20durante%20a%20gravidez.pdf"}
+  ],
+  "pendente_verificar": [
+    "Confirmar na fonte oficial vigente do Ministério da Saúde/PNI se a vacina contra covid-19 e a vacina contra VSR (vírus sincicial respiratório) para gestantes estão incluídas no calendário nacional gratuito no momento da publicação; não entraram no texto por falta de confirmação oficial atualizada na pesquisa.",
+    "Confirmar o intervalo mínimo exato entre a dose de dTpa e a data do parto, citado de forma distinta em versões técnicas diferentes do calendário consultado."
+  ]
+}

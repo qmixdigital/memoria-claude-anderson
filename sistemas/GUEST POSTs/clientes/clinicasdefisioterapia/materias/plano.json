@@ -1,0 +1,102 @@
+[
+ {
+  "n": "01",
+  "portal": "jornalbahia",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/clinicas/ba/salvador/barra/",
+  "destino_tema": "Fisioterapia em Barra, Salvador BA: 12 clínicas",
+  "pauta": "fisioterapia pode ser feita em casa",
+  "kw_post": "fisioterapia pode ser feita em casa",
+  "ancora": "clínicas de fisioterapia na Barra, em Salvador",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "02",
+  "portal": "alagoasdiario",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/clinicas/al/maceio/tabuleiro-do-martins/",
+  "destino_tema": "Fisioterapia em Tabuleiro do Martins, Maceió AL: 10 clínicas",
+  "pauta": "fisioterapia ajuda na recuperação pós-cirúrgica",
+  "kw_post": "fisioterapia na recuperação pós-cirúrgica",
+  "ancora": "clínicas de fisioterapia no Tabuleiro do Martins, em Maceió",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "03",
+  "portal": "noticiasdefloriano",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/clinicas/pi/teresina/",
+  "destino_tema": "Fisioterapia em Teresina PI: 355 clínicas",
+  "pauta": "fisioterapia para dor lombar crônica",
+  "kw_post": "fisioterapia para dor lombar crônica",
+  "ancora": "clínicas de fisioterapia em Teresina",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "04",
+  "portal": "apucarananoticias",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/clinicas/pr/curitiba/bacacheri/",
+  "destino_tema": "Fisioterapia em Bacacheri, Curitiba PR: 43 clínicas",
+  "pauta": "fisioterapia respiratória, quando é indicada",
+  "kw_post": "fisioterapia respiratória",
+  "ancora": "clínicas de fisioterapia no Bacacheri, em Curitiba",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "05",
+  "portal": "saopauloaberta",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/clinicas/sp/campinas/",
+  "destino_tema": "Fisioterapia em Campinas SP: 909 clínicas",
+  "pauta": "fisioterapia para idosos, cuidados específicos",
+  "kw_post": "fisioterapia para idosos",
+  "ancora": "clínicas de fisioterapia em Campinas",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "06",
+  "portal": "sp2040",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/fisioterapia-pelo-sus/",
+  "destino_tema": "Fisioterapia pelo SUS: como conseguir atendimento",
+  "pauta": "sinais de que a fisioterapia não está funcionando",
+  "kw_post": "sinais de que a fisioterapia não está funcionando",
+  "ancora": "fisioterapia pelo SUS",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "07",
+  "portal": "webcitizen",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/blog/quantas-sessoes-de-fisioterapia-sao-necessarias/",
+  "destino_tema": "Quantas sessões de fisioterapia são necessárias?",
+  "pauta": "fisioterapia e pilates, qual a diferença na prática",
+  "kw_post": "diferença entre fisioterapia e pilates",
+  "ancora": "quantas sessões de fisioterapia são necessárias",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "08",
+  "portal": "portoenoticias",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/blog/fisioterapia-pelo-plano-de-saude-como-pedir/",
+  "destino_tema": "Fisioterapia pelo plano de saúde: como pedir",
+  "pauta": "fisioterapia esportiva, prevenção de lesões",
+  "kw_post": "fisioterapia esportiva",
+  "ancora": "como pedir fisioterapia pelo plano de saúde",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "09",
+  "portal": "jornalnoticiaonline",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/blog/diferenca-entre-fisioterapeuta-e-educador-fisico/",
+  "destino_tema": "Diferença entre fisioterapeuta e educador físico",
+  "pauta": "fisioterapia neurológica, para quais condições",
+  "kw_post": "fisioterapia neurológica",
+  "ancora": "diferença entre fisioterapeuta e educador físico",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "10",
+  "portal": "brasilnovonoticias",
+  "destino_url": "https://clinicasdefisioterapia.ia.br/blog/quando-o-ortopedista-encaminha-para-fisioterapia/",
+  "destino_tema": "Quando o ortopedista encaminha para fisioterapia",
+  "pauta": "quando procurar um fisioterapeuta pela primeira vez",
+  "kw_post": "quando procurar um fisioterapeuta",
+  "ancora": "quando o ortopedista encaminha para fisioterapia",
+  "tipo_ancora": "P"
+ }
+]

@@ -1,0 +1,33 @@
+{
+  "titulo": "Documentos que exigem certificado digital no Brasil",
+  "kw": "documentos que exigem certificado digital",
+  "resumo": "Veja quais documentos que exigem certificado digital em empresas, pessoa física, Justiça e eSocial no Brasil.",
+  "slug": "documentos-que-exigem-certificado-digital",
+  "fontes": [
+    {
+      "afirmacao": "A Medida Provisória 2.200-2/2001 criou a ICP-Brasil e deu validade jurídica a documentos eletrônicos assinados com certificado digital.",
+      "url": "https://www.planalto.gov.br/ccivil_03/mpv/antigas_2001/2200-2.htm"
+    },
+    {
+      "afirmacao": "A Juceb (Junta Comercial do Estado da Bahia) exige, em seu modelo de procuração, que o outorgado assine digitalmente a documentação com certificado ICP-Brasil do tipo A3 ou A1.",
+      "url": "https://www.ba.gov.br/juceb/sites/site-juceb/files/2025-01/PROCURA%C3%87%C3%83O.pdf"
+    },
+    {
+      "afirmacao": "Desde 2018, o envio de informações pelo eSocial exige certificado digital ICP-Brasil (e-CPF ou e-CNPJ, tipo A1 ou A3), com exceção do empregador doméstico, que segue com código de acesso.",
+      "url": "https://serpro.gov.br/menu/noticias/noticias-2018/certificado-digital-sera-obrigatorio-para-o-esocial"
+    },
+    {
+      "afirmacao": "O acesso ao e-CAC da Receita Federal pode ocorrer por código de acesso, conta gov.br ou certificado digital, mas algumas funções de maior sensibilidade exigem conta gov.br em nível prata/ouro ou certificado digital.",
+      "url": "https://razonet.com.br/contabilidade-digital/e-cac-receita-federal-como-acessar-e-o-que-voce-pode-fazer-la"
+    },
+    {
+      "afirmacao": "O Processo Judicial Eletrônico (PJe) utiliza o certificado digital como forma de identificação e assinatura do advogado nas petições.",
+      "url": "https://www.cnj.jus.br/certificacao-digital/"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se a exigência de certificado digital para declarações de IRPF com rendimentos acima de determinado valor (regra citada em instruções normativas antigas, ex.: IN 1246/2012, limite de R$ 10 milhões) ainda está em vigor na regra atual da Receita Federal.",
+    "Confirmar junto à Receita Federal/Sefaz se há exigência atual e uniforme de certificado digital e-CNPJ para emissão de NF-e em todos os regimes tributários, ou se há exceções por porte de empresa.",
+    "Confirmar se a obrigatoriedade de certificado digital no eSocial para MEI com empregados e produtor rural segue com as mesmas exceções de código de acesso descritas em fontes de 2018."
+  ]
+}

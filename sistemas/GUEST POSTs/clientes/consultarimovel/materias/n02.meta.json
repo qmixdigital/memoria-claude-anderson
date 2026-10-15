@@ -1,0 +1,33 @@
+{
+  "titulo": "Usucapião rural, como funciona o reconhecimento de posse",
+  "kw": "usucapião rural, como funciona",
+  "resumo": "Usucapião rural, como funciona na prática, envolve posse contínua, moradia e trabalho produtivo comprovado durante cinco anos seguidos.",
+  "slug": "usucapiao-rural-como-funciona",
+  "fontes": [
+    {
+      "afirmacao": "Usucapião especial rural (pro labore): base no art. 191 da CF/1988 e na Lei nº 6.969/1981; prazo de 5 anos de posse contínua e sem oposição, área de até 50 hectares, exigência de moradia e trabalho produtivo próprio ou da família, e vedação a quem já é proprietário de outro imóvel.",
+      "url": "https://jus.com.br/artigos/111850/usucapiao-em-propriedades-rurais-requisitos-e-procedimentos"
+    },
+    {
+      "afirmacao": "A ação judicial de usucapião rural especial segue o artigo 4º da Lei nº 6.969/1981, tramitando na comarca do imóvel.",
+      "url": "https://www.rotajuridica.com.br/?p=109677"
+    },
+    {
+      "afirmacao": "A Lei nº 13.465/2017 criou a via extrajudicial de reconhecimento de posse/usucapião, com base no art. 216-A da Lei de Registros Públicos (ata notarial, planta e memorial descritivo, concordância de confrontantes).",
+      "url": "https://sis.univs.edu.br/uploads/12/Direito/D_307.pdf"
+    },
+    {
+      "afirmacao": "Cartório de Água Branca (sertão de Alagoas) processa usucapião extrajudicial desde 2021; primeiro caso levou cerca de seis meses, segundo o tabelião. Corregedoria-Geral de Justiça de Alagoas trata a via extrajudicial como instrumento de regularização fundiária.",
+      "url": "https://www.irib.org.br/?p=99726"
+    },
+    {
+      "afirmacao": "Imóveis públicos não podem ser adquiridos por usucapião (CF/88, art. 191, parágrafo único, e art. 183, §3º, para a via urbana); jurisprudência do TRF-1 e do TJSP confirma a vedação.",
+      "url": "https://www.aasp.org.br/?p=39557"
+    }
+  ],
+  "pendente_verificar": [
+    "Nome do tabelião e detalhes processuais do caso de Água Branca (AL) vêm de relato reproduzido pelo IRIB/Corregedoria-AL; não houve acesso ao processo original para confirmar número do caso ou data exata de conclusão.",
+    "Total de 143.555 imóveis rurais de Alagoas no CAR é o dado informado na própria página de destino (destino_tema do plano), não reconfirmado por fonte externa nesta pesquisa.",
+    "Eventual tramitação de projeto de lei para reduzir o prazo de 5 para 3 anos (PL 60/15) não foi confirmada como vigente; não foi citada no artigo por falta de confirmação do status atual."
+  ]
+}

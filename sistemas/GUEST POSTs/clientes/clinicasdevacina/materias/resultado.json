@@ -1,0 +1,122 @@
+{
+ "10": {
+  "site": "sp2040",
+  "post_id": 12303,
+  "link": "https://sp2040.net.br/saude/vacina-fora-do-prazo/",
+  "status": "publish",
+  "link_edicao": "https://sp2040.net.br/wp-admin/post.php?post=12303&action=edit",
+  "media_id": 12302,
+  "legenda": "Imagem de Fauzan Fitria via Pexels",
+  "figura": false,
+  "ancora": "perdi a carteira de vacinação",
+  "destino": "https://clinicasdevacina.com/conteudo/perdi-a-carteira-de-vacinacao-e-agora/"
+ },
+ "01": {
+  "site": "jornalbahia",
+  "post_id": 3095,
+  "link": "https://jornalbahia.com.br/saude/sinais-de-reacao-alergica-apos-vacina/",
+  "status": "publish",
+  "link_edicao": "https://jornalbahia.com.br/wp-admin/post.php?post=3095&action=edit",
+  "media_id": 3094,
+  "legenda": "Imagem de CDC via Pexels",
+  "figura": false,
+  "ancora": "clínicas de vacina em Vitória da Conquista",
+  "destino": "https://clinicasdevacina.com/clinicas/ba/vitoria-da-conquista/"
+ },
+ "02": {
+  "site": "noticiasdetimon",
+  "post_id": 2710,
+  "link": "https://noticiasdetimon.com.br/saude/vacina-em-dia-para-matricula-escolar/",
+  "status": "publish",
+  "link_edicao": "https://noticiasdetimon.com.br/wp-admin/post.php?post=2710&action=edit",
+  "media_id": 2709,
+  "legenda": "Imagem de Yan Krukau via Pexels",
+  "figura": false,
+  "ancora": "clínicas de vacina em São Luís",
+  "destino": "https://clinicasdevacina.com/clinicas/ma/sao-luis/"
+ },
+ "03": {
+  "site": "apucarananoticias",
+  "post_id": 8076,
+  "link": "https://apucarananoticias.com.br/saude/vacina-da-gripe-quando-tomar/",
+  "status": "publish",
+  "link_edicao": "https://apucarananoticias.com.br/wp-admin/post.php?post=8076&action=edit",
+  "media_id": 8075,
+  "legenda": "Imagem de Nataliya Vaitkevich via Pexels",
+  "figura": false,
+  "ancora": "clínicas de vacina no Centro de Curitiba",
+  "destino": "https://clinicasdevacina.com/clinicas/pr/curitiba/centro/"
+ },
+ "04": {
+  "site": "alagoasdiario",
+  "post_id": 2809,
+  "link": "https://alagoasdiario.com.br/saude/calendario-vacinal-do-idoso/",
+  "status": "publish",
+  "link_edicao": "https://alagoasdiario.com.br/wp-admin/post.php?post=2809&action=edit",
+  "media_id": 2808,
+  "legenda": "Imagem de Kampus Production via Pexels",
+  "figura": false,
+  "ancora": "clínicas de vacina em Alagoas",
+  "destino": "https://clinicasdevacina.com/clinicas/al/"
+ },
+ "05": {
+  "site": "webcitizen",
+  "post_id": 46491,
+  "link": "https://webcitizen.com.br/vacina-durante-a-gravidez/",
+  "status": "publish",
+  "link_edicao": "https://webcitizen.com.br/wp-admin/post.php?post=46491&action=edit",
+  "media_id": 46490,
+  "legenda": "Imagem de MART PRODUCTION via Pexels",
+  "figura": false,
+  "ancora": "como tomar vacina pelo SUS",
+  "destino": "https://clinicasdevacina.com/como-tomar-vacina-no-sus/"
+ },
+ "06": {
+  "site": "portoenoticias",
+  "post_id": 5601,
+  "link": "https://portoenoticias.com.br/saude/vacina-para-quem-perdeu-o-cartao-de-vacinacao/",
+  "status": "publish",
+  "link_edicao": "https://portoenoticias.com.br/wp-admin/post.php?post=5601&action=edit",
+  "media_id": 5600,
+  "legenda": "Imagem de Ketut Subiyanto via Pexels",
+  "figura": true,
+  "ancora": "vacinas gratuitas no SUS",
+  "destino": "https://clinicasdevacina.com/gratuitas-no-sus/"
+ },
+ "07": {
+  "site": "jornalnoticiaonline",
+  "post_id": 3111,
+  "link": "https://jornalnoticiaonline.com.br/saude/documentos-comprovam-vacinacao/",
+  "status": "publish",
+  "link_edicao": "https://jornalnoticiaonline.com.br/wp-admin/post.php?post=3111&action=edit",
+  "media_id": 3110,
+  "legenda": "Imagem de Leeloo The First via Pexels",
+  "figura": false,
+  "ancora": "carteira de vacinação digital",
+  "destino": "https://clinicasdevacina.com/conteudo/como-funciona-a-carteira-de-vacinacao-digital/"
+ },
+ "08": {
+  "site": "brasilnovonoticias",
+  "post_id": 5398,
+  "link": "https://brasilnovonoticias.com.br/saude/vacina-febre-amarela-quem-precisa/",
+  "status": "publish",
+  "link_edicao": "https://brasilnovonoticias.com.br/wp-admin/post.php?post=5398&action=edit",
+  "media_id": 5397,
+  "legenda": "Imagem de Nataliya Vaitkevich via Pexels",
+  "figura": false,
+  "ancora": "vacina para viagem internacional",
+  "destino": "https://clinicasdevacina.com/conteudo/vacina-para-viagem-internacional-e-o-certificado/"
+ },
+ "09": {
+  "site": "saopauloaberta",
+  "post_id": 16676,
+  "link": "https://saopauloaberta.com.br/saude/reforco-vacinal-em-adultos/",
+  "status": "publish",
+  "link_edicao": "https://saopauloaberta.com.br/wp-admin/post.php?post=16676&action=edit",
+  "media_id": 16675,
+  "legenda": "Imagem de Gustavo Fring via Pexels",
+  "figura": false,
+  "ancora": "vacina tríplice viral",
+  "destino": "https://clinicasdevacina.com/vacinas/triplice-viral/"
+ }
+}

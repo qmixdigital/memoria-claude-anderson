@@ -1,0 +1,28 @@
+{
+  "titulo": "Como Confrontar Familiar sobre Uso de Drogas com Cuidado",
+  "kw": "confrontar familiar sobre uso de drogas",
+  "resumo": "Especialistas em dependência química explicam o momento certo para confrontar familiar sobre uso de drogas sem gerar mais resistência.",
+  "slug": "confrontar-familiar-sobre-uso-de-drogas",
+  "fontes": [
+    {
+      "afirmacao": "O método CRAFT (Community Reinforcement and Family Training) orienta familiares a trocar a acusação direta por comunicação sem julgamento e reforço positivo de pequenos avanços.",
+      "url": "https://drugfree.org/parenting-toward-recovery/"
+    },
+    {
+      "afirmacao": "Levantamento do Ministério Público de Alagoas (2022) apontou que apenas três municípios do estado tinham CAPS AD em funcionamento: Maceió, Palmeira dos Índios e Arapiraca.",
+      "url": "https://www.mpal.mp.br/wp-content/uploads/2022/04/rel_fin_drogas.pdf"
+    },
+    {
+      "afirmacao": "O CAPS AD é um ponto de atenção da Rede de Atenção Psicossocial (RAPS), instituída pela Portaria GM/MS nº 3.088/2011 para pessoas com necessidades decorrentes do uso de crack, álcool e outras drogas.",
+      "url": "https://www.saude.mt.gov.br/storage/old/files/0130-%5B5323-020212-SES-MT%5D.pdf"
+    },
+    {
+      "afirmacao": "O Governo de Alagoas, por meio da Seprev, oferecia em 2023 cerca de 750 vagas gratuitas em comunidades terapêuticas pelo programa Rede Acolhe.",
+      "url": "https://www.tribunadosertao.com.br/alagoas/2023/04/25/497063-seprev-e-departamento-nacional-de-apoio-as-comunidades-terapeuticas-buscam-fortalecer-as-politicas-sobre-drogas-em-al"
+    }
+  ],
+  "pendente_verificar": [
+    "Número atual de municípios com CAPS AD em Alagoas: o dado usado é de levantamento do MPAL de 2022 e pode ter mudado desde então.",
+    "Disponibilidade vigente de vagas no programa Rede Acolhe (dado de 2023, sujeito a variação orçamentária)."
+  ]
+}

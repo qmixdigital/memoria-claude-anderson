@@ -1,0 +1,24 @@
+{
+  "titulo": "Como apoiar familiar em recuperação sem julgar",
+  "kw": "apoiar familiar em recuperação",
+  "resumo": "Apoiar familiar em recuperação exige limites claros, paciência diária e evitar frases que reforçam culpa ou vergonha.",
+  "slug": "apoiar-familiar-em-recuperacao",
+  "fontes": [
+    {
+      "afirmacao": "O modelo de treinamento familiar CRAFT (Community Reinforcement and Family Training) foi desenvolvido por pesquisadores da Universidade do Novo México e defende reforçar comportamentos positivos em vez de confronto direto para motivar a busca por tratamento.",
+      "url": "https://cms-tenant1.umassmed.edu/cipc/resources/factsoud/family-members-craft-model"
+    },
+    {
+      "afirmacao": "Codependência é descrita na literatura acadêmica como o padrão de colocar as necessidades do outro acima das próprias a ponto de prejudicar o próprio bem-estar, com sinais como comportamento controlador e medo de rejeição.",
+      "url": "https://periodicos.ufmg.br/index.php/reme/article/view/50571"
+    },
+    {
+      "afirmacao": "Estudo qualitativo sobre grupos de apoio a familiares dentro de Centros de Atenção Psicossocial de Álcool e outras Drogas (CAPS AD) relata que o encontro semanal ajuda familiares a compreender a dependência como uma questão de saúde.",
+      "url": "https://periodicos.unicesumar.edu.br/index.php/saudpesq/article/download/11048/7368"
+    }
+  ],
+  "pendente_verificar": [
+    "A cidade e a instituição exatas do estudo citado sobre o grupo de apoio semanal em CAPS AD: a pesquisa trouxe mais de uma referência acadêmica sobre o tema (inclusive um relato específico de Aracaju) e não foi possível confirmar com certeza qual delas corresponde exatamente à formulação genérica usada no texto; por isso evitei citar cidade ou percentual específico.",
+      "A adoção oficial do modelo CRAFT por serviços públicos brasileiros não foi confirmada; o texto o apresenta como referência internacional (Estados Unidos), sem afirmar que é adotado pela rede pública brasileira."
+  ]
+}

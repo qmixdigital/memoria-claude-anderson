@@ -1,0 +1,40 @@
+{
+  "titulo": "Vacina fora do prazo: o que fazer com o esquema atrasado",
+  "kw": "vacina fora do prazo",
+  "resumo": "Doses já aplicadas continuam valendo mesmo quando a vacina fora do prazo ultrapassa a data prevista no calendário.",
+  "slug": "vacina-fora-do-prazo",
+  "fontes": [
+    {
+      "afirmacao": "Não existe intervalo máximo entre doses de vacina; é obrigatório respeitar os intervalos mínimos entre elas.",
+      "url": "https://sbim.org.br/images/nt-sbim-recuperacao-doses-260311.pdf_2026-03-11.pdf"
+    },
+    {
+      "afirmacao": "Esquemas vacinais já iniciados, em princípio, não devem ser recomeçados; todas as doses administradas anteriormente são consideradas válidas.",
+      "url": "https://sbim.org.br/images/nt-sbim-recuperacao-doses-260311.pdf_2026-03-11.pdf"
+    },
+    {
+      "afirmacao": "A pessoa só é considerada adequadamente imunizada após concluir o esquema recomendado para a própria idade.",
+      "url": "https://sbim.org.br/images/nt-sbim-recuperacao-doses-260311.pdf_2026-03-11.pdf"
+    },
+    {
+      "afirmacao": "Existe margem de tolerância de poucos dias (grace period) antes da idade ou do intervalo mínimo, exceto para tríplice viral e varicela, que exigem intervalo mínimo rigoroso de 4 semanas entre doses.",
+      "url": "https://sbim.org.br/images/nt-sbim-recuperacao-doses-260311.pdf_2026-03-11.pdf"
+    },
+    {
+      "afirmacao": "Doses aplicadas antes da idade mínima recomendada devem ser desconsideradas e repetidas no momento correto.",
+      "url": "https://sbim.org.br/images/nt-sbim-recuperacao-doses-260311.pdf_2026-03-11.pdf"
+    },
+    {
+      "afirmacao": "Vacinas inativadas podem ser administradas juntas ou com qualquer intervalo entre elas; duas vacinas de vírus vivo atenuado por via injetável, se não aplicadas no mesmo dia, exigem intervalo de 4 semanas entre si.",
+      "url": "https://sbim.org.br/images/nt-sbim-recuperacao-doses-260311.pdf_2026-03-11.pdf"
+    },
+    {
+      "afirmacao": "O uso recente de imunoglobulina ou de hemoderivados pode exigir intervalo próprio antes de vacinas de vírus vivo atenuado, conforme o produto e a dose recebidos.",
+      "url": "https://sbim.org.br/images/nt-sbim-recuperacao-doses-260311.pdf_2026-03-11.pdf"
+    }
+  ],
+  "pendente_verificar": [
+    "A disponibilidade de agendamento da vacinação por telefone ou aplicativo da prefeitura varia por município; o artigo trata isso de forma genérica, sem citar cidade (item sem praça regional fixa).",
+    "Detalhes de cobertura de registros antigos (só em papel) pelo aplicativo Conecte SUS podem variar por município e por época do registro; não verificados em fonte oficial específica para este texto."
+  ]
+}

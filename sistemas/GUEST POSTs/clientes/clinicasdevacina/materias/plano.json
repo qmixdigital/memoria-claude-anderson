@@ -1,0 +1,102 @@
+[
+ {
+  "n": "01",
+  "portal": "jornalbahia",
+  "destino_url": "https://clinicasdevacina.com/clinicas/ba/vitoria-da-conquista/",
+  "destino_tema": "Onde tomar vacina em Vitória da Conquista, BA",
+  "pauta": "sinais de reação alérgica após vacina",
+  "kw_post": "sinais de reação alérgica após vacina",
+  "ancora": "clínicas de vacina em Vitória da Conquista",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "02",
+  "portal": "noticiasdetimon",
+  "destino_url": "https://clinicasdevacina.com/clinicas/ma/sao-luis/",
+  "destino_tema": "Onde tomar vacina em São Luís, MA: postos do SUS e clínicas",
+  "pauta": "vacina em dia para matrícula escolar",
+  "kw_post": "vacina em dia para matrícula escolar",
+  "ancora": "clínicas de vacina em São Luís",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "03",
+  "portal": "apucarananoticias",
+  "destino_url": "https://clinicasdevacina.com/clinicas/pr/curitiba/centro/",
+  "destino_tema": "Onde tomar vacina no Centro, Curitiba (PR)",
+  "pauta": "vacina da gripe, quando tomar",
+  "kw_post": "vacina da gripe, quando tomar",
+  "ancora": "clínicas de vacina no Centro de Curitiba",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "04",
+  "portal": "alagoasdiario",
+  "destino_url": "https://clinicasdevacina.com/clinicas/al/",
+  "destino_tema": "Onde tomar vacina em Alagoas: cidades e SUS",
+  "pauta": "calendário vacinal do idoso",
+  "kw_post": "calendário vacinal do idoso",
+  "ancora": "clínicas de vacina em Alagoas",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "05",
+  "portal": "webcitizen",
+  "destino_url": "https://clinicasdevacina.com/como-tomar-vacina-no-sus/",
+  "destino_tema": "Como tomar vacina no SUS: UBS, documentos e horário",
+  "pauta": "vacina durante a gravidez",
+  "kw_post": "vacina durante a gravidez",
+  "ancora": "como tomar vacina pelo SUS",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "06",
+  "portal": "portoenoticias",
+  "destino_url": "https://clinicasdevacina.com/gratuitas-no-sus/",
+  "destino_tema": "Vacinas gratuitas no SUS: lista completa por idade",
+  "pauta": "vacina para quem perdeu o cartão de vacinação",
+  "kw_post": "vacina para quem perdeu o cartão de vacinação",
+  "ancora": "vacinas gratuitas no SUS",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "07",
+  "portal": "jornalnoticiaonline",
+  "destino_url": "https://clinicasdevacina.com/conteudo/como-funciona-a-carteira-de-vacinacao-digital/",
+  "destino_tema": "Como funciona a carteira de vacinação digital",
+  "pauta": "documentos que comprovam vacinação",
+  "kw_post": "documentos que comprovam vacinação",
+  "ancora": "carteira de vacinação digital",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "08",
+  "portal": "brasilnovonoticias",
+  "destino_url": "https://clinicasdevacina.com/conteudo/vacina-para-viagem-internacional-e-o-certificado/",
+  "destino_tema": "Vacina para viagem internacional e o certificado",
+  "pauta": "vacina da febre amarela, quem precisa",
+  "kw_post": "vacina da febre amarela, quem precisa",
+  "ancora": "vacina para viagem internacional",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "09",
+  "portal": "saopauloaberta",
+  "destino_url": "https://clinicasdevacina.com/vacinas/triplice-viral/",
+  "destino_tema": "Vacina tríplice viral: doses, idade e se é gratuita no SUS",
+  "pauta": "reforço vacinal em adultos",
+  "kw_post": "reforço vacinal em adultos",
+  "ancora": "vacina tríplice viral",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "10",
+  "portal": "sp2040",
+  "destino_url": "https://clinicasdevacina.com/conteudo/perdi-a-carteira-de-vacinacao-e-agora/",
+  "destino_tema": "Perdi a carteira de vacinação, e agora?",
+  "pauta": "vacina pode ser tomada fora do prazo",
+  "kw_post": "vacina fora do prazo",
+  "ancora": "perdi a carteira de vacinação",
+  "tipo_ancora": "P"
+ }
+]

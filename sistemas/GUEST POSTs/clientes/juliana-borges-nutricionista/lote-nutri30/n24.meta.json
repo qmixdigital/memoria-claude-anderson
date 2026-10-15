@@ -1,0 +1,29 @@
+{
+ "titulo": "Canetas para emagrecer: por que a comida continua importante",
+ "kw": "canetas para emagrecer",
+ "resumo": "Com o apetite reduzido, as canetas para emagrecer pedem mais atenção a proteínas, líquidos e músculo, e não menos.",
+ "slug": "canetas-para-emagrecer-alimentacao",
+ "fontes": [
+  {
+   "afirmacao": "Anvisa ampliou a indicação do Mounjaro (tirzepatida) para obesidade em 09/06/2025 (IMC>=30, ou >=27 com comorbidade); diabetes tipo 2 aprovado desde set/2023",
+   "url": "https://site.cff.org.br/noticia/Noticias-gerais/09/06/2025/anvisa-aprova-mounjaro-para-tratamento-de-obesidade-e-sobrepeso-no-brasil"
+  },
+  {
+   "afirmacao": "Revisão narrativa: redução do apetite pode comprometer proteínas, fibras, vitaminas, minerais e líquidos e favorecer perda de massa magra sem acompanhamento; tirzepatida como recurso complementar; desconfortos gastrointestinais",
+   "url": "https://periodicorease.pro.br/rease/article/view/28272"
+  },
+  {
+   "afirmacao": "Distribuir proteína ao longo do dia, não pular refeições, exercício de resistência, sinais de alerta; revisão Obesity Pillars sobre nutrição com terapias GLP-1; lista de alimentos",
+   "url": "https://www.tuasaude.com/news/2026/04/28/o-que-comer-para-proteger-a-massa-magra-durante-a-perda-de-peso-com-semaglutida-ou-tirzepatida/"
+  },
+  {
+   "afirmacao": "Protocolo de ensaio clínico brasileiro sobre whey 30 g/dia e massa magra com tirzepatida (sem resultados)",
+   "url": "https://ensaiosclinicos.gov.br/rg/RBR-2p5tjv6/attachment/39410"
+  }
+ ],
+ "pendente_verificar": [
+  "Bula oficial da Anvisa não aberta (nada afirmado sobre orientações da bula)",
+  "Nenhum número de perda de massa magra citado por falta de fonte aberta",
+  "Detalhes do registro de 09/06/2025 vêm de cobertura jornalística, não do DOU"
+ ]
+}

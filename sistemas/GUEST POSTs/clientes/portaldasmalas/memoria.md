@@ -11,9 +11,12 @@ Memória do cliente para matérias em portais de terceiros. Criada em 13/10/2026
 
 | âncora | URL de destino | portal | data |
 |---|---|---|---|
+| mochila | https://portaldasmalas.com.br/mochilas | band.com.br | 2026-10-14 |
 | malas de viagem | https://portaldasmalas.com.br/malas-viagem | em.com.br (antes acritica.com; cliente mudou de ideia) | 2026-10-13 |
 
 ## Temas já cobertos
+
+- 15 melhores marcas de mochila para escola, trabalho e viagem (band.com.br, 14/10/2026, âncora "mochila" para /mochilas)
 
 - 10 melhores lojas para comprar malas de viagem na internet (em.com.br, Belo Horizonte, 13/10/2026; versão anterior era para acritica.com)
 
@@ -24,3 +27,7 @@ Memória do cliente para matérias em portais de terceiros. Criada em 13/10/2026
 | 13/10/2026 | em.com.br | 10 melhores lojas para comprar malas de viagem na internet | /empresas/2026/09/7492207-bh-abriu-735-mil-empresas-em-um-ano-69-nasceram-como-mei (âncora "BH abriu 735 mil empresas"; URL deu 404 na conferência) | Veja também | https://conteudo.qmix.com.br/ee802560a0903c6b3b7bb75f05801c87 |
 
 Cópias em `materias/`. Nenhum envio à planilha do Jean nem ao Apex.
+
+| 14/10/2026 | band.com.br | 15 melhores marcas de mochila para escola, trabalho e viagem | sem link interno | n/a | https://conteudo.qmix.com.br/a956832d1f0947d1153d556743301790 |
+
+Matéria de mochilas (band.com.br) aprovada pelo cliente em 14/10/2026 e enviada à planilha do Jean (R$ 650, aba Pedidos). Cliente recorrente, não mensalista; pedido aberto no faturamento pela equipe, descontos com o Anderson.

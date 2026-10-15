@@ -1,0 +1,33 @@
+{
+  "titulo": "Drogas Sintéticas Entre Jovens: Contexto, Riscos e Cuidado",
+  "kw": "drogas sintéticas entre jovens",
+  "resumo": "Entenda por que a composição incerta das drogas sintéticas entre jovens multiplica riscos de intoxicação grave.",
+  "slug": "drogas-sinteticas-entre-jovens",
+  "fontes": [
+    {
+      "afirmacao": "Levantamento com apoio da Senad e do Ipsos mostrou que o consumo de ecstasy na população pesquisada subiu de 0,76% para 2,20%, e o de estimulantes sintéticos (ATS) foi de 2,7% para 4,6%, com alucinógenos subindo de 1,0% para 2,1%.",
+      "url": "https://jornaldebrasilia.com.br/noticias/brasil/um-em-cada-cinco-brasileiros-ja-usou-drogas-ilicitas-aponta-estudo/"
+    },
+    {
+      "afirmacao": "Estudo com 6.906 universitários de uma instituição pública brasileira encontrou uso de LSD em 8,3% e de ecstasy em 7,9% dos participantes, com 10,8% relatando uso de uma ou de ambas no último ano, associado a cocaína, maconha frequente e solventes.",
+      "url": "https://journals.usp.br/smad/article/view/211144"
+    },
+    {
+      "afirmacao": "O Sistema de Alerta Rápido sobre Drogas (SAR), gerido pela Senad, identificou substâncias inéditas em circulação no Brasil, incluindo um opioide sintético (N-pirrolidino protonitazeno) encontrado em exame toxicológico, e duas substâncias em doces importados ('Magic Mushroom Gummies'); a Anvisa controlou o opioide cerca de 19 dias após a notificação.",
+      "url": "https://www.oliberal.com/brasil/tres-novas-drogas-sao-identificadas-no-brasil-saiba-quais-sao-seus-efeitos-e-riscos-1.1020214"
+    },
+    {
+      "afirmacao": "Pesquisadores relataram caso de paciente que precisou de naloxona após consumir ecstasy adulterado; em pesquisa com saliva de 1.631 frequentadores de festas, a maioria relatou uso de alguma substância mas desconhecia os compostos reais encontrados nos exames.",
+      "url": "https://www.jornalopcao.com.br/brasil/saiba-quais-as-tres-novas-drogas-em-circulacao-no-brasil-744981/"
+    },
+    {
+      "afirmacao": "MDMA (ecstasy) atua no sistema serotonérgico, aumentando a liberação e inibindo a recaptação de serotonina; o perfil de usuários é geralmente de jovens de até 25 anos, e a substância está associada historicamente a festas rave desde os anos 1980.",
+      "url": "https://www.uniad.org.br/wp-content/uploads/2013/12/Ecstasy.pdf"
+    }
+  ],
+  "pendente_verificar": [
+    "Classificação técnica exata do skank (variedade de cannabis com THC mais concentrado versus produto com aditivos sintéticos) não foi confirmada em fonte oficial consolidada; o texto trata o tema com ressalva explícita sobre essa divergência.",
+    "Dados de prevalência mais recentes do Levantamento Nacional sobre o Uso de Drogas da Senad (edições após o estudo com o Ipsos citado) não foram localizados diretamente no site oficial durante esta pesquisa; os números usados são os mais recentes encontrados em cobertura jornalística do levantamento.",
+    "Riscos agudos do MDMA (hipertermia, convulsões, arritmia) foram generalizados a partir de material de divulgação da UNIAD/Unifesp; não foi aberta uma revisão clínica mais recente específica sobre letalidade associada no Brasil."
+  ]
+}

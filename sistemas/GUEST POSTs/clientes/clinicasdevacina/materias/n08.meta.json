@@ -1,0 +1,37 @@
+{
+  "titulo": "Vacina da febre amarela, quem precisa se vacinar",
+  "kw": "vacina da febre amarela, quem precisa",
+  "resumo": "Áreas de risco, viagens a países exigentes e o certificado internacional definem a vacina da febre amarela, quem precisa tomar.",
+  "slug": "vacina-febre-amarela-quem-precisa",
+  "fontes": [
+    {
+      "afirmacao": "Desde 2017 o Brasil adota a recomendação da OMS de dose única de vacina contra febre amarela, válida para proteção ao longo da vida, abandonando o reforço periódico para quem começa a vacinação a partir dos 5 anos de idade.",
+      "url": "https://www.saude.mg.gov.br/wp-content/uploads/2018/08/Adultos-precisam-estar-atentos-a-atualizacao-da-caderneta-de-vacinacao_FR-8a7.pdf"
+    },
+    {
+      "afirmacao": "Crianças recebem a primeira dose aos 9 meses; quem tomou a primeira dose antes dos 5 anos precisa de uma segunda dose (reforço) aos 4 anos, independentemente da idade atual.",
+      "url": "https://saude.es.gov.br/Media/sesa/Calendário%20de%20Vacinação/Calendário%20Nacional%20de%20Vacinação%202024%20Julho%20ADULTO.pdf"
+    },
+    {
+      "afirmacao": "Contraindicações: gestantes em regra, nutrizes até o bebê completar 6 meses (suspender aleitamento por 10 dias se a dose não puder ser evitada), pessoas com imunossupressão relevante (HIV avançado, quimioterapia, radioterapia, corticoide em dose alta) e alergia grave a ovo ou a dose anterior; a partir dos 60 anos o serviço de saúde deve avaliar risco individual.",
+      "url": "https://sbim.org.br/images/adulto-Calend-SBIm-2025-26-250819.pdf_2025-08-20.pdf"
+    },
+    {
+      "afirmacao": "Quem vai viajar para área de risco deve tomar a dose com antecedência mínima de 10 dias antes do embarque, prazo exigido para a emissão do Certificado Internacional de Vacinação e Profilaxia (CIVP).",
+      "url": "https://jundiai.sp.gov.br/saude/certificado-internacional-de-vacinacao-contra-febre-amarela-civp/o-que-e/"
+    },
+    {
+      "afirmacao": "Desde a Assembleia Mundial da Saúde de julho de 2016, a OMS eliminou a necessidade de renovar o certificado a cada 10 anos: a validade passou a ser vitalícia para quem recebeu a dose-padrão.",
+      "url": "https://www.panrotas.com.br/noticia-turismo/servicos/2016/08/vacina-contra-febre-amarela-tem-validade-indeterminada_129058.html"
+    },
+    {
+      "afirmacao": "Segundo checagem que cita a bula do imunizante usado no SUS (Bio-Manguinhos), os sintomas gerais mais comuns começam a partir do terceiro dia e seguem até perto do décimo dia após a aplicação.",
+      "url": "https://apublica.org/2018/02/truco-correntes-de-whatsapp-espalham-informacoes-falsas-sobre-febre-amarela/"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar na bula vigente da Anvisa (não apenas em checagens de imprensa) os percentuais exatos de frequência de cada reação comum, já que não foram citados números no texto por falta de fonte primária direta.",
+    "Confirmar se a regra de reemissão/carimbo de validade vitalícia para certificados antigos (emitidos antes de 2016 com validade de 10 anos) ainda é feita do mesmo jeito hoje, ou se foi totalmente absorvida pelo sistema digital.",
+    "Confirmar se existe atualização recente do calendário nacional que mude a faixa etária de contraindicação em crianças pequenas (o texto não especificou idade mínima exata para a primeira dose fora da rotina por falta de fonte oficial única e atual)."
+  ]
+}

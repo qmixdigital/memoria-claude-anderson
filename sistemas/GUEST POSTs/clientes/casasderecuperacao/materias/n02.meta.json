@@ -1,0 +1,44 @@
+{
+  "titulo": "Etapas da desintoxicação hospitalar no tratamento do álcool",
+  "kw": "etapas da desintoxicação hospitalar",
+  "resumo": "As etapas da desintoxicação hospitalar seguem protocolo clínico definido, com avaliação constante da equipe médica.",
+  "slug": "etapas-da-desintoxicacao-hospitalar",
+  "fontes": [
+    {
+      "afirmacao": "A síndrome de abstinência alcoólica costuma se manifestar entre 4 e 12 horas (em geral, até 24 horas) após a última ingestão, podendo evoluir para delirium tremens, uma emergência médica, sem tratamento adequado.",
+      "url": "https://www.saudedireta.com.br/docsupload/1340503262016_Sindrome_de_Abstinencia_Alcoolica_13062012.pdf"
+    },
+    {
+      "afirmacao": "A escala CIWA-Ar (Clinical Institute Withdrawal Assessment for Alcohol) é usada para estratificar a gravidade da síndrome de abstinência alcoólica e orientar a conduta médica, incluindo o uso de benzodiazepínicos.",
+      "url": "https://www.mdcalc.com/calc/1736/ciwa-ar-alcohol-withdrawal"
+    },
+    {
+      "afirmacao": "O tratamento da dependência alcoólica se divide em duas fases, desintoxicação e desabituação/manutenção; a desintoxicação usa benzodiazepínicos como primeira escolha e a manutenção pode incluir dissulfiram, naltrexona ou acamprosato.",
+      "url": "https://rpmgf.pt/ojs/index.php/rpmgf/article/download/10489/10225/10405"
+    },
+    {
+      "afirmacao": "Tiamina oral ou parenteral profilática deve ser oferecida a pessoas com uso nocivo ou dependência de álcool desnutridas, com doença hepática descompensada ou em abstinência aguda, antes e durante a desintoxicação assistida.",
+      "url": "https://gpnotebook.com/pt/pages/nutricao/encefalopatia-de-wernicke/tratamento-da-carencia-de-tiamina"
+    },
+    {
+      "afirmacao": "O cuidado hospitalar na abstinência alcoólica costuma incluir reidratação intravenosa, reposição de vitamina B e dieta rica em carboidratos.",
+      "url": "https://www.cun.es/pt/doencas-tratamentos/doencas/alcoolismo"
+    },
+    {
+      "afirmacao": "Apenas Maceió, Palmeira dos Índios e Arapiraca possuíam CAPS AD em Alagoas segundo relatório do Ministério Público do estado.",
+      "url": "https://www.mpal.mp.br/wp-content/uploads/2022/04/rel_fin_drogas.pdf"
+    },
+    {
+      "afirmacao": "Em agosto de 2026, reportagem local informou a entrega, em junho, de um novo CAPS AD III para a região alta de Maceió, ampliando a cobertura de atendimento a dependentes químicos na capital.",
+      "url": "https://tribunadosertao.com.br/geral/2026/08/11/957041-como-os-caps-foram-reestruturados-em-cinco-anos-de-investimento-da-prefeitura-de-maceio"
+    },
+    {
+      "afirmacao": "Entre janeiro e maio de 2026, o programa estadual Rede Acolhe, em Alagoas, registrou 2.324 atendimentos, com o álcool como substância que mais motivou a busca por tratamento.",
+      "url": "https://tribunadosertao.com.br/alagoas/2026/07/02/932862-rede-acolhe-registra-mais-de-2-mil-atendimentos-para-o-tratamento-da-dependencia-quimica-nos-primeiros-meses-de-2026"
+    }
+  ],
+  "pendente_verificar": [
+    "Capacidade exata de atendimento mensal do novo CAPS AD III da região alta de Maceió não foi confirmada em fonte primária e não entrou no texto como número.",
+    "Pontos de corte específicos de escore da escala CIWA-Ar para início de benzodiazepínico e necessidade de terapia intensiva variam entre protocolos institucionais consultados; o texto manteve a referência de forma genérica, sem citar números de corte."
+  ]
+}

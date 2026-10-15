@@ -17,12 +17,15 @@ briefing. **Atualizar aqui** a cada matéria: âncora, URL, portal, tema, link d
 | âncora | URL de destino | portal | data |
 |---|---|---|---|
 | malas de viagem grande | https://travelux.com.br/malas-de-viagem-grande | revistafatorbrasil.com.br | 25/09/2026 |
+| malas de viagem | https://travelux.com.br/ (home) | em.com.br | 14/10/2026 |
 
 Nunca repetir a mesma âncora mais de 2 vezes no total. Variar com adjetivo, ordem ou localidade.
 
 ## Temas e ângulos já cobertos
 
 - Ranking "Mala de viagem grande: as 7 melhores marcas em 2026" (keyword "mala de viagem grande", FAQ de 4 perguntas) (revistafatorbrasil.com.br, 25/09/2026): Travelux, Samsonite, Delsey, American Tourister, Primicia, Sestini, Bagaggio. Sem link interno: a planilha do Jean não tem matéria nossa nesse portal.
+
+- Ranking "5 melhores marcas de malas de viagem em 2026" (keyword "melhores marcas de malas de viagem"; Travelux, Samsonite, Delsey, American Tourister, Bagaggio; referência local: aeroporto de Confins) (em.com.br, 14/10/2026). Preços da Travelux conferidos na home em 14/10/2026: malas avulsas R$ 799,90 a R$ 1.000, Kit Lucerne a partir de R$ 2.445, 12x sem juros. Sem link interno: o Anderson mandou uma URL da band.com.br (domínio diferente do portal, não usada; aguardando URL do em.com.br).
 
 ---
 
@@ -31,5 +34,6 @@ Nunca repetir a mesma âncora mais de 2 vezes no total. Variar com adjetivo, ord
 | data | portal | âncora | URL do cliente | link da entrega | URL publicada |
 |---|---|---|---|---|---|
 | 25/09/2026 | revistafatorbrasil.com.br | malas de viagem grande | https://travelux.com.br/malas-de-viagem-grande | https://conteudo.qmix.com.br/6add4cc3e35778620eb2a35a02dbcaab | |
+| 14/10/2026 | em.com.br | malas de viagem | https://travelux.com.br/ | https://conteudo.qmix.com.br/a7dc96aa3c9905a8dc4ce854c4966432 | |
 
 Cópias em `materias/<slug>.json`, `materias/<slug>.html` e `materias/<slug>.webp`.

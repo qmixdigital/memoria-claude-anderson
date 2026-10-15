@@ -1,0 +1,37 @@
+{
+  "titulo": "Identificar Drogas pelo Cheiro: Mitos Que Persistem",
+  "kw": "identificar drogas pelo cheiro",
+  "resumo": "Peritos explicam por que tentar identificar drogas pelo cheiro falha na maioria dos casos reais.",
+  "slug": "identificar-drogas-pelo-cheiro",
+  "fontes": [
+    {
+      "afirmacao": "O cloridrato de cocaína é um pó branco e cristalino; quando há odor perceptível, ele tende a vir de impurezas e solventes do processo de produção, e não da substância pura.",
+      "url": "https://www.scielo.br/j/jbchs/a/M7ThvzYNDn9rZ49FYD4nVpk"
+    },
+    {
+      "afirmacao": "Estudo de iniciação científica da Unicamp usando cromatografia encontrou em amostras de crack substâncias também presentes na gasolina, indicando uso de solvente derivado de petróleo na produção.",
+      "url": "https://www.prp.unicamp.br/pibic/congressos/xxicongresso/paineis/104789.pdf"
+    },
+    {
+      "afirmacao": "A chamada cocaína preta é misturada com carvão ativado, toner de impressora e corantes, com o objetivo declarado de disfarçar a cor e o cheiro característico da droga.",
+      "url": "https://jovempan.com.br/brasil/o-que-e-a-cocaina-negra-droga-apreendida-no-am-que-pode-custar-10x-mais-do-que-a-comum/"
+    },
+    {
+      "afirmacao": "Estudo de perfil químico da Polícia Federal (2009-2012) identificou fenacetina, levamisol, cafeína e lidocaína como adulterantes mais comuns em cocaína apreendida no Brasil.",
+      "url": "https://www.scielo.br/j/jbchs/a/M7ThvzYNDn9rZ49FYD4nVpk"
+    },
+    {
+      "afirmacao": "Codó é descrita como o centro da região dos Cocais, no leste do Maranhão.",
+      "url": "https://en.wikipedia.org/wiki/Cod%C3%B3"
+    },
+    {
+      "afirmacao": "Caxias e Timon aparecem, junto com Codó, entre os municípios da área classificada como Mercado Regional de Terras dos Cocais pelo Incra.",
+      "url": "https://www.gov.br/incra/pt-br/assuntos/governanca-fundiaria/relatorio-de-analise-de-mercados-de-terras/ramt_sr12_2021.pdf"
+    }
+  ],
+  "pendente_verificar": [
+    "A associação entre cheiro de gasolina/solvente e crack vem de um estudo pontual de iniciação científica (Unicamp), não de literatura forense consolidada; tratar como indício, não como regra geral.",
+    "Dados de adulterantes da Polícia Federal referem-se ao período 2009-2012 e podem não refletir a composição atual das apreensões.",
+    "Não foi encontrada fonte forense primária (DEA, perícia oficial brasileira) que confirme de forma definitiva que o cloridrato de cocaína puro é inodoro; a afirmação usada no texto é cautelosa e generalista por esse motivo."
+  ]
+}

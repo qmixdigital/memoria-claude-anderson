@@ -1,0 +1,29 @@
+{
+  "titulo": "Procuração eletrônica para advogados: o que diz a lei",
+  "kw": "procuração eletrônica para advogados",
+  "resumo": "A validade da procuração eletrônica para advogados no processo judicial depende do grau de certificação da assinatura.",
+  "slug": "procuracao-eletronica-para-advogados",
+  "fontes": [
+    {
+      "afirmacao": "O Superior Tribunal de Justiça entendeu que a procuração eletrônica não exige, como regra geral, certificado ICP-Brasil para produzir efeito no processo, salvo quando há dúvida concreta sobre a autenticidade da assinatura ou a legitimidade da outorga.",
+      "url": "https://www.sedep.com.br/?p=163314"
+    },
+    {
+      "afirmacao": "A Medida Provisória 2.200-2/2001, que instituiu a ICP-Brasil, presume verdadeiros os documentos assinados com certificado digital emitido dentro dessa infraestrutura.",
+      "url": "https://www.gov.br/inpi/pt-br/acesso-a-informacao/manifestacoes-juridicas-de-pi/arquivos/documentos/2006/nota01252006.pdf"
+    },
+    {
+      "afirmacao": "A OAB criou a Autoridade Certificadora OAB (AC OAB), subordinada à hierarquia da ICP-Brasil, com certificados que podem registrar a seccional e o número de inscrição do advogado.",
+      "url": "https://www.conjur.com.br/2011-jan-09/segunda-leitura-certificado-digital-advogados-solucao-ou-problema/"
+    },
+    {
+      "afirmacao": "A Receita Federal aceita procuração eletrônica assinada com e-CPF ou e-CNPJ para liberar serviços no e-CAC, uso restrito à esfera tributária e distinto da procuração judicial.",
+      "url": "https://razonet.com.br/contabilidade-digital/certificado-digital-e-cpf-para-que-serve-e-como-tirar"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se o Provimento da OAB que criou a AC OAB (citado como Provimento 120/2007 em fonte secundária) permanece vigente sem alterações posteriores",
+    "Localizar o número do acórdão específico do STJ sobre dispensa de certificado ICP-Brasil em procuração eletrônica; fonte consultada foi secundária (site jurídico), não o acórdão original",
+    "Confirmar na página oficial do e-CAC (gov.br/Receita Federal) o texto vigente sobre aceitação de procuração eletrônica por e-CPF/e-CNPJ, citado aqui a partir de fonte secundária"
+  ]
+}

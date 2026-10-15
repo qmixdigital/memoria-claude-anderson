@@ -1,0 +1,28 @@
+{
+  "titulo": "Fisioterapia pode ser feita em casa? Entenda quando é indicada",
+  "kw": "fisioterapia pode ser feita em casa",
+  "resumo": "Entenda em que situações a fisioterapia pode ser feita em casa e quando a clínica ainda é necessária.",
+  "slug": "fisioterapia-pode-ser-feita-em-casa",
+  "fontes": [
+    {
+      "afirmacao": "O COFFITO regulamenta o atendimento domiciliar de saúde e prevê modalidades como consulta domiciliar, atendimento domiciliar e internação domiciliar (resolução consultada foi a de terapia ocupacional, 475/2016, com estrutura análoga à da fisioterapia).",
+      "url": "https://www.normaslegais.com.br/legislacao/Resolucao-coffito-475-2016.htm"
+    },
+    {
+      "afirmacao": "A fisioterapia domiciliar costuma ser indicada para pacientes com mobilidade limitada, em recuperação de cirurgia ou lesão, pessoas com condições crônicas e idosos com necessidade de cuidados contínuos.",
+      "url": "https://saudepetrobras.com.br/data/files/E1/81/E5/D6/B3592910C6CF4529A9B8F9C2/Cartilha%20de%20Fisiterapia%20Domiciliar_setembro_2024_ajustada.pdf"
+    },
+    {
+      "afirmacao": "O Farol da Barra e a Avenida Oceânica são referências da orla do bairro da Barra, em Salvador, bairro litorâneo e um dos mais valorizados da cidade.",
+      "url": "https://myside.com.br/guia-imoveis/bairros-mais-caros-salvador-ba"
+    },
+    {
+      "afirmacao": "O bairro da Barra, em Salvador, fica perto de Graça, Ondina e Vitória, com hospitais privados na região, como o Hospital Português e o Hospital Espanhol.",
+      "url": "https://www.quintoandar.com.br/regioes-atendidas/barra-salvador-ba-brasil-2drwt5r1k5"
+    }
+  ],
+  "pendente_verificar": [
+    "Número exato e vigência da resolução do COFFITO sobre atendimento domiciliar de fisioterapia (474/2016 e/ou a atualização 565/2022); a fonte consultada diretamente foi a resolução equivalente de terapia ocupacional (475/2016), com modalidades análogas às da fisioterapia.",
+    "Regras de cobertura de planos de saúde para fisioterapia domiciliar foram citadas de forma genérica, sem nome de operadora, com base em um único exemplo corporativo (Saúde Petrobras); não se aplicam universalmente a todos os planos e devem ser confirmadas caso a caso."
+  ]
+}

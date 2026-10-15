@@ -1,0 +1,102 @@
+[
+ {
+  "n": "01",
+  "portal": "teixeiraemfoco",
+  "destino_url": "https://consultarimovel.ia.br/imovel-rural/ba/",
+  "destino_tema": "Imóveis rurais em Bahia: 1.313.622 no CAR",
+  "pauta": "o que é terra devoluta",
+  "kw_post": "o que é terra devoluta",
+  "ancora": "imóveis rurais cadastrados na Bahia",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "02",
+  "portal": "alagoas200",
+  "destino_url": "https://consultarimovel.ia.br/imovel-rural/al/",
+  "destino_tema": "Imóveis rurais em Alagoas: 143.555 no CAR",
+  "pauta": "usucapião rural, como funciona",
+  "kw_post": "usucapião rural, como funciona",
+  "ancora": "imóveis rurais de Alagoas",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "03",
+  "portal": "itapecurunoticias",
+  "destino_url": "https://consultarimovel.ia.br/imovel-rural/ma/",
+  "destino_tema": "Imóveis rurais em Maranhão: 416.309 no CAR",
+  "pauta": "diferença entre posse e propriedade rural",
+  "kw_post": "diferença entre posse e propriedade rural",
+  "ancora": "imóveis rurais do Maranhão",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "04",
+  "portal": "sp2040",
+  "destino_url": "https://consultarimovel.ia.br/consulta/sigef/",
+  "destino_tema": "Consulta SIGEF: parcelas certificadas do INCRA",
+  "pauta": "o que é CCIR e para que serve",
+  "kw_post": "o que é CCIR e para que serve",
+  "ancora": "consulta de georreferenciamento rural",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "05",
+  "portal": "canaljustica",
+  "destino_url": "https://consultarimovel.ia.br/consulta/meu-imovel-rural/",
+  "destino_tema": "Meu Imóvel Rural: como acessar e consultar seus cadastros",
+  "pauta": "o que fazer em caso de conflito de posse de terra",
+  "kw_post": "conflito de posse de terra",
+  "ancora": "consultar meu imóvel rural pelo CPF",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "06",
+  "portal": "alagoasdiario",
+  "destino_url": "https://consultarimovel.ia.br/imovel-rural/mg/",
+  "destino_tema": "Imóveis rurais em Minas Gerais: 1.172.259 no CAR",
+  "pauta": "o que é módulo fiscal e por que ele importa",
+  "kw_post": "o que é módulo fiscal",
+  "ancora": "imóveis rurais de Minas Gerais",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "07",
+  "portal": "xthor",
+  "destino_url": "https://consultarimovel.ia.br/imovel-rural/ro/",
+  "destino_tema": "Imóveis rurais em Rondônia: 196.022 no CAR",
+  "pauta": "o que é cadeia dominial de um imóvel rural",
+  "kw_post": "cadeia dominial de um imóvel rural",
+  "ancora": "imóveis rurais de Rondônia",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "08",
+  "portal": "afnewss",
+  "destino_url": "https://consultarimovel.ia.br/imovel-rural/to/",
+  "destino_tema": "Imóveis rurais em Tocantins: 111.566 no CAR",
+  "pauta": "diferença entre CAR e CCIR",
+  "kw_post": "diferença entre CAR e CCIR",
+  "ancora": "imóveis rurais do Tocantins",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "09",
+  "portal": "professortrabalhista",
+  "destino_url": "https://consultarimovel.ia.br/consulta/cnd-imovel-rural/",
+  "destino_tema": "CND de imóvel rural: como emitir a certidão negativa",
+  "pauta": "como comprovar propriedade de terra sem escritura",
+  "kw_post": "comprovar propriedade de terra sem escritura",
+  "ancora": "certidão negativa de débitos do imóvel rural",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "10",
+  "portal": "jornal",
+  "destino_url": "https://consultarimovel.ia.br/imovel-rural/rs/",
+  "destino_tema": "Imóveis rurais em Rio Grande do Sul: 675.995 no CAR",
+  "pauta": "o que é averbação de imóvel rural",
+  "kw_post": "o que é averbação de imóvel rural",
+  "ancora": "imóveis rurais do Rio Grande do Sul",
+  "tipo_ancora": "N"
+ }
+]

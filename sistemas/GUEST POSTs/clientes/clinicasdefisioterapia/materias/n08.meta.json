@@ -1,0 +1,24 @@
+{
+  "titulo": "Fisioterapia esportiva: como funciona a prevenção de lesões",
+  "kw": "fisioterapia esportiva",
+  "resumo": "A fisioterapia esportiva atua antes da lesão acontecer, com avaliação de movimento e orientação de carga no treino.",
+  "slug": "fisioterapia-esportiva-prevencao-de-lesoes",
+  "fontes": [
+    {
+      "afirmacao": "A Resolução Coffito nº 337/2007 reconheceu a Fisioterapia Esportiva como especialidade profissional.",
+      "url": "https://www.legisweb.com.br/legislacao/?id=108897"
+    },
+    {
+      "afirmacao": "A Resolução Coffito nº 395/2011 regulamenta o título de Especialista Profissional em Fisioterapia Esportiva e lista, entre as grandes áreas de competência, consulta, anamnese e encaminhamento do atleta.",
+      "url": "https://www.normasbrasil.com.br/norma/resolucao-395-2011_114253.html"
+    },
+    {
+      "afirmacao": "Projeto universitário (UFRGS) de fisioterapia esportiva com equipes descreve avaliações pré e pós-temporada e aplicação de protocolo de exercícios de prevenção de lesões, com acompanhamento em treinos e competições.",
+      "url": "https://seer.ufrgs.br/index.php/revext/article/download/152514/98035/690063"
+    }
+  ],
+  "pendente_verificar": [
+    "Lista completa das grandes áreas de competência da Resolução Coffito 395/2011 não foi integralmente confirmada (a busca trouxe só o início do artigo 3º); conferir o texto oficial antes de citar competências específicas além das já mencionadas.",
+    "Dados sobre avaliação pré-participação cardiológica (risco de morte súbita no esporte) foram deliberadamente deixados fora do artigo por pertencerem mais à medicina do esporte/cardiologia do que à fisioterapia; não inserir sem checagem médica específica."
+  ]
+}

@@ -1,0 +1,102 @@
+[
+ {
+  "n": "01",
+  "portal": "jornalnoticiaonline",
+  "destino_url": "https://medicoespecialistas.com/especialidades/cardiologia/",
+  "destino_tema": "cardiologia: o que faz e o que trata o cardiologista",
+  "pauta": "sinais de que é hora de consultar um cardiologista",
+  "kw_post": "sinais de que é hora de consultar um cardiologista",
+  "ancora": "um cardiologista no diretório de especialistas",
+  "praca_portal": "sem praça fixa confirmada"
+ },
+ {
+  "n": "02",
+  "portal": "portoenoticias",
+  "destino_url": "https://medicoespecialistas.com/especialidades/dermatologia/",
+  "destino_tema": "dermatologia: o que faz e o que trata o dermatologista",
+  "pauta": "quando uma mancha ou pinta na pele precisa de avaliação médica",
+  "kw_post": "mancha ou pinta na pele precisa de avaliação médica",
+  "ancora": "dermatologistas cadastrados no diretório",
+  "praca_portal": "sem praça fixa confirmada"
+ },
+ {
+  "n": "03",
+  "portal": "alagoasdiario",
+  "destino_url": "https://medicoespecialistas.com/especialidades/ortopedia-e-traumatologia/",
+  "destino_tema": "ortopedia: o que é, o que faz e o que trata o ortopedista",
+  "pauta": "dor persistente na articulação: quando procurar um ortopedista",
+  "kw_post": "dor persistente na articulação",
+  "ancora": "ortopedistas no diretório de especialistas",
+  "praca_portal": "Alagoas (genuína)"
+ },
+ {
+  "n": "04",
+  "portal": "abadianoticia",
+  "destino_url": "https://medicoespecialistas.com/especialidades/neurologia/",
+  "destino_tema": "neurologia: o que é, o que faz e o que trata o neurologista",
+  "pauta": "dor de cabeça frequente: quando é hora do neurologista",
+  "kw_post": "dor de cabeça frequente quando é hora do neurologista",
+  "ancora": "neurologistas cadastrados no diretório",
+  "praca_portal": "Abadiânia, GO (genuína)"
+ },
+ {
+  "n": "05",
+  "portal": "astralassessoria",
+  "destino_url": "https://medicoespecialistas.com/verificacao/como-saber-se-o-medico-e-especialista/",
+  "destino_tema": "como saber se o médico é especialista pelo CRM e pelo RQE",
+  "pauta": "como confirmar se o médico tem título de especialista antes da consulta",
+  "kw_post": "como confirmar se o médico é especialista",
+  "ancora": "verificar se o médico é especialista pelo CRM e RQE",
+  "praca_portal": "sem praça fixa confirmada"
+ },
+ {
+  "n": "06",
+  "portal": "agenciadivulgar",
+  "destino_url": "https://medicoespecialistas.com/especialidades/psiquiatria/",
+  "destino_tema": "psiquiatria: o que é, o que faz e o que trata o psiquiatra",
+  "pauta": "sinais de que é hora de buscar um psiquiatra",
+  "kw_post": "sinais de que é hora de buscar um psiquiatra",
+  "ancora": "psiquiatras no diretório de especialistas",
+  "praca_portal": "sem praça fixa confirmada"
+ },
+ {
+  "n": "07",
+  "portal": "jornalpreliminar",
+  "destino_url": "https://medicoespecialistas.com/especialidades/ginecologia-e-obstetricia/",
+  "destino_tema": "ginecologista e obstetra: o que é, o que faz e o que trata",
+  "pauta": "exames ginecológicos de rotina que não devem ser pulados",
+  "kw_post": "exames ginecológicos de rotina",
+  "ancora": "ginecologistas e obstetras cadastrados no diretório",
+  "praca_portal": "sem praça fixa confirmada"
+ },
+ {
+  "n": "08",
+  "portal": "itapecurunoticias",
+  "destino_url": "https://medicoespecialistas.com/especialidades/pediatria/",
+  "destino_tema": "pediatra: o que faz, o que trata e até que idade atende",
+  "pauta": "quando levar a criança ao pediatra fora da consulta de rotina",
+  "kw_post": "quando levar a criança ao pediatra",
+  "ancora": "pediatras no diretório de especialistas",
+  "praca_portal": "Itapecuru-Mirim, MA (genuína)"
+ },
+ {
+  "n": "09",
+  "portal": "noticiasdefloriano",
+  "destino_url": "https://medicoespecialistas.com/conteudo/encaminhamento-para-especialista-no-sus/",
+  "destino_tema": "encaminhamento para especialista no SUS: como funciona",
+  "pauta": "como funciona o encaminhamento para especialista pelo SUS",
+  "kw_post": "como funciona o encaminhamento para especialista pelo SUS",
+  "ancora": "como funciona o encaminhamento para especialista no SUS",
+  "praca_portal": "Floriano, PI (genuína)"
+ },
+ {
+  "n": "10",
+  "portal": "achixclip",
+  "destino_url": "https://medicoespecialistas.com/especialidades/oftalmologia/",
+  "destino_tema": "oftalmologista: o que faz e o que trata a oftalmologia",
+  "pauta": "sintomas de vista que não devem esperar a consulta de rotina",
+  "kw_post": "sintomas de vista que não devem esperar",
+  "ancora": "oftalmologistas no diretório de especialistas",
+  "praca_portal": "sem praça fixa confirmada"
+ }
+]

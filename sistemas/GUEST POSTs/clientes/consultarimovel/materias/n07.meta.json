@@ -1,0 +1,24 @@
+{
+  "titulo": "O que é a cadeia dominial de um imóvel rural",
+  "kw": "cadeia dominial de um imóvel rural",
+  "resumo": "Falhas na cadeia dominial de um imóvel rural travam venda, financiamento e inventário por anos no país.",
+  "slug": "cadeia-dominial-imovel-rural",
+  "fontes": [
+    {
+      "afirmacao": "O CCIR e o CAR têm função cadastral e, por força do parágrafo único do art. 3º da Lei 5.868/1972, não fazem prova de propriedade ou de direitos a ela relativos",
+      "url": "https://irib.org.br/files/palestra/xliv-tema-08-bruno.pdf"
+    },
+    {
+      "afirmacao": "Em áreas de faixa de fronteira, a regularização do título exige ratificação do registro imobiliário no Cartório de Registro de Imóveis competente",
+      "url": "https://irib.org.br/noticias/detalhes/cre-do-senado-federal-debate-regulamentacao-para-ratificacao-de-registro-de-imoveis-rurais-em-faixa-de-fronteira"
+    },
+    {
+      "afirmacao": "A verificação da cadeia dominial, para fins de certificação de imóvel rural, baseia-se nas certidões atualizadas comprobatórias das matrículas e dos registros da propriedade",
+      "url": "https://www.gov.br/incra/pt-br/centrais-de-conteudos/legislacao/in_83_2015.pdf"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se há norma vigente do Incra fixando um prazo em anos para a retroação mínima exigida da cadeia dominial em processos de certificação via SIGEF, além da exigência genérica de comprovação até a origem pública da terra",
+    "Confirmar o dispositivo exato (número do artigo e da instrução normativa do Incra) que trata da exigência de ratificação do registro imobiliário em faixa de fronteira"
+  ]
+}

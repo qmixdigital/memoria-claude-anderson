@@ -1,0 +1,28 @@
+{
+  "titulo": "Como comprovar propriedade de terra sem escritura",
+  "kw": "comprovar propriedade de terra sem escritura",
+  "resumo": "Posse, impostos pagos e usucapião formam o caminho mais comum para comprovar propriedade de terra sem escritura.",
+  "slug": "comprovar-propriedade-terra-sem-escritura",
+  "fontes": [
+    {
+      "afirmacao": "Um contrato particular de compra e venda não transfere a propriedade por si só, mas pode valer como justo título quando demonstra a intenção legítima de transferir o domínio.",
+      "url": "https://ambitojuridico.com.br/como-provar-a-posse-de-terreno-para-usucapiao/"
+    },
+    {
+      "afirmacao": "A usucapião extraordinária exige 15 anos de posse contínua e sem contestação, sem necessidade de justo título ou boa-fé; a usucapião ordinária reduz o prazo para 10 anos quando há justo título e boa-fé.",
+      "url": "https://ambitojuridico.com.br/?p=9057614"
+    },
+    {
+      "afirmacao": "A usucapião rural especial (art. 1.239 do Código Civil, com base no art. 191 da Constituição Federal) exige 5 anos de posse ininterrupta e sem oposição, área de até 50 hectares, moradia no local e trabalho produtivo próprio ou da família, além de o possuidor não ser proprietário de outro imóvel.",
+      "url": "https://www.peticoesonline.com.br/art-1239-cc"
+    },
+    {
+      "afirmacao": "O Cadastro Ambiental Rural (CAR) é autodeclaratório: o próprio inscrito informa os dados de posse ou propriedade, e a lei não trata o CAR como título de reconhecimento de propriedade ou posse, nem dispensa as exigências da Lei 10.267/2001 sobre georreferenciamento.",
+      "url": "https://www.mg.gov.br/node/13550"
+    }
+  ],
+  "pendente_verificar": [
+    "Procedimentos e documentos exigidos no rito extrajudicial de usucapião podem variar conforme a norma de corregedoria de cada estado; não verificado estado a estado.",
+    "Faixas de área e datas de exigência de certificação do perímetro pelo INCRA (Lei 10.267/2001) variam por tamanho do imóvel; mencionado no texto apenas de forma genérica."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "titulo": "Alimentos que pioram o refluxo: o que a diretriz brasileira mostra",
+ "kw": "alimentos que pioram o refluxo",
+ "resumo": "Estudos associam café, álcool e doces aos alimentos que pioram o refluxo, mas a diretriz não confirmou a gordura.",
+ "slug": "alimentos-que-pioram-o-refluxo",
+ "fontes": [
+  {
+   "afirmacao": "Diretriz DRGE tratamento não farmacológico (FBG e sociedades, AMB/ANS, 31/01/2011): café OR 1,23; vinho/cerveja e álcool; doces e pão branco; frutas e fibras protetoras; dieta rica em gordura não aumenta episódios nem exposição ácida; alimentação noturna tardia e intervalo <3 h; cabeceira elevada 28 cm; obesidade IMC>25; tabagismo; atividade física protetora; estresse; recomendação final; 5 mil publicações e 73 estudos; grau B",
+   "url": "https://amb.org.br/files/ans/doenca_do_refluxo_gastroesofagico-tratamento_nao-farmacologico.pdf"
+  }
+ ],
+ "pendente_verificar": [
+  "Diretriz é de 2011; evidência mais recente não consultada",
+  "Chocolate, cítricos e pimenta: sem conclusão no trecho consultado, não afirmados",
+  "Gastrite: apenas dito que é condição distinta, sem fonte aberta sobre dieta para gastrite",
+  "Sinais de alerta (disfagia, vômitos, perda de peso) citados de forma genérica sem fonte aberta",
+  "Afirmação de que refeições grandes distendem o estômago e porções menores são melhor toleradas é geral, sem fonte aberta"
+ ]
+}

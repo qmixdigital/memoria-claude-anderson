@@ -1,0 +1,24 @@
+{
+  "titulo": "Diferença entre uso recreativo e dependência química",
+  "kw": "diferença entre uso recreativo e dependência",
+  "resumo": "Entender a diferença entre uso recreativo e dependência ajuda famílias no Maranhão a buscar ajuda profissional a tempo.",
+  "slug": "diferenca-entre-uso-recreativo-e-dependencia",
+  "fontes": [
+    {
+      "afirmacao": "O consumo abusivo de álcool (cinco ou mais doses numa mesma ocasião) subiu para 17,1% da população em 2019, ante 13,1% em 2013, segundo a Pesquisa Nacional de Saúde do IBGE.",
+      "url": "https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/29472-impulsionado-pelas-mulheres-consumo-de-alcool-cresce-entre-brasileiros-em-2019.html"
+    },
+    {
+      "afirmacao": "Em 2023, a rede de Centros de Atenção Psicossocial (CAPS) do Maranhão somava 106 unidades distribuídas pelas 19 regiões de saúde do estado, segundo a Secretaria de Estado da Saúde do Maranhão.",
+      "url": "https://oimparcial.com.br/saude/2023/09/ses-orienta-usuarios-do-sus-sobre-rede-de-servicos-para-saude-mental/"
+    },
+    {
+      "afirmacao": "Estudo acadêmico sobre a regionalização da Rede de Atenção Psicossocial (RAPS) no Brasil identifica desigualdade na distribuição de serviços entre municípios grandes e pequenos.",
+      "url": "https://tempus.unb.br/index.php/tempus/article/download/2432/1863/7820"
+    }
+  ],
+  "pendente_verificar": [
+    "Critérios diagnósticos exatos da CID-11 da OMS para transtornos por uso de substâncias: não encontrei o texto oficial atualizado na pesquisa, por isso o artigo usa formulação genérica de consenso clínico (perda de controle, tolerância, abstinência, manutenção do uso a despeito de danos) sem citar número fechado de critérios nem a fonte primária da CID-11.",
+    "O dado de 106 CAPS no Maranhão é de setembro de 2023 (fonte SES-MA via portal oimparcial.com.br); pode estar desatualizado em 2026 e não foi possível confirmar quantos desses CAPS são especificamente da modalidade CAPS AD (álcool e drogas)."
+  ]
+}

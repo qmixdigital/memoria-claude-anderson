@@ -1,0 +1,302 @@
+[
+ {
+  "n": "01",
+  "portal": "jornalbahia.com.br",
+  "local": "Bahia",
+  "destino_url": "https://nutricionista.digital/blog/como-fazer-deficit-calorico/",
+  "destino_tema": "como fazer déficit calórico (guia completo)",
+  "pauta": "Por que a balança para de descer mesmo comendo pouco",
+  "ancora": "como fazer déficit calórico",
+  "tipo_ancora": "E"
+ },
+ {
+  "n": "02",
+  "portal": "amadahipertrofia.com",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/superavit-calorico-ganho-de-massa-muscular/",
+  "destino_tema": "superávit calórico, ganho de massa muscular",
+  "pauta": "Quanto comer para crescer sem ganhar gordura demais",
+  "ancora": "superávit calórico para ganhar massa",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "03",
+  "portal": "portoenoticias.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/suplementos-para-definir/",
+  "destino_tema": "suplementos para definição muscular",
+  "pauta": "Queimadores de gordura funcionam? O que dizem os estudos",
+  "ancora": "suplementos para definição muscular",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "04",
+  "portal": "saopauloaberta.com.br",
+  "local": "São Paulo",
+  "destino_url": "https://nutricionista.digital/blog/quanto-custa-uma-dieta-com-nutricionista/",
+  "destino_tema": "quanto custa uma dieta com nutricionista",
+  "pauta": "O que está incluso no valor de uma consulta com nutricionista",
+  "ancora": "quanto custa uma dieta com nutricionista",
+  "tipo_ancora": "E"
+ },
+ {
+  "n": "05",
+  "portal": "babyou.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/emagrecimento-apos-a-cesarea/",
+  "destino_tema": "emagrecimento após a cesárea",
+  "pauta": "Quando liberar exercício e dieta no pós-parto",
+  "ancora": "emagrecer depois da cesárea",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "06",
+  "portal": "webcitizen.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/quais-sao-os-exames-que-o-nutricionista-pode-solicitar/",
+  "destino_tema": "exames que o nutricionista pode solicitar",
+  "pauta": "Exames de rotina antes de começar uma dieta",
+  "ancora": "exames pedidos pelo nutricionista",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "07",
+  "portal": "noticiasdaserra.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/o-que-perguntar-para-nutricionista-na-primeira-consulta/",
+  "destino_tema": "o que perguntar ao nutricionista na primeira consulta",
+  "pauta": "Como se preparar para a consulta com nutricionista",
+  "ancora": "perguntas para a primeira consulta",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "08",
+  "portal": "jornalnoticiaonline.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/nutricionista-plano-de-saude-vs-nutricionista-particular/",
+  "destino_tema": "nutricionista de plano de saúde ou particular",
+  "pauta": "Reembolso de nutricionista pelo plano de saúde",
+  "ancora": "nutricionista pelo plano ou particular",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "09",
+  "portal": "brasilnovonoticias.com.br",
+  "local": "Brasil Novo, no Pará",
+  "destino_url": "https://nutricionista.digital/blog/qual-o-limite-de-vitamina-que-o-nutricionista-pode-prescrever/",
+  "destino_tema": "limite de vitamina que o nutricionista pode prescrever",
+  "pauta": "Vitamina sem orientação: riscos do excesso",
+  "ancora": "limite de vitamina prescrito pelo nutricionista",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "10",
+  "portal": "alagoasdiario.com.br",
+  "local": "Alagoas",
+  "destino_url": "https://nutricionista.digital/blog/nutricionista-pode-passar-remedio-para-emagrecer/",
+  "destino_tema": "nutricionista pode passar remédio para emagrecer",
+  "pauta": "Medicamentos para emagrecer: quem prescreve e quem acompanha",
+  "ancora": "nutricionista pode passar remédio para emagrecer",
+  "tipo_ancora": "E"
+ },
+ {
+  "n": "11",
+  "portal": "teixeiraemfoco.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/o-que-o-nutricionista-pergunta-na-consulta/",
+  "destino_tema": "o que o nutricionista pergunta na consulta",
+  "pauta": "Anamnese alimentar: por que tantas perguntas",
+  "ancora": "o que perguntam na consulta nutricional",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "12",
+  "portal": "jornalpreliminar.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/quantas-vezes-e-preciso-ir-ao-nutricionista/",
+  "destino_tema": "quantas vezes é preciso ir ao nutricionista",
+  "pauta": "Quanto tempo dura um acompanhamento nutricional",
+  "ancora": "quantas vezes ir ao nutricionista",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "13",
+  "portal": "itapenoticias.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/nutricionista-pode-pedir-exames-hormonais/",
+  "destino_tema": "nutricionista pode pedir exames hormonais",
+  "pauta": "Tireoide e hormônios na perda de peso: o que investigar",
+  "ancora": "exames hormonais no acompanhamento",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "14",
+  "portal": "itapecurunoticias.com.br",
+  "local": "Itapecuru Mirim, no Maranhão",
+  "destino_url": "https://nutricionista.digital/blog/como-emagrecer-sem-perder-massa-muscular/",
+  "destino_tema": "como emagrecer sem perder massa muscular",
+  "pauta": "Proteína, treino e perda de peso depois dos 40",
+  "ancora": "emagrecer sem perder massa muscular",
+  "tipo_ancora": "E"
+ },
+ {
+  "n": "15",
+  "portal": "luiziananoticias.com.br",
+  "local": "Luiziana, no Paraná",
+  "destino_url": "https://nutricionista.digital/blog/como-nutricionista-deve-prescrever-vitamina-d/",
+  "destino_tema": "como o nutricionista deve prescrever vitamina D",
+  "pauta": "Sol, alimentação e suplemento: manter a vitamina D",
+  "ancora": "prescrição de vitamina D",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "16",
+  "portal": "noticiasdetimon.com.br",
+  "local": "Timon, no Maranhão",
+  "destino_url": "https://nutricionista.digital/blog/tem-que-ir-no-nutricionista-todo-mes-frequencia-ideal/",
+  "destino_tema": "tem que ir ao nutricionista todo mês, frequência ideal",
+  "pauta": "Retorno ao nutricionista: de quanto em quanto tempo",
+  "ancora": "frequência ideal de consultas",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "17",
+  "portal": "noticiasdefloriano.com.br",
+  "local": "Floriano, no Piauí",
+  "destino_url": "https://nutricionista.digital/blog/como-emagrecer-com-obesidade-grau-1-ou-2/",
+  "destino_tema": "como emagrecer com obesidade grau 1 ou 2",
+  "pauta": "Quando o IMC não conta a história toda",
+  "ancora": "emagrecer com obesidade grau 1 ou 2",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "18",
+  "portal": "cocaisnoticias.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/como-emagrecer-com-hipotireoidismo/",
+  "destino_tema": "como emagrecer com hipotireoidismo",
+  "pauta": "Hipotireoidismo e peso: o que muda no metabolismo",
+  "ancora": "emagrecer com hipotireoidismo",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "19",
+  "portal": "apucarananoticias.com.br",
+  "local": "Apucarana, no Paraná",
+  "destino_url": "https://nutricionista.digital/blog/pre-diabetes-e-emagrecimento/",
+  "destino_tema": "pré-diabetes e emagrecimento",
+  "pauta": "Glicemia de jejum alterada: o que fazer primeiro",
+  "ancora": "controle do peso no pré-diabetes",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "20",
+  "portal": "portalgc.com.br",
+  "local": "Guanambi, na Bahia",
+  "destino_url": "https://nutricionista.digital/blog/nutricionista-pode-dar-atestado/",
+  "destino_tema": "nutricionista pode dar atestado",
+  "pauta": "Atestado de nutricionista vale no trabalho?",
+  "ancora": "nutricionista pode dar atestado",
+  "tipo_ancora": "E"
+ },
+ {
+  "n": "21",
+  "portal": "aguabrancaemfoco.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/blog/nutricionista-precisa-de-encaminhamento/",
+  "destino_tema": "precisa de encaminhamento para nutricionista",
+  "pauta": "Como marcar nutricionista sem pedido médico",
+  "ancora": "precisa de encaminhamento",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "22",
+  "portal": "alagoas200.com.br",
+  "local": "Alagoas",
+  "destino_url": "https://cardapios.nutricionista.digital/o-que-nao-pode-comer",
+  "destino_tema": "o que não pode comer com gordura no fígado (cardápio)",
+  "pauta": "Esteatose hepática: sinais, exames e primeiros cuidados",
+  "ancora": "o que evitar com gordura no fígado",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "23",
+  "portal": "abadianoticia.com.br",
+  "local": null,
+  "destino_url": "https://cardapios.nutricionista.digital/ferritina-alta",
+  "destino_tema": "ferritina alta: o que pode comer (cardápio)",
+  "pauta": "Ferritina alta: inflamação ou excesso de ferro",
+  "ancora": "ferritina alta e alimentação",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "24",
+  "portal": "achixclip.com.br",
+  "local": null,
+  "destino_url": "https://cardapios.nutricionista.digital/cardapio-mounjaro-tirzepatida",
+  "destino_tema": "cardápio para quem toma Mounjaro (tirzepatida)",
+  "pauta": "Canetas para emagrecer: por que a comida continua importante",
+  "ancora": "cardápio com Mounjaro",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "25",
+  "portal": "afnewss.com.br",
+  "local": "Americana, em São Paulo",
+  "destino_url": "https://cardapios.nutricionista.digital/refluxo-e-gastrite",
+  "destino_tema": "cardápio para refluxo e gastrite",
+  "pauta": "Refluxo e gastrite: alimentos que costumam piorar",
+  "ancora": "cardápio para refluxo e gastrite",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "26",
+  "portal": "agenciadivulgar.com.br",
+  "local": null,
+  "destino_url": "https://cardapios.nutricionista.digital/acido-urico-e-gota",
+  "destino_tema": "ácido úrico alto e gota: o que pode comer (cardápio)",
+  "pauta": "Crise de gota: o que a alimentação pode e não pode",
+  "ancora": "dieta para ácido úrico alto",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "27",
+  "portal": "alertasocial.com.br",
+  "local": null,
+  "destino_url": "https://cardapios.nutricionista.digital/gordura-no-figado",
+  "destino_tema": "cardápio para gordura no fígado",
+  "pauta": "Como montar a semana de refeições com fígado gorduroso",
+  "ancora": "cardápio de sete dias para o fígado",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "28",
+  "portal": "xthor.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/calculadora-de-proteina/",
+  "destino_tema": "calculadora de proteína",
+  "pauta": "Quanta proteína por dia: do sedentário ao atleta",
+  "ancora": "calculadora de proteína",
+  "tipo_ancora": "E"
+ },
+ {
+  "n": "29",
+  "portal": "tcfoco.com.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/calculadora-de-agua-por-peso/",
+  "destino_tema": "calculadora de água por peso",
+  "pauta": "Hidratação: quanto beber e quando se preocupar",
+  "ancora": "calcular a água por peso",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "30",
+  "portal": "jornal.seg.br",
+  "local": null,
+  "destino_url": "https://nutricionista.digital/calculadora-de-taxa-metabolica-basal/",
+  "destino_tema": "calculadora de TMB (taxa metabólica basal)",
+  "pauta": "O que é taxa metabólica basal e por que ela muda",
+  "ancora": "calcular o gasto energético em repouso",
+  "tipo_ancora": "N"
+ }
+]

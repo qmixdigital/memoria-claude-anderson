@@ -1,0 +1,26 @@
+{
+ "titulo": "Ferritina alta: excesso de ferro ou inflamação, o que o exame diz",
+ "kw": "excesso de ferro ou inflamação",
+ "resumo": "Saturação de transferrina, marcadores de inflamação e função do fígado mostram se há excesso de ferro ou inflamação por trás do número.",
+ "slug": "excesso-de-ferro-ou-inflamacao-ferritina",
+ "fontes": [
+  {
+   "afirmacao": "Ferritina como reagente de fase aguda; referência ~200 µg/L mulheres e 300 homens (varia por ensaio); causas sem sobrecarga (DHGNA, cirrose, etilismo, sepse, autoimunes, neoplasias); saturação de transferrina >45% mulheres/>50% homens sugere sobrecarga; ~10% dos casos por sobrecarga; PCR e VHS; teste HFE C282Y só com suspeita, não triagem; causas secundárias (politransfusão, ferro suplementar); >1.000 µg/L com testes hepáticos alterados justifica encaminhamento",
+   "url": "https://med.estrategia.com/portal/conteudos-gratis/doencas/resumo-de-ferritina-alta-diagnostico-tratamento-e-mais/"
+  },
+  {
+   "afirmacao": "Hemocromatose hereditária: absorção intestinal excessiva, acúmulo em fígado, pâncreas, coração, articulações e glândulas; sintomas inespecíficos; histórico familiar, saturação e ferritina",
+   "url": "https://sumarios.org/node/81874"
+  },
+  {
+   "afirmacao": "Ferritina elevada aumenta a probabilidade de esteato-hepatite (EHADM)",
+   "url": "https://www.msdmanuals.com/pt/profissional/distúrbios-hepáticos-e-biliares/abordagem-ao-paciente-com-doença-hepática/doença-hepática-esteatótica-associada-a-disfunção-metabólica-dheadm"
+  }
+ ],
+ "pendente_verificar": [
+  "Fonte primária (sociedade médica) para os pontos de corte de saturação e ferritina; usados fontes didáticas",
+  "Conduta dietética em sobrecarga de ferro não afirmada (fontes não abordam)",
+  "Sintomas iniciais de hemocromatose (cansaço, dor articular) descritos de modo genérico",
+  "Percentual de 82-90% de C282Y vale para ascendência europeia; extrapolação ao Brasil não afirmada"
+ ]
+}

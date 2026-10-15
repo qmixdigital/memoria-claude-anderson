@@ -1,0 +1,1 @@
+- [Projeto terceironome.com.br](terceironome-projeto.md) — loja Reels, repo, VPS clinicas-vps, DNS pendente

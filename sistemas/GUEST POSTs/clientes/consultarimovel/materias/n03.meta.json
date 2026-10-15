@@ -1,0 +1,33 @@
+{
+  "titulo": "Diferença entre posse e propriedade rural no campo",
+  "kw": "diferença entre posse e propriedade rural",
+  "resumo": "Entender a diferença entre posse e propriedade rural evita prejuízo na venda, na herança e no financiamento de terras rurais.",
+  "slug": "diferenca-entre-posse-e-propriedade-rural",
+  "fontes": [
+    {
+      "afirmacao": "O cadastramento no CAR (Cadastro Ambiental Rural) não serve como prova do direito de propriedade ou posse, nem elimina a exigência de registro imobiliário (Lei 12.651/2012, art. 29, §2º).",
+      "url": "https://www.legjur.com/legislacao/art/LEI_00126512012-29"
+    },
+    {
+      "afirmacao": "A usucapião especial rural exige posse de cinco anos ininterruptos, sem oposição, em área de até cinquenta hectares, com produtividade pelo trabalho do possuidor ou de sua família e moradia no imóvel, sem que ele seja proprietário de outro imóvel (art. 191 da CF e art. 1.239 do Código Civil).",
+      "url": "https://www.peticoesonline.com.br/art-1239-cc"
+    },
+    {
+      "afirmacao": "A Justiça Federal determinou, em 2025, que o INCRA e a União regularizem os territórios quilombolas de Pulgão e Campo Rio, em Itapecuru-Mirim (MA), com prazo de até dois anos para concluir a titulação.",
+      "url": "https://www.mpf.mp.br/o-mpf/unidades/pr-ma/noticias/justica-federal-determina-que-incra-e-uniao-regularizem-territorios-quilombolas-em-itapecuru-mirim-ma"
+    },
+    {
+      "afirmacao": "O Incra conduz, desde 2021, um plano de trabalho do programa Titula Brasil em Itapecuru-Mirim (MA), que regulariza posses em terras da União com base na Lei 11.952/2009, e reconhece que a falta de regularização gera insegurança jurídica e bloqueia o acesso a crédito rural.",
+      "url": "https://www.gov.br/incra/pt-br/centrais-de-conteudos/publicacoes/acordos-de-cooperacao/titula-brasil/MA_ItapecuruMirim_PlanodeTrabalho.pdf"
+    },
+    {
+      "afirmacao": "A propriedade imóvel só se transfere e se comprova diante de terceiros pela matrícula aberta no cartório de registro de imóveis competente, conforme a Lei de Registros Públicos (Lei 6.015/1973).",
+      "url": "https://blog.grupogen.com.br/juridico/2020/10/16/bem-imovel-e-seus-registros/"
+    }
+  ],
+  "pendente_verificar": [
+    "Prazos de usucapião ordinária (10 anos, com justo título e boa fé) e extraordinária (15 anos, podendo cair para 10) citados no artigo são conhecimento consolidado do Código Civil (arts. 1.242 e 1.238); não foram reconfirmados por nova busca nesta sessão.",
+    "Regra de indenização por benfeitorias ao possuidor de boa fé e má fé (arts. 1.219 e 1.220 do Código Civil) é conhecimento geral de direito civil, não verificada por busca específica nesta sessão.",
+    "Situação atual (2026) do processo de titulação das comunidades de Pulgão e Campo Rio em Itapecuru-Mirim não foi reconfirmada além da decisão de 2025 noticiada pelo MPF."
+  ]
+}

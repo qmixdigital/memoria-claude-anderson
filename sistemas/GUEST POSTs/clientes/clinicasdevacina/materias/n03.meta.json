@@ -1,0 +1,32 @@
+{
+  "titulo": "Vacina da gripe, quando tomar: veja o calendário da campanha",
+  "kw": "vacina da gripe, quando tomar",
+  "resumo": "A pergunta sobre a vacina da gripe, quando tomar, ainda confunde muita gente porque a data muda a cada ano.",
+  "slug": "vacina-da-gripe-quando-tomar",
+  "fontes": [
+    {
+      "afirmacao": "Calendário nacional da vacina contra influenza prioriza crianças de 6 meses a menores de 6 anos, gestantes, puérperas, idosos a partir de 60 anos, povos indígenas, professores, profissionais de saúde, forças de segurança e Forças Armadas, pessoas com deficiência permanente, população em situação de rua, caminhoneiros e pessoas com comorbidades.",
+      "url": "https://sanarmed.com/campanha-vacinacao-influenza-2026-protocolo-aps/"
+    },
+    {
+      "afirmacao": "Esquema vacinal é de dose única anual, com exceção de crianças em primovacinação, que recebem duas doses com intervalo de 30 dias.",
+      "url": "https://sanarmed.com/campanha-vacinacao-influenza-2026-protocolo-aps/"
+    },
+    {
+      "afirmacao": "A vacina contra a gripe é indicada a partir dos 6 meses de idade.",
+      "url": "https://site.cff.org.br/noticia/Noticias-gerais/08/05/2024/influenza-qualquer-pessoa-acima-de-6-meses-pode-tomar-vacina-contra-gripe"
+    },
+    {
+      "afirmacao": "A vacina é inativada, segura para pessoas imunocompetentes e imunocomprometidas, e estimativas do Ministério da Saúde indicam que ela evita entre 60% e 70% dos casos graves e mortes pela doença; pacientes transplantados de medula óssea recebem a vacina como primeiro imunizante cerca de três meses após o procedimento.",
+      "url": "https://agenciabrasil.ebc.com.br/saude/noticia/2025-04/vacina-contra-gripe-e-segura-e-nao-causa-doenca-saiba-mais-verdades"
+    },
+    {
+      "afirmacao": "Curitiba oferece vacinação de rotina nas unidades municipais de saúde e já promoveu mutirões de sábado com horário estendido durante campanhas de vacinação; o aplicativo Imuniza Já Curitiba reúne endereços e horários.",
+      "url": "https://www.curitiba.pr.gov.br/noticias/familias-aproveitam-horario-estendido-para-atualizar-carteira-de-vacinacao-em-curitiba/70784"
+    }
+  ],
+  "pendente_verificar": [
+    "Lista exata de unidades de saúde do Centro de Curitiba participantes e horário estendido vigentes na campanha atual (as referências encontradas são de temporadas anteriores; confirmar no Imuniza Já Curitiba antes de publicar).",
+    "Detalhe fisiológico de que a gravidez altera sistema imunológico, circulação sanguínea e função pulmonar aumentando vulnerabilidade respiratória: afirmação consta em reportagens agregadas sobre o tema, sem uma fonte primária única (SBIm/Ministério da Saúde) confirmada neste momento."
+  ]
+}

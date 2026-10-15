@@ -1,0 +1,25 @@
+{
+  "titulo": "Prazo de validade do certificado digital em 2026",
+  "kw": "prazo de validade do certificado digital",
+  "resumo": "Entenda o prazo de validade do certificado digital por tipo A1 e A3 e quando começar a renovação.",
+  "slug": "prazo-de-validade-do-certificado-digital",
+  "fontes": [
+    {
+      "afirmacao": "O certificado digital tipo A1 costuma ser emitido com validade de até um ano.",
+      "url": "https://clicksign.com/en/blog/certificado-digital-o-que-e-quais-os-tipos-e-como-obter-um"
+    },
+    {
+      "afirmacao": "O certificado digital tipo A3 costuma ter validade de até três anos, podendo variar conforme a autoridade certificadora e o meio de armazenamento (token, cartão ou nuvem).",
+      "url": "https://diati.tjal.jus.br/wp-content/uploads/2024/ETP-CertificadoDigital.pdf"
+    },
+    {
+      "afirmacao": "Em Alagoas, a Juceal (Junta Comercial do Estado de Alagoas) passou a priorizar o protocolo de processos empresariais por via digital, aumentando a dependência do certificado digital em dia para quem abre ou altera empresa no estado.",
+      "url": "https://www.portalcontnews.com.br/?p=209862"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar diretamente com o ITI (gov.br/iti) o prazo de validade atualmente praticado para A1 e A3, já que as fontes consultadas são de autoridades certificadoras e tribunais, não a norma ICP-Brasil consolidada, e os prazos de A3 variaram entre 3 e 5 anos conforme a fonte.",
+      "Confirmar se existe documentação formal do ITI/ICP-Brasil afirmando que assinaturas feitas antes do vencimento do certificado permanecem válidas após a expiração (afirmação tratada como princípio geral de PKI, não encontrada em fonte oficial específica).",
+    "Confirmar se a Juceal mantém em 2026 a mesma exigência de protocolo digital para processos empresariais descrita em matérias de 2020/2021, já que não foi localizada fonte mais recente."
+  ]
+}

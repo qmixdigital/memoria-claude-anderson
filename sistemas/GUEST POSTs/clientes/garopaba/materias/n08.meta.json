@@ -1,0 +1,16 @@
+{
+  "titulo": "De vila de pescadores a destino turístico em Santa Catarina",
+  "resumo": "A passagem de vila de pescadores a destino turístico explica o charme açoriano de Garopaba.",
+  "slug": "vila-pescadores-destino-turistico-garopaba",
+  "kw": "de vila de pescadores a destino turístico",
+  "portal": "portalgc.com.br",
+  "links": [
+    { "ancora": "história de Garopaba", "url": "https://garopaba.ia.br/historia/" },
+    { "ancora": "os Lençóis Maranhenses", "url": "https://portalgc.com.br/turismo/os-lencois-maranhenses-como-o-encontro-entre-areia-e-agua-criou-uma-das-paisagens-mais-impressionantes-do-brasil/" },
+    { "ancora": "Copacabana, Ipanema ou Barra", "url": "https://portalgc.com.br/turismo/copacabana-ipanema-ou-barra-onde-ficar-no-rio-sem-se-arrepender/" }
+  ],
+  "imagem": "n08-vila-pescadores-garopaba.webp",
+  "imagem_alt": "barcos de pesca coloridos ancorados num porto pitoresco, ilustrando a passagem de vila de pescadores a destino turístico",
+  "imagem_fonte": "Pixabay",
+  "imagem_fonte_url": "https://pixabay.com/photos/fishing-boat-picturesque-port-241585/"
+}

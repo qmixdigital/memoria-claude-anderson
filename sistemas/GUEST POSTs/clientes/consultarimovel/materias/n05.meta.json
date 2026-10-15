@@ -1,0 +1,19 @@
+{
+  "titulo": "O que fazer em caso de conflito de posse de terra",
+  "kw": "conflito de posse de terra",
+  "resumo": "Saber a diferença entre posse e propriedade pode decidir o rumo de um conflito de posse de terra rural.",
+  "slug": "conflito-de-posse-de-terra",
+  "fontes": [
+    {"afirmacao": "Diferença entre interdito proibitório (preventivo), manutenção de posse (turbação) e reintegração de posse (esbulho, por violência, clandestinidade ou precariedade)", "url": "https://comprerural.com/como-me-defender-das-invasoes-rurais-entenda-seus-direitos/"},
+    {"afirmacao": "Ações possessórias são reguladas pelo Código de Processo Civil, com rito especial quando a ação é proposta logo após a turbação ou o esbulho, e rito comum depois disso, sem perder a natureza possessória", "url": "https://www.estrategiaconcursos.com.br/blog/resumo-sobre-as-acoes-possessorias-cpc/amp/"},
+    {"afirmacao": "Decreto nº 11.338/2023 criou o Departamento de Mediação e Conciliação de Conflitos Agrários no Ministério do Desenvolvimento Agrário, atuando com INCRA, Judiciário, Ministério Público e Defensorias", "url": "https://www.gov.br/incra/pt-br/centrais-de-conteudos/publicacoes/editais-de-licitacoes/termo-de-execucao-descentralizada/TED_Plano_de_Trabalho_383_2025.pdf"},
+    {"afirmacao": "Ouvidoria Agrária Nacional foi criada em 1999, após o massacre de Eldorado dos Carajás (1996), e resolveu milhares de conflitos agrários antes de ser sucedida pelo novo departamento", "url": "https://www.trf1.jus.br/trf1/conteudo/nugepnac/atas-reint1/ATA REINT1 5ª 2023.pdf"},
+    {"afirmacao": "INCRA e CNJ firmaram acordo de cooperação técnica para compartilhamento de dados territoriais em apoio a decisões judiciais sobre conflitos de terra", "url": "https://www.irib.org.br/?p=162441"},
+    {"afirmacao": "Debate sobre a função social da terra ser analisada no mérito da ação possessória, e não na decisão liminar", "url": "https://revistas.ufg.br/revfd/article/download/30127/16546/127109"}
+  ],
+  "pendente_verificar": [
+    "Ano exato do massacre de Eldorado dos Carajás citado como origem da Ouvidoria Agrária Nacional (fontes indicam 1996, uma referência secundária mencionou 1995; confirmar na fonte oficial do INCRA/MDA)",
+    "Texto oficial e competências exatas do Decreto nº 11.338/2023 (confirmar diretamente no Planalto, pois a leitura veio de documento institucional secundário, não do decreto na íntegra)",
+    "Numeração exata dos artigos do CPC sobre ações possessórias não foi citada no texto por haver divergência entre fontes secundárias consultadas; confirmar no Planalto antes de usar em peça jurídica"
+  ]
+}

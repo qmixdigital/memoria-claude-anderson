@@ -1,0 +1,24 @@
+{
+  "titulo": "Diferença entre fisioterapia e pilates na prática clínica",
+  "kw": "diferença entre fisioterapia e pilates",
+  "resumo": "A diferença entre fisioterapia e pilates está na formação de quem conduz e no motivo clínico do exercício.",
+  "slug": "diferenca-entre-fisioterapia-e-pilates",
+  "fontes": [
+    {
+      "afirmacao": "A Resolução Coffito nº 386/2011 trata o método Pilates como recurso cinesioterapêutico e mecanoterapêutico que, quando indicado e administrado por fisioterapeuta, fica sob o controle ético e fiscalizador do sistema Coffito/Crefito.",
+      "url": "https://www.normasbrasil.com.br/norma/resolucao-386-2011_114279.html"
+    },
+    {
+      "afirmacao": "Parecer Crefito-4 nº 002/2016 afirma que a cinesioterapia é ato privativo do fisioterapeuta desde a Resolução Coffito nº 158/1994, e que métodos como o Pilates só são fisioterapia quando aplicados a partir de avaliação cinesiológico-funcional.",
+      "url": "https://crefito4.org.br/site/wp-content/uploads/2023/07/Parecer-002.2016_treinamento-funcional-fisioterapeuta.pdf"
+    },
+    {
+      "afirmacao": "Ensaio clínico comparando Mat Pilates e exercícios convencionais de fisioterapia em pacientes com dor lombar crônica não encontrou diferença estatisticamente significativa entre os grupos após cinco semanas de tratamento.",
+      "url": "https://ensaiosclinicos.gov.br/rg/RBR-2qp9gtg/attachment/26486"
+    }
+  ],
+  "pendente_verificar": [
+    "Exigência (ou não) de registro no Cref para instrutor de pilates de academia/estúdio não foi confirmada em norma oficial do Confef nos resultados de busca; o artigo evita afirmar isso como regra fechada.",
+    "Vigência atual do Parecer Crefito-4 nº 002/2016 não foi reconfirmada na data de redação (pode ter sido revisado ou substituído)."
+  ]
+}

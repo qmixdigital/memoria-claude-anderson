@@ -1,0 +1,29 @@
+{
+  "titulo": "Documentos para abrir CNPJ digital: lista completa em 2026",
+  "kw": "documentos para abrir CNPJ digital",
+  "resumo": "Documentos para abrir CNPJ digital mudam conforme o tipo de empresa, e o Microempreendedor Individual segue uma lista mais curta.",
+  "slug": "documentos-para-abrir-cnpj-digital",
+  "fontes": [
+    {
+      "afirmacao": "Fluxo da abertura pelo Redesim: consulta de viabilidade, Documento Básico de Entrada (DBE), registro no órgão competente (junta comercial, cartório ou OAB), emissão do CNPJ e inscrições estadual/municipal.",
+      "url": "https://crcpe.org.br/wp-content/uploads/2024/02/CARTILHA-REDESIM-CLIENTE.pdf"
+    },
+    {
+      "afirmacao": "O DBE pode ser emitido pelo Coletor Nacional da Receita Federal ou pelo e-CAC, sendo que o e-CAC exige cadastro prévio e, em parte dos casos, certificado digital.",
+      "url": "https://www.jornalcontabil.com.br/dbe-saiba-o-que-e-e-como-solicitar-esse-documento/"
+    },
+    {
+      "afirmacao": "O Microempreendedor Individual (MEI) não precisa gerar DBE; a formalização é gratuita e feita inteiramente pelo Portal do Empreendedor.",
+      "url": "https://agilize.com.br/blog/abrir-sua-empresa/como-abrir-um-cnpj/"
+    },
+    {
+      "afirmacao": "O e-CNPJ costuma ser emitido depois que o número do CNPJ já existe, já que depende do cartão de inscrição para ser gerado; a emissão é feita por Autoridade Certificadora credenciada à ICP-Brasil, presencial ou por videoconferência.",
+      "url": "https://razonet.com.br/contabilidade-digital/como-tirar-o-certificado-digital-e-cnpj-em-2026"
+    }
+  ],
+  "pendente_verificar": [
+    "Exigência (ou não) de certificado digital e-CPF para assinatura eletrônica do contrato social varia por estado/junta comercial; não há fonte federal única que padronize isso para todas as UFs.",
+    "Prazo médio de abertura de CNPJ pelo Redesim por estado: fontes privadas divergem (de menos de 48h a até 15 dias úteis), não confirmado em fonte oficial única.",
+    "Lista exata e completa de anexos exigidos por cada junta comercial estadual (varia por UF e não foi encontrada fonte federal consolidada)."
+  ]
+}

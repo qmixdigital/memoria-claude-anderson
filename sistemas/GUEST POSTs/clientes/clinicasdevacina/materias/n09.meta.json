@@ -1,0 +1,36 @@
+{
+  "titulo": "Reforço vacinal em adultos: o que o calendário pede",
+  "kw": "reforço vacinal em adultos",
+  "resumo": "Depois dos 20 anos, parte da proteção vacinal enfraquece e o reforço vacinal em adultos evita lacunas no calendário.",
+  "slug": "reforco-vacinal-em-adultos",
+  "fontes": [
+    {
+      "afirmacao": "dT (dupla adulto): reforço a cada 10 anos após esquema básico completo (ao menos 3 doses); intervalo reduzido para 5 anos em caso de exposição a risco de tétano ou difteria.",
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-adulto/@@download/file"
+    },
+    {
+      "afirmacao": "Profissionais de saúde com esquema básico completo recebem 1 dose de dTpa, mesmo com dose de dT há menos de 10 anos, e seguem depois com reforço de dTpa a cada 10 anos.",
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-adulto/@@download/file"
+    },
+    {
+      "afirmacao": "Hepatite B: esquema de 3 doses para quem não tem esquema completo, a partir dos 16 anos; intervalo de 1 mês entre a 1ª e a 2ª dose e de 6 meses entre a 1ª e a 3ª dose.",
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-adulto/@@download/file"
+    },
+    {
+      "afirmacao": "Febre amarela: dose única preconizada para todo o país na vida adulta para quem não tem histórico vacinal; reforço só em situações específicas, como histórico de dose fracionada.",
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-adulto/@@download/file"
+    },
+    {
+      "afirmacao": "Tríplice viral (SCR): entre 30 e 59 anos, 1 dose se não houver histórico vacinal, ou dose adicional até completar 2 se houver histórico de apenas 1 dose; trabalhadores de saúde precisam de 2 doses completas independente da idade.",
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-adulto/@@download/file"
+    },
+    {
+      "afirmacao": "Viajantes para área de risco de febre amarela devem se vacinar com até 10 dias de antecedência da viagem; o Certificado Internacional de Vacinação e Profilaxia (CIVP) pode levar dias úteis para ser emitido.",
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-adulto/@@download/file"
+    }
+  ],
+  "pendente_verificar": [
+    "Este artigo usa a faixa oficial do calendário do adulto (25 a 59 anos, 11 meses e 29 dias); não foi consultado neste texto o calendário específico do idoso (60+), que segue regras próprias.",
+    "O tempo de emissão do Certificado Internacional de Vacinação e Profilaxia (CIVP) foi descrito de forma genérica ('alguns dias úteis'); prazo exato pode variar por unidade e deve ser confirmado na hora do agendamento de viagem."
+  ]
+}

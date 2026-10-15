@@ -1,0 +1,102 @@
+[
+ {
+  "n": "01",
+  "portal": "jornalbahia",
+  "destino_url": "https://casasderecuperacao.com.br/ba",
+  "destino_tema": "Casas de Recuperação em Bahia, Álcool e Drogas (diretório estadual)",
+  "pauta": "sinais de recaída no tratamento contra o vício",
+  "kw_post": "sinais de recaída no tratamento",
+  "ancora": "clínicas de recuperação na Bahia",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "02",
+  "portal": "alagoas200",
+  "destino_url": "https://casasderecuperacao.com.br/al",
+  "destino_tema": "Clínica de Recuperação em Alagoas para Dependentes Químicos (diretório estadual)",
+  "pauta": "etapas da desintoxicação hospitalar",
+  "kw_post": "etapas da desintoxicação hospitalar",
+  "ancora": "clínica de recuperação em Alagoas",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "03",
+  "portal": "noticiasdetimon",
+  "destino_url": "https://casasderecuperacao.com.br/ma",
+  "destino_tema": "Clínicas de Recuperação em Maranhão, Tratamento (diretório estadual)",
+  "pauta": "diferença entre uso recreativo e dependência química",
+  "kw_post": "diferença entre uso recreativo e dependência",
+  "ancora": "clínicas de recuperação no Maranhão",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "04",
+  "portal": "teixeiraemfoco",
+  "destino_url": "https://casasderecuperacao.com.br/blog/mensagens-para-dependentes-quimicos-em-tratamento",
+  "destino_tema": "50 Mensagens para Dependentes Químicos em Tratamento",
+  "pauta": "como apoiar um familiar em recuperação sem julgamento",
+  "kw_post": "apoiar familiar em recuperação",
+  "ancora": "mensagens de apoio para quem está em tratamento",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "05",
+  "portal": "webcitizen",
+  "destino_url": "https://casasderecuperacao.com.br/blog/pupila-dilatada-drogas",
+  "destino_tema": "Pupila Dilatada por Drogas: Qual Substância Altera o Olho",
+  "pauta": "sinais físicos que podem indicar uso de substâncias",
+  "kw_post": "sinais físicos de uso de substâncias",
+  "ancora": "pupilas dilatadas associadas ao uso de drogas",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "06",
+  "portal": "brasilnovonoticias",
+  "destino_url": "https://casasderecuperacao.com.br/blog/skank-droga",
+  "destino_tema": "Skank Droga: a supermaconha, efeitos e riscos",
+  "pauta": "drogas sintéticas populares entre jovens",
+  "kw_post": "drogas sintéticas entre jovens",
+  "ancora": "o que é o skank, droga sintética",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "07",
+  "portal": "portoenoticias",
+  "destino_url": "https://casasderecuperacao.com.br/blog/frases-de-reflexao-para-alcoolatras",
+  "destino_tema": "30 Frases de Reflexão para Alcoólatras Que Marcam",
+  "pauta": "o papel da fé e da reflexão na recuperação do alcoolismo",
+  "kw_post": "fé na recuperação do alcoolismo",
+  "ancora": "frases de reflexão para quem enfrenta o alcoolismo",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "08",
+  "portal": "jornalnoticiaonline",
+  "destino_url": "https://casasderecuperacao.com.br/blog/simpatias-para-parar-de-beber",
+  "destino_tema": "Simpatias e Orações para Parar de Beber",
+  "pauta": "tratamento real contra o alcoolismo versus crenças populares",
+  "kw_post": "tratamento real contra o alcoolismo",
+  "ancora": "simpatias populares para tentar parar de beber",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "09",
+  "portal": "alagoasdiario",
+  "destino_url": "https://casasderecuperacao.com.br/blog/olho-de-quem-cheira-po",
+  "destino_tema": "Olho de Quem Cheira Pó: Sinais no Olhar da Cocaína",
+  "pauta": "como abordar um familiar suspeito de uso de drogas",
+  "kw_post": "confrontar familiar sobre uso de drogas",
+  "ancora": "mudanças no olhar associadas ao uso de drogas",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "10",
+  "portal": "cocaisnoticias",
+  "destino_url": "https://casasderecuperacao.com.br/blog/cocaina-tem-cheiro",
+  "destino_tema": "Cocaína Tem Cheiro? Como Reconhecer o Odor",
+  "pauta": "mitos populares sobre identificar drogas pelo cheiro",
+  "kw_post": "identificar drogas pelo cheiro",
+  "ancora": "identificar o cheiro característico da cocaína",
+  "tipo_ancora": "P"
+ }
+]

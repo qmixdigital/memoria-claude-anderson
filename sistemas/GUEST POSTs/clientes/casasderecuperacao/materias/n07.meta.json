@@ -1,0 +1,29 @@
+{
+  "titulo": "A fé na recuperação do alcoolismo: o que mostra a pesquisa",
+  "kw": "fé na recuperação do alcoolismo",
+  "resumo": "Estudos brasileiros mostram que a fé na recuperação do alcoolismo ajuda, mas não substitui o tratamento clínico.",
+  "slug": "fe-recuperacao-alcoolismo",
+  "fontes": [
+    {
+      "afirmacao": "Pesquisas qualitativas com pacientes em tratamento para alcoolismo em serviços de saúde brasileiros registram relatos de que a religiosidade e a espiritualidade ajudam a enfrentar as dificuldades do dia a dia e do próprio tratamento, funcionando como recurso complementar, não como substituto do cuidado clínico.",
+      "url": "https://www.uniad.org.br/wp-content/uploads/2011/03/A_INFLUENCIA_DA_ESPIRITUALIDADE_NA_RECUPERACAO_DE_DEPENDENTES_QUIMICOS.pdf"
+    },
+    {
+      "afirmacao": "O programa de Alcoólicos Anônimos se declara espiritual, não religioso, e afirma não ser afiliado a nenhuma seita, denominação ou crença religiosa específica; os passos 2 e 11 mencionam um poder superior que cada participante interpreta livremente.",
+      "url": "https://www.unicesumar.edu.br/mostra-2010/wp-content/uploads/sites/94/2016/07/cristina_silveira_moraes_santos_2.pdf"
+    },
+    {
+      "afirmacao": "A dependência de álcool tem componente biológico: em pessoas com dependência estabelecida, a interrupção abrupta do consumo pode causar convulsão e delirium tremens, quadro potencialmente fatal sem assistência médica.",
+      "url": "https://www.medway.com.br/conteudos/delirium-tremens-como-tratar/"
+    },
+    {
+      "afirmacao": "Os Centros de Atenção Psicossocial de Álcool e Drogas (CAPS AD) funcionam como referência do SUS para o tratamento de dependência de álcool e outras drogas, com atendimento gratuito.",
+      "url": "https://nepas.emnuvens.com.br/abcs/article/download/26/27/51"
+    }
+  ],
+  "pendente_verificar": [
+    "Data exata de chegada do modelo de doze passos (Alcoólicos Anônimos) ao Brasil: não incluída no texto por falta de fonte acadêmica primária confiável (a data de 1947 aparece só em artigo de opinião, não em fonte histórica verificada).",
+    "Mecanismo neurobiológico exato de como a espiritualidade influenciaria a recuperação: a literatura científica consultada descreve esse ponto como pouco compreendido; o texto trata o tema de forma genérica, sem atribuir mecanismo específico.",
+    "Conteúdo integral do PDF da UNIAD sobre espiritualidade e recuperação de dependentes químicos não pôde ser extraído por ferramenta automática nesta pesquisa (PDF comprimido); a afirmação usada reflete o resumo indireto obtido por busca, recomenda-se leitura humana do documento antes de qualquer republicação com atribuição mais específica."
+  ]
+}

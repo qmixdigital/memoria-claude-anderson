@@ -1,0 +1,28 @@
+{
+  "titulo": "Sinais Físicos de Uso de Substâncias: o Que Observar",
+  "kw": "sinais físicos de uso de substâncias",
+  "resumo": "Entenda o que pele, peso, sono e olhar revelam nos sinais físicos de uso de substâncias, sem substituir avaliação médica.",
+  "slug": "sinais-fisicos-de-uso-de-substancias",
+  "fontes": [
+    {
+      "afirmacao": "O tamanho da pupila depende do equilíbrio entre o músculo esfíncter da íris, controlado pelo sistema nervoso parassimpático, e o músculo dilatador, controlado pelo sistema simpático.",
+      "url": "https://psicopedagogia.com.br/conteudo/miose-e-midriase-pupilar-causas-e-significados"
+    },
+    {
+      "afirmacao": "Estimulantes como cocaína e anfetaminas estão associados à midríase (pupila dilatada); opioides como heroína, oxicodona, fentanil e morfina estão associados à miose (pupila contraída).",
+      "url": "https://recovered.org/addiction/drug-dilated-pupils"
+    },
+    {
+      "afirmacao": "Entre os sinais físicos e comportamentais do uso de cocaína estão olhos vermelhos, pupilas dilatadas, perda de peso, agitação e alterações de humor; sinais isolados não bastam para concluir uso de drogas.",
+      "url": "https://catracalivre.com.br/saude-bem-estar/sinais-fisicos-psicologicos-e-comportamentais-do-uso-de-cocaina/"
+    },
+    {
+      "afirmacao": "Causas comuns de pupilas dilatadas incluem, além de substâncias, pouca luminosidade, uso de certos medicamentos (como antidepressivos e antialérgicos) e quadros de excitação, o que exige cautela na interpretação isolada do sinal.",
+      "url": "https://www.tuasaude.com/pupilas-dilatadas/"
+    }
+  ],
+  "pendente_verificar": [
+    "Mecanismo celular detalhado de como os opioides produzem miose (ativação de receptores opioides e via parassimpática) não foi confirmado em fonte primária revisada por pares durante esta pesquisa; mantido em nível geral no texto.",
+    "Não foi localizada página oficial do Ministério da Saúde, SENAD, OMS, CFM ou ABEAD tratando especificamente de sinais físicos de uso de substâncias; as fontes usadas são sites de divulgação em saúde e um portal de notícias, tratados como referência secundária."
+  ]
+}

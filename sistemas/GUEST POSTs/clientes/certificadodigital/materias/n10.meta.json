@@ -1,0 +1,29 @@
+{
+  "titulo": "Certificado digital vencido o que fazer agora",
+  "kw": "certificado digital vencido o que fazer",
+  "resumo": "Certificado digital vencido o que fazer depende do tipo escolhido, já que A1 e A3 seguem caminhos de reemissão diferentes.",
+  "slug": "certificado-digital-vencido-o-que-fazer",
+  "fontes": [
+    {
+      "afirmacao": "A renovação online de certificado digital depende de o certificado ainda estar dentro da validade, pois ele assina a própria solicitação; depois do vencimento, não há renovação e sim nova emissão.",
+      "url": "https://www.coad.com.br/home/noticias-detalhe/46507/empresas-com-certificado-digital-vencido-nao-podem-emitir-documentos-eletronicos"
+    },
+    {
+      "afirmacao": "Sem certificado digital válido, a emissão de documentos eletrônicos (como NF-e) e o acesso a sistemas da Receita Federal e de prefeituras ficam bloqueados.",
+      "url": "https://sefaz.es.gov.br/empresas-com-certificado-digital-vencido-nao"
+    },
+    {
+      "afirmacao": "A chamada 'renovação' do certificado digital é, na prática, uma nova emissão, com conferência de dados; recomenda-se iniciar o processo com antecedência (dias a semanas antes do vencimento, variando por certificadora).",
+      "url": "https://jornalcontabil.com.br/noticia/fique-de-olho-na-validade-do-seu-certificado-digital/"
+    },
+    {
+      "afirmacao": "O certificado A1 é um arquivo instalado no computador ou dispositivo, sem necessidade de token ou cartão; o A3 fica armazenado em token ou cartão com chip.",
+      "url": "https://razonet.com.br/contabilidade-digital/certificado-digital-a1-ou-a3"
+    }
+  ],
+  "pendente_verificar": [
+    "Prazo exato de validade padrão do certificado A1 e do A3 (fontes privadas convergem em torno de 1 ano para o A1 e 1 a 3 anos para o A3, mas não foi localizada fonte direta do ITI/Receita Federal com o número oficial atual).",
+    "Antecedência recomendada para iniciar a renovação antes do vencimento: fontes privadas divergem entre 30 e 45 dias; não há prazo oficial único da ICP-Brasil confirmado nesta pesquisa.",
+    "Possibilidade de troca de tipo (A1 para A3 ou vice-versa) no momento da reemissão: confirmado em fontes comerciais, não em norma oficial da ICP-Brasil consultada diretamente."
+  ]
+}

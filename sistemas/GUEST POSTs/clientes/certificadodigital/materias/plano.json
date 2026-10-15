@@ -1,0 +1,102 @@
+[
+ {
+  "n": "01",
+  "portal": "jornalbahia",
+  "destino_url": "https://certificadodigital.seg.br/certificado-digital/ba",
+  "destino_tema": "Certificado digital em Bahia: 58 postos",
+  "pauta": "quais documentos exigem certificado digital",
+  "kw_post": "documentos que exigem certificado digital",
+  "ancora": "certificado digital na Bahia",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "02",
+  "portal": "alagoas200",
+  "destino_url": "https://certificadodigital.seg.br/certificado-digital/al/maceio",
+  "destino_tema": "Certificado digital em Maceió, AL: 8 postos",
+  "pauta": "prazo de validade do certificado digital",
+  "kw_post": "prazo de validade do certificado digital",
+  "ancora": "certificado digital em Maceió",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "03",
+  "portal": "noticiasdefloriano",
+  "destino_url": "https://certificadodigital.seg.br/certificado-digital/pi/teresina",
+  "destino_tema": "Certificado digital em Teresina, PI: 8 postos",
+  "pauta": "diferença entre certificado A1 e A3",
+  "kw_post": "diferença entre certificado A1 e A3",
+  "ancora": "certificado digital em Teresina",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "04",
+  "portal": "apucarananoticias",
+  "destino_url": "https://certificadodigital.seg.br/certificado-digital/pr/curitiba/ac/qualitycert",
+  "destino_tema": "Certificado digital Qualitycert em Curitiba, PR",
+  "pauta": "certificado digital para abrir empresa",
+  "kw_post": "certificado digital para abrir empresa",
+  "ancora": "certificado digital em Curitiba",
+  "tipo_ancora": "N"
+ },
+ {
+  "n": "05",
+  "portal": "canaljustica",
+  "destino_url": "https://certificadodigital.seg.br/para/advogado",
+  "destino_tema": "Certificado digital OAB para advogados: emitir e instalar",
+  "pauta": "assinatura eletrônica de petições",
+  "kw_post": "assinatura eletrônica de petições",
+  "ancora": "certificado digital para advogado",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "06",
+  "portal": "ciberlex",
+  "destino_url": "https://certificadodigital.seg.br/certificadora/ac-oab",
+  "destino_tema": "Certificado digital OAB (AC OAB): como emitir",
+  "pauta": "procuração eletrônica para advogados",
+  "kw_post": "procuração eletrônica para advogados",
+  "ancora": "certificado digital emitido pela AC OAB",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "07",
+  "portal": "professortrabalhista",
+  "destino_url": "https://certificadodigital.seg.br/para/contador",
+  "destino_tema": "Certificado digital para contadores: procuração e e-CAC",
+  "pauta": "certificado digital para o eSocial",
+  "kw_post": "certificado digital para o eSocial",
+  "ancora": "certificado digital para contador",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "08",
+  "portal": "webcitizen",
+  "destino_url": "https://certificadodigital.seg.br/guia/certificado-digital-no-chrome",
+  "destino_tema": "Certificado digital no Chrome: instalar e resolver erros",
+  "pauta": "erro ao acessar certificado digital no navegador",
+  "kw_post": "erro ao acessar certificado digital no navegador",
+  "ancora": "certificado digital no Chrome",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "09",
+  "portal": "brasilnovonoticias",
+  "destino_url": "https://certificadodigital.seg.br/tipos/e-cnpj-a1",
+  "destino_tema": "Certificado digital A1 CNPJ (e-CNPJ A1): preço e validade",
+  "pauta": "documentos para abrir CNPJ digital",
+  "kw_post": "documentos para abrir CNPJ digital",
+  "ancora": "certificado e-CNPJ A1",
+  "tipo_ancora": "P"
+ },
+ {
+  "n": "10",
+  "portal": "jornalnoticiaonline",
+  "destino_url": "https://certificadodigital.seg.br/guia/quanto-custa-certificado-digital",
+  "destino_tema": "Quanto custa certificado digital em 2026: valores por tipo",
+  "pauta": "certificado digital vencido, o que fazer",
+  "kw_post": "certificado digital vencido o que fazer",
+  "ancora": "quanto custa um certificado digital",
+  "tipo_ancora": "P"
+ }
+]

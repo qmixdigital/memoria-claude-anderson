@@ -1,0 +1,37 @@
+{
+  "titulo": "Fisioterapia para dor lombar crônica: o que esperar do tratamento",
+  "kw": "fisioterapia para dor lombar crônica",
+  "resumo": "Entenda como a fisioterapia para dor lombar crônica combina exercício e mudança de hábito no tratamento.",
+  "slug": "fisioterapia-para-dor-lombar-cronica",
+  "fontes": [
+    {
+      "afirmacao": "Dor lombar crônica é definida como dor persistente por mais de 12 semanas, diferente da dor aguda (até 6 semanas) e subaguda (6 a 12 semanas).",
+      "url": "https://scielo.br/j/coluna/a/5g6my3wx3bjbRrC6kb8XnHy/?lang=en"
+    },
+    {
+      "afirmacao": "Análise da Pesquisa Nacional de Saúde (PNS) de 2013 estimou que cerca de 18,5% dos brasileiros adultos relatam dor crônica na coluna, com 15,5% entre homens e 21,1% entre mulheres.",
+      "url": "https://scielosp.org/pdf/rsp/2017.v51suppl1/9s/pt"
+    },
+    {
+      "afirmacao": "Diretrizes internacionais sobre dor lombar crônica priorizam abordagens não farmacológicas (exercício, atividade física, educação em dor) em vez de depender apenas de medicação.",
+      "url": "https://comum.rcaap.pt/entities/publication/763940d4-e08d-48df-96a7-81525ae731e9/full"
+    },
+    {
+      "afirmacao": "Repouso prolongado não é recomendado no tratamento da dor lombar crônica porque pode aumentar a cinesiofobia (medo de se movimentar) e piorar o quadro a longo prazo.",
+      "url": "https://riu.ufam.edu.br/bitstream/prefix/9540/2/TCC_PaulaMendes.pdf"
+    },
+    {
+      "afirmacao": "Recursos como eletroterapia e aplicação de calor isolados não têm evidência consistente de eficácia para dor lombar crônica; o exercício orientado é o recurso central.",
+      "url": "https://sis.unileao.edu.br/uploads/3/FISIOTERAPIA/F1174.pdf"
+    },
+    {
+      "afirmacao": "Teresina está entre as capitais brasileiras com temperaturas mais elevadas, com registros de máxima acima de 38°C segundo medições do Inmet.",
+      "url": "https://www.climatempo.com.br/noticia/2023/08/22/calor-bate-nos-40dc-no-maranhao-e-no-piaui-1861"
+    }
+  ],
+  "pendente_verificar": [
+    "O percentual de 18,5% (PNS 2013) refere-se a dor crônica na coluna em geral (inclui pescoço, lombalgia, ciática e problemas vertebrais/discais), não é um número isolado de dor lombar; usado no texto de forma genérica para não superestimar a precisão.",
+    "Não foi localizado número oficial e atualizado (PNS 2019) específico para dor lombar crônica isolada; o texto evita citar percentual mais recente por falta de fonte primária confirmada.",
+    "Recorde de 38,8°C em Teresina é de agosto de 2023 (fonte Climatempo/Inmet); texto usa linguagem genérica ('já passaram dos 38°C') para não implicar que é um recorde atual de 2026."
+  ]
+}

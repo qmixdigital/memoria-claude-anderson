@@ -1,0 +1,37 @@
+{
+  "titulo": "O que é CCIR e para que serve esse certificado do Incra",
+  "kw": "o que é CCIR e para que serve",
+  "resumo": "Saber o que é CCIR e para que serve evita atraso na venda, no arrendamento ou no financiamento da terra.",
+  "slug": "o-que-e-ccir-e-para-que-serve",
+  "fontes": [
+    {
+      "afirmacao": "O CCIR (Certificado de Cadastro de Imóvel Rural) é emitido pelo Incra e comprova apenas a regularidade do imóvel no Sistema Nacional de Cadastro Rural (SNCR), sem servir como prova de propriedade.",
+      "url": "https://aegro.com.br/tags/ccir/"
+    },
+    {
+      "afirmacao": "O CCIR é exigido em cartório para venda, promessa de venda, desmembramento, arrendamento, hipoteca e homologação de partilha de imóvel rural, e é renovado anualmente.",
+      "url": "https://www.machadomeyer.com.br/pt/inteligencia-juridica/publicacoes-ij/imobiliario/emissao-de-ccir-2022-ja-esta-disponivel"
+    },
+    {
+      "afirmacao": "A isenção do ITR não dispensa a emissão do CCIR; para emitir o certificado, o titular precisa ter o Cafir atualizado na Receita Federal e o ITR dos exercícios anteriores pago.",
+      "url": "https://aegro.com.br/blog/incra-cadastro-rural-ccir-sigef/"
+    },
+    {
+      "afirmacao": "O Sistema Nacional de Cadastro Rural aceita declarações tanto de proprietários quanto de posseiros, mediante documento que comprove a posse nas situações previstas na Lei 10.267/2001.",
+      "url": "https://www.gov.br/incra/pt-br/acesso-a-informacao/perguntas-frequentes"
+    },
+    {
+      "afirmacao": "A Lei 10.267/2001 instituiu o georreferenciamento certificado de imóveis rurais pelo Incra (via Sigef) para desmembramento, remembramento e mudança de titularidade, com isenção de custos para áreas de até quatro módulos fiscais.",
+      "url": "https://www.irib.org.br/noticias/detalhes/incra-georreferenciamento-e-certificacao-de-imoveis-acima-de-100-ha-passam-a-ser-obrigatorios"
+    },
+    {
+      "afirmacao": "A emissão do CCIR é liberada pela internet após o pagamento da taxa de serviços cadastrais, calculada conforme o tamanho e a localização da área.",
+      "url": "https://cnabrasil.org.br/noticias/atencao-produtores-ccir-esta-disponivel-para-emissao"
+    }
+  ],
+  "pendente_verificar": [
+    "Limiar de área (em hectares) que torna o georreferenciamento obrigatório em desmembramentos permanece sem confirmação para 2026: as fontes encontradas (acima de 100 ha desde 20/11/2016) datam de 2016, e o artigo evitou citar esse número por não ter achado atualização.",
+    "Data exata de vencimento do CCIR do exercício vigente e os percentuais de multa e juros por atraso não foram incluídos no texto por não terem sido confirmados para 2026.",
+    "Nome e amparo legal exatos da declaração de atualização cadastral (tratada no texto apenas como 'atualizar o cadastro no sistema do Incra', sem citar a sigla DCR, por não ter confirmação plena do procedimento vigente)."
+  ]
+}

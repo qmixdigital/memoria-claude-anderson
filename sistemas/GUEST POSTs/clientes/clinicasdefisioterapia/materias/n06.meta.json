@@ -1,0 +1,25 @@
+{
+  "titulo": "Sinais de que a fisioterapia não está funcionando",
+  "kw": "sinais de que a fisioterapia não está funcionando",
+  "resumo": "Estagnação prolongada, dor que piora e ausência de reavaliação estão entre os sinais de que a fisioterapia não está funcionando.",
+  "slug": "sinais-de-que-a-fisioterapia-nao-esta-funcionando",
+  "fontes": [
+    {
+      "afirmacao": "Sinais sistêmicos (febre, calafrios, sudorese noturna, perda de peso não intencional) e neurológicos (fraqueza muscular progressiva, alteração de reflexos, alteração do controle urinário ou fecal associada a dor na coluna) são classificados como bandeiras vermelhas na avaliação fisioterapêutica e exigem encaminhamento médico, não apenas ajuste do plano de fisioterapia.",
+      "url": "https://cursa.app/pt/pagina/sinais-de-alerta-na-avaliacao-fisioterapeutica-triagem-de-risco-e-condutas"
+    },
+    {
+      "afirmacao": "Avaliação, reavaliação ao longo do tratamento e definição de critérios de alta estão entre os atos próprios da profissão de fisioterapeuta, conforme resoluções do conselho de classe citadas em parecer do CREFITO-4.",
+      "url": "https://crefito4.org.br/site/wp-content/uploads/2025/05/Parecer-002-2025-Parecer-sobre-Prerrogativa-Profissional-Atestados-Laudos-e-Pareceres.pdf"
+    },
+    {
+      "afirmacao": "Revisões sobre dor crônica, sobretudo lombalgia, associam a educação em neurociência da dor combinada a exercício a redução de dor e incapacidade, com evidência ainda considerada modesta, vinda de poucos estudos.",
+      "url": "https://repositorio.ufmg.br/bitstream/1843/32073/1/tcc.pdf"
+    }
+  ],
+  "pendente_verificar": [
+    "Prazo exato (algumas fontes citam 6 semanas de dor sem melhora) usado por certos protocolos como critério formal de alerta; não entrou no texto como número por variar entre fontes e não ter sido confirmado em diretriz única.",
+    "Vigência atual, sem alterações, das resoluções do conselho de fisioterapia (citadas de forma indireta, via parecer de 2025 que remete a resoluções de 1987) sobre avaliação/reavaliação/alta como atos próprios da profissão.",
+    "Tamanho do efeito da educação em neurociência da dor fora do contexto de lombalgia crônica, usado no texto apenas de forma genérica por falta de evidência robusta encontrada na pesquisa."
+  ]
+}

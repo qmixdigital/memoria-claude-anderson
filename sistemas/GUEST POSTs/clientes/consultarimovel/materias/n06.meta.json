@@ -1,0 +1,18 @@
+{
+  "titulo": "O que é módulo fiscal rural e por que ele importa",
+  "kw": "o que é módulo fiscal",
+  "resumo": "Antes de financiar ou dividir uma fazenda, o produtor rural precisa saber o que é módulo fiscal no seu município.",
+  "slug": "o-que-e-modulo-fiscal",
+  "fontes": [
+    {"afirmacao": "Módulo fiscal é unidade de medida agrária, em hectares, fixada pelo INCRA por município, variando de 5 a 110 hectares, com base no art. 50 §2º da Lei 4.504/1964, Lei 6.746/1979 e Instrução Especial 20/1980 do INCRA", "url": "https://fpagropecuaria.org.br/2020/05/11/modulos-fiscais/?pdf=30249"},
+    {"afirmacao": "Lei nº 8.629/1993 classifica imóvel rural por módulos fiscais: minifúndio (menos de 1), pequena propriedade (1 a 4), média propriedade (mais de 4 a 15) e grande propriedade (mais de 15)", "url": "https://aegro.com.br/tags/modulo-fiscal/"},
+    {"afirmacao": "Lei nº 11.326/2006, art. 3º, inciso I: agricultor familiar não pode deter, a qualquer título, área superior a 4 módulos fiscais", "url": "https://geo.cepal.org/kbtx/auxwim84jdna7n95PoDqhG/Brasil-11326.pdf"},
+    {"afirmacao": "Lei nº 5.868/1972, art. 8º, remete ao art. 65 da Lei 4.504/1964: imóvel rural não pode ser desmembrado em área menor que o módulo (ou a fração mínima de parcelamento, prevalecendo a menor), com exceções para anexação a confrontante, regularização fundiária de interesse social e agricultura familiar", "url": "https://www.admdireito.com.br/legislacao/art/lei_00058681972-8"},
+    {"afirmacao": "Tabela oficial do INCRA (SNCR, municípios de Alagoas): o módulo fiscal de Anadia, na zona canavieira do estado, é de 35 hectares", "url": "https://www.gov.br/incra/pt-br/assuntos/governanca-fundiaria/al-municipios-2018.pdf"},
+    {"afirmacao": "Módulo fiscal (por município) é diferente de módulo rural (calculado por imóvel, conforme a exploração predominante daquela propriedade)", "url": "https://www.infoescola.com/direito/modulo-rural-e-modulo-fiscal"}
+  ],
+  "pendente_verificar": [
+    "Valor exato do módulo fiscal de municípios específicos de Minas Gerais não foi citado por não ter sido confirmado em instrução especial vigente; produtor deve consultar a tabela oficial do INCRA para o município",
+    "O módulo fiscal de Anadia (AL) citado vem da tabela do INCRA publicada em 2018 (SNCR); não foi encontrada atualização posterior, o valor pode ter sido revisto desde então, convém confirmar na tabela vigente do INCRA antes de uso em caso concreto"
+  ]
+}

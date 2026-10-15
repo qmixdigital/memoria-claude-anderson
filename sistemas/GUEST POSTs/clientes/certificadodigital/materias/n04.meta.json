@@ -1,0 +1,33 @@
+{
+  "titulo": "Certificado digital para abrir empresa: o que saber antes",
+  "kw": "certificado digital para abrir empresa",
+  "resumo": "O certificado digital para abrir empresa é do empreendedor, não do CNPJ que ainda nem existe no começo do processo.",
+  "slug": "certificado-digital-para-abrir-empresa",
+  "fontes": [
+    {
+      "afirmacao": "Na abertura de empresa pelas Juntas Digitais, o certificado exigido na etapa inicial é o e-CPF (pessoa física); o e-CNPJ só é contratado depois que a empresa já tem CNPJ",
+      "url": "https://blog-homolog.certisign.com.br/como-abrir-uma-empresa"
+    },
+    {
+      "afirmacao": "A Junta Comercial do Paraná (Jucepar) tornou os atos exclusivamente digitais a partir de dezembro de 2020, concentrando abertura, alteração e baixa de empresas no portal Empresa Fácil Paraná, com assinatura por e-CPF",
+      "url": "https://www.portalcontnews.com.br/jucepa-da-inicio-a-ultima-fase-do-cronograma-de-implantacao-do-processo-100-digital/"
+    },
+    {
+      "afirmacao": "A abertura do MEI pelo Portal do Empreendedor não exige certificado digital ICP-Brasil, apenas conta gov.br; o certificado passa a ser necessário quando o MEI começa a emitir nota fiscal eletrônica",
+      "url": "https://www.contabeis.com.br/forum/topicos/61975/certificado-digital-para-o-mei/1"
+    },
+    {
+      "afirmacao": "Apucarana (PR) é conhecida como polo de confecção do estado, concentrando fábricas de pequeno e médio porte no setor de bonés e vestuário",
+      "url": "https://www.tribunapr.com.br/noticias/parana/cidade-do-parana-inicia-busca-pela-indicacao-geografica-do-bone/"
+    },
+    {
+      "afirmacao": "Antes de protocolar o registro de uma empresa, é recomendado consultar a viabilidade do nome empresarial e a viabilidade de localização junto à prefeitura",
+      "url": "https://www.contabilidadezen.com.br/blog/como-registrar-empresa-junta-comercial-2026"
+    }
+  ],
+  "pendente_verificar": [
+    "Prazo médio entre o protocolo e a emissão do CNPJ varia conforme o nível de integração do Redesim em cada estado; não foi fixado número de dias/horas porque as fontes divergem bastante.",
+    "Disponibilidade da assinatura eletrônica avançada do gov.br (nível prata/ouro) como alternativa ao certificado ICP-Brasil especificamente na Junta Comercial do Paraná: a fonte localizada trata de outros estados; confirmar diretamente no portal Empresa Fácil Paraná antes de divulgar essa alternativa como garantida no Paraná.",
+    "Números de empregos e volume de produção do polo de bonés de Apucarana (fontes turísticas citam cerca de 10 mil empregos e 2 milhões de bonés/mês) não têm confirmação em fonte oficial (Sebrae/IBGE/sindicato do setor); por isso esses números não foram citados no texto, só o fato qualitativo de ser polo de confecção."
+  ]
+}

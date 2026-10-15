@@ -1,0 +1,36 @@
+{
+  "titulo": "Diferença entre CAR e CCIR: o que cada cadastro comprova",
+  "kw": "diferença entre CAR e CCIR",
+  "resumo": "Confundir a diferença entre CAR e CCIR trava venda, financiamento e licença ambiental na zona rural.",
+  "slug": "diferenca-entre-car-e-ccir",
+  "fontes": [
+    {
+      "afirmacao": "O CAR foi instituído pela Lei 12.651/2012 (Código Florestal) e regulamentado pelo Decreto 7.830/2012, que criou o Sicar",
+      "url": "https://prensali.substack.com/p/novo-codigo-florestal-e-a-obrigatoriedade-do-car"
+    },
+    {
+      "afirmacao": "A inscrição no Sicar não pode ser utilizada para fins fundiários e o CAR não é considerado título para fins de reconhecimento do direito de propriedade ou posse",
+      "url": "https://www.iat.pr.gov.br/sites/agua-terra/arquivos_restritos/files/documento/2024-09/boletim_informativo_02.2023_assinado.pdf"
+    },
+    {
+      "afirmacao": "O CCIR é emitido pelo Incra a partir do Sistema Nacional de Cadastro Rural, criado pela Lei 5.868/1972, e a infraestrutura do sistema é operada pelo Serpro",
+      "url": "https://sistemafederal.com.br/blogs/ccir-serpro-e-incra-qual-a-relacao-entre-os-dois-orgaos"
+    },
+    {
+      "afirmacao": "O artigo 22 da Lei 4.947/1966 exige a apresentação do CCIR para desmembrar, arrendar, hipotecar, vender ou prometer vender imóvel rural, sob pena de nulidade, e também para homologar partilha; a apresentação deve vir acompanhada de prova de quitação do ITR dos últimos cinco exercícios",
+      "url": "https://www.legjur.com/legislacao/art/lei_00049471966-22"
+    },
+    {
+      "afirmacao": "O CCIR tem caráter exclusivamente cadastral e, por força do parágrafo único do art. 3º da Lei 5.868/1972, não faz prova de propriedade ou de direitos a ela relativos",
+      "url": "https://irib.org.br/files/palestra/xliv-tema-08-bruno.pdf"
+    },
+    {
+      "afirmacao": "Em São Paulo, a inscrição no Cadastro Ambiental Rural corre por um sistema estadual próprio (SiCAR-SP), criado por decreto estadual e integrado à base nacional do Sicar",
+      "url": "https://semil.sp.gov.br/editais/wp-content/uploads/sites/7/2017/03/anexo-i-manual-sicar-passo-a-passo-1.pdf"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se a obrigatoriedade de renovação anual do CCIR e a ausência de prazo fixo de atualização do CAR (mudança só quando há alteração de geometria ou uso do solo) constam de norma oficial do Incra e do Serviço Florestal Brasileiro, já que as fontes consultadas para esse detalhe específico são blogs comerciais do setor, não o texto legal ou o site oficial do Incra/Sicar",
+    "Confirmar, para o Tocantins especificamente (destino do link deste artigo), se o Decreto estadual 6.888/2025 e os mais de 90 mil cadastros de imóveis rurais levantados na apuração seguem vigentes e atualizados, caso esse dado venha a ser reaproveitado em outra peça"
+  ]
+}

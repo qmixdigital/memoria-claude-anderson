@@ -1,0 +1,33 @@
+{
+  "titulo": "Sinais de reação alérgica após vacina: o que observar",
+  "kw": "sinais de reação alérgica após vacina",
+  "resumo": "Reconhecer os sinais de reação alérgica após vacina ajuda a diferenciar emergência real de desconforto passageiro e comum.",
+  "slug": "sinais-de-reacao-alergica-apos-vacina",
+  "fontes": [
+    {
+      "afirmacao": "Anafilaxia pós-vacinação ocorre entre 1 caso em cada 100 mil e 1 caso em cada 1 milhão de doses, a depender do imunizante, e a taxa real não é totalmente conhecida",
+      "url": "https://familia.sbim.org.br/images/files/notas-tecnicas/nt-eavp-vacina-dengue-tetravalente-ms-240312.pdf"
+    },
+    {
+      "afirmacao": "Sinais de anafilaxia (urticária/exantema generalizado, angioedema, hipotensão, choque, chiado, estridor) e diferenciação da síncope vasovagal; maioria dos eventos ocorre na primeira hora, com relatos raros de quadro bifásico em até 72 horas",
+      "url": "https://guarulhos.sp.gov.br/sites/default/files/file/arquivos/Fluxograma%20para%20Vacina%C3%A7%C3%A3o%20P%C3%B3s%20Rea%C3%A7%C3%A3o%20Alergica.pdf"
+    },
+    {
+      "afirmacao": "Tempo de observação pós-vacina de 15 minutos em geral e 30 minutos para quem tem histórico de reação alérgica grave/anafilaxia",
+      "url": "https://www.un.org/sites/un2.un.org/files/coronavirus_vaccination_anaphylaxisguidelines.pdf"
+    },
+    {
+      "afirmacao": "Vitória da Conquista é a segunda cidade mais importante do interior baiano e funciona como polo médico-hospitalar regional para o sudoeste da Bahia",
+      "url": "https://smargiassi.com.br/ba/vitoria-da-conquista/"
+    },
+    {
+      "afirmacao": "Vacina da febre amarela (cultivada em ovo de galinha) é contraindicada para quem tem alergia grave a ovo com risco de anafilaxia, exigindo supervisão quando a aplicação é necessária; vacina da gripe é considerada segura para alérgicos a ovo pelo baixo teor de proteína",
+      "url": "https://saude.es.gov.br/Media/sesa/Orient.%20Cidadão/INFORMES_TECNICOS_IMUNIZACOES/Nota_informativa_-_04-2024_-_Presta_orientacões_para_vacinação_supervisionada_de_pacientes_alérgicos_em_unidades_de_urgência_e_emergência.pdf"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se o tempo de observação de 15 a 30 minutos após a vacina é orientação oficial do PNI/Ministério da Saúde para vacinas em geral, ou se é específica da nota técnica consultada sobre a vacina da dengue.",
+    "Confirmar o dado de Vitória da Conquista como polo médico-hospitalar do sudoeste baiano em fonte oficial (IBGE/SESAB/governo da Bahia), já que a fonte usada no artigo é um site comercial de perfil de cidade.",
+    "A orientação sobre alergia a ovo e vacinas (febre amarela/influenza) vem de nota técnica estadual (Espírito Santo, 2024); confirmar se corresponde à posição nacional atual da SBIm/PNI."
+  ]
+}

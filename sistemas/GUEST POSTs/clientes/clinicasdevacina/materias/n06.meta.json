@@ -1,0 +1,15 @@
+{
+  "titulo": "Vacina para quem perdeu o cartão de vacinação: o que fazer",
+  "kw": "vacina para quem perdeu o cartão de vacinação",
+  "resumo": "A vacina para quem perdeu o cartão de vacinação depende do histórico salvo no sistema público, não do papel perdido.",
+  "slug": "vacina-para-quem-perdeu-o-cartao-de-vacinacao",
+  "fontes": [
+    {"afirmacao": "O histórico de vacinação aplicado na rede pública fica registrado no Sistema de Informação do Programa Nacional de Imunizações (SI-PNI), consultável pela unidade básica de saúde mesmo sem o cartão físico", "url": "https://www.oliberal.com/saude/o-que-fazer-ao-perder-a-carteira-de-vacinacao-veja-quando-e-preciso-repetir-as-doses-1.1142473"},
+    {"afirmacao": "O aplicativo Meu SUS Digital (antigo Conecte SUS) permite consultar o histórico de doses aplicadas, com data e tipo de imunizante, usando login da conta gov.br, e gerar certificado digital", "url": "https://canaltech.com.br/governo/como-acessar-carteira-de-vacinacao-digital/"},
+    {"afirmacao": "A digitalização dos registros de vacinação no sistema público ocorreu de forma gradual por região, o que pode dificultar a localização de doses muito antigas", "url": "https://olhardigital.com.br/2021/08/23/tira-duvidas/comprovante-solicitar-segunda-via-vacinacao/"}
+  ],
+  "pendente_verificar": [
+    "Confirmar com fonte oficial do Ministério da Saúde/PNI o protocolo padrão de revacinação para quem não tem nenhum registro no sistema; o texto descreve de forma genérica ('equipe avalia idade, grupo de risco e esquema'), por não ter sido encontrado documento normativo único e oficial sobre o tema na pesquisa.",
+    "Confirmar se o nome e a interface atuais do aplicativo (Meu SUS Digital, antigo Conecte SUS) permanecem os mesmos no momento da publicação, já que as fontes usadas são recentes mas não são o canal institucional direto do Ministério da Saúde."
+  ]
+}

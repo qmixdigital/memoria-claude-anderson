@@ -1,0 +1,24 @@
+{
+  "titulo": "O que é averbação de imóvel rural no campo",
+  "kw": "o que é averbação de imóvel rural",
+  "resumo": "Herança, construção e georreferenciamento mostram, na prática, o que é averbação de imóvel rural na rotina do campo.",
+  "slug": "averbacao-imovel-rural",
+  "fontes": [
+    {
+      "afirmacao": "Registro e averbação são atos distintos previstos na Lei de Registros Públicos (Lei 6.015/1973): o registro é a inscrição principal que abre a matrícula ou transfere a propriedade, e a averbação atualiza uma informação já existente na matrícula (art. 167).",
+      "url": "https://www.estrategiaconcursos.com.br/blog/lei-registros-publicos-imoveis/amp/"
+    },
+    {
+      "afirmacao": "A averbação do georreferenciamento de imóvel rural na matrícula, prevista na Lei 10.267/2001 e na Lei 6.015/1973, serve para regularizar a descrição do imóvel com área, perímetro, confrontações e coordenadas dos vértices, mediante certificação do INCRA.",
+      "url": "https://www.irib.org.br/app/webroot/files/downloads/files/TCCII%20RAUL%20PETER%20AFFELDT.pdf"
+    },
+    {
+      "afirmacao": "O art. 18, §4º da Lei 12.651/2012 (Código Florestal) dispensa a averbação da reserva legal no Cartório de Registro de Imóveis quando a área está registrada no Cadastro Ambiental Rural (CAR), mantendo o direito à averbação gratuita para quem preferir fazê-la; o Código Florestal anterior (Lei 4.771/1965, art. 16, §8º) exigia essa averbação.",
+      "url": "https://www.legjur.com/legislacao/art/lei_00126512012-18"
+    }
+  ],
+  "pendente_verificar": [
+    "Faixas de tamanho de imóvel e datas exatas de vigência da exigência de certificação do perímetro pelo INCRA (Lei 10.267/2001) não foram detalhadas por porte de propriedade; mencionadas no texto de forma genérica.",
+    "Texto regulamentar infralegal (decreto/instrução normativa) sobre o procedimento de isenção de emolumentos na averbação gratuita da reserva legal não foi verificado em detalhe, apenas o dispositivo legal principal."
+  ]
+}

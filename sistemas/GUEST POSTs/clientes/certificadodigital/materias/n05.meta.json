@@ -1,0 +1,24 @@
+{
+  "titulo": "Assinatura eletrônica de petições no processo judicial eletrônico",
+  "kw": "assinatura eletrônica de petições",
+  "resumo": "No PJe, a assinatura eletrônica de petições depende de certificado emitido por autoridade credenciada na ICP-Brasil.",
+  "slug": "assinatura-eletronica-de-peticoes",
+  "fontes": [
+    {
+      "afirmacao": "A Lei 11.419/2006 regula a informatização do processo judicial e prevê a assinatura digital baseada em certificado emitido por autoridade certificadora credenciada na ICP-Brasil como uma das formas de identificação do signatário.",
+      "url": "https://www2.camara.leg.br/legin/fed/lei/2006/lei-11419-19-dezembro-2006-548410-publicacaooriginal-63543-pl.html"
+    },
+    {
+      "afirmacao": "O acesso ao PJe com login e senha permite consulta e acompanhamento processual, mas não substitui a assinatura eletrônica exigida para a prática de atos processuais.",
+      "url": "https://www.tre-pr.jus.br/servicos-judiciais/processo-judicial-eletronico-pje/perguntas-frequentes"
+    },
+    {
+      "afirmacao": "O CNJ trata a certificação digital como exigência para a tramitação de processos no PJe por advogados, magistrados e servidores, com o certificado de pessoa física valendo em qualquer tribunal do país.",
+      "url": "https://www.cnj.jus.br/certificacao-digital/"
+    }
+  ],
+  "pendente_verificar": [
+    "Texto vigente e eventuais alterações da Resolução CNJ 185/2013, que disciplina a assinatura eletrônica no PJe (fontes consultadas datam de 2013 a 2017)",
+    "Prazo de validade atual dos certificados A1 e A3 usados na assinatura de petições, que varia por certificadora e não foi confirmado em fonte oficial única"
+  ]
+}

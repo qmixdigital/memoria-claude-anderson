@@ -1,0 +1,24 @@
+{
+  "titulo": "Sinais de recaída no tratamento contra o vício",
+  "kw": "sinais de recaída no tratamento",
+  "resumo": "Reconhecer sinais de recaída no tratamento ajuda a família a agir antes que o quadro se agrave de novo.",
+  "slug": "sinais-de-recaida-no-tratamento",
+  "fontes": [
+    {
+      "afirmacao": "Sinais de alerta de recaída incluem isolamento social, oscilações de humor, consumo escondido ou acelerado e episódios de blackout.",
+      "url": "https://abcdoabc.com.br/recaidas-crescem-20-durante-festas-fim-de-ano/"
+    },
+    {
+      "afirmacao": "A dependência química, pelo CID-10 adotado no Brasil, é descrita por critérios como tolerância, compulsão, síndrome de abstinência e persistência do uso apesar dos danos.",
+      "url": "https://www.uniad.org.br/wp-content/uploads/2013/12/Sindrome-de-dependencia.pdf"
+    },
+    {
+      "afirmacao": "O Conselho Estadual de Políticas sobre Drogas da Bahia (Cepad) aprovou, em maio de 2026, moção de apoio à ampliação física, orçamentária e de pessoal da Rede de Atenção Psicossocial, citando CAPS AD, CAPS AD III 24 horas e leitos em hospitais gerais para crises agudas.",
+      "url": "https://www.ba.gov.br/social/sites/site-seades/files/2026-05/MO%C3%87%C3%83O%20DE%20APOIO%20-%20CEPAD_1.pdf"
+    }
+  ],
+  "pendente_verificar": [
+    "Dado de aumento percentual de recaídas em datas festivas (citado por fonte secundária com base em Vigitel 2023 e Relatório Global sobre Álcool e Saúde 2024 da OMS) não foi confirmado em fonte primária e não entrou no texto como número.",
+    "Peso relativo entre 'influência do ambiente' e 'dificuldade de lidar com frustração' como fatores de recaída foi mantido em linguagem qualitativa, sem percentual, por falta de fonte quantitativa primária."
+  ]
+}

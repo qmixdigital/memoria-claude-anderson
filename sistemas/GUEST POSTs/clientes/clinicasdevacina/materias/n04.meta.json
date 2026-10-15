@@ -1,0 +1,34 @@
+{
+  "titulo": "Calendário vacinal do idoso: o que o SUS oferece em Alagoas",
+  "kw": "calendário vacinal do idoso",
+  "resumo": "Entender o calendário vacinal do idoso evita lacunas de proteção que aparecem só depois dos 60 anos.",
+  "slug": "calendario-vacinal-do-idoso",
+  "fontes": [
+    {
+      "afirmacao": "Alagoas tem 409.225 pessoas idosas, segundo dados do IBGE citados em mensagem do governo do estado à Assembleia Legislativa (março de 2025).",
+      "url": "https://www.tribunadosertao.com.br/alagoas/2025/03/23/728900-governo-envia-projeto-a-ale-propondo-criacao-de-fundo-para-garantir-direitos-da-pessoa-idosa"
+    },
+    {
+      "afirmacao": "Reforço de dT (dupla adulto) a cada 10 anos após esquema básico completo de pelo menos 3 doses; SBIm recomenda dTpa como substituto preferencial do reforço.",
+      "url": "https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico-nacional-de-vacinacao-idoso"
+    },
+    {
+      "afirmacao": "Nota técnica conjunta nº 310/2026 (14/09/2026) amplia a vacina pneumocócica 20-valente no SUS para pessoas a partir de 85 anos, com meta de alcançar cerca de 2,34 milhões de idosos; esquema depende do histórico (dose única se nunca vacinado; aguardar 2 meses após pneumo13/15; aguardar 1 ano após pneumo23).",
+      "url": "https://www.gazetasp.com.br/cotidiano/pneumo20-comeca-a-ser-oferecida-no-sus-para-idosos-com-85-anos-ou-mais-e-muda-estrategia-de-vacinacao-para-ampliar-a-protecao-contra-pneumonia-e-meningite/"
+    },
+    {
+      "afirmacao": "A vacina contra febre amarela não é contraindicada só pela idade, mas exige avaliação médica individual a partir dos 60 anos; o risco de evento adverso grave (doença viscerotrópica) é maior nessa faixa etária; viajantes devem se vacinar com pelo menos 10 dias de antecedência quando houver indicação.",
+      "url": "https://brasil61.com/noticias/febre-amarela-pessoas-acima-de-60-anos-ou-com-doencas-autoimunes-precisam-consultar-medico-antes-da-vacinacao-feam170063"
+    },
+    {
+      "afirmacao": "A Conitec rejeitou, em janeiro de 2026, a incorporação da vacina contra herpes zoster ao SUS por critério de custo-efetividade; o público avaliado incluía idosos a partir de 80 anos e imunocomprometidos a partir de 18 anos; o imunizante continua disponível apenas na rede privada.",
+      "url": "https://www.poder360.com.br/poder-saude/sus-rejeita-inclusao-de-vacina-contra-herpes-zoster/"
+    }
+  ],
+  "pendente_verificar": [
+    "Número exato de idosos em Alagoas (409.225) vem de citação do IBGE em mensagem do governo estadual ao Legislativo, não de consulta direta ao Censo/PNAD do IBGE; confirmar na fonte primária antes de reafirmar o número em outra peça.",
+    "Esquema de hepatite B para idoso sem vacinação prévia (3 doses, intervalo de 1 mês entre a 1ª e a 2ª e de 6 meses até a 3ª) foi inferido do padrão usual do esquema 0-1-6 meses amplamente adotado para essa vacina; a tabela oficial completa do calendário técnico do idoso no gov.br estava truncada na busca e não confirmou o intervalo da 3ª dose com exatidão.",
+    "Regras locais de acesso à vacina pneumocócica para idosos institucionalizados ou acamados entre 60 e 84 anos variam por município; o texto generaliza como 'critério local' porque só foi confirmada documentação nesse sentido para Porto Alegre, não para municípios de Alagoas especificamente.",
+    "Periodicidade exata dos reforços de covid-19 no calendário do idoso não foi citada com intervalo numérico porque a orientação pode ter mudado desde as últimas fontes encontradas; o texto manteve a frase genérica 'conforme orientação vigente'."
+  ]
+}

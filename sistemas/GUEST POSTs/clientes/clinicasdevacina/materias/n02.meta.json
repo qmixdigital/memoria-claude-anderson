@@ -1,0 +1,29 @@
+{
+  "titulo": "Vacina em dia para matrícula escolar: o que saber antes",
+  "kw": "vacina em dia para matrícula escolar",
+  "resumo": "Exigir vacina em dia para matrícula escolar é regra estadual ou municipal, não federal, e varia bastante pelo Brasil.",
+  "slug": "vacina-em-dia-para-matricula-escolar",
+  "fontes": [
+    {
+      "afirmacao": "São Paulo exige carteira de vacinação atualizada na matrícula escolar pela Lei Estadual 17.252/2020",
+      "url": "https://www.al.sp.gov.br/repositorio/legislacao/lei/2020/lei-17252-17.03.2020.html"
+    },
+    {
+      "afirmacao": "Panorama de leis estaduais (SP, PR, TO, CE, GO) sobre exigência de carteira de vacinação na matrícula, prazos de regularização de 30 a 60 dias e encaminhamento ao Conselho Tutelar em caso de não regularização",
+      "url": "https://brasil61.com/n/go-carteira-de-vacinacao-em-dia-passa-ser-obrigatoria-para-matricula-escolar-no-estado-bras239476"
+    },
+    {
+      "afirmacao": "Em São Luís (MA), reportagem de 2018 registrou a inclusão do cartão de vacinação entre os documentos de matrícula na rede estadual, por portaria conjunta das secretarias de Saúde e Educação do Maranhão",
+      "url": "https://oimparcial.com.br/saude/2018/09/carteira-de-vacinacao-passa-a-ser-obrigatoria-no-ato-da-matricula/"
+    },
+    {
+      "afirmacao": "Reportagem sobre matrícula na rede municipal de São Luís (Semed) lista Cartão do SUS e cartão de vacinação entre os documentos pedidos",
+      "url": "https://oimparcial.com.br/noticias/2018/03/candidatos-a-vaga-em-escolas-municipais-tem-ate-dia-09-para-matricula/"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se a Portaria Conjunta 001/2018 (MA) e a exigência de cartão de vacinação na matrícula de São Luís seguem vigentes no ano corrente, pois as fontes localizadas são de 2018 e não houve confirmação mais recente na busca.",
+    "Confirmar, no calendário técnico oficial do PNI vigente, as idades exatas dos reforços citados de forma genérica no texto (ex.: reforço de DTP e da meningocócica ACWY), pois há divergência entre fontes consultadas (uma indica reforço ACWY entre 11 e 14 anos, outra indica 5 a 6 anos).",
+    "Não foi localizada lei federal específica que condicione a matrícula escolar à vacinação; confirmar se existe norma federal além das leis estaduais citadas no texto."
+  ]
+}

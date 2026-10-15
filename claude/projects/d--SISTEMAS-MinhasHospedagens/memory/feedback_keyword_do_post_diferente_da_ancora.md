@@ -22,3 +22,8 @@ Ancora com a keyword do destino, mas variada por lote: ~30% exact ("clinicas de 
 natural/marca ("diretorio de clinicas do Saude Vitalidade", "clinicas listadas por cidade"). Nunca o mesmo
 padrao de ancora em todos os posts de um lote, e variar o esqueleto (ordem/titulos das H2, tipo de tabela).
 Ver [[feedback_padrao_links_guest_post]], [[feedback_pauta_por_oportunidade_gsc]].
+
+**Reincidência (14/10/2026):** nos 10 posts do enjai.social e no do Travelux (em.com.br) usei a mesma expressão como
+keyword do post e como âncora (ex.: "seguidores por 1 real" nos dois). O operador cobrou de novo, dizendo que está
+na documentação. Antes de propor qualquer pauta: keyword do post = intenção informacional DIFERENTE da página-destino;
+âncora = keyword do destino, variada (exata/parcial/natural), e NUNCA igual ao título nem à keyword do próprio post.

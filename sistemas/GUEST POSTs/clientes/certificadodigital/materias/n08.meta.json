@@ -1,0 +1,29 @@
+{
+  "titulo": "Erro ao acessar certificado digital no navegador: causas comuns",
+  "kw": "erro ao acessar certificado digital no navegador",
+  "resumo": "O erro ao acessar certificado digital no navegador quase sempre está no driver do token ou no certificado desatualizado.",
+  "slug": "erro-ao-acessar-certificado-digital-no-navegador",
+  "fontes": [
+    {
+      "afirmacao": "O Google Chrome consulta o repositório de certificados do sistema operacional (Windows), não uma lista própria separada.",
+      "url": "https://www.clubmitsubishiasx.com/faq/donde-se-pone-el-certificado-digital-en-chrome"
+    },
+    {
+      "afirmacao": "No Chrome, o gerenciador de certificados pode ser acessado pelo endereço chrome://certificate-manager ou pelo menu Configurações > Privacidade e segurança > Segurança > Gerenciar certificados.",
+      "url": "https://canaltech.com.br/navegadores/como-instalar-certificado-digital-no-google-chrome/"
+    },
+    {
+      "afirmacao": "Para certificado A1, é preciso importar o arquivo (.pfx ou .p12) com a senha da chave privada; para A3, o certificado fica no token e depende do driver/software do fabricante instalado.",
+      "url": "https://conteudo.fiscal.io/como-instalar-certificado-digital-a1-no-chrome-edge-firefox/"
+    },
+    {
+      "afirmacao": "Quando a aplicação de assinatura/leitura do token não está instalada corretamente, o certificado não é localizado pelo navegador; a solução usual é reinstalar o programa com o navegador fechado.",
+      "url": "https://goias.gov.br/juceg/wp-content/uploads/sites/42/2019/08/Manual_instalacao_suporte_assinaturas_digitais_v7_compressed-4ae.pdf"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se o caminho chrome://certificate-manager já é o padrão em todas as versões atuais do Chrome ou se parte dos usuários ainda vê chrome://settings/certificates.",
+    "Confirmar com um fabricante de token (ex.: SafeSign, Watchdata) o nome exato do programa de gerenciamento recomendado em 2026, já que os relatos consultados vêm de fóruns de usuários e podem estar desatualizados.",
+    "Verificar se mudanças recentes de confiança de certificados anunciadas pelo Chrome para 2026 afetam certificados ICP-Brasil usados em autenticação de cliente, ponto não confirmado nas fontes consultadas."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "titulo": "Quando procurar um fisioterapeuta pela primeira vez",
+  "kw": "quando procurar um fisioterapeuta",
+  "resumo": "Dor persistente, lesões recentes e quedas em idosos ajudam a decidir quando procurar um fisioterapeuta.",
+  "slug": "quando-procurar-um-fisioterapeuta",
+  "fontes": [
+    {
+      "afirmacao": "Dor recorrente, rigidez muscular, alterações de postura, cansaço persistente e dificuldade de movimento são sinais de que vale buscar avaliação fisioterapêutica.",
+      "url": "https://timesbrasil.com.br/colunas/brazil-health/fisioterapia-saude-corpo-lesoes/"
+    },
+    {
+      "afirmacao": "O fisioterapeuta pode ser consultado diretamente, sem necessidade de encaminhamento médico na maioria dos casos, realizando seu próprio diagnóstico cinésio-funcional.",
+      "url": "https://crefito4.org.br/site/wp-content/uploads/2023/07/Parecer-001.2016_autonomia-fisioterapeuta.pdf"
+    },
+    {
+      "afirmacao": "Em lesões agudas ou traumas com sinais de gravidade, recomenda-se procurar primeiro um médico (ortopedista ou especialista em medicina esportiva) antes da fisioterapia.",
+      "url": "https://drconsulta.com/conteudo/quando-procurar-um-fisioterapeuta/"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se a autonomia de acesso direto ao fisioterapeuta (sem encaminhamento médico) vale igualmente para todos os planos de saúde e para o SUS, já que convênios e protocolos locais podem exigir encaminhamento.",
+    "Confirmar se há recomendação formal (COFFITO ou sociedade médica) sobre reabilitação pré-operatória ('pré-habilitação') antes de cirurgias ortopédicas, hoje descrita de forma genérica no texto."
+  ]
+}

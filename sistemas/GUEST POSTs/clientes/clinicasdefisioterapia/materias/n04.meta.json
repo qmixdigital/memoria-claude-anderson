@@ -1,0 +1,32 @@
+{
+  "titulo": "Fisioterapia respiratória: quando esse tratamento é indicado",
+  "kw": "fisioterapia respiratória",
+  "resumo": "A fisioterapia respiratória ajuda em quadros agudos e crônicos, do pós-operatório à reabilitação pulmonar.",
+  "slug": "fisioterapia-respiratoria",
+  "fontes": [
+    {
+      "afirmacao": "O COFFITO oficializou o nome da especialidade como 'Fisioterapia Respiratória' pela Resolução nº 318, de 30/08/2006, substituindo o termo 'Fisioterapia Pneumo Funcional' da Resolução nº 188/1998.",
+      "url": "https://www.legisweb.com.br/legislacao/?id=106557"
+    },
+    {
+      "afirmacao": "A fisioterapia respiratória é usada em condições crônicas (asma, DPOC) e agudas (pneumonia, pós-cirurgia torácica/abdominal).",
+      "url": "https://vitat.com.br/pergunte-ao-especialista/12164-para-que-serve-a-fisioterapia-respiratória"
+    },
+    {
+      "afirmacao": "Programas de reabilitação pulmonar para DPOC combinam treino aeróbico, treino muscular inspiratório, orientação comportamental e apoio psicológico.",
+      "url": "https://periodicos.unicesumar.edu.br/index.php/saudpesq/article/download/1325/1073"
+    },
+    {
+      "afirmacao": "Em pacientes obesos, a mecânica respiratória pode estar comprometida, favorecendo complicações respiratórias no pós-operatório (atelectasia, pneumonia).",
+      "url": "https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-uftm/documentos/procedimentos-e-rotinas-operacionais-padrao/pops/POP.HCUFTMUMULTI.014FisioterapiaPulmonarAmbulatorialversao7.pdf"
+    },
+    {
+      "afirmacao": "Levantamento de saúde pública com dados da prefeitura de Curitiba indicou as doenças respiratórias como motivo mais frequente de consulta médica no município, chegando a cerca de metade das consultas ambulatórias pediátricas.",
+      "url": "https://scielosp.org/pdf/rsp/2004.v38n5/695-700/pt"
+    }
+  ],
+  "pendente_verificar": [
+    "O dado de Curitiba (doenças respiratórias como motivo mais frequente de consulta, ~19,6%, e metade das consultas pediátricas) vem de um estudo epidemiológico referenciado em busca secundária (não foi aberto o PDF original completo); a formulação no texto foi deixada genérica ('historicamente') por não haver confirmação do ano exato da série de dados da prefeitura.",
+      "Não foi encontrada uma lista oficial e exaustiva do COFFITO com todas as indicações clínicas de fisioterapia respiratória; as indicações citadas no texto (asma, DPOC, pneumonia, pré/pós-cirúrgico, UTI) são as recorrentes na literatura e em materiais hospitalares consultados, não uma resolução específica que as liste em bloco."
+  ]
+}

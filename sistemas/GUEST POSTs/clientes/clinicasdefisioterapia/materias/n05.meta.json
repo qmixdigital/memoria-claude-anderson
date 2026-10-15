@@ -1,0 +1,33 @@
+{
+  "titulo": "Fisioterapia para idosos: cuidados que fazem diferença no dia a dia",
+  "kw": "fisioterapia para idosos",
+  "resumo": "Equilíbrio, força muscular e respiração orientam a fisioterapia para idosos, sempre a partir de avaliação individual feita por profissional habilitado.",
+  "slug": "fisioterapia-para-idosos",
+  "fontes": [
+    {
+      "afirmacao": "Campinas chegou a 1.138.309 habitantes no Censo 2022 e foi o município da Região Metropolitana de Campinas que mais cresceu no período.",
+      "url": "https://www.nepo.unicamp.br/censo-indica-que-campinas-tem-1-138-309-habitantes"
+    },
+    {
+      "afirmacao": "O Hospital de Clínicas da Unicamp mantém ambulatório de geriatria, é referência pelo SUS para dezenas de municípios da região (DRS VII, X e XIV) e possui o selo estadual Hospital Amigo do Idoso.",
+      "url": "https://hc.unicamp.br/wp-content/uploads/sites/52/2024/10/versao_01C_Relatorio_HC_UNICAMP_2023-2-1.pdf"
+    },
+    {
+      "afirmacao": "O déficit de equilíbrio é um dos fatores mais associados a quedas em pessoas idosas, junto com redução de força, alterações de marcha e comprometimento cognitivo.",
+      "url": "https://zenodo.org/records/18371457"
+    },
+    {
+      "afirmacao": "A sarcopenia é definida pela perda progressiva de massa, força e desempenho muscular associada à idade, e compromete o declínio funcional de idosos.",
+      "url": "https://multivix.edu.br/wp-content/uploads/2024/11/Atigo-08-Esfera-Saude-v8n3-121-133.pdf"
+    },
+    {
+      "afirmacao": "Programas de fisioterapia preventiva combinando fortalecimento muscular, treino de equilíbrio, reeducação postural e adaptação do ambiente doméstico reduzem a incidência de quedas em idosos.",
+      "url": "https://periodicorease.pro.br/rease/article/view/22290"
+    }
+  ],
+  "pendente_verificar": [
+    "Percentual exato de redução do risco de quedas atribuído a programas estruturados de exercício (a literatura varia bastante entre estudos; nenhum número específico foi usado no texto por esse motivo).",
+    "Fluxo atual de agendamento e critérios de acesso ao ambulatório de geriatria do Hospital de Clínicas da Unicamp (pode mudar; não confirmado por canal oficial em tempo real).",
+    "Tamanho do efeito do treino dual-task (cognitivo associado a físico) especificamente em população idosa brasileira, usado no texto apenas de forma genérica."
+  ]
+}

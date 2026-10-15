@@ -1,0 +1,24 @@
+{
+  "titulo": "Fisioterapia neurológica: para quais condições é indicada",
+  "kw": "fisioterapia neurológica",
+  "resumo": "Reconhecida pelo COFFITO, a fisioterapia neurológica reúne exercícios de equilíbrio, marcha e força para sequelas do sistema nervoso central.",
+  "slug": "fisioterapia-neurologica",
+  "fontes": [
+    {
+      "afirmacao": "A fisioterapia neurofuncional/neurológica é especialidade reconhecida pelo COFFITO, voltada a disfunções sensório-motoras do sistema nervoso, com caráter preventivo, curativo, adaptativo ou paliativo.",
+      "url": "https://blog.anhanguera.com/fisioterapia-neurologica/"
+    },
+    {
+      "afirmacao": "AVC, Parkinson, traumatismo cranioencefálico, esclerose múltipla e esclerose lateral amiotrófica estão entre as condições de alta complexidade atendidas pela fisioterapia neurológica.",
+      "url": "https://saude.aparecida.go.gov.br/wp-content/uploads/sites/6/2024/01/Protocolo-Fisioterapia-NEURO.pdf"
+    },
+    {
+      "afirmacao": "Desde agosto de 2022, a ANS retirou o limite anual de sessões de fisioterapia (e de outras terapias) nos planos de saúde, condicionado à indicação do profissional responsável.",
+      "url": "https://www.poder360.com.br/saude/planos-deverao-cobrir-sessoes-ilimitadas-de-fisioterapia-e-outros/"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se a regra da ANS de sessões ilimitadas de fisioterapia (vigente desde 08/2022) permanece sem alteração até a data de publicação.",
+    "Confirmar o número e o texto exato da resolução do COFFITO que reconhece formalmente a especialidade de fisioterapia neurofuncional/neurológica."
+  ]
+}

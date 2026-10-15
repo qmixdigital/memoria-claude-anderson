@@ -14,6 +14,7 @@ import { rodarDespertar, type Slot } from './paper/agente-live.js';
 import { cicloLive } from './paper/live.js';
 import { runAlertaFimDeMes, runLembreteRecompra, runLembreteDarf } from './tax/alertas.js';
 import { runAlertaJanelaFiscal } from './tax/alerta-janela.js';
+import { alertasPausados } from './pausa.js';
 
 interface RegisteredScraper {
   scraper: { source: string; run: typeof b3Prices.scraper.run };
@@ -46,12 +47,14 @@ export async function registerHandlers(boss: PgBoss): Promise<void> {
       const data = (job.data ?? {}) as { tickers?: string[] };
       try {
         await refreshWatchlistQuotes(db, { tickers: data.tickers });
-        // Trigger realtime alerts evaluation right after quote update
-        await boss.send('watchlist-realtime-alerts', {});
-        // Check user-defined price alerts (target/stop) — disparos diretos via Telegram
-        await checkAndDispatchPriceAlerts();
-        // Check movement alerts (oscilação ≥3% intraday) — anti-spam 1x/dia/tier/direção
-        await checkAndDispatchMovementAlerts();
+        if (!(await alertasPausados())) {
+          // Trigger realtime alerts evaluation right after quote update
+          await boss.send('watchlist-realtime-alerts', {});
+          // Check user-defined price alerts (target/stop) — disparos diretos via Telegram
+          await checkAndDispatchPriceAlerts();
+          // Check movement alerts (oscilação ≥3% intraday) — anti-spam 1x/dia/tier/direção
+          await checkAndDispatchMovementAlerts();
+        }
         // Ordem do robo executa contra a cotacao que acabou de chegar.
         await cicloLive();
         // NOTA: alerta fiscal de oportunidade intraday DESATIVADO a pedido do usuário
@@ -68,6 +71,7 @@ export async function registerHandlers(boss: PgBoss): Promise<void> {
   await boss.createQueue('watchlist-realtime-alerts');
   await boss.work('watchlist-realtime-alerts', { batchSize: 1 }, async (_jobs) => {
     try {
+      if (await alertasPausados()) return;
       await runWatchlistRealtimeAlerts();
     } catch (err) {
       logger.error({ err }, 'watchlist-realtime-alerts failed');
@@ -96,6 +100,7 @@ export async function registerHandlers(boss: PgBoss): Promise<void> {
       // Atualiza as cotações de fechamento ANTES de montar o relatório,
       // pra garantir que ele sai com os preços finais do dia.
       await refreshWatchlistQuotes(db);
+      if (await alertasPausados()) return;
       await buildAndSendWatchlistDailyReport();
     } catch (err) {
       logger.error({ err }, 'watchlist-daily-report failed');
@@ -109,6 +114,7 @@ export async function registerHandlers(boss: PgBoss): Promise<void> {
   await boss.createQueue('tax-fim-de-mes');
   await boss.work('tax-fim-de-mes', { batchSize: 1 }, async (_jobs) => {
     try {
+      if (await alertasPausados()) return;
       await runAlertaFimDeMes();
     } catch (err) {
       logger.error({ err }, 'tax-fim-de-mes failed');
@@ -121,6 +127,7 @@ export async function registerHandlers(boss: PgBoss): Promise<void> {
   await boss.createQueue('tax-lembrete-recompra');
   await boss.work('tax-lembrete-recompra', { batchSize: 1 }, async (_jobs) => {
     try {
+      if (await alertasPausados()) return;
       await runLembreteRecompra();
     } catch (err) {
       logger.error({ err }, 'tax-lembrete-recompra failed');
@@ -134,6 +141,7 @@ export async function registerHandlers(boss: PgBoss): Promise<void> {
   await boss.createQueue('tax-lembrete-darf');
   await boss.work('tax-lembrete-darf', { batchSize: 1 }, async (_jobs) => {
     try {
+      if (await alertasPausados()) return;
       await runLembreteDarf();
     } catch (err) {
       logger.error({ err }, 'tax-lembrete-darf failed');
@@ -150,6 +158,7 @@ export async function registerHandlers(boss: PgBoss): Promise<void> {
   await boss.createQueue('tax-janela-fiscal');
   await boss.work('tax-janela-fiscal', { batchSize: 1 }, async (_jobs) => {
     try {
+      if (await alertasPausados()) return;
       await runAlertaJanelaFiscal();
     } catch (err) {
       logger.error({ err }, 'tax-janela-fiscal failed');

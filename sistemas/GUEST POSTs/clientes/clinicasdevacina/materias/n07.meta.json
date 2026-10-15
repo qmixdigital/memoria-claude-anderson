@@ -1,0 +1,21 @@
+{
+  "titulo": "Documentos que comprovam vacinação: quais valem",
+  "kw": "documentos que comprovam vacinação",
+  "resumo": "Cartão físico, aplicativo oficial e declaração da unidade de saúde entram na lista de documentos que comprovam vacinação.",
+  "slug": "documentos-comprovam-vacinacao",
+  "fontes": [
+    {
+      "afirmacao": "O aplicativo Conecte SUS foi renomeado para Meu SUS Digital, mantendo a mesma função de reunir o histórico de vacinação do cidadão.",
+      "url": "https://www.mobiletime.com.br/noticias/23/02/2024/transformacao-digital-do-ministerio-da-saude-comeca-pelo-app-meu-sus-digital"
+    },
+    {
+      "afirmacao": "O Certificado Internacional de Vacinação e Profilaxia (ligado à vacina da febre amarela) passou a ser emitido pelo Conecte SUS/Meu SUS Digital para doses aplicadas depois de 30/12/2022; doses anteriores a essa data seguem pedido pelo portal gov.br, com atendimento da Anvisa em até alguns dias úteis.",
+      "url": "https://tribunadejundiai.com.br/saude/certificado-internacional-de-vacinacao-passa-a-ser-emitido-no-conecte-sus/"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar se todos os municípios usam um sistema municipal de imunização vinculado ao CPF ou ao cartão do SUS para emitir segunda via de doses antigas aplicadas na rede pública.",
+    "Confirmar o prazo exato de atendimento do portal gov.br/Anvisa para emissão do certificado internacional referente a doses de febre amarela aplicadas antes de 30/12/2022.",
+    "Confirmar se há exigência uniforme (ou apenas prática comum, sem norma federal única) de comprovação de hepatite B e tétano para estágio em cursos de saúde."
+  ]
+}

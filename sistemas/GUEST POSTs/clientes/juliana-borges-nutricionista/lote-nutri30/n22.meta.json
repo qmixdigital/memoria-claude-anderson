@@ -1,0 +1,21 @@
+{
+ "titulo": "Sinais de esteatose hepática: exames e primeiros cuidados",
+ "kw": "sinais de esteatose hepática",
+ "resumo": "Esteatose costuma ser silenciosa, e os sinais de esteatose hepática aparecem mais nos exames do que no corpo.",
+ "slug": "sinais-esteatose-hepatica",
+ "fontes": [
+  {
+   "afirmacao": "Definição de DHEADM (esteatose + fator de risco metabólico + álcool mínimo), antiga DHGNA; EHADM com inflamação e maior risco de fibrose; maioria assintomática; fatores de risco; ultrassom/TC/RM; elastografia; FIB-4; sorologias B e C; ferritina elevada; biópsia padrão-ouro; perda de peso central; evitar álcool mesmo moderado; suspender toxinas/medicamentos",
+   "url": "https://www.msdmanuals.com/pt/profissional/distúrbios-hepáticos-e-biliares/abordagem-ao-paciente-com-doença-hepática/doença-hepática-esteatótica-associada-a-disfunção-metabólica-dheadm"
+  },
+  {
+   "afirmacao": "Diagnóstico por imagem + alteração metabólica; doença silenciosa que pode evoluir a cirrose",
+   "url": "https://portal.afya.com.br/endocrinologia/novas-nomenclaturas-para-doenca-hepatica-gordurosa"
+  }
+ ],
+ "pendente_verificar": [
+  "Guia/diretriz brasileira da SBH não localizada diretamente",
+  "Sinais de alerta de doença hepática avançada (icterícia, urina escura, ascite etc.) descritos de forma geral, sem fonte aberta",
+  "Orientação alimentar geral (alimentos in natura, evitar ultraprocessados) sem citação direta do Guia Alimentar"
+ ]
+}

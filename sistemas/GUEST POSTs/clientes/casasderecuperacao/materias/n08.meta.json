@@ -1,0 +1,37 @@
+{
+  "titulo": "Tratamento real contra o alcoolismo: o que diz a medicina",
+  "kw": "tratamento real contra o alcoolismo",
+  "resumo": "Simpatias e rituais têm valor simbólico, mas o tratamento real contra o alcoolismo começa com avaliação médica e acompanhamento contínuo.",
+  "slug": "tratamento-real-alcoolismo",
+  "fontes": [
+    {
+      "afirmacao": "O levantamento Vigitel 2023 do Ministério da Saúde mostrou que 20,8% dos adultos brasileiros faziam consumo abusivo de álcool (quatro doses ou mais para mulheres, cinco ou mais para homens, numa mesma ocasião); entre os homens o percentual chegou a 27,3%.",
+      "url": "https://www.folhape.com.br/noticias/1-a-cada-10-homens-dirigem-apos-ingerir-alcool-alerta-ministerio-da/304391/"
+    },
+    {
+      "afirmacao": "A naltrexona tem registro na Anvisa com uso aprovado para o tratamento do alcoolismo.",
+      "url": "https://www.gov.br/saude/pt-br/composicao/conjur/demandas-judiciais/notas-tecnicas/notas-tecnicas-medicamentos/n/naltrexona-atualizada-em-23-11-2015.pdf"
+    },
+    {
+      "afirmacao": "Dissulfiram, naltrexona e acamprosato estão entre os medicamentos usados no tratamento da dependência alcoólica; o dissulfiram provoca mal-estar físico quando a pessoa consome álcool durante o tratamento.",
+      "url": "https://www.jb.com.br/jblogs/a_sua_saude/2019/06/amp/1007244-voce-sabe-quais-remedios-sao-usados-no-tratamento-de-alcoolismo.html"
+    },
+    {
+      "afirmacao": "O delirium tremens, quadro mais grave da síndrome de abstinência alcoólica, costuma surgir entre 48 e 96 horas após a última dose e atinge de 5% a 10% das pessoas com dependência alcoólica estabelecida.",
+      "url": "https://www.medway.com.br/conteudos/delirium-tremens-como-tratar/"
+    },
+    {
+      "afirmacao": "Os Centros de Atenção Psicossocial de Álcool e Drogas (CAPS AD) oferecem atendimento gratuito pelo SUS como referência para o tratamento de dependência de álcool e drogas.",
+      "url": "https://nepas.emnuvens.com.br/abcs/article/download/26/27/51"
+    },
+    {
+      "afirmacao": "Produtos homeopáticos vendidos como 'para parar de beber' são anunciados com promessa de diminuir a vontade de beber e aliviar sintomas de abstinência, sem estudo clínico publicado que comprove essas promessas.",
+      "url": "https://www.extrafarma.com.br/homeopatia-para-parar-de-beber-globulos-30g-1698342219o1we80/p"
+    }
+  ],
+  "pendente_verificar": [
+    "Protocolo Clínico e Diretrizes Terapêuticas oficial do Ministério da Saúde para transtornos por uso de álcool e a lista RENAME de medicamentos efetivamente distribuídos pelo SUS: não localizado documento primário nesta pesquisa; o texto cita os três medicamentos (dissulfiram, naltrexona, acamprosato) de forma genérica, sem afirmar que todos são fornecidos gratuitamente em toda a rede.",
+    "Texto integral da portaria que criou a política nacional de CAPS AD (citada por fonte secundária/acadêmica, não lida na íntegra nesta pesquisa).",
+    "Percentual exato de mulheres com consumo abusivo de álcool no Vigitel 2023 (a reportagem usada confirmou o dado geral de 20,8% e o masculino de 27,3%, mas não trouxe o número específico para mulheres; por isso ele não entrou no texto)."
+  ]
+}

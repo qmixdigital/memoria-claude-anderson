@@ -1,0 +1,25 @@
+{
+ "titulo": "Como marcar nutricionista sem pedido médico e o que muda no plano",
+ "kw": "marcar nutricionista sem pedido médico",
+ "resumo": "Consulta particular, convênio e exames seguem regras distintas, e conhecer cada uma evita recusas ao marcar nutricionista sem pedido médico.",
+ "slug": "marcar-nutricionista-sem-pedido-medico",
+ "fontes": [
+  {
+   "afirmacao": "Lei 8.234/1991 art. 4º, VIII: solicitação de exames laboratoriais para acompanhamento dietoterápico é atividade do nutricionista; Lei 9.656/98 art. 12 exige médico assistente, motivo de recusa pelos planos; a página não afirma que a consulta exija encaminhamento",
+   "url": "https://cfn.org.br/legacy-1443/"
+  },
+  {
+   "afirmacao": "CFN defende que planos cubram exames pedidos por nutricionistas, critica o 'médico porteiro' e apoia o PL 5.881/2019",
+   "url": "https://cfn.org.br/na-camara-cfn-defende-que-planos-de-saude-cubram-exames-pedidos-por-nutricionistas/"
+  },
+  {
+   "afirmacao": "Parecer do CFM sobre diagnóstico prévio por médico",
+   "url": "https://sistemas.cfm.org.br/normas/arquivos/despachos/BR/2017/28_2017.pdf"
+  }
+ ],
+ "pendente_verificar": [
+  "Texto exato da norma CFN 760/2023 (citada só pela data e número, conforme o brief)",
+  "Regras da ANS sobre cobertura de consulta com nutricionista e reembolso (tratadas de forma genérica)",
+  "Situação atual do PL 5.881/2019"
+ ]
+}

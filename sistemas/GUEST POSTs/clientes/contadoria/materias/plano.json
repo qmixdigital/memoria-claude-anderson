@@ -1,0 +1,102 @@
+[
+ {
+  "n": "01",
+  "portal": "teixeiraemfoco",
+  "destino_url": "https://contadoria.ia.br/pr/cornelio-procopio/setor-01/",
+  "destino_tema": "contador no Setor 01, Cornélio Procópio, PR",
+  "pauta": "como declarar o imposto de renda de autônomo",
+  "kw_post": "imposto de renda de autônomo",
+  "ancora": "contadores no Setor 01, em Cornélio Procópio",
+  "praca_portal": "Teixeira de Freitas, BA (genuína, independente do destino)"
+ },
+ {
+  "n": "02",
+  "portal": "alagoas200",
+  "destino_url": "https://contadoria.ia.br/sp/barueri/porte/demais-portes/",
+  "destino_tema": "escritórios de médio/grande porte em Barueri, SP",
+  "pauta": "diferença entre regime de caixa e regime de competência",
+  "kw_post": "regime de caixa e competência",
+  "ancora": "escritórios de contabilidade em Barueri",
+  "praca_portal": "Alagoas (genuína, independente do destino)"
+ },
+ {
+  "n": "03",
+  "portal": "itapecurunoticias",
+  "destino_url": "https://contadoria.ia.br/rj/volta-redonda/",
+  "destino_tema": "contador em Volta Redonda, RJ",
+  "pauta": "o que é o Simples Nacional e quem pode optar",
+  "kw_post": "o que é o Simples Nacional",
+  "ancora": "contadores em Volta Redonda",
+  "praca_portal": "Itapecuru-Mirim, MA (genuína, independente do destino)"
+ },
+ {
+  "n": "04",
+  "portal": "sp2040",
+  "destino_url": "https://contadoria.ia.br/sp/osasco/vila-osasco/",
+  "destino_tema": "contador na Vila Osasco, Osasco, SP",
+  "pauta": "quando o MEI precisa virar microempresa",
+  "kw_post": "quando o MEI precisa virar microempresa",
+  "ancora": "contabilidade na Vila Osasco",
+  "praca_portal": "sem praça fixa confirmada"
+ },
+ {
+  "n": "05",
+  "portal": "canaljustica",
+  "destino_url": "https://contadoria.ia.br/sp/santana-de-parnaiba/porte/microempresa/",
+  "destino_tema": "escritórios de microempresa em Santana de Parnaíba, SP",
+  "pauta": "responsabilidade do contador por erro na escrituração contábil",
+  "kw_post": "responsabilidade do contador por erro na escrituração",
+  "ancora": "contabilidade para microempresa em Santana de Parnaíba",
+  "praca_portal": "sem praça (portal jurídico generalista)"
+ },
+ {
+  "n": "06",
+  "portal": "alagoasdiario",
+  "destino_url": "https://contadoria.ia.br/sp/barueri/alphaville/",
+  "destino_tema": "contador em Alphaville, Barueri, SP",
+  "pauta": "o que muda na contabilidade das empresas com a reforma tributária",
+  "kw_post": "reforma tributária na contabilidade",
+  "ancora": "escritórios de contabilidade no Alphaville",
+  "praca_portal": "Alagoas (genuína, independente do destino)"
+ },
+ {
+  "n": "07",
+  "portal": "xthor",
+  "destino_url": "https://contadoria.ia.br/mg/rio-manso/",
+  "destino_tema": "contador em Rio Manso, MG",
+  "pauta": "como emitir nota fiscal de serviço pela primeira vez",
+  "kw_post": "como emitir nota fiscal de serviço",
+  "ancora": "contadores em Rio Manso",
+  "praca_portal": "sem praça fixa confirmada"
+ },
+ {
+  "n": "08",
+  "portal": "afnewss",
+  "destino_url": "https://contadoria.ia.br/sp/americana/porte/pequeno-porte/",
+  "destino_tema": "escritórios de pequeno porte em Americana, SP",
+  "pauta": "obrigações acessórias que o pequeno empresário esquece",
+  "kw_post": "obrigações acessórias do pequeno empresário",
+  "ancora": "contabilidade para pequeno porte em Americana",
+  "praca_portal": "Americana, SP (coincide com o destino, alinhamento perfeito)"
+ },
+ {
+  "n": "09",
+  "portal": "professortrabalhista",
+  "destino_url": "https://contadoria.ia.br/mg/belo-horizonte/horto/",
+  "destino_tema": "contador no Horto, Belo Horizonte, MG",
+  "pauta": "o que o contador trabalhista faz na folha de pagamento",
+  "kw_post": "contador trabalhista na folha de pagamento",
+  "ancora": "contadores no Horto, em Belo Horizonte",
+  "praca_portal": "sem praça (portal trabalhista, encaixe natural de tema)"
+ },
+ {
+  "n": "10",
+  "portal": "jornal.seg.br",
+  "destino_url": "https://contadoria.ia.br/es/linhares/",
+  "destino_tema": "contador em Linhares, ES",
+  "pauta": "quando vale a pena trocar de contador",
+  "kw_post": "quando vale a pena trocar de contador",
+  "ancora": "escritórios de contabilidade em Linhares",
+  "praca_portal": "sem praça confirmada"
+ }
+]

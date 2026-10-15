@@ -1,0 +1,29 @@
+{
+  "titulo": "Certificado digital para o eSocial: o que muda para o contador",
+  "kw": "certificado digital para o eSocial",
+  "resumo": "O certificado digital para o eSocial nem sempre é obrigatório para o contador que atua por procuração eletrônica.",
+  "slug": "certificado-digital-para-o-esocial",
+  "fontes": [
+    {
+      "afirmacao": "Para uso no eSocial, o certificado deve ser emitido por autoridade certificadora credenciada pela ICP-Brasil e ser do tipo A1 ou A3, usado na assinatura dos arquivos enviados por webservice.",
+      "url": "https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-3-consolidada-ate-a-no-s-1-3-10-2026.pdf/@@download/file"
+    },
+    {
+      "afirmacao": "A Nota Orientativa eSocial 14/2019 trata do uso de procuração eletrônica por terceiros (como escritórios de contabilidade) e desaconselha o compartilhamento do certificado e senha do titular.",
+      "url": "https://www.tributa.net/wp-content/uploads/2019/01/nota-orientativa-014-2019-certificado-digital.pdf"
+    },
+    {
+      "afirmacao": "O acesso aos módulos web do eSocial exige conta gov.br, inclusive para quem já possui certificado digital.",
+      "url": "https://www.vriconsulting.com.br/guias/guiasIndex.php?idGuia=746"
+    },
+    {
+      "afirmacao": "Empregadores que usam serviços de contabilidade podem autorizar o contador por procuração eletrônica no eSocial em vez de usar certificado digital próprio.",
+      "url": "https://cfc.org.br/noticias/certificado-digital-no-esocial-so-e-exigido-para-quem-ja-tinha-essa-obrigacao/"
+    }
+  ],
+  "pendente_verificar": [
+    "Confirmar no portal oficial do eSocial o limite atual (número de empregados ou faturamento) que distingue quem pode acessar só com login gov.br de quem precisa apresentar certificado digital e-CNPJ, pois as fontes consultadas não oficiais trazem valores desatualizados.",
+    "Confirmar se a Nota Orientativa 14/2019 sobre procuração eletrônica e vedação ao compartilhamento de certificado segue vigente sem alterações em 2026.",
+    "Confirmar o passo a passo atual de cadastro de procuração eletrônica no e-CAC, já que os guias de terceiros consultados têm datas variadas e os menus do portal podem ter mudado."
+  ]
+}
