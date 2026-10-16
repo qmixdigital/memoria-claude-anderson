@@ -1,0 +1,42 @@
+[
+ {
+  "n": "04",
+  "portal": "alertasocial",
+  "destino_url": "https://odontolinea.com.br/",
+  "ancora": "dentista em Taguatinga",
+  "tipo_ancora": "exata",
+  "pauta": "Dentista em Taguatinga: o que avaliar na primeira consulta",
+  "kw_post": "dentista em Taguatinga",
+  "praca_portal": "sem praça fixa confirmada"
+ },
+ {
+  "n": "05",
+  "portal": "noticiasdetimon",
+  "destino_url": "https://odontolinea.com.br/especialista-de-extracao-do-siso-em-brasilia/",
+  "ancora": "tirar o siso em Brasília",
+  "tipo_ancora": "parcial",
+  "pauta": "Siso: quando precisa tirar e como é a recuperação",
+  "kw_post": "siso quando precisa tirar e como é a recuperação",
+  "praca_portal": "Timon, Maranhão (genuína)"
+ },
+ {
+  "n": "08",
+  "portal": "luiziananoticias",
+  "destino_url": "https://odontolinea.com.br/implante-dentario-em-taguatinga/",
+  "ancora": "implantes na OdontoLinea",
+  "tipo_ancora": "marca",
+  "pauta": "Implante dentário: quem pode fazer e como é a cirurgia",
+  "kw_post": "implante dentário quem pode fazer",
+  "praca_portal": "sem praça fixa confirmada"
+ },
+ {
+  "n": "10",
+  "portal": "jornalbahia",
+  "destino_url": "https://odontolinea.com.br/dentista-em-brasilia/",
+  "ancora": "OdontoLinea Taguatinga",
+  "tipo_ancora": "marca",
+  "pauta": "Dentista em Brasília e no DF: como escolher perto de casa",
+  "kw_post": "dentista em Brasília e no DF",
+  "praca_portal": "Bahia (genuína)"
+ }
+]

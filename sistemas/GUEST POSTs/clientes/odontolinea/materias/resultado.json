@@ -1,0 +1,54 @@
+{
+ "10": {
+  "site": "jornalbahia",
+  "post_id": 3101,
+  "link": "https://jornalbahia.com.br/saude/dentista-em-brasilia-e-no-df/",
+  "status": "publish",
+  "link_edicao": "https://jornalbahia.com.br/wp-admin/post.php?post=3101&action=edit",
+  "media_id": 3100,
+  "legenda": "Imagem de StockSnap via Pixabay",
+  "figura": false,
+  "ancora": "OdontoLinea Taguatinga",
+  "destino": "https://odontolinea.com.br/dentista-em-brasilia/",
+  "categoria": "Saúde"
+ },
+ "04": {
+  "site": "alertasocial",
+  "post_id": 5240,
+  "link": "https://alertasocial.com.br/saude/dentista-taguatinga-primeira-consulta/",
+  "status": "publish",
+  "link_edicao": "https://alertasocial.com.br/wp-admin/post.php?post=5240&action=edit",
+  "media_id": 5239,
+  "legenda": "Imagem de Cedric Fauntleroy via Pexels",
+  "figura": false,
+  "ancora": "dentista em Taguatinga",
+  "destino": "https://odontolinea.com.br/",
+  "categoria": "Saúde"
+ },
+ "05": {
+  "site": "noticiasdetimon",
+  "post_id": 2712,
+  "link": "https://noticiasdetimon.com.br/saude/siso-quando-tirar-recuperacao/",
+  "status": "publish",
+  "link_edicao": "https://noticiasdetimon.com.br/wp-admin/post.php?post=2712&action=edit",
+  "media_id": 2711,
+  "legenda": "Imagem de Cedric Fauntleroy via Pexels",
+  "figura": false,
+  "ancora": "tirar o siso em Brasília",
+  "destino": "https://odontolinea.com.br/especialista-de-extracao-do-siso-em-brasilia/",
+  "categoria": "Saúde"
+ },
+ "08": {
+  "site": "luiziananoticias",
+  "post_id": 2218,
+  "link": "https://luiziananoticias.com.br/saude/implante-dentario-quem-pode-fazer/",
+  "status": "publish",
+  "link_edicao": "https://luiziananoticias.com.br/wp-admin/post.php?post=2218&action=edit",
+  "media_id": 2217,
+  "legenda": "Imagem de Zeynep Kahraman via Pexels",
+  "figura": false,
+  "ancora": "implantes na OdontoLinea",
+  "destino": "https://odontolinea.com.br/implante-dentario-em-taguatinga/",
+  "categoria": "Saúde"
+ }
+}

@@ -1,0 +1,92 @@
+[
+ {
+  "n": "L01",
+  "portal": "seuguiadesaude",
+  "mecanismo": "portal-engine",
+  "destino_url": "https://odontolinea.com.br/",
+  "ancora": "OdontoLinea",
+  "pauta": "Melhores clínicas odontológicas em Taguatinga",
+  "kw_post": "melhores clínicas odontológicas em Taguatinga"
+ },
+ {
+  "n": "L02",
+  "portal": "viajenodetalhe",
+  "mecanismo": "portal-engine",
+  "destino_url": "https://odontolinea.com.br/especialista-de-extracao-do-siso-em-brasilia/",
+  "ancora": "tirar o siso em Taguatinga",
+  "pauta": "Melhores clínicas para extração de dente do siso em Taguatinga",
+  "kw_post": "melhores clínicas para extração de dente do siso em Taguatinga"
+ },
+ {
+  "n": "L03",
+  "portal": "medicinageriatrica",
+  "mecanismo": "api-custom",
+  "destino_url": "https://odontolinea.com.br/periodontia-em-taguatinga/",
+  "ancora": "periodontia na OdontoLinea",
+  "pauta": "Melhores clínicas de periodontia em Taguatinga para idosos",
+  "kw_post": "melhores clínicas de periodontia em Taguatinga"
+ },
+ {
+  "n": "L04",
+  "portal": "revistamsaude",
+  "mecanismo": "payload",
+  "destino_url": "https://odontolinea.com.br/dentista-especialista-canal-em-taguatinga/",
+  "ancora": "tratamento de canal em Taguatinga",
+  "pauta": "Melhores clínicas para tratamento de canal em Taguatinga",
+  "kw_post": "melhores clínicas para tratamento de canal em Taguatinga"
+ },
+ {
+  "n": "L05",
+  "portal": "euvo",
+  "mecanismo": "portal-engine",
+  "destino_url": "https://odontolinea.com.br/implante-dentario-em-taguatinga/",
+  "ancora": "implante dentário na OdontoLinea",
+  "pauta": "Melhores clínicas de implante dentário em Taguatinga",
+  "kw_post": "melhores clínicas de implante dentário em Taguatinga"
+ },
+ {
+  "n": "L06",
+  "portal": "saudevitalidade",
+  "mecanismo": "api-custom",
+  "destino_url": "https://odontolinea.com.br/ortodontia-em-taguatinga/",
+  "ancora": "ortodontia na OdontoLinea",
+  "pauta": "Melhores clínicas de ortodontia em Taguatinga",
+  "kw_post": "melhores clínicas de ortodontia em Taguatinga"
+ },
+ {
+  "n": "L07",
+  "portal": "desassossegada",
+  "mecanismo": "portal-engine",
+  "destino_url": "https://odontolinea.com.br/clareamento-dental-em-taguatinga/",
+  "ancora": "clareamento dental na OdontoLinea",
+  "pauta": "Melhores clínicas para clareamento dental em Taguatinga",
+  "kw_post": "melhores clínicas para clareamento dental em Taguatinga"
+ },
+ {
+  "n": "L08",
+  "portal": "oiempreendedores",
+  "mecanismo": "portal-engine",
+  "destino_url": "https://odontolinea.com.br/tratamento-restaurador-em-taguatinga/",
+  "ancora": "restauração dentária na OdontoLinea",
+  "pauta": "Melhores clínicas para restauração dentária em Taguatinga",
+  "kw_post": "melhores clínicas para restauração dentária em Taguatinga"
+ },
+ {
+  "n": "L09",
+  "portal": "ebookcult",
+  "mecanismo": "portal-engine",
+  "destino_url": "https://odontolinea.com.br/protese-dentaria-em-taguatinga/",
+  "ancora": "prótese dentária na OdontoLinea",
+  "pauta": "Melhores clínicas odontológicas para prótese dentária em Taguatinga",
+  "kw_post": "melhores clínicas odontológicas para prótese dentária em Taguatinga"
+ },
+ {
+  "n": "L10",
+  "portal": "exquisito",
+  "mecanismo": "portal-engine",
+  "destino_url": "https://odontolinea.com.br/facetas-de-porcelana-em-taguatinga/",
+  "ancora": "facetas de porcelana na OdontoLinea",
+  "pauta": "Melhores clínicas de facetas de porcelana em Taguatinga",
+  "kw_post": "melhores clínicas de facetas de porcelana em Taguatinga"
+ }
+]

@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 5b0e314b-e734-4943-99e2-3defe71f3ead
-  modified: 2026-10-12T13:35:36.257Z
+  modified: 2026-10-16T00:48:56.910Z
 ---
 
 **Alerta "[srvX] deploy no Pages FALHOU: <portal> (1)"** com `Failed to publish your
@@ -15,6 +15,16 @@ O log do wrangler mostra upload completo e o status do deployment voltando
 erro. Refazer passa. Correcao de fundo (12/10/2026): `pagesDeploy()` em
 `/opt/portal-engine/src/render.js` (as 3 VPS) tenta de novo em ~90 s e so manda
 alerta se a 2a falhar (`_pagesRetentou`). Backup `render.js.bak-20261012-retry`.
+
+**Token do Cloudflare Pages expirou (15-16/10/2026):** alerta com `Invalid access
+token [code: 9109]` em varios portais ao mesmo tempo, seguido de `Too many
+authentication failures [code: 10502]` (bloqueio temporario por tentativas com
+token ruim). Nao e instabilidade: o token em `/opt/portal-engine/.cf-pages-token`
+(pages.json -> tokenFile) venceu. Foi trocado (backup `.cf-pages-token.bak-expired-20261015`),
+novo sem expiracao. Conferir: `curl -H "Authorization: Bearer $(cat
+/opt/portal-engine/.cf-pages-token)" https://api.cloudflare.com/client/v4/user/tokens/verify`
+(`expires_on`). Depois de trocar, republicar os portais afetados um a um com
+`sleep 6` entre eles, senao o 10502 volta.
 
 **pages_pack.js recusa root** (guarda de 18/09). Chamador root (bicho.service,
 scripts manuais) cai em `sudo -n -u portais env HOME=/opt/portal-engine node

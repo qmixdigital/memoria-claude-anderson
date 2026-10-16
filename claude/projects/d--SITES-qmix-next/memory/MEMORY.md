@@ -54,3 +54,5 @@
 - [Pedido interno de 30 matérias](qmix-pedido-interno-30-portais.md) — pedidos 146 (cartorio), 147 (ferramentas.qmix), 148 (psicologosperto), 149 (seuguiadesaude) e 150 (revistamsaude) feitos 13/10; semana de 19/10 mais 30 em outros domínios; método de lote
 - [Nicho do portal manda](feedback-nicho-do-portal.md) — tema da matéria tem que casar com o nicho do portal; erro de 13/10 (terapia em portal de carros) corrigido nos pedidos 147 e 148; sobra vira reserva
 - [Só parceiros no painel](feedback-so-parceiros-no-painel.md) — domínio de matéria do painel tem que estar nas listas rodrigo/gustavo/lucas.txt; rede própria só com ordem (erro do pedido 150, 13/10/2026)
+- [Campanha QMIX Parceria](qmix-campanha-parceria.md) — listas de agências de backlinks em portais parceiros, sem link externo, 6 sites fixos, uma fatura única a preço de custo (desde 15/10/2026)
+- [Sem Word](feedback-sem-word.md) — não gerar nem oferecer .docx das matérias; foi exceção única em 14/10/2026
