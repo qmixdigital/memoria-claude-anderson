@@ -1,0 +1,21 @@
+{
+ "fonte": "pexels",
+ "id": "pexels:5750626",
+ "arquivo_url": "https://images.pexels.com/photos/5750626/pexels-photo-5750626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+ "pagina_url": "https://www.pexels.com/photo/shirtless-man-doing-pull-ups-5750626/",
+ "largura": 6000,
+ "altura": 4000,
+ "autor": "Tima Miroshnichenko",
+ "autor_url": "https://www.pexels.com/@tima-miroshnichenko",
+ "licenca": "Pexels License",
+ "licenca_url": "https://www.pexels.com/license/",
+ "descricao": "Back view of a shirtless man doing pull-ups, showcasing strength and fitness.",
+ "credito_obrigatorio": false,
+ "arquivo_local": "D:/SISTEMAS/GUEST POSTs/clientes/calistenia/materias\\melhores-apps-e-sites-de-calistenia-para-evoluir-nas-barras.webp",
+ "dimensoes_finais": [
+  1216,
+  640
+ ],
+ "recortada": true,
+ "termo_busca": "pull up bar workout outdoor back view"
+}

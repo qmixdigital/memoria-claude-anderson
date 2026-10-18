@@ -1,0 +1,21 @@
+{
+ "fonte": "pexels",
+ "id": "pexels:17880631",
+ "arquivo_url": "https://images.pexels.com/photos/17880631/pexels-photo-17880631.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+ "pagina_url": "https://www.pexels.com/photo/cityscape-reflection-in-the-evening-17880631/",
+ "largura": 6240,
+ "altura": 4160,
+ "autor": "Aleksandar Spasojevic",
+ "autor_url": "https://www.pexels.com/@spal",
+ "licenca": "Pexels License",
+ "licenca_url": "https://www.pexels.com/license/",
+ "descricao": "Captivating view of London's skyline at dusk, reflected through glass windows.",
+ "credito_obrigatorio": false,
+ "arquivo_local": ".\\teste-iptv-10-horas-como-dividir-o-tempo-entre-dia-e-noite.webp",
+ "dimensoes_finais": [
+  1216,
+  640
+ ],
+ "recortada": true,
+ "termo_busca": "city skyline sunset window"
+}

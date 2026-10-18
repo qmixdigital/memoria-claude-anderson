@@ -1,0 +1,21 @@
+{
+ "fonte": "pexels",
+ "id": "pexels:6740822",
+ "arquivo_url": "https://images.pexels.com/photos/6740822/pexels-photo-6740822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+ "pagina_url": "https://www.pexels.com/photo/black-sneakers-and-gym-tools-on-gray-floor-6740822/",
+ "largura": 6000,
+ "altura": 4000,
+ "autor": "Mikhail Nilov",
+ "autor_url": "https://www.pexels.com/@mikhail-nilov",
+ "licenca": "Pexels License",
+ "licenca_url": "https://www.pexels.com/license/",
+ "descricao": "Flat lay of gym essentials including dumbbells, sneakers, and resistance bands on a grey floor.",
+ "credito_obrigatorio": false,
+ "arquivo_local": "D:/SISTEMAS/GUEST POSTs/clientes/calistenia/materias\\melhores-sites-de-exercicios-com-elastico-para-treinar-em-casa.webp",
+ "dimensoes_finais": [
+  1216,
+  640
+ ],
+ "recortada": true,
+ "termo_busca": "resistance bands flat lay"
+}

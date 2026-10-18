@@ -1,1 +1,4 @@
 - [URLs clicáveis ao entregar](urls-clicaveis-ao-entregar.md) — ele confere olhando a página, então toda entrega termina com os links completos
+- [Branch producao no GitHub](repo-branch-producao.md) — main sobrescrito; publicar com push main:producao + deploy.sh na clinicas-vps
+- [PRO: primeiro assinante e promessas](pro-primeiro-assinante.md) — Renato, 16/10/2026; PDF, evolução, lista de planos, boas-vindas e lembretes no ar; AdSense removido de vez
+- [GSC pela API via backlinkguard](gsc-acesso-backlinkguard.md) — site verificado por arquivo em 16/10/2026; revisita em D:/PORTAIS/BACKLINKS; remedir em novembro

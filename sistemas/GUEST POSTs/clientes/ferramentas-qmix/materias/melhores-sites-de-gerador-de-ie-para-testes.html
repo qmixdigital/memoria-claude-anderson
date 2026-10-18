@@ -1,0 +1,69 @@
+<p>Quando o assunto é teste de software fiscal, a sigla IE aparece em toda parte: no cadastro de clientes, na emissão de nota, na importação de planilhas. Quem precisa de números para preencher esses campos acaba comparando sites de gerador de IE para testes, e o <a href="https://ferramentas.qmix.com.br/gerador-de-inscricao-estadual">gerador de IE</a> da Ferramentas QMIX é um deles, com seletor de estado e resultado em um clique.</p>
+
+<p>A lista a seguir segue ordem editorial e não é ranking de qualidade. Cada site atende a um tipo de teste, e a melhor escolha depende do uso: para conferir uma máscara de campo basta pouco, enquanto a reprodução fiel da regra de um estado pede mais.</p>
+
+<h2>Sites de gerador de IE para testes: os cinco comparados</h2>
+
+<ol><li>Ferramentas QMIX</li><li>Gerador Brasil</li><li>FastTools</li><li>4devs</li><li>J-Kit</li></ol>
+
+<h3>1. Ferramentas QMIX</h3>
+
+<p>A página explica o uso em três passos: escolher o estado, clicar em gerar e copiar o número com ou sem formatação. Entre os casos de uso listados estão testes de NF-e em homologação, cadastro em sistemas de gestão, integrações fiscais e treinamento de equipes sem usar dados de empresas reais.</p>
+
+<p>O cálculo usa módulo 11, e a tabela da página mostra São Paulo com 12 dígitos, Minas Gerais com 13, Rio de Janeiro com 8 e os demais estados com 9. Num rodapé de tabela, a ferramenta reconhece que alguns estados têm regras adicionais ao modelo genérico. É um limite honesto, e quem testa um estado fora do padrão deve validar o número por outro meio.</p>
+
+<p>Roda no navegador, sem cadastro, de graça. Para uma tela de cadastro que só confere máscara e tamanho, o trajeto é curto: escolher a UF, gerar, copiar, colar. Quem precisa de dez números seguidos repete o gesto dez vezes, porque o resultado aparece um por vez no campo.</p>
+
+<p>Um por vez, sem pressa.</p>
+
+<h3>2. Gerador Brasil</h3>
+
+<p>O site permite escolher um dos 27 estados ou deixar a opção "Aleatório", pedir de 1 a 10 números e ligar ou desligar a pontuação. Uma tabela abaixo do gerador traz dígitos, formato e exemplo por estado, e serve de consulta mesmo para quem não usa o gerador.</p>
+
+<p>Os avisos são claros: os números são fictícios, destinados a teste e desenvolvimento, e usar inscrição falsa em documento fiscal configura crime, segundo a página, que cita o Código Penal e a Lei 8.137/90. A validação é matemática, sem consulta às bases estaduais. A página não menciona cadastro nem anúncios.</p>
+
+<h3>3. FastTools</h3>
+
+<p>Na página do FastTools, a escolha da UF vem antes da geração, porque cada estado tem formato e cálculo próprios. Há campo de quantidade e opção de gerar com ou sem máscara, tudo no navegador. A recomendação do site é não usar dados reais de empresas em testes.</p>
+
+<p>A página, porém, é econômica em detalhes. Não traz a lista completa de estados atendidos, não explica as regras de cálculo e não informa como verificar se o resultado é aceito por sistemas oficiais. Também não fixa limite de quantidade. Para quem só quer um número e uma máscara, basta; para auditar o algoritmo, falta informação. O rodapé aponta para outras ferramentas do mesmo site, como geradores de CNPJ e CPF.</p>
+
+<p>Tabela e aviso legal fazem diferença.</p>
+
+<h3>4. 4devs</h3>
+
+<p>O gerador do 4devs trabalha com os 27 estados, pontuação opcional e botão de copiar. A página diz que o público é formado por estudantes, programadores, analistas e testadores, e que o mau uso dos dados gerados é de responsabilidade total do usuário.</p>
+
+<p>O site se apoia em páginas vizinhas: um texto sobre o que é inscrição estadual, um validador e geradores separados por estado. O rodapé oferece espaço para anunciantes, o que indica financiamento por publicidade. A página do gerador não detalha o cálculo aplicado a cada estado.</p>
+
+<h3>5. J-Kit</h3>
+
+<p>O J-Kit é o mais completo em recursos. Gera e valida IE para as 27 UFs usando regras de dígito baseadas nas rotinas do Sintegra. Aceita lotes de 1 a 100 números, semente para repetir sequências, máscara e exportação em TXT ou CSV. Separa ainda formatos como comércio e indústria, produtor rural e as variantes de BA, RN e SP, e a semente garante que a mesma sequência reapareça numa suíte automatizada.</p>
+
+<p>O validador diz qual dígito falhou e qual seria o correto, e há uma opção para testar um número contra todas as UFs. A página funciona no navegador, sem cadastro e sem envio de arquivos, e lembra que dígito correto não prova que a empresa exista. A quantidade de opções pode assustar quem só precisa de um número para colar num formulário.</p>
+
+<h2>A sigla IE e as regras de cada UF</h2>
+
+<p>Não existe fórmula única. A inscrição estadual é cadastrada por cada Secretaria da Fazenda, e o formato muda de uma UF para outra. Em São Paulo são 12 dígitos, em Minas 13, no Rio 8. Segundo a FAQ do J-Kit, Alagoas e Rio Grande do Norte multiplicam a soma por 10, Roraima usa módulo 9 e a Bahia alterna entre módulo 10 e 11 conforme o dígito.</p>
+
+<p>Para o teste, isso significa que um gerador que aplique a mesma conta em todos os estados vai acertar uns e errar outros. Os melhores sites de gerador de IE para testes deixam claro qual regra usam em cada UF. A diferença só aparece quando o sistema testado recalcula o dígito, e é justamente nesse momento que o bug de validação, se existir, precisa aparecer.</p>
+
+<p>Há ainda o caso do contribuinte isento. Empresas que não recolhem ICMS podem constar com a indicação ISENTO em vez de um número, e um sistema fiscal bem feito precisa aceitar as duas formas. Um gerador de números não cobre esse caso por natureza. O jeito é cadastrar a palavra à mão no caso de teste correspondente.</p>
+
+<h2>Cuidados legais com números de teste</h2>
+
+<p>Os números dos geradores são dados de teste. Eles passam apenas na validação matemática dos dígitos verificadores e não pertencem a nenhuma empresa. Não servem para cadastro em serviço real, emissão de nota fiscal verdadeira, abertura de conta ou para se passar por um contribuinte, e usar dado gerado para fraude é crime.</p>
+
+<p>Também não existe a garantia inversa: um número gerado pode, por acaso, coincidir com a inscrição de uma empresa real, porque o espaço de combinações é finito. Por isso, convém usá-lo só em ambiente de desenvolvimento e homologação, nunca em produção e nunca em contato com terceiros.</p>
+
+<h2>Registrar para repetir</h2>
+
+<p>Anotar vale ouro.</p>
+
+<p>Teste fiscal sem registro vira superstição, e a superstição custa caro quando o prazo de uma homologação aperta e ninguém lembra qual número passou na rodada anterior, em qual estado e com qual máscara aplicada ao campo do formulário. Anotar a UF, o número e o resultado esperado de cada caso permite repetir a rodada depois de uma correção. Equipes que automatizam o teste costumam guardar os números em arquivo versionado, ao lado do código, em vez de gerar um novo a cada execução.</p>
+
+<p>Vale também decidir, no começo, qual das cinco opções será a fonte oficial da equipe. Misturar números de geradores diferentes dificulta saber, depois, qual regra de cálculo produziu cada caso, e um erro de validação vira investigação em vez de correção.</p>
+
+<p>Quando a suíte cresce, a escolha por um dos cinco sites passa a ser técnica: um número rápido por UF cobre testes de tela, e a exportação em lote entra quando há centenas de cadastros a criar.</p>
+
+<aside class="pe-leia-meio"><h2>Leia também</h2><ul><li><a href="/como-usar-o-mesmo-whatsapp-em-dois-celulares/">Como Usar o Mesmo WhatsApp em Dois Celulares</a></li><li><a href="/maquininha-com-impressora-quais-imprimem-comprovante/">Maquininha com impressora: quais imprimem comprovante</a></li></ul></aside>

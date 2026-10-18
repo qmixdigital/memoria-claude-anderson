@@ -1,0 +1,32 @@
+{
+ "C03": {
+  "site": "revistadeducao",
+  "url": "https://revistadeducao.com.br/saude/melhores-sites-e-apps-para-aprender-front-lever-do-zero/",
+  "status": "publish"
+ },
+ "C05": {
+  "site": "oiempreendedores",
+  "url": "https://oiempreendedores.com.br/saude/melhores-apps-e-sites-de-treino-em-casa-para-quem-empreende/",
+  "status": "publish"
+ },
+ "C07": {
+  "site": "saudeacessivel",
+  "url": "https://saudeacessivel.com.br/dicas/melhores-apps-e-sites-de-exercicios-para-postura-e-costas-em-casa/",
+  "status": "publish"
+ },
+ "C09": {
+  "site": "viajenodetalhe",
+  "url": "https://viajenodetalhe.com.br/saude/melhores-sites-de-exercicios-com-elastico-para-treinar-em-casa/",
+  "status": "publish"
+ },
+ "C11": {
+  "site": "desassossegada",
+  "url": "https://desassossegada.com.br/melhores-sites-e-apps-para-encontrar-parques-de-calistenia/",
+  "status": "publish"
+ },
+ "C13": {
+  "site": "euvo",
+  "url": "https://euvo.com.br/melhores-sites-e-apps-para-aprender-street-workout/",
+  "status": "publish"
+ }
+}

@@ -1,0 +1,77 @@
+<p>O cadastro estava pronto, o botão enviava, e a tela devolvia &ldquo;CPF inválido&rdquo; para qualquer número digitado de cabeça. A pessoa que testa o sistema sabe que o campo valida os dois dígitos finais, e sabe também que não deve usar o CPF de um colega nem o próprio. É nesse ponto que entra um <a href="https://ferramentas.qmix.com.br/gerador-de-cpf">gerador de CPF</a>: uma página que monta números com dígitos verificadores corretos, sem dono, para preencher formulários em ambiente de desenvolvimento.</p>
+
+<p>Existem vários geradores de CPF para testes, e eles não se equivalem. Mudam as opções de formatação, os avisos, a quantidade por rodada e até o que a página admite não fazer. Cinco aparecem adiante, descritos só com o que se lê em cada uma.</p>
+
+<h2>Geradores de CPF para testes: cinco opções lado a lado</h2>
+
+<ol>
+<li>Ferramentas QMIX</li>
+<li>4Devs</li>
+<li>Invertexto</li>
+<li>ValorFinal</li>
+<li>Gerador.dev</li>
+</ol>
+
+<p>A ordem é editorial. A melhor escolha depende do uso: um teste manual rápido pede pouca coisa, uma suíte automatizada pede volume e um projeto escolar pede explicação.</p>
+
+<h3>1. Ferramentas QMIX</h3>
+
+<p>A página funciona como gerador e validador na mesma tela. O botão Gerar CPF sorteia nove dígitos e calcula os dois últimos pelo algoritmo Módulo 11, com pesos de 10 a 2 para o primeiro verificador e de 11 a 2 para o segundo. Há um botão para formatar com pontos e traço, outro para copiar e outro para limpar. O processamento ocorre no navegador, sem cadastro.</p>
+
+<p>O texto da página gasta espaço com uma distinção útil para quem está aprendendo. CPF válido é a sequência que passa no cálculo, CPF real é o que existe na base da Receita Federal ligado a uma pessoa, e CPF fictício é o que é matematicamente correto e não pertence a ninguém. O gerador produz o terceiro tipo.</p>
+
+<p>A regra do cálculo, descrita na página, é curta: cada um dos nove primeiros dígitos é multiplicado pelo peso correspondente, os resultados são somados e aplica-se o módulo 11. Se o resto for menor que 2, o dígito é 0; senão, subtrai-se o resto de 11. O segundo dígito repete o processo com dez dígitos.</p>
+
+<p>A lista de usos vai de cadastros de e-commerce e sandboxes de gateways de pagamento até scripts de Cypress, Selenium e Playwright e exercícios de programação.</p>
+
+<p>O limite é de ferramenta de uso pontual: gera um número por vez. Para lote, a própria página manda para outra ferramenta do site, o Gerador de Pessoas, que monta CPF, nome, data de nascimento e endereço, inclusive em massa. Perto do fim há um bloco de publicidade.</p>
+
+<h3>2. 4Devs</h3>
+
+<p>O 4Devs tem uma tela enxuta, com duas opções: pontuação, com ou sem, e estado de origem, que pode ser escolhido ou deixado como indiferente. A página diz que a ferramenta ajuda estudantes, programadores, analistas e testadores a gerar CPFs válidos, normalmente para testar software em desenvolvimento.</p>
+
+<p>Avisa também que o uso indevido dos dados é de total responsabilidade de quem os usa. No conteúdo não aparecem anúncios, só o link &ldquo;Anuncie&rdquo; no rodapé e um banner de uma API REST do próprio site. É a opção mais direta para quem só quer um número e seguir.</p>
+
+<p>A escolha do estado interessa a quem testa regras regionais, como um formulário que muda campos conforme a origem do documento. Fora isso, a tela não traz outros controles.</p>
+
+<h3>3. Invertexto</h3>
+
+<p>O Invertexto junta duas funções, Gerar CPF e Validar CPF, com uma configuração de pontuação. A página descreve o cálculo com dois dígitos verificadores pelo Módulo 11 e traz uma tabela que liga o nono dígito ao estado em que o CPF foi registrado.</p>
+
+<p>Essa tabela rende uma explicação didática, porque mostra que os números não são totalmente arbitrários. Para quem ensina o assunto numa aula de programação, é um bom exemplo de como um dado aparentemente solto carrega informação embutida. O aviso da página é claro: a ferramenta é para testes de software, os números são aleatórios e a responsabilidade de uso é de quem gera.</p>
+
+<h3>4. ValorFinal</h3>
+
+<p>O ValorFinal é o que mais tem recursos. Gera CPF ou CNPJ, de 1 a 100 por vez, com máscara opcional, e valida em lote até 1.000 linhas. No CNPJ, permite gerar só matriz ou sortear filiais e escolher o formato alfanumérico, que a página diz estar em uso desde 31 de julho de 2026. Tudo roda no navegador.</p>
+
+<p>Os avisos são os mais completos. A página afirma que os números são de teste, sem valor legal, que podem coincidir com documentos reais e que um dígito correto indica apenas número bem formado, sem confirmar existência nem situação cadastral. Lembra ainda que usar documento de terceiros para se passar por outra pessoa é crime. Há uma versão VIP sem anúncios, o que indica que a gratuita os exibe.</p>
+
+<p>Quem precisa de um lote sem planilha, e não quer escrever o cálculo do zero, encontra aqui o que mais se aproxima de uma ferramenta de geração de massa.</p>
+
+<h3>5. Gerador.dev</h3>
+
+<p>O Gerador.dev reúne CPF, CNPJ e RG, em formato numérico ou alfanumérico, e lista ao lado outras ferramentas, como cartão de crédito de teste, JSON, Base64 e hash. O rodapé aponta para um repositório no GitHub, assinado por Marcelo Pecin, e o conteúdo não menciona anúncios.</p>
+
+<p>A página não informa limitações. Fica a impressão de ferramenta de bancada, útil a quem já conhece o assunto e quer um pacote de geradores no mesmo endereço.</p>
+
+<h2>Dado de teste não é documento</h2>
+
+<p>Todo número gerado nessas páginas passa só na validação matemática dos dígitos verificadores. Ele não pertence a pessoa nenhuma, não vale para comprar, abrir conta ou cadastrar-se num serviço real, e não serve para se passar por alguém. Usar dado gerado em fraude é crime, e a responsabilidade é de quem usa, como várias das páginas fazem questão de escrever.</p>
+
+<p>Existe um detalhe que costuma ser esquecido: como o espaço de combinações é finito, um número gerado pode coincidir com o de uma pessoa real. Por isso o lugar certo para ele é o ambiente de teste, nunca um sistema em produção.</p>
+
+<h2>Massa de teste dentro do projeto</h2>
+
+<p>Quem automatiza testes costuma guardar CPFs em arquivos de apoio, os fixtures, versionados junto com o código. Nesse arquivo só devem entrar números fictícios, nunca documento de cliente copiado de uma base real. A regra protege o time diante da LGPD e evita o vazamento de um dado pessoal num repositório.</p>
+
+<p>Também ajuda dar nome ao número. Um CPF de teste anotado como &ldquo;cliente sem pedidos&rdquo; ou &ldquo;cliente com cadastro incompleto&rdquo; vira cenário reaproveitável, e quem lê o teste meses depois entende por que aquele número está ali.</p>
+
+<h2>O que testar além dos dígitos</h2>
+
+<p>Um CPF correto abre só a primeira porta. Vale testar o mesmo campo com e sem pontuação, porque muito formulário aceita um formato e quebra no outro. Vale colar um número com espaço no fim, que é o que acontece quando alguém copia de uma planilha ou de um e-mail. E vale conferir se a tela rejeita um CPF com dígito trocado e se a mensagem de erro diz o que está errado.</p>
+
+<p>Para massa maior, a escolha muda. Uma página que gera 100 por rodada, com validação em lote, poupa o trabalho de montar um script. Para uma checagem única, um gerador simples basta.</p>
+
+<p>Dito de outro modo, os geradores de CPF para testes ajudam quando são tratados como material de bancada: servem para exercitar o código, e é no código que está a validação que interessa.</p>
+
+<aside class="pe-leia-meio"><h2>Leia também</h2><ul><li><a href="/tecnologia/arquitetura-de-software-base-de-apps-escalaveis/">Arquitetura de software: base de apps escaláveis</a></li><li><a href="/tecnologia/razoes-para-instalar-uma-vpn-no-seu-celular-antes-de-viajar/">6 razões para instalar uma VPN no seu celular antes de viajar</a></li></ul></aside>

@@ -1,0 +1,41 @@
+<p>Das 99.999.999 combinações possíveis de CNPJ numérico, cerca de 69 milhões já foram usadas, segundo a Receita Federal. O dado ajuda a entender por que o órgão adotou o formato com letras, e também por que quem desenvolve sistemas não deve sair copiando números de empresas reais para testar tela. Entre os sites para gerar CNPJ válido para teste, a Ferramentas QMIX abre a lista com a página do <a href="https://ferramentas.qmix.com.br/gerador-de-cnpj">CNPJ válido para teste</a>, seguida de quatro alternativas.</p>
+<p>Há um detalhe que separa os sites entre si. Desde 31 de julho de 2026, a Receita emite CNPJ alfanumérico, e os dois formatos valem ao mesmo tempo. Alguns geradores já oferecem as duas opções, outros ficaram no modelo numérico, e saber disso antes de escolher poupa uma tarde de retrabalho.</p>
+<h2>Sites para gerar CNPJ válido para teste: a lista</h2>
+<ol>
+<li>Ferramentas QMIX</li>
+<li>Gerador NV</li>
+<li>CNPJ com Letras</li>
+<li>Invertexto</li>
+<li>4Devs</li>
+</ol>
+<h3>1. Ferramentas QMIX</h3>
+<p>O ponto forte da página é a lista de cenários de uso. Ela cita cadastro de empresas em ERPs e CRMs, emissão de nota fiscal em ambientes de homologação, gateways de pagamento entre empresas, sistemas contábeis, scripts de teste automatizado em ferramentas como Cypress, Playwright e Selenium, além de exercícios acadêmicos. Quem está começando e não sabe onde um CNPJ de teste entra encontra ali um mapa.</p>
+<p>A geração segue a regra conhecida: oito dígitos aleatórios, filial 0001 e dois dígitos verificadores calculados pelo módulo 11. A saída pode ter máscara ou não, e o processamento é local, no navegador. Uma nota na própria página avisa que o uso é estritamente para testes de desenvolvimento.</p>
+<p>Gratuita e sem cadastro, serve bem ao estudante e ao freelancer que testa um formulário. Um exemplo: quem desenvolve a tela de cadastro de fornecedor de uma pequena loja gera um número, cola no campo, confere se a máscara apareceu e segue para o próximo. Falta, pelo que a página mostra, a opção de letras. Para o novo formato, convém combinar com outro item da lista.</p>
+<h3>2. Gerador NV</h3>
+<p>O Gerador NV foi desenhado para quem repete a operação muitas vezes ao dia. Basta apertar Enter para gerar e copiar, e as caixas de seleção permitem escolher pontuação, formato alfanumérico e CNPJ de filial.</p>
+<p>A página reforça, num aviso longo, que os dados são aleatórios, não têm relação com pessoas reais e não valem como documentos autênticos. O site diz que não tolera uso para atividades ilegais, como falsificação de identidade.</p>
+<p>Quem pretende automatizar o acesso precisa ler as condições. O uso automatizado é permitido para fins pessoais e não comerciais, em volume razoável, e o aproveitamento comercial dos dados obtidos assim exige autorização por escrito. Para o teste manual do dia a dia, nada disso atrapalha.</p>
+<h3>3. CNPJ com Letras</h3>
+<p>Nasceu em torno do novo formato. O site traz um validador que aceita CNPJ numérico e alfanumérico, com ou sem máscara, e informa que a conferência acontece no navegador, sem envio a servidores. Mais abaixo, um gerador permite escolher a quantidade, ativar o modo com letras e aplicar a máscara.</p>
+<p>Há ainda a validação em lote: cola-se uma lista, um número por linha, e o relatório pode ser baixado em CSV. Para quem herdou uma planilha de cadastro e precisa saber quais registros vão quebrar num sistema que só aceita dígitos, é a função mais útil.</p>
+<p>Atenção ao pano de fundo comercial. A página convida o visitante a deixar o e-mail para receber um checklist e promove um serviço de auditoria de cadastro. Nada disso é obrigatório para usar o gerador, mas quem busca só um número vai passar por bastante texto.</p>
+<h3>4. Invertexto</h3>
+<p>No Invertexto, o gerador tem abas para os formatos numérico e alfanumérico, e o botão Validar CNPJ fica no mesmo lugar. O texto explicativo descreve os quatorze caracteres, com doze de inscrição e dois dígitos verificadores, e registra que, a partir de julho de 2026, a Receita passou a emitir CNPJs com letras.</p>
+<p>A descrição do site diz que a ferramenta serve para gerar ou validar um CNPJ em testes de software e que há uma explicação do algoritmo. Na prática, funciona como referência rápida: abre-se, gera-se, confere-se.</p>
+<p>Como em outros geradores, o aviso é claro: a má utilização dos dados é responsabilidade de quem usa. O site não promete nada além de números para teste, e isso é o que se espera de uma ferramenta honesta.</p>
+<h3>5. 4Devs</h3>
+<p>Fechando a lista, o 4Devs leva a vantagem da familiaridade. Seu gerador de CNPJ aceita pontuação opcional e oferece os formatos numérico atual e alfanumérico, este último com referência à Instrução Normativa RFB 2.229/2024. Segundo o texto de apoio, a ferramenta foi feita para estudantes, programadores, analistas e testadores.</p>
+<p>Um bloco da página pergunta se o usuário precisa da mesma geração por API REST, o que aponta para quem quer ligar o gerador a um backend. Quem tem pressa, porém, enfrenta um menu lateral com dezenas de outros geradores e validadores, e precisa ignorá-lo para chegar ao botão.</p>
+<h2>Dado de teste não é documento</h2>
+<p>Os números produzidos pelos cinco sites passam apenas na validação matemática dos dígitos verificadores. Não pertencem a nenhuma empresa real e não servem para cadastro em serviço verdadeiro, abertura de conta, emissão de nota em produção nem para se passar por outra pessoa jurídica. Fraude com número gerado é crime, e o uso legítimo se limita a desenvolvedores, testadores e estudantes de programação.</p>
+<p>Vale para os cinco, sem exceção.</p>
+<p>Há um risco inverso, menos falado, e que atinge sobretudo equipes pequenas: o analista que usa o CNPJ de um cliente em ambiente de teste e deixa o registro vazar numa demonstração.</p>
+<h2>Formulário e integração pedem testes diferentes</h2>
+<p>Um número que passa na validação do formulário pode ser recusado quando o sistema o envia para uma consulta externa, e o contrário também acontece. Por isso, o teste de tela e o teste de integração não devem usar a mesma massa sem critério. No formulário, importa cobrir máscara, tamanho e letras. Na integração, o que pesa é a resposta do serviço que recebe o número, e um CNPJ gerado nunca será encontrado na base da Receita, porque jamais foi registrado por empresa alguma. O serviço externo devolve recusa ou ausência, e o sistema precisa estar preparado para isso.</p>
+<p>Também vale testar o comportamento do sistema diante desse resultado de não encontrado, que em produção será comum para qualquer erro de digitação. Mensagem clara para o usuário, registro marcado como pendente e ausência de erro silencioso dizem mais sobre a qualidade do cadastro do que qualquer número válido.</p>
+<h2>Um roteiro curto para montar a massa</h2>
+<p>Antes de escolher entre as cinco opções, convém definir o que o teste precisa provar. Ele pode checar só o formato do campo, ou o fluxo completo do cadastro, com envio para outro sistema.</p>
+<p>Quem quer uma massa confiável pode seguir uma ordem simples. Gerar dez números numéricos e cinco alfanuméricos. Incluir ao menos duas filiais. Guardar tudo em um arquivo com a origem de cada um. E repetir a validação no próprio sistema, com a máscara e sem ela.</p>
+<p>Entre os sites para gerar CNPJ válido para teste, nenhum dos cinco resolve sozinho todos os passos, e a ordem da lista é editorial, já que a pauta nasce da Ferramentas QMIX. A melhor escolha depende do uso: letras e validação em lote apontam para o CNPJ com Letras, rotina manual rápida para o Gerador NV, e consulta eventual para qualquer um dos demais.</p>
+<aside class="pe-leia-meio"><h2>Leia também</h2><ul><li><a href="/modo-desenvolvedor-da-tv-samsung/">Modo desenvolvedor da TV Samsung: como ativar, para que serve e riscos</a></li><li><a href="/rotativo-do-cartao-chega-a-442-ao-ano-durigan-promete-mudar/">Rotativo do cartão chega a 442% ao ano; Durigan promete mudar isso</a></li></ul></aside>

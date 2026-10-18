@@ -33,7 +33,9 @@ Corpo do POST: `project_name`, `urls` (1 a 9999), `notify_on_status_change`,
 
 1. **Sempre o modo mais barato.** `apex_mode_enabled: false`, que custa
    **1 crédito por URL**. O modo Apex custa 3 e devolve 1 se não indexar, e
-   **não deve ser usado**, nem quando o saldo estiver folgado.
+   **não deve ser usado** por iniciativa própria, nem quando o saldo estiver folgado.
+   Exceção: quando ele escrever "Apex" no pedido (fez isso em 16/10/2026 para o
+   terceironome), usar Apex só naquele envio.
 2. **Só enviar quando ele solicitar.** Nunca submeter por iniciativa própria ao
    publicar conteúdo novo, nem como parte de uma rotina de fim de projeto.
    Publicar e indexar são passos separados, e o segundo é decisão dele.
@@ -76,3 +78,5 @@ A SerpAPI **não indexa**, ela lê a SERP. Ver [[serpapi-chave]].
 | 16/08/2026 | 1106050, agoranoticias atualizados | 32 | 32 créditos | 839 |
 | 16/08/2026 | 1106174, clickinfohub Manutenção (novos) | 30 | 30 créditos | 809 |
 | 09/10/2026 | 1242944, rotaambiental paginas novas (locais + produtos) | 20 | 20 créditos | 1811 |
+| 16/10/2026 | 1257364, terceironome páginas não indexadas, **Apex por ordem expressa dele** | 8 | 24 créditos | 202 |
+| 16/10/2026 | 1257515, terceironome blog (índice + 10 artigos), Apex por ordem dele | 11 | 33 créditos | 169 |

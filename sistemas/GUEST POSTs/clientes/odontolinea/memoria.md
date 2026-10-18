@@ -116,3 +116,64 @@ também com aprovação implícita.
 
 Arquivos em `materias/`: n_L01 a n_L10 .html/.meta.json/.webp, manifest_portalengine.json,
 publica_portalengine.js, spec_L04.json, payload_L03.json, payload_L06.json.
+
+## Reescrita VERSÃO 2 (16/10/2026): subtítulos numerados por clínica
+
+Operador reprovou o lote: "Ficou tudo muito igual, muito padrão". Pediu, além da `<ol>`
+de resumo, uma sequência de 5 subtítulos numerados (`<h2>` ou `<h3>`, "1. Nome da
+Clínica" a "5. Nome da Clínica", OdontoLinea sempre "1.") com parágrafos próprios e
+ângulo diferente por clínica, e seções finais ligadas ao tema específico do artigo
+(não mais o bloco genérico "como escolher" clonado entre os 10). Título, slug, keyword
+e imagem mantidos iguais em todos os 10, só o corpo HTML mudou.
+
+**Republicação in-place nos 3 mecanismos:**
+
+- **7 itens portal-engine** (L01/L02/L05/L07/L08/L09/L10): manifest reconstruído com o
+  HTML novo e reenviado via `publica_portalengine.js` (o próprio `publishArticle` faz
+  update porque slug/site já existiam) + `pages_pack.js` por site para o Cloudflare
+  Pages. Todos OK de primeira.
+- **L03 (medicinageriatrica, api-custom):** a rota `wp-json/zbfd-api/v1/artigos` só
+  faz INSERT (slug incremental `-2`, `-3`...), nunca update. Corrigido com UPDATE
+  direto no Postgres (`artigos.conteudo`, dollar-quoted, tabela via Drizzle) e
+  `pm2 reload`. **Armadilha nova:** o reload trocou o PATH e o `npm start` caiu no
+  node 18.19.1 do sistema em vez do node 20.20.2 do nvm que o processo original usava,
+  e o app ficou em crash-loop. Corrigido com `pm2 delete` + `pm2 start
+  ecosystem.config.js --only medicinageriatrica-web` com
+  `PATH=/root/.nvm/versions/node/v20.20.2/bin:$PATH` explícito antes do pm2.
+- **L06 (saudevitalidade, api-custom em clinicas-vps):** mesma lógica, rota
+  `/api/antonio/artigos` também é INSERT-only (`uniqueArtigoSlug` por título). UPDATE
+  direto na tabela `artigos.conteudo_html` (Postgres, dollar-quoted) + `pm2 reload
+  saudevit-web` (aqui seguro, node default do host já é 22). Neste host o pm2 só
+  responde com `PATH=/root/.bun/bin:$PATH` (instalação via bun, não nvm/npm -g).
+- **L04 (revistamsaude, Payload):** confirmado que `pub_coe.mjs` aborta em slug
+  duplicado (não atualiza). HTML novo convertido para blocos Lexical com um parser
+  Python (mesmo formato de `pub_coe.mjs`: `p`/`h2`/`h3`/`ol`, parágrafo com link
+  misto) e gravado via `UPDATE materias SET conteudo=...` (script Node ad-hoc,
+  reusando os mesmos helpers de montagem de nó Lexical do `pub_coe.mjs`), depois
+  `POST /api/revalidate` com o header de sempre.
+
+Todos os 10 confirmados ao vivo com os 5 subtítulos numerados (mix de `<h2>` e `<h3>`
+conforme o template de cada portal) e o link da OdontoLinea intacto. URLs inalteradas
+(mesmo slug/título de antes). Aguardando conferência do operador.
+
+
+## Lote 3 (16/10/2026): 12 listas para as páginas de serviço, rede própria
+
+Pedido do operador após análise do Search Console (90 dias): mais backlinks para páginas de serviço. Portais da lista "ao vivo" do operador (Caindo/Recuperando/Indexando), 4 com editoria Saúde Bucal. Âncoras com variação Brasília/DF; títulos só Taguatinga. Plano: materias/plano-od2.json, brief BRIEF-OD2.md. **Não enviado ao Apex.**
+
+| data | portal | âncora | destino | URL |
+|---|---|---|---|---|
+| 16/10/2026 | saudeacessivel.com.br | dentista que faz canal no DF | https://odontolinea.com.br/dentista-especialista-canal-em-taguatinga/ | https://saudeacessivel.com.br/saude-bucal/melhores-clinicas-de-tratamento-de-canal-em-taguatinga/ |
+| 16/10/2026 | saudicas.com.br | extração de siso em Brasília | https://odontolinea.com.br/especialista-de-extracao-do-siso-em-brasilia/ | https://saudicas.com.br/saude-bucal/melhores-clinicas-de-extracao-de-siso-em-taguatinga/ |
+| 16/10/2026 | revistatopsaude.com.br | periodontista em Brasília | https://odontolinea.com.br/periodontia-em-taguatinga/ | https://revistatopsaude.com.br/saude-bucal/melhores-clinicas-de-periodontia-em-taguatinga/ |
+| 16/10/2026 | saudeemalta.net.br | dentista que faz restauração | https://odontolinea.com.br/tratamento-restaurador-em-taguatinga/ | https://saudeemalta.net.br/melhores-clinicas-para-restauracao-de-dentes-em-taguatinga/ |
+| 16/10/2026 | azulmagazine.com.br | lentes de contato dental em Brasília | https://odontolinea.com.br/lentes-de-contato-dental-em-taguatinga/ | https://azulmagazine.com.br/saude/melhores-clinicas-de-lentes-de-contato-dental-em-taguatinga/ |
+| 16/10/2026 | www.matogrossosaude.com.br | tratamentos odontológicos em Taguatinga | https://odontolinea.com.br/tratamentos/ | https://www.matogrossosaude.com.br/melhores-clinicas-de-tratamentos-odontologicos-em-taguatinga/ |
+| 16/10/2026 | www.olharmoderno.com | cirurgia oral menor | https://odontolinea.com.br/cirurgia-oral-menor-em-taguatinga/ | https://www.olharmoderno.com/melhores-clinicas-de-cirurgia-oral-menor-em-taguatinga/ |
+| 16/10/2026 | revistarumo.com.br | dentista de estética dental | https://odontolinea.com.br/dentista-estetica-em-taguatinga/ | https://revistarumo.com.br/saude-e-beleza/melhores-clinicas-de-estetica-dental-em-taguatinga/ |
+| 16/10/2026 | publisherbrasil.com.br | implante dentário no DF | https://odontolinea.com.br/implante-dentario-em-taguatinga/ | https://publisherbrasil.com.br/saude/melhores-clinicas-para-fazer-implante-dentario-em-taguatinga/ |
+| 16/10/2026 | editaldeconcurso.net | ortodontista em Brasília | https://odontolinea.com.br/ortodontia-em-taguatinga/ | https://editaldeconcurso.net/melhores-clinicas-de-ortodontia-em-taguatinga/ |
+| 16/10/2026 | jornalconceito.com | prótese dentária no DF | https://odontolinea.com.br/protese-dentaria-em-taguatinga/ | https://jornalconceito.com/melhores-clinicas-para-fazer-protese-dentaria-em-taguatinga/ |
+| 16/10/2026 | agencianacionaldenoticias.com | clareamento dental em Brasília | https://odontolinea.com.br/clareamento-dental-em-taguatinga/ | https://agencianacionaldenoticias.com/melhores-clinicas-para-clareamento-dental-em-taguatinga/ |
+
+**Pendências de fato:** Sarkis Odontologia pode ficar em Vicente Pires (não em Taguatinga Centro) e WA Odontologia Integrada não apareceu em fonte aberta; os 10 artigos do lote 2 citam ambas como no briefing. WhatsApp: o site mostra (61) 99633-8025 em alguns trechos e o briefing traz (61) 99888-5212; os textos não trazem WhatsApp.

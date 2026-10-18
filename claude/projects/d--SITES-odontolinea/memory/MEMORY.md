@@ -1,1 +1,2 @@
+- [Responder em português](responder-em-portugues.md) — toda resposta ao usuário em pt-BR, nunca em inglês
 - [Hospedagem odontolinea](odontolinea-hospedagem.md) — Hostinger, export estatico + blog WP em /blog, como editar sem quebrar

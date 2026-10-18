@@ -1,0 +1,21 @@
+{
+ "fonte": "pexels",
+ "id": "pexels:4379292",
+ "arquivo_url": "https://images.pexels.com/photos/4379292/pexels-photo-4379292.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+ "pagina_url": "https://www.pexels.com/photo/shallow-focus-photo-of-a-woman-in-activewear-doing-push-ups-4379292/",
+ "largura": 6720,
+ "altura": 4480,
+ "autor": "https://kaboompics.com/",
+ "autor_url": "https://www.pexels.com/@karola-g",
+ "licenca": "Pexels License",
+ "licenca_url": "https://www.pexels.com/license/",
+ "descricao": "Woman doing push-ups on a yoga mat outside with dumbbells and a smartphone nearby.",
+ "credito_obrigatorio": false,
+ "arquivo_local": "D:/SISTEMAS/GUEST POSTs/clientes/calistenia/materias\\melhores-sites-de-treino-para-iniciantes-sem-academia.webp",
+ "dimensoes_finais": [
+  1216,
+  640
+ ],
+ "recortada": true,
+ "termo_busca": "beginner exercising outdoors at home bodyweight workout mat"
+}

@@ -1,0 +1,242 @@
+[
+ {
+  "n": "G01",
+  "site": "euvo",
+  "domain": "euvo.com.br",
+  "cat_id": "101",
+  "sufixo": 12,
+  "meta_title_max": 48,
+  "slug": "teste-iptv-5-horas-como-usar-cada-hora-para-decidir",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "teste IPTV 5 horas",
+  "kw": "teste iptv 5 horas",
+  "titulo": "Teste IPTV 5 horas: como usar cada hora para decidir",
+  "angulo": "Plano hora a hora para um teste de 5 horas: primeira hora instalação e canais, meio do teste horário de pico, última hora decisão com ficha de notas. Portal com muito conteúdo técnico de IPTV (buffering, rede): ângulo de organização do tempo.",
+  "internos": [
+   {
+    "href": "/iptv-com-buffering-o-que-esta-por-tras/",
+    "titulo": "IPTV com buffering: por que trava no meio"
+   },
+   {
+    "href": "/iptv-por-cabo-ou-wifi/",
+    "titulo": "IPTV por cabo ou Wi-Fi: como a rede da casa decide a estabilidade da TV"
+   }
+  ]
+ },
+ {
+  "n": "G02",
+  "site": "euvo",
+  "domain": "euvo.com.br",
+  "cat_id": "101",
+  "sufixo": 12,
+  "meta_title_max": 48,
+  "slug": "teste-iptv-30-minutos-o-que-da-para-checar-logo-no-inicio",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "teste IPTV 30 minutos",
+  "kw": "teste iptv 30 minutos",
+  "titulo": "Teste IPTV 30 minutos: o que dá para checar logo no início",
+  "angulo": "O que 30 minutos mostram (abertura do app, troca de canal, imagem, som, retomada depois de queda) e o que NÃO mostram (estabilidade no pico, catálogo completo). Triagem rápida antes de gastar o tempo de um teste longo. Diferente do artigo de roteiro de 3 dias do mesmo portal.",
+  "internos": [
+   {
+    "href": "/mensagem-de-erro-no-player-de-iptv/",
+    "titulo": "Mensagem de erro no player de IPTV: o que cada tipo indica e como registrar"
+   },
+   {
+    "href": "/roteador-para-iptv-o-que-olhar/",
+    "titulo": "Roteador para IPTV: o que olhar"
+   }
+  ]
+ },
+ {
+  "n": "G03",
+  "site": "revistadeducao",
+  "domain": "revistadeducao.com.br",
+  "cat_id": "3364",
+  "sufixo": 22,
+  "meta_title_max": 38,
+  "slug": "teste-iptv-10-horas-como-dividir-o-tempo-entre-dia-e-noite",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "teste IPTV 10 horas",
+  "kw": "teste iptv 10 horas",
+  "titulo": "Teste IPTV 10 horas: como dividir o tempo entre dia e noite",
+  "angulo": "Como repartir 10 horas de teste entre manhã/tarde e a noite de maior uso, o que medir em cada faixa, quando parar. Tom explicativo de portal educacional. O portal já tem 'Quanto tempo dura um teste IPTV' (interno): não repetir, complementar.",
+  "internos": [
+   {
+    "href": "/tecnologia/teste-iptv-quanto-tempo-dura/",
+    "titulo": "Quanto tempo dura um teste IPTV"
+   },
+   {
+    "href": "/dica/aplicativo-iptv-para-tv-philips/",
+    "titulo": "Melhor Aplicativo IPTV para TV Philips: Guia Completo"
+   }
+  ]
+ },
+ {
+  "n": "G04",
+  "site": "revistadeducao",
+  "domain": "revistadeducao.com.br",
+  "cat_id": "3364",
+  "sufixo": 22,
+  "meta_title_max": 38,
+  "slug": "teste-iptv-liberado-na-hora-o-que-e-e-o-que-checar-antes",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "teste IPTV liberado na hora",
+  "kw": "teste iptv liberado na hora",
+  "titulo": "Teste IPTV liberado na hora: o que é e o que checar antes",
+  "angulo": "O que significa acesso liberado na hora (liberação automática x atendimento humano), o que verificar antes de aceitar (quem fornece, prazo, telas, o que acontece no fim), por que rapidez não prova qualidade. Diferente do artigo 'gerador de teste IPTV' do mesmo portal (foco aqui é a promessa de rapidez).",
+  "internos": [
+   {
+    "href": "/tecnologia/como-escolher-o-aplicativo-de-iptv-para-tv-box/",
+    "titulo": "App de IPTV para TV Box: qual escolher"
+   },
+   {
+    "href": "/iptv/iptv-de-filmes-e-series/",
+    "titulo": "IPTV de filmes e séries: o que esperar do catálogo antes de assinar"
+   }
+  ]
+ },
+ {
+  "n": "G05",
+  "site": "desassossegada",
+  "domain": "desassossegada.com.br",
+  "cat_id": "123",
+  "sufixo": 17,
+  "meta_title_max": 43,
+  "slug": "teste-iptv-20-horas-um-plano-em-tres-blocos-de-observacao",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "teste IPTV 20 horas",
+  "kw": "teste iptv 20 horas",
+  "titulo": "Teste IPTV 20 horas: um plano em três blocos de observação",
+  "angulo": "Plano de 20 horas em três blocos (abertura, pico, catálogo) com registro por bloco. Diferente dos artigos 'teste 48 horas' e 'teste no celular' do mesmo portal. Portal de bem-estar e cultura: tom calmo, organização do hábito de avaliar.",
+  "internos": [
+   {
+    "href": "/iptv-pode-voltar-a-funcionar/",
+    "titulo": "IPTV pode voltar a funcionar? Como saber se vale esperar ou trocar"
+   },
+   {
+    "href": "/renovar-o-iptv/",
+    "titulo": "Renovar o IPTV: o que avaliar antes de pagar, como negociar e evitar golpes"
+   }
+  ]
+ },
+ {
+  "n": "G06",
+  "site": "desassossegada",
+  "domain": "desassossegada.com.br",
+  "cat_id": "123",
+  "sufixo": 17,
+  "meta_title_max": 43,
+  "slug": "teste-iptv-36-horas-um-dia-e-meio-para-ver-o-que-muda",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "teste IPTV 36 horas",
+  "kw": "teste iptv 36 horas",
+  "titulo": "Teste IPTV 36 horas: um dia e meio para ver o que muda",
+  "angulo": "Um dia e meio de teste: comparar noite de dia útil com manhã de folga, o que muda quando a rede da casa está cheia, quando o servidor sobrecarrega. Foco em comparação entre dois momentos, não em ficha de blocos (outro artigo do portal).",
+  "internos": [
+   {
+    "href": "/servidor-trocado/",
+    "titulo": "Servidor trocado no IPTV: como reconhecer os sinais e atualizar o aparelho"
+   },
+   {
+    "href": "/organizar-listas-de-iptv/",
+    "titulo": "Organizar listas de IPTV: favoritos, grupos, ordem e categorias ocultas"
+   }
+  ]
+ },
+ {
+  "n": "G07",
+  "site": "oiempreendedores",
+  "domain": "oiempreendedores.com.br",
+  "cat_id": "101",
+  "sufixo": 20,
+  "meta_title_max": 40,
+  "slug": "teste-iptv-sem-pagar-o-que-e-gratis-e-o-que-vira-cobranca",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "teste IPTV sem pagar",
+  "kw": "teste iptv sem pagar",
+  "titulo": "Teste IPTV sem pagar: o que é grátis e o que vira cobrança",
+  "angulo": "Teste grátis x cobrança escondida: renovação automática, cobrança por ativação, taxa de instalação, o que perguntar antes de aceitar, o que guardar de prova. Ângulo do pequeno empreendedor/consumidor. Diferente do artigo 'sem cartão' do mesmo portal (aquele trata de dados de pagamento; este trata do que pode virar cobrança depois).",
+  "internos": [
+   {
+    "href": "/iptv/revender-iptv-vale-a-pena/",
+    "titulo": "Revender IPTV vale a pena? Margem, risco e o que ninguém conta"
+   },
+   {
+    "href": "/iptv/iptv-para-empresas/",
+    "titulo": "IPTV para empresas: licença de exibição, suporte e infraestrutura para o negócio"
+   }
+  ]
+ },
+ {
+  "n": "G08",
+  "site": "qmixdigital",
+  "domain": "qmixdigital.com.br",
+  "cat_id": "101",
+  "sufixo": 15,
+  "meta_title_max": 45,
+  "slug": "teste-iptv-com-4k-como-confirmar-a-resolucao-de-verdade",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "teste IPTV com 4K",
+  "kw": "teste iptv com 4k",
+  "titulo": "Teste IPTV com 4K: como confirmar a resolução de verdade",
+  "angulo": "Como confirmar se a imagem é mesmo 4K durante um teste: requisitos de rede e aparelho, informações do aplicativo, diferença entre canal 4K e imagem ampliada, o que checar na TV. Sem números de banda que você não confirmou em fonte oficial.",
+  "internos": [
+   {
+    "href": "/iptv/iptv-no-4g/",
+    "titulo": "IPTV no 4G: quanto de dados gasta por hora e como usar como reserva da rede"
+   },
+   {
+    "href": "/iptv/suporte-iptv/",
+    "titulo": "Suporte IPTV: como testar o atendimento antes de pagar e que respostas evitar"
+   }
+  ]
+ },
+ {
+  "n": "G09",
+  "site": "viajenodetalhe",
+  "domain": "viajenodetalhe.com.br",
+  "cat_id": "101",
+  "sufixo": 19,
+  "meta_title_max": 41,
+  "slug": "teste-iptv-1-hora-o-que-checar-na-chegada-ao-hotel",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "teste IPTV 1 hora",
+  "kw": "teste iptv 1 hora",
+  "titulo": "Teste IPTV 1 hora: o que checar na chegada ao hotel",
+  "angulo": "Teste curto de 1 hora no destino (Wi-Fi do hotel, TV do quarto, celular no 4G): o que dá para checar na primeira hora e o que fica para depois. Diferente do artigo 'teste 72 horas antes de viajar' do mesmo portal (este é o teste CURTO NO DESTINO).",
+  "internos": [
+   {
+    "href": "/dicas/assistir-iptv-viajando-o-que-muda/",
+    "titulo": "Assistir IPTV viajando"
+   },
+   {
+    "href": "/iptv/iptv-no-onibus-de-viagem/",
+    "titulo": "IPTV no ônibus de viagem: preparo, dados, bateria e conteúdo para baixar"
+   }
+  ]
+ },
+ {
+  "n": "G10",
+  "site": "adonline",
+  "domain": "adonline.com.br",
+  "cat_id": "2",
+  "sufixo": 11,
+  "meta_title_max": 49,
+  "slug": "teste-iptv-futebol-como-medir-atraso-e-travamento-no-jogo",
+  "destino": "https://www.geracaoconsciente.com.br/",
+  "ancora": "Teste Consciente",
+  "kw": "teste iptv futebol",
+  "titulo": "Teste IPTV futebol: como medir atraso e travamento no jogo",
+  "angulo": "Como usar um jogo de futebol como teste: atraso em relação à TV aberta (marcar um lance), travamento nos momentos de pico, queda de resolução, áudio fora de sincronia. A âncora é a marca 'Teste Consciente' (como a página se apresenta); a keyword do texto é 'teste iptv futebol'.",
+  "internos": [
+   {
+    "href": "/atraso-na-transmissao-iptv/",
+    "titulo": "Atraso na transmissão IPTV: de onde vêm os segundos"
+   },
+   {
+    "href": "/jitter-no-iptv/",
+    "titulo": "Jitter no IPTV: o que é, como medir e como reduzir a variação em casa"
+   }
+  ]
+ }
+]

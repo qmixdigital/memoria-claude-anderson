@@ -1,0 +1,21 @@
+{
+ "fonte": "pexels",
+ "id": "pexels:39757465",
+ "arquivo_url": "https://images.pexels.com/photos/39757465/pexels-photo-39757465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+ "pagina_url": "https://www.pexels.com/photo/young-man-exercising-on-outdoor-pull-up-bars-39757465/",
+ "largura": 6240,
+ "altura": 4160,
+ "autor": "Bohdan Hyrovych",
+ "autor_url": "https://www.pexels.com/@bohdan-hyrovych-796614725",
+ "licenca": "Pexels License",
+ "licenca_url": "https://www.pexels.com/license/",
+ "descricao": "A man doing pull-ups on outdoor fitness bars, captured from behind in a park setting.",
+ "credito_obrigatorio": false,
+ "arquivo_local": "D:/SISTEMAS/GUEST POSTs/clientes/calistenia/materias\\melhores-sites-de-treino-de-costas-sem-equipamento-de-academia.webp",
+ "dimensoes_finais": [
+  1216,
+  640
+ ],
+ "recortada": true,
+ "termo_busca": "inverted row bodyweight pull bar outdoor"
+}

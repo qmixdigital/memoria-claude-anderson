@@ -25,6 +25,17 @@ Memória do cliente para matérias em portais de terceiros. Criada em 14/10/2026
 | seguidores por 50 centavos | https://enjai.social/comprar-seguidores-por-50-centavos | webcitizen.com.br | 14/10/2026 |
 | Instagram barato | https://enjai.social/insta-barato | teixeiraemfoco.com.br | 14/10/2026 |
 
+| curtidas brasileiras no Instagram | https://enjai.social/comprar-curtidas-instagram | achixclip.com.br | 16/10/2026 |
+| comprar curtidas | https://enjai.social/comprar-curtidas-instagram | itapenoticias.com.br | 16/10/2026 |
+| curtidas para Instagram | https://enjai.social/comprar-curtidas-instagram | astralassessoria.com.br | 16/10/2026 |
+| comprar seguidores baratos | https://enjai.social/comprar-seguidores-por-1-real | xthor.com.br | 16/10/2026 |
+| comprar seguidores Instagram | https://enjai.social/comprar-seguidores-por-1-real | apucarananoticias.com.br | 16/10/2026 |
+| views grátis no TikTok | https://enjai.social/visualizacoes-tiktok-gratis | alertasocial.com.br | 16/10/2026 |
+| comprar likes no Facebook | https://enjai.social/comprar-curtidas-facebook | luiziananoticias.com.br | 16/10/2026 |
+| comprar seguidores no TikTok | https://enjai.social/seguidores-tiktok-barato | agenciadivulgar.com.br | 16/10/2026 |
+| seguidores para ganhar dinheiro no Instagram | https://enjai.social/blog/quantos-seguidores-para-ganhar-dinheiro-instagram | noticiasdetimon.com.br | 16/10/2026 |
+| ver curtidas do Instagram | https://enjai.social/blog/como-ver-curtidas-do-instagram | portalgc.com.br | 16/10/2026 |
+
 Nunca repetir a mesma âncora mais de 2 vezes no total.
 
 ## Temas e ângulos já cobertos
@@ -39,6 +50,17 @@ Nunca repetir a mesma âncora mais de 2 vezes no total.
 - Reposição de seguidores: o que significa e como funciona (jornalpreliminar.com.br, 14/10/2026)
 - Quanto custa um seguidor em 2026 e por que o preço varia (webcitizen.com.br, 14/10/2026)
 - Como crescer no Instagram com pouco dinheiro em 2026 (teixeiraemfoco.com.br, 14/10/2026)
+
+- Curtidas brasileiras no Instagram: por que a origem do perfil importa (achixclip.com.br, 16/10/2026)
+- Perfil de loja no Instagram: quantas curtidas passam confiança (itapenoticias.com.br, 16/10/2026)
+- Sinais de engajamento do Instagram: o que pesa em 2026 (astralassessoria.com.br, 16/10/2026)
+- Como funciona um painel SMM e quando ele faz sentido (xthor.com.br, 16/10/2026)
+- Instagram para pequenos comércios de Apucarana: por onde começar (apucarananoticias.com.br, 16/10/2026)
+- Programa de Recompensas do TikTok: o que é visualização qualificada (alertasocial.com.br, 16/10/2026)
+- Alcance orgânico no Facebook: o que pequenos comércios podem esperar (luiziananoticias.com.br, 16/10/2026)
+- Seguidores no TikTok: risco de punição e custo real de crescer (agenciadivulgar.com.br, 16/10/2026)
+- Quantos seguidores para ganhar dinheiro no Instagram em 2026 (noticiasdetimon.com.br, 16/10/2026)
+- Como ver curtidas do Instagram e como esconder as suas (portalgc.com.br, 16/10/2026)
 
 ---
 
@@ -58,3 +80,24 @@ Nunca repetir a mesma âncora mais de 2 vezes no total.
 | 14/10/2026 | teixeiraemfoco.com.br | Instagram barato | https://enjai.social/insta-barato | https://conteudo.qmix.com.br/42f63ac08fdcff0379654ad9c67cacc9 | https://teixeiraemfoco.com.br/rede-social/crescer-no-instagram-com-pouco-dinheiro/ |
 
 Cópias em `materias/<slug>.json`, `materias/<slug>.html` e `materias/<slug>.webp`.
+
+## Lote 2 (16/10/2026): 10 matérias publicadas direto nos sites do Jean
+
+Pauta aprovada pelo operador após análise do GSC (destinos por oportunidade: /comprar-curtidas-instagram pos. 48, /comprar-seguidores-por-1-real pos. 16, /visualizacoes-tiktok-gratis pos. 28, /comprar-curtidas-facebook, /seguidores-tiktok-barato, 2 blogs com impressão e pouco clique). Publicado por /tmp/publica_enjai2.ts em gnd-motor (cofre + criarPost, sem tags, legenda 'Imagem de AUTOR via BANCO'; achixclip, astralassessoria e agenciadivulgar não imprimem a legenda da destacada, então ela foi também para um <figcaption> no início do texto). Plano em materias/plano-lote2.json, resultado em materias/resultado-lote2.json.
+
+| data | portal | âncora | URL do cliente | publicação | URL publicada |
+|---|---|---|---|---|---|
+| 16/10/2026 | achixclip.com.br | curtidas brasileiras no Instagram | https://enjai.social/comprar-curtidas-instagram | publicado direto pelo MCP (gnd-motor), post 3848 | https://achixclip.com.br/redes-sociais/curtidas-brasileiras-no-instagram/ |
+| 16/10/2026 | itapenoticias.com.br | comprar curtidas | https://enjai.social/comprar-curtidas-instagram | publicado direto pelo MCP (gnd-motor), post 2861 | https://itapenoticias.com.br/negocios/perfil-de-loja-no-instagram/ |
+| 16/10/2026 | astralassessoria.com.br | curtidas para Instagram | https://enjai.social/comprar-curtidas-instagram | publicado direto pelo MCP (gnd-motor), post 4618 | https://astralassessoria.com.br/redes-sociais/sinais-de-engajamento-do-instagram/ |
+| 16/10/2026 | xthor.com.br | comprar seguidores baratos | https://enjai.social/comprar-seguidores-por-1-real | publicado direto pelo MCP (gnd-motor), post 3433 | https://xthor.com.br/como-funciona-um-painel-smm/ |
+| 16/10/2026 | apucarananoticias.com.br | comprar seguidores Instagram | https://enjai.social/comprar-seguidores-por-1-real | publicado direto pelo MCP (gnd-motor), post 8078 | https://apucarananoticias.com.br/negocios/instagram-para-pequenos-comercios-de-apucarana/ |
+| 16/10/2026 | alertasocial.com.br | views grátis no TikTok | https://enjai.social/visualizacoes-tiktok-gratis | publicado direto pelo MCP (gnd-motor), post 5242 | https://alertasocial.com.br/rede-social/programa-de-recompensas-do-tiktok/ |
+| 16/10/2026 | luiziananoticias.com.br | comprar likes no Facebook | https://enjai.social/comprar-curtidas-facebook | publicado direto pelo MCP (gnd-motor), post 2220 | https://luiziananoticias.com.br/rede-social/alcance-organico-no-facebook/ |
+| 16/10/2026 | agenciadivulgar.com.br | comprar seguidores no TikTok | https://enjai.social/seguidores-tiktok-barato | publicado direto pelo MCP (gnd-motor), post 3928 | https://agenciadivulgar.com.br/redes-sociais/seguidores-no-tiktok-risco-e-custo/ |
+| 16/10/2026 | noticiasdetimon.com.br | seguidores para ganhar dinheiro no Instagram | https://enjai.social/blog/quantos-seguidores-para-ganhar-dinheiro-instagram | publicado direto pelo MCP (gnd-motor), post 2714 | https://noticiasdetimon.com.br/rede-social/quantos-seguidores-para-ganhar-dinheiro-no-instagram/ |
+| 16/10/2026 | portalgc.com.br | ver curtidas do Instagram | https://enjai.social/blog/como-ver-curtidas-do-instagram | publicado direto pelo MCP (gnd-motor), post 2736 | https://portalgc.com.br/rede-social/como-ver-curtidas-do-instagram/ |
+
+**Pendências factuais deixadas pelos redatores:** menus do app do Instagram (E10) sem fonte oficial, definição de 5 s da visualização qualificada (E06) só em imprensa, regras do TikTok sobre seguidores comprados (E08) só via Malwarebytes. O site enjai.social deu 522 em 16/10 durante o reinício do servidor e voltou no mesmo dia.
+
+**Correção do operador (16/10/2026):** o lote 2 foi REPROVADO por faltar link interno (a skill manda perguntar/inserir no Passo 0; eu pulei). Refeito atualizando os 10 posts nas mesmas URLs: parágrafo `<strong>Rótulo:</strong> <a>..</a> e <a>..</a>.` antes do último parágrafo, 2 links internos por post (mesmo domínio, no tema, sem link para concorrente, todos HTTP 200), validador com --links 3. Rótulos usados: achixclip Leia também, itapenoticias Veja também, astralassessoria Mais sobre o tema, xthor Continue lendo, apucarananoticias Relacionadas, alertasocial Leia mais, luiziananoticias Veja também, agenciadivulgar Leia também, noticiasdetimon Relacionadas, portalgc Mais sobre o tema. Arquivos: materias/interno_lote2.py e materias/<slug>.v2.html. LIÇÃO: em lote novo do enjai, definir os links internos ANTES de escrever (Passo 0).

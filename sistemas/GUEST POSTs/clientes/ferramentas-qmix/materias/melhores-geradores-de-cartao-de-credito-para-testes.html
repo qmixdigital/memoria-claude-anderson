@@ -1,0 +1,77 @@
+<p>O formulário de checkout está pronto, o botão de pagar funciona e falta só testar o campo do cartão. Quem digita 1234 e vê o formulário aceitar sabe que há um problema de validação, e quem digita uma sequência qualquer de dezesseis dígitos e vê o formulário rejeitar descobre outro. Para exercitar esses casos sem usar dado de ninguém, desenvolvedores recorrem a geradores de cartão de crédito para teste. O <a href="https://ferramentas.qmix.com.br/gerador-de-cartao-de-credito">gerador de cartão de crédito para teste</a> da Ferramentas QMIX é um deles, e esta lista compara cinco opções.</p>
+
+<p>Um aviso vale desde já: os números gerados nessas páginas não pertencem a nenhuma conta, não têm limite e são inúteis numa compra de verdade.</p>
+
+<h2>Geradores de cartão de crédito para teste: a ordem da lista</h2>
+
+<ol>
+<li>Ferramentas QMIX</li>
+<li>Invertexto</li>
+<li>GeraFácil</li>
+<li>FakeForge</li>
+<li>Stripe (cartões de teste da documentação)</li>
+</ol>
+
+<p>A ordem é editorial. Nem todo item é gerador no sentido estrito, e a melhor escolha depende da etapa do projeto: validação visual de formulário, testes automatizados ou integração com um gateway de pagamento.</p>
+
+<h3>1. Ferramentas QMIX</h3>
+
+<p>A página oferece dez bandeiras na mesma tela: Visa, MasterCard, American Express, Elo, Diners Club, Discover, JCB, HiperCard, Aura e enRoute. O usuário escolhe a bandeira, define o formato, com ou sem espaços, e a quantidade, de um a vinte cartões por vez. Cada cartão sai com número, validade futura, CVV e nome fictício de titular.</p>
+
+<p>O texto explica que o número é montado com o prefixo da bandeira, dígitos aleatórios e um dígito verificador calculado pela fórmula de Luhn. O processamento é local no navegador e o uso é gratuito, sem cadastro. A própria ferramenta foi criada, segundo a página, para uso interno em projetos de desenvolvimento e depois aberta ao público. Entre as aplicações citadas estão a validação de formulários de checkout, a homologação de sistemas, os testes de ponta a ponta com Cypress, Playwright ou Selenium e as demonstrações para clientes com dados fictícios.</p>
+
+<p>O limite está no destino. Gateways de pagamento em modo de teste costumam ter números próprios, e um cartão genérico serve para validar o formulário, não para passar por uma aprovação simulada.</p>
+
+<h3>2. Invertexto</h3>
+
+<p>Minimalista. A tela do Invertexto lista tipos como Visa de dezesseis dígitos, Visa de treze dígitos (formato antigo), MasterCard, Discover, Diners Club, enRoute, JCB e Voyager, além da American Express, e devolve número, validade e código com um clique.</p>
+
+<p>Um aviso curto informa que os cartões passam pelo Luhn, são falsos, ficam inutilizáveis em compras online e que a ferramenta se destina a testes de software. O site não detalha o funcionamento e não traz explicação longa, o que agrada a quem quer o dado e nada mais. Elo e HiperCard, bandeiras comuns no Brasil, não aparecem na lista.</p>
+
+<h3>3. GeraFácil</h3>
+
+<p>O GeraFácil integra um conjunto de geradores e validadores brasileiros, de CPF a CNPJ, de senha a UUID. A ferramenta de cartão cobre quatro bandeiras: Visa, Mastercard, Amex e Elo. Dá para deixar em modo aleatório, formatar com espaços e copiar o número.</p>
+
+<p>A página descreve o processo, detalha a conta do dígito verificador em quatro passos e informa que o processamento é totalmente local e que o uso não tem limite. Com apenas quatro bandeiras, ela atende bem quem testa checkout para o público brasileiro e deixa de fora quem precisa de bandeiras menos comuns.</p>
+
+<h3>4. FakeForge</h3>
+
+<p>A proposta aqui mira quem automatiza. O FakeForge gera cartões de cinco bandeiras, incluindo Elo e Hipercard, com Luhn, validade, CVV e nome do titular, em lotes de até 100. A página também oferece uma API REST com 50 chamadas gratuitas por dia, além de uma área de preços para volumes maiores.</p>
+
+<p>Como complemento, o site publica guias por linguagem, com exemplos em Python, Node.js, cURL, Jest e pytest, e um guia comparando cartão gerado com cartão de teste da Stripe. Para uso eventual, esse volume de recursos é demais. Para integração contínua, é o que falta nas páginas mais simples.</p>
+
+<h3>5. Stripe, cartões de teste</h3>
+
+<p>Não é gerador, e sim a documentação de testes da Stripe, listada porque resolve o problema que os geradores genéricos não resolvem. A página explica que os cartões de teste simulam cenários como pagamento aprovado, recusado, erro por dados inválidos, contestação e autenticação 3D Secure, e que eles devem ser usados com as chaves de API de teste.</p>
+
+<p>A documentação avisa que ambiente de teste não serve para teste de carga, pela limitação de fluxo. Funciona só com a Stripe, o que é uma restrição óbvia, e exige conta no serviço para obter as chaves.</p>
+
+<h2>O que o dígito de Luhn garante e o que deixa de fora</h2>
+
+<p>O último dígito de um cartão é um verificador. Começando pela direita, dobra-se cada segundo dígito, subtrai-se nove de qualquer resultado maior que nove, soma-se tudo e confere-se se o total é múltiplo de dez. Número que passa nessa conta é considerado estruturalmente válido.</p>
+
+<p>Isso quer dizer pouco. A validação matemática pega erro de digitação, nada mais. Ela não consulta banco, não verifica limite e não confirma que o cartão existe. Por isso um número gerado passa no formulário de uma loja e é recusado na hora da cobrança.</p>
+
+<h2>Gerador genérico ou cartão de sandbox</h2>
+
+<p>Para campos de formulário, máscaras, mensagens de erro e testes visuais, um gerador genérico basta. Já para simular a aprovação de uma compra num ambiente de homologação, o gateway costuma pedir os próprios números de teste, publicados na documentação de cada serviço.</p>
+
+<p>Na prática, as duas coisas se complementam: o gerador alimenta o formulário, e o cartão do sandbox fecha o fluxo de ponta a ponta.</p>
+
+<h2>Dado de teste no dia a dia de quem programa</h2>
+
+<p>Cartões fictícios aparecem em três momentos da rotina. Primeiro vem o desenvolvimento do formulário, quando a máscara do campo, a troca de bandeira e a mensagem de erro precisam de exemplos. Depois entra a automação: um robô de teste preenche o checkout dezenas de vezes por dia e consome lotes de números. Por fim, a demonstração para o cliente, em que mostrar um cartão real num telão seria um erro grave.</p>
+
+<p>Em equipes pequenas, é comum guardar uma lista fixa de números de teste num arquivo do projeto. Isso evita surpresas quando um teste falha e ninguém sabe se o problema foi o número ou o código. Quando o volume cresce, gerar sob demanda pela API de um serviço passa a compensar. Aí a escolha da página deixa de ser questão de gosto e vira questão de custo e de limite diário de chamadas.</p>
+
+<h2>Limites legais e de uso</h2>
+
+<p>Os números de cartão gerados passam só na validação matemática. Não pertencem a pessoas nem a contas reais. Ficam fora de qualquer compra, de cadastro em serviço real, de abertura de conta e de tentativa de se passar por alguém, e usar dado gerado para fraude é crime. O uso certo é em ambiente de desenvolvimento, por programadores, testadores e estudantes de programação.</p>
+
+<p>Também não convém colar o cartão verdadeiro de ninguém em ferramenta de teste. A regra simples é separar o mundo: dado fictício no ambiente de teste, dado real só em produção.</p>
+
+<h2>Fechamento prático</h2>
+
+<p>Entre os geradores de cartão de crédito para teste da lista, o critério é a etapa do trabalho. Quem valida formulário e máscara de campo resolve com qualquer um dos quatro geradores. Quem automatiza testes encontra mais recursos num serviço com API. E quem integra com um gateway deve partir da documentação do próprio gateway, porque ali estão os números que o sandbox aceita.</p>
+
+<aside class="pe-leia-meio"><h2>Leia também</h2><ul><li><a href="/certificado-digital-no-linux/">Certificado digital no Linux: A1 no navegador, A3 no token e falhas</a></li><li><a href="/maquininha-para-quem-esta-comecando-a-vender-no-cartao/">Maquininha para quem esta comecando a vender no cartao</a></li></ul></aside>

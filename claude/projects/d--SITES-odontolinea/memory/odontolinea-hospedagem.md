@@ -1,8 +1,11 @@
 ---
 name: odontolinea-hospedagem
-description: Onde o odontolinea.com.br roda de verdade (Hostinger, export estatico + blog WP em /blog) e como mexer sem quebrar
+description: "Onde o odontolinea.com.br roda de verdade (Hostinger, export estatico + blog WP em /blog) e como mexer sem quebrar"
 metadata:
+  node_type: memory
   type: project
+  originSessionId: 7abc300e-e3b3-40c7-802d-12a719fd77eb
+  modified: 2026-10-16T21:27:37.769Z
 ---
 
 odontolinea.com.br NAO roda o projeto Next local como servidor. No ar: Hostinger (alias SSH `hostinger-odontolinea`, user u890169415, porta 65002, chave <<REMOVIDO>>), pasta `~/domains/odontolinea.com.br/public_html`.
@@ -21,3 +24,12 @@ odontolinea.com.br NAO roda o projeto Next local como servidor. No ar: Hostinger
 - CRO do Dr. Irvington: 9224 Taguatinga DF. Avaliacoes Google reais: 4,9 com 167. Perfil Maps cid=5637479444022987347.
 - Chave IndexNow em Documents\APIs\indexnow-odontolinea.txt (arquivo na raiz do site). Sitemap enviado ao Google (conta seoqmix tem permissao total) e ao Bing.
 **Pendente:** Dr. Irvington revisar posts de saude antes de qualquer selo "revisado por"; backlinks para as paginas de tratamento; depoimentos reais nas paginas.
+
+## 16/10/2026
+- WhatsApp atual da clinica: (61) 99633-8025 (5561996338025). Trocado em todo o site, blog (tema, 13 posts, opcoes), llms.txt, planilha de backlinks e projeto local. O numero tem o mesmo tamanho do anterior: so assim da para trocar direto em HTML/JS do Next (os dados internos `T<hex>,` carregam o tamanho em bytes; mudar o tamanho de um texto ali derruba a pagina com "This page couldn't load"). Para mudar texto de tamanho diferente, rebuildar pelo codigo-fonte.
+- SEMPRE testar paginas do Next num Chrome headless (`--dump-dom`, procurar "couldn't load" e "Connection closed") antes de dar o deploy por concluido. HTTP 200 nao basta.
+- Zona Cloudflare do odontolinea NAO esta nas contas do QMIX (provavelmente CDN da Hostinger): nao da para limpar cache por la. Chunks JS ficam em cache ate 7 dias.
+- Avaliacoes reais do Google em `lib/avaliacoes.ts` (fonte unica da secao e do schema da home). Depoimentos antigos eram falsos e foram removidos.
+- Politica de privacidade ganhou secao de WhatsApp, com CNPJ 23.273.833/0001-21 e clinicaodontolinea@gmail.com.
+- Home redesenhada (direcao A "Clareza confiante" aprovada pelo dono; serif/marfim/arco foi reprovado): azul #003058 + laranja #F09000, Bricolage Grotesque + Hanken Grotesk, CSS proprio em `app/odl.css` (classes `oa-`). Header/rodape novos valem para o site todo; rodape tem "Desenvolvido por QMIX Digital" (obrigatorio). Mockup em `D:\tmp\work\mock\direcao-a.html`.
+- Armadilha: Tailwind v4 poe utilitarias em `@layer utilities`; CSS sem layer vence qualquer layer. Regras de elemento do odl.css (`:where(.oa) a` etc.) ficam dentro de `@layer base`, senao apagam `text-white` dos botoes das paginas internas.

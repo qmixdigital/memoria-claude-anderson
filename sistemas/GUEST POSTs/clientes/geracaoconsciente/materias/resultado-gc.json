@@ -1,0 +1,52 @@
+{
+ "G01": {
+  "site": "euvo",
+  "url": "https://euvo.com.br/teste-iptv-5-horas-como-usar-cada-hora-para-decidir/",
+  "status": "publish"
+ },
+ "G02": {
+  "site": "euvo",
+  "url": "https://euvo.com.br/teste-iptv-30-minutos-o-que-da-para-checar-logo-no-inicio/",
+  "status": "publish"
+ },
+ "G03": {
+  "site": "revistadeducao",
+  "url": "https://revistadeducao.com.br/iptv/teste-iptv-10-horas-como-dividir-o-tempo-entre-dia-e-noite/",
+  "status": "publish"
+ },
+ "G04": {
+  "site": "revistadeducao",
+  "url": "https://revistadeducao.com.br/iptv/teste-iptv-liberado-na-hora-o-que-e-e-o-que-checar-antes/",
+  "status": "publish"
+ },
+ "G05": {
+  "site": "desassossegada",
+  "url": "https://desassossegada.com.br/teste-iptv-20-horas-um-plano-em-tres-blocos-de-observacao/",
+  "status": "publish"
+ },
+ "G06": {
+  "site": "desassossegada",
+  "url": "https://desassossegada.com.br/teste-iptv-36-horas-um-dia-e-meio-para-ver-o-que-muda/",
+  "status": "publish"
+ },
+ "G07": {
+  "site": "oiempreendedores",
+  "url": "https://oiempreendedores.com.br/iptv/teste-iptv-sem-pagar-o-que-e-gratis-e-o-que-vira-cobranca/",
+  "status": "publish"
+ },
+ "G08": {
+  "site": "qmixdigital",
+  "url": "https://qmixdigital.com.br/iptv/teste-iptv-com-4k-como-confirmar-a-resolucao-de-verdade/",
+  "status": "publish"
+ },
+ "G09": {
+  "site": "viajenodetalhe",
+  "url": "https://viajenodetalhe.com.br/iptv/teste-iptv-1-hora-o-que-checar-na-chegada-ao-hotel/",
+  "status": "publish"
+ },
+ "G10": {
+  "site": "adonline",
+  "url": "https://adonline.com.br/teste-iptv-futebol-como-medir-atraso-e-travamento-no-jogo/",
+  "status": "publish"
+ }
+}

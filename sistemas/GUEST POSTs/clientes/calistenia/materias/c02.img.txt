@@ -1,0 +1,21 @@
+{
+ "fonte": "pexels",
+ "id": "pexels:4803708",
+ "arquivo_url": "https://images.pexels.com/photos/4803708/pexels-photo-4803708.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+ "pagina_url": "https://www.pexels.com/photo/a-man-using-a-parallel-bars-in-exercising-4803708/",
+ "largura": 6000,
+ "altura": 4000,
+ "autor": "Ketut Subiyanto",
+ "autor_url": "https://www.pexels.com/@ketut-subiyanto",
+ "licenca": "Pexels License",
+ "licenca_url": "https://www.pexels.com/license/",
+ "descricao": "Man performing gymnastics on parallel bars in a park. Fitness and strength training outdoors.",
+ "credito_obrigatorio": false,
+ "arquivo_local": "D:/SISTEMAS/GUEST POSTs/clientes/calistenia/materias\\melhores-apps-e-sites-de-treino-de-forca-para-quem-joga-futebol.webp",
+ "dimensoes_finais": [
+  1216,
+  640
+ ],
+ "recortada": true,
+ "termo_busca": "outdoor gym parallel bars park empty"
+}

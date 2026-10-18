@@ -1,12 +1,33 @@
 {
- "projeto": 1256490,
- "antes": 241,
- "depois": 236,
- "urls": [
-  "https://alertasocial.com.br/saude/dentista-taguatinga-primeira-consulta/",
-  "https://noticiasdetimon.com.br/saude/siso-quando-tirar-recuperacao/",
-  "https://luiziananoticias.com.br/saude/implante-dentario-quem-pode-fazer/",
-  "https://jornalbahia.com.br/saude/dentista-em-brasilia-e-no-df/",
-  "https://noticiasdaserra.com.br/saude/como-escolher-clinica-odontologica-confianca/"
+ "lotes": [
+  {
+   "projeto": 1256490,
+   "antes": 241,
+   "depois": 236,
+   "urls": [
+    "https://alertasocial.com.br/saude/dentista-taguatinga-primeira-consulta/",
+    "https://noticiasdetimon.com.br/saude/siso-quando-tirar-recuperacao/",
+    "https://luiziananoticias.com.br/saude/implante-dentario-quem-pode-fazer/",
+    "https://jornalbahia.com.br/saude/dentista-em-brasilia-e-no-df/",
+    "https://noticiasdaserra.com.br/saude/como-escolher-clinica-odontologica-confianca/"
+   ]
+  },
+  {
+   "projeto": 1256566,
+   "antes": 236,
+   "depois": 226,
+   "urls": [
+    "https://seuguiadesaude.com.br/melhores-clinicas-odontologicas-taguatinga/",
+    "https://viajenodetalhe.com.br/saude/melhores-clinicas-extracao-dente-siso-taguatinga/",
+    "https://medicinageriatrica.com.br/melhores-clinicas-periodontia-taguatinga/",
+    "https://revistamsaude.com.br/materia/melhores-clinicas-tratamento-canal-taguatinga",
+    "https://euvo.com.br/melhores-clinicas-implante-dentario-taguatinga/",
+    "https://saudevitalidade.com.br/melhores-clinicas-de-ortodontia-em-taguatinga",
+    "https://desassossegada.com.br/melhores-clinicas-clareamento-dental-taguatinga/",
+    "https://oiempreendedores.com.br/saude/melhores-clinicas-restauracao-dentaria-taguatinga/",
+    "https://ebookcult.com.br/saude/melhores-clinicas-odontologicas-protese-dentaria-taguatinga/",
+    "https://exquisito.com.br/saude/melhores-clinicas-facetas-porcelana-taguatinga/"
+   ]
+  }
  ]
 }

@@ -43,6 +43,7 @@
 - [reference_dominios_sites.md](reference_dominios_sites.md) — Domínios reais: enjai = enjai.social (desde 2026-10-03); portuga = portugaldigital.com.br (não portuga.com.br); truenet/skipark = *.com.br
 
 ## Reference (novo)
+- [reference_incidente_pm2_boot_srv1166087.md](reference_incidente_pm2_boot_srv1166087.md) — 2026-10-16: reboot do srv1166087 + unidade pm2-root (forking/PIDFile, PM2 6 x 7) em loop matando todos os apps; corrigido p/ oneshot; usar pm2 do nvm p/ jlist; o que é normal ficar stopped; watchdogs em cron
 - [reference_bug_partial_check_smm.md](reference_bug_partial_check_smm.md) — Bug corrigido 2026-09-21: cron check-smm não tratava "partial" → pedidos pagos presos; fix nos 4 sites (marca ERRO + alerta ENTREGA PARCIAL, sem risco de reenvio). OpenPix caiu 4min, sem fallback (MP desabilitado)
 - [reference_bug_upsell_subscription.md](reference_bug_upsell_subscription.md) — Bug corrigido 2026-08-15: upsell adicionava produto de assinatura (posts futuros) sem dados obrigatórios → cobrava e falhava no painel; fix #1 (upsell coleta) + #2 (guard checkout) em portuga/enjai/truenet; skipark já desativava
 - [project_app_pwa.md](project_app_pwa.md) — App PWA instalável (barra topo + cupom 10% ao instalar/abrir + SW/offline + push + avisos Telegram) — completo no truenet 2026-08-21, replicar nos outros 3

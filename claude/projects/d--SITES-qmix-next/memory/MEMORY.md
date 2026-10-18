@@ -29,7 +29,7 @@
 - [Regras dos sites do Jean](feedback-jean-credito-foto.md) — caption "Imagem de {Autor} via {Banco}", sem tags, pauta forçada em site nichado vai para Geral; MCP roda no gnd-motor (systemd wp-mcp.service)
 - [Aba Apostas](qmix-apostas-precos.md) — VENDAS PAUSADAS desde 28/09/2026 (MP 1.394); preços por dono (rede R$180, Jean/Yon/Diego R$240, 1news/tvprime/horanews só especial R$1.600); compra via produto espelho inativo; pendente: levar os 3 para a lista normal
 - [Mobile: admin e listas](qmix-mobile-admin-e-listas.md) — gaveta do admin, rotulador genérico de tabelas → cards, cards em grid nas listas, barra de compra na ficha; script de medição em D:\tmp\mob-shots.mjs
-- [Ferramentas: GSC 2026-09](qmix-ferramentas-gsc-2026-09.md) — 6 páginas otimizadas com consultas do GSC (letras 400k imp, símbolos 273k), FAQs estavam vazias, regra de sobreposição de SERP para página nova vs H2; pendente páginas novas
+- [Ferramentas: GSC 2026-09](qmix-ferramentas-gsc-2026-09.md) — 18/09 otimizou 6 páginas; re-medição 16/10: letras-diferentes perdeu 73% depois das páginas irmãs letras-personalizadas e fontes-de-letras (19/09); símbolos sem irmã cresceu 31%; regra: irmã só com overlap de SERP 0 a 4
 - [Estudo de preço de backlink](qmix-estudo-preco-backlink.md) — artigo de citação (18/09/2026) com 447 portais; números-chave, tabelas no Lexical, schema Dataset, como refazer o corte
 - [Diagnóstico /comprar-backlinks 2026-09](qmix-comprar-backlinks-diagnostico-2026-09.md) — oscilação 5↔34 não é autoridade (239 domínios); âncoras sujas por 301, página pesada, LCP regrediu com fontes do redesign (corrigido); inlineCss do Next triplica o CSS, não usar
 - [Auditoria Ahrefs 2026-09](qmix-ahrefs-auditoria-2026-09.md) — links para 301 (header /ferramentas, 400 hrefs nas tools, 66 artigos), OG type/site_name/locale por layout (Next não faz merge), metas; órfãs são as fichas de portal, por decisão
@@ -55,4 +55,9 @@
 - [Nicho do portal manda](feedback-nicho-do-portal.md) — tema da matéria tem que casar com o nicho do portal; erro de 13/10 (terapia em portal de carros) corrigido nos pedidos 147 e 148; sobra vira reserva
 - [Só parceiros no painel](feedback-so-parceiros-no-painel.md) — domínio de matéria do painel tem que estar nas listas rodrigo/gustavo/lucas.txt; rede própria só com ordem (erro do pedido 150, 13/10/2026)
 - [Campanha QMIX Parceria](qmix-campanha-parceria.md) — listas de agências de backlinks em portais parceiros, sem link externo, 6 sites fixos, uma fatura única a preço de custo (desde 15/10/2026)
+- [Reboot da VPS e dump do PM2](vps-reboot-pm2-dump-stale.md) — 16/10/2026: dump velho deixou metade dos sites em 502 após reinício da Hostinger; unidade systemd corrigida; sempre `pm2 save`; checklist pós-reboot
 - [Sem Word](feedback-sem-word.md) — não gerar nem oferecer .docx das matérias; foi exceção única em 14/10/2026
+- [Página sites para pequenas empresas](qmix-pagina-sites-pequenas-empresas.md) — serviço criado 16/10/2026; pacotes Landing Page R$ 498 / Site Completo R$ 990 / Site com Blog R$ 1.490 (sem domínio nem e-mail, hospedagem grátis em HTML); promessas feitas na página
+- [Página comprar conteúdo para blog](qmix-pagina-conteudo-para-blog.md) — serviço da redatora criado 16/10/2026: 10/R$439, 20/R$790, 50/R$1.875, 100/R$2.987; premissas assumidas (ajustes, tamanho, pautas de teste) a confirmar
+- [Guias de SEO ficam no blog](feedback-guias-seo-no-blog.md) — artigo sobre SEO vai para qmix.com.br/blog mesmo quando apoia uma ferramenta; subdomínio só recebe guia da ferramenta em si (16/10/2026)
+- [Página sites para médicos](qmix-pagina-sites-para-medicos.md) — /sites-para-medicos criada 16/10/2026, mesmos pacotes de pequenas empresas; prova só com especialidades/cidades reais (Goiânia, BH), regras do CFM prometidas
