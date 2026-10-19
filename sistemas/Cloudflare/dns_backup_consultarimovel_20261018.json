@@ -1,0 +1,47 @@
+[
+ {
+  "id": "af35fcda0eeaa7ff661517ff682ecde3",
+  "name": "consultarimovel.ia.br",
+  "type": "A",
+  "content": "77.37.69.175",
+  "proxiable": true,
+  "proxied": false,
+  "ttl": 120,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-06T05:49:45.955064Z",
+  "modified_on": "2026-09-06T05:49:45.955064Z"
+ },
+ {
+  "id": "7fa6bdf8b2e3585dde4b49ec20d31504",
+  "name": "www.consultarimovel.ia.br",
+  "type": "A",
+  "content": "77.37.69.175",
+  "proxiable": true,
+  "proxied": false,
+  "ttl": 120,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-06T05:49:46.386637Z",
+  "modified_on": "2026-09-06T05:49:46.386637Z"
+ },
+ {
+  "id": "41eefd5f51225655a9db2396bfb3ddf2",
+  "name": "consultarimovel.ia.br",
+  "type": "TXT",
+  "content": "\"google-site-verification=<<REMOVIDO>>\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 3600,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-08T05:29:54.290415Z",
+  "modified_on": "2026-09-08T05:29:54.290415Z"
+ }
+]

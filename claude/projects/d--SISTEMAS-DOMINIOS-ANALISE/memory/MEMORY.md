@@ -1,1 +1,2 @@
 - [Análise de lista de domínios na Moz](analise-lista-dominios-moz.md) — script standalone, custo de cota, filtro de diretórios/PBN, ranking de 09/10/2026
+- [Funil lista Registro.br + Common Crawl](funil-lista-registrobr-commoncrawl.md) — 157k para 6,6k dominios, custo de cota, o que falhou

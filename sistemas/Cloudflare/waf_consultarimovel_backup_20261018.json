@@ -1,0 +1,41 @@
+{
+ "description": "",
+ "id": "dae6f1bcfd2e4038b0485f423e512f6e",
+ "kind": "zone",
+ "last_updated": "2026-09-07T15:23:42.605128Z",
+ "name": "default",
+ "phase": "http_request_firewall_custom",
+ "rules": [
+  {
+   "action": "skip",
+   "action_parameters": {
+    "phases": [
+     "http_ratelimit",
+     "http_request_firewall_managed"
+    ],
+    "products": [
+     "waf",
+     "rateLimit",
+     "securityLevel",
+     "bic",
+     "uaBlock",
+     "hot",
+     "zoneLockdown"
+    ],
+    "ruleset": "current"
+   },
+   "description": "ALLOW verified search bots (Googlebot/Bing) - nunca bloquear",
+   "enabled": true,
+   "expression": "(cf.client.bot)",
+   "id": "6051facd0a424bcba21a680d70cf94d4",
+   "last_updated": "2026-09-07T15:23:42.605128Z",
+   "logging": {
+    "enabled": true
+   },
+   "ref": "6051facd0a424bcba21a680d70cf94d4",
+   "version": "1"
+  }
+ ],
+ "source": "firewall_custom",
+ "version": "1"
+}

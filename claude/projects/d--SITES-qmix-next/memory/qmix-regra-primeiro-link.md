@@ -24,3 +24,5 @@ reordenado nesse dia para o marketplace ser o primeiro link.
 tem de apontar para matéria de **cliente nosso** publicada naquele portal, nunca para matéria qualquer do acervo.
 Fonte: `backlinks_clientes` filtrando pelo domínio do portal (as URLs de dm.com.br com id numérico antigo
 redirecionam para `/brasil/<slug>/`; conferir 200 e h1). Inserir inline, depois do link do cliente.
+
+**Blog da QMIX sem /comprar-backlinks obrigatório (Anderson, 18/10/2026):** "não está dando resultado, não precisa mais seguir essa ordem". Nos artigos do próprio blog, não forçar o primeiro link para /comprar-backlinks nem mencionar compra de backlinks; linkar pelo que servir ao leitor (fonte primária, artigo interno relacionado). A regra do link do cliente primeiro em matéria de portal continua valendo. Primeiro caso: artigo 157 queda-de-ranking-falsa, 1º link virou o estudo da Nozzle.

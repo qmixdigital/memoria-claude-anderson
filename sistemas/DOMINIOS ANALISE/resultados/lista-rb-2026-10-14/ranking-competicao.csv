@@ -1,0 +1,138 @@
+﻿rank;dominio;no_ranking_cc;DA;spam;dominios_linkando;gov_br;edu_br;associacoes;cooperativas;noticias;wikipedia;gov_exterior;edu_exterior;lixo_top20;score;links_gov_br;links_edu_br;links_associacoes;links_cooperativas;links_noticias;links_wikipedia;links_exterior;obs
+1;saudebrasilportal.com.br;sim;37;1;359;4;3;0;0;4;0;0;0;3;339.6;www.gov.br (94), senado.leg.br (92), saude.gov.br (90), ipea.gov.br (75);usp.br (92), ufsc.br (88), uerj.br (75);;;uol.com.br (95), jusbrasil.com.br (87), correiodopovo.com.br (76), poder360.com.br (75);;;
+2;saudeweb.com.br;sim;41;5;867;1;4;0;0;1;1;0;0;7;227.8;ans.gov.br (79);usp.br (92), fiocruz.br (77), ufpr.br (75), unesp.br (72);;;terra.com.br (94);pt.wikipedia.org (95);;
+3;cinemarias.com.br;sim;38;1;201;2;1;1;0;5;0;0;0;1;219.4;tjes.jus.br (59), www.es.gov.br (57);ufes.br (66);vermelho.org.br (70);;uol.com.br (95), ebc.com.br (93), metropoles.com (90), brasildefato.com.br (75), folhavitoria.com.br (69);;;
+4;rea.net.br;sim;43;0;1560;1;1;0;0;5;2;0;1;3;191.4;mec.gov.br (93);usp.br (92);;;uol.com.br (95), abril.com.br (95), estadao.com.br (94), ebc.com.br (93), gazetadopovo.com.br (93);wikimedia.org (95), pt.wikipedia.org (95);harvard.edu (93);
+5;btmais.com.br;sim;27;10;294;1;3;0;0;1;1;0;0;2;186.6;mprj.mp.br (62);fiocruz.br (77), fapesp.br (71), ufvjm.edu.br (56);;;terra.com.br (94);pt.wikipedia.org (95);;
+6;eufacocultura.com.br;sim;47;6;343;0;0;0;0;11;1;0;0;3;176.6;;;;;uol.com.br (95), abril.com.br (95), globo.com (95), ig.com.br (94), ebc.com.br (93), clicrbs.com.br (93), r7.com (93), catracalivre.com.br (93), correiobraziliense.com.br (92), metropoles.com (90), otempo.com.br (88);pt.wikipedia.org (95);;
+7;resellerweb.com.br;sim;32;3;219;0;3;0;0;1;1;0;0;3;149.6;;ufsc.br (88), ufba.br (68), ufrn.br (67);;;uol.com.br (95);pt.wikipedia.org (95);;
+8;webbusca.com.br;sim;32;8;1433;1;1;0;0;0;5;0;0;1;149.6;mec.gov.br (93);unicamp.br (76);;;;en.wikipedia.org (98), pt.wikipedia.org (95), zh.wikipedia.org (91), fa.wikipedia.org (86), uk.wikipedia.org (79);;
+9;guiboratto.com.br;sim;42;5;719;0;0;0;0;1;9;0;0;0;135.6;;;;;uol.com.br (95);en.wikipedia.org (98), es.wikipedia.org (96), fr.wikipedia.org (95), pt.wikipedia.org (95), de.wikipedia.org (94), ru.wikipedia.org (94), pl.wikipedia.org (93), ja.wikipedia.org (93), it.wikipedia.org (93);;
+10;revistaetcetera.com.br;sim;36;3;251;0;2;0;0;1;1;0;1;2;123.8;;unifesp.br (69), ifto.edu.br (56);;;uol.com.br (95);pt.wikipedia.org (95);uprrp.edu (71);
+11;data.app.br;nao;80;0;26382;0;0;0;0;1;4;0;0;0;116;;;;;uol.com.br (95);en.wikipedia.org (98), es.wikipedia.org (96), wikimedia.org (95), pt.wikipedia.org (95);;
+12;ajuda.ia.br;nao;49;0;2937;0;1;0;0;1;2;1;0;1;113.2;;usp.br (92);;;uol.com.br (95);en.wikipedia.org (98), pt.wikipedia.org (95);ca.gov (93);
+13;rafael.ia.br;nao;49;0;2937;0;1;0;0;1;2;1;0;1;113.2;;usp.br (92);;;uol.com.br (95);en.wikipedia.org (98), pt.wikipedia.org (95);ca.gov (93);
+14;solar.ia.br;nao;49;0;2937;0;1;0;0;1;2;1;0;1;113.2;;usp.br (92);;;uol.com.br (95);en.wikipedia.org (98), pt.wikipedia.org (95);ca.gov (93);
+15;bicharia.com.br;sim;40;45;187;0;0;0;0;11;0;0;0;2;108;;;;;uol.com.br (95), abril.com.br (95), globo.com (95), estadao.com.br (94), terra.com.br (94), clicrbs.com.br (93), catracalivre.com.br (93), jusbrasil.com.br (87), jovempan.com.br (87), diariodepernambuco.com.br (79), hypeness.com.br (77);;;spam>30
+16;rubyconf.com.br;sim;37;19;782;0;0;0;0;5;1;0;0;1;98.6;;;;;globo.com (95), ig.com.br (94), r7.com (93), tecmundo.com.br (93), canaltech.com.br (88);en.wikipedia.org (98);;
+17;cybervida.com.br;sim;45;0;1151;0;0;0;0;4;1;0;0;6;88;;;;;uol.com.br (95), globo.com (95), ig.com.br (94), tecmundo.com.br (93);pt.wikipedia.org (95);;
+18;lojasleader.com.br;sim;46;2;1384;0;0;0;0;3;1;0;0;2;80.8;;;;;abril.com.br (95), globo.com (95), ig.com.br (94);pt.wikipedia.org (95);;
+19;fabrica9.com.br;sim;44;20;1672;0;0;0;0;4;0;0;0;3;80.2;;;;;uol.com.br (95), abril.com.br (95), globo.com (95), guiadasemana.com.br (80);;;
+20;ota.com.br;sim;33;9;238;0;0;0;0;1;4;0;0;5;73.4;;;;;uol.com.br (95);en.wikipedia.org (98), fr.wikipedia.org (95), pt.wikipedia.org (95), wikidata.org (80);;
+21;guiadeecommerce.com.br;sim;34;4;318;0;0;0;0;3;1;0;0;3;70.2;;;;;globo.com (95), ig.com.br (94), tecmundo.com.br (93);wikibooks.org (88);;
+22;blah.com.br;sim;27;0;45;0;0;0;0;4;0;0;0;2;67.6;;;;;uol.com.br (95), tecmundo.com.br (93), catracalivre.com.br (93), hypeness.com.br (77);;;
+23;damares.com.br;nao;3;0;26;0;0;0;0;0;6;0;0;1;61.4;;;;;;fr.wikipedia.org (95), wikimedia.org (95), wikidata.org (80), af.wikipedia.org (64), arz.wikipedia.org (55), mzn.wikipedia.org (50);;
+24;estudioweb.com.br;sim;44;4;389;0;0;0;0;1;1;0;1;2;60.2;;;;;terra.com.br (94);pt.wikipedia.org (95);mit.edu (93);
+25;clubedodesconto.com.br;sim;32;8;729;0;0;0;0;3;0;0;0;3;58.6;;;;;uol.com.br (95), globo.com (95), tecmundo.com.br (93);;;
+26;fmm.com.br;sim;18;8;43;1;0;0;0;0;0;0;0;5;49.4;justica.pr.gov.br (54);;;;;;;
+27;embu.art.br;sim;23;7;28;0;0;2;0;0;0;0;0;1;47.4;;;sisemsp.org.br (46), iteia.org.br (40);;;;;
+28;documenta.com.br;sim;19;1;84;0;1;0;0;0;0;0;0;10;40.2;;ufscar.br (75);;;;;;perfil com muito diretorio
+29;forrozeiros.com.br;sim;20;16;165;0;0;0;0;0;2;0;0;7;29;;;;;;pt.wikipedia.org (95), fi.wikipedia.org (76);;
+30;mandarim.com.br;sim;28;47;46;0;1;1;0;1;0;0;0;0;28;;ufrj.br (74);mobilize.org.br (67);;r7.com (93);;;spam>30
+31;seguroautofacil.com.br;sim;22;2;626;0;0;0;0;1;0;0;0;3;26.6;;;;;uol.com.br (95);;;
+32;endometriose.com.br;nao;15;19;46;0;0;1;0;0;0;0;0;1;26;;;larvinicius.org.br (20);;;;;
+33;rappicard.com.br;sim;32;9;125;0;0;0;0;0;0;0;0;3;22.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+34;riquezanatural.com.br;sim;29;1;431;0;0;0;0;0;0;0;1;6;22.2;;;;;;;tp.edu.tw (81);sem gov/edu/assoc/noticia/wiki
+35;gravadora.com.br;sim;16;12;82;0;0;0;0;0;0;0;1;2;15.8;;;;;;;mbl.edu (62);sem gov/edu/assoc/noticia/wiki
+36;aria.com.br;sim;17;24;94;0;0;0;0;0;0;0;0;2;11.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+37;quasar.com.br;sim;20;41;40;0;1;0;0;0;0;0;2;2;9.8;;ufba.br (68);;;;;umich.edu (92), uoregon.edu (86);spam>30
+38;3darts.com.br;nao;14;0;56;0;0;0;0;0;0;0;0;2;9.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+39;acalento.com.br;nao;16;0;53;0;0;0;0;0;0;0;0;4;8.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+40;curriculofacil.com.br;sim;15;0;34;0;0;0;0;0;0;0;0;4;8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+41;tripulacao.com.br;sim;16;0;44;0;0;0;0;0;0;0;0;6;6.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+42;whiz.com.br;sim;15;0;18;0;0;0;0;0;0;0;0;7;5;;;;;;;;sem gov/edu/assoc/noticia/wiki
+43;acheiadvogados.com.br;nao;7;0;46;0;0;0;0;0;0;0;0;1;4.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+44;agridoce.com.br;nao;5;0;16;0;0;0;0;0;0;0;0;0;4;;;;;;;;sem gov/edu/assoc/noticia/wiki
+45;dracena.com.br;nao;6;19;13;0;0;0;0;0;0;0;0;1;3.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+46;agilmed.com.br;nao;11;9;11;0;0;0;0;0;0;0;0;6;2.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+47;erome.com.br;nao;3;17;2;0;0;0;0;0;0;0;0;0;2.4;;;;;;;;sem gov/edu/assoc/noticia/wiki
+48;creditopj.com.br;nao;5;0;15;0;0;0;0;0;0;0;0;2;2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+49;amortiza.com.br;nao;2;0;1;0;0;0;0;0;0;0;0;0;1.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+50;atomy.com.br;nao;2;0;3;0;0;0;0;0;0;0;0;0;1.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+51;festeiro.com.br;nao;2;0;5;0;0;0;0;0;0;0;0;0;1.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+52;lista.com.br;nao;7;0;21;0;0;0;0;0;0;0;0;4;1.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+53;lune.com.br;nao;2;8;3;0;0;0;0;0;0;0;0;0;1.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+54;vww.com.br;nao;2;0;3;0;0;0;0;0;0;0;0;0;1.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+55;yab.com.br;nao;2;0;3;0;0;0;0;0;0;0;0;0;1.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+56;expoeducacao.com.br;nao;1;0;1;0;0;0;0;0;0;0;0;0;0.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+57;hospitalday.com.br;nao;1;12;1;0;0;0;0;0;0;0;0;0;0.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+58;raid.com.br;nao;1;0;3;0;0;0;0;0;0;0;0;0;0.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+59;xet.com.br;nao;1;0;1;0;0;0;0;0;0;0;0;0;0.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+60;agarra.com.br;nao;2;0;7;0;0;0;0;0;0;0;1;6;0.6;;;;;;;nttu.edu.tw (45);sem gov/edu/assoc/noticia/wiki
+61;dicom.com.br;nao;2;0;2;0;0;0;0;0;0;0;0;1;0.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+62;foxmotors.com.br;nao;2;10;2;0;0;0;0;0;0;0;0;1;0.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+63;netpay.com.br;nao;2;0;13;0;0;0;0;0;0;0;0;1;0.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+64;smartlockers.com.br;nao;2;0;4;0;0;0;0;0;0;0;0;1;0.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+65;arcondicionados.com.br;nao;3;0;7;0;0;0;0;0;0;0;0;2;0.4;;;;;;;;sem gov/edu/assoc/noticia/wiki
+66;100verme.com.br;nao;1;5;1;0;0;0;0;0;0;0;0;1;-0.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+67;agendamentomedico.com.br;nao;1;14;1;0;0;0;0;0;0;0;0;1;-0.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+68;ditador.com.br;nao;1;0;1;0;0;0;0;0;0;0;0;1;-0.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+69;farmaciafacil.com.br;nao;1;0;2;0;0;0;0;0;0;0;0;1;-0.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+70;getpay.com.br;nao;1;0;2;0;0;0;0;0;0;0;0;1;-0.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+71;ongs.com.br;nao;1;0;2;0;0;0;0;0;0;0;0;1;-0.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+72;paranacity.com.br;nao;1;2;1;0;0;0;0;0;0;0;0;1;-0.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+73;toronto.com.br;nao;1;19;1;0;0;0;0;0;0;0;0;1;-0.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+74;gosh.com.br;sim;2;0;4;0;0;0;0;0;0;0;0;2;-0.4;;;;;;;;sem gov/edu/assoc/noticia/wiki
+75;iaagro.com.br;nao;3;9;8;0;0;0;0;0;0;0;0;3;-0.6;;;;;;;;sem gov/edu/assoc/noticia/wiki
+76;comeca.com.br;nao;4;0;17;0;0;0;0;0;0;0;0;4;-0.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+77;2dev.com.br;nao;6;23;58;0;0;0;0;0;0;0;0;7;-2.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+78;imortal.com.br;nao;1;0;4;0;0;0;0;0;0;0;0;3;-2.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+79;maquinadesorvete.com.br;nao;2;0;19;0;0;0;0;0;0;0;0;5;-3.4;;;;;;;;sem gov/edu/assoc/noticia/wiki
+80;redes.com.br;nao;2;1;16;0;0;0;0;0;0;0;0;5;-3.4;;;;;;;;sem gov/edu/assoc/noticia/wiki
+81;magianegra.com.br;nao;4;11;23;0;0;0;0;0;0;0;0;7;-3.8;;;;;;;;sem gov/edu/assoc/noticia/wiki
+82;sitepronto.com.br;nao;2;1;5;0;0;0;0;0;0;0;0;6;-4.4;;;;;;;;sem gov/edu/assoc/noticia/wiki
+83;covid.com.br;nao;1;0;2;0;0;0;0;0;0;0;0;6;-5.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+84;buni.com.br;nao;1;20;16;0;0;0;0;0;0;0;0;8;-7.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+85;largada.com.br;nao;2;0;9;0;0;0;0;0;0;0;0;9;-7.4;;;;;;;;sem gov/edu/assoc/noticia/wiki
+86;vibex.com.br;nao;1;1;3;0;0;0;0;0;0;0;0;9;-8.2;;;;;;;;sem gov/edu/assoc/noticia/wiki
+87;arborea.com.br;nao;2;24;11;0;0;0;0;0;0;0;0;10;-8.4;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+88;alugaaqui.com.br;nao;5;7;15;0;0;0;0;0;0;0;0;13;-9;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+89;arrancada.com.br;nao;6;3;15;0;0;0;0;0;0;0;0;14;-9.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+90;brutos.com.br;nao;6;0;17;0;0;0;0;0;0;0;0;15;-10.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+91;imortais.com.br;nao;1;0;9;0;0;0;0;0;0;0;0;11;-10.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+92;nutrabelle.com.br;nao;1;0;4;0;0;0;0;0;0;0;0;11;-10.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+93;qor.com.br;nao;1;0;10;0;0;0;0;0;0;0;0;11;-10.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+94;alugame.com.br;nao;2;3;13;0;0;0;0;0;0;0;0;12;-10.4;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+95;zielinski.com.br;nao;2;0;19;0;0;0;0;0;0;0;0;12;-10.4;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+96;yag.com.br;nao;3;0;21;0;0;0;0;0;0;0;0;13;-10.6;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+97;1sp.com.br;nao;1;0;11;0;0;0;0;0;0;0;0;12;-11.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+98;cpo.com.br;nao;1;25;10;0;0;0;0;0;0;0;0;12;-11.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+99;imed.com.br;nao;4;0;18;0;0;0;0;0;0;0;0;15;-11.8;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+100;1box.com.br;nao;1;0;10;0;0;0;0;0;0;0;0;13;-12.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+101;achefrete.com.br;nao;1;0;11;0;0;0;0;0;0;0;0;13;-12.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+102;conta360.com.br;nao;1;19;11;0;0;0;0;0;0;0;0;13;-12.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+103;cozinhe.com.br;nao;1;0;11;0;0;0;0;0;0;0;0;13;-12.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+104;kars.com.br;nao;1;0;14;0;0;0;0;0;0;0;0;13;-12.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+105;liberado.com.br;nao;1;0;12;0;0;0;0;0;0;0;0;13;-12.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+106;techplay.com.br;nao;1;1;9;0;0;0;0;0;0;0;0;13;-12.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+107;fcv.com.br;nao;1;0;9;0;0;0;0;0;0;0;0;14;-13.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+108;peca.com.br;nao;1;0;11;0;0;0;0;0;0;0;0;14;-13.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+109;pve.com.br;nao;1;28;9;0;0;0;0;0;0;0;0;14;-13.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+110;doto.com.br;nao;1;0;12;0;0;0;0;0;0;0;0;15;-14.2;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+111;calcario.com.br;nao;2;17;19;0;0;0;0;0;0;0;0;17;-15.4;;;;;;;;perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+112;integrando.com.br;nao;13;44;16;0;0;1;0;0;0;0;0;3;-30.4;;;ripsa.org.br (41);;;;;spam>30
+113;tracker.com.br;nao;18;36;118;0;0;0;0;0;0;0;0;4;-32.8;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+114;cnd.com.br;nao;6;32;21;0;0;0;0;0;0;0;0;2;-35.6;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+115;numerofacil.com.br;nao;6;32;16;0;0;0;0;0;0;0;0;5;-38.6;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+116;farm.com.br;sim;18;51;49;0;0;0;0;1;0;0;0;4;-38.8;;;;;abril.com.br (95);;;spam>30
+117;automatec.com.br;sim;15;38;29;0;0;0;0;0;0;0;0;7;-40.6;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+118;emiti.com.br;nao;1;35;9;0;0;0;0;0;0;0;0;3;-44.2;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+119;pinacoteca.com.br;nao;10;34;18;0;0;0;0;0;0;0;0;12;-44.8;;;;;;;;spam>30, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+120;xoox.com.br;nao;1;34;2;0;0;0;0;0;0;0;0;5;-45;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+121;himalaia.com.br;sim;7;58;7;0;0;1;0;0;0;0;0;2;-51;;;rets.org.br (40);;;;;spam>30
+122;valora.com.br;nao;2;44;3;0;0;0;0;0;0;0;0;0;-51.2;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+123;lembrancinhas.com.br;nao;4;38;21;0;0;0;0;0;0;0;0;10;-52.4;;;;;;;;spam>30, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+124;blis.com.br;nao;2;37;9;0;0;0;0;0;0;0;0;10;-52.8;;;;;;;;spam>30, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+125;wearable.com.br;nao;1;44;1;0;0;0;0;0;0;0;0;1;-53;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+126;buys.com.br;nao;3;37;20;0;0;0;0;0;0;0;0;14;-56;;;;;;;;spam>30, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+127;pane.com.br;nao;3;40;21;0;0;0;0;0;0;0;0;13;-58.6;;;;;;;;spam>30, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+128;urg.com.br;nao;7;53;7;0;0;0;0;0;0;0;0;1;-59;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+129;bonfire.com.br;nao;2;43;10;0;0;0;0;0;0;0;0;13;-63;;;;;;;;spam>30, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+130;dalton.com.br;nao;5;51;24;0;0;0;0;0;0;0;0;8;-65.2;;;;;;;;spam>30, sem gov/edu/assoc/noticia/wiki
+131;retrato.com.br;nao;1;50;14;0;0;0;0;0;0;0;0;12;-71.2;;;;;;;;spam>30, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+132;acheai.com.br;nao;2;51;9;0;0;0;0;0;0;0;0;13;-72.6;;;;;;;;spam>30, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+133;afiador.com.br;nao;2;51;11;0;0;0;0;0;0;0;0;15;-74.6;;;;;;;;spam>30, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+134;macarrao.com.br;nao;3;68;2;0;0;0;0;0;0;0;0;1;-80.2;;;;;;;;SPAM ALTO, sem gov/edu/assoc/noticia/wiki
+135;ergon.com.br;nao;12;70;39;0;0;0;0;0;0;0;0;11;-85.4;;;;;;;;SPAM ALTO, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+136;mentira.com.br;nao;1;67;16;0;0;0;0;0;0;0;0;15;-94.6;;;;;;;;SPAM ALTO, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki
+137;njs.com.br;nao;5;79;9;0;0;0;0;0;0;0;0;11;-101.8;;;;;;;;SPAM ALTO, perfil com muito diretorio, sem gov/edu/assoc/noticia/wiki

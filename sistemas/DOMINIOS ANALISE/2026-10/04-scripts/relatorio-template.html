@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Relatório de domínios __MES__</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1c1f1d;--mut:#5d645f;--line:#e2e0d8;--acc:#0f6b4f;--accbg:#e3f1ea;--warn:#9a5b00;--warnbg:#fbeed6;--bad:#a12a2a;--badbg:#f8e1e1;--gov:#1b4f9c;--govbg:#e1ebf8;--star:#c98a00;--comp:#6b2fb3}
+@media(prefers-color-scheme:dark){:root{--bg:#141614;--card:#1d201e;--ink:#ecece7;--mut:#a3aaa4;--line:#2f3330;--acc:#5fcf9f;--accbg:#173528;--warn:#f0b45a;--warnbg:#3a2c12;--bad:#f08a8a;--badbg:#3b1b1b;--gov:#8fb7f0;--govbg:#172640;--star:#f5c542;--comp:#a77ce6}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:1400px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:var(--mut);margin:0 0 20px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:20px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.kpi b{display:block;font-size:24px}
+.kpi span{color:var(--mut);font-size:13px}
+.tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:8px;cursor:pointer;font:inherit}
+.tab[aria-selected=true]{background:var(--acc);color:#fff;border-color:var(--acc)}
+.tab.mine{border-color:var(--star)}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:end;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:12px}
+.bar label{display:flex;flex-direction:column;font-size:12px;color:var(--mut);gap:3px}
+.bar input,.bar select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);min-width:100px}
+.bar input[type=number]{width:100px;min-width:0}
+.bar input[type=search]{min-width:200px}
+.count{margin-left:auto;color:var(--mut);font-size:13px}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:1000px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;white-space:nowrap}
+th{position:sticky;top:0;background:var(--card);cursor:pointer;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em;user-select:none}
+th.s::after{content:" \25BE"}
+th.s.asc::after{content:" \25B4"}
+td.num,th.num{text-align:right}
+tr.r{cursor:pointer}
+tr.r:hover td{background:color-mix(in srgb,var(--acc) 6%,transparent)}
+tr.r.on td:first-child{box-shadow:inset 3px 0 0 var(--star)}
+.dom{font-weight:600}
+.pill{display:inline-block;padding:1px 8px;border-radius:99px;font-size:12px;background:var(--accbg);color:var(--acc)}
+.pill.gov{background:var(--govbg);color:var(--gov)}
+.pill.w{background:var(--warnbg);color:var(--warn)}
+.pill.b{background:var(--badbg);color:var(--bad)}
+.pill.z{background:transparent;color:var(--mut);border:1px solid var(--line)}
+.pill.ok{background:var(--accbg);color:var(--acc);font-weight:600}
+.pill.comp{background:var(--comp);color:#fff;font-weight:700;letter-spacing:.02em}
+.nota{display:inline-block;min-width:42px;text-align:center;font-weight:700;border-radius:6px;padding:1px 6px}
+.n-hi{background:var(--acc);color:#fff}.n-md{background:var(--accbg);color:var(--acc)}.n-lo{background:transparent;color:var(--mut);border:1px solid var(--line)}
+.star{background:none;border:0;cursor:pointer;font-size:19px;line-height:1;color:var(--line);padding:0 2px}
+.star.on{color:var(--star)}
+.pr{font-size:12px;font-weight:700;border-radius:99px;padding:1px 8px}
+.pr-alta{background:var(--badbg);color:var(--bad)}.pr-media{background:var(--warnbg);color:var(--warn)}.pr-baixa{background:var(--accbg);color:var(--acc)}
+tr.d td{background:var(--bg);white-space:normal}
+.det{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;padding:8px 4px}
+.det h4{margin:0 0 6px;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.det p,.det li{margin:0;font-size:13px;word-break:break-word}
+.det ul{margin:0;padding-left:0;list-style:none}
+.det li{padding:2px 0}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+.box.buy{border-color:var(--star)}
+.form{display:grid;gap:8px}
+.form label{display:flex;flex-direction:column;font-size:12px;color:var(--mut);gap:3px}
+.form input,.form select,.form textarea{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}
+.form textarea{min-height:60px;resize:vertical}
+.tag{font-size:11px;border-radius:4px;padding:0 5px;margin-left:4px;white-space:nowrap}
+.tag.f{background:var(--accbg);color:var(--acc);font-weight:600}
+.tag.nf{border:1px solid var(--line);color:var(--mut)}
+.tag.gone{background:var(--badbg);color:var(--bad)}
+.np{min-width:0;width:100%}
+.np td{padding:2px 8px 2px 0;border:0;font-size:13px;white-space:normal}
+.np .v{text-align:right;font-variant-numeric:tabular-nums}
+.links a{margin-right:10px}
+a{color:var(--acc)}
+.note{color:var(--mut);font-size:13px;margin-top:16px}
+.note details{margin-top:8px}
+.note summary{cursor:pointer;color:var(--ink)}
+.hide{display:none}
+.btn{font:inherit;font-size:13px;padding:5px 10px;border:1px solid var(--acc);background:transparent;color:var(--acc);border-radius:6px;cursor:pointer}
+.btn:hover{background:var(--accbg)}.btn:disabled{opacity:.5;cursor:wait}
+.btn.main{background:var(--acc);color:#fff;padding:7px 12px}
+.btn.starb{border-color:var(--star);color:var(--star)}
+.vazio{padding:28px;text-align:center;color:var(--mut);white-space:normal}
+@media(max-width:640px){h1{font-size:21px}.wrap{padding:16px 12px 48px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Domínios com backlinks de governo e educação</h1>
+<p class="sub">Lista de liberação do Registro.br de __LIBERACAO__. Relatório gerado em __GERADO__.</p>
+<div class="kpis" id="kpis"></div>
+<div class="tabs" role="tablist">
+<button class="tab mine" role="tab" aria-selected="false" data-t="mine">★ Minha lista (<span id="nmine">0</span>)</button>
+<button class="tab" role="tab" aria-selected="true" data-t="curta">Lista curta (<span id="ncurta"></span>)</button>
+<button class="tab" role="tab" aria-selected="false" data-t="comp">Competição (<span id="ncomp"></span>)</button>
+<button class="tab" role="tab" aria-selected="false" data-t="full">Todos os analisados (<span id="nfull"></span>)</button>
+</div>
+<div class="bar" id="barMine">
+<button class="btn main" id="exportar">Exportar minha lista para Excel</button>
+<button class="btn" id="backup">Salvar backup</button>
+<label class="btn" style="flex-direction:row;cursor:pointer">Restaurar backup<input type="file" id="restaurar" accept=".json,application/json" class="hide"></label>
+<span class="count">A lista fica salva neste navegador. Use o backup para levar para outro computador ou para o relatório do mês seguinte.</span>
+</div>
+<div class="bar">
+<label>Buscar domínio<input type="search" id="q" placeholder="ex.: congresso"></label>
+<label>Nota (mín.)<input type="number" id="mn" min="0" max="10" step="0.5" value="0"></label>
+<label>Gov + edu BR (mín.)<input type="number" id="mg" min="0" value="0"></label>
+<label>Que passam autoridade (mín.)<input type="number" id="mf" min="0" value="0" title="Links de governo ou educação do Brasil que não são nofollow"></label>
+<label>Spam (máx.)<input type="number" id="ms" min="0" max="100" value="100"></label>
+<label>DA (mín.)<input type="number" id="md" min="0" value="0"></label>
+<label>Histórico<select id="sig"><option value="">Todos</option><option value="historico longo">Histórico longo</option><option value="ativo">Ativo até 2025/26</option><option value="historico curto">Histórico curto</option><option value="sem">Sem histórico</option></select></label>
+<label>Competição<select id="cpf"><option value="">Todos</option><option value="sim">Só competição</option><option value="nao">Sem competição</option></select></label>
+<label>Indexação<select id="ixf"><option value="">Todas</option><option value="com">Com páginas</option><option value="sem">Nenhuma página</option><option value="nd">Sem dado</option></select></label>
+<label>Exigir<select id="req"><option value="">Nada</option><option value="not">Portal de notícia</option><option value="wik">Wikipedia</option><option value="ass">Associação (org.br)</option><option value="coop">Cooperativa</option></select></label>
+<label>Registro.br<select id="rg"><option value="">Todos</option><option value="livre">Livre</option><option value="pendente">Pedido pendente</option><option value="registrado">Registrado</option><option value="nc">Não checados</option></select></label>
+<button class="btn" id="limpar">Limpar filtros</button>
+<button class="btn" id="chkall" title="Consulta o RDAP do Registro.br, um domínio por vez">Checar visíveis no Registro.br</button>
+<span class="count" id="cnt"></span>
+</div>
+<div class="tw"><table><thead><tr id="hd"></tr></thead><tbody id="tb"></tbody></table></div>
+<div class="note">
+<p>Clique na estrela para pôr o domínio na sua lista de compra. Clique na linha para ver prioridade, lance máximo, anotação, as fontes de link e como a nota foi calculada. DA e spam são da Moz. Confira cada domínio no Google (site:) e no Wayback antes de registrar, porque os recentes ainda podem ser renovados pelo dono até o fim do prazo.</p>
+<details><summary>Como a nota de compra é calculada (0 a 10)</summary>
+<p>Cada fonte de link soma pontos. Entre parênteses, o valor quando o link é nofollow. Governo do Brasil 3 (1), educação do Brasil 2,5 (0,8), associação ou cooperativa 1 (0,3), portal de notícia 1,2 (0,4), Wikipedia 0,6, governo do exterior 0,6 (0,2), educação do exterior 0,4 (0,1). A soma vira até 6 pontos numa curva que cresce rápido no começo e satura, para não premiar só quantidade.</p>
+<p>DA soma até 2 pontos (DA 40 ou mais vale 2). DA de sufixo falso (app.br, ia.br, dev.br e outros) vale 0. Histórico longo no Wayback soma 1, histórico curto 0,3, sem histórico tira 1. Ter páginas indexadas no Google soma 0,5. Spam acima de 30 tira 2, spam de 60 ou mais tira 4. Perfil com 10 ou mais diretórios entre as 20 fontes principais tira 1.</p>
+<p>Um link "passa autoridade" quando o site de origem tem pelo menos uma página que linka sem nofollow. Os links da Wikipedia são sempre nofollow. Quando as páginas de origem foram coletadas e a Moz informa que todos os links de uma fonte sumiram, essa fonte não conta na nota nem em "Passam autoridade".</p>
+</details>
+</div>
+</div>
+<script>
+const D = __DADOS__;
+const ALL = new Map();
+for (const x of D.comp) ALL.set(x.d, x);
+for (const x of D.full) ALL.set(x.d, x);
+const SETS = { curta: D.full.filter((x) => x.curta), comp: D.comp, full: D.full };
+let tab = 'curta', key = 'nt', asc = false, open = null, busy = false;
+const ler = (k) => { try { return JSON.parse(localStorage.getItem(k) || '{}'); } catch (e) { return {}; } };
+const gravar = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+let R = ler('rb_status');
+let C = ler('compra_v1');
+const saveR = () => gravar('rb_status', R);
+const saveC = () => gravar('compra_v1', C);
+const regKey = (d) => (R[d] ? R[d].s : 'nc');
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const PRI = { alta: 3, media: 2, baixa: 1 };
+const PRI_TXT = { alta: 'Alta', media: 'Média', baixa: 'Baixa' };
+const BASE_COLS = [['st', '★'], ['d', 'Domínio'], ['nt', 'Nota', 'n'], ['da', 'DA', 'n'], ['ss', 'Spam', 'n'], ['gov', 'Gov BR', 'n'], ['edu', 'Edu BR', 'n'], ['gf', 'Passam autoridade', 'n'], ['ass', 'Assoc.', 'n'], ['coop', 'Coop.', 'n'], ['not', 'Notícias', 'n'], ['wik', 'Wiki', 'n'], ['sig', 'Sinal'], ['ix', 'Indexação', 'n']];
+const COLS = {
+  mine: [['st', '★'], ['d', 'Domínio'], ['nt', 'Nota', 'n'], ['pr', 'Prioridade'], ['lc', 'Lance máx.', 'n'], ['da', 'DA', 'n'], ['gov', 'Gov BR', 'n'], ['edu', 'Edu BR', 'n'], ['gf', 'Passam autoridade', 'n'], ['sig', 'Sinal'], ['ix', 'Indexação', 'n'], ['an', 'Anotação']],
+  curta: BASE_COLS.concat([['m', 'Meses no ar', 'n']]),
+  comp: BASE_COLS.concat([['rd', 'Domínios linkando', 'n'], ['obs', 'Observação']]),
+  full: BASE_COLS.concat([['rd', 'Domínios linkando', 'n'], ['obs', 'Observação']]),
+};
+const lanceNum = (d) => { const v = String((C[d] || {}).l || '').replace(/[^\d,]/g, '').replace(',', '.'); return v ? +v : 0; };
+const fmtR = (v) => (v ? 'R$ ' + v.toLocaleString('pt-BR', { maximumFractionDigits: 2 }) : '');
+function valor(x, k) {
+  if (k === 'pr') return PRI[(C[x.d] || {}).p] || 0;
+  if (k === 'lc') return lanceNum(x.d);
+  if (k === 'an') return (C[x.d] || {}).a || '';
+  if (k === 'st') return C[x.d] ? 1 : 0;
+  if (k === 'ix') return x.ix ?? -1;
+  return x[k] ?? '';
+}
+function kp() {
+  const f = D.full, t = (a, fn) => a.filter(fn).length;
+  const items = [
+    [f.length, 'domínios analisados na Moz'],
+    [t(f, (x) => x.gov + x.edu > 0), 'com link de gov ou edu BR'],
+    [t(f, (x) => x.gf > 0), 'com gov ou edu BR que passa autoridade'],
+    [t(f, (x) => x.not > 0), 'com portal de notícia forte'],
+    [t(f, (x) => x.wik > 0), 'com link da Wikipedia'],
+    [SETS.curta.length, 'na lista curta'],
+    [D.comp.length, 'em processo competitivo'],
+  ];
+  $('#kpis').innerHTML = items.map(([a, b]) => '<div class="kpi"><b>' + a.toLocaleString('pt-BR') + '</b><span>' + b + '</span></div>').join('');
+  $('#ncurta').textContent = SETS.curta.length; $('#ncomp').textContent = D.comp.length; $('#nfull').textContent = D.full.length.toLocaleString('pt-BR');
+}
+function regPill(d) {
+  const r = R[d];
+  if (!r) return '<button class="btn chk" data-d="' + d + '">Checar no Registro.br</button>';
+  const hora = new Date(r.t).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+  const lb = { livre: '<span class="pill ok">Livre para registrar</span>', pendente: '<span class="pill w">Pedido pendente</span>', registrado: '<span class="pill z">Registrado</span>', erro: '<span class="pill b">Erro, tente de novo</span>' }[r.s];
+  return lb + ' <button class="btn chk" data-d="' + d + '" title="Checado em ' + hora + '">↻</button>';
+}
+async function checar(d) {
+  try {
+    const res = await fetch('https://rdap.registro.br/domain/' + encodeURIComponent(d), { headers: { Accept: 'application/rdap+json' } });
+    if (res.status === 404) R[d] = { s: 'livre', t: Date.now() };
+    else if (res.ok) { const j = await res.json().catch(() => ({})); const st = (j.status || []).join(' ').toLowerCase(); R[d] = { s: st.includes('pending create') ? 'pendente' : 'registrado', t: Date.now() }; }
+    else R[d] = { s: 'erro', t: Date.now() };
+  } catch (e) { R[d] = { s: 'erro', t: Date.now() }; }
+  saveR();
+}
+function regTag(d) {
+  const r = R[d]; if (!r) return '';
+  const t = { livre: '<span class="pill ok" title="Livre no Registro.br">Livre</span>', pendente: '<span class="pill w" title="Pedido de registro pendente">Pendente</span>', registrado: '<span class="pill z" title="Ainda registrado">Registrado</span>', erro: '' }[r.s];
+  return t ? ' ' + t : '';
+}
+const pill = (v, cls) => (v ? '<span class="pill ' + (cls || '') + '">' + v + '</span>' : '<span class="pill z">0</span>');
+function ixp(x) {
+  if (x.ix === undefined || x.ix < 0) return '<span class="pill z">sem dado</span>';
+  if (x.ix === 0) return '<span class="pill b">Nenhuma</span>';
+  return '<span class="pill ok">' + (x.ix >= 10 ? '10+' : x.ix) + (x.ix === 1 ? ' página' : ' páginas') + '</span>';
+}
+function sigp(s) {
+  if (!s) return '<span class="pill z">sem dado</span>';
+  if (s.startsWith('ativo')) return '<span class="pill w">Ativo até 2025/26</span>';
+  if (s.startsWith('SEM')) return '<span class="pill b">Sem histórico</span>';
+  if (s.includes('longo')) return '<span class="pill">Histórico longo</span>';
+  return '<span class="pill z">Histórico curto</span>';
+}
+const notaP = (v) => '<span class="nota ' + (v >= 6 ? 'n-hi' : v >= 4 ? 'n-md' : 'n-lo') + '">' + v.toLocaleString('pt-BR', { minimumFractionDigits: 1 }) + '</span>';
+function cell(x, k) {
+  const c = C[x.d] || {};
+  if (k === 'st') return '<button class="star' + (C[x.d] ? ' on' : '') + '" data-star="' + x.d + '" title="' + (C[x.d] ? 'Tirar da minha lista' : 'Pôr na minha lista') + '">★</button>';
+  if (k === 'd') return '<span class="dom">' + esc(x.d) + '</span>' + (x.comp ? ' <span class="pill comp" title="Domínio em processo competitivo no Registro.br">Competição</span>' : '') + regTag(x.d);
+  if (k === 'nt') return notaP(x.nt);
+  if (k === 'gov' || k === 'edu') return pill(x[k], 'gov');
+  if (k === 'gf') return x.gf ? '<span class="pill ok">' + x.gf + '</span>' : (x.gov + x.edu ? '<span class="pill w" title="Os links de gov ou edu são todos nofollow">0</span>' : '<span class="pill z">0</span>');
+  if (['ass', 'coop', 'not', 'wik'].includes(k)) return pill(x[k]);
+  if (k === 'sig') return sigp(x.sig);
+  if (k === 'ss') return x.ss >= 60 ? '<span class="pill b">' + x.ss + '</span>' : x.ss > 30 ? '<span class="pill w">' + x.ss + '</span>' : x.ss;
+  if (k === 'obs') return esc(x.obs);
+  if (k === 'ix') return ixp(x);
+  if (k === 'pr') return c.p ? '<span class="pr pr-' + c.p + '">' + PRI_TXT[c.p] + '</span>' : '<span class="pill z">definir</span>';
+  if (k === 'lc') return esc(fmtR(lanceNum(x.d)));
+  if (k === 'an') return '<span style="white-space:normal">' + esc((c.a || '').slice(0, 80)) + '</span>';
+  return x[k] === undefined ? '' : esc(x[k]);
+}
+function fontes(x) {
+  if (!x.fx || !x.fx.length) return '<div class="box"><h4>Fontes de link</h4><p>Nenhuma fonte de governo, educação, associação, notícia ou Wikipedia entre as 20 principais.</p></div>';
+  const g = {}; for (const s of x.fx) (g[s.c] ||= []).push(s);
+  let h = '<div class="box"><h4>Fontes de link (entre as 20 principais)</h4>';
+  for (const c of Object.keys(g)) {
+    h += '<p style="margin-top:6px"><b>' + esc(D.nomeCat[c]) + '</b></p><ul>' + g[c].map((s) => '<li>' + esc(s.s) + ' <span style="color:var(--mut)">(DA ' + s.da + ')</span>' + (s.f ? '<span class="tag f">passa autoridade</span>' : '<span class="tag nf">nofollow</span>') + (s.v === 0 ? '<span class="tag gone">link sumiu</span>' : s.v === 1 ? '<span class="tag f">link ativo</span>' : '') + '</li>').join('') + '</ul>';
+  }
+  return h + '</div>';
+}
+function paginas(x) {
+  if (!x.pg) return D.temPaginas ? '<div class="box"><h4>Páginas que linkam</h4><p>Não coletado para este domínio. Veja no documento de memória como coletar para a sua lista.</p></div>' : '';
+  if (!x.pg.length) return '<div class="box"><h4>Páginas que linkam</h4><p>A Moz não devolveu páginas de governo, educação, notícia ou Wikipedia nas consultas feitas.</p></div>';
+  return '<div class="box"><h4>Páginas que linkam (coletadas na Moz)</h4><ul>' + x.pg.map((p) => '<li><a target="_blank" rel="noopener" href="http://' + esc(p.pg) + '">' + esc(p.pg.length > 70 ? p.pg.slice(0, 70) + '…' : p.pg) + '</a>'
+    + (p.nf ? '<span class="tag nf">nofollow</span>' : '<span class="tag f">passa autoridade</span>') + (p.gone ? '<span class="tag gone">sumiu em ' + esc(p.gone) + '</span>' : '')
+    + '<br><span style="color:var(--mut)">' + esc(p.r) + ' (DA ' + p.da + ')' + (p.an ? ', âncora "' + esc(p.an) + '"' : '') + (p.last ? ', visto em ' + esc(p.last) : '') + '</span></li>').join('') + '</ul></div>';
+}
+function compra(x) {
+  const c = C[x.d];
+  if (!c) return '<div class="box buy"><h4>Minha lista de compra</h4><p style="margin-bottom:8px">Este domínio ainda não está na sua lista.</p><button class="btn starb" data-star="' + x.d + '">★ Pôr na minha lista</button></div>';
+  const o = (v, t) => '<option value="' + v + '"' + (c.p === v ? ' selected' : '') + '>' + t + '</option>';
+  return '<div class="box buy"><h4>Minha lista de compra</h4><div class="form">'
+    + '<label>Prioridade<select data-f="p" data-d="' + x.d + '">' + o('', 'Definir') + o('alta', 'Alta') + o('media', 'Média') + o('baixa', 'Baixa') + '</select></label>'
+    + '<label>Lance máximo (R$)<input inputmode="decimal" data-f="l" data-d="' + x.d + '" value="' + esc(c.l || '') + '" placeholder="ex.: 1500"></label>'
+    + '<label>Anotação<textarea data-f="a" data-d="' + x.d + '" placeholder="ex.: conferir link do mec.gov.br antes">' + esc(c.a || '') + '</textarea></label>'
+    + '<button class="btn starb" data-star="' + x.d + '">Tirar da minha lista</button></div></div>';
+}
+function notaBox(x) {
+  return '<div class="box"><h4>Como a nota ' + x.nt.toLocaleString('pt-BR', { minimumFractionDigits: 1 }) + ' foi calculada</h4><table class="np">'
+    + x.np.map(([a, v]) => '<tr><td>' + esc(a) + '</td><td class="v">' + (v > 0 ? '+' : '') + v.toLocaleString('pt-BR') + '</td></tr>').join('') + '</table></div>';
+}
+function det(x) {
+  const l = 'target="_blank" rel="noopener"';
+  const idx = x.it && x.it.length ? '<div class="box"><h4>Páginas indexadas no Google</h4><p>' + x.it.map((o) => '<a ' + l + ' href="' + esc(o.l) + '">' + esc(o.t || o.l) + '</a>').join('<br>') + '</p></div>' : '';
+  return '<div class="det">' + compra(x) + notaBox(x) + fontes(x) + paginas(x) + idx
+    + '<div class="box links"><h4>Conferir</h4><p>' + regPill(x.d) + '</p><p style="margin-top:8px">'
+    + '<a ' + l + ' href="https://www.google.com/search?q=site:' + x.d + '">Google site:</a>'
+    + '<a ' + l + ' href="https://web.archive.org/web/*/' + x.d + '">Wayback</a>'
+    + '<a ' + l + ' href="https://registro.br/busca-dominio/?fqdn=' + x.d + '">Registro.br</a>'
+    + '<a ' + l + ' href="http://' + x.d + '">Abrir site</a></p></div></div>';
+}
+function linhas() {
+  if (tab === 'mine') return Object.keys(C).map((d) => ALL.get(d)).filter(Boolean);
+  return SETS[tab];
+}
+function render() {
+  const cols = COLS[tab];
+  $('#nmine').textContent = Object.keys(C).length;
+  $('#barMine').classList.toggle('hide', tab !== 'mine');
+  $('#hd').innerHTML = cols.map(([k, lb, t]) => '<th data-k="' + k + '" class="' + (t ? 'num ' : '') + (k === key ? 's' + (asc ? ' asc' : '') : '') + '">' + lb + '</th>').join('');
+  const q = $('#q').value.trim().toLowerCase(), mn = +$('#mn').value || 0, mg = +$('#mg').value || 0, mf = +$('#mf').value || 0, ms = $('#ms').value === '' ? 100 : +$('#ms').value, md = +$('#md').value || 0;
+  const sg = $('#sig').value, rq = $('#req').value, ixf = $('#ixf').value, cpf = $('#cpf').value, rg = $('#rg').value;
+  const rows = linhas().filter((x) => (!q || x.d.includes(q)) && x.nt >= mn && x.gov + x.edu >= mg && x.gf >= mf && x.ss <= ms && x.da >= md && (!rq || x[rq] > 0)
+    && (!sg || (x.sig || '').toLowerCase().startsWith(sg)) && (!cpf || (cpf === 'sim') === !!x.comp)
+    && (!ixf || (ixf === 'com' ? x.ix > 0 : ixf === 'sem' ? x.ix === 0 : x.ix === undefined || x.ix < 0)) && (!rg || regKey(x.d) === rg));
+  window.__visiveis = rows.map((x) => x.d);
+  rows.sort((a, b) => {
+    const A = valor(a, key), B = valor(b, key);
+    let r = typeof A === 'number' && typeof B === 'number' ? A - B : String(A).localeCompare(String(B), 'pt-BR');
+    if (!r) r = a.nt - b.nt;
+    return asc ? r : -r;
+  });
+  $('#cnt').textContent = rows.length.toLocaleString('pt-BR') + ' domínios';
+  if (!rows.length) {
+    $('#tb').innerHTML = '<tr><td class="vazio" colspan="' + cols.length + '">' + (tab === 'mine' && !Object.keys(C).length ? 'Sua lista está vazia. Clique na estrela ★ de um domínio nas outras abas para adicioná-lo.' : 'Nenhum domínio com esses filtros.') + '</td></tr>';
+    return;
+  }
+  const lim = rows.slice(0, 500);
+  $('#tb').innerHTML = lim.map((x) => '<tr class="r' + (C[x.d] ? ' on' : '') + '" data-d="' + x.d + '">' + cols.map(([k, , t]) => '<td class="' + (t ? 'num' : '') + '">' + cell(x, k) + '</td>').join('') + '</tr>'
+    + (open === x.d ? '<tr class="d"><td colspan="' + cols.length + '">' + det(x) + '</td></tr>' : '')).join('')
+    + (rows.length > 500 ? '<tr><td colspan="' + cols.length + '" style="white-space:normal;color:var(--mut)">Mostrando os 500 primeiros. Use os filtros para refinar.</td></tr>' : '');
+}
+function alternar(d) {
+  if (C[d]) { if ((C[d].l || C[d].a) && !confirm('Tirar ' + d + ' da lista? A prioridade, o lance e a anotação serão apagados.')) return; delete C[d]; }
+  else C[d] = { p: '', l: '', a: '', t: Date.now() };
+  saveC(); render();
+}
+document.addEventListener('click', (e) => {
+  const st = e.target.closest('[data-star]');
+  if (st) { e.stopPropagation(); alternar(st.dataset.star); return; }
+  const th = e.target.closest('th');
+  if (th) { const k = th.dataset.k; asc = key === k ? !asc : ['d', 'sig', 'obs', 'an'].includes(k); key = k; return render(); }
+  const tb = e.target.closest('.tab');
+  if (tb) { tab = tb.dataset.t; key = tab === 'mine' ? 'pr' : 'nt'; asc = false; open = null; document.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', t === tb)); return render(); }
+  const ck = e.target.closest('.chk');
+  if (ck) { ck.disabled = true; ck.textContent = '...'; checar(ck.dataset.d).then(render); return; }
+  if (e.target.closest('#chkall')) return checarTodos();
+  if (e.target.closest('#limpar')) { ['#q', '#mn', '#mg', '#mf', '#md'].forEach((s) => ($(s).value = s === '#q' ? '' : 0)); $('#ms').value = 100; ['#sig', '#req', '#ixf', '#cpf', '#rg'].forEach((s) => ($(s).value = '')); open = null; return render(); }
+  if (e.target.closest('#exportar')) return exportar();
+  if (e.target.closest('#backup')) return backup();
+  if (e.target.closest('tr.d')) return;
+  const tr = e.target.closest('tr.r');
+  if (tr && !e.target.closest('a,button,input,select,textarea')) { open = open === tr.dataset.d ? null : tr.dataset.d; render(); }
+});
+document.addEventListener('input', (e) => {
+  const f = e.target.dataset && e.target.dataset.f;
+  if (f) { const d = e.target.dataset.d; if (!C[d]) return; C[d][f] = e.target.value; C[d].t = Date.now(); saveC(); if (f === 'p') render(); else $('#nmine').textContent = Object.keys(C).length; return; }
+  if (e.target.closest('.bar') && e.target.id !== 'restaurar') { open = null; render(); }
+});
+document.addEventListener('change', (e) => { if (e.target.dataset && e.target.dataset.f === 'l') render(); });
+function baixar(nome, conteudo, tipo) {
+  const blob = new Blob([conteudo], { type: tipo });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = nome;
+  document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+}
+function exportar() {
+  const ds = Object.keys(C).map((d) => ALL.get(d)).filter(Boolean).sort((a, b) => (PRI[(C[b.d] || {}).p] || 0) - (PRI[(C[a.d] || {}).p] || 0) || b.nt - a.nt);
+  if (!ds.length) { alert('Sua lista está vazia.'); return; }
+  const cel = (v) => { const s = String(v ?? '').replace(/"/g, '""'); return /[;"\n]/.test(s) ? '"' + s + '"' : s; };
+  const fx = (x, cs) => (x.fx || []).filter((s) => cs.includes(s.c)).map((s) => s.s + ' (DA ' + s.da + (s.f ? ', passa autoridade' : ', nofollow') + ')').join(', ');
+  const cab = ['dominio', 'competicao', 'nota', 'prioridade', 'lance_maximo', 'anotacao', 'DA', 'spam', 'gov_br', 'edu_br', 'gov_edu_que_passam_autoridade', 'noticias', 'wikipedia', 'sinal', 'paginas_indexadas', 'registro_br', 'fontes_gov_edu_br', 'outras_fontes', 'paginas_que_linkam'];
+  const lin = ds.map((x) => { const c = C[x.d] || {}; return [x.d, x.comp ? 'sim' : 'nao', String(x.nt).replace('.', ','), PRI_TXT[c.p] || '', c.l || '', c.a || '', x.da, x.ss, x.gov, x.edu, x.gf, x.not, x.wik, x.sig || '', x.ix ?? '', R[x.d] ? R[x.d].s : '', fx(x, ['govbr', 'edubr']), fx(x, ['assoc', 'coop', 'news', 'wiki', 'govx', 'edux']), (x.pg || []).map((p) => p.pg).join(' | ')].map(cel).join(';'); });
+  baixar('minha-lista-dominios-__MES__.csv', '﻿' + cab.join(';') + '\n' + lin.join('\n'), 'text/csv;charset=utf-8');
+}
+function backup() {
+  baixar('backup-relatorio-dominios-__MES__.json', JSON.stringify({ versao: 1, mes: '__MES__', salvo_em: new Date().toISOString(), compra: C, registro: R }, null, 1), 'application/json');
+}
+$('#restaurar').addEventListener('change', async (e) => {
+  const f = e.target.files[0]; if (!f) return;
+  try {
+    const j = JSON.parse(await f.text());
+    const nc = Object.keys(j.compra || {}).length;
+    if (!confirm('Restaurar ' + nc + ' domínios da lista de compra deste backup? Domínios que já estão na lista e também no backup ficam com os dados do backup.')) return;
+    C = Object.assign(C, j.compra || {}); R = Object.assign(R, j.registro || {}); saveC(); saveR(); render();
+    const fora = Object.keys(j.compra || {}).filter((d) => !ALL.has(d)).length;
+    if (fora) alert(fora + ' domínios do backup não existem neste relatório e não aparecem na tabela, mas continuam guardados e vão para o próximo backup.');
+  } catch (err) { alert('Arquivo de backup inválido.'); }
+  e.target.value = '';
+});
+async function checarTodos() {
+  if (busy) return;
+  const lista = (window.__visiveis || []).slice(0, 500).filter((d) => !R[d] || R[d].s === 'erro');
+  if (!lista.length) { alert('Todos os domínios visíveis já foram checados. Use o botão ↻ de uma linha para refazer.'); return; }
+  if (lista.length > 300 && !confirm('Vai consultar ' + lista.length + ' domínios, um por vez. Continuar?')) return;
+  busy = true; const b = $('#chkall'); b.disabled = true;
+  for (let i = 0; i < lista.length; i++) { b.textContent = 'Checando ' + (i + 1) + ' de ' + lista.length + '...'; await checar(lista[i]); if (i % 5 === 4) render(); await new Promise((r) => setTimeout(r, 250)); }
+  busy = false; b.disabled = false; b.textContent = 'Checar visíveis no Registro.br'; render();
+}
+kp(); render();
+</script>
+</body>
+</html>

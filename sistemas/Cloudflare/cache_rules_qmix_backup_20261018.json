@@ -1,0 +1,32 @@
+{
+ "description": "",
+ "id": "2713f4c409a74c95a6c063def66bc921",
+ "kind": "zone",
+ "last_updated": "2026-07-30T19:07:25.669336Z",
+ "name": "default",
+ "phase": "http_request_cache_settings",
+ "rules": [
+  {
+   "action": "set_cache_settings",
+   "action_parameters": {
+    "browser_ttl": {
+     "default": 60,
+     "mode": "override_origin"
+    },
+    "cache": true,
+    "edge_ttl": {
+     "default": 3600,
+     "mode": "override_origin"
+    }
+   },
+   "description": "Edge cache HTML for public marketing pages",
+   "enabled": true,
+   "expression": "((http.request.uri.path eq \"/\") or (starts_with(http.request.uri.path, \"/comprar-backlinks\")) or (starts_with(http.request.uri.path, \"/pacotes-de-backlinks\")) or (starts_with(http.request.uri.path, \"/ferramentas\")) or (starts_with(http.request.uri.path, \"/blog\")) or (starts_with(http.request.uri.path, \"/glossario-de-backlinks\")) or (http.request.uri.path eq \"/qmix\") or (http.request.uri.path eq \"/servicos\") or (http.request.uri.path eq \"/contato\") or (http.request.uri.path eq \"/perguntas-frequentes\") or (http.request.uri.path eq \"/comprar-guest-post\") or (http.request.uri.path eq \"/vender-backlinks\") or (http.request.uri.path eq \"/termos-de-uso\") or (http.request.uri.path eq \"/politica-de-privacidade\") or (http.request.uri.path eq \"/politica-de-cookies\") or (http.request.uri.path eq \"/politica-de-reembolso\")) and (http.host ne \"backlinkguard.qmix.com.br\")",
+   "id": "ac132a04dcbe46ffa014c18d3d8f98ea",
+   "last_updated": "2026-07-30T19:07:25.669336Z",
+   "ref": "ac132a04dcbe46ffa014c18d3d8f98ea",
+   "version": "2"
+  }
+ ],
+ "version": "6"
+}

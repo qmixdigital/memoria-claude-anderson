@@ -1,4 +1,5 @@
 - [Anderson prefere resumo e autonomia](anderson-prefere-resumo-e-autonomia.md) — nao le relatorio longo; decidir o tecnico sozinho, perguntar so o de negocio
 - [Anuncios: topo e densidade](consultarimovel-anuncios-topo-e-densidade.md) — banner no inicio (onde da clique), texto SEO no fim; densidade so em lib/afiliados.ts
 - [opengravity: SSH cai, deploy desacoplado](opengravity-ssh-cai-deploy-desacoplado.md) — setsid nohup para build/deploy; esperar por EXIT= no log, nunca pgrep -f deploy.sh
-- [consultarimovel: estado e pendencias](consultarimovel-estado-e-pendencias.md) — SIGEF vazio, thin content 29%, sem Cloudflare, remedir GSC em ~19/10/2026
+- [consultarimovel: estado e pendencias](consultarimovel-estado-e-pendencias.md) — SIGEF vazio, thin content 29%, sem Cloudflare, remedir GSC em 15/11/2026
+- [Indexacao: Rapid URL Indexer (Apex), Bing, IndexNow](indexacao-bing-indexnow-google.md) — "indexacao Apex" = Rapid URL Indexer em D:\SISTEMAS\INDEXADORES; chave IndexNow e BingSiteAuth no nginx; token Bing vale para a conta

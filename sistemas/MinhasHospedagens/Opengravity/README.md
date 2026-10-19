@@ -1812,3 +1812,19 @@ que foi o que aconteceu com os acabamentos da V em 20/08.
 O deploy usa `ins_arch_og.py`, que corta da primeira funcao com o prefixo da
 letra ate a primeira funcao de OUTRO prefixo. Cortar ate `const ARCHS` apagaria
 a arquitetura vizinha.
+
+## Limpeza de 18/10/2026
+
+- Disco: 86% para **55%** (44 GB livres).
+- Logrotate estava quebrado desde 07/09 (configs duplicadas); corrigido. Configs removidas ficaram em /root/logrotate-disabled.
+- Backup local do portal-engine: 2 cópias aqui (LOCAIS=2 em backup_engine.sh); o cofre na srv1166087 mantém 7.
+- Removidos: skipark (app, banco, domínio; dump em MinhasHospedagens/backups), geladeirastop (migrado para srv1166087), staging.peritodicas, blog.qmix, investqmix, blog.clinicasrecuperacaosaopaulo, bancos notebookx_wp e peritodicas_v2, sobras em /root.
+- tendenciasmarketing.news virou estático no Cloudflare Pages (projeto tendenciasmarketing, conta23, 132 URLs conferidas). App e banco apagados daqui; dump e cópia estática em MinhasHospedagens/backups.
+- Hestia: usar /usr/local/hestia/bin/v-delete-web-domain e apagar symlinks quebrados em /etc/nginx/conf.d antes do nginx -t.
+- Pendente: robôs raspando consultarimovel (~570 mil req/dia) e timeouts dos proxies para a srv1166087.
+
+### Conversão para estático (18/10/2026)
+- **ebookcult-dir:** 25.301 páginas servidas de `/srv/static/ebookcult-dir` pelo gateway `og-ingresso.qmix.com.br` (só quando `X-Portal-Host` = ebookcult.com.br). App, banco e pasta removidos. Dump e código em `MinhasHospedagens/backups/`.
+- **notebookx** (4.119 páginas) e **arcondicionadotop** (320 páginas): estáticos no Cloudflare Pages (projetos `notebookx` e `arcondicionadotop`), DNS trocado e validado; apps, bancos, crons e o webhook Asaas do arcondicionadotop removidos. Pendências em `estatico-diretorios/RUNBOOK.md`.
+- Bancos MySQL `qmix_*` sem referência são blogs de clientes: arquivados em `backups/mysql-orfaos-20261018.tar`, **não apagados**.
+- Estado final (18/10/2026): disco 55%, 9 apps PM2 online (eram 18), ~5 GB de RAM disponíveis.

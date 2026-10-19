@@ -1,0 +1,237 @@
+﻿rank;dominio;DA;spam;gov_br;edu_br;associacoes;cooperativas;noticias;wikipedia;meses_com_pagina_200;primeira_captura;ultima_captura;anos_no_ar;sinal;links_gov_br;links_edu_br;links_noticias;links_wikipedia
+1;famelab.com.br;36;3;1;11;0;0;3;0;17;2017;2025;8;ativo ate 2025/26 (pode estar em uso ou redencao);saopaulo.sp.gov.br (79);usp.br (92), ufsc.br (88), fapesp.br (71), ufpa.br (71), ufjf.br (69), ufms.br (66), ufpel.edu.br (66), ufes.br (66), ifes.edu.br (65), ufv.br (65), ueg.br (64);uol.com.br (95), abril.com.br (95), globo.com (95);
+2;journals.com.br;27;0;0;13;0;0;0;0;4;2006;2016;10;historico curto;;ufsc.br (88), ufrgs.br (81), fiocruz.br (77), unicamp.br (76), uerj.br (75), unb.br (73), unesp.br (72), ufpa.br (71), uff.br (70), ufjf.br (69), ufms.br (66), ifsp.edu.br (64), unirio.br (64);;
+3;rafrom.com.br;36;25;0;11;1;0;0;1;150;2000;2026;26;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), ufmg.br (89), ufsc.br (88), ufrgs.br (81), unicamp.br (76), uerj.br (75), ufrj.br (74), unb.br (73), unesp.br (72), ufg.br (71), ufc.br (71);;pt.wikipedia.org (95)
+4;fbjc.com.br;39;1;1;9;1;0;3;0;37;2004;2026;22;ativo ate 2025/26 (pode estar em uso ou redencao);cps.sp.gov.br (60);ufg.br (71), fapesp.br (71), ifes.edu.br (65), ucs.br (65), ifsuldeminas.edu.br (64), ifsp.edu.br (64), ifsc.edu.br (64), ifrn.edu.br (61), univates.br (58);clicrbs.com.br (93), correiobraziliense.com.br (92), hypeness.com.br (77);
+5;laliunb.com.br;31;0;1;9;0;0;2;0;20;2013;2026;13;ativo ate 2025/26 (pode estar em uso ou redencao);santoandre.sp.gov.br (57);ufmg.br (89), unicamp.br (76), unb.br (73), ufg.br (71), ufu.br (68), ufpb.br (68), ufms.br (66), unemat.br (60), unisc.br (57);ebc.com.br (93), correioweb.com.br (66);
+6;solosfloripa2023.com.br;27;29;3;7;1;0;0;0;19;2022;2024;2;historico curto;epagri.sc.gov.br (59), estado.sc.gov.br (56), fapesc.sc.gov.br (49);embrapa.br (72), utfpr.edu.br (66), ufpel.edu.br (66), uespi.br (62), ufrpe.br (60), ifrs.edu.br (58), unitins.br (58);;
+7;revistafjn.com.br;30;11;0;10;0;0;0;0;16;2022;2025;3;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), ufrgs.br (81), unicamp.br (76), ufba.br (68), ufpe.br (68), ufal.br (64), unifor.br (62), unimontes.br (58), ucsal.br (51), unis.edu.br (50);;
+8;educacaoonline.pro.br;43;6;2;6;1;0;1;1;123;2001;2021;20;historico longo;mec.gov.br (93), saude.sp.gov.br (72);usp.br (92), ufrgs.br (81), unicamp.br (76), uerj.br (75), unb.br (73), unesp.br (72);jusbrasil.com.br (87);pt.wikipedia.org (95)
+9;prattein.com.br;39;9;1;7;0;0;2;1;20;2013;2025;12;ativo ate 2025/26 (pode estar em uso ou redencao);tjdft.jus.br (73);usp.br (92), unicamp.br (76), ufrj.br (74), unb.br (73), unesp.br (72), uff.br (70), ufjf.br (69);uol.com.br (95), jusbrasil.com.br (87);wikibooks.org (88)
+10;dcctransito.com.br;27;20;8;0;0;0;0;0;33;2002;2026;24;ativo ate 2025/26 (pode estar em uso ou redencao);poupatempo.sp.gov.br (68), riopreto.sp.gov.br (56), osasco.sp.gov.br (56), saovicente.sp.gov.br (49), itapeva.sp.gov.br (44), itapevi.sp.gov.br (44), francodarocha.sp.gov.br (43), servicos.sp.gov.br (41);;;
+11;saudebrasilportal.com.br;37;1;4;3;0;0;4;0;57;2017;2025;8;ativo ate 2025/26 (pode estar em uso ou redencao);www.gov.br (94), senado.leg.br (92), saude.gov.br (90), ipea.gov.br (75);usp.br (92), ufsc.br (88), uerj.br (75);uol.com.br (95), jusbrasil.com.br (87), correiodopovo.com.br (76), poder360.com.br (75);
+12;redesindical.com.br;34;0;2;6;0;0;1;0;45;2003;2023;20;historico longo;mppr.mp.br (66), cofen.gov.br (65);usp.br (92), ufmg.br (89), fiocruz.br (77), uerj.br (75), unb.br (73), ufrn.br (67);catracalivre.com.br (93);
+13;fenaju.com.br;27;14;7;1;0;0;0;0;47;2018;2024;6;historico longo;www.gov.br (94), redesim.gov.br (58), portal.pi.gov.br (56), agenciaalagoas.al.gov.br (51), alagoas.al.gov.br (51), jucerja.rj.gov.br (50), jucesc.sc.gov.br (47);ufmg.br (89);;
+14;osmilnomesdegaia.eco.br;35;0;0;8;0;0;1;0;59;2014;2026;12;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), ufsc.br (88), ufrgs.br (81), ufpr.br (75), unb.br (73), uff.br (70), unifesp.br (69), unisinos.br (69);cartacapital.com.br (88);
+15;mulheresnaciencia.com.br;33;0;0;7;0;0;2;2;36;2017;2023;6;historico longo;;usp.br (92), ufmg.br (89), ufsc.br (88), unicamp.br (76), ufrj.br (74), fapesp.br (71), ufjf.br (69);estadao.com.br (94), hypeness.com.br (77);pt.wikipedia.org (95), wikidata.org (80)
+16;unespciencia.com.br;38;3;0;7;0;0;3;1;65;2015;2026;11;ativo ate 2025/26 (pode estar em uso ou redencao);;ufmg.br (89), ufsc.br (88), ufrgs.br (81), unicamp.br (76), embrapa.br (72), unesp.br (72), fapesp.br (71);uol.com.br (95), ig.com.br (94), gazetadopovo.com.br (93);pt.wikipedia.org (95)
+17;isnportal.com.br;28;3;0;6;4;0;1;1;29;2020;2023;3;historico longo;;usp.br (92), uerj.br (75), ufrj.br (74), fapesp.br (71), ufjf.br (69), ufop.br (65);brasildefato.com.br (75);pt.wikipedia.org (95)
+18;plagio.net.br;26;2;1;7;0;0;0;1;77;2010;2021;11;historico longo;www.gov.br (94);usp.br (92), ufscar.br (75), ufg.br (71), unifesp.br (69), uece.br (65), unisul.br (60), ufrr.br (58);;pt.wikipedia.org (95)
+19;centralizada.com.br;35;1;2;5;1;0;0;1;40;2016;2026;10;ativo ate 2025/26 (pode estar em uso ou redencao);prefeitura.sp.gov.br (92), ebserh.gov.br (63);fiocruz.br (77), uerj.br (75), fapesp.br (71), ufjf.br (69), ufop.br (65);;pt.wikipedia.org (95)
+20;almanaquedocampo.com.br;35;4;1;6;1;0;0;1;84;2010;2025;15;ativo ate 2025/26 (pode estar em uso ou redencao);bnb.gov.br (66);ufpr.br (75), ufc.br (71), ufs.br (63), uesb.br (62), uemg.br (58), ifba.edu.br (57);;pt.wikipedia.org (95)
+21;floriparural.com.br;16;0;5;2;1;0;0;0;8;2025;2026;1;ativo ate 2025/26 (pode estar em uso ou redencao);epagri.sc.gov.br (59), cidasc.sc.gov.br (48), sape.sc.gov.br (41), agricultura.sc.gov.br (41), observatorioagro.sc.gov.br (37);ufsc.br (88), udesc.br (66);;
+22;fragmentosdepaixao.net.br;33;7;5;1;1;0;2;0;69;2013;2026;13;ativo ate 2025/26 (pode estar em uso ou redencao);ancine.gov.br (65), mctic.gov.br (63), mct.gov.br (61), cemaden.gov.br (56), fapeam.am.gov.br (50);fapesp.br (71);globo.com (95), tecmundo.com.br (93);
+23;bienalbrasildolivro.com.br;46;5;2;2;1;0;7;1;38;2012;2022;10;historico longo;mec.gov.br (93), cultura.gov.br (73);unb.br (73), ufg.br (71);uol.com.br (95), abril.com.br (95), ebc.com.br (93), metropoles.com (90), jovempan.com.br (87), istoe.com.br (85), noticiasaominuto.com.br (73);pt.wikipedia.org (95)
+24;ciic.net.br;20;3;4;3;1;0;0;0;11;2013;2023;10;historico curto;agricultura.sp.gov.br (62), iac.sp.gov.br (54), ital.sp.gov.br (50), iz.sp.gov.br (45);usp.br (92), embrapa.br (72), ung.br (55);;
+25;meupratosaudavel.com.br;42;2;2;2;1;1;6;0;81;2011;2026;15;ativo ate 2025/26 (pode estar em uso ou redencao);saopaulo.sp.gov.br (79), saude.sp.gov.br (72);usp.br (92), uff.br (70);abril.com.br (95), globo.com (95), ebc.com.br (93), r7.com (93), catracalivre.com.br (93), noticiasaominuto.com.br (73);
+27;institutopebioetica.com.br;40;3;0;5;0;0;5;0;20;2021;2026;5;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), ufrj.br (74), unb.br (73), unesp.br (72), uff.br (70);uol.com.br (95), abril.com.br (95), terra.com.br (94), catracalivre.com.br (93), correiobraziliense.com.br (92);
+28;cajur.com.br;30;0;0;6;0;0;1;1;9;2014;2025;11;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), fiocruz.br (77), unicamp.br (76), ufpr.br (75), ufrj.br (74), ufjf.br (69);jusbrasil.com.br (87);pt.wikipedia.org (95)
+30;napautaonline.com.br;30;2;1;4;2;0;2;1;40;2018;2025;7;ativo ate 2025/26 (pode estar em uso ou redencao);tre-sc.jus.br (60);usp.br (92), ufg.br (71), fapesp.br (71), ufgd.edu.br (60);estadao.com.br (94), terra.com.br (94);pt.wikipedia.org (95)
+31;ppaparticipativo.com.br;17;10;6;0;1;0;0;0;11;2017;2021;4;historico curto;solonopole.ce.gov.br (39), horizonte.ce.gov.br (34), itaitinga.ce.gov.br (33), granja.ce.gov.br (31), amontada.ce.gov.br (26), piresferreira.ce.gov.br (22);;;
+32;historiaunirio.com.br;36;5;1;5;0;0;1;1;31;2008;2026;18;ativo ate 2025/26 (pode estar em uso ou redencao);mct.gov.br (61);usp.br (92), uff.br (70), unifesp.br (69), uel.br (67), unirio.br (64);globo.com (95);pt.wikipedia.org (95)
+33;seminarioprefeitosce.com.br;29;8;5;0;2;0;0;0;11;2021;2022;1;historico curto;fortaleza.ce.gov.br (71), ceara.gov.br (66), rj.def.br (58), tce.ce.gov.br (49), esp.ce.gov.br (48);;;
+34;bienaldaagricultura.com.br;25;3;0;5;0;0;5;0;57;2007;2026;19;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), unb.br (73), unesp.br (72), uff.br (70), unifesp.br (69);uol.com.br (95), abril.com.br (95), terra.com.br (94), catracalivre.com.br (93), correiobraziliense.com.br (92);
+35;nbnbrasil.com.br;31;11;2;3;3;0;0;1;29;2016;2023;7;historico longo;caubr.gov.br (60), caesb.df.gov.br (54);unicamp.br (76), ufg.br (71), fapesp.br (71);;pt.wikipedia.org (95)
+36;ctsmovmg.net.br;22;6;1;5;0;0;3;0;17;2021;2026;5;ativo ate 2025/26 (pode estar em uso ou redencao);agenciaminas.mg.gov.br (63);ufmg.br (89), ufjf.br (69), ufu.br (68), ufsj.edu.br (63), uftm.edu.br (59);ebc.com.br (93), istoe.com.br (85), brasildefato.com.br (75);
+37;estadoatual.com.br;32;20;2;3;1;0;1;2;183;2001;2026;25;ativo ate 2025/26 (pode estar em uso ou redencao);diaadia.pr.gov.br (65), fjp.mg.gov.br (58);unb.br (73), ufu.br (68), ufop.br (65);ig.com.br (94);pt.wikipedia.org (95), no.wikipedia.org (72)
+39;culturaemitabira.com.br;30;0;5;0;0;0;2;1;47;2007;2025;18;ativo ate 2025/26 (pode estar em uso ou redencao);cultura.gov.br (73), itu.sp.gov.br (46), itabira.mg.gov.br (42), ctav.gov.br (40), parnaiba.pi.gov.br (38);;globo.com (95), otempo.com.br (88);pt.wikipedia.org (95)
+40;cienciaeprofissao.com.br;36;7;0;5;2;0;1;1;155;2005;2026;21;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), fapesp.br (71), uff.br (70), ufjf.br (69), unir.br (60);uol.com.br (95);pt.wikipedia.org (95)
+41;cineramabc.com.br;32;0;4;0;1;0;4;0;38;2011;2025;14;ativo ate 2025/26 (pode estar em uso ou redencao);cultura.gov.br (73), cultura.sc.gov.br (54), bc.sc.gov.br (47), ctav.gov.br (40);;abril.com.br (95), clicrbs.com.br (93), guiadasemana.com.br (80), nsctotal.com.br (69);
+42;ocaxiense.com.br;34;5;2;3;0;0;1;3;44;2009;2025;16;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93), mpt.mp.br (70);uff.br (70), ucs.br (65), ifrs.edu.br (58);uol.com.br (95);en.wikipedia.org (98), fr.wikipedia.org (95), pt.wikipedia.org (95)
+43;gamehunikuin.com.br;37;3;0;5;1;0;2;0;47;2016;2024;8;historico longo;;usp.br (92), fapesp.br (71), uff.br (70), ufba.br (68), ufpe.br (68);uol.com.br (95), otempo.com.br (88);
+44;vamosparcelar.com.br;43;1;3;0;1;0;6;0;57;2018;2026;8;ativo ate 2025/26 (pode estar em uso ou redencao);prefeitura.sp.gov.br (92), detran.sp.gov.br (78), curitiba.pr.gov.br (72);;uol.com.br (95), clicrbs.com.br (93), correiobraziliense.com.br (92), metropoles.com (90), canaltech.com.br (88), cnnbrasil.com.br (73);
+45;resolvesim.com.br;46;4;0;2;0;0;11;0;28;2013;2026;13;ativo ate 2025/26 (pode estar em uso ou redencao);;fapesp.br (71), ufjf.br (69);uol.com.br (95), ig.com.br (94), ebc.com.br (93), clicrbs.com.br (93), correiobraziliense.com.br (92), metropoles.com (90), canaltech.com.br (88), istoe.com.br (85), diariodocentrodomundo.com.br (77), correiodopovo.com.br (76), cnnbrasil.com.br (73);
+46;pequenocineastafest.com.br;35;7;3;1;1;0;3;0;44;2011;2026;15;ativo ate 2025/26 (pode estar em uso ou redencao);jbrj.gov.br (64), seduc.ce.gov.br (60), seed.se.gov.br (46);uff.br (70);uol.com.br (95), ebc.com.br (93), istoe.com.br (85);
+47;faatensino.com.br;28;7;1;4;0;0;2;1;52;2005;2018;13;historico longo;londrina.pr.gov.br (59);uft.edu.br (63), uepg.br (62), ufrr.br (58), up.edu.br (57);abril.com.br (95), bonde.com.br (71);en.wikipedia.org (98)
+48;xiiienem.com.br;24;0;1;4;2;0;0;0;8;2019;2026;7;ativo ate 2025/26 (pode estar em uso ou redencao);esportes.mt.gov.br (34);uft.edu.br (63), ifrn.edu.br (61), uefs.br (60), unifal-mg.edu.br (59);;
+49;archathon.com.br;39;10;2;2;0;0;4;0;23;2016;2024;8;historico curto;pbh.gov.br (75), caubr.gov.br (60);unifor.br (62), univali.br (62);uol.com.br (95), abril.com.br (95), globo.com (95), otempo.com.br (88);
+50;cacaasteroidesmcti.com.br;25;9;1;3;2;0;3;0;20;2023;2026;3;ativo ate 2025/26 (pode estar em uso ou redencao);santos.sp.gov.br (64);ufsc.br (88), ufu.br (68), ufv.br (65);uol.com.br (95), olhardigital.com.br (92), brasildefato.com.br (75);
+51;11cbtms.com.br;20;28;2;3;2;0;0;0;4;2025;2026;1;ativo ate 2025/26 (pode estar em uso ou redencao);saude.ba.gov.br (64), agenciacoradenoticias.go.gov.br (43);ufsc.br (88), ufpa.br (71), ufma.br (64);;
+52;xxivsnptee.com.br;24;3;2;3;1;0;1;0;37;2016;2026;10;ativo ate 2025/26 (pode estar em uso ou redencao);curitiba.pr.gov.br (72), ibama.gov.br (70);usp.br (92), ufrgs.br (81), ufjf.br (69);bemparana.com.br (76);
+53;paranainfoco.com.br;15;0;5;0;1;0;0;0;1;2019;2019;0;historico curto;curitiba.pr.gov.br (72), maringa.pr.gov.br (60), pontagrossa.pr.gov.br (55), guarapuava.pr.gov.br (45), franciscobeltrao.pr.gov.br (43);;;
+54;saudeweb.com.br;41;5;1;4;0;0;1;1;108;1998;2023;25;historico longo;ans.gov.br (79);usp.br (92), fiocruz.br (77), ufpr.br (75), unesp.br (72);terra.com.br (94);pt.wikipedia.org (95)
+55;tecladointeligente.com.br;25;0;2;3;0;0;2;0;3;2018;2019;1;historico curto;pmvc.ba.gov.br (49), seed.mg.gov.br (46);ufmg.br (89), ufrj.br (74), izabelahendrix.edu.br (42);estadao.com.br (94), olhardigital.com.br (92);
+56;silviminas.com.br;23;0;2;3;1;0;0;1;67;2003;2026;23;ativo ate 2025/26 (pode estar em uso ou redencao);almg.gov.br (67), florestal.gov.br (57);ufpr.br (75), embrapa.br (72), unicesumar.edu.br (60);;pt.wikipedia.org (95)
+57;praticahospitalar.com.br;35;28;1;4;0;0;0;2;86;2003;2020;17;historico longo;mec.gov.br (93);usp.br (92), fiocruz.br (77), unicamp.br (76), uff.br (70);;en.wikipedia.org (98), pt.wikipedia.org (95)
+58;brazilcoffeenation.com.br;44;8;0;2;0;0;9;1;16;2022;2025;3;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), embrapa.br (72);uol.com.br (95), globo.com (95), estadao.com.br (94), ebc.com.br (93), gazetadopovo.com.br (93), infomoney.com.br (92), istoe.com.br (85), bemparana.com.br (76), brasildefato.com.br (75);pt.wikipedia.org (95)
+59;universidadefalada.com.br;45;1;1;1;0;0;6;4;150;2007;2023;16;historico longo;mec.gov.br (93);ufmg.br (89);uol.com.br (95), globo.com (95), estadao.com.br (94), ebc.com.br (93), catracalivre.com.br (93), diariodepernambuco.com.br (79);en.wikipedia.org (98), es.wikipedia.org (96), pt.wikipedia.org (95), ca.wikipedia.org (82)
+60;reumatologia.com.br;47;0;2;1;0;0;5;1;151;2000;2026;26;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93), saude.gov.br (90);ufmg.br (89);uol.com.br (95), abril.com.br (95), globo.com (95), opovo.com.br (92), jusbrasil.com.br (87);pt.wikipedia.org (95)
+61;cinemarias.com.br;38;1;2;1;1;0;5;0;16;2021;2025;4;ativo ate 2025/26 (pode estar em uso ou redencao);tjes.jus.br (59), www.es.gov.br (57);ufes.br (66);uol.com.br (95), ebc.com.br (93), metropoles.com (90), brasildefato.com.br (75), folhavitoria.com.br (69);
+62;panplantasmedicinais.com.br;24;7;2;2;3;0;0;0;9;2021;2026;5;ativo ate 2025/26 (pode estar em uso ou redencao);fapeam.am.gov.br (50), sedecti.am.gov.br (38);fiocruz.br (77), uea.edu.br (58);;
+63;redebh.com.br;32;8;2;3;0;0;1;0;88;2008;2026;18;ativo ate 2025/26 (pode estar em uso ou redencao);goiania.go.gov.br (70), mpt.mp.br (70);ufmg.br (89), ufrgs.br (81), uff.br (70);em.com.br (89);
+64;papagaiosdobrasil.com.br;29;4;1;1;3;0;5;1;30;2007;2023;16;historico longo;bauru.sp.gov.br (57);ufjf.br (69);uol.com.br (95), ig.com.br (94), ebc.com.br (93), hypeness.com.br (77), tribunapr.com.br (71);pt.wikipedia.org (95)
+65;bahiacontraofake.com.br;40;1;2;1;0;0;6;0;30;2020;2024;4;historico longo;www.ba.gov.br (70), saude.ba.gov.br (64);ufjf.br (69);uol.com.br (95), globo.com (95), correiobraziliense.com.br (92), metropoles.com (90), em.com.br (89), cnnbrasil.com.br (73);
+66;observatoriodoamianto.com.br;24;0;3;1;1;0;2;0;4;2024;2026;2;ativo ate 2025/26 (pode estar em uso ou redencao);mpt.mp.br (70), saude.pr.gov.br (64), mpt.gov.br (64);ufpr.br (75);uol.com.br (95), globo.com (95);
+67;cinemateca.com.br;47;6;1;1;0;0;6;1;139;2000;2025;25;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93);usp.br (92);uol.com.br (95), abril.com.br (95), globo.com (95), ig.com.br (94), estadao.com.br (94), catracalivre.com.br (93);pt.wikipedia.org (95)
+68;portrasdasletras.com.br;44;3;1;3;0;0;0;3;86;2003;2026;23;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93);usp.br (92), ufmg.br (89), uem.br (77);;pt.wikipedia.org (95), ca.wikipedia.org (82), hr.wikipedia.org (77)
+69;cebrade.com.br;37;1;3;1;0;0;2;0;72;2001;2025;24;ativo ate 2025/26 (pode estar em uso ou redencao);londrina.pr.gov.br (59), telemacoborba.pr.gov.br (45), guarapuava.pr.gov.br (45);uel.br (67);gazetadopovo.com.br (93), bonde.com.br (71);
+70;portoesabertosbabr.com.br;33;2;3;1;0;0;2;1;7;2022;2026;4;ativo ate 2025/26 (pode estar em uso ou redencao);www.gov.br (94), fab.mil.br (70), aer.mil.br (67);fapesp.br (71);uol.com.br (95), ebc.com.br (93);pt.wikipedia.org (95)
+71;abeneventos.com.br;43;3;1;3;0;0;2;1;60;2009;2022;13;historico longo;saude.gov.br (90);usp.br (92), ufmg.br (89), ufsc.br (88);uol.com.br (95), globo.com (95);pt.wikipedia.org (95)
+72;etepb.com.br;24;0;1;4;1;0;0;0;82;2008;2024;16;historico longo;cps.sp.gov.br (60);ufu.br (68), uft.edu.br (63), ifrn.edu.br (61), ufpi.br (61);;
+73;disneymagicruncuritiba.com.br;32;1;3;1;0;0;2;0;9;2024;2025;1;ativo ate 2025/26 (pode estar em uso ou redencao);curitiba.pr.gov.br (72), parana.pr.gov.br (66), turismo.pr.gov.br (46);cruzeirodosuleducacional.edu.br (44);bonde.com.br (71), tribunapr.com.br (71);
+75;escolaoficinaludica.com.br;31;8;2;2;2;0;0;0;164;2001;2026;25;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93), seed.pr.gov.br (64);ufrgs.br (81), ufba.br (68);;
+76;imesp.com.br;47;0;1;1;0;0;7;1;67;1998;2024;26;historico longo;prefeitura.sp.gov.br (92);usp.br (92);uol.com.br (95), abril.com.br (95), globo.com (95), ig.com.br (94), clicrbs.com.br (93), gazetadopovo.com.br (93), correiobraziliense.com.br (92);pt.wikipedia.org (95)
+77;tedxsaopaulo.com.br;45;0;1;2;0;0;3;1;61;2009;2023;14;historico longo;mec.gov.br (93);usp.br (92), ufmg.br (89);abril.com.br (95), globo.com (95), clicrbs.com.br (93);pt.wikipedia.org (95)
+78;bvnews.com.br;40;5;1;2;0;0;1;5;191;2002;2026;24;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93);fiocruz.br (77), uff.br (70);uol.com.br (95);en.wikipedia.org (98), es.wikipedia.org (96), pt.wikipedia.org (95), id.wikipedia.org (93), ko.wikipedia.org (81)
+80;jornaldeboasnoticias.com.br;32;1;0;4;1;0;2;0;80;2014;2025;11;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), uerj.br (75), ufg.br (71), fapesp.br (71);abril.com.br (95), ig.com.br (94);
+81;brasiliamotocapital.com.br;34;5;0;4;0;0;2;0;31;2010;2026;16;ativo ate 2025/26 (pode estar em uso ou redencao);;cnpq.br (81), ufrn.br (67), ufma.br (64), unirio.br (64);uol.com.br (95), globo.com (95);
+82;revistalingua.com.br;43;0;0;3;0;0;4;1;59;2015;2026;11;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), ufrgs.br (81), unb.br (73);uol.com.br (95), abril.com.br (95), ig.com.br (94), jusbrasil.com.br (87);pt.wikipedia.org (95)
+84;movnews.com.br;27;1;1;2;3;0;0;2;35;2021;2024;3;historico longo;cb.es.gov.br (45);ufrj.br (74), fapesp.br (71);;pt.wikipedia.org (95), ru.wikipedia.org (94)
+85;esporteessencial.com.br;38;1;1;1;0;0;2;7;70;2012;2025;13;ativo ate 2025/26 (pode estar em uso ou redencao);www.gov.br (94);ufsc.br (88);uol.com.br (95), ig.com.br (94);en.wikipedia.org (98), es.wikipedia.org (96), fr.wikipedia.org (95), pt.wikipedia.org (95), de.wikipedia.org (94), pl.wikipedia.org (93), ja.wikipedia.org (93)
+86;unigeo.com.br;20;9;2;3;0;0;0;0;59;1999;2014;15;historico longo;portaisgoverno.pe.gov.br (47), ati.pe.gov.br (31);usp.br (92), unesp.br (72), uema.br (59);;
+87;amparo.tur.br;24;1;4;0;0;0;1;1;86;2006;2026;20;ativo ate 2025/26 (pode estar em uso ou redencao);museus.gov.br (69), turismo.sp.gov.br (54), amparo.sp.gov.br (46), circuitodasaguaspaulista.sp.gov.br (44);;em.com.br (89);pt.wikipedia.org (95)
+88;seminarioppgt.com.br;20;7;3;0;4;0;0;0;15;2016;2026;10;ativo ate 2025/26 (pode estar em uso ou redencao);camara.leg.br (91), ipea.gov.br (75), mestradoprofissional.gov.br (22);;;
+90;renaultexperience.com.br;33;1;0;4;0;0;3;0;48;2009;2024;15;historico longo;;usp.br (92), ufrj.br (74), fapesp.br (71), ufc.br (71);globo.com (95), tecmundo.com.br (93), gazetadopovo.com.br (93);
+91;saneparstartups.com.br;30;8;4;0;1;0;0;0;34;2021;2026;5;ativo ate 2025/26 (pode estar em uso ou redencao);enap.gov.br (70), parana.pr.gov.br (66), aen.pr.gov.br (65), finep.gov.br (64);;;
+92;aticascipione.com.br;51;8;1;1;0;0;5;2;93;2013;2025;12;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93);usp.br (92);uol.com.br (95), abril.com.br (95), globo.com (95), ig.com.br (94), clicrbs.com.br (93);es.wikipedia.org (96), pt.wikipedia.org (95)
+94;rea.net.br;43;0;1;1;0;0;5;2;28;2010;2018;8;historico longo;mec.gov.br (93);usp.br (92);uol.com.br (95), abril.com.br (95), estadao.com.br (94), ebc.com.br (93), gazetadopovo.com.br (93);wikimedia.org (95), pt.wikipedia.org (95)
+96;iscafaculdades.com.br;36;2;0;4;0;0;1;1;157;2001;2023;22;historico longo;;usp.br (92), ufsc.br (88), ufpa.br (71), ufjf.br (69);globo.com (95);pt.wikipedia.org (95)
+97;btmais.com.br;27;10;1;3;0;0;1;1;29;2022;2025;3;ativo ate 2025/26 (pode estar em uso ou redencao);mprj.mp.br (62);fiocruz.br (77), fapesp.br (71), ufvjm.edu.br (56);terra.com.br (94);pt.wikipedia.org (95)
+98;otec.net.br;33;4;1;2;0;0;2;3;17;2021;2026;5;ativo ate 2025/26 (pode estar em uso ou redencao);bndes.gov.br (70);unicamp.br (76), ufsm.br (70);uol.com.br (95), ig.com.br (94);en.wikipedia.org (98), es.wikipedia.org (96), pt.wikipedia.org (95)
+100;transformarecife.com.br;36;10;2;1;0;0;4;0;65;2015;2026;11;ativo ate 2025/26 (pode estar em uso ou redencao);recife.pe.gov.br (67), www.pe.gov.br (62);unit.br (55);uol.com.br (95), globo.com (95), catracalivre.com.br (93), diariodepernambuco.com.br (79);
+102;supervolt.com.br;40;1;1;3;0;0;0;1;24;2001;2021;20;historico longo;mec.gov.br (93);usp.br (92), uem.br (77), uerj.br (75);;pt.wikipedia.org (95)
+104;premioeducacaofinanceira.com.br;33;5;0;3;0;0;5;0;18;2021;2024;3;historico curto;;ufsc.br (88), ufsm.br (70), ufal.br (64);ig.com.br (94), estadao.com.br (94), infomoney.com.br (92), otempo.com.br (88), nsctotal.com.br (69);
+105;agenciabr.com.br;32;6;0;4;0;0;1;1;59;2011;2026;15;ativo ate 2025/26 (pode estar em uso ou redencao);;uerj.br (75), ufg.br (71), fapesp.br (71), ufjf.br (69);diariodocentrodomundo.com.br (77);pt.wikipedia.org (95)
+108;abet2015.com.br;19;0;0;4;2;0;0;0;11;2015;2017;2;historico curto;;fiocruz.br (77), unicamp.br (76), ufscar.br (75), ufg.br (71);;
+110;minaslivre.com.br;34;5;2;0;5;0;0;0;44;2010;2025;15;ativo ate 2025/26 (pode estar em uso ou redencao);mpt.mp.br (70), mpt.gov.br (64);;;
+111;institutoarqueologico.com.br;24;5;2;0;2;0;1;4;30;2010;2025;15;ativo ate 2025/26 (pode estar em uso ou redencao);cultura.gov.br (73), fundaj.gov.br (62);;uol.com.br (95);en.wikipedia.org (98), fr.wikipedia.org (95), pt.wikipedia.org (95), it.wikipedia.org (93)
+113;saudeindigena.net.br;46;2;1;1;0;0;5;0;16;2020;2026;6;ativo ate 2025/26 (pode estar em uso ou redencao);www.gov.br (94);usp.br (92);uol.com.br (95), globo.com (95), ebc.com.br (93), metropoles.com (90), em.com.br (89);
+114;fcorquidofilia.com.br;17;8;4;0;0;0;1;0;45;2014;2020;6;historico longo;estado.sc.gov.br (56), sibbr.gov.br (49), santur.sc.gov.br (44), sol.sc.gov.br (42);;nsctotal.com.br (69);
+115;tamnasnuvens.com.br;39;2;1;1;0;0;3;3;99;2007;2026;19;ativo ate 2025/26 (pode estar em uso ou redencao);fab.mil.br (70);ufpr.br (75);uol.com.br (95), r7.com (93), opovo.com.br (92);wikimedia.org (95), pt.wikipedia.org (95), id.wikipedia.org (93)
+116;usinamaua.com.br;36;5;2;0;0;0;1;6;73;2009;2026;17;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93), prefeitura.sp.gov.br (92);;globo.com (95);en.wikipedia.org (98), wikimedia.org (95), pt.wikipedia.org (95), it.wikipedia.org (93), nl.wikipedia.org (91), wikidata.org (80)
+121;webcine.com.br;42;19;1;1;0;0;3;3;165;2000;2022;22;historico longo;mec.gov.br (93);usp.br (92);uol.com.br (95), globo.com (95), ig.com.br (94);en.wikipedia.org (98), pt.wikipedia.org (95), ja.wikipedia.org (93)
+122;revan.com.br;43;1;1;1;0;0;4;2;197;1998;2026;28;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93);ufsc.br (88);uol.com.br (95), ebc.com.br (93), catracalivre.com.br (93), jusbrasil.com.br (87);en.wikipedia.org (98), pt.wikipedia.org (95)
+123;correntecoats.com.br;39;2;1;1;0;0;5;1;35;2019;2025;6;ativo ate 2025/26 (pode estar em uso ou redencao);planalto.gov.br (93);ufmg.br (89);uol.com.br (95), globo.com (95), ig.com.br (94), clicrbs.com.br (93), catracalivre.com.br (93);pt.wikipedia.org (95)
+124;avchap.com.br;26;1;1;3;0;0;1;0;73;2008;2025;17;ativo ate 2025/26 (pode estar em uso ou redencao);chapeco.sc.gov.br (52);ufpe.br (68), uffs.edu.br (57), uceff.edu.br (41);nsctotal.com.br (69);
+125;apec.pro.br;24;18;0;4;0;0;0;2;36;2016;2025;9;ativo ate 2025/26 (pode estar em uso ou redencao);;ufsc.br (88), ueg.br (64), ufma.br (64), ufs.br (63);;en.wikipedia.org (98), pt.wikipedia.org (95)
+126;anctur.com.br;38;9;1;1;0;0;6;0;26;2021;2024;3;historico longo;www.gov.br (94);usp.br (92);uol.com.br (95), globo.com (95), ig.com.br (94), estadao.com.br (94), catracalivre.com.br (93), infomoney.com.br (92);
+128;embalagemsustentavel.com.br;32;0;1;2;2;0;1;0;72;2010;2020;10;historico longo;tjsc.jus.br (69);ufmg.br (89), ufsc.br (88);abril.com.br (95);
+129;abble.com.br;32;4;0;3;0;0;3;1;27;2009;2026;17;ativo ate 2025/26 (pode estar em uso ou redencao);;unicamp.br (76), embrapa.br (72), unesp.br (72);uol.com.br (95), abril.com.br (95), catracalivre.com.br (93);pt.wikipedia.org (95)
+130;centrodomvital.com.br;23;1;1;2;1;0;0;3;78;2015;2025;10;ativo ate 2025/26 (pode estar em uso ou redencao);bn.gov.br (66);unifesp.br (69), ufrrj.br (62);;fr.wikipedia.org (95), pt.wikipedia.org (95), de.wikipedia.org (94)
+131;abdem.com.br;33;6;1;2;0;0;3;0;78;2002;2026;24;ativo ate 2025/26 (pode estar em uso ou redencao);prefeitura.sp.gov.br (92);ufpr.br (75), unesp.br (72);uol.com.br (95), jusbrasil.com.br (87), poder360.com.br (75);
+132;cartuchohp.com.br;15;4;4;0;0;0;0;0;18;2024;2026;2;ativo ate 2025/26 (pode estar em uso ou redencao);alesc.sc.gov.br (63), garibaldi.rs.gov.br (46), viana.es.gov.br (45), fabriciano.mg.gov.br (43);;;
+133;iniciativanegra.com.br;31;3;1;2;1;0;2;0;32;2018;2026;8;ativo ate 2025/26 (pode estar em uso ou redencao);agenciaminas.mg.gov.br (63);ufscar.br (75), ufsj.edu.br (63);uol.com.br (95), brasildefato.com.br (75);
+134;anjodaguardafest.com.br;22;5;4;0;0;0;0;0;75;2008;2026;18;ativo ate 2025/26 (pode estar em uso ou redencao);cbm.sc.gov.br (54), jaraguadosul.sc.gov.br (49), sol.sc.gov.br (42), cidadedecamboriu.sc.gov.br (37);;;
+136;profissoesdefuturo.com.br;33;1;0;2;1;0;4;1;52;2011;2026;15;ativo ate 2025/26 (pode estar em uso ou redencao);;ueg.br (64), ufcg.edu.br (62);uol.com.br (95), globo.com (95), estadao.com.br (94), folhavitoria.com.br (69);pt.wikipedia.org (95)
+139;tapetescontadores.com.br;37;10;1;2;0;0;3;0;132;2005;2026;21;ativo ate 2025/26 (pode estar em uso ou redencao);portoalegre.rs.gov.br (69);unirio.br (64), uepa.br (60);abril.com.br (95), ebc.com.br (93), opovo.com.br (92);
+140;chorandosemparar.com.br;28;10;1;2;1;0;1;1;36;2016;2025;9;ativo ate 2025/26 (pode estar em uso ou redencao);saocarlos.sp.gov.br (51);usp.br (92), ufscar.br (75);globo.com (95);pt.wikipedia.org (95)
+146;gemt.com.br;20;9;3;0;1;0;1;0;72;2001;2025;24;ativo ate 2025/26 (pode estar em uso ou redencao);mpt.mp.br (70), mpt.gov.br (64), trt8.jus.br (55);;jusbrasil.com.br (87);
+147;webexchange.com.br;27;0;3;0;1;0;1;0;6;2024;2025;1;ativo ate 2025/26 (pode estar em uso ou redencao);casaruibarbosa.gov.br (57), portaldoconsumidor.gov.br (52), rb.gov.br (38);;globo.com (95);
+148;comunicacaochapabranca.com.br;30;4;3;0;0;0;0;2;66;2008;2025;17;ativo ate 2025/26 (pode estar em uso ou redencao);lexml.gov.br (58), interlegis.leg.br (52), interlegis.gov.br (52);;;en.wikipedia.org (98), pt.wikipedia.org (95)
+150;macroabc.com.br;31;9;2;0;4;0;0;0;66;2010;2026;16;ativo ate 2025/26 (pode estar em uso ou redencao);prefeitura.sp.gov.br (92), mj.gov.br (71);;;
+151;falaseriocanaa.com.br;27;4;0;3;1;0;2;0;51;2018;2025;7;ativo ate 2025/26 (pode estar em uso ou redencao);;ufmg.br (89), fapesp.br (71), unifesspa.edu.br (49);globo.com (95), r7.com (93);
+155;natalsp.com.br;23;0;2;0;0;0;5;0;4;2022;2025;3;ativo ate 2025/26 (pode estar em uso ou redencao);prefeitura.sp.gov.br (92), capital.sp.gov.br (76);;uol.com.br (95), abril.com.br (95), ebc.com.br (93), r7.com (93), istoe.com.br (85);
+157;institutoavantebrasil.com.br;42;0;0;2;1;0;3;1;26;2012;2026;14;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), unb.br (73);abril.com.br (95), ebc.com.br (93), jusbrasil.com.br (87);pt.wikipedia.org (95)
+165;mulheresdeluta.com.br;25;5;1;2;0;0;0;3;24;2018;2024;6;historico longo;bn.gov.br (66);ufal.br (64), ifsp.edu.br (64);;pt.wikipedia.org (95), tr.wikipedia.org (83), ig.wikipedia.org (51)
+166;ergonomianotrabalho.com.br;30;0;0;4;0;0;0;0;67;2009;2023;14;historico longo;;unirio.br (64), uesb.br (62), unoesc.edu.br (61), ifmg.edu.br (58);;
+167;eurochemfto.com.br;31;8;1;2;0;0;2;0;19;2020;2026;6;ativo ate 2025/26 (pode estar em uso ou redencao);saude.ba.gov.br (64);ufjf.br (69), ufba.br (68);uol.com.br (95), poder360.com.br (75);
+168;colunafinanceira.com.br;36;0;1;1;2;0;2;0;5;2024;2024;0;historico curto;jfsp.jus.br (60);uel.br (67);correiobraziliense.com.br (92), em.com.br (89);
+173;comiteibicui.com.br;32;7;0;2;1;0;3;1;41;2013;2026;13;ativo ate 2025/26 (pode estar em uso ou redencao);;ufc.br (71), ufsm.br (70);uol.com.br (95), catracalivre.com.br (93), opovo.com.br (92);pt.wikipedia.org (95)
+174;salaodehumordepiracicaba.com.br;28;0;1;1;1;0;2;1;43;2004;2016;12;historico longo;piracicaba.sp.gov.br (56);unisanta.br (55);estadao.com.br (94), otempo.com.br (88);pt.wikipedia.org (95)
+176;portomaravilhario.com.br;29;0;2;1;1;0;0;0;21;2010;2022;12;historico curto;rio.rj.gov.br (72), camara.rj.gov.br (62);uerj.br (75);;
+178;pronatecminas.com.br;26;0;1;1;0;0;5;0;8;2017;2026;9;ativo ate 2025/26 (pode estar em uso ou redencao);agenciaminas.mg.gov.br (63);ufmg.br (89);globo.com (95), ig.com.br (94), clicrbs.com.br (93), catracalivre.com.br (93), otempo.com.br (88);
+179;jornaldejales.com.br;37;10;0;3;0;0;1;1;192;2001;2026;25;ativo ate 2025/26 (pode estar em uso ou redencao);;ufsc.br (88), ufscar.br (75), unesp.br (72);uol.com.br (95);pt.wikipedia.org (95)
+184;potter.net.br;28;0;2;0;0;0;2;3;12;2016;2026;10;ativo ate 2025/26 (pode estar em uso ou redencao);www.gov.br (94), fab.mil.br (70);;uol.com.br (95), metropoles.com (90);en.wikipedia.org (98), es.wikipedia.org (96), pt.wikipedia.org (95)
+185;nucleoexperimental.com.br;30;13;1;1;0;0;4;1;60;2012;2026;14;ativo ate 2025/26 (pode estar em uso ou redencao);prefeitura.sp.gov.br (92);udesc.br (66);uol.com.br (95), ig.com.br (94), estadao.com.br (94), catracalivre.com.br (93);pt.wikipedia.org (95)
+186;cidadeama.com.br;31;10;1;1;0;0;4;0;34;2019;2025;6;ativo ate 2025/26 (pode estar em uso ou redencao);curitiba.pr.gov.br (72);ufrj.br (74);terra.com.br (94), hypeness.com.br (77), folhavitoria.com.br (69), nsctotal.com.br (69);
+187;informaticahoje.com.br;21;5;0;4;0;0;0;0;95;1999;2024;25;historico longo;;ufsc.br (88), unisul.br (60), uniderp.br (44), fsaa.edu.br (24);;
+188;animatoons.com.br;42;1;1;1;0;0;2;2;106;2004;2022;18;historico longo;mec.gov.br (93);ufrgs.br (81);uol.com.br (95), globo.com (95);pt.wikipedia.org (95), wikibooks.org (88)
+189;dfsports.com.br;33;3;0;2;0;0;0;5;51;2017;2025;8;ativo ate 2025/26 (pode estar em uso ou redencao);;uerj.br (75), unb.br (73);;en.wikipedia.org (98), es.wikipedia.org (96), pt.wikipedia.org (95), de.wikipedia.org (94), it.wikipedia.org (93)
+191;cienciarn.com.br;19;0;0;3;2;0;0;0;19;2012;2026;14;ativo ate 2025/26 (pode estar em uso ou redencao);;cnpq.br (81), ufpr.br (75), uern.br (56);;
+193;resellerweb.com.br;32;3;0;3;0;0;1;1;139;2001;2026;25;ativo ate 2025/26 (pode estar em uso ou redencao);;ufsc.br (88), ufba.br (68), ufrn.br (67);uol.com.br (95);pt.wikipedia.org (95)
+194;floripanoponto.com.br;31;0;1;1;2;0;2;0;45;2017;2024;7;historico longo;pmf.sc.gov.br (63);ufsc.br (88);globo.com (95), nsctotal.com.br (69);
+195;jcom.com.br;37;0;0;2;0;0;1;4;108;1999;2019;20;historico longo;;ufrgs.br (81), fiocruz.br (77);infomoney.com.br (92);en.wikipedia.org (98), pt.wikipedia.org (95), ja.wikipedia.org (93), ms.wikipedia.org (73)
+196;revistacaju.com.br;29;2;0;3;0;0;0;2;40;2017;2024;7;historico longo;;unicamp.br (76), ufrj.br (74), unb.br (73);;en.wikipedia.org (98), pt.wikipedia.org (95)
+197;tattoaria.com.br;34;4;1;1;0;0;4;0;49;2014;2026;12;ativo ate 2025/26 (pode estar em uso ou redencao);educacao.pe.gov.br (61);ufpe.br (68);abril.com.br (95), globo.com (95), catracalivre.com.br (93), guiadasemana.com.br (80);
+198;webbusca.com.br;32;8;1;1;0;0;0;5;174;2001;2022;21;historico longo;mec.gov.br (93);unicamp.br (76);;en.wikipedia.org (98), pt.wikipedia.org (95), zh.wikipedia.org (91), fa.wikipedia.org (86), uk.wikipedia.org (79)
+200;bancobanif.com.br;28;0;2;0;1;0;0;3;90;2006;2023;17;historico longo;bc.gov.br (49), bacen.gov.br (44);;;fr.wikipedia.org (95), pt.wikipedia.org (95), ay.wikipedia.org (53)
+201;listagem.com.br;34;1;1;1;0;0;4;0;95;2000;2024;24;historico longo;mec.gov.br (93);ufg.br (71);abril.com.br (95), globo.com (95), estadao.com.br (94), catracalivre.com.br (93);
+204;viradadainovacao.com.br;15;1;2;1;1;0;0;0;8;2017;2021;4;historico curto;cultura.sc.gov.br (54), fapesc.sc.gov.br (49);udesc.br (66);;
+207;maskate.com.br;25;1;2;0;0;0;2;2;122;2000;2026;26;ativo ate 2025/26 (pode estar em uso ou redencao);mj.gov.br (71), diaadia.pr.gov.br (65);;uol.com.br (95), globo.com (95);en.wikipedia.org (98), id.wikipedia.org (93)
+208;azougue.com.br;37;7;0;2;0;0;1;3;100;2001;2026;25;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), ufrj.br (74);hypeness.com.br (77);es.wikipedia.org (96), fr.wikipedia.org (95), pt.wikipedia.org (95)
+209;itatiaiasuldeminas.com.br;27;6;2;1;0;0;0;1;7;2011;2024;13;historico curto;mpt.mp.br (70), mg.def.br (51);ifsuldeminas.edu.br (64);;pt.wikipedia.org (95)
+211;imagensdahora.com.br;29;5;1;2;0;0;0;0;60;2007;2026;19;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93);unicamp.br (76), ufba.br (68);;
+212;jornaldoiguassu.com.br;27;17;2;0;2;0;0;1;18;2016;2018;2;historico curto;justica.pr.gov.br (54), pr.def.br (50);;;pt.wikipedia.org (95)
+213;socesp2022.com.br;37;28;0;2;0;0;2;2;27;2022;2025;3;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), ufmg.br (89);abril.com.br (95), diariodocentrodomundo.com.br (77);es.wikipedia.org (96), pt.wikipedia.org (95)
+216;tapintandoumnovometro.com.br;22;0;3;0;0;0;0;0;5;2025;2026;1;ativo ate 2025/26 (pode estar em uso ou redencao);saopaulo.sp.gov.br (79), metro.sp.gov.br (66), cps.sp.gov.br (60);;;
+223;jornaldabaixada.com.br;27;0;1;1;2;0;1;0;14;1999;2011;12;historico curto;diaadia.pr.gov.br (65);unisanta.br (55);uol.com.br (95);
+225;pastoraldasaudenacional.com.br;28;0;0;2;2;0;1;1;19;2009;2026;17;ativo ate 2025/26 (pode estar em uso ou redencao);;unirio.br (64), uft.edu.br (63);catracalivre.com.br (93);pt.wikipedia.org (95)
+232;jucepaintegrador.com.br;18;11;2;0;2;1;0;0;2;2019;2021;2;historico curto;jucepa.pa.gov.br (46), prodepa.pa.gov.br (32);;;
+233;brasilplast.com.br;30;8;0;2;1;0;2;0;120;1999;2025;26;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), ulbra.br (59);uol.com.br (95), abril.com.br (95);
+234;zattiniparcerias.com.br;21;0;1;1;3;0;0;0;1;2020;2020;0;historico curto;antigoportaldoservidor.ba.gov.br (16);facha.edu.br (49);;
+235;salvadorconvention.com.br;27;1;1;1;1;0;0;2;142;2000;2025;25;ativo ate 2025/26 (pode estar em uso ou redencao);turismo.gov.br (74);ufba.br (68);;pt.wikipedia.org (95), wikidata.org (80)
+237;jornaldoestado.com.br;35;3;1;1;0;0;1;2;87;1998;2025;27;ativo ate 2025/26 (pode estar em uso ou redencao);anac.gov.br (68);ufpr.br (75);bemparana.com.br (76);pt.wikipedia.org (95), ja.wikipedia.org (93)
+238;rockcomciencia.com.br;33;4;0;2;1;0;2;0;102;2011;2026;15;ativo ate 2025/26 (pode estar em uso ou redencao);;unicamp.br (76), fapesp.br (71);uol.com.br (95), globo.com (95);
+240;unicoasfaltos.com.br;34;6;0;2;0;0;3;0;59;2012;2026;14;ativo ate 2025/26 (pode estar em uso ou redencao);;cnpq.br (81), ufma.br (64);uol.com.br (95), estadao.com.br (94), gazetadopovo.com.br (93);
+244;congressodses.com.br;23;3;0;3;1;0;0;0;4;2024;2026;2;ativo ate 2025/26 (pode estar em uso ou redencao);;fiocruz.br (77), unicamp.br (76), ufba.br (68);;
+249;segurancahidricarj.com.br;17;4;1;1;3;0;0;0;14;2016;2026;10;ativo ate 2025/26 (pode estar em uso ou redencao);www.rj.gov.br (70);ifrj.edu.br (56);;
+252;rdjdb.com.br;39;30;1;1;0;0;2;0;10;2025;2026;1;ativo ate 2025/26 (pode estar em uso ou redencao);ipea.gov.br (75);ufpel.edu.br (66);uol.com.br (95), correiobraziliense.com.br (92);
+262;editorahorizonte.com.br;28;6;0;3;0;0;0;0;53;2007;2021;14;historico longo;;usp.br (92), ufpb.br (68), ufpel.edu.br (66);;
+264;vozdopara.com.br;18;0;0;2;2;0;1;0;43;2019;2025;6;ativo ate 2025/26 (pode estar em uso ou redencao);;fapesp.br (71), ufma.br (64);cartacapital.com.br (88);
+265;obsidiana.com.br;19;25;1;1;1;0;2;0;36;2000;2022;22;historico longo;batebyte.pr.gov.br (35);unisanta.br (55);uol.com.br (95), terra.com.br (94);
+268;newsprime.com.br;28;12;0;2;1;0;1;0;62;2012;2025;13;ativo ate 2025/26 (pode estar em uso ou redencao);;unicesumar.edu.br (60), ufrr.br (58);metropoles.com (90);
+269;revistaetcetera.com.br;36;3;0;2;0;0;1;1;101;2001;2025;24;ativo ate 2025/26 (pode estar em uso ou redencao);;unifesp.br (69), ifto.edu.br (56);uol.com.br (95);pt.wikipedia.org (95)
+270;dancachapeco.com.br;18;8;2;1;0;0;0;0;62;2017;2026;9;ativo ate 2025/26 (pode estar em uso ou redencao);chapeco.sc.gov.br (52), aguasfrias.sc.gov.br (31);udesc.br (66);;
+271;direitoparatecnologia.com.br;14;1;0;3;0;0;1;0;27;2019;2025;6;ativo ate 2025/26 (pode estar em uso ou redencao);;esaoabsp.edu.br (41), fatecourinhos.edu.br (38), fapam.edu.br (38);jusbrasil.com.br (87);
+273;floriculturaprime.com.br;16;14;0;3;0;0;0;0;2;2023;2023;0;historico curto;;uerj.br (75), unifap.br (60), upe.br (58);;
+275;suadieta.com.br;33;30;0;2;0;0;2;0;118;2003;2025;22;ativo ate 2025/26 (pode estar em uso ou redencao);;embrapa.br (72), unisanta.br (55);clicrbs.com.br (93), bonde.com.br (71);
+277;cozot.com.br;35;3;2;0;0;0;1;1;80;2010;2025;15;ativo ate 2025/26 (pode estar em uso ou redencao);mj.gov.br (71), fab.mil.br (70);;globo.com (95);pt.wikipedia.org (95)
+279;ruralmaringajunino.com.br;29;0;2;0;1;0;0;0;7;2023;2025;2;ativo ate 2025/26 (pode estar em uso ou redencao);parana.pr.gov.br (66), turismo.pr.gov.br (46);;;
+280;brasilsemfrestas.com.br;24;6;1;1;1;0;1;0;24;2019;2025;6;ativo ate 2025/26 (pode estar em uso ou redencao);curitiba.pr.gov.br (72);unicamp.br (76);catracalivre.com.br (93);
+281;inac2015.com.br;17;24;1;1;1;0;0;1;20;2015;2025;10;ativo ate 2025/26 (pode estar em uso ou redencao);cnen.gov.br (58);ufabc.edu.br (61);;pt.wikipedia.org (95)
+282;vinhosbianchetti.com.br;24;10;1;1;0;0;2;1;24;2008;2026;18;ativo ate 2025/26 (pode estar em uso ou redencao);capes.gov.br (72);unesp.br (72);abril.com.br (95), catracalivre.com.br (93);pt.wikipedia.org (95)
+290;gestosaude.com.br;24;5;0;2;2;0;0;0;52;2007;2025;18;ativo ate 2025/26 (pode estar em uso ou redencao);;usp.br (92), fapesp.br (71);;
+295;braziliantourism.com.br;23;0;1;1;1;0;0;0;40;2001;2013;12;historico longo;mec.gov.br (93);ufpe.br (68);;
+297;livrariacultura.net.br;35;7;0;2;0;0;1;1;8;2025;2026;1;ativo ate 2025/26 (pode estar em uso ou redencao);;ufes.br (66), ufrrj.br (62);uol.com.br (95);pt.wikipedia.org (95)
+298;kulturtour.com.br;26;6;0;2;1;0;1;0;24;2013;2019;6;historico longo;;ufsc.br (88), ufc.br (71);clicrbs.com.br (93);
+301;paragrafo2.com.br;28;3;0;2;1;0;1;0;53;2015;2025;10;ativo ate 2025/26 (pode estar em uso ou redencao);;ufv.br (65), uninove.br (61);brasildefato.com.br (75);
+312;dragontigerluck.net.br;31;4;0;2;0;0;0;0;5;2025;2026;1;ativo ate 2025/26 (pode estar em uso ou redencao);;cnpq.br (81), ufrn.br (67);;
+319;jornaldatarde.com.br;20;0;2;0;0;0;1;0;11;2000;2003;3;historico curto;diaadia.pr.gov.br (65), fundap.sp.gov.br (53);;estadao.com.br (94);
+320;audienciasnovaferroeste.com.br;32;0;2;0;0;0;0;0;4;2022;2025;3;ativo ate 2025/26 (pode estar em uso ou redencao);parana.pr.gov.br (66), semadesc.ms.gov.br (49);;;
+331;atribunars.com.br;17;3;1;1;0;0;1;1;98;2007;2025;18;ativo ate 2025/26 (pode estar em uso ou redencao);mpt.mp.br (70);unemat.br (60);globo.com (95);pt.wikipedia.org (95)
+334;funesbom.com.br;23;0;2;0;0;0;1;0;27;2010;2026;16;ativo ate 2025/26 (pode estar em uso ou redencao);www.rj.gov.br (70), cbmerj.rj.gov.br (57);;ig.com.br (94);
+335;magnoliafestival.com.br;20;0;2;0;0;0;0;1;16;2020;2025;5;ativo ate 2025/26 (pode estar em uso ou redencao);chapeco.sc.gov.br (52), mapacultural.sc.gov.br (31);;;pt.wikipedia.org (95)
+336;machadodeassis.com.br;26;0;0;2;1;0;0;0;92;2002;2022;20;historico longo;;unicamp.br (76), ufc.br (71);;
+343;paysanduhotel.com.br;31;0;0;2;0;0;1;0;53;2002;2026;24;ativo ate 2025/26 (pode estar em uso ou redencao);;ufrj.br (74), slmandic.edu.br (49);guiadasemana.com.br (80);
+349;radioglobonatal.com.br;22;7;2;0;0;0;0;1;182;2006;2026;20;ativo ate 2025/26 (pode estar em uso ou redencao);diaadia.pr.gov.br (65), natal.rn.gov.br (63);;;pt.wikipedia.org (95)
+351;diabetesnoscuidamos.com.br;28;0;1;1;0;0;1;0;71;2001;2023;22;historico longo;rioverde.go.gov.br (46);unisanta.br (55);uol.com.br (95);
+354;atlanticenergias.com.br;29;24;0;2;0;0;1;0;68;2011;2020;9;historico longo;;usp.br (92), ufsc.br (88);bonde.com.br (71);
+359;jornalrevisao.com.br;26;7;2;0;0;0;0;0;60;2005;2026;21;ativo ate 2025/26 (pode estar em uso ou redencao);mpt.mp.br (70), diaadia.pr.gov.br (65);;;
+360;qtemprahj.com.br;21;0;1;1;0;0;0;0;44;2018;2026;8;ativo ate 2025/26 (pode estar em uso ou redencao);cati.sp.gov.br (52);fapesp.br (71);;
+361;hotelsolbh.com.br;27;8;0;2;0;0;1;0;58;2004;2019;15;historico longo;;ufmg.br (89), fiocruz.br (77);guiadasemana.com.br (80);
+365;lixozero.com.br;20;0;1;1;1;0;0;0;95;2001;2022;21;historico longo;mec.gov.br (93);ufpr.br (75);;
+366;nutricaoativa.com.br;26;4;0;2;1;0;0;0;72;2007;2026;19;ativo ate 2025/26 (pode estar em uso ou redencao);;unifor.br (62), uniderp.br (44);;
+367;cepefer.com.br;21;21;1;1;1;0;0;0;67;2005;2022;17;historico longo;levygasparian.rj.gov.br (27);ufsc.br (88);;
+369;jornalpovo.com.br;18;9;0;2;0;0;0;2;71;2001;2025;24;ativo ate 2025/26 (pode estar em uso ou redencao);;uerj.br (75), fapesp.br (71);;en.wikipedia.org (98), pt.wikipedia.org (95)
+370;tradwiki.net.br;24;9;0;2;1;0;0;0;0;-;-;0;SEM HISTORICO NO WAYBACK;;ufsc.br (88), ifsudestemg.edu.br (51);;
+372;ars.com.br;25;0;0;2;0;0;1;0;80;1996;2017;21;historico longo;;usp.br (92), unicamp.br (76);terra.com.br (94);
+373;weknowbi.com.br;25;7;2;0;0;0;0;0;17;2018;2024;6;historico curto;estado.sc.gov.br (56), fapesc.sc.gov.br (49);;;
+374;laccos.com.br;12;0;0;2;1;0;0;0;55;2015;2025;10;ativo ate 2025/26 (pode estar em uso ou redencao);;ufsc.br (88), unisc.br (57);;
+375;circuitopenaareiasp.com.br;32;3;2;0;0;0;0;0;15;2023;2025;2;ativo ate 2025/26 (pode estar em uso ou redencao);ubatuba.sp.gov.br (54), mongagua.sp.gov.br (49);;;
+376;premiourbs.com.br;29;21;2;0;0;0;0;0;48;2016;2022;6;historico longo;caubr.gov.br (60), caumt.gov.br (35);;;
+383;trilhafilmes.com.br;24;1;1;1;0;0;0;0;68;2006;2025;19;ativo ate 2025/26 (pode estar em uso ou redencao);mec.gov.br (93);ufscar.br (75);;
+391;menospressao.com.br;15;2;1;1;1;0;0;0;13;2020;2026;6;ativo ate 2025/26 (pode estar em uso ou redencao);saude.gov.br (90);usp.br (92);;
+399;globoonline.com.br;25;5;1;1;0;0;0;0;56;1999;2025;26;ativo ate 2025/26 (pode estar em uso ou redencao);ipea.gov.br (75);uerj.br (75);;
+402;galpaonelore.com.br;21;13;1;1;0;0;0;1;97;2003;2024;21;historico longo;londrina.pr.gov.br (59);uel.br (67);;wikivoyage.org (69)
+405;alexos.com.br;27;0;0;2;0;0;0;0;7;2013;2026;13;ativo ate 2025/26 (pode estar em uso ou redencao);;ufrj.br (74), ufba.br (68);;
+410;adpo.com.br;31;7;0;2;0;0;0;0;88;2001;2025;24;ativo ate 2025/26 (pode estar em uso ou redencao);;cnpq.br (81), ufrn.br (67);;
+413;jornalreal.com.br;17;3;0;2;1;0;0;0;28;2018;2026;8;ativo ate 2025/26 (pode estar em uso ou redencao);;fapesp.br (71), uft.edu.br (63);;
+424;rapazoi.com.br;24;0;1;1;0;0;0;0;69;2013;2023;10;historico longo;sde.ba.gov.br (42);fiocruz.br (77);;
+426;ecoesfera.com.br;27;19;0;2;0;0;0;0;54;2008;2026;18;ativo ate 2025/26 (pode estar em uso ou redencao);;unicamp.br (76), uninove.br (61);;
+433;henriquecorreia.com.br;17;1;0;2;0;0;1;0;62;2012;2023;11;historico longo;;unimar.br (51), unicv.edu.br (37);jusbrasil.com.br (87);
+435;avozregional.com.br;15;18;1;1;0;0;0;0;33;2014;2020;6;historico longo;diaadia.pr.gov.br (65);fapesp.br (71);;
+436;daee.com.br;16;0;2;0;0;0;0;0;9;2016;2018;2;historico curto;caubr.gov.br (60), caupb.gov.br (32);;;
+446;cervejaria3americas.com.br;14;0;2;0;0;0;0;0;13;2021;2025;4;ativo ate 2025/26 (pode estar em uso ou redencao);sorocaba.sp.gov.br (57), circuitodasfrutasoficial.sp.gov.br (40);;;
+458;klumie.com.br;14;1;1;1;0;0;0;0;27;2021;2026;5;ativo ate 2025/26 (pode estar em uso ou redencao);ideiagov.sp.gov.br (42);ifes.edu.br (65);;
+460;vantum.com.br;15;1;1;1;0;0;0;0;9;2019;2021;2;historico curto;decea.mil.br (58);ufpel.edu.br (66);;
+463;cursosolon.com.br;17;11;2;0;0;0;0;0;174;2000;2024;24;historico longo;diaadia.pr.gov.br (65), seed.pr.gov.br (64);;;
+472;anclivepa2023.com.br;7;0;0;2;1;0;0;0;4;2023;2026;3;ativo ate 2025/26 (pode estar em uso ou redencao);;ifpb.edu.br (59), ufersa.edu.br (57);;
+482;rphst.com.br;19;0;0;2;0;0;0;0;23;2017;2023;6;historico curto;;ufc.br (71), ufjf.br (69);;
+483;linuxinrio.com.br;19;0;0;2;0;0;0;0;3;2015;2016;1;historico curto;;uerj.br (75), uff.br (70);;
+500;bahiaemalerta.com.br;14;0;1;1;0;0;0;0;23;2017;2025;8;ativo ate 2025/26 (pode estar em uso ou redencao);fpc.ba.gov.br (49);fapesp.br (71);;
+511;panosso.pro.br;18;9;0;2;0;0;0;0;57;2012;2025;13;ativo ate 2025/26 (pode estar em uso ou redencao);;uems.br (56), uniesp.edu.br (54);;
+516;municipiosconsultoria.com.br;5;17;2;0;0;0;0;0;47;2013;2021;8;historico longo;camarapentecoste.ce.gov.br (8), cgirsvj.ce.gov.br (4);;;
+519;reginamachado.com.br;12;9;0;2;0;0;0;0;32;2015;2026;11;ativo ate 2025/26 (pode estar em uso ou redencao);;unicamp.br (76), ufrn.br (67);;
+533;pousadaestanciadamata.com.br;5;4;2;0;0;0;0;0;17;2020;2022;2;historico curto;sedec.mt.gov.br (39), descubramatogrosso.mt.gov.br (4);;;
+556;institutofisio.com.br;13;4;0;2;0;0;0;0;39;2016;2025;9;ativo ate 2025/26 (pode estar em uso ou redencao);;unisul.br (60), faculdadelibano.edu.br (30);;
+579;infopguaifpr.com.br;6;6;0;2;0;0;0;0;13;2018;2024;6;historico curto;;ufsc.br (88), ufopa.edu.br (56);;

@@ -1,0 +1,40 @@
+[
+ {
+  "zone": "fa477717d7142a3d0a02e8b2b20763ba",
+  "record": {
+   "id": "d13a69a26ae658a97c00597725524926",
+   "name": "dev.notebookx.com.br",
+   "type": "A",
+   "content": "77.37.69.175",
+   "proxiable": true,
+   "proxied": true,
+   "ttl": 1,
+   "settings": {},
+   "meta": {},
+   "comment": "Notebookx Next.js staging (OpenGravity)",
+   "tags": [],
+   "created_on": "2026-05-14T17:11:06.585703Z",
+   "modified_on": "2026-06-01T15:27:02.441318Z",
+   "comment_modified_on": "2026-05-14T17:11:06.585703Z"
+  }
+ },
+ {
+  "zone": "a01698cf4eabc028c879ca82f27570e9",
+  "record": {
+   "id": "04e4d9fcbb901707370c5785f6684c2d",
+   "name": "staging-arcondicionado.qmixdigital.com.br",
+   "type": "A",
+   "content": "77.37.69.175",
+   "proxiable": true,
+   "proxied": false,
+   "ttl": 300,
+   "settings": {},
+   "meta": {},
+   "comment": "Staging Next.js arcondicionadotop antes do cutover",
+   "tags": [],
+   "created_on": "2026-05-08T19:53:08.732762Z",
+   "modified_on": "2026-05-08T19:53:08.732762Z",
+   "comment_modified_on": "2026-05-08T19:53:08.732762Z"
+  }
+ }
+]

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Relatório de domínios com backlinks de governo</title>
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#1c1f1d;--mut:#5d645f;--line:#e2e0d8;--acc:#0f6b4f;--accbg:#e3f1ea;--warn:#9a5b00;--warnbg:#fbeed6;--bad:#a12a2a;--badbg:#f8e1e1;--gov:#1b4f9c;--govbg:#e1ebf8}
+@media(prefers-color-scheme:dark){:root{--bg:#141614;--card:#1d201e;--ink:#ecece7;--mut:#a3aaa4;--line:#2f3330;--acc:#5fcf9f;--accbg:#173528;--warn:#f0b45a;--warnbg:#3a2c12;--bad:#f08a8a;--badbg:#3b1b1b;--gov:#8fb7f0;--govbg:#172640}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:1280px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:26px;margin:0 0 4px}
+.sub{color:var(--mut);margin:0 0 20px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:20px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.kpi b{display:block;font-size:24px}
+.kpi span{color:var(--mut);font-size:13px}
+.tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 14px;border-radius:8px;cursor:pointer;font:inherit}
+.tab[aria-selected=true]{background:var(--acc);color:#fff;border-color:var(--acc)}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:end;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:12px}
+.bar label{display:flex;flex-direction:column;font-size:12px;color:var(--mut);gap:3px}
+.bar input,.bar select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);min-width:110px}
+.bar input[type=search]{min-width:220px}
+.count{margin-left:auto;color:var(--mut);font-size:13px}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:900px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;white-space:nowrap}
+th{position:sticky;top:0;background:var(--card);cursor:pointer;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em;user-select:none}
+th.s::after{content:" \25BE"}
+th.s.asc::after{content:" \25B4"}
+td.num,th.num{text-align:right}
+tr.r{cursor:pointer}
+tr.r:hover td{background:color-mix(in srgb,var(--acc) 6%,transparent)}
+.dom{font-weight:600}
+.pill{display:inline-block;padding:1px 8px;border-radius:99px;font-size:12px;background:var(--accbg);color:var(--acc)}
+.pill.gov{background:var(--govbg);color:var(--gov)}
+.pill.w{background:var(--warnbg);color:var(--warn)}
+.pill.b{background:var(--badbg);color:var(--bad)}
+.pill.z{background:transparent;color:var(--mut);border:1px solid var(--line)}
+tr.d td{background:var(--bg);white-space:normal}
+.det{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;padding:6px 4px}
+.det h4{margin:0 0 4px;font-size:12px;color:var(--mut);text-transform:uppercase}
+.det p{margin:0;font-size:13px;word-break:break-word}
+.links a{margin-right:10px}
+a{color:var(--acc)}
+.note{color:var(--mut);font-size:13px;margin-top:16px}
+.hide{display:none}
+.btn{font:inherit;font-size:13px;padding:5px 10px;border:1px solid var(--acc);background:transparent;color:var(--acc);border-radius:6px;cursor:pointer}
+.btn:hover{background:var(--accbg)}.btn:disabled{opacity:.5;cursor:wait}
+.btn.main{background:var(--acc);color:#fff;padding:7px 12px}
+.pill.comp{background:#6b2fb3;color:#fff;font-weight:700;letter-spacing:.02em}
+.pill.ok{background:var(--accbg);color:var(--acc);font-weight:600}
+@media(max-width:640px){h1{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Domínios com backlinks de governo e educação</h1>
+<p class="sub">Lista de liberação do Registro.br de __LIBERACAO__. Relatório gerado em __GERADO__.</p>
+<div class="kpis" id="kpis"></div>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" aria-selected="true" data-t="curta">Lista curta (236)</button>
+<button class="tab" role="tab" aria-selected="false" data-t="comp">Competição (__NCOMP__)</button>
+<button class="tab" role="tab" aria-selected="false" data-t="full">Todos os analisados (3.888)</button>
+</div>
+<div class="bar">
+<label>Buscar domínio<input type="search" id="q" placeholder="ex.: congresso"></label>
+<label>Gov + edu BR (mín.)<input type="number" id="mg" min="0" value="0"></label>
+<label>Spam (máx.)<input type="number" id="ms" min="0" max="100" value="100"></label>
+<label>DA (mín.)<input type="number" id="md" min="0" value="0"></label>
+<label id="lsig">Histórico<select id="sig"><option value="">Todos</option><option value="historico longo">Histórico longo</option><option value="ativo">Ativo até 2025/26</option><option value="historico curto">Histórico curto</option></select></label>
+<label>Competição<select id="cpf"><option value="">Todos</option><option value="sim">Só competição</option><option value="nao">Sem competição</option></select></label>
+<label>Indexação<select id="ixf"><option value="">Todas</option><option value="com">Com páginas</option><option value="sem">Nenhuma página</option><option value="nd">Sem dado</option></select></label>
+<label>Exigir<select id="req"><option value="">Nada</option><option value="not">Portal de notícia</option><option value="wik">Wikipedia</option><option value="ass">Associação (org.br)</option><option value="coop">Cooperativa</option></select></label>
+<label>Registro.br<select id="rg"><option value="">Todos</option><option value="livre">Livre</option><option value="pendente">Pedido pendente</option><option value="registrado">Registrado</option><option value="nc">Não checados</option></select></label>
+<button class="btn main" id="chkall" title="Consulta o RDAP do Registro.br, um domínio por vez">Checar todos os visíveis no Registro.br</button>
+<span class="count" id="cnt"></span>
+</div>
+<div class="tw"><table><thead><tr id="hd"></tr></thead><tbody id="tb"></tbody></table></div>
+<p class="note">Clique numa linha para ver os links de origem. DA e spam são da Moz. Os links da Wikipedia são sempre nofollow. Confira cada domínio no Google (site:) e no Wayback antes de registrar, porque os recentes ainda podem ser renovados pelo dono até o fim do prazo.</p>
+</div>
+<script>
+const D = __DADOS__;
+let tab = 'curta', key = 'gov', asc = false, open = null, busy = false;
+let R = {};
+try { R = JSON.parse(localStorage.getItem('rb_status') || '{}'); } catch (e) { R = {}; }
+const saveR = () => { try { localStorage.setItem('rb_status', JSON.stringify(R)); } catch (e) {} };
+const regKey = (d) => (R[d] ? R[d].s : 'nc');
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const COLS = {
+  curta: [['d','Domínio'],['da','DA','n'],['ss','Spam','n'],['gov','Gov BR','n'],['edu','Edu BR','n'],['ass','Assoc.','n'],['coop','Coop.','n'],['not','Notícias','n'],['wik','Wiki','n'],['m','Meses no ar','n'],['a2','Última captura'],['sig','Sinal'],['ix','Indexação']],
+  comp: [['d','Domínio'],['da','DA','n'],['ss','Spam','n'],['rd','Domínios linkando','n'],['gov','Gov BR','n'],['edu','Edu BR','n'],['ass','Assoc.','n'],['coop','Coop.','n'],['not','Notícias','n'],['wik','Wiki','n'],['sig','Sinal'],['ix','Indexação'],['obs','Observação']],
+  full: [['d','Domínio'],['da','DA','n'],['ss','Spam','n'],['rd','Domínios linkando','n'],['gov','Gov BR','n'],['edu','Edu BR','n'],['ass','Assoc.','n'],['coop','Coop.','n'],['not','Notícias','n'],['wik','Wiki','n'],['sc','Pontuação','n'],['sig','Sinal'],['ix','Indexação'],['obs','Observação']],
+};
+function kp() {
+  const f = D.full, c = D.curta, cp = D.comp, t = (a, fn) => a.filter(fn).length;
+  const items = [
+    [f.length, 'domínios analisados na Moz'],
+    [t(f, (x) => x.gov + x.edu > 0), 'com link de gov ou edu BR'],
+    [t(f, (x) => x.ass + x.coop > 0), 'com associação ou cooperativa'],
+    [t(f, (x) => x.not > 0), 'com portal de notícia forte'],
+    [t(f, (x) => x.wik > 0), 'com link da Wikipedia'],
+    [c.length, 'na lista curta'],
+    [cp.length, 'em processo competitivo'],
+  ];
+  $('#kpis').innerHTML = items.map(([a, b]) => '<div class="kpi"><b>' + a.toLocaleString('pt-BR') + '</b><span>' + b + '</span></div>').join('');
+}
+function regPill(d) {
+  const r = R[d];
+  if (!r) return '<button class="btn chk" data-d="' + d + '">Checar</button>';
+  const hora = new Date(r.t).toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+  const lb = { livre: '<span class="pill ok">Livre para registrar</span>', pendente: '<span class="pill w">Pedido pendente</span>', registrado: '<span class="pill z">Registrado</span>', erro: '<span class="pill b">Erro, tente de novo</span>' }[r.s];
+  return lb + ' <button class="btn chk" data-d="' + d + '" title="Checado em ' + hora + '">↻</button>';
+}
+async function checar(d) {
+  try {
+    const res = await fetch('https://rdap.registro.br/domain/' + encodeURIComponent(d), { headers: { Accept: 'application/rdap+json' } });
+    if (res.status === 404) R[d] = { s: 'livre', t: Date.now() };
+    else if (res.ok) {
+      const j = await res.json().catch(() => ({}));
+      const st = (j.status || []).join(' ').toLowerCase();
+      R[d] = { s: st.includes('pending create') ? 'pendente' : 'registrado', t: Date.now() };
+    } else R[d] = { s: 'erro', t: Date.now() };
+  } catch (e) { R[d] = { s: 'erro', t: Date.now() }; }
+  saveR();
+}
+function ixp(x) {
+  if (x.ix === undefined || x.ix < 0) return '<span class="pill z">sem dado</span>';
+  if (x.ix === 0) return '<span class="pill b">Nenhuma</span>';
+  return '<span class="pill ok">' + (x.ix >= 10 ? '10+' : x.ix) + (x.ix === 1 ? ' página' : ' páginas') + '</span>';
+}
+function regTag(d) {
+  const r = R[d]; if (!r) return '';
+  const t = { livre: '<span class="pill ok" title="Livre no Registro.br">Livre</span>', pendente: '<span class="pill w" title="Pedido de registro pendente">Pendente</span>', registrado: '<span class="pill z" title="Ainda registrado">Registrado</span>', erro: '' }[r.s];
+  return t ? ' ' + t : '';
+}
+function pill(v, cls) { return v ? '<span class="pill ' + (cls || '') + '">' + v + '</span>' : '<span class="pill z">0</span>'; }
+function sigp(s) {
+  if (!s) return '<span class="pill z">sem dado</span>';
+  if (s.startsWith('ativo')) return '<span class="pill w">Ativo até 2025/26</span>';
+  if (s.startsWith('SEM')) return '<span class="pill b">Sem histórico</span>';
+  if (s.includes('longo')) return '<span class="pill">Histórico longo</span>';
+  return '<span class="pill z">Histórico curto</span>';
+}
+function cell(x, k) {
+  if (k === 'd') return '<span class="dom">' + esc(x.d) + '</span>' + (x.comp ? ' <span class="pill comp" title="Domínio em processo competitivo no Registro.br">Competição</span>' : '') + regTag(x.d);
+  if (k === 'gov' || k === 'edu') return pill(x[k], 'gov');
+  if (['ass', 'coop', 'not', 'wik'].includes(k)) return pill(x[k]);
+  if (k === 'sig') return sigp(x.sig);
+  if (k === 'ss') return x.ss >= 60 ? '<span class="pill b">' + x.ss + '</span>' : x.ss > 30 ? '<span class="pill w">' + x.ss + '</span>' : x.ss;
+  if (k === 'obs') return esc(x.obs);
+  if (k === 'ix') return ixp(x);
+  return x[k] === undefined ? '' : esc(x[k]);
+}
+function idx(x) {
+  if (!x.it || !x.it.length) return '';
+  return '<div><h4>Páginas indexadas no Google</h4><p>' + x.it.map((o) => '<a target="_blank" rel="noopener" href="' + esc(o.l) + '">' + esc(o.t || o.l) + '</a>').join('<br>') + '</p></div>';
+}
+function det(x) {
+  const b = (t, v) => (v ? '<div><h4>' + t + '</h4><p>' + esc(v) + '</p></div>' : '');
+  const l = 'target="_blank" rel="noopener"';
+  return '<div class="det">' + idx(x) + b('Governo (Brasil)', x.lg) + b('Educação (Brasil)', x.le) + b('Associações', x.la) + b('Cooperativas', x.lc) + b('Portais de notícia', x.ln) + b('Wikipedia', x.lw)
+    + '<div class="links"><h4>Conferir</h4><p>' + regPill(x.d) + ' '
+    + '<a ' + l + ' href="https://www.google.com/search?q=site:' + x.d + '">Google site:</a>'
+    + '<a ' + l + ' href="https://web.archive.org/web/*/' + x.d + '">Wayback</a>'
+    + '<a ' + l + ' href="https://registro.br/busca-dominio/?fqdn=' + x.d + '">Registro.br</a>'
+    + '<a ' + l + ' href="http://' + x.d + '">Abrir site</a></p></div></div>';
+}
+function render() {
+  const cols = COLS[tab];
+  $('#hd').innerHTML = cols.map(([k, lb, t]) => '<th data-k="' + k + '" class="' + (t ? 'num ' : '') + (k === key ? 's' + (asc ? ' asc' : '') : '') + '">' + lb + '</th>').join('');
+  const q = $('#q').value.trim().toLowerCase(), mg = +$('#mg').value || 0, ms = $('#ms').value === '' ? 100 : +$('#ms').value, md = +$('#md').value || 0, sg = $('#sig').value, rq = $('#req').value, ixf = $('#ixf').value, cpf = $('#cpf').value;
+  const rows = D[tab].filter((x) => (!q || x.d.includes(q)) && x.gov + x.edu >= mg && x.ss <= ms && x.da >= md && (!rq || x[rq] > 0) && (!sg || (x.sig || '').toLowerCase().startsWith(sg)) && (!cpf || (cpf === 'sim') === !!x.comp) && (!ixf || (ixf === 'com' ? x.ix > 0 : ixf === 'sem' ? x.ix === 0 : x.ix === undefined || x.ix < 0)) && (!$('#rg').value || regKey(x.d) === $('#rg').value));
+  window.__visiveis = rows.map((x) => x.d);
+  rows.sort((a, b) => { const A = key === 'ix' ? (a.ix ?? -2) : (a[key] ?? ''), B = key === 'ix' ? (b.ix ?? -2) : (b[key] ?? ''); const r = typeof A === 'number' ? A - B : String(A).localeCompare(String(B), 'pt-BR'); return asc ? r : -r; });
+  $('#cnt').textContent = rows.length.toLocaleString('pt-BR') + ' domínios';
+  const lim = rows.slice(0, 500);
+  $('#tb').innerHTML = lim.map((x) => '<tr class="r" data-d="' + x.d + '">' + cols.map(([k, , t]) => '<td class="' + (t ? 'num' : '') + '">' + cell(x, k) + '</td>').join('') + '</tr>'
+    + (open === x.d ? '<tr class="d"><td colspan="' + cols.length + '">' + det(x) + '</td></tr>' : '')).join('')
+    + (rows.length > 500 ? '<tr><td colspan="' + cols.length + '" style="white-space:normal;color:var(--mut)">Mostrando os 500 primeiros. Use os filtros para refinar.</td></tr>' : '');
+}
+document.addEventListener('click', (e) => {
+  const th = e.target.closest('th');
+  if (th) { const k = th.dataset.k; asc = key === k ? !asc : (k === 'd' || k === 'sig' || k === 'obs' || k === 'a2'); key = k; return render(); }
+  const tb = e.target.closest('.tab');
+  if (tb) { tab = tb.dataset.t; key = tab === 'curta' ? 'gov' : tab === 'comp' ? 'da' : 'sc'; asc = false; open = null; document.querySelectorAll('.tab').forEach((t) => t.setAttribute('aria-selected', t === tb)); return render(); }
+  const ck = e.target.closest('.chk');
+  if (ck) { ck.disabled = true; ck.textContent = '...'; checar(ck.dataset.d).then(render); return; }
+  if (e.target.closest('#chkall')) { return checarTodos(); }
+  const tr = e.target.closest('tr.r');
+  if (tr && !e.target.closest('a')) { open = open === tr.dataset.d ? null : tr.dataset.d; render(); }
+});
+['#q', '#mg', '#ms', '#md', '#sig', '#req', '#rg', '#ixf', '#cpf'].forEach((s) => $(s).addEventListener('input', () => { open = null; render(); }));
+async function checarTodos() {
+  if (busy) return;
+  const lista = (window.__visiveis || []).slice(0, 500).filter((d) => !R[d] || R[d].s === 'erro');
+  if (!lista.length) { alert('Todos os domínios visíveis já foram checados. Use o botão ↻ de uma linha para refazer.'); return; }
+  if (lista.length > 300 && !confirm('Vai consultar ' + lista.length + ' domínios, um por vez. Continuar?')) return;
+  busy = true; const b = $('#chkall'); b.disabled = true;
+  for (let i = 0; i < lista.length; i++) {
+    b.textContent = 'Checando ' + (i + 1) + ' de ' + lista.length + '...';
+    await checar(lista[i]);
+    if (i % 5 === 4) render();
+    await new Promise((r) => setTimeout(r, 250));
+  }
+  busy = false; b.disabled = false; b.textContent = 'Checar todos os visíveis no Registro.br'; render();
+}
+kp(); render();
+</script>
+</body>
+</html>

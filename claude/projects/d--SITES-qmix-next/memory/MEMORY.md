@@ -22,7 +22,7 @@
 - [Plano de melhorias 2026-09](qmix-plano-melhorias-2026-09.md) — 9 itens priorizados para resolver um a um; itens 1 a 6 feitos 13/09; pendentes: indexação automática, publishers, blog
 - [Newsletter digest + rastreio próprio](qmix-newsletter-digest.md) — template claro, pixel/clique com cidade, agendamento terça 10h SP; #6 agendada 15/09
 - [Tema claro do site](qmix-blog-tema-claro.md) — site todo em tokens --q-* (claro padrão, escuro por toggle), admin forçado escuro; codemod e regras de papel; apagar .next/types antes do deploy ao mover rotas
-- [Regra do primeiro link](qmix-regra-primeiro-link.md) — link mais forte é sempre o 1º link do corpo (cliente na matéria, /comprar-backlinks no blog); perguntar qual é antes de escrever; nunca prometer parágrafo
+- [Regra do primeiro link](qmix-regra-primeiro-link.md) — link do cliente é sempre o 1º link da matéria de portal; no blog da QMIX /comprar-backlinks deixou de ser obrigatório (18/10/2026), linkar pelo que serve ao leitor
 - [Faturamento mensalistas](qmix-faturamento-mensalistas.md) — módulo de faturas migrado do Antônio (14/09), orçamento mensal + saldo azul/vermelho e cron do dia 1 (21/09), regras de cobrança manual/NF
 - [Moz API](qmix-moz-api.md) — plano Growth Medium 120k linhas/mês (reset mensal, overage US$ 20/10k); um token base64(access_id:secret) serve Links API v2 e Data API v3; scripts e o que já consumiu
 - [Proposta de portal ao cliente](feedback-proposta-portal-cliente.md) — formato curto aprovado (4 linhas: portal, DA/tráfego/link, matéria em lista para IA, preço fechado, pergunta)

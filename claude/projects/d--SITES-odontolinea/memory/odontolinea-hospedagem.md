@@ -26,7 +26,7 @@ odontolinea.com.br NAO roda o projeto Next local como servidor. No ar: Hostinger
 **Pendente:** Dr. Irvington revisar posts de saude antes de qualquer selo "revisado por"; backlinks para as paginas de tratamento; depoimentos reais nas paginas.
 
 ## 16/10/2026
-- WhatsApp atual da clinica: (61) 99633-8025 (5561996338025). Trocado em todo o site, blog (tema, 13 posts, opcoes), llms.txt, planilha de backlinks e projeto local. O numero tem o mesmo tamanho do anterior: so assim da para trocar direto em HTML/JS do Next (os dados internos `T<hex>,` carregam o tamanho em bytes; mudar o tamanho de um texto ali derruba a pagina com "This page couldn't load"). Para mudar texto de tamanho diferente, rebuildar pelo codigo-fonte.
+- WhatsApp atual da clinica: (61) 99633-2085 (5561996332085), trocado de 99633-8025 em 18/10/2026. Trocado em todo o site, blog (tema, 13 posts, opcoes), llms.txt, planilha de backlinks e projeto local. O numero tem o mesmo tamanho do anterior: so assim da para trocar direto em HTML/JS do Next (os dados internos `T<hex>,` carregam o tamanho em bytes; mudar o tamanho de um texto ali derruba a pagina com "This page couldn't load"). Para mudar texto de tamanho diferente, rebuildar pelo codigo-fonte.
 - SEMPRE testar paginas do Next num Chrome headless (`--dump-dom`, procurar "couldn't load" e "Connection closed") antes de dar o deploy por concluido. HTTP 200 nao basta.
 - Zona Cloudflare do odontolinea NAO esta nas contas do QMIX (provavelmente CDN da Hostinger): nao da para limpar cache por la. Chunks JS ficam em cache ate 7 dias.
 - Avaliacoes reais do Google em `lib/avaliacoes.ts` (fonte unica da secao e do schema da home). Depoimentos antigos eram falsos e foram removidos.

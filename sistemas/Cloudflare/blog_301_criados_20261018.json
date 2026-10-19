@@ -1,0 +1,59 @@
+[
+ {
+  "zone": "9f892c7a6026bec7aba67cfab8a4d734",
+  "dns": {
+   "id": "de224748cb92984886623594a62e9596",
+   "name": "blog.cirurgiadecolunagoiania.com.br",
+   "type": "AAAA",
+   "content": "100::",
+   "proxiable": true,
+   "proxied": true,
+   "ttl": 1,
+   "settings": {},
+   "meta": {},
+   "comment": "18/10/2026: so redireciona 301 o blog antigo para https://cirurgiadecolunagoiania.com.br/blog/",
+   "tags": [],
+   "created_on": "2026-10-18T18:22:02.163929Z",
+   "modified_on": "2026-10-18T18:22:02.163929Z",
+   "comment_modified_on": "2026-10-18T18:22:02.163929Z"
+  }
+ },
+ {
+  "zone": "de8a78347113ac72d5d0e122d51a0718",
+  "dns": {
+   "id": "848605cd0d31467130b0eaa47741ebd2",
+   "name": "blog.drbrunoair.com.br",
+   "type": "AAAA",
+   "content": "100::",
+   "proxiable": true,
+   "proxied": true,
+   "ttl": 1,
+   "settings": {},
+   "meta": {},
+   "comment": "18/10/2026: so redireciona 301 o blog antigo para https://drbrunoair.com.br/blog/",
+   "tags": [],
+   "created_on": "2026-10-18T18:22:05.384543Z",
+   "modified_on": "2026-10-18T18:22:05.384543Z",
+   "comment_modified_on": "2026-10-18T18:22:05.384543Z"
+  }
+ },
+ {
+  "zone": "1cc17d520227d0a116d5366fd7a22b05",
+  "dns": {
+   "id": "3b321db6082e457d060cb2048cacf76b",
+   "name": "blog.clinicasrecuperacaosaopaulo.com",
+   "type": "AAAA",
+   "content": "100::",
+   "proxiable": true,
+   "proxied": true,
+   "ttl": 1,
+   "settings": {},
+   "meta": {},
+   "comment": "18/10/2026: so redireciona 301 o blog antigo para https://clinicasrecuperacaosaopaulo.com/blog/",
+   "tags": [],
+   "created_on": "2026-10-18T18:22:08.373655Z",
+   "modified_on": "2026-10-18T18:22:08.373655Z",
+   "comment_modified_on": "2026-10-18T18:22:08.373655Z"
+  }
+ }
+]
