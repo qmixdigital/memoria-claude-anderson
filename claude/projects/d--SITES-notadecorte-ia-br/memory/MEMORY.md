@@ -1,0 +1,1 @@
+- [notadecorte: estático sem React, diretório completo, simulador em JS, SISU 2026](project-notadecorte-estatico-payload.md) — 13.082 páginas (5.718 fichas), pipeline app local → mirror → finalize; nova edição do SISU vem das planilhas do Portal Sisu + reconciliar campus; sem GA4/AdSense

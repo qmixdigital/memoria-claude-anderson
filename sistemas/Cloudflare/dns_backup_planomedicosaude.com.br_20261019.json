@@ -1,0 +1,64 @@
+[
+ {
+  "id": "1eff3ed0981c536908d5930730206ffb",
+  "name": "planomedicosaude.com.br",
+  "type": "A",
+  "content": "31.97.162.199",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2024-06-25T20:06:02.243362Z",
+  "modified_on": "2026-08-21T04:30:18.739901Z"
+ },
+ {
+  "id": "46b97e1fe452427d3291ebb22e39b5c8",
+  "name": "www.planomedicosaude.com.br",
+  "type": "CNAME",
+  "content": "planomedicosaude.com.br",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {
+   "flatten_cname": false
+  },
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2024-06-25T20:06:02.234569Z",
+  "modified_on": "2024-06-25T20:10:48.816839Z"
+ },
+ {
+  "id": "be847f4c9b840c26d6a8292f31d04e6f",
+  "name": "planomedicosaude.com.br",
+  "type": "TXT",
+  "content": "google-site-verification=<<REMOVIDO>>",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 60,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-07-24T15:04:20.402329Z",
+  "modified_on": "2026-07-24T15:04:20.402329Z"
+ },
+ {
+  "id": "1aad0b3dba40a43d97ea27151e2d5a91",
+  "name": "planomedicosaude.com.br",
+  "type": "TXT",
+  "content": "\"google-site-verification=<<REMOVIDO>>\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 3600,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2025-08-21T11:16:18.984054Z",
+  "modified_on": "2025-08-21T11:16:18.984054Z"
+ }
+]

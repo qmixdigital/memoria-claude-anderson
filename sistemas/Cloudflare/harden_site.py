@@ -55,6 +55,15 @@ def localizar_zona(dominio):
                 page += 1
         except Exception:
             pass
+    # fallback: contas de clientes que nao estao em contas.json, via token master
+    try:
+        m = CONTAS_MAP.get('master')
+        if m:
+            r = requests.get(f'https://api.cloudflare.com/client/v4/zones?name={dominio}', headers={'Authorization': f'Bearer {m["token"]}'}).json()
+            if r.get('success') and r['result']:
+                return 'master', r['result'][0]['id']
+    except Exception:
+        pass
     return None, None
 
 

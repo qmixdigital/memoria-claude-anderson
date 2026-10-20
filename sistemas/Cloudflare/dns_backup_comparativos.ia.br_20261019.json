@@ -1,0 +1,137 @@
+[
+ {
+  "id": "2332a51485887c61d105d1a2e38c9010",
+  "name": "comparativos.ia.br",
+  "type": "A",
+  "content": "31.97.162.199",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-18T15:43:39.794348Z",
+  "modified_on": "2026-09-18T15:43:39.794348Z"
+ },
+ {
+  "id": "2e14c105777eee9e1fd688ed272407cb",
+  "name": "www.comparativos.ia.br",
+  "type": "A",
+  "content": "31.97.162.199",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-18T15:43:40.288857Z",
+  "modified_on": "2026-09-18T15:43:40.288857Z"
+ },
+ {
+  "id": "033d3c1785a561bfd20c17c2bdbc5515",
+  "name": "comparativos.ia.br",
+  "type": "MX",
+  "content": "route3.mx.cloudflare.net",
+  "priority": 100,
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {
+   "email_routing": true,
+   "read_only": true
+  },
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-19T22:15:18.733911Z",
+  "modified_on": "2026-09-19T22:15:18.733911Z"
+ },
+ {
+  "id": "4d5854157fdeabd9c9d88f31888cc502",
+  "name": "comparativos.ia.br",
+  "type": "MX",
+  "content": "route2.mx.cloudflare.net",
+  "priority": 96,
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {
+   "email_routing": true,
+   "read_only": true
+  },
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-19T22:15:18.724628Z",
+  "modified_on": "2026-09-19T22:15:18.724628Z"
+ },
+ {
+  "id": "7d0f97180c58b13b34ecebe2de0eace8",
+  "name": "comparativos.ia.br",
+  "type": "MX",
+  "content": "route1.mx.cloudflare.net",
+  "priority": 84,
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {
+   "email_routing": true,
+   "read_only": true
+  },
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-19T22:15:18.712755Z",
+  "modified_on": "2026-09-19T22:15:18.712755Z"
+ },
+ {
+  "id": "0af2f9c0b8dac9e7a8a33575509e01a6",
+  "name": "cf2024-1._domainkey.comparativos.ia.br",
+  "type": "TXT",
+  "content": "\"v=DKIM1; h=sha256; k=rsa; p=<<REMOVIDO>>+o48IOGuP7GR3X0MOExCUDY/BCRHoWBnh3rChl7WhdyCxW3jgq1daEjPPqoi7sJvdg5hEQVsgVRQP4DcnQDVjGMbASQtrY4WmB1VebF+<<REMOVIDO>>+i0H4cpYH9+3JJ78k\" \"m4KXwaf9xUJCWF6nxeD+<<REMOVIDO>>\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {
+   "email_routing": true,
+   "read_only": true
+  },
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-19T22:15:18.749115Z",
+  "modified_on": "2026-09-19T22:15:18.749115Z"
+ },
+ {
+  "id": "8e0a5ab1d06d9831fc19a0c4c830d603",
+  "name": "comparativos.ia.br",
+  "type": "TXT",
+  "content": "\"v=spf1 include:_spf.mx.cloudflare.net ~all\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-19T22:15:18.741692Z",
+  "modified_on": "2026-09-19T22:15:18.741692Z"
+ },
+ {
+  "id": "3f981cd3c615069e917163bcff6446fc",
+  "name": "comparativos.ia.br",
+  "type": "TXT",
+  "content": "google-site-verification=<<REMOVIDO>>",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 60,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-18T16:20:49.521211Z",
+  "modified_on": "2026-09-18T16:20:49.521211Z"
+ }
+]

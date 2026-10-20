@@ -1,0 +1,64 @@
+[
+ {
+  "id": "9ec6156e4657bd097aee52893d92be7b",
+  "name": "institutoortopedico.com.br",
+  "type": "A",
+  "content": "31.97.162.199",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2023-02-14T20:39:26.740351Z",
+  "modified_on": "2026-08-21T04:30:17.090895Z"
+ },
+ {
+  "id": "cf75fe9ed81e484ae2aa66092111f00f",
+  "name": "www.institutoortopedico.com.br",
+  "type": "CNAME",
+  "content": "institutoortopedico.com.br",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {
+   "flatten_cname": false
+  },
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2023-02-14T20:39:41.499655Z",
+  "modified_on": "2023-05-01T15:03:11.559044Z"
+ },
+ {
+  "id": "263f7bdff2796c0588aeeacf57bbb475",
+  "name": "institutoortopedico.com.br",
+  "type": "TXT",
+  "content": "google-site-verification=<<REMOVIDO>>",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 60,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-07-24T14:59:20.298437Z",
+  "modified_on": "2026-07-24T14:59:20.298437Z"
+ },
+ {
+  "id": "993c555f1d0c5984b303b2825f7bc355",
+  "name": "institutoortopedico.com.br",
+  "type": "TXT",
+  "content": "\"google-site-verification=<<REMOVIDO>>\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 3600,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2025-08-21T12:38:43.954662Z",
+  "modified_on": "2025-08-21T12:38:43.954662Z"
+ }
+]

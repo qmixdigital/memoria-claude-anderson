@@ -185,3 +185,7 @@
 - [clinicas-vps: SSH caiu e recuperação via Modo de emergência](reference_clinicas_vps_ssh_emergencia.md) — ssh.service parado/não habilitado (17/10); disco real = /mnt/sdb1 no resgate; SiteGrátis agora em sitegratis.qmix.com.br
 - [E-mail oficial da QMIX](feedback_email_oficial_qmix.md) — marketing@qmix.com.br; contato@qmix.com.br NÃO existe; CNPJ 37.181.964/0001-93, Goiânia/GO
 - [geladeirastop estático no Pages (18/10/2026)](reference_geladeirastop_estatico_pages.md) — projeto Pages na conta Anderson; fonte local em D:/SITES/geladeirastop.com/site, nada em servidor; app antigo removido, backups em backups/
+- [contadoria estático no Pages (19/10/2026)](reference_contadoria_estatico_pages.md) — projeto Pages na conta BYTX; fonte local D:/SITES/contadoria.ia.br/site; mirror com --podavel "^/" (senão 47% de links quebrados); purgar cache do CF
+- [academus → notadecorte.ia.br](project_academus_para_notadecorte.md) — no ar desde 19/10; domínio antigo já serve só 301/404 a partir de D:/SITES/notadecorte.ia.br/academus-antigo; NÃO redirecionar a home (histórico IPTV)
+- [10 diretórios viraram estáticos no Pages (18-19/10/2026)](reference_conversao_estatico_clinicas_vps.md) — pipeline converter.py; nada fica em servidor; armadilhas: --podavel + desvínculo de 404, backspace em regex, domínio Pages pending, purge após DNS
+- [LGPD Emanuely (publisherbrasil editoras)](project_lgpd_emanuely_publisherbrasil.md) — ficha bloqueada por redirect na zona + Worker lgpd-lencois-paulista; fonte do diretório não localizado; remover os dois quando regenerar

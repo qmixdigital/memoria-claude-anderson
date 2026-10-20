@@ -1,0 +1,49 @@
+[
+ {
+  "id": "9d57dcb9912f43bb8fb97e4709bb427e",
+  "name": "academus.pro.br",
+  "type": "A",
+  "content": "31.97.162.199",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-08-27T17:37:42.41891Z",
+  "modified_on": "2026-08-27T17:37:42.41891Z"
+ },
+ {
+  "id": "f479e768a914274df526b6a99708c58d",
+  "name": "www.academus.pro.br",
+  "type": "CNAME",
+  "content": "academus.pro.br",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {
+   "flatten_cname": false
+  },
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-08-27T17:37:43.361702Z",
+  "modified_on": "2026-08-27T17:37:43.361702Z"
+ },
+ {
+  "id": "c8a66a786bbbdfde581ad94848e3b397",
+  "name": "academus.pro.br",
+  "type": "TXT",
+  "content": "\"google-site-verification=<<REMOVIDO>>\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 3600,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2025-08-24T12:51:05.554964Z",
+  "modified_on": "2025-08-24T12:51:05.554964Z"
+ }
+]

@@ -1,0 +1,79 @@
+[
+ {
+  "id": "30c231a1d262fb595cdf963ba4a32579",
+  "name": "saudevitalidade.com.br",
+  "type": "A",
+  "content": "31.97.162.199",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2023-06-01T23:15:55.282188Z",
+  "modified_on": "2026-08-27T17:43:29.594845Z"
+ },
+ {
+  "id": "f863bd63a8be7047beb8520cbafbb0c8",
+  "name": "www.saudevitalidade.com.br",
+  "type": "CNAME",
+  "content": "saudevitalidade.com.br",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {
+   "flatten_cname": false
+  },
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2023-06-01T23:16:03.110816Z",
+  "modified_on": "2023-06-01T23:16:03.110816Z"
+ },
+ {
+  "id": "c690406a61affd0fb33512d78263451e",
+  "name": "saudevitalidade.com.br",
+  "type": "TXT",
+  "content": "\"google-site-verification=<<REMOVIDO>>\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 3600,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-09-29T09:09:51.80312Z",
+  "modified_on": "2026-09-29T09:09:51.80312Z"
+ },
+ {
+  "id": "245d8e9083db3f8afc1512b693e4ec3a",
+  "name": "saudevitalidade.com.br",
+  "type": "TXT",
+  "content": "google-site-verification=<<REMOVIDO>>",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 60,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-07-24T15:09:06.470143Z",
+  "modified_on": "2026-07-24T15:09:06.470143Z"
+ },
+ {
+  "id": "bba165866872beec593de9e5e15077f3",
+  "name": "saudevitalidade.com.br",
+  "type": "TXT",
+  "content": "google-site-verification=<<REMOVIDO>>",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 3600,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2023-07-10T07:34:44.297663Z",
+  "modified_on": "2023-07-10T07:34:44.297663Z"
+ }
+]

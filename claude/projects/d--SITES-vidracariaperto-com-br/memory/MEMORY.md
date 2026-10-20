@@ -1,1 +1,2 @@
 - [Deploy do dev apaga código](deploy-do-dev-apaga-codigo.md) — 24/08 apagou os dois sites; conferir irmãos após deploy dele
+- [vidracariaperto só no .ia.br](vidracaria-troca-dominio-ia-br.md) — .com.br PERDIDO, ignorar; e-mail via m.qmix.com.br; site não é estático
