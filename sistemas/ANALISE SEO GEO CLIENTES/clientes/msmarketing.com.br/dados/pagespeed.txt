@@ -1,0 +1,46 @@
+
+=== https://msmarketing.com.br/  [mobile] ===
+  Scores: Perf 59 | SEO 92 | A11y 88 | BestPractices 92
+  LAB (Lighthouse): LCP 7.4 s (RUIM) | CLS 0.008 (BOM) | TBT 350 ms | FCP 2.3 s (MELHORAR) | SI 6.7 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório
+  Oportunidades:
+    ~1050ms  Reduce unused JavaScript
+    ~600ms  Reduce unused CSS
+
+=== https://msmarketing.com.br/  [desktop] ===
+  Scores: Perf 54 | SEO 92 | A11y 91 | BestPractices 96
+  LAB (Lighthouse): LCP 2.3 s (BOM) | CLS 0.022 (BOM) | TBT 790 ms | FCP 0.6 s (BOM) | SI 2.9 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório
+  Oportunidades:
+    ~320ms  Reduce unused JavaScript
+    ~200ms  Reduce unused CSS
+
+=== https://msmarketing.com.br/criacao-de-sites-bh-belo-horizonte/  [mobile] ===
+  Scores: Perf 39 | SEO 92 | A11y 85 | BestPractices 92
+  LAB (Lighthouse): LCP 8.5 s (RUIM) | CLS 0.005 (BOM) | TBT 1,050 ms | FCP 4.2 s (RUIM) | SI 6.6 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório
+  Oportunidades:
+    ~750ms  Reduce unused JavaScript
+    ~600ms  Reduce unused CSS
+
+=== https://msmarketing.com.br/criacao-de-sites-bh-belo-horizonte/  [desktop] ===
+  Scores: Perf 80 | SEO 92 | A11y 88 | BestPractices 96
+  LAB (Lighthouse): LCP 1.8 s (BOM) | CLS 0.012 (BOM) | TBT 240 ms | FCP 0.6 s (BOM) | SI 2.1 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório
+  Oportunidades:
+    ~240ms  Reduce unused JavaScript
+
+=== https://msmarketing.com.br/quanto-custa-uma-identidade-visual-descubra-o-valor-exato/  [mobile] ===
+  Scores: Perf 45 | SEO 92 | A11y 83 | BestPractices 73
+  LAB (Lighthouse): LCP 7.7 s (RUIM) | CLS 0.014 (BOM) | TBT 710 ms | FCP 3.2 s (RUIM) | SI 7.9 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório
+  Oportunidades:
+    ~1050ms  Reduce unused JavaScript
+    ~150ms  Reduce unused CSS
+
+=== https://msmarketing.com.br/quanto-custa-uma-identidade-visual-descubra-o-valor-exato/  [desktop] ===
+  Scores: Perf 52 | SEO 92 | A11y 86 | BestPractices 77
+  LAB (Lighthouse): LCP 2.5 s (BOM) | CLS 0.003 (BOM) | TBT 1,140 ms | FCP 0.8 s (BOM) | SI 2.3 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório
+  Oportunidades:
+    ~330ms  Reduce unused JavaScript

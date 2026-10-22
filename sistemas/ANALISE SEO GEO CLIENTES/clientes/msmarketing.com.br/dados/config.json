@@ -1,0 +1,27 @@
+{
+ "base": "https://msmarketing.com.br",
+ "tipos": [
+  ["/briefing", "utilitaria"], ["/ficha-cadastral/", "utilitaria"], ["/ms-obrigado/", "utilitaria"], ["/politica", "utilitaria"],
+  ["/agenda/", "utilitaria"], ["/ms-academy/", "utilitaria"], ["/videos/", "utilitaria"], ["/dicas-de-marketing-para-sua-empresa/", "utilitaria"], ["/ms-briefing/", "utilitaria"]
+ ],
+ "comercial_exatas": ["/", "/criacao-de-sites-bh-belo-horizonte/", "/servicos-de-seo-em-bh-ms-marketing/", "/consultoria/",
+  "/criacao-de-logomarca-e-identidade-visual/", "/agencia-de-trafego-pago-empresa-de-trafego-pago-e-organico/",
+  "/logomarca-em-bh/", "/empresa-de-logos-criacao-de-logomarca/", "/agencia-de-design-grafico-empresa-de-marketing-digital/",
+  "/filmagem-de-drone-produtora-audiovisual/", "/grafica-bh-impressao-de-qualidade-para-seu-negocio/",
+  "/fotografia-em-bh-valorize-sua-marca-com-imagens-profissionais/", "/videomaker-bh-como-contratar-um-editor-de-video-em-mg/",
+  "/agencia-de-sites-desenvolvimento-e-criacao-de-websites/", "/contato/", "/portfolio-de-sites/", "/portfolio-design/",
+  "/portfolio-de-videos/", "/agencia-de-marketing-politico-estrategias-que-vencem-eleicoes/", "/agencia-de-trafego-pago-contato/"],
+ "comercial_prefixos": [],
+ "cidade": ["joinville", "manaus", "maceio", "contagem", "blumenau", "design-rj"],
+ "offtopic": ["orkut", "marketing-1-0", "marketing-2-0", "inteligencia-artificial", "sitecloud", "mapas-mentais",
+  "nome-no-instagram", "dica-de-nome", "bonina", "paleta-de-cores", "design-de-camisa", "sobrancelha",
+  "recuperar-um-site", "site-gratuito-no-google", "agromarketing", "agronegocio", "encarte", "logo-de-luxo",
+  "logo-para-loja", "logo-de-loja", "logo-3d", "santinho", "cartao-de-visita", "tipografia", "marketing-360"],
+ "img": ["logo-de-luxo", "paleta-de-cores", "logo-para-loja", "encarte", "logo-de-loja", "logo-3d", "logomarca-o-que-e", "mapas-mentais", "sobrancelha", "design-de-camisa"],
+ "local_regex": "\\b(bh|belo horizonte|minas|mg|contagem|betim)\\b",
+ "marca_regex": "ms ?marketing",
+ "min_imp_bucket": 150,
+ "min_imp_locais": 15,
+ "min_imp_canib": 150,
+ "thresholds": {"excelente_clk90": 8, "atualizar_imp90": 300, "podar_imp480": 150, "podar_clk480": 1, "manter_img_imp480": 3000}
+}

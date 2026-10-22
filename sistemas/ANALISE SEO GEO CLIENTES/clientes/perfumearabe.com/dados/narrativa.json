@@ -1,0 +1,244 @@
+{
+ "cliente": "Perfume Árabe",
+ "segmento": "Loja virtual (Nuvemshop) de perfumes árabes importados: Lattafa, Armaf, Maison Alhambra, French Avenue",
+ "periodo": "27/09/2026 a 18/10/2026 (22 dias de dados na propriedade)",
+ "veredito": "O perfumearabe.com é uma loja nova no Search Console com 22 dias de dados, e já mostra o que o Google pensa dela: indexa rápido (190 URLs com impressão), o blog de \"inspirado em qual perfume\" entra na primeira página em semanas, e as impressões cresceram de 5 para mais de 100 por dia. [[O problema não está no site, está no domínio:]] ele foi registrado de novo em novembro de 2025, teve outras vidas em 2013, 2024 e 2025, e herdou um perfil de backlinks tóxico (spam score 45%, DA 5, 49 domínios de referência em sua maioria .icu, .top, .cfd, encurtadores e redes de links grátis). As categorias comerciais, que são as páginas de dinheiro, estão na posição 30 a 60. O caminho é limpar o passado com disavow, dar texto próprio e links internos às categorias, apostar no blog de comparação que já funciona, e trazer os primeiros links brasileiros limpos para a home e para a categoria principal.",
+ "excelente": [
+  {
+   "t": "Indexação rápida: 190 URLs com impressão em 22 dias",
+   "d": "Loja com 348 URLs no sitemap e mais da metade já aparecendo em buscas no primeiro mês. Sitemap, robots e canonical estão corretos e o Google está rastreando sem bloqueio. Para loja Nuvemshop recém-publicada, é um sinal de saúde técnica."
+  },
+  {
+   "t": "Blog de \"inspirado em\" na primeira página no primeiro mês",
+   "d": "\"club de nuit intense man é inspirado em qual perfume\" (35 impressões, posição 9,5) e a linha Club de Nuit (posição 10) já estão na primeira página. É a demanda real do nicho (dupe, clone, inspirado em) e o site acertou o formato sem ter autoridade nenhuma."
+  },
+  {
+   "t": "Schema de loja completo na home",
+   "d": "OnlineStore, FAQPage, MerchantReturnPolicy, ContactPoint, OpeningHours e Breadcrumb. É raro em Nuvemshop e é exatamente a entidade que o Google e os modelos de IA precisam para citar a loja. A base de GEO já existe."
+  },
+  {
+   "t": "Páginas de confiança já existem e já recebem impressão",
+   "d": "Sobre (posição 5,3), curadoria, \"como fazemos nossos guias\", entrega e representante oficial Lattafa. São os sinais de E-E-A-T que lojas novas quase nunca têm. Falta linkar esses sinais a partir dos produtos e dos posts."
+  },
+  {
+   "t": "Crescimento semana a semana",
+   "d": "Impressões diárias foram de 5 a 29 na primeira semana para 71 a 125 na última, e a posição média caiu de 50 para 20. É o padrão de site saindo do sandbox de descoberta, não um pico isolado."
+  }
+ ],
+ "oscilacoes": [
+  {
+   "quando": "27/09 a 04/10",
+   "o_que": "Primeira semana: impressões de 1 a 46 por dia, posição média 40 a 57",
+   "por_que": "Fase de descoberta. O Google mostra o site em posições baixas para medir resposta. Não é problema; é o ponto de partida que serve de base de comparação."
+  },
+  {
+   "quando": "10/10 em diante",
+   "o_que": "Salto de impressões (43 para 125 por dia) com posição melhorando para 15 a 28",
+   "por_que": "As categorias e o blog entraram no índice e começaram a aparecer para nomes de produto (alpine sport, rayhaan amazonica, khamrah mira). Os cliques ainda não acompanham porque a maioria das consultas está em posição 8 a 15, fora da click zone."
+  },
+  {
+   "quando": "mobile x desktop",
+   "o_que": "Mobile tem 60% das impressões com posição 15,7; desktop tem posição 45,9",
+   "por_que": "Indexação mobile-first: o Google avalia e exibe o site primeiro no celular, onde a busca por perfume é majoritária. A performance mobile (LCP de 7 a 8 segundos) é o freio técnico mais claro."
+  },
+  {
+   "quando": "leitura dos dados",
+   "o_que": "22 dias não fazem tendência",
+   "por_que": "Com menos de 30 dias e volume baixo, posição média é ruído. Este relatório é a fotografia de partida; a comparação válida vem em 60 e 90 dias, com a revisita de consulta por página."
+  }
+ ],
+ "posicao_cards": [
+  {
+   "t": "Já há páginas na porta da click zone",
+   "d": "Post do Club de Nuit (posição 8,2, 110 impressões), home (13), /produtos/ (12,2), sobre (5,3), perfume árabe original (4,7), post sobre cor do frasco (10), produto Rayhaan Amazonica (8,6). Volume ainda pequeno, mas são as páginas que o Google já aceitou. Links internos e externos empurram para o top 3.",
+   "c": "s1"
+  },
+  {
+   "t": "As categorias comerciais estão acima de 30",
+   "d": "Perfume árabe mais vendido (52), amadeirado (48), masculino (27), floral (28), como saber se é original (61). São as páginas de dinheiro e as mais fracas: têm lista de produtos e quase nenhum texto próprio. Sem conteúdo e sem autoridade, o Google não tem motivo para subi-las.",
+   "c": "crit"
+  },
+  {
+   "t": "A demanda real é por nome de perfume e por \"inspirado em\"",
+   "d": "As consultas com mais impressões são nomes de produto (alpine sport, rayhaan amazonica, malachite, khamrah mira, afnan 9pm, hawas) e \"inspirado em qual perfume\". A página de produto com nome completo, marca, nota e a frase \"inspirado em\" é a alavanca de cliques mais barata do site.",
+   "c": "warn"
+  }
+ ],
+ "canib_cards": [
+  {
+   "t": "Variantes com e sem barra no final",
+   "d": "/perfume-arabe-baunilha e /perfume-arabe-baunilha/, /produtos/afnan-9pm e /produtos/afnan-9pm/ aparecem as duas no Google. O canonical já aponta para a versão com barra, então não é canibalização grave, mas o Google está gastando rastreio nas duas. Ação: redirect 301 da versão sem barra no Nuvemshop e conferir que todos os links internos usam a barra.",
+   "c": "warn"
+  },
+  {
+   "t": "Blog x página institucional: como saber se é original",
+   "d": "O post do blog (posição 48) e a página /como-saber-se-e-original/ (posição 60 a 89) disputam a mesma consulta e nenhuma sobe. Ação: a página institucional vira a resposta oficial (com FAQ e schema), o post linka para ela como primeiro link, ou os dois se fundem com 301.",
+   "c": "warn"
+  },
+  {
+   "t": "Club de Nuit: post da linha x categoria da marca",
+   "d": "Para \"qual o melhor club de nuit\" rotacionam o post da linha e a categoria /marca-armaf/club-de-nuit/. Ação: o post responde e linka a categoria como primeiro link; a categoria recebe um parágrafo comparativo e lista os produtos. Cada um com papel claro.",
+   "c": "s1"
+  }
+ ],
+ "textos": {
+  "device_sub": "Mobile tem a maior parte das impressões e posição muito melhor. Indexação mobile-first: o celular é a vitrine.",
+  "paginas_sub": "Boa cobertura para 22 dias; o resto é produto que ainda não apareceu.",
+  "locais_titulo": "Consultas na porta da click zone",
+  "plataforma": "Nuvemshop, com apps de terceiros carregando JavaScript na home e na listagem.",
+  "impressoes_sub": "Busca web, todas as páginas, dia a dia.",
+  "poda_titulo": "Por que aqui o foco é indexação, não poda",
+  "poda_texto": "Loja nova com 348 URLs (272 produtos, 33 posts, cerca de 40 categorias e páginas institucionais) não tem conteúdo velho para cortar. A classificação abaixo serve para outra coisa: mostrar quais produtos ainda não apareceram em nenhuma busca em 22 dias. Para esses, a ação é título com nome completo e marca, descrição própria (não a do fornecedor) e link a partir da categoria e de um post do blog. Podar só produtos descontinuados ou sem estoque permanente, com 301 para a categoria.",
+  "links_leitura": "Em loja virtual a autoridade interna tem que fluir da home para as categorias e das categorias e do blog para os produtos. O primeiro link do corpo de cada post deve ir para o produto ou para a categoria que ele vende, com o nome do perfume como âncora. Páginas institucionais (sobre, curadoria, representante oficial) precisam receber link do rodapé e das páginas de produto, porque são elas que carregam o E-E-A-T.",
+  "geo_intro": "Perfume árabe é um nicho onde o comprador pergunta ao Google e ao ChatGPT antes de comprar: \"é original?\", \"é inspirado em qual?\", \"fixa quanto tempo?\". Quem responde em uma frase, com entidade clara e página de confiança, é citado. O site já tem a entidade (OnlineStore) e as páginas de confiança; falta o formato de resposta."
+ },
+ "moz_leitura": [
+  "DA 5 com spam score de 45% é o pior sinal do relatório, e não foi o site que causou. O domínio foi registrado de novo em 23/11/2025 e teve outras vidas (capturas do Wayback em 2013, 2024 e 2025). Dos 25 domínios mais fortes que linkam, só ig.com.br, dm.com.br, horacampinas e bntonline são veículos brasileiros reais. O resto é encurtador (urls-shortener.eu, shortenurls.eu, bye.fyi), rede de links grátis (gofreebacklinks, backlinks-checker, seo-channel com spam 55, seo-asia com 38) e domínios .icu, .top e .cfd com spam de 45 a 77 (m79q.icu, fuacata.icu, wants.cfd, seol.store).",
+  "<b>Por que isso importa:</b> o Google desconta links assim, mas um perfil em que a maioria é tóxica mantém o domínio na faixa de desconfiança e atrasa a saída da fase de teste. Para uma loja que vende produto importado onde a pergunta número um do cliente é \"é original?\", confiança do domínio é o ativo principal.",
+  "<b>Recomendação:</b> exportar os links no Search Console, montar o arquivo de desautorização (disavow) com os domínios .icu, .top, .cfd, encurtadores e redes de links grátis, e enviar esta semana. Em paralelo, 3 a 5 links editoriais por mês em portais brasileiros (moda, beleza, comportamento, economia) nos três primeiros meses, apontando para a home e para a categoria perfume árabe, para que o perfil passe a ter maioria limpa e relevante."
+ ],
+ "geo_sinais": [
+  {
+   "t": "Schema de entidade (OnlineStore com contato, horário e política de devolução)",
+   "ok": true,
+   "d": "Já existe na home. É o que diz ao Google e aos modelos de IA quem é a loja, onde está e como devolve. Manter e replicar Organization nas páginas institucionais."
+  },
+  {
+   "t": "Crawlers de IA liberados (GPTBot, ClaudeBot, PerplexityBot)",
+   "ok": true,
+   "d": "Permitir o rastreio é condição para aparecer como fonte em ChatGPT, Perplexity e AI Overview."
+  },
+  {
+   "t": "FAQ com schema FAQPage na home",
+   "ok": true,
+   "d": "Já existe. Acrescentar as perguntas que o Google já mostra para o site: \"perfume árabe é original?\", \"perfume árabe tem álcool?\", \"inspirado em qual perfume?\"."
+  },
+  {
+   "t": "Resposta direta no topo dos posts \"inspirado em\"",
+   "ok": false,
+   "d": "A consulta \"club de nuit intense man é inspirado em qual perfume\" tem 35 impressões em posição 9,5 e zero cliques. A primeira frase do post precisa ser a resposta (\"O Club de Nuit Intense Man é inspirado no Creed Aventus\"), que é o trecho que o AI Overview e o featured snippet citam."
+  },
+  {
+   "t": "Product schema com preço, disponibilidade e avaliações",
+   "ok": null,
+   "d": "Nuvemshop gera Product em cada produto; conferir no Rich Results Test se tem offers, availability e aggregateRating. Sem avaliações, a loja não ganha estrelas na SERP nem é citada como opção de compra."
+  },
+  {
+   "t": "Arquivo llms.txt",
+   "ok": false,
+   "d": "Opcional. Resumo em texto puro de quem é a loja, marcas que representa e políticas. Custo zero."
+  },
+  {
+   "t": "Página de curadoria e \"como fazemos nossos guias\" linkadas dos posts",
+   "ok": false,
+   "d": "As páginas existem, mas os posts não apontam para elas como autor ou método. Para E-E-A-T, cada post precisa de autor nomeado e link para a página de método."
+  }
+ ],
+ "geo_cards": [
+  {
+   "t": "Formato de resposta nos posts \"inspirado em\"",
+   "d": "Primeira frase responde, com o nome do perfume original. Depois H2: notas em comum, diferenças, fixação, preço comparado, onde comprar (link para o produto). Tabela de comparação. É o formato que o Google e os assistentes extraem, e é a pauta com mais demanda do nicho."
+  },
+  {
+   "t": "Página de produto que responde às três perguntas",
+   "d": "É original? (nota fiscal, representante oficial, lacre), é inspirado em qual?, fixa quanto tempo? Cada produto com essas três respostas em texto próprio, não copiado do fornecedor. Isso diferencia 272 produtos que hoje têm a mesma descrição que os concorrentes."
+  },
+  {
+   "t": "Avaliações e prova social",
+   "d": "Ativar avaliações no Nuvemshop e pedir ao cliente depois da entrega. aggregateRating no schema Product gera estrelas na SERP e é o sinal que modelos de IA usam para recomendar uma loja em vez de outra."
+  }
+ ],
+ "plano": [
+  {
+   "p": 1,
+   "custo": "zero",
+   "prazo": "esta semana",
+   "o_que": "Enviar arquivo de desautorização (disavow) com os domínios tóxicos herdados: .icu, .top, .cfd, encurtadores, redes de links grátis, seo-channel e seo-asia",
+   "por_que": "Spam score 45% e DA 5 por culpa do histórico do domínio, não do site. O disavow diz ao Google para ignorar esse passado. Sem isso, cada link bom novo entra num perfil que ainda é majoritariamente tóxico."
+  },
+  {
+   "p": 2,
+   "custo": "zero",
+   "prazo": "esta semana",
+   "o_que": "Redirect 301 das URLs sem barra final para a versão com barra; conferir links internos",
+   "por_que": "O Google está indexando as duas versões de categorias e produtos. O canonical resolve, mas gasta rastreio em dobro numa loja com 348 URLs que ainda está sendo descoberta."
+  },
+  {
+   "p": 3,
+   "custo": "zero",
+   "prazo": "esta semana",
+   "o_que": "Reescrever a primeira frase dos posts \"inspirado em\" para ser a resposta direta, e o title para \"Club de Nuit Intense Man é inspirado em qual perfume? (Creed Aventus)\"",
+   "por_que": "35 impressões em posição 9,5 com zero cliques. A resposta no title e na primeira frase é o que ganha o clique e a citação no AI Overview. Custo de 10 minutos por post."
+  },
+  {
+   "p": 4,
+   "custo": "baixo",
+   "prazo": "2 semanas",
+   "o_que": "Texto próprio de 300 a 500 palavras nas categorias comerciais (mais vendido, amadeirado, masculino, feminino, floral, doce, original), com os 5 produtos destacados e FAQ",
+   "por_que": "São as páginas de dinheiro e estão em posição 27 a 61 porque são só uma grade de produtos. Texto que responde (quais são, por que, para quem) e links para os produtos dão ao Google motivo para ranqueá-las."
+  },
+  {
+   "p": 5,
+   "custo": "baixo",
+   "prazo": "mês 1",
+   "o_que": "Títulos e descrições únicos nos produtos sem impressão: nome completo, marca, concentração, \"inspirado em\" quando aplicável, e as três respostas (original, inspirado, fixação)",
+   "por_que": "A lista de produtos com zero impressões em 22 dias mostra o que o Google ainda não distinguiu. Descrição copiada do fornecedor é igual à de dezenas de lojas; a única é o que separa."
+  },
+  {
+   "p": 6,
+   "custo": "baixo",
+   "prazo": "contínuo",
+   "o_que": "Dois posts por semana no formato \"X é inspirado em qual perfume?\" e \"X é bom?\", cada um com o produto como primeiro link do corpo",
+   "por_que": "É o único formato que já está na primeira página sem autoridade. Cada post novo é uma porta de entrada para um produto, e o link do post para o produto transfere o pouco de autoridade para a página que vende."
+  },
+  {
+   "p": 7,
+   "custo": "médio",
+   "prazo": "mês 1",
+   "o_que": "Performance mobile: remover apps Nuvemshop não usados, adiar scripts de terceiros, otimizar imagens da home e da listagem (LCP de 7 a 8 s para abaixo de 3 s)",
+   "por_que": "Mobile é 60% das impressões e a nota de performance é 35 a 48. TBT de 2,3 s na listagem significa que o celular trava antes de mostrar os produtos. Core Web Vitals é critério de ranking e de conversão."
+  },
+  {
+   "p": 8,
+   "custo": "investimento",
+   "prazo": "mês 1 a 3",
+   "o_que": "Campanha de backlinks editoriais limpos: 3 a 5 links por mês em portais brasileiros para a home (âncoras: perfume árabe, loja de perfume árabe) e para a categoria principal (perfume árabe original, perfume árabe mais vendido)",
+   "por_que": "Depois do disavow o perfil fica pequeno (poucos links limpos). A loja precisa de sinal positivo rápido, em português e em veículos reais, para sair da faixa de desconfiança e levar as categorias da posição 30 a 50 para a primeira página."
+  },
+  {
+   "p": 9,
+   "custo": "zero",
+   "prazo": "60 e 90 dias",
+   "o_que": "Repetir a leitura do Search Console em 60 e 90 dias e rodar a revisita de consulta por página nas categorias e nos posts",
+   "por_que": "Com 22 dias, nada é tendência. Em 60 dias dá para ver se o disavow e o conteúdo das categorias mexeram na posição, e a revisita mostra os novos termos que o Google associou às páginas, que viram H2."
+  }
+ ],
+ "alerta": {
+  "k": "Ponto crítico",
+  "t": "O problema não está no site, está no domínio",
+  "d": "O perfumearabe.com foi registrado de novo em 23/11/2025 e já teve outras vidas (2013, 2024 e 2025). Ele herdou um perfil de backlinks tóxico: a maioria dos 49 domínios que linkam é de encurtador, rede de links grátis e domínios .icu, .top e .cfd com spam de 38 a 77%. Isso mantém a loja na faixa de desconfiança do Google e atrasa a subida das categorias que vendem.",
+  "acao": "Ação imediata: enviar o arquivo de desautorização (disavow) esta semana e começar os links brasileiros limpos. Sem isso, o resto do plano rende menos.",
+  "dados": [
+   [
+    "Spam score (Moz)",
+    "45%",
+    "acima de 30% é alerta"
+   ],
+   [
+    "Domain Authority",
+    "5",
+    "de 0 a 100"
+   ],
+   [
+    "Domínios tóxicos",
+    "maioria",
+    "dos 49 que linkam"
+   ],
+   [
+    "Registro atual",
+    "nov/2025",
+    "domínio reaproveitado"
+   ]
+  ]
+ }
+}

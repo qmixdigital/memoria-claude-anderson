@@ -1,0 +1,1 @@
+- [Projeto análise SEO/GEO clientes](projeto-analise-seo-geo-clientes.md) — layout por cliente, env vars do gsc_api.py, chave OpenPageRank expirada

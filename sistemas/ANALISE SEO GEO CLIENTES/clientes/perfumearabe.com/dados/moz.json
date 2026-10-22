@@ -1,0 +1,21 @@
+{
+ "data": "2026-09-05",
+ "da": 5, "pa_home": 26, "spam": 45, "ref_domains": 49, "ext_pages": 56,
+ "top_links": [
+  {"dom": "ig.com.br", "da": 94, "spam": 6}, {"dom": "dm.com.br", "da": 63, "spam": 2},
+  {"dom": "horacampinas.com.br", "da": 43, "spam": 1}, {"dom": "lavras24horas.com.br", "da": 39, "spam": 28},
+  {"dom": "bntonline.com.br", "da": 37, "spam": 2}, {"dom": "example3.com", "da": 37, "spam": 21},
+  {"dom": "webseotoolkit.com", "da": 30, "spam": 2}, {"dom": "seo-channel.com", "da": 26, "spam": 55},
+  {"dom": "gofreebacklinks.com", "da": 22, "spam": 3}, {"dom": "drjack.world", "da": 21, "spam": 4},
+  {"dom": "backlinks-checker.com", "da": 18, "spam": 7}, {"dom": "urls-shortener.eu", "da": 15, "spam": 6},
+  {"dom": "blogsphere.top", "da": 14, "spam": 15}, {"dom": "wants.cfd", "da": 14, "spam": 47},
+  {"dom": "bye.fyi", "da": 14, "spam": 7}, {"dom": "seo-asia.com", "da": 14, "spam": 38},
+  {"dom": "shortenurls.eu", "da": 13, "spam": 7}, {"dom": "sergechel.info", "da": 13, "spam": 14},
+  {"dom": "creativeposts.top", "da": 12, "spam": 7}, {"dom": "seol.store", "da": 11, "spam": 45},
+  {"dom": "xploredomains.com", "da": 11, "spam": 2}, {"dom": "m79q.icu", "da": 10, "spam": 77},
+  {"dom": "latinx.icu", "da": 9, "spam": 0}, {"dom": "fuacata.icu", "da": 9, "spam": 48},
+  {"dom": "metamagic.top", "da": 9, "spam": 8}
+ ],
+ "crawlers_ia": {"GPTBot": 200, "ClaudeBot": 200, "PerplexityBot": 200},
+ "llms_txt": false
+}

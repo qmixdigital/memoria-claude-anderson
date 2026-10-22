@@ -189,3 +189,4 @@
 - [academus → notadecorte.ia.br](project_academus_para_notadecorte.md) — no ar desde 19/10; domínio antigo já serve só 301/404 a partir de D:/SITES/notadecorte.ia.br/academus-antigo; NÃO redirecionar a home (histórico IPTV)
 - [10 diretórios viraram estáticos no Pages (18-19/10/2026)](reference_conversao_estatico_clinicas_vps.md) — pipeline converter.py; nada fica em servidor; armadilhas: --podavel + desvínculo de 404, backspace em regex, domínio Pages pending, purge após DNS
 - [LGPD Emanuely (publisherbrasil editoras)](project_lgpd_emanuely_publisherbrasil.md) — ficha bloqueada por redirect na zona + Worker lgpd-lencois-paulista; fonte do diretório não localizado; remover os dois quando regenerar
+- [Slug tomado e deploy no Pages](reference_portal_engine_slug_owner_e_deploy_pages.md) — publishArticle devolve status skipped/duplicate sem erro; artigo só vai ao ar após pages_pack.js (antes dá 404)

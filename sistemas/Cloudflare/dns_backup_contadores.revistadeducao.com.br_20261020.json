@@ -1,0 +1,174 @@
+[
+ {
+  "id": "c2e54830800f3182429b0d401aa46ae2",
+  "name": "contadores.revistadeducao.com.br",
+  "type": "A",
+  "content": "77.37.69.175",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": "diretorio Next na VPS, fora do Pages (18/09/2026)",
+  "tags": [],
+  "created_on": "2026-09-18T23:33:11.67998Z",
+  "modified_on": "2026-09-18T23:33:11.67998Z",
+  "comment_modified_on": "2026-09-18T23:33:11.67998Z"
+ },
+ {
+  "id": "a0093f6dce5e61bf24b23986b1e4f4fa",
+  "name": "revistadeducao.com.br",
+  "type": "CNAME",
+  "content": "revistadeducao.pages.dev",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {
+   "flatten_cname": false
+  },
+  "meta": {},
+  "comment": "Cloudflare Pages desde 2026-09-17; antes A 77.37.69.175",
+  "tags": [],
+  "created_on": "2024-06-26T16:34:31.257366Z",
+  "modified_on": "2026-09-17T13:46:47.232232Z",
+  "comment_modified_on": "2026-09-17T13:46:47.232232Z"
+ },
+ {
+  "id": "53deb9038beae003fcbaf3b7b03f1133",
+  "name": "www.revistadeducao.com.br",
+  "type": "CNAME",
+  "content": "revistadeducao.pages.dev",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {
+   "flatten_cname": false
+  },
+  "meta": {},
+  "comment": "Cloudflare Pages desde 2026-09-17; antes CNAME revistadeducao.com.br",
+  "tags": [],
+  "created_on": "2024-06-26T16:34:31.239465Z",
+  "modified_on": "2026-09-17T13:46:48.176297Z",
+  "comment_modified_on": "2026-09-17T13:46:48.176297Z"
+ },
+ {
+  "id": "aea4a35513228e9b16b8bac2ce320685",
+  "name": "revistadeducao.com.br",
+  "type": "MX",
+  "content": "route3.mx.cloudflare.net",
+  "priority": 73,
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {
+   "email_routing": true,
+   "read_only": true
+  },
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-05-01T14:45:04.088862Z",
+  "modified_on": "2026-05-01T14:45:04.088862Z"
+ },
+ {
+  "id": "3d6a7efb0d9d69fa766f2c12eeff12fd",
+  "name": "revistadeducao.com.br",
+  "type": "MX",
+  "content": "route2.mx.cloudflare.net",
+  "priority": 63,
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {
+   "email_routing": true,
+   "read_only": true
+  },
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-05-01T14:45:04.076902Z",
+  "modified_on": "2026-05-01T14:45:04.076902Z"
+ },
+ {
+  "id": "37956c06704746870e94ea023c1b7acb",
+  "name": "revistadeducao.com.br",
+  "type": "MX",
+  "content": "route1.mx.cloudflare.net",
+  "priority": 42,
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {
+   "email_routing": true,
+   "read_only": true
+  },
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-05-01T14:45:04.066298Z",
+  "modified_on": "2026-05-01T14:45:04.066298Z"
+ },
+ {
+  "id": "9686dbbc1685f72a473b1a832e6ae8d3",
+  "name": "cf2024-1._domainkey.revistadeducao.com.br",
+  "type": "TXT",
+  "content": "\"v=DKIM1; h=sha256; k=rsa; p=<<REMOVIDO>>+o48IOGuP7GR3X0MOExCUDY/BCRHoWBnh3rChl7WhdyCxW3jgq1daEjPPqoi7sJvdg5hEQVsgVRQP4DcnQDVjGMbASQtrY4WmB1VebF+<<REMOVIDO>>+i0H4cpYH9+3JJ78k\" \"m4KXwaf9xUJCWF6nxeD+<<REMOVIDO>>\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {
+   "email_routing": true,
+   "read_only": true
+  },
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-05-01T14:45:04.10627Z",
+  "modified_on": "2026-05-01T14:45:04.10627Z"
+ },
+ {
+  "id": "592bf65a59af87223985ea4e8da21fc3",
+  "name": "revistadeducao.com.br",
+  "type": "TXT",
+  "content": "google-site-verification=<<REMOVIDO>>",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 60,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-07-24T15:05:59.644749Z",
+  "modified_on": "2026-07-24T15:05:59.644749Z"
+ },
+ {
+  "id": "b2779637eb6088b9485c2db905a4f1cd",
+  "name": "revistadeducao.com.br",
+  "type": "TXT",
+  "content": "\"v=spf1 include:_spf.mx.cloudflare.net ~all\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-05-01T14:45:04.098647Z",
+  "modified_on": "2026-05-01T14:45:04.098647Z"
+ },
+ {
+  "id": "aaccbf14c5fe9bd843f8f12c06fe6e42",
+  "name": "revistadeducao.com.br",
+  "type": "TXT",
+  "content": "\"google-site-verification=<<REMOVIDO>>\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2024-06-26T16:34:31.231536Z",
+  "modified_on": "2024-06-26T16:38:59.26731Z"
+ }
+]

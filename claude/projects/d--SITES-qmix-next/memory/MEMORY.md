@@ -51,7 +51,7 @@
 - [AdSense nas ferramentas](qmix-adsense-ferramentas.md) — ligado 09/10/2026: 3 unidades por DOM no layout (tools), posições, política com opt-out, script de conferência
 - [Um portal por cliente](feedback-um-portal-por-cliente.md) — nunca duas matérias do mesmo cliente no mesmo portal; cruzar listas de campanhas compartilhadas antes de criar (erro jornaldebeltrao 09/10/2026)
 - [Transcrição só para insights](feedback-transcricao-so-insights.md) — nunca citar apresentador/convidado/episódio de YouTube no artigo; tese vira "o que circula" + dado próprio + fonte primária (12/10/2026)
-- [Pedido interno de 30 matérias](qmix-pedido-interno-30-portais.md) — pedidos 146 (cartorio), 147 (ferramentas.qmix), 148 (psicologosperto), 149 (seuguiadesaude) e 150 (revistamsaude) feitos 13/10; semana de 19/10 mais 30 em outros domínios; método de lote
+- [Pedido interno de 30 matérias](qmix-pedido-interno-30-portais.md) — pedidos 146 a 150 (13/10) e 153 (nutricionista.digital, 21/10, parceiros lucas/rodrigo/gustavo); método de lote, validador (parágrafos de ~40 palavras), fotos conferidas em folha
 - [Nicho do portal manda](feedback-nicho-do-portal.md) — tema da matéria tem que casar com o nicho do portal; erro de 13/10 (terapia em portal de carros) corrigido nos pedidos 147 e 148; sobra vira reserva
 - [Só parceiros no painel](feedback-so-parceiros-no-painel.md) — domínio de matéria do painel tem que estar nas listas rodrigo/gustavo/lucas.txt; rede própria só com ordem (erro do pedido 150, 13/10/2026)
 - [Campanha QMIX Parceria](qmix-campanha-parceria.md) — listas de agências de backlinks em portais parceiros, sem link externo, 6 sites fixos, uma fatura única a preço de custo (desde 15/10/2026)
@@ -61,3 +61,5 @@
 - [Página comprar conteúdo para blog](qmix-pagina-conteudo-para-blog.md) — serviço da redatora criado 16/10/2026: 10/R$439, 20/R$790, 50/R$1.875, 100/R$2.987; premissas assumidas (ajustes, tamanho, pautas de teste) a confirmar
 - [Guias de SEO ficam no blog](feedback-guias-seo-no-blog.md) — artigo sobre SEO vai para qmix.com.br/blog mesmo quando apoia uma ferramenta; subdomínio só recebe guia da ferramenta em si (16/10/2026)
 - [Página sites para médicos](qmix-pagina-sites-para-medicos.md) — /sites-para-medicos criada 16/10/2026, mesmos pacotes de pequenas empresas; prova só com especialidades/cidades reais (Goiânia, BH), regras do CFM prometidas
+- [Fornecedor Lucas Martinatto inativo](fornecedor-lucas-martinatto-inativo.md) — 21/10/2026: 35 portais dele inativados (oitomeia, portalpalotina, revistafatorbrasil...); não confundir com Lucas Pelisari (blogs gratuitos)
+- [Filtros da lista de backlinks](qmix-lista-backlinks-filtros.md) — 21/10/2026: região, praça, nicho, preço, DA mín., tráfego mín., ordenação e chips na /lista-de-backlinks; /comprar-backlinks pública não tem grade de propósito; sem DR no cadastro

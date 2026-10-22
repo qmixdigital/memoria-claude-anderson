@@ -1,0 +1,25 @@
+
+=== https://www.perfumearabe.com/  [mobile] ===
+  Scores: Perf 48 | SEO 92 | A11y 94 | BestPractices 100
+  LAB (Lighthouse): LCP 7.8 s (RUIM) | CLS 0 (BOM) | TBT 830 ms | FCP 3.3 s (RUIM) | SI 4.5 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório
+  Oportunidades:
+    ~910ms  Reduce unused JavaScript
+
+=== https://www.perfumearabe.com/  [desktop] ===
+  Scores: Perf 80 | SEO 92 | A11y 94 | BestPractices 100
+  LAB (Lighthouse): LCP 1.0 s (BOM) | CLS 0.033 (BOM) | TBT 400 ms | FCP 0.8 s (BOM) | SI 1.2 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório
+
+=== https://www.perfumearabe.com/produtos/  [mobile] ===
+  Scores: Perf 35 | SEO 92 | A11y 94 | BestPractices 100
+  LAB (Lighthouse): LCP 7.1 s (RUIM) | CLS 0.005 (BOM) | TBT 2,330 ms | FCP 3.6 s (RUIM) | SI 6.4 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório
+  Oportunidades:
+    ~520ms  Reduce unused JavaScript
+    ~350ms  Reduce unused CSS
+
+=== https://www.perfumearabe.com/produtos/  [desktop] ===
+  Scores: Perf 72 | SEO 92 | A11y 94 | BestPractices 100
+  LAB (Lighthouse): LCP 0.9 s (BOM) | CLS 0.009 (BOM) | TBT 780 ms | FCP 0.8 s (BOM) | SI 0.9 s
+  CAMPO (CrUX): sem dados suficientes (site novo/pouco tráfego) — usar métricas de laboratório

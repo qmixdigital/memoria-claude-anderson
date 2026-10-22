@@ -1,0 +1,84 @@
+[
+ {
+  "id": "acbc3e50e6b6b13d6ec0c6558077b8e3",
+  "name": "diretorio.desassossegada.com.br",
+  "type": "A",
+  "content": "77.37.69.175",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": "diretorio Next na VPS, fora do Pages (18/09/2026)",
+  "tags": [],
+  "created_on": "2026-09-18T23:33:16.495828Z",
+  "modified_on": "2026-09-18T23:33:16.495828Z",
+  "comment_modified_on": "2026-09-18T23:33:16.495828Z"
+ },
+ {
+  "id": "4dd6212d8ab005d7101717563e4b2a57",
+  "name": "desassossegada.com.br",
+  "type": "CNAME",
+  "content": "desassossegada.pages.dev",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {
+   "flatten_cname": false
+  },
+  "meta": {},
+  "comment": "Cloudflare Pages desde 2026-09-17; antes A 77.37.69.175",
+  "tags": [],
+  "created_on": "2024-06-25T20:27:09.11995Z",
+  "modified_on": "2026-09-17T13:51:36.059749Z",
+  "comment_modified_on": "2026-09-17T13:51:36.059749Z"
+ },
+ {
+  "id": "a05c2eaf0c7cddc200a4babe2ecc79eb",
+  "name": "www.desassossegada.com.br",
+  "type": "CNAME",
+  "content": "desassossegada.pages.dev",
+  "proxiable": true,
+  "proxied": true,
+  "ttl": 1,
+  "settings": {
+   "flatten_cname": false
+  },
+  "meta": {},
+  "comment": "Cloudflare Pages desde 2026-09-17; antes A 77.37.69.175",
+  "tags": [],
+  "created_on": "2026-08-22T21:13:34.79477Z",
+  "modified_on": "2026-09-17T13:51:36.863067Z",
+  "comment_modified_on": "2026-09-17T13:51:36.863067Z"
+ },
+ {
+  "id": "2b3403f6cc7416dd8e6524474ae054da",
+  "name": "desassossegada.com.br",
+  "type": "TXT",
+  "content": "google-site-verification=<<REMOVIDO>>",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 60,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2026-07-24T14:54:15.905501Z",
+  "modified_on": "2026-07-24T14:54:15.905501Z"
+ },
+ {
+  "id": "4f52374a050f1e030e097a025995ed1e",
+  "name": "desassossegada.com.br",
+  "type": "TXT",
+  "content": "\"google-site-verification=<<REMOVIDO>>\"",
+  "proxiable": false,
+  "proxied": false,
+  "ttl": 1,
+  "settings": {},
+  "meta": {},
+  "comment": null,
+  "tags": [],
+  "created_on": "2024-06-25T20:27:09.13035Z",
+  "modified_on": "2024-06-25T20:27:09.13035Z"
+ }
+]

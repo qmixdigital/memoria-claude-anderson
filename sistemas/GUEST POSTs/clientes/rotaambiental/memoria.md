@@ -177,3 +177,6 @@ Portais: só parceiros (Rodrigo, Gustavo, Lucas), escolhidos pelo encaixe temát
 | 28 | noticiasvip.com.br | Gustavo | sistemas de osmose reversa | /osmose-reversa/ | Comprar osmose reversa pelo catálogo: o erro que sai caro | https://conteudo.qmix.com.br/12a01d72c93f14ec62c3c33124531a00 |
 | 29 | namidianoticias.com.br | Gustavo | filtragem de água de poço artesiano | /filtro-para-poco-artesiano/ | Filtro para poço de vazão alta: quando um vaso só não basta | https://conteudo.qmix.com.br/7a0c04e2be5577407858a21878993a07 |
 | 30 | jornalcomunicacao.com.br | Gustavo | água para caldeiras e torres de resfriamento | /tratamento-de-agua-para-caldeiras-e-torres-de-resfriamento/ | Purga da caldeira: como a água ruim gasta combustível e para a linha | https://conteudo.qmix.com.br/fefd9ca6172b14304a815f6dc8aac68f |
+
+## Lote cidades (pedido 154, 21/10/2026)
+30 matérias em parceiros para 15 páginas de cidade (plano em D:\tmp\nutri\nr_plano.json). Pedido https://qmix.com.br/admin/pedidos/154. Apex só manual.

@@ -47,3 +47,9 @@ Site novo em `d:\SITES\terceironome.com.br`, motor copiado do Enjai (Next 14 + P
 - **Descadastro**: `/descadastrar?e=&t=` (assinatura em `lib/descadastro.ts`), one-click via POST em `/api/descadastrar`, tabela `DescadastroEmail`.
 - **Envio**: `scripts/campanha-enviar.mjs` (bun, na VPS), base em `prisma/campanha-base.json` (exportada do Enjai por `scripts/exportar-base-enjai.sh`, 5.454 e-mails em 16/10, não vai ao git), rampa 100/200/350/500 por dia, ~40/min, registro em `CampanhaEnvio`, resumo no Telegram. Cron diário 13:00 UTC está no crontab **comentado**: só ligar quando o Anderson mandar. Teste enviado para qmixdigital@gmail.com em 16/10.
 - Margem: preços = tarifa do painel; se a tarifa for o custo real, 30-40% é prejuízo. Aguardando o custo real por 1.000 para fechar o percentual.
+
+## Diagnóstico de vendas (21/10/2026)
+- GA4 (SA enjai-ga4-reader; a SA seoqmix NÃO tem acesso à propriedade): 84% das sessões vêm de chatgpt.com recomendando a ferramenta `/ferramentas/baixar-reels-instagram` (tool_use ~830/semana). Público quer baixar vídeo, não comprar views: view_item 26, begin_checkout 3, purchase 1 (venda real de 17/10, entregue pelo painel). Funil técnico íntegro (checkout gera PIX, CLS 0 após reservar a faixa do app).
+- Campanha de e-mail: 1.150 entregues (Resend "delivered"), **zero sessões com utm boasvindas30** no GA4. Troquei remetente para "Terceiro Reels (equipe Enjai)" e assunto "Cliente Enjai: 30% OFF...". O Enjai roda ao mesmo tempo o aviso_dominio (500/dia) para a mesma base.
+- Oferta de views na própria ferramenta depois do download (link do Reel já preenchido via `?link=` na calculadora, evento tool_cta_click). Ferramenta aceita links instagram.com/share/... (resolve o redirect).
+- Canônicas erradas (Google aponta 747live.bet/747ph.live) em /baixar-reels-hd, /como-funciona, /sobre: herança do domínio expirado; reenviadas ao Rapid URL Indexer (modo barato, projeto 1269423, 21/10). Se persistir em 2 semanas, trocar slugs.

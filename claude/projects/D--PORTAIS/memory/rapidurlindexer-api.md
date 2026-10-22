@@ -80,3 +80,4 @@ A SerpAPI **não indexa**, ela lê a SERP. Ver [[serpapi-chave]].
 | 09/10/2026 | 1242944, rotaambiental paginas novas (locais + produtos) | 20 | 20 créditos | 1811 |
 | 16/10/2026 | 1257364, terceironome páginas não indexadas, **Apex por ordem expressa dele** | 8 | 24 créditos | 202 |
 | 16/10/2026 | 1257515, terceironome blog (índice + 10 artigos), Apex por ordem dele | 11 | 33 créditos | 169 |
+| 21/10/2026 | 1269623, rotaambiental hub BA/MG/RJ + 7 polos, modo econômico | 8 | 8 créditos | 831 |

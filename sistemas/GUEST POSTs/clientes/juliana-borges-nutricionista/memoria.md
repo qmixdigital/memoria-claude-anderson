@@ -73,3 +73,40 @@ Regra aplicada: keyword do post = intenção informacional diferente da página-
 | 30 | jornal.seg.br | calcular o gasto energético em repouso | nutricionista.digital/calculadora-de-taxa-metabolica-basal/ | https://jornal.seg.br/saude/taxa-metabolica-basal-o-que-e-e-por-que-muda/ |
 
 Não enviar ao Apex sem ordem do Anderson. Prioridade para os 6 de cardápios (subdomínio fora do índice do Google).
+
+## Lote painel 30 (pedido interno 153, QMIX-20261021-5C23D4E9, 21/10/2026)
+
+30 portais PARCEIROS (Lucas 8, Rodrigo 10, Gustavo 12), 1 matéria por portal, entregues pelo painel; a Kátia encaminha e lança a URL publicada. Destinos diferentes dos 30 do lote de 14/10 (Jean). Âncora no 1º parágrafo; keyword do texto vizinha da âncora; sem link interno; Apex só manual.
+
+| n | portal | âncora | destino | link da entrega |
+|---|---|---|---|---|
+| 01 | precisoperderpeso.com.br | nutricionista online para emagrecer | nutricionista.digital/nutricionista-online-para-emagrecer | https://conteudo.qmix.com.br/0bf5b27f8d418ea5f94f98950a5d79e1 |
+| 02 | comofazer.etc.br | consulta nutricional feita pela internet | nutricionista.digital/consulta-nutricional-online | https://conteudo.qmix.com.br/2e89882b1bd76928389c0737f1f724af |
+| 03 | g14.com.br | acompanhamento com nutricionista esportivo online | nutricionista.digital/nutricionista-online-esportivo | https://conteudo.qmix.com.br/59d4bcd3cad117b2f565a368115816c0 |
+| 04 | pordentrodanoticia.com.br | nutricionista em Goiânia | nutricionista.digital/goiania/ | https://conteudo.qmix.com.br/ec0a108b99a038f0179a6fecba522dec |
+| 05 | gazetadasemana.com.br | nutricionista Juliana Borges | nutricionista.digital/ | https://conteudo.qmix.com.br/b7af835003a61e8bbf3971f638815645 |
+| 06 | namidianoticias.com.br | calculadora de calorias diárias | nutricionista.digital/calculadora-de-calorias/ | https://conteudo.qmix.com.br/0dfa66fb7ae23e28c53177a421efd8bb |
+| 07 | noticiasparana.com.br | calcular o déficit calórico | nutricionista.digital/calculadora-de-deficit-calorico/ | https://conteudo.qmix.com.br/26c19b8bef9ff58ae1e3138276e19214 |
+| 08 | jornalcomunicacao.com.br | calculadora de IMC | nutricionista.digital/calculadora-de-imc-indice-de-massa-corporal/ | https://conteudo.qmix.com.br/4db120709766ed105dac0ef2bc3ec9bc |
+| 09 | noticiasdopassaro.com.br | descobrir o peso ideal pela altura | nutricionista.digital/calculadora-de-peso-ideal/ | https://conteudo.qmix.com.br/13c433e11b8d7d0f044750abcc5cf865 |
+| 10 | oportaldanoticia.com.br | calculadora de gordura corporal | nutricionista.digital/calculadora-de-gordura-corporal/ | https://conteudo.qmix.com.br/034188f3082dcff8fe2bcec01928eaec |
+| 11 | noticiasvip.com.br | como a nutricionista ajuda a emagrecer | nutricionista.digital/blog/como-uma-nutricionista-pode-ajudar-a-emagrecer/ | https://conteudo.qmix.com.br/71f6f2ed26e72eb7331a64775ffbf035 |
+| 12 | estimativa.org.br | valor da consulta com nutricionista online | nutricionista.digital/blog/valor-de-consulta-com-nutricionista-online/ | https://conteudo.qmix.com.br/b2c6c5db4406752cfa7e77705c4a4585 |
+| 13 | thefolha.com.br | vale a pena pagar um nutricionista | nutricionista.digital/blog/vale-a-pena-pagar-nutricionista-para-emagrecer/ | https://conteudo.qmix.com.br/8b9a4411e6f0a5f2532d4c7a29ec4ac1 |
+| 14 | assuntando.com.br | lidar com a culpa na hora de emagrecer | nutricionista.digital/blog/emagrecer-sem-culpa/ | https://conteudo.qmix.com.br/0585334286a6127c4ed7791c0c03f80f |
+| 15 | paulavillalonge.com.br | papel dos hormônios no emagrecimento | nutricionista.digital/blog/hormonios-e-emagrecimento/ | https://conteudo.qmix.com.br/425bace4396de50b31add4fe74f9b6ff |
+| 16 | institutoagora.org.br | nutricionista especialista em obesidade | nutricionista.digital/blog/nutricionista-especialista-em-obesidade/ | https://conteudo.qmix.com.br/25482b3048dc6dac9224f8b10b6126b8 |
+| 17 | fisioterapeutasplugadas.com.br | quem não pode tomar whey | nutricionista.digital/blog/quem-nao-pode-tomar-whey-protein/ | https://conteudo.qmix.com.br/ad585ee4c6a6265695c9f6eefe6464fc |
+| 18 | catalogou.com.br | dieta para SIBO | nutricionista.digital/blog/sibo-dieta-o-que-nao-comer/ | https://conteudo.qmix.com.br/0c0fb8e53629eb4443e39f53bfbc6715 |
+| 19 | estantedosaber.com.br | acompanhamento nutricional para engordar com saúde | nutricionista.digital/blog/nutricionista-para-engordar/ | https://conteudo.qmix.com.br/34e6f47570368a71ac831b8a33e7cbfb |
+| 20 | pediatradigital.com.br | acompanhamento nutricional na gestação | nutricionista.digital/blog/nutricionista-gestante/ | https://conteudo.qmix.com.br/d4a44ea34def7d4270f84cbd02bfd02c |
+| 21 | provougostou.com.br | receitas fitness para emagrecer | cardapios.nutricionista.digital/receitas-fitness-para-emagrecer | https://conteudo.qmix.com.br/d76de9ad0936d36cc1293e4bf3a8c854 |
+| 22 | oporque.com.br | sete dias de cardápio para diabéticos | cardapios.nutricionista.digital/cardapio-semanal-diabetes | https://conteudo.qmix.com.br/dcdd87944091568e285098e0bf67c53d |
+| 23 | blogsaladadefrutas.com.br | cardápio para colesterol alto | cardapios.nutricionista.digital/colesterol-alto | https://conteudo.qmix.com.br/aa55644665867ec745e61b2efc6c2183 |
+| 24 | fabulouskcreative.com | o que comer com intestino preso | cardapios.nutricionista.digital/intestino-preso | https://conteudo.qmix.com.br/ae4a74213e66a5c24bf169eadbef93eb |
+| 25 | portalcomunitario.jor.br | onde a lactose se esconde | cardapios.nutricionista.digital/intolerancia-a-lactose | https://conteudo.qmix.com.br/ba234082f1b4322a0c50e03493937089 |
+| 26 | akacessorios.com.br | o que pode comer com pedra na vesícula | cardapios.nutricionista.digital/pedra-na-vesicula | https://conteudo.qmix.com.br/727cd4e69fc5d0b2561a442752893da8 |
+| 27 | iceaweb.org | como baixar o ácido úrico | cardapios.nutricionista.digital/como-baixar-acido-urico | https://conteudo.qmix.com.br/d118807751bc6e1f8bbdb2a27106ed42 |
+| 28 | maisbelezaesaude.com.br | lista de alimentos para perder barriga | cardapios.nutricionista.digital/alimentos-para-perder-barriga | https://conteudo.qmix.com.br/ebe6e5aa97da4ff205466de4155f67fb |
+| 29 | portalfonteboa.com.br | o que comer na gastroenterite | cardapios.nutricionista.digital/o-que-comer-na-gastroenterite | https://conteudo.qmix.com.br/46650672ad40cb8b3b46470f77283706 |
+| 30 | querodicas.com.br | cardápio de sete dias para gordura no fígado | cardapios.nutricionista.digital/cardapio-semanal | https://conteudo.qmix.com.br/d3264c609ad24ccfeab95d34077b98b0 |

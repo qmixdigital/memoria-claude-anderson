@@ -27,3 +27,5 @@ Ver [[feedback_padrao_links_guest_post]], [[feedback_pauta_por_oportunidade_gsc]
 keyword do post e como âncora (ex.: "seguidores por 1 real" nos dois). O operador cobrou de novo, dizendo que está
 na documentação. Antes de propor qualquer pauta: keyword do post = intenção informacional DIFERENTE da página-destino;
 âncora = keyword do destino, variada (exata/parcial/natural), e NUNCA igual ao título nem à keyword do próprio post.
+
+**Reincidência 3 (21/10/2026):** no mapeamento dos 10 posts do enjai.social nos sites do Jean propus título começando pela própria âncora ("Seguidores por 1 real: o que esperar...") e o operador cobrou "novamente". Regra para qualquer mapeamento: ANTES de mostrar a tabela, conferir mecanicamente que (a) a âncora não aparece como trecho do título, (b) a keyword do post (que está no slug, título, H1, 1 H2 e meta) é outra intenção informacional, (c) a âncora é a do destino, variada ~30% exata, ~40% parcial, ~30% natural. A tabela precisa trazer a coluna "keyword do post" separada da coluna "âncora".

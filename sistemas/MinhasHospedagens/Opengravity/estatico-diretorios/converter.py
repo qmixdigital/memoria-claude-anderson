@@ -38,6 +38,8 @@ SITES = {
 }
 
 SITES.update({
+    "contadores": dict(host="hostinger-vps-srv1166087", sub=True, proj="contadoresrevistadeducao", dom="contadores.revistadeducao.com.br", gsc="revistadeducao.com.br", gschost="contadores.revistadeducao.com.br", pm2=["contadores"], porta=3210, dir="/var/www/contadores", extra=["/var/www/contadores-shared"], db="contadores", nginx=[], minimo=3),
+    "desassossegada": dict(host="hostinger-vps-srv1166087", sub=True, proj="desassossegadadiretorio", dom="diretorio.desassossegada.com.br", gsc="desassossegada.com.br", gschost="diretorio.desassossegada.com.br", pm2=["desassossegada-dir"], porta=3180, dir="/var/www/desassossegada-dir", extra=["/var/www/desassossegada-dir-shared"], db="desassossegada_dir", nginx=[], minimo=1),
     "comparativos": dict(dom="comparativos.ia.br", gsc="comparativos.ia.br", pm2=["comparativos", "comparativos-b"], porta=3420, dir="/var/www/comparativos", extra=["/var/www/comparativos-shared"], nginx=["comparativos.conf"], db="comparativos", minimo=1),
     "radarvolt": dict(dom="radarvolt.com.br", gsc="radarvolt.com.br", pm2=["radarvolt-web", "radarvolt-web-b"], porta=3080, dir="/home/user/web/radarvolt.com.br", hestia=["radarvolt.com.br", "radarvolt.dominioprovisorio.net.br"], nginx=["00-radarvolt-upstream.conf"], db="radarvolt", minimo=1),
     "notadecorte": dict(dom="notadecorte.ia.br", gsc="notadecorte.ia.br", pm2=[], porta=0, dir="", db="", minimo=1),
@@ -86,6 +88,8 @@ def etapa_lista(n, s):
             continue
         u, i, _ = l.rstrip("\n").split("\t")
         if int(i) < s.get("minimo", 1):
+            continue
+        if s.get("gschost") and not u.startswith("https://" + s["gschost"] + "/"):
             continue
         p = re.sub(r"^https?://[^/]+", "", u).split("?")[0].split("#")[0]
         paths.add(p if p.endswith("/") else p + "/")
@@ -166,13 +170,14 @@ def etapa_baixar(n, s):
 
 
 def zona(dom):
-    z = cf("GET", f"/zones?name={dom}")["result"][0]
+    pai = ".".join(dom.split(".")[-3:]) if dom.endswith(".com.br") and dom.count(".") >= 3 else dom
+    z = cf("GET", f"/zones?name={pai}")["result"][0]
     return z["id"], z["account"]["id"]
 
 
 def etapa_deploy(n, s):
     zid, acc = zona(s["dom"])
-    proj = re.sub(r"[^a-z0-9]", "", s["dom"].split(".")[0])[:40]
+    proj = s.get("proj") or re.sub(r"[^a-z0-9]", "", s["dom"].split(".")[0])[:40]
     r = cf("POST", f"/accounts/{acc}/pages/projects", {"name": proj, "production_branch": "main"})
     print("projeto", proj, r.get("success"), [e["message"] for e in r.get("errors", [])][:1])
     env = dict(os.environ, CLOUDFLARE_API_TOKEN=TOK, CLOUDFLARE_ACCOUNT_ID=acc)
@@ -190,14 +195,15 @@ def etapa_deploy(n, s):
 def etapa_dns(n, s):
     dom = s["dom"]
     zid, acc = zona(dom)
-    proj = re.sub(r"[^a-z0-9]", "", dom.split(".")[0])[:40]
+    proj = s.get("proj") or re.sub(r"[^a-z0-9]", "", dom.split(".")[0])[:40]
     alvo = cf("GET", f"/accounts/{acc}/pages/projects/{proj}")["result"]["subdomain"]
     recs = cf("GET", f"/zones/{zid}/dns_records?per_page=100")["result"]
     json.dump(recs, open(f"D:/SISTEMAS/cloudflare/dns_backup_{dom}_{DATA}.json", "w"), indent=1)
-    for d in (dom, "www." + dom):
+    dominios = (dom,) if s.get("sub") else (dom, "www." + dom)
+    for d in dominios:
         print("dominio", d, cf("POST", f"/accounts/{acc}/pages/projects/{proj}/domains", {"name": d}).get("success"))
     for r in recs:
-        if r["type"] in ("A", "AAAA", "CNAME") and r["name"] in (dom, "www." + dom):
+        if r["type"] in ("A", "AAAA", "CNAME") and r["name"] in dominios:
             if r["type"] != "CNAME":
                 cf("DELETE", f"/zones/{zid}/dns_records/{r['id']}")
                 u = cf("POST", f"/zones/{zid}/dns_records", {"type": "CNAME", "name": r["name"], "content": alvo, "proxied": True})
@@ -207,11 +213,11 @@ def etapa_dns(n, s):
     ph = "http_request_dynamic_redirect"
     g = cf("GET", f"/zones/{zid}/rulesets/phases/{ph}/entrypoint")
     rules = (g.get("result") or {}).get("rules", []) if g.get("success") else []
-    if not any(r.get("description", "").startswith("www para apex") for r in rules):
+    if not s.get("sub") and not any(r.get("description", "").startswith("www para apex") for r in rules):
         rules.append({"description": "www para apex (estatico)", "expression": f'(http.host eq "www.{dom}")', "action": "redirect",
                       "action_parameters": {"from_value": {"status_code": 301, "target_url": {"expression": f'concat("https://{dom}", http.request.uri.path)'}, "preserve_query_string": True}}})
         print("redirect www", cf("PUT", f"/zones/{zid}/rulesets/phases/{ph}/entrypoint", {"rules": rules}).get("success"))
-    print("purge", cf("POST", f"/zones/{zid}/purge_cache", {"purge_everything": True}).get("success"))
+    print("purge", cf("POST", f"/zones/{zid}/purge_cache", {"hosts": [dom]} if s.get("sub") else {"purge_everything": True}).get("success"))
     for i in range(30):
         try:
             h = urllib.request.urlopen(urllib.request.Request(f"https://{dom}/?n={random.random()}", headers={"User-Agent": "Mozilla/5.0"}), timeout=30)
@@ -223,7 +229,8 @@ def etapa_dns(n, s):
         time.sleep(10)
     else:
         print("ATENCAO: o dominio ainda responde pela origem antiga")
-    subprocess.run([sys.executable, "D:/SISTEMAS/cloudflare/harden_site.py", dom], env=dict(os.environ, PYTHONIOENCODING="utf-8"))
+    if not s.get("sub"):
+        subprocess.run([sys.executable, "D:/SISTEMAS/cloudflare/harden_site.py", dom], env=dict(os.environ, PYTHONIOENCODING="utf-8"))
 
 
 def etapa_limpar(n, s):
@@ -259,8 +266,10 @@ df -h / | tail -n 1; ls -d {ext} 2>&1 | grep -vc "No such"'''))
 
 
 if __name__ == "__main__":
+    global_host = None
     n = sys.argv[1]
     s = SITES[n]
+    HOST = s.get("host", "clinicas-vps")
     for e in sys.argv[2:]:
         print(f"== {n}: {e}")
         globals()["etapa_" + e](n, s)

@@ -1,0 +1,75 @@
+{
+ "base": "https://www.perfumearabe.com",
+ "tipos": [
+  [
+   "/blog/posts/",
+   "post"
+  ],
+  [
+   "/blog/",
+   "utilitaria"
+  ],
+  [
+   "/produtos/",
+   "produto"
+  ],
+  [
+   "/privacidade/",
+   "utilitaria"
+  ],
+  [
+   "/entrega/",
+   "utilitaria"
+  ],
+  [
+   "/contato/",
+   "utilitaria"
+  ],
+  [
+   "/como-fazemos-nossos-guias/",
+   "utilitaria"
+  ],
+  [
+   "/sobre/",
+   "comercial"
+  ],
+  [
+   "/curadoria/",
+   "comercial"
+  ],
+  [
+   "/",
+   "comercial"
+  ]
+ ],
+ "comercial_exatas": [
+  "/",
+  "/produtos/",
+  "/sobre/",
+  "/curadoria/"
+ ],
+ "comercial_prefixos": [
+  "/perfume-arabe",
+  "/marca-",
+  "/kit-",
+  "/body-splash",
+  "/como-saber-se-e-original/",
+  "/perfumes-"
+ ],
+ "cidade": [],
+ "offtopic": [],
+ "img": [],
+ "local_regex": "",
+ "marca_regex": "perfume ?arabe\\.com|perfumearabe",
+ "min_imp_bucket": 3,
+ "min_imp_locais": 2,
+ "min_imp_canib": 2,
+ "thresholds": {
+  "excelente_clk90": 3,
+  "atualizar_imp90": 10,
+  "podar_imp480": 3,
+  "podar_clk480": 0,
+  "manter_img_imp480": 100000
+ },
+ "min_segunda_canib": 1
+}

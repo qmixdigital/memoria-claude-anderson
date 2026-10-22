@@ -1,0 +1,213 @@
+{
+ "cliente": "MS Marketing",
+ "segmento": "Agência de marketing digital em Belo Horizonte (sites, SEO, tráfego pago, identidade visual, vídeo)",
+ "periodo": "19/07/2026 a 18/10/2026 (90 dias), com histórico de 16 meses",
+ "veredito": "O msmarketing.com.br tem autoridade de papel e tráfego de imagem. O domínio aparece 216 mil vezes em 90 dias, mas metade disso é miniatura de imagem em posts de design que não geram lead, e os cliques caíram 70% em um ano sem que nenhuma posição tenha caído. O negócio real, agência em BH, está na home entre as posições 5 e 15 para as buscas locais que importam, com quase zero cliques. O caminho é concentrar: podar o que não vende, consolidar as páginas que se canibalizam, dar às páginas comerciais os links internos que hoje vão para o blog e trazer backlinks brasileiros e relevantes para a home e para a página de criação de sites.",
+ "excelente": [
+  {
+   "t": "Posição média melhorou de 26 para 15 em um ano",
+   "d": "O site não sofreu penalidade nem perdeu ranking. O que caiu foi clique, não posição. Isso significa que a base técnica e a confiança do Google estão intactas, e que o problema é de SERP (AI Overview, imagens) e de foco, não de saúde do domínio."
+  },
+  {
+   "t": "Página de preço de identidade visual está no top 3 há 16 meses",
+   "d": "\"quanto custa uma identidade visual\" e dez variações (valor, preço, quanto cobrar, branding) ficam em posição 1 a 3 com estabilidade rara. É o ativo de conteúdo mais forte do site e o melhor lugar para colocar um CTA para o serviço de identidade visual."
+  },
+  {
+   "t": "Consultas locais da home já estão na primeira página",
+   "d": "\"agencia de marketing bh\" em 5,9, \"consultoria de marketing digital bh\" em 3,0, \"agências de marketing em bh\" em 8,2, \"agência de marketing digital em belo horizonte\" em 9,3. Com DA 25 e sem schema local, isso mostra relevância forte. Faltam os últimos 3 a 5 lugares, que são os que dão clique."
+  },
+  {
+   "t": "Perfil de spam limpo e crawlers de IA liberados",
+   "d": "Spam score de 2% na Moz, 160 domínios de referência, GPTBot, ClaudeBot, PerplexityBot e Googlebot recebem 200. Não há bloqueio nem penalização que impeça citação em respostas de IA."
+  },
+  {
+   "t": "Página de videomaker em BH ranqueia sem concorrência de blog",
+   "d": "\"videomaker bh\" e \"videomaker em bh\" somam 1.200 impressões em posição 8 a 9 numa página de serviço, não de blog. É a segunda melhor porta de entrada comercial depois da home."
+  }
+ ],
+ "oscilacoes": [
+  {
+   "quando": "out a dez/2025",
+   "o_que": "Primeiro degrau: de 400 para 275 cliques/mês",
+   "por_que": "Perda de cauda longa nos posts de identidade visual e logo. A posição média melhorou no mesmo período (de 19 para 12), sinal de que o Google parou de mostrar o site em consultas marginais, não de queda."
+  },
+  {
+   "quando": "fev a mar/2026",
+   "o_que": "Pico de impressões sem cliques (112 mil em março)",
+   "por_que": "A consulta \"identidade visual\" entrou em posição 1 para o post de preço com 457 impressões em março e sumiu em abril. Rotação de teste do Google, não ganho real."
+  },
+  {
+   "quando": "jun/2026",
+   "o_que": "Segundo degrau: de 240 para 137 cliques/mês, e segue nesse patamar",
+   "por_que": "A página de preço de identidade visual caiu de 51 para 15 cliques mantendo posição 1 a 3 e as mesmas impressões. É a assinatura de AI Overview respondendo \"quanto custa\" na própria SERP. \"quanto custa um logo\" zerou do mesmo jeito. Confirmar abrindo a SERP."
+  },
+  {
+   "quando": "desktop x mobile",
+   "o_que": "Desktop traz 65% dos cliques apesar de metade das impressões",
+   "por_que": "A busca por agência é B2B em horário comercial, no computador. As impressões mobile são dominadas pelos posts de imagem (logo, paleta), que não clicam. Priorizar a experiência desktop da home não é erro aqui."
+  }
+ ],
+ "plano": [
+  {
+   "p": 1,
+   "custo": "zero",
+   "prazo": "esta semana",
+   "o_que": "Reescrever title e meta description da home: \"Agência de Marketing Digital em Belo Horizonte (BH) | MS Marketing\"",
+   "por_que": "A home está em posição 3 a 10 para 15 variações de \"agência de marketing (digital) bh / belo horizonte\" com CTR 0%. O title atual não diz \"digital\" nem \"Belo Horizonte\" por extenso e termina com \"e Marketing\" repetido. CTR esperado nessas posições é 2 a 9%; hoje é zero."
+  },
+  {
+   "p": 2,
+   "custo": "zero",
+   "prazo": "esta semana",
+   "o_que": "Escrever as frases exatas que o Google já associa às páginas comerciais (lista na seção Expandir)",
+   "por_que": "O Google mostra a home para \"assessoria de marketing\" (250 impressões, posição 8 a 17) e a página de SEO para \"seo bh\" (209 impressões) sem que essas frases existam no texto. Página que já tem trust cresce mais rápido com o termo adicionado do que uma página nova."
+  },
+  {
+   "p": 3,
+   "custo": "zero",
+   "prazo": "esta semana",
+   "o_que": "Corrigir H1 ausente em /consultoria/, link da home para a página de SEO sem barra final, alts de imagem faltando",
+   "por_que": "Erros básicos que custam nada e tiram ruído. A página de consultoria ranqueia em posição 3 a 5 para \"consultoria de marketing digital bh\" sem H1."
+  },
+  {
+   "p": 4,
+   "custo": "baixo",
+   "prazo": "2 semanas",
+   "o_que": "Consolidar canibalizações: 301 de 3 posts de identidade visual e logo para as páginas vencedoras, fundir \"quanto custa um logo\" em \"quanto custa uma identidade visual\", 301 das páginas de cidade sem tráfego",
+   "por_que": "Duas páginas do mesmo site na mesma consulta se revezam e nenhuma consolida. A página comercial de identidade visual teve 1 impressão em 90 dias enquanto quatro posts dividem 2.800 impressões do mesmo tema. Juntar transfere o trust para uma URL só."
+  },
+  {
+   "p": 5,
+   "custo": "baixo",
+   "prazo": "2 semanas",
+   "o_que": "Podar o conteúdo sem retorno (lista na seção Poda): noindex ou 301 nos posts com 16 meses sem clique e nas páginas utilitárias (briefings, obrigado, ficha)",
+   "por_que": "Cada página indexada sem valor dilui o orçamento de rastreio e a avaliação de qualidade do site inteiro. Site de agência local com 150 URLs no índice e 20 que vendem é um sinal fraco. Reduzir para 60 a 80 URLs boas melhora a média de qualidade que o Google atribui ao domínio."
+  },
+  {
+   "p": 6,
+   "custo": "médio",
+   "prazo": "mês 1",
+   "o_que": "Redistribuir a linkagem interna: toda página de blog com tráfego linka a página comercial do tema como PRIMEIRO link do corpo; home linka só serviços e os 3 posts mais fortes",
+   "por_que": "Hoje o blog recebe os links e as páginas de serviço ficam órfãs ou com 1 a 2 links. O primeiro link do corpo é o que o Google pesa; nos posts ele costuma ir para outro post. A página de identidade visual precisa receber link de \"quanto custa uma identidade visual\", que tem 7.500 impressões."
+  },
+  {
+   "p": 7,
+   "custo": "médio",
+   "prazo": "mês 1",
+   "o_que": "Schema ProfessionalService (nome, endereço, telefone, areaServed Belo Horizonte, sameAs) em todas as páginas; FAQ na home com \"quanto custa uma agência de marketing em BH\"; resposta curta com faixa de preço logo abaixo do H1 nos posts de \"quanto custa\"",
+   "por_que": "Não existe entidade da empresa em nenhuma página, só Person e WebSite. Para busca local e para ser citado em AI Overview e ChatGPT, o Google precisa saber que a MS Marketing é um negócio em BH. A resposta curta abaixo do H1 é o que o AI Overview cita; hoje a resposta está no meio do texto."
+  },
+  {
+   "p": 8,
+   "custo": "investimento",
+   "prazo": "mês 1 a 3",
+   "o_que": "Campanha de backlinks editoriais em portais brasileiros: 5 a 8 links por trimestre para a home (âncoras: agência de marketing digital em Belo Horizonte, agência de marketing em BH) e para /criacao-de-sites-bh-belo-horizonte/ (criação de sites em BH)",
+   "por_que": "A home tem 1.500 impressões em 90 dias nas posições 5 a 15 para termos locais. Três a cinco posições separam zero clique de 30 a 60 cliques por mês qualificados. O perfil atual de links é DA 60 estrangeiro e genérico, que não transfere relevância para \"marketing em BH\". Portal brasileiro com matéria em português sobre negócios em Minas vale mais do que dez DA 60 de fora."
+  },
+  {
+   "p": 9,
+   "custo": "zero",
+   "prazo": "contínuo",
+   "o_que": "Medir: anotar a data de cada mudança, comparar CTR das consultas locais em 3 a 4 semanas, rodar a revisita query + página 30 e 60 dias após cada lote de links",
+   "por_que": "Sem data de mudança não se sabe o que funcionou. A revisita mostra os novos termos que o Google associa às páginas depois dos links, que viram H2 na própria página."
+  }
+ ],
+ "textos": {
+  "device_sub": "Busca de agência é B2B, no computador. Mobile é dominado pelos posts de imagem.",
+  "locais_titulo": "Consultas locais na porta da click zone (posição 3 a 15)",
+  "plataforma": "WordPress + Elementor, cache SpeedyCache.",
+  "poda_texto": "Um site de agência local com 133 URLs indexáveis e 20 que vendem manda ao Google um sinal de qualidade média baixa: a maior parte do índice é texto sem clique. Posts como Orkut, marketing 1.0 e 2.0, sites de inteligência artificial e cartão de visita não têm relação com contratar uma agência em BH e nunca trarão lead. Remover (noindex ou 301 para o tema mais próximo) concentra rastreio, autoridade interna e avaliação de qualidade nas páginas que importam. Posts de imagem (paleta, logo de luxo) ficam: trazem 100 cliques e podem levar CTA.",
+  "links_leitura": "As páginas de serviço são as que precisam de autoridade interna e são as que menos recebem link. O blog linka o blog. A regra: o primeiro link do corpo de cada post é o mais importante, e deve ir para a página comercial do tema, com âncora de palavra-chave. Hoje esse primeiro link costuma ir para outro post, para a categoria ou não existe.",
+  "geo_intro": "Busca com IA não substitui o SEO, ela o consome: o modelo cita páginas que o Google já confia, com resposta direta e entidade clara. A queda de cliques na página de preço, mantendo posição 1, é o AI Overview em ação. A resposta é ser a fonte citada, não lutar contra."
+ },
+ "posicao_cards": [
+  {
+   "t": "Porta da click zone é a alavanca",
+   "d": "São as consultas em posição 4 a 15. Subir 3 ou 4 posições aqui multiplica cliques, e é exatamente onde estão as buscas locais da home e da página de criação de sites. É o argumento direto para link building nessas duas URLs.",
+   "c": "s1"
+  },
+  {
+   "t": "Top 3 com CTR baixo não é problema de title",
+   "d": "34 consultas em posição 1 a 3 com 32 cliques em 19.054 impressões. Todas são paleta de cores, logo de loja e 'cor bonina': miniaturas de imagem e respostas visuais da SERP. Reescrever title não muda nada.",
+   "c": "warn"
+  },
+  {
+   "t": "Acima de 30: batalhas nacionais que não valem a pena",
+   "d": "'agência de marketing' (2.390 imp, pos 36), 'agência de marketing digital' (2.131, pos 48), 'seo' (5.111, pos 35). Sem cidade, a concorrência é nacional e a home não tem autoridade para isso. Deixar o nacional para o blog e concentrar a home no local.",
+   "c": "crit"
+  }
+ ],
+ "canib_cards": [
+  {
+   "t": "Serviço de SEO perde para a própria home",
+   "d": "Para 'seo bh' a página de serviço está em posição 50 e a home em 25. Para 'agência de seo belo horizonte' a home está em 8 a 12 e a página de serviço em 58 a 77. A home linka a página de SEO sem barra final (gera redirect). Ação: link direto, frases exatas na página de serviço e backlinks próprios; ou assumir a home como página de SEO.",
+   "c": "crit"
+  },
+  {
+   "t": "Identidade visual: 4 páginas e a comercial invisível",
+   "d": "Três posts dividem 2.800 impressões do tema e a página que vende o serviço teve 1 impressão em 90 dias. Ação: 301 de 'criação de logo e identidade visual: o que é' para a página comercial; linkar a comercial como primeiro link dos posts de elementos, guia definitivo e quanto custa.",
+   "c": "crit"
+  },
+  {
+   "t": "Quanto custa um logo x quanto custa uma identidade visual",
+   "d": "Rotacionam em 'logomarca preço', 'quanto custa um branding' e 'identidade visual valor'. A de identidade visual vence em tudo. Ação: fundir, com H2 'quanto custa um logo' dentro dela, e 301.",
+   "c": "warn"
+  },
+  {
+   "t": "Criação de sites: BH, Contagem e home",
+   "d": "A página BH vence (13,7). Contagem (39) e a home (64) só atrapalham. Ação: H2 'Atendemos Betim, Contagem, Nova Lima e região' na página BH, 301 da página de Contagem, tirar 'criação de sites' dos H2 da home.",
+   "c": "warn"
+  }
+ ],
+ "moz_leitura": [
+  "DA 25 com 160 domínios de referência é mediano para agência local. Os links mais fortes são ig.com.br e sebrae.com.br. Mas o bloco de DA 58 a 66 é rede genérica de guest post, boa parte estrangeira (tntcode, mylisthero, mymarketpost, cmocheatsheets, currentchron, emergencydentistinrichmondva, lydiaroyrealestate e plumeriamarketing com spam 39 a 41). Nenhum desses fala de marketing, de Minas Gerais ou de negócios brasileiros.",
+  "<b>Por que isso importa:</b> o Google pesa a relevância do domínio de origem. Um link de portal brasileiro, em português, numa matéria sobre empresas de Belo Horizonte, transfere relevância para \"agência de marketing em BH\". Dez DA 60 estrangeiros sobre odontologia e imóveis não transferem. Isso explica a autoridade \"de papel\": DA 25 que não vira posição nos termos locais.",
+  "<b>Recomendação:</b> trocar volume genérico por 5 a 8 links editoriais em portais brasileiros por trimestre, com âncoras locais, para a home e para a página de criação de sites. Desautorizar (disavow) só os dois domínios com spam acima de 35."
+ ],
+ "geo_sinais": [
+  {
+   "t": "Schema de entidade local (LocalBusiness / ProfessionalService / Organization)",
+   "ok": false,
+   "d": "Sem entidade, o Google e os modelos de IA não sabem que o site é uma empresa em Belo Horizonte. É o sinal número um para busca local e para citação em respostas de IA."
+  },
+  {
+   "t": "Crawlers de IA liberados (GPTBot, ClaudeBot, PerplexityBot)",
+   "ok": true,
+   "d": "Permitir o rastreio é condição para aparecer como fonte em ChatGPT, Perplexity e AI Overview."
+  },
+  {
+   "t": "Arquivo llms.txt",
+   "ok": false,
+   "d": "Opcional. Resumo em texto puro do que a empresa faz, para modelos de IA. Custo zero."
+  },
+  {
+   "t": "Resposta direta logo abaixo do H1 nos posts de 'quanto custa'",
+   "ok": false,
+   "d": "O AI Overview cita o trecho que responde em uma frase. Hoje o preço está no meio do texto; sem resposta curta no topo, o Google resume por conta própria e não cita a fonte."
+  },
+  {
+   "t": "FAQ com schema FAQPage na home",
+   "ok": true,
+   "d": "Já existe. Manter e acrescentar a pergunta 'quanto custa uma agência de marketing digital em BH', que o Google já mostra para a home."
+  },
+  {
+   "t": "Autor com credencial e página de equipe",
+   "ok": false,
+   "d": "Os posts têm schema Person genérico. Para E-E-A-T, cada post precisa de autor nomeado com cargo e link para página 'sobre' com histórico da agência, cases e endereço."
+  }
+ ],
+ "geo_cards": [
+  {
+   "t": "Como virar fonte do AI Overview em \"quanto custa\"",
+   "d": "Logo abaixo do H1, um parágrafo de 2 frases com a faixa de preço em reais e o que está incluso. Depois H2 por tipo de projeto, cada um com resposta curta e verificável. Tabela de faixas. Autor nomeado com cargo. É o formato que os modelos extraem e citam."
+  },
+  {
+   "t": "Entidade: ProfessionalService em todas as páginas",
+   "d": "Nome, endereço em BH, telefone, horário, areaServed (Belo Horizonte, Contagem, Betim, Nova Lima), sameAs (Instagram, LinkedIn, Google Business), e o Person do dono como founder. Sem isso o modelo não sabe que a MS Marketing é uma empresa local."
+  },
+  {
+   "t": "Página \"sobre\" com E-E-A-T real",
+   "d": "Anos de atuação, equipe com nome e cargo, cases com resultado, clientes atendidos, endereço com mapa. Linkar de todos os posts como autor. Hoje os posts têm Person genérico sem credencial."
+  }
+ ]
+}

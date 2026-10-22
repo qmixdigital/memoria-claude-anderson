@@ -1059,9 +1059,7 @@ def bloco_recomendacoes(temas):
             f'{achado}<ul class="acoes">{acoes}</ul></article>')
     return f"""<section>
   <div class="cab"><span class="idx mono">◆</span><h2>Diagnóstico e plano de melhorias</h2></div>
-  <p class="linhafina">Levantamento feito na entrada do projeto, cruzando o que o site
-     entrega hoje com o que os dados do Google e das IAs mostram. Cada ponto traz o que
-     encontramos e o que propomos fazer.</p>
+  <p class="linhafina">{esc((temas[0].get("intro") if temas else "") or "Levantamento feito na entrada do projeto, cruzando o que o site entrega hoje com o que os dados do Google e das IAs mostram. Cada ponto traz o que encontramos e o que propomos fazer.")}</p>
   <div class="recos">{cartoes}</div>
 </section>"""
 
@@ -2080,7 +2078,7 @@ def montar_html(nome, dias, linhas, anteriores, falhas, google, termos=None,
                 historico=None, trabalho=None, video=None,
                 recomendacoes=None, pauta=None, mostrar_video=False,
                 posicoes=None, texto_geografia=None, termos_gsc=None,
-                aviso_ga4=None):
+                aviso_ga4=None, diagnostico_depois=False):
     termos = termos or [nome]
     a = resumir_ia(linhas) if linhas else None
     gsc, ga4 = google.get("gsc"), google.get("ga4")
@@ -2109,7 +2107,10 @@ def montar_html(nome, dias, linhas, anteriores, falhas, google, termos=None,
         erros = (f'<div class="nota alerta"><strong>Dados parciais.</strong> '
                  f'Não foi possível coletar: <ul>{itens}</ul></div>')
 
-    corpo = (bloco_recomendacoes(recomendacoes)
+    # Em simulacao para prospecto o resultado das IAs e a peca principal, entao
+    # o diagnostico pode vir depois dele (diagnostico_depois no config).
+    diag = bloco_recomendacoes(recomendacoes)
+    corpo = (("" if diagnostico_depois else diag)
              + bloco_trabalho(trabalho)
              + bloco_ia(linhas, anteriores, falhas, nome, termos, historico, dominio)
              # Havendo leitura do Search Console, o CSV do rastreador sai: sao
@@ -2120,6 +2121,7 @@ def montar_html(nome, dias, linhas, anteriores, falhas, google, termos=None,
              + bloco_gsc(gsc)
              + bloco_ga4(ga4, dominio, rastreio_completo, mostrar_contatos,
                          mostrar_video, "00", texto_geografia, aviso_ga4)
+             + (diag if diagnostico_depois else "")
              + bloco_pauta(pauta)
              + bloco_video(video))
     corpo = numerar_secoes(corpo)
@@ -2176,7 +2178,14 @@ def montar_html(nome, dias, linhas, anteriores, falhas, google, termos=None,
 def carregar(con, cliente_id, inicio, fim):
     linhas = con.execute(
         "SELECT * FROM consultas WHERE cliente_id = ? AND data_hora >= ?"
-        " AND data_hora < ? AND erro IS NULL", (cliente_id, inicio, fim)).fetchall()
+        " AND data_hora < ? AND erro IS NULL ORDER BY data_hora", (cliente_id, inicio, fim)).fetchall()
+    # Uma medicao por pergunta e por IA: a mais recente. Rodada repetida no
+    # mesmo periodo (teste, reexecucao de provedor que falhou) nao pode contar
+    # em dobro nem triplicar a lista que o cliente le.
+    ultima = {}
+    for r in linhas:
+        ultima[(r["prompt"], r["provedor"])] = r
+    linhas = list(ultima.values())
     return [{
         "prompt": r["prompt"], "provedor": r["provedor"],
         "mencionado": bool(r["mencionado"]), "posicao": r["posicao"],
@@ -2353,7 +2362,8 @@ def main():
                            posicoes,
                            dados_cliente.get("texto_geografia"),
                            termos_gsc,
-                           dados_cliente.get("aviso_ga4")))
+                           dados_cliente.get("aviso_ga4"),
+                           dados_cliente.get("diagnostico_depois", False)))
         gerados += 1
 
     con.close()

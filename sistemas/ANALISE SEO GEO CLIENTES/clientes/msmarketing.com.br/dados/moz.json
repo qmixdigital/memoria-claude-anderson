@@ -1,0 +1,21 @@
+{
+ "data": "2026-10-12",
+ "da": 25, "pa_home": 33, "spam": 2, "ref_domains": 160, "ext_pages": 807,
+ "top_links": [
+  {"dom": "ig.com.br", "da": 94, "spam": 6}, {"dom": "sebrae.com.br", "da": 86, "spam": 17},
+  {"dom": "tntcode.com", "da": 66, "spam": 15}, {"dom": "webcitizen.com.br", "da": 66, "spam": 8},
+  {"dom": "sp2040.net.br", "da": 66, "spam": 12}, {"dom": "cvillico.com", "da": 64, "spam": 7},
+  {"dom": "advivo.com.br", "da": 63, "spam": 4}, {"dom": "cmocheatsheets.com", "da": 62, "spam": 6},
+  {"dom": "mylisthero.com", "da": 62, "spam": 7}, {"dom": "cameracotidiana.com.br", "da": 62, "spam": 7},
+  {"dom": "agenciacolors.digital", "da": 62, "spam": 1}, {"dom": "wioutlet.com", "da": 61, "spam": 1},
+  {"dom": "mymarketpost.com", "da": 61, "spam": 7}, {"dom": "universoneo.com.br", "da": 61, "spam": 5},
+  {"dom": "alagoas200.com.br", "da": 61, "spam": 13}, {"dom": "alertasocial.com.br", "da": 60, "spam": 8},
+  {"dom": "phanerosart.com", "da": 60, "spam": 12}, {"dom": "emergencydentistinrichmondva.com", "da": 60, "spam": 1},
+  {"dom": "plumeriamarketing.com", "da": 60, "spam": 41}, {"dom": "divirto.com.br", "da": 60, "spam": 13},
+  {"dom": "lydiaroyrealestate.com", "da": 59, "spam": 39}, {"dom": "currentchron.com", "da": 59, "spam": 1},
+  {"dom": "incast.com.br", "da": 59, "spam": 6}, {"dom": "sahammurah.com", "da": 59, "spam": 13},
+  {"dom": "folhadepiedade.com.br", "da": 58, "spam": 1}
+ ],
+ "crawlers_ia": {"GPTBot": 200, "ClaudeBot": 200, "PerplexityBot": 200, "Google-Extended": 200, "OAI-SearchBot": 200, "Googlebot": 200},
+ "llms_txt": false
+}

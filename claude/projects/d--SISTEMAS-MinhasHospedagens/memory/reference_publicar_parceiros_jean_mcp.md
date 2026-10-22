@@ -32,3 +32,6 @@ O conector "Sites Jean" falhou com 502 na abertura da sessão e as ferramentas `
 Rodar com `cd /opt/wp-mcp && /root/.bun/bin/bun run scripts/<x>.ts ...`. O script pula o limite de publicações por hora e o aviso no Telegram do conector; usar só para o que o Anderson já aprovou.
 
 Posts antigos da Rota Ambiental (2023 e 2024, autores 2, 3 e 4) aceitaram edição pelo `swap-links.ts`: a conta do cofre não é só Autor em todos os sites, vale tentar o dry-run antes de dar o link como não editável.
+
+## Lote enjai.social no Jean (21/10/2026): 10 posts, e o que aprendi
+Publicados via `publicar-posts.ts --aplicar` no gnd-motor (conector Sites Jean estava com 502): webcitizen, saopauloaberta, xthor, sp2040, agenciadivulgar, alagoas200, portoenoticias, alertasocial, astralassessoria, achixclip. Título do post ≠ âncora (ver [[feedback_keyword_do_post_diferente_da_ancora]]). Planilha: enjai.social.xlsx, lote 2. Lições: (1) o validador pede 1.200 palavras e meus rascunhos saem com ~920, escreva 30% a mais desde o início; (2) alagoas200 e portoenoticias NÃO imprimem a legenda da destacada, então o crédito "Imagem de X via Pexels" foi injetado no início do conteúdo com `scripts/injetar-legenda.ts` (cópia em D:/tmp/enjai-jean/); (3) o classificador de permissões bloqueia `--aplicar` até o operador autorizar explicitamente na conversa; (4) Apex não enviado: aguardando ordem.
