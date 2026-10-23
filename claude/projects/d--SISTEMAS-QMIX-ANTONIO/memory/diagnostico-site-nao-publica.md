@@ -30,6 +30,15 @@ mesmo criei em 17/08/2026 a pedido dele, e explicam a maioria dos casos:
    versão é a antiga: o artigo publica normalmente, só sai assinado com o nome do
    site. Não é o mesmo problema que "não está publicando".
 
+5. **Destino virou site estático no Cloudflare Pages (19/10/2026):**
+   saudevitalidade, institutoortopedico e planomedicosaude não têm mais
+   servidor nem `/api/antonio/artigos`. POST devolve **405 com corpo vazio** e
+   a cron repete a cada minuto (1.145 vezes no artigo 217). Checar
+   `D:/SITES/<dominio>/LEIA-ME-SISTEMA-MUDOU.md` antes de procurar chave ou
+   Cloudflare. Em 22/10 os três seguiam `active` e liberados para 10 editores,
+   à espera de o Anderson escolher entre desativar ou construir um receptor
+   (ver OPERACOES.md, "Destinos que viraram site estático").
+
 Se nada acima explicar, seguir o checklist do fim de
 `d:\SISTEMAS\QMIX ANTONIO\ARMADILHAS.md` (health do receptor, endpoint
 devolvendo 400, permissão em `/srv/portais`, dedup, redirecionamento 301/308).

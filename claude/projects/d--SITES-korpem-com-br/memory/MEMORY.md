@@ -1,1 +1,4 @@
 - [Drive e Sheets pela SA seoqmix](drive-sheets-via-seoqmix.md) — sem conector do Drive, a service account seoqmix lê pastas e escreve planilhas; IDs da pauta da Körpem e env vars do gsc_api.py
+- [Site do Dr. Guilherme Gontijo](site-drguilhermegontijo.md) — pasta, repo, projeto Pages, pendências (CRM, GA4, domínio) e ligação com a Körpem
+- [Site do Dr. Bernardo Catão Queiroz](site-drbernardoqueiroz.md) — pasta, repo, projeto Pages, tema Ardósia e Cobre, dados do Lattes e pendências (CRM, GA4, domínio)
+- [Design sem padrão de IA](feedback-design-sem-padrao-ia.md) — o usuário reprova retrato em arco, grades de cards e hero bipartido; quer conceito próprio, tipografia com personalidade e layout editorial

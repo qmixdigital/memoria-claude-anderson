@@ -1504,9 +1504,30 @@ LOCAIS_PT = {
     "depoimentos": "Depoimentos",
     "locais": "Locais de atendimento",
     "relacionados": "Artigos relacionados",
+    # Sites estáticos novos (drbernardoqueiroz, 22/10/2026)
+    "lateral": "Caixa lateral de agendamento",
+    "contato_botao": "Botão da seção de contato",
+    "perfil": "Página do médico",
+    "hub": "Listas de doenças e tratamentos",
+    "blog": "Caixa lateral do blog",
 }
 
 METODOS_PT = {"whatsapp": "WhatsApp", "telefone": "Telefone", "email": "E-mail"}
+
+
+def origem_pt(n):
+    """'google / organic' -> 'Google (busca)'; '(direct) / (none)' -> 'Acesso direto'."""
+    fonte, _, meio = [x.strip() for x in n.partition("/")]
+    if fonte == "(direct)":
+        return "Acesso direto (digitou o endereço ou salvou)"
+    nome = {"google": "Google", "bing": "Bing", "instagram": "Instagram", "facebook": "Facebook",
+            "l.instagram.com": "Instagram", "m.facebook.com": "Facebook", "youtube.com": "YouTube",
+            "chatgpt.com": "ChatGPT", "chat.openai.com": "ChatGPT", "perplexity.ai": "Perplexity",
+            "gemini.google.com": "Gemini", "copilot.microsoft.com": "Copilot", "claude.ai": "Claude",
+            "doctoralia.com.br": "Doctoralia"}.get(fonte, fonte)
+    meio_pt = {"organic": "busca", "cpc": "anúncio", "referral": "link", "social": "rede social",
+               "email": "e-mail", "(none)": ""}.get(meio, meio)
+    return f"{nome} ({meio_pt})" if meio_pt else nome
 
 
 def bloco_contato_detalhe(det):
@@ -1523,6 +1544,8 @@ def bloco_contato_detalhe(det):
     botao = det.get("botao") or []
     paginas = det.get("paginas") or []
     canais = det.get("canais") or []
+    origens = det.get("origens") or []
+    temas = det.get("temas") or []
     if not (metodo or local or botao):
         return ""
 
@@ -1557,6 +1580,19 @@ def bloco_contato_detalhe(det):
         "Não é o canal que traz mais visita, é o que traz mais paciente. "
         "Costumam ser canais diferentes.",
         canais, lambda n: CANAIS.get(n, n))
+
+    partes += bloco(
+        "Origem exata de quem entrou em contato",
+        "O canal diz o tipo de caminho; aqui está o nome: Google, Instagram, "
+        "uma IA, um site que indicou ou quem já conhecia o endereço.",
+        origens, origem_pt)
+
+    partes += bloco(
+        "Qual assunto trouxe o contato",
+        "Doença, tratamento e artigo do mesmo tema somados. Mostra o que o "
+        "paciente estava procurando quando decidiu chamar.",
+        temas, lambda n: "Páginas gerais (início, perfil, blog)" if n == "geral"
+        else n.replace("_", " ").capitalize())
 
     tabela_botao = ""
     if botao:

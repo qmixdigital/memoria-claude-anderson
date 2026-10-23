@@ -1,0 +1,187 @@
+Saldo DataForSEO: US$ 30.118
+
+[1/6] Palavras-chave (DataForSEO Labs keyword_suggestions)
+   custo estimado US$ 0.192 (gasto até agora US$ 0.000)
+   · E1 palavras 'seguro auto': US$ 0.0960 (acumulado US$ 0.0960)
+   seguro auto: 700 palavras
+   · E1 palavras 'plano de saúde': US$ 0.0960 (acumulado US$ 0.1920)
+   plano de saúde: 700 palavras
+
+[2/6] Volume em IA (AI Keyword Data)
+   custo estimado US$ 0.080 (gasto até agora US$ 0.192)
+   · E2 volume IA 'seguro auto' (300 palavras): US$ 0.0400 (acumulado US$ 0.2320)
+   · E2 volume IA 'plano de saúde' (300 palavras): US$ 0.0400 (acumulado US$ 0.2720)
+
+[3/6] Resumo de IA do Google: base LLM Mentions
+   custo estimado US$ 0.480 (gasto até agora US$ 0.272)
+   · E3 'seguro auto' domínios: US$ 0.2000 (acumulado US$ 0.4720)
+   · E3 'seguro auto' perguntas: US$ 0.1300 (acumulado US$ 0.6020)
+   · E3 'plano de saúde' domínios: US$ 0.2000 (acumulado US$ 0.8020)
+   · E3 'plano de saúde' perguntas: US$ 0.1300 (acumulado US$ 0.9320)
+
+[4/6] Google de verdade: SERP com resumo de IA e Modo IA
+   custo estimado US$ 0.064 (gasto até agora US$ 0.932)
+   · E4 Google 'cotação seguro auto online': US$ 0.0020 (acumulado US$ 0.9460)
+   · E4 Google 'seguro auto qual o melhor': US$ 0.0020 (acumulado US$ 0.9480)
+   · E4 Google 'seguro auto': US$ 0.0020 (acumulado US$ 0.9500)
+   · E4 Google 'seguro auto mais baratos': US$ 0.0040 (acumulado US$ 0.9540)
+   · E4 Google 'qual melhor seguro auto': US$ 0.0020 (acumulado US$ 0.9560)
+   · E4 Google 'cotacao seguro auto': US$ 0.0020 (acumulado US$ 0.9580)
+   · E4 Google 'plano de saúde': US$ 0.0020 (acumulado US$ 0.9600)
+   · E4 Google 'plano de saúde mais barato': US$ 0.0040 (acumulado US$ 0.9640)
+   · E4 Google 'qual é o melhor plano de saúde': US$ 0.0040 (acumulado US$ 0.9680)
+   · E4 Google 'simulador online plano de saúde/odontológico': US$ 0.0020 (acumulado US$ 0.9660)
+   · E4 Google 'qual melhor plano de saúde': US$ 0.0020 (acumulado US$ 0.9640)
+   · E4 Google 'quanto custa o plano de saúde da unimed': US$ 0.0040 (acumulado US$ 0.9640)
+   ! Modo IA seguro auto mais baratos: /v3/serp/google/ai_mode/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   ! Modo IA seguro auto qual o melhor: /v3/serp/google/ai_mode/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   ! Modo IA plano de saúde mais barato: /v3/serp/google/ai_mode/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   ! Modo IA qual é o melhor plano de saúde: /v3/serp/google/ai_mode/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+
+[5/6] Referência dos EUA: ChatGPT em inglês (LLM Mentions)
+   custo estimado US$ 0.480 (gasto até agora US$ 0.964)
+   · E5 'car insurance' domínios: US$ 0.2000 (acumulado US$ 1.1640)
+   · E5 'car insurance' perguntas: US$ 0.1300 (acumulado US$ 1.2940)
+   · E5 'health insurance' domínios: US$ 0.2000 (acumulado US$ 1.4940)
+   · E5 'health insurance' perguntas: US$ 0.1300 (acumulado US$ 1.6240)
+
+[6/6] Perguntas às IAs: ChatGPT, Gemini, Claude, Perplexity
+   20 perguntas x 4 IAs
+     - qual melhor seguro auto
+     - qual o melhor seguro auto
+     - qual o melhor seguro auto do Brasil
+     - quanto custa seguro auto por mês
+     - qual seguro auto mais barato
+     - vale a pena contratar seguro auto
+     - o que seguro auto cobre e o que não cobre
+     - qual seguro auto devo evitar
+     - qual seguro auto tem mais reclamações
+     - R$ 300 por mês é caro para seguro auto?
+     - qual é o melhor plano de saúde
+     - qual melhor plano de saúde
+     - qual o melhor plano de saúde do Brasil
+     - quanto custa plano de saúde por mês
+     - qual plano de saúde mais barato
+     - vale a pena contratar plano de saúde
+     - o que plano de saúde cobre e o que não cobre
+     - qual plano de saúde devo evitar
+     - qual plano de saúde tem mais reclamações
+     - R$ 300 por mês é caro para plano de saúde?
+   custo estimado US$ 0.784 (gasto até agora US$ 1.624)
+   modelo ChatGPT: aplicativo (LLM Scraper)
+   modelo Gemini: aplicativo (LLM Scraper)
+   modelo Claude: claude-haiku-4-5
+   modelo Perplexity: sonar
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 perplexity 'qual melhor seguro auto': US$ 0.0060 (acumulado US$ 1.6612)
+   · E6 gemini 'qual melhor seguro auto': US$ 0.0357 (acumulado US$ 1.6943)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 claude 'qual melhor seguro auto': US$ 0.0251 (acumulado US$ 1.7054)
+   · E6 gemini 'qual o melhor seguro auto': US$ 0.0358 (acumulado US$ 1.7552)
+   · E6 claude 'qual o melhor seguro auto': US$ 0.0049 (acumulado US$ 1.7501)
+   · E6 perplexity 'qual o melhor seguro auto': US$ 0.0060 (acumulado US$ 1.7495)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 gemini 'qual o melhor seguro auto do Brasil': US$ 0.0359 (acumulado US$ 1.7853)
+   · E6 chat_gpt (app) 'qual melhor seguro auto': US$ 0.0040 (acumulado US$ 1.8059)
+   · E6 claude 'qual o melhor seguro auto do Brasil': US$ 0.0261 (acumulado US$ 1.8220)
+   · E6 perplexity 'qual o melhor seguro auto do Brasil': US$ 0.0060 (acumulado US$ 1.8215)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 chat_gpt (app) 'qual o melhor seguro auto do Brasil': US$ 0.0040 (acumulado US$ 1.8281)
+   · E6 gemini 'quanto custa seguro auto por mês': US$ 0.0358 (acumulado US$ 1.8778)
+   · E6 perplexity 'quanto custa seguro auto por mês': US$ 0.0059 (acumulado US$ 1.8837)
+   · E6 claude 'quanto custa seguro auto por mês': US$ 0.0258 (acumulado US$ 1.8929)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 chat_gpt (app) 'qual o melhor seguro auto': US$ 0.0040 (acumulado US$ 1.8995)
+   · E6 chat_gpt (app) 'quanto custa seguro auto por mês': US$ 0.0040 (acumulado US$ 1.9201)
+   · E6 gemini 'qual seguro auto mais barato': US$ 0.0358 (acumulado US$ 1.9600)
+   · E6 perplexity 'qual seguro auto mais barato': US$ 0.0059 (acumulado US$ 1.9593)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 claude 'qual seguro auto mais barato': US$ 0.0254 (acumulado US$ 1.9707)
+   · E6 gemini 'vale a pena contratar seguro auto': US$ 0.0358 (acumulado US$ 2.0205)
+   · E6 perplexity 'vale a pena contratar seguro auto': US$ 0.0059 (acumulado US$ 2.0265)
+   · E6 claude 'vale a pena contratar seguro auto': US$ 0.0260 (acumulado US$ 2.0359)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 chat_gpt (app) 'qual seguro auto mais barato': US$ 0.0040 (acumulado US$ 2.0425)
+   · E6 gemini 'o que seguro auto cobre e o que não cobr': US$ 0.0359 (acumulado US$ 2.0924)
+   · E6 chat_gpt (app) 'vale a pena contratar seguro auto': US$ 0.0040 (acumulado US$ 2.1030)
+   · E6 perplexity 'o que seguro auto cobre e o que não cobr': US$ 0.0062 (acumulado US$ 2.1026)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 claude 'o que seguro auto cobre e o que não cobr': US$ 0.0275 (acumulado US$ 2.1161)
+   · E6 gemini 'qual seguro auto devo evitar': US$ 0.0358 (acumulado US$ 2.1659)
+   · E6 claude 'qual seguro auto devo evitar': US$ 0.0048 (acumulado US$ 2.1607)
+   · E6 perplexity 'qual seguro auto devo evitar': US$ 0.0061 (acumulado US$ 2.1602)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 gemini 'qual seguro auto tem mais reclamações': US$ 0.0357 (acumulado US$ 2.1959)
+   · E6 chat_gpt (app) 'o que seguro auto cobre e o que não cobr': US$ 0.0040 (acumulado US$ 2.2165)
+   · E6 perplexity 'qual seguro auto tem mais reclamações': US$ 0.0059 (acumulado US$ 2.2223)
+   · E6 chat_gpt (app) 'qual seguro auto devo evitar': US$ 0.0040 (acumulado US$ 2.2263)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 claude 'qual seguro auto tem mais reclamações': US$ 0.0243 (acumulado US$ 2.2367)
+   · E6 gemini 'R$ 300 por mês é caro para seguro auto?': US$ 0.0358 (acumulado US$ 2.2865)
+   · E6 claude 'R$ 300 por mês é caro para seguro auto?': US$ 0.0255 (acumulado US$ 2.3020)
+   · E6 perplexity 'R$ 300 por mês é caro para seguro auto?': US$ 0.0060 (acumulado US$ 2.3014)
+   · E6 chat_gpt (app) 'qual seguro auto tem mais reclamações': US$ 0.0040 (acumulado US$ 2.3054)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 claude 'qual é o melhor plano de saúde': US$ 0.0048 (acumulado US$ 2.3127)
+   · E6 gemini 'qual é o melhor plano de saúde': US$ 0.0358 (acumulado US$ 2.3526)
+   · E6 chat_gpt (app) 'R$ 300 por mês é caro para seguro auto?': US$ 0.0040 (acumulado US$ 2.3566)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 perplexity 'qual é o melhor plano de saúde': US$ 0.0060 (acumulado US$ 2.3586)
+   · E6 gemini 'qual melhor plano de saúde': US$ 0.0358 (acumulado US$ 2.4085)
+   · E6 claude 'qual melhor plano de saúde': US$ 0.0048 (acumulado US$ 2.4032)
+   · E6 perplexity 'qual melhor plano de saúde': US$ 0.0060 (acumulado US$ 2.4026)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 gemini 'qual o melhor plano de saúde do Brasil': US$ 0.0358 (acumulado US$ 2.4384)
+   · E6 chat_gpt (app) 'qual é o melhor plano de saúde': US$ 0.0040 (acumulado US$ 2.4590)
+   · E6 claude 'qual o melhor plano de saúde do Brasil': US$ 0.0048 (acumulado US$ 2.4538)
+   · E6 perplexity 'qual o melhor plano de saúde do Brasil': US$ 0.0060 (acumulado US$ 2.4532)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 gemini 'quanto custa plano de saúde por mês': US$ 0.0358 (acumulado US$ 2.4890)
+   · E6 chat_gpt (app) 'qual o melhor plano de saúde do Brasil': US$ 0.0040 (acumulado US$ 2.5096)
+   · E6 perplexity 'quanto custa plano de saúde por mês': US$ 0.0059 (acumulado US$ 2.5155)
+   · E6 claude 'quanto custa plano de saúde por mês': US$ 0.0261 (acumulado US$ 2.5249)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 gemini 'qual plano de saúde mais barato': US$ 0.0357 (acumulado US$ 2.5607)
+   · E6 chat_gpt (app) 'quanto custa plano de saúde por mês': US$ 0.0040 (acumulado US$ 2.5813)
+   · E6 perplexity 'qual plano de saúde mais barato': US$ 0.0059 (acumulado US$ 2.5872)
+   · E6 claude 'qual plano de saúde mais barato': US$ 0.0266 (acumulado US$ 2.5972)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 chat_gpt (app) 'qual plano de saúde mais barato': US$ 0.0040 (acumulado US$ 2.6038)
+   · E6 gemini 'vale a pena contratar plano de saúde': US$ 0.0360 (acumulado US$ 2.6538)
+   · E6 perplexity 'vale a pena contratar plano de saúde': US$ 0.0060 (acumulado US$ 2.6598)
+   · E6 claude 'vale a pena contratar plano de saúde': US$ 0.0259 (acumulado US$ 2.6691)
+   · E6 chat_gpt (app) 'qual melhor plano de saúde': US$ 0.0040 (acumulado US$ 2.6731)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 chat_gpt (app) 'vale a pena contratar plano de saúde': US$ 0.0040 (acumulado US$ 2.6963)
+   · E6 gemini 'o que plano de saúde cobre e o que não c': US$ 0.0359 (acumulado US$ 2.7363)
+   · E6 perplexity 'o que plano de saúde cobre e o que não c': US$ 0.0062 (acumulado US$ 2.7359)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 claude 'o que plano de saúde cobre e o que não c': US$ 0.0263 (acumulado US$ 2.7482)
+   · E6 gemini 'qual plano de saúde devo evitar': US$ 0.0358 (acumulado US$ 2.7980)
+   · E6 claude 'qual plano de saúde devo evitar': US$ 0.0041 (acumulado US$ 2.7920)
+   · E6 perplexity 'qual plano de saúde devo evitar': US$ 0.0061 (acumulado US$ 2.7915)
+   · E6 chat_gpt (app) 'o que plano de saúde cobre e o que não c': US$ 0.0040 (acumulado US$ 2.7955)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 gemini 'qual plano de saúde tem mais reclamações': US$ 0.0358 (acumulado US$ 2.8479)
+   · E6 chat_gpt (app) 'qual plano de saúde devo evitar': US$ 0.0040 (acumulado US$ 2.8619)
+   · E6 claude 'qual plano de saúde tem mais reclamações': US$ 0.0240 (acumulado US$ 2.8659)
+   ! gemini (app) falhou, tentando pela API: /v3/ai_optimization/gemini/llm_scraper/live/advanced: tarefa 40501 Invalid Field: 'language_code'.
+   · E6 perplexity 'qual plano de saúde tem mais reclamações': US$ 0.0058 (acumulado US$ 2.8677)
+   · E6 gemini 'R$ 300 por mês é caro para plano de saúd': US$ 0.0358 (acumulado US$ 2.9175)
+   · E6 chat_gpt (app) 'qual plano de saúde tem mais reclamações': US$ 0.0040 (acumulado US$ 2.9281)
+   · E6 perplexity 'R$ 300 por mês é caro para plano de saúd': US$ 0.0059 (acumulado US$ 2.9234)
+   · E6 claude 'R$ 300 por mês é caro para plano de saúd': US$ 0.0266 (acumulado US$ 2.9294)
+   · E6 chat_gpt (app) 'R$ 300 por mês é caro para plano de saúd': US$ 0.0040 (acumulado US$ 2.9294)
+
+==== Resumo ====
+1. Quem busca seguro auto está comparando. 73% das 700 buscas têm intenção comercial. Páginas de comparação, tabela de preço e ranking atendem essa fatia.
+2. Há buscas grandes com pouca concorrência. Em plano de saúde, 278 palavras têm 1.000 ou mais buscas por mês e dificuldade até 20, como "plano de saúde unimed", "plano de saúde na unimed", "unimed plano de saúde".
+3. Não basta estar no top 10. Só 36 de 80 fontes do resumo de IA (45%) também estão na primeira página do Google nas 12 buscas conferidas. A IA busca fontes fora do top 10.
+4. Sites que as IAs mais usam como fonte em seguro auto: seguroauto.org, mapfre.com.br, aemcorretoradeseguros.com.br. Não são os maiores do setor: são páginas que respondem a pergunta com número e data.
+5. Marca mais citada pelas IAs em seguro auto: Suhai Seguradora, em 7 respostas. Quem não aparece nessa lista não existe para quem pergunta à IA.
+
+Gasto: US$ 2.9294 em 128 consultas pagas (0 vieram do cache).
+Falhas: 4 (ver dados.json > erros)
+Dados: D:\SISTEMAS\PESQUISA PALAVRAS-CHAVE\saidas\seguro-auto-plano-de-saude\dados.json
+Relatório: D:\SISTEMAS\PESQUISA PALAVRAS-CHAVE\saidas\seguro-auto-plano-de-saude\relatorio.html
+EXIT 0

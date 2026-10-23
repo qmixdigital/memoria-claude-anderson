@@ -1224,3 +1224,100 @@ recusar antes de falar com o Asaas, com mensagem que diz onde preencher, em vez
 de devolver o erro cru do banco.
 
 Backup: `editor.../private/bak-20260928/pagamentos.php.bak`.
+
+---
+
+## Destinos que viraram site estático (Cloudflare Pages) e não recebem mais (22/10/2026)
+
+Em 19/10/2026 três destinos do Antônio foram convertidos de app Next na
+clinicas-vps para **HTML estático no Cloudflare Pages**, sem servidor nenhum:
+**saudevitalidade.com.br, institutoortopedico.com.br e planomedicosaude.com.br**
+(cada um tem `D:/SITES/<dominio>/LEIA-ME-SISTEMA-MUDOU.md`). O endpoint
+`/api/antonio/artigos` deixou de existir: o Pages responde **405 para POST e
+404 para GET**, com corpo vazio. A cron trata como falha e repete a cada
+minuto: o artigo 217 (Kátia, prolactina) acumulou 1.145 tentativas em um dia.
+
+**Assinatura no banco:** `wp_transfer_errors` com `http_code = 405`,
+`raw_response` vazio; `lc_articles` com `pw_transfer = 0`, `wp_tentativa`
+subindo e `wp_error` vazio. Não é chave, não é Cloudflare, não é categoria.
+
+**O que foi feito em 22/10:** o artigo 217 já estava no ar, publicado à mão
+(página gerada em `site/prolactina-alta-.../index.html`, entrada em
+`site/novos-artigos.json`, deploy por wrangler). Foi fechado no Antônio como
+publicado com essa URL (`pw_transfer = 2`), e o erro 405 marcado `resolved`.
+Fila zerada.
+
+**Pendente, decisão do Anderson:** os três continuam `active` em `wp_sites` e
+liberados para 10 editores em `lc_user_domains`. Qualquer envio novo repete o
+loop de 405. Duas saídas:
+
+1. **Tirar os três da publicação** (reversível): `UPDATE lc_user_domains SET
+   status='inactive' WHERE dominio IN (...)` mais `wp_sites.status='inactive'`.
+2. **Construir um receptor para site estático**: uma Pages Function ou Worker
+   em `/api/antonio/artigos` que valida `X-API-KEY`, gera a página HTML no
+   padrão do `site/`, atualiza `novos-artigos.json`, `sitemap` e o índice da
+   busca, e redeploya. Hoje a página manual foi feita sem ferramenta
+   reaproveitável (nada no `estatico-diretorios/` nem nas skills gera
+   `novos-artigos.json`).
+
+---
+
+## Receptor do Antônio em site estático no Cloudflare Pages (22/10/2026)
+
+Os três destinos convertidos (**saudevitalidade, institutoortopedico,
+planomedicosaude**) voltaram a receber da cron **sem servidor**: um
+`_worker.js` dentro de `site/` de cada projeto (modo avançado do Pages) atende
+`POST /api/antonio/artigos` com o mesmo contrato do WordPress/portal-engine e
+guarda artigo e imagem num **KV** do Cloudflare. O Antônio não mudou nada: mesmo
+`endpoint_url`, mesma `api_key`.
+
+| peça | onde |
+|---|---|
+| worker (igual nos três) | `D:/SITES/<dominio>/site/_worker.js` |
+| modelo da página | `site/_antonio/modelo.html`, extraído de um artigo real com placeholders `{{TITULO}}`, `{{CORPO}}`… e conferido byte a byte (ida e volta) |
+| config do site | `site/_antonio/config.json`: host, prefixo de imagem, sabor (`iort`/`pms`), mapa `id de categoria do Antônio → nome e âncora`, barra final na URL |
+| gerador dos modelos | `scratchpad/gerar_modelos.py` da sessão de 22/10 (copiado para `D:/SISTEMAS/QMIX ANTONIO/receptor-estatico/`) |
+| bindings no Pages | `ANTONIO_KV` (KV `antonio-<projeto>`), `ANTONIO_API_KEY` (secret, = chave do `wp_sites`), `SITE_HOST` |
+| deploy | `npx wrangler@4 pages deploy site --project-name <proj> --branch main` (token master de `D:/SISTEMAS/cloudflare/contas.json`) |
+
+**O que o worker faz:** valida `X-API-KEY`; desfaz o `htmlspecialchars` que a
+cron aplica em `title`/`content`; gera o slug (até 80 caracteres, mesma regra
+dos antigos); **não duplica** (se já existe no KV ou como arquivo estático,
+responde 201 com a URL existente, como o portal-engine); grava imagem webp em
+`img:<slug>`, artigo em `art:<slug>` e a lista em `lista`; responde
+`201 {ok,id,post_id,url}`. A página `/<slug>/` só é montada quando não existe
+arquivo estático com aquele caminho. Os novos entram nos **cards do `/blog`**,
+em `/novos-artigos.json`, em `/search-index.json` e num
+`/sitemap-antonio.xml` referenciado pelo `/sitemap.xml`. Tudo o mais passa
+direto para os arquivos.
+
+**Rotas de apoio:** `GET /api/antonio/saude` (sem chave) diz se o worker e o KV
+estão de pé; `GET /api/antonio/artigos` (com chave) lista o que está no KV;
+`DELETE /api/antonio/artigos/<slug>` (com chave) remove artigo, imagem e
+entrada na lista.
+
+**Testado em 22/10:** preview `antonio-teste.saudevitalidade.pages.dev` (POST,
+dedup, página sem placeholder, imagem, índices, sitemap, card) e depois a cron
+real com o artigo 221 (ver resultado no fim desta seção).
+
+**Armadilhas:**
+- 🔴 **O `id` da resposta tem que caber em INT.** `wp_post_id` no Antônio é INT
+  (máx. 2.147.483.647). A primeira versão devolvia `Date.now()` em
+  milissegundos, a cron estourou no UPDATE (`Out of range value for column
+  'wp_post_id'`) e o artigo ficou travado em `pw_transfer = 1` sem erro
+  gravado. O worker devolve segundos desde 1970 (cabe até 2038).
+- O KV é o mesmo para produção e preview do projeto; artigo de teste no preview
+  aparece em produção. Apagar com o DELETE.
+- Editar o HTML em `site/` e redeployar continua valendo: o worker vai junto
+  porque está dentro de `site/`. **Não apagar `_worker.js` nem `_antonio/`.**
+- Se o editor publicar com título igual a uma página estática já existente, a
+  cron recebe a URL da página antiga (dedup), não um 404.
+- `/blog` sem barra responde 308 do Pages para `/blog/`; é normal.
+- `institutoortopedico` estava cadastrado no Antônio com endpoint em
+  `institutoortopedico.dominioprovisorio.net.br`; corrigido para o domínio real.
+
+**Para converter outro site do Antônio para estático:** gerar o modelo com
+`gerar_modelos.py` (apontando um artigo real, título, descrição, data, autor,
+categoria e o mapa de categorias de `wp_categories`), copiar `_worker.js`,
+criar KV e bindings (script `preparar_pages.py` na mesma pasta), deployar e
+testar com `GET /api/antonio/saude`.

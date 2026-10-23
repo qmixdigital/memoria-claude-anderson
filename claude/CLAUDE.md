@@ -1,5 +1,11 @@
 # Regras Globais - Todos os Projetos
 
+## ATENCAO: estado atual da infraestrutura (22/10/2026)
+
+- NAO existem mais sites nossos na **HostVerge** e NAO existem mais sites **WordPress** na rede.
+- Qualquer trecho abaixo ou em memorias/docs sobre WP, wp-cli, mu-plugins, hostverge esta OBSOLETO.
+- Ao verificar um site (publicacao, erro, etc.), descobrir primeiro o stack real: portal-engine (/srv/portais nas VPS opengravity, srv1166087, clinicas-vps) ou Next.js. Nao tentar wp-cli.
+
 ## Quem sou eu
 
 Sou desenvolvedor web focado em sites profissionais (medicos, clinicas, empresas). Trabalho com HTML estatico e Next.js + Payload CMS. Todos os sites seguem o mesmo padrao de estrutura, SEO e design. Os projetos ficam em `d:\SITES\` e `d:\GitHub\`.

@@ -1,0 +1,7048 @@
+{
+ "dia": "2026-10-22",
+ "palavras": {
+  "seguro": {
+   "n": 1318,
+   "volume_total": 528400,
+   "cpc_medio": 2.69,
+   "intencao": {
+    "commercial": 932,
+    "informational": 173,
+    "navigational": 121,
+    "transactional": 92
+   },
+   "top": [
+    {
+     "kw": "seguro de carro",
+     "tema": "seguro",
+     "vol": 49500,
+     "cpc": 4.6,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      49500,
+      49500,
+      49500,
+      60500,
+      49500,
+      49500,
+      49500,
+      40500,
+      40500,
+      49500,
+      49500,
+      40500
+     ],
+     "vol_ia": 1807
+    },
+    {
+     "kw": "seguro auto",
+     "tema": "seguro",
+     "vol": 12100,
+     "cpc": 4.9,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      12100,
+      12100,
+      12100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900
+     ],
+     "vol_ia": 472
+    },
+    {
+     "kw": "seguro para auto",
+     "tema": "seguro",
+     "vol": 12100,
+     "cpc": 4.9,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      12100,
+      12100,
+      12100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900
+     ],
+     "vol_ia": 472
+    },
+    {
+     "kw": "seguro de auto",
+     "tema": "seguro",
+     "vol": 12100,
+     "cpc": 5.83,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      12100,
+      12100,
+      12100,
+      12100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900
+     ],
+     "vol_ia": 472
+    },
+    {
+     "kw": "seguro porto auto",
+     "tema": "seguro",
+     "vol": 8100,
+     "cpc": 1.41,
+     "conc": "MEDIUM",
+     "kd": 51,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      8100,
+      8100,
+      8100,
+      9900,
+      8100,
+      9900,
+      8100,
+      8100,
+      8100,
+      8100,
+      8100,
+      8100
+     ],
+     "vol_ia": 62
+    },
+    {
+     "kw": "auto porto seguro",
+     "tema": "seguro",
+     "vol": 8100,
+     "cpc": 1.29,
+     "conc": "MEDIUM",
+     "kd": 51,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      8100,
+      8100,
+      8100,
+      8100,
+      9900,
+      8100,
+      9900,
+      8100,
+      8100,
+      8100,
+      8100,
+      8100
+     ],
+     "vol_ia": 62
+    },
+    {
+     "kw": "porto seguro auto",
+     "tema": "seguro",
+     "vol": 8100,
+     "cpc": 1.41,
+     "conc": "MEDIUM",
+     "kd": 51,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      8100,
+      8100,
+      8100,
+      9900,
+      8100,
+      9900,
+      8100,
+      8100,
+      8100,
+      8100,
+      8100,
+      8100
+     ],
+     "vol_ia": 62
+    },
+    {
+     "kw": "bradesco seguro auto",
+     "tema": "seguro",
+     "vol": 6600,
+     "cpc": 0.48,
+     "conc": "MEDIUM",
+     "kd": 53,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      8100,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600
+     ],
+     "vol_ia": 91
+    },
+    {
+     "kw": "bradesco auto seguro",
+     "tema": "seguro",
+     "vol": 6600,
+     "cpc": 0.54,
+     "conc": "MEDIUM",
+     "kd": 30,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600,
+      6600
+     ],
+     "vol_ia": 91
+    },
+    {
+     "kw": "seguro auto allianz",
+     "tema": "seguro",
+     "vol": 5400,
+     "cpc": 1.08,
+     "conc": "MEDIUM",
+     "kd": 25,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400
+     ],
+     "vol_ia": 26
+    },
+    {
+     "kw": "allianz auto seguro",
+     "tema": "seguro",
+     "vol": 5400,
+     "cpc": 1.08,
+     "conc": "MEDIUM",
+     "kd": 25,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400
+     ],
+     "vol_ia": 26
+    },
+    {
+     "kw": "allianz seguro auto",
+     "tema": "seguro",
+     "vol": 5400,
+     "cpc": 1.08,
+     "conc": "MEDIUM",
+     "kd": 25,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400
+     ],
+     "vol_ia": 26
+    },
+    {
+     "kw": "seguro allianz auto",
+     "tema": "seguro",
+     "vol": 5400,
+     "cpc": 1.18,
+     "conc": "MEDIUM",
+     "kd": 25,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      5400,
+      4400,
+      5400,
+      4400,
+      5400
+     ],
+     "vol_ia": 26
+    },
+    {
+     "kw": "cotacao seguro auto",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 4.58,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      5400,
+      4400,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400,
+      4400,
+      3600,
+      4400,
+      4400,
+      4400
+     ],
+     "vol_ia": 2
+    },
+    {
+     "kw": "seguro santander auto",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 1.67,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      5400,
+      4400,
+      4400,
+      4400,
+      4400,
+      3600,
+      4400,
+      3600,
+      3600,
+      2900,
+      3600,
+      4400
+     ],
+     "vol_ia": 17
+    },
+    {
+     "kw": "santander auto seguro",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 1.67,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      5400,
+      4400,
+      4400,
+      4400,
+      4400,
+      3600,
+      4400,
+      3600,
+      3600,
+      2900,
+      3600,
+      4400
+     ],
+     "vol_ia": 17
+    },
+    {
+     "kw": "cotar seguro auto",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 4.81,
+     "conc": "HIGH",
+     "kd": 53,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      4400,
+      4400,
+      3600,
+      4400,
+      4400,
+      4400,
+      4400,
+      4400,
+      4400,
+      4400,
+      4400,
+      4400
+     ],
+     "vol_ia": 10
+    },
+    {
+     "kw": "seguro auto cotar",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 4.58,
+     "conc": "HIGH",
+     "kd": 53,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      5400,
+      4400,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400,
+      4400,
+      3600,
+      4400,
+      4400,
+      4400
+     ],
+     "vol_ia": 10
+    },
+    {
+     "kw": "cotação para seguro auto",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 5.27,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      5400,
+      5400,
+      4400,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400,
+      4400,
+      3600,
+      4400,
+      4400
+     ],
+     "vol_ia": 2
+    },
+    {
+     "kw": "santander seguro auto",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 1.67,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      5400,
+      4400,
+      4400,
+      4400,
+      4400,
+      3600,
+      4400,
+      3600,
+      3600,
+      2900,
+      3600,
+      4400
+     ],
+     "vol_ia": 17
+    }
+   ],
+   "oportunidades": [
+    {
+     "kw": "seguro santander auto",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 1.67,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      5400,
+      4400,
+      4400,
+      4400,
+      4400,
+      3600,
+      4400,
+      3600,
+      3600,
+      2900,
+      3600,
+      4400
+     ],
+     "vol_ia": 17
+    },
+    {
+     "kw": "santander auto seguro",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 1.67,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      5400,
+      4400,
+      4400,
+      4400,
+      4400,
+      3600,
+      4400,
+      3600,
+      3600,
+      2900,
+      3600,
+      4400
+     ],
+     "vol_ia": 17
+    },
+    {
+     "kw": "santander seguro auto",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 1.67,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      5400,
+      4400,
+      4400,
+      4400,
+      4400,
+      3600,
+      4400,
+      3600,
+      3600,
+      2900,
+      3600,
+      4400
+     ],
+     "vol_ia": 17
+    },
+    {
+     "kw": "auto seguro santander",
+     "tema": "seguro",
+     "vol": 3600,
+     "cpc": 1.73,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      4400,
+      4400,
+      4400,
+      4400,
+      3600,
+      4400,
+      3600,
+      3600,
+      2900,
+      3600,
+      4400,
+      3600
+     ],
+     "vol_ia": 17
+    },
+    {
+     "kw": "azul seguro auto",
+     "tema": "seguro",
+     "vol": 3600,
+     "cpc": 1.91,
+     "conc": "MEDIUM",
+     "kd": 18,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      3600,
+      4400,
+      3600,
+      4400,
+      4400,
+      3600,
+      4400,
+      3600,
+      3600,
+      3600,
+      3600,
+      3600
+     ],
+     "vol_ia": 29
+    },
+    {
+     "kw": "seguro auto santander",
+     "tema": "seguro",
+     "vol": 3600,
+     "cpc": 1.73,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      4400,
+      4400,
+      4400,
+      4400,
+      3600,
+      4400,
+      3600,
+      3600,
+      2900,
+      3600,
+      4400,
+      3600
+     ],
+     "vol_ia": 17
+    },
+    {
+     "kw": "aluguel de carro na porto seguro",
+     "tema": "seguro",
+     "vol": 3600,
+     "cpc": 1.18,
+     "conc": "HIGH",
+     "kd": 0,
+     "intencao": "transactional",
+     "tend_ano": -34,
+     "meses": [
+      3600,
+      3600,
+      4400,
+      5400,
+      2900,
+      2900,
+      2900,
+      2400,
+      2900,
+      2900,
+      2900,
+      2900
+     ],
+     "vol_ia": 27
+    },
+    {
+     "kw": "carro de aluguel porto seguro",
+     "tema": "seguro",
+     "vol": 3600,
+     "cpc": 0.94,
+     "conc": "HIGH",
+     "kd": 0,
+     "intencao": "transactional",
+     "tend_ano": -46,
+     "meses": [
+      4400,
+      3600,
+      3600,
+      4400,
+      5400,
+      2900,
+      2900,
+      2900,
+      2400,
+      2900,
+      2900,
+      2900
+     ],
+     "vol_ia": 27
+    },
+    {
+     "kw": "aluguel de carro pela porto seguro",
+     "tema": "seguro",
+     "vol": 3600,
+     "cpc": 1.18,
+     "conc": "HIGH",
+     "kd": 0,
+     "intencao": "transactional",
+     "tend_ano": -34,
+     "meses": [
+      3600,
+      3600,
+      4400,
+      5400,
+      2900,
+      2900,
+      2900,
+      2400,
+      2900,
+      2900,
+      2900,
+      2900
+     ],
+     "vol_ia": 27
+    },
+    {
+     "kw": "aluguel de carro porto seguro",
+     "tema": "seguro",
+     "vol": 3600,
+     "cpc": 1.18,
+     "conc": "HIGH",
+     "kd": 0,
+     "intencao": "transactional",
+     "tend_ano": -34,
+     "meses": [
+      3600,
+      3600,
+      4400,
+      5400,
+      2900,
+      2900,
+      2900,
+      2400,
+      2900,
+      2900,
+      2900,
+      2900
+     ],
+     "vol_ia": 27
+    },
+    {
+     "kw": "porto seguro aluguel de carro",
+     "tema": "seguro",
+     "vol": 3600,
+     "cpc": 1.18,
+     "conc": "HIGH",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -34,
+     "meses": [
+      3600,
+      3600,
+      4400,
+      5400,
+      2900,
+      2900,
+      2900,
+      2400,
+      2900,
+      2900,
+      2900,
+      2900
+     ],
+     "vol_ia": 27
+    },
+    {
+     "kw": "bb seguro auto",
+     "tema": "seguro",
+     "vol": 2900,
+     "cpc": 1.62,
+     "conc": "LOW",
+     "kd": 15,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      3600,
+      3600,
+      2900,
+      3600,
+      3600,
+      2900,
+      2900,
+      2900,
+      2900,
+      2400,
+      2400,
+      2900
+     ],
+     "vol_ia": 43
+    },
+    {
+     "kw": "porto seguro auto telefone",
+     "tema": "seguro",
+     "vol": 2900,
+     "cpc": 0.59,
+     "conc": "LOW",
+     "kd": 16,
+     "intencao": "navigational",
+     "tend_ano": 0,
+     "meses": [
+      2900,
+      2900,
+      2900,
+      2900,
+      2900,
+      2900,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400,
+      2900
+     ],
+     "vol_ia": 3
+    },
+    {
+     "kw": "auto bb seguro",
+     "tema": "seguro",
+     "vol": 2900,
+     "cpc": 1.62,
+     "conc": "LOW",
+     "kd": 15,
+     "intencao": "transactional",
+     "tend_ano": 28900,
+     "meses": [
+      3600,
+      3600,
+      2900,
+      3600,
+      3600,
+      2900,
+      2900,
+      2900,
+      2900,
+      2400,
+      2400,
+      2900
+     ],
+     "vol_ia": 43
+    },
+    {
+     "kw": "seguro de carro qual o melhor",
+     "tema": "seguro",
+     "vol": 2900,
+     "cpc": 4.51,
+     "conc": "HIGH",
+     "kd": 15,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      2900,
+      3600,
+      2900,
+      3600,
+      3600,
+      2900,
+      3600,
+      2900,
+      2900,
+      2900,
+      2900,
+      2900
+     ],
+     "vol_ia": 133
+    }
+   ],
+   "n_oportunidades": 34,
+   "perguntas": [
+    {
+     "kw": "qual é o melhor seguro de carro",
+     "tema": "seguro",
+     "vol": 1600,
+     "cpc": 3.58,
+     "conc": "HIGH",
+     "kd": 1,
+     "intencao": "commercial",
+     "tend_ano": 46,
+     "meses": [
+      1600,
+      1300,
+      1600,
+      1600,
+      1600,
+      1900,
+      1600,
+      1900,
+      1900,
+      1900,
+      1900,
+      1900
+     ],
+     "vol_ia": 32
+    },
+    {
+     "kw": "qual o melhor seguro de carro",
+     "tema": "seguro",
+     "vol": 1600,
+     "cpc": 4.91,
+     "conc": "HIGH",
+     "kd": 1,
+     "intencao": "commercial",
+     "tend_ano": 19,
+     "meses": [
+      1300,
+      1600,
+      1300,
+      1600,
+      1600,
+      1600,
+      1900,
+      1600,
+      1900,
+      1900,
+      1900,
+      1900
+     ],
+     "vol_ia": 133
+    },
+    {
+     "kw": "qual melhor seguro de carro",
+     "tema": "seguro",
+     "vol": 1600,
+     "cpc": 3.58,
+     "conc": "HIGH",
+     "kd": 1,
+     "intencao": "commercial",
+     "tend_ano": 46,
+     "meses": [
+      1600,
+      1300,
+      1600,
+      1600,
+      1600,
+      1900,
+      1600,
+      1900,
+      1900,
+      1900,
+      1900,
+      1900
+     ],
+     "vol_ia": 133
+    },
+    {
+     "kw": "quanto custa seguro de carro",
+     "tema": "seguro",
+     "vol": 720,
+     "cpc": 1.21,
+     "conc": "HIGH",
+     "kd": 33,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      720,
+      880,
+      720,
+      880,
+      720,
+      880,
+      720,
+      720,
+      590,
+      720,
+      720,
+      590
+     ],
+     "vol_ia": 135
+    },
+    {
+     "kw": "quanto custa um seguro de um carro",
+     "tema": "seguro",
+     "vol": 720,
+     "cpc": 1.21,
+     "conc": "HIGH",
+     "kd": 33,
+     "intencao": "informational",
+     "tend_ano": -33,
+     "meses": [
+      720,
+      880,
+      720,
+      880,
+      720,
+      880,
+      720,
+      720,
+      590,
+      720,
+      720,
+      590
+     ],
+     "vol_ia": 135
+    },
+    {
+     "kw": "quanto custa o seguro de carro",
+     "tema": "seguro",
+     "vol": 720,
+     "cpc": 1.63,
+     "conc": "HIGH",
+     "kd": 33,
+     "intencao": "commercial",
+     "tend_ano": -55,
+     "meses": [
+      880,
+      720,
+      880,
+      720,
+      880,
+      720,
+      880,
+      720,
+      720,
+      590,
+      720,
+      720
+     ],
+     "vol_ia": 135
+    },
+    {
+     "kw": "quanto custa o seguro de um carro",
+     "tema": "seguro",
+     "vol": 720,
+     "cpc": 1.63,
+     "conc": "HIGH",
+     "kd": 33,
+     "intencao": "informational",
+     "tend_ano": -55,
+     "meses": [
+      880,
+      720,
+      880,
+      720,
+      880,
+      720,
+      880,
+      720,
+      720,
+      590,
+      720,
+      720
+     ],
+     "vol_ia": 135
+    },
+    {
+     "kw": "quanto custa seguro de um carro",
+     "tema": "seguro",
+     "vol": 720,
+     "cpc": 1.21,
+     "conc": "HIGH",
+     "kd": 33,
+     "intencao": "informational",
+     "tend_ano": -33,
+     "meses": [
+      720,
+      880,
+      720,
+      880,
+      720,
+      880,
+      720,
+      720,
+      590,
+      720,
+      720,
+      590
+     ],
+     "vol_ia": 135
+    },
+    {
+     "kw": "quanto é o seguro de um carro",
+     "tema": "seguro",
+     "vol": 590,
+     "cpc": 1.08,
+     "conc": "MEDIUM",
+     "kd": 26,
+     "intencao": "informational",
+     "tend_ano": -19,
+     "meses": [
+      590,
+      590,
+      590,
+      720,
+      590,
+      720,
+      480,
+      480,
+      390,
+      480,
+      590,
+      480
+     ],
+     "vol_ia": 6
+    },
+    {
+     "kw": "quanto custa um seguro de carro",
+     "tema": "seguro",
+     "vol": 590,
+     "cpc": 1.29,
+     "conc": "HIGH",
+     "kd": 33,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      590,
+      720,
+      590,
+      720,
+      590,
+      590,
+      590,
+      480,
+      480,
+      590,
+      590,
+      590
+     ],
+     "vol_ia": 135
+    },
+    {
+     "kw": "quanto é um seguro de carro",
+     "tema": "seguro",
+     "vol": 590,
+     "cpc": 1.08,
+     "conc": "MEDIUM",
+     "kd": 47,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      590,
+      590,
+      590,
+      720,
+      590,
+      720,
+      480,
+      480,
+      390,
+      480,
+      590,
+      480
+     ],
+     "vol_ia": 6
+    },
+    {
+     "kw": "como funciona seguro de carro",
+     "tema": "seguro",
+     "vol": 590,
+     "cpc": 1.29,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "informational",
+     "tend_ano": -33,
+     "meses": [
+      590,
+      590,
+      590,
+      590,
+      480,
+      590,
+      480,
+      480,
+      480,
+      720,
+      590,
+      480
+     ],
+     "vol_ia": 49
+    },
+    {
+     "kw": "quanto é seguro de carro",
+     "tema": "seguro",
+     "vol": 590,
+     "cpc": 1.08,
+     "conc": "MEDIUM",
+     "kd": 26,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      590,
+      590,
+      590,
+      720,
+      590,
+      720,
+      480,
+      480,
+      390,
+      480,
+      590,
+      480
+     ],
+     "vol_ia": 6
+    },
+    {
+     "kw": "qual valor do seguro de um carro",
+     "tema": "seguro",
+     "vol": 480,
+     "cpc": 1.24,
+     "conc": "MEDIUM",
+     "kd": 42,
+     "intencao": "informational",
+     "tend_ano": -19,
+     "meses": [
+      590,
+      480,
+      480,
+      590,
+      480,
+      480,
+      480,
+      480,
+      390,
+      390,
+      480,
+      390
+     ],
+     "vol_ia": 179
+    },
+    {
+     "kw": "qual o valor do seguro de um carro",
+     "tema": "seguro",
+     "vol": 480,
+     "cpc": 1.24,
+     "conc": "MEDIUM",
+     "kd": 42,
+     "intencao": "informational",
+     "tend_ano": -19,
+     "meses": [
+      590,
+      480,
+      480,
+      590,
+      480,
+      480,
+      480,
+      480,
+      390,
+      390,
+      480,
+      390
+     ],
+     "vol_ia": 179
+    }
+   ],
+   "n_perguntas": 113,
+   "cpc_mais_alto": [
+    {
+     "kw": "seguro de auto",
+     "tema": "seguro",
+     "vol": 12100,
+     "cpc": 5.83,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      12100,
+      12100,
+      12100,
+      12100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900
+     ],
+     "vol_ia": 472
+    },
+    {
+     "kw": "cotações de seguro auto",
+     "tema": "seguro",
+     "vol": 880,
+     "cpc": 5.77,
+     "conc": "HIGH",
+     "kd": 50,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      880,
+      880,
+      880,
+      880,
+      1000,
+      880,
+      1300,
+      1000,
+      880,
+      880,
+      880,
+      880
+     ],
+     "vol_ia": 2
+    },
+    {
+     "kw": "seguro auto online",
+     "tema": "seguro",
+     "vol": 720,
+     "cpc": 5.44,
+     "conc": "MEDIUM",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -45,
+     "meses": [
+      880,
+      720,
+      720,
+      720,
+      720,
+      720,
+      880,
+      720,
+      1300,
+      880,
+      590,
+      480
+     ],
+     "vol_ia": 2
+    },
+    {
+     "kw": "cotação para seguro auto",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 5.27,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      5400,
+      5400,
+      4400,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400,
+      4400,
+      3600,
+      4400,
+      4400
+     ],
+     "vol_ia": 2
+    },
+    {
+     "kw": "cotar seguro de carro",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 5.02,
+     "conc": "HIGH",
+     "kd": 53,
+     "intencao": "commercial",
+     "tend_ano": 50,
+     "meses": [
+      5400,
+      4400,
+      3600,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400,
+      4400,
+      4400,
+      5400,
+      5400
+     ],
+     "vol_ia": 6
+    },
+    {
+     "kw": "cotação de seguro carro",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 5.02,
+     "conc": "HIGH",
+     "kd": 44,
+     "intencao": "commercial",
+     "tend_ano": 50,
+     "meses": [
+      5400,
+      4400,
+      3600,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400,
+      4400,
+      4400,
+      5400,
+      5400
+     ],
+     "vol_ia": 2
+    },
+    {
+     "kw": "cotação de seguro de carro",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 5.02,
+     "conc": "HIGH",
+     "kd": 44,
+     "intencao": "commercial",
+     "tend_ano": 50,
+     "meses": [
+      5400,
+      4400,
+      3600,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400,
+      4400,
+      4400,
+      5400,
+      5400
+     ],
+     "vol_ia": 2
+    },
+    {
+     "kw": "cotação de seguro para carro",
+     "tema": "seguro",
+     "vol": 4400,
+     "cpc": 5.02,
+     "conc": "HIGH",
+     "kd": 44,
+     "intencao": "commercial",
+     "tend_ano": 50,
+     "meses": [
+      5400,
+      4400,
+      3600,
+      4400,
+      5400,
+      4400,
+      5400,
+      4400,
+      4400,
+      4400,
+      5400,
+      5400
+     ],
+     "vol_ia": 2
+    },
+    {
+     "kw": "cotacao de seguro auto",
+     "tema": "seguro",
+     "vol": 880,
+     "cpc": 5.01,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      880,
+      880,
+      880,
+      1000,
+      880,
+      1300,
+      1000,
+      880,
+      880,
+      880,
+      880,
+      880
+     ],
+     "vol_ia": 2
+    },
+    {
+     "kw": "cotação online seguro auto",
+     "tema": "seguro",
+     "vol": 720,
+     "cpc": 4.96,
+     "conc": "HIGH",
+     "kd": 64,
+     "intencao": "commercial",
+     "tend_ano": 85,
+     "meses": [
+      320,
+      390,
+      720,
+      720,
+      880,
+      590,
+      1000,
+      720,
+      590,
+      590,
+      720,
+      720
+     ],
+     "vol_ia": 0
+    }
+   ],
+   "cabeca": {
+    "kw": "seguro de carro",
+    "tema": "seguro",
+    "vol": 49500,
+    "cpc": 4.6,
+    "conc": "HIGH",
+    "kd": 65,
+    "intencao": "commercial",
+    "tend_ano": -18,
+    "meses": [
+     49500,
+     49500,
+     49500,
+     60500,
+     49500,
+     49500,
+     49500,
+     40500,
+     40500,
+     49500,
+     49500,
+     40500
+    ],
+    "vol_ia": 1807
+   },
+   "top_ia": [
+    {
+     "kw": "seguro de carro",
+     "tema": "seguro",
+     "vol": 49500,
+     "cpc": 4.6,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      49500,
+      49500,
+      49500,
+      60500,
+      49500,
+      49500,
+      49500,
+      40500,
+      40500,
+      49500,
+      49500,
+      40500
+     ],
+     "vol_ia": 1807
+    },
+    {
+     "kw": "seguro de um carro",
+     "tema": "seguro",
+     "vol": 2400,
+     "cpc": 3.87,
+     "conc": "HIGH",
+     "kd": 68,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2900,
+      2400,
+      2900,
+      2900,
+      2400,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 1807
+    },
+    {
+     "kw": "seguro auto",
+     "tema": "seguro",
+     "vol": 12100,
+     "cpc": 4.9,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      12100,
+      12100,
+      12100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900
+     ],
+     "vol_ia": 472
+    },
+    {
+     "kw": "seguro para auto",
+     "tema": "seguro",
+     "vol": 12100,
+     "cpc": 4.9,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      12100,
+      12100,
+      12100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900
+     ],
+     "vol_ia": 472
+    },
+    {
+     "kw": "seguro de auto",
+     "tema": "seguro",
+     "vol": 12100,
+     "cpc": 5.83,
+     "conc": "HIGH",
+     "kd": 65,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      12100,
+      12100,
+      12100,
+      12100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900
+     ],
+     "vol_ia": 472
+    },
+    {
+     "kw": "auto seguro",
+     "tema": "seguro",
+     "vol": 320,
+     "cpc": 4.54,
+     "conc": "MEDIUM",
+     "kd": 54,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      320,
+      260,
+      260,
+      320,
+      320,
+      320,
+      260,
+      260,
+      260,
+      260,
+      320,
+      320
+     ],
+     "vol_ia": 472
+    },
+    {
+     "kw": "seguro de carro porto seguro",
+     "tema": "seguro",
+     "vol": 2400,
+     "cpc": 2.28,
+     "conc": "HIGH",
+     "kd": 51,
+     "intencao": "commercial",
+     "tend_ano": -21,
+     "meses": [
+      2400,
+      1900,
+      1900,
+      2400,
+      2900,
+      2400,
+      2900,
+      1900,
+      1900,
+      1600,
+      1900,
+      1900
+     ],
+     "vol_ia": 224
+    },
+    {
+     "kw": "seguros de carro porto seguro",
+     "tema": "seguro",
+     "vol": 2400,
+     "cpc": 2.28,
+     "conc": "HIGH",
+     "kd": 47,
+     "intencao": "commercial",
+     "tend_ano": -21,
+     "meses": [
+      2400,
+      1900,
+      1900,
+      2400,
+      2900,
+      2400,
+      2900,
+      1900,
+      1900,
+      1600,
+      1900,
+      1900
+     ],
+     "vol_ia": 224
+    },
+    {
+     "kw": "seguro de carro da porto seguro",
+     "tema": "seguro",
+     "vol": 2400,
+     "cpc": 2.28,
+     "conc": "HIGH",
+     "kd": 51,
+     "intencao": "commercial",
+     "tend_ano": -21,
+     "meses": [
+      2400,
+      1900,
+      1900,
+      2400,
+      2900,
+      2400,
+      2900,
+      1900,
+      1900,
+      1600,
+      1900,
+      1900
+     ],
+     "vol_ia": 224
+    },
+    {
+     "kw": "porto seguro seguros de carro",
+     "tema": "seguro",
+     "vol": 1900,
+     "cpc": 2.43,
+     "conc": "HIGH",
+     "kd": 48,
+     "intencao": "commercial",
+     "tend_ano": -21,
+     "meses": [
+      1900,
+      1900,
+      2400,
+      2900,
+      2400,
+      2900,
+      1900,
+      1900,
+      1600,
+      1900,
+      1900,
+      1900
+     ],
+     "vol_ia": 224
+    },
+    {
+     "kw": "porto seguro seguro de carro",
+     "tema": "seguro",
+     "vol": 1900,
+     "cpc": 2.43,
+     "conc": "HIGH",
+     "kd": 51,
+     "intencao": "commercial",
+     "tend_ano": -21,
+     "meses": [
+      1900,
+      1900,
+      2400,
+      2900,
+      2400,
+      2900,
+      1900,
+      1900,
+      1600,
+      1900,
+      1900,
+      1900
+     ],
+     "vol_ia": 224
+    },
+    {
+     "kw": "valor de seguro de carro",
+     "tema": "seguro",
+     "vol": 880,
+     "cpc": 1.53,
+     "conc": "HIGH",
+     "kd": 32,
+     "intencao": "informational",
+     "tend_ano": -28,
+     "meses": [
+      880,
+      880,
+      880,
+      1000,
+      880,
+      1000,
+      720,
+      720,
+      720,
+      720,
+      720,
+      720
+     ],
+     "vol_ia": 179
+    }
+   ],
+   "vol_ia_total": 15075,
+   "vol_google_com_ia": 445680
+  },
+  "saude": {
+   "n": 654,
+   "volume_total": 1862690,
+   "cpc_medio": 1.53,
+   "intencao": {
+    "commercial": 550,
+    "informational": 87,
+    "navigational": 10,
+    "transactional": 7
+   },
+   "top": [
+    {
+     "kw": "plano de saúde",
+     "tema": "saude",
+     "vol": 90500,
+     "cpc": 2.33,
+     "conc": "MEDIUM",
+     "kd": 33,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      90500,
+      74000,
+      60500,
+      90500,
+      74000,
+      90500,
+      90500,
+      90500,
+      74000,
+      90500,
+      90500,
+      74000
+     ],
+     "vol_ia": 18199
+    },
+    {
+     "kw": "plano de saúde unimed",
+     "tema": "saude",
+     "vol": 60500,
+     "cpc": 0.91,
+     "conc": "MEDIUM",
+     "kd": 6,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      60500,
+      49500,
+      40500,
+      60500,
+      60500,
+      60500,
+      60500,
+      60500,
+      49500,
+      49500,
+      49500,
+      49500
+     ],
+     "vol_ia": 1205
+    },
+    {
+     "kw": "plano de saúde na unimed",
+     "tema": "saude",
+     "vol": 60500,
+     "cpc": 0.91,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      60500,
+      49500,
+      40500,
+      60500,
+      60500,
+      60500,
+      60500,
+      60500,
+      49500,
+      49500,
+      49500,
+      49500
+     ],
+     "vol_ia": 1205
+    },
+    {
+     "kw": "unimed plano de saúde",
+     "tema": "saude",
+     "vol": 60500,
+     "cpc": 0.91,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      60500,
+      49500,
+      40500,
+      60500,
+      60500,
+      60500,
+      60500,
+      60500,
+      49500,
+      49500,
+      49500,
+      49500
+     ],
+     "vol_ia": 1205
+    },
+    {
+     "kw": "plano de saúde da unimed",
+     "tema": "saude",
+     "vol": 60500,
+     "cpc": 0.91,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      60500,
+      49500,
+      40500,
+      60500,
+      60500,
+      60500,
+      60500,
+      60500,
+      49500,
+      49500,
+      49500,
+      49500
+     ],
+     "vol_ia": 1205
+    },
+    {
+     "kw": "plano de saúde do bradesco",
+     "tema": "saude",
+     "vol": 40500,
+     "cpc": 0.74,
+     "conc": "MEDIUM",
+     "kd": 62,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      40500,
+      40500,
+      33100,
+      27100,
+      40500,
+      33100,
+      40500,
+      40500,
+      40500,
+      33100,
+      33100,
+      40500
+     ],
+     "vol_ia": 513
+    },
+    {
+     "kw": "plano de saúde bradesco",
+     "tema": "saude",
+     "vol": 40500,
+     "cpc": 0.74,
+     "conc": "MEDIUM",
+     "kd": 62,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      40500,
+      40500,
+      33100,
+      27100,
+      40500,
+      33100,
+      40500,
+      40500,
+      40500,
+      33100,
+      33100,
+      40500
+     ],
+     "vol_ia": 513
+    },
+    {
+     "kw": "plano de saúde da bradesco",
+     "tema": "saude",
+     "vol": 33100,
+     "cpc": 0.78,
+     "conc": "MEDIUM",
+     "kd": 76,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      40500,
+      33100,
+      27100,
+      40500,
+      33100,
+      40500,
+      40500,
+      40500,
+      33100,
+      33100,
+      40500,
+      33100
+     ],
+     "vol_ia": 513
+    },
+    {
+     "kw": "plano de saúde da amil",
+     "tema": "saude",
+     "vol": 33100,
+     "cpc": 1.47,
+     "conc": "MEDIUM",
+     "kd": 14,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      33100,
+      27100,
+      27100,
+      40500,
+      33100,
+      40500,
+      40500,
+      40500,
+      33100,
+      33100,
+      33100,
+      33100
+     ],
+     "vol_ia": 365
+    },
+    {
+     "kw": "bradesco plano de saúde",
+     "tema": "saude",
+     "vol": 33100,
+     "cpc": 0.78,
+     "conc": "MEDIUM",
+     "kd": 76,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      40500,
+      33100,
+      27100,
+      40500,
+      33100,
+      40500,
+      40500,
+      40500,
+      33100,
+      33100,
+      40500,
+      33100
+     ],
+     "vol_ia": 513
+    },
+    {
+     "kw": "amil plano de saúde",
+     "tema": "saude",
+     "vol": 33100,
+     "cpc": 1.47,
+     "conc": "MEDIUM",
+     "kd": 28,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      33100,
+      27100,
+      27100,
+      40500,
+      33100,
+      40500,
+      40500,
+      40500,
+      33100,
+      33100,
+      33100,
+      33100
+     ],
+     "vol_ia": 365
+    },
+    {
+     "kw": "plano de saúde amil",
+     "tema": "saude",
+     "vol": 33100,
+     "cpc": 1.46,
+     "conc": "MEDIUM",
+     "kd": 30,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      40500,
+      33100,
+      27100,
+      27100,
+      40500,
+      33100,
+      40500,
+      40500,
+      40500,
+      33100,
+      33100,
+      33100
+     ],
+     "vol_ia": 365
+    },
+    {
+     "kw": "pet plano de saúde",
+     "tema": "saude",
+     "vol": 27100,
+     "cpc": 1.6,
+     "conc": "HIGH",
+     "kd": 41,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      27100,
+      27100,
+      22200,
+      33100,
+      27100,
+      27100,
+      27100,
+      27100,
+      22200,
+      27100,
+      27100,
+      27100
+     ],
+     "vol_ia": 356
+    },
+    {
+     "kw": "plano de saúde pets",
+     "tema": "saude",
+     "vol": 27100,
+     "cpc": 1.6,
+     "conc": "HIGH",
+     "kd": 41,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      27100,
+      27100,
+      22200,
+      33100,
+      27100,
+      27100,
+      27100,
+      27100,
+      22200,
+      27100,
+      27100,
+      27100
+     ],
+     "vol_ia": 356
+    },
+    {
+     "kw": "plano de saúde pet",
+     "tema": "saude",
+     "vol": 27100,
+     "cpc": 1.6,
+     "conc": "HIGH",
+     "kd": 33,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      27100,
+      27100,
+      22200,
+      33100,
+      27100,
+      27100,
+      27100,
+      27100,
+      22200,
+      27100,
+      27100,
+      27100
+     ],
+     "vol_ia": 356
+    },
+    {
+     "kw": "pets plano de saúde",
+     "tema": "saude",
+     "vol": 27100,
+     "cpc": 1.6,
+     "conc": "HIGH",
+     "kd": 41,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      27100,
+      27100,
+      22200,
+      33100,
+      27100,
+      27100,
+      27100,
+      27100,
+      22200,
+      27100,
+      27100,
+      27100
+     ],
+     "vol_ia": 356
+    },
+    {
+     "kw": "plano de saúde para pets",
+     "tema": "saude",
+     "vol": 27100,
+     "cpc": 1.85,
+     "conc": "HIGH",
+     "kd": 41,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      27100,
+      27100,
+      27100,
+      22200,
+      33100,
+      27100,
+      27100,
+      27100,
+      27100,
+      22200,
+      27100,
+      27100
+     ],
+     "vol_ia": 356
+    },
+    {
+     "kw": "plano de saúde para pet",
+     "tema": "saude",
+     "vol": 27100,
+     "cpc": 1.6,
+     "conc": "HIGH",
+     "kd": 41,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      27100,
+      27100,
+      22200,
+      33100,
+      27100,
+      27100,
+      27100,
+      27100,
+      22200,
+      27100,
+      27100,
+      27100
+     ],
+     "vol_ia": 356
+    },
+    {
+     "kw": "plano de saúde hapvida",
+     "tema": "saude",
+     "vol": 18100,
+     "cpc": 1.93,
+     "conc": "MEDIUM",
+     "kd": 67,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      22200,
+      18100,
+      14800,
+      18100,
+      18100,
+      22200,
+      18100,
+      18100,
+      18100,
+      18100,
+      18100,
+      18100
+     ],
+     "vol_ia": 522
+    },
+    {
+     "kw": "plano de saúde da hapvida",
+     "tema": "saude",
+     "vol": 18100,
+     "cpc": 1.93,
+     "conc": "MEDIUM",
+     "kd": 67,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      22200,
+      18100,
+      14800,
+      18100,
+      18100,
+      22200,
+      18100,
+      18100,
+      18100,
+      18100,
+      18100,
+      18100
+     ],
+     "vol_ia": 522
+    }
+   ],
+   "oportunidades": [
+    {
+     "kw": "plano de saúde unimed",
+     "tema": "saude",
+     "vol": 60500,
+     "cpc": 0.91,
+     "conc": "MEDIUM",
+     "kd": 6,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      60500,
+      49500,
+      40500,
+      60500,
+      60500,
+      60500,
+      60500,
+      60500,
+      49500,
+      49500,
+      49500,
+      49500
+     ],
+     "vol_ia": 1205
+    },
+    {
+     "kw": "plano de saúde na unimed",
+     "tema": "saude",
+     "vol": 60500,
+     "cpc": 0.91,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      60500,
+      49500,
+      40500,
+      60500,
+      60500,
+      60500,
+      60500,
+      60500,
+      49500,
+      49500,
+      49500,
+      49500
+     ],
+     "vol_ia": 1205
+    },
+    {
+     "kw": "unimed plano de saúde",
+     "tema": "saude",
+     "vol": 60500,
+     "cpc": 0.91,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      60500,
+      49500,
+      40500,
+      60500,
+      60500,
+      60500,
+      60500,
+      60500,
+      49500,
+      49500,
+      49500,
+      49500
+     ],
+     "vol_ia": 1205
+    },
+    {
+     "kw": "plano de saúde da unimed",
+     "tema": "saude",
+     "vol": 60500,
+     "cpc": 0.91,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      60500,
+      49500,
+      40500,
+      60500,
+      60500,
+      60500,
+      60500,
+      60500,
+      49500,
+      49500,
+      49500,
+      49500
+     ],
+     "vol_ia": 1205
+    },
+    {
+     "kw": "plano de saúde da amil",
+     "tema": "saude",
+     "vol": 33100,
+     "cpc": 1.47,
+     "conc": "MEDIUM",
+     "kd": 14,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      33100,
+      27100,
+      27100,
+      40500,
+      33100,
+      40500,
+      40500,
+      40500,
+      33100,
+      33100,
+      33100,
+      33100
+     ],
+     "vol_ia": 365
+    },
+    {
+     "kw": "select plano de saúde",
+     "tema": "saude",
+     "vol": 14800,
+     "cpc": 0.7,
+     "conc": "LOW",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -64,
+     "meses": [
+      18100,
+      14800,
+      12100,
+      14800,
+      12100,
+      18100,
+      14800,
+      12100,
+      12100,
+      12100,
+      14800,
+      6600
+     ],
+     "vol_ia": 89
+    },
+    {
+     "kw": "petlove #plano de saúde",
+     "tema": "saude",
+     "vol": 12100,
+     "cpc": 0.59,
+     "conc": "MEDIUM",
+     "kd": 11,
+     "intencao": "commercial",
+     "tend_ano": 49,
+     "meses": [
+      9900,
+      9900,
+      9900,
+      14800,
+      12100,
+      14800,
+      14800,
+      14800,
+      12100,
+      14800,
+      14800,
+      14800
+     ],
+     "vol_ia": 54
+    },
+    {
+     "kw": "plano de saúde unimed valores",
+     "tema": "saude",
+     "vol": 9900,
+     "cpc": 0.8,
+     "conc": "MEDIUM",
+     "kd": 3,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      12100,
+      9900,
+      8100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900,
+      8100
+     ],
+     "vol_ia": 333
+    },
+    {
+     "kw": "valor do plano de saúde da unimed",
+     "tema": "saude",
+     "vol": 9900,
+     "cpc": 0.8,
+     "conc": "MEDIUM",
+     "kd": 2,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      12100,
+      9900,
+      8100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900,
+      8100
+     ],
+     "vol_ia": 333
+    },
+    {
+     "kw": "valor plano de saúde unimed",
+     "tema": "saude",
+     "vol": 9900,
+     "cpc": 0.66,
+     "conc": "MEDIUM",
+     "kd": 4,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      12100,
+      12100,
+      9900,
+      8100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900
+     ],
+     "vol_ia": 333
+    },
+    {
+     "kw": "unimed plano de saúde valores",
+     "tema": "saude",
+     "vol": 9900,
+     "cpc": 0.8,
+     "conc": "MEDIUM",
+     "kd": 1,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      12100,
+      9900,
+      8100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900,
+      8100
+     ],
+     "vol_ia": 333
+    },
+    {
+     "kw": "valores do plano de saúde da unimed",
+     "tema": "saude",
+     "vol": 9900,
+     "cpc": 0.66,
+     "conc": "MEDIUM",
+     "kd": 1,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      12100,
+      12100,
+      9900,
+      8100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900
+     ],
+     "vol_ia": 333
+    },
+    {
+     "kw": "valores plano de saúde unimed",
+     "tema": "saude",
+     "vol": 9900,
+     "cpc": 0.8,
+     "conc": "MEDIUM",
+     "kd": 1,
+     "intencao": "commercial",
+     "tend_ano": -33,
+     "meses": [
+      12100,
+      9900,
+      8100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900,
+      8100
+     ],
+     "vol_ia": 333
+    },
+    {
+     "kw": "plano de saúde unimed valor",
+     "tema": "saude",
+     "vol": 9900,
+     "cpc": 0.8,
+     "conc": "MEDIUM",
+     "kd": 1,
+     "intencao": "informational",
+     "tend_ano": -33,
+     "meses": [
+      12100,
+      9900,
+      8100,
+      12100,
+      9900,
+      12100,
+      9900,
+      9900,
+      9900,
+      9900,
+      9900,
+      8100
+     ],
+     "vol_ia": 333
+    },
+    {
+     "kw": "plano de saúde petlove",
+     "tema": "saude",
+     "vol": 8100,
+     "cpc": 0.55,
+     "conc": "MEDIUM",
+     "kd": 6,
+     "intencao": "commercial",
+     "tend_ano": 23,
+     "meses": [
+      6600,
+      6600,
+      6600,
+      9900,
+      9900,
+      9900,
+      9900,
+      8100,
+      6600,
+      8100,
+      8100,
+      8100
+     ],
+     "vol_ia": 54
+    }
+   ],
+   "n_oportunidades": 256,
+   "perguntas": [
+    {
+     "kw": "qual é o melhor plano de saúde",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 1.15,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      3600,
+      3600,
+      2900,
+      3600,
+      3600,
+      4400,
+      4400,
+      3600,
+      2900,
+      3600,
+      3600,
+      2900
+     ],
+     "vol_ia": 657
+    },
+    {
+     "kw": "qual melhor plano de saúde",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 1.07,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      3600,
+      3600,
+      3600,
+      2900,
+      3600,
+      3600,
+      4400,
+      4400,
+      3600,
+      2900,
+      3600,
+      3600
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "qual o melhor plano de saúde",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 1.15,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      3600,
+      3600,
+      2900,
+      3600,
+      3600,
+      4400,
+      4400,
+      3600,
+      2900,
+      3600,
+      3600,
+      2900
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "qual o plano de saúde melhor",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 1.15,
+     "conc": "MEDIUM",
+     "kd": null,
+     "intencao": "commercial",
+     "tend_ano": null,
+     "meses": [
+      3600,
+      3600,
+      2900,
+      3600,
+      3600,
+      4400,
+      4400,
+      3600,
+      2900,
+      3600,
+      3600,
+      2900
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "quanto custa o plano de saúde da unimed",
+     "tema": "saude",
+     "vol": 2400,
+     "cpc": 0.79,
+     "conc": "MEDIUM",
+     "kd": 8,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2400,
+      1900,
+      1600,
+      2400,
+      1900,
+      2400,
+      2400,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 117
+    },
+    {
+     "kw": "quanto custa um plano de saúde na unimed",
+     "tema": "saude",
+     "vol": 2400,
+     "cpc": 0.79,
+     "conc": "MEDIUM",
+     "kd": 2,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2400,
+      1900,
+      1600,
+      2400,
+      1900,
+      2400,
+      2400,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 117
+    },
+    {
+     "kw": "quanto custa um plano de saúde unimed",
+     "tema": "saude",
+     "vol": 2400,
+     "cpc": 0.79,
+     "conc": "MEDIUM",
+     "kd": 4,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2400,
+      1900,
+      1600,
+      2400,
+      1900,
+      2400,
+      2400,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 117
+    },
+    {
+     "kw": "quanto custa um plano de saúde da unimed",
+     "tema": "saude",
+     "vol": 2400,
+     "cpc": 0.79,
+     "conc": "MEDIUM",
+     "kd": 2,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2400,
+      1900,
+      1600,
+      2400,
+      1900,
+      2400,
+      2400,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 117
+    },
+    {
+     "kw": "quanto custa plano de saúde unimed",
+     "tema": "saude",
+     "vol": 2400,
+     "cpc": 0.79,
+     "conc": "MEDIUM",
+     "kd": 2,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2400,
+      1900,
+      1600,
+      2400,
+      1900,
+      2400,
+      2400,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 117
+    },
+    {
+     "kw": "quanto custa plano de saúde",
+     "tema": "saude",
+     "vol": 1900,
+     "cpc": 1.11,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -21,
+     "meses": [
+      1900,
+      1600,
+      1300,
+      1900,
+      1600,
+      1900,
+      1900,
+      1900,
+      1900,
+      1900,
+      2400,
+      1900
+     ],
+     "vol_ia": 936
+    },
+    {
+     "kw": "qual melhor plano de saúde do brasil",
+     "tema": "saude",
+     "vol": 1900,
+     "cpc": 1.24,
+     "conc": "LOW",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2400,
+      1900,
+      1600,
+      1600,
+      1600,
+      2400,
+      1900,
+      1900,
+      1900,
+      1900,
+      2400,
+      2400
+     ],
+     "vol_ia": 157
+    },
+    {
+     "kw": "quanto custa o plano de saúde",
+     "tema": "saude",
+     "vol": 1900,
+     "cpc": 1.24,
+     "conc": "MEDIUM",
+     "kd": 8,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      2400,
+      1900,
+      1600,
+      1300,
+      1900,
+      1600,
+      1900,
+      1900,
+      1900,
+      1900,
+      1900,
+      2400
+     ],
+     "vol_ia": 936
+    },
+    {
+     "kw": "quanto custa um plano de saúde",
+     "tema": "saude",
+     "vol": 1900,
+     "cpc": 1.11,
+     "conc": "MEDIUM",
+     "kd": 8,
+     "intencao": "commercial",
+     "tend_ano": -21,
+     "meses": [
+      1900,
+      1600,
+      1300,
+      1900,
+      1600,
+      1900,
+      1900,
+      1900,
+      1900,
+      1900,
+      2400,
+      1900
+     ],
+     "vol_ia": 936
+    },
+    {
+     "kw": "qual é o melhor plano de saúde do brasil",
+     "tema": "saude",
+     "vol": 1900,
+     "cpc": 0.91,
+     "conc": "LOW",
+     "kd": 4,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2900,
+      2400,
+      1900,
+      1600,
+      1600,
+      1600,
+      2400,
+      1900,
+      1900,
+      1900,
+      1900,
+      2400
+     ],
+     "vol_ia": 12
+    },
+    {
+     "kw": "qual o melhor plano de saúde do brasil",
+     "tema": "saude",
+     "vol": 1900,
+     "cpc": 1.24,
+     "conc": "LOW",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2400,
+      1900,
+      1600,
+      1600,
+      1600,
+      2400,
+      1900,
+      1900,
+      1900,
+      1900,
+      2400,
+      2400
+     ],
+     "vol_ia": 157
+    }
+   ],
+   "n_perguntas": 45,
+   "cpc_mais_alto": [
+    {
+     "kw": "plano de saúde empresa",
+     "tema": "saude",
+     "vol": 1000,
+     "cpc": 7.54,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 60,
+     "meses": [
+      1000,
+      720,
+      590,
+      1000,
+      880,
+      1000,
+      1000,
+      1000,
+      880,
+      1000,
+      1000,
+      1600
+     ],
+     "vol_ia": null
+    },
+    {
+     "kw": "plano de saúde da empresa",
+     "tema": "saude",
+     "vol": 1000,
+     "cpc": 7.54,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 60,
+     "meses": [
+      1000,
+      720,
+      590,
+      1000,
+      880,
+      1000,
+      1000,
+      1000,
+      880,
+      1000,
+      1000,
+      1600
+     ],
+     "vol_ia": null
+    },
+    {
+     "kw": "plano de saúde para empresas",
+     "tema": "saude",
+     "vol": 1000,
+     "cpc": 7.54,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 60,
+     "meses": [
+      1000,
+      720,
+      590,
+      1000,
+      880,
+      1000,
+      1000,
+      1000,
+      880,
+      1000,
+      1000,
+      1600
+     ],
+     "vol_ia": null
+    },
+    {
+     "kw": "plano de saúde para empresa",
+     "tema": "saude",
+     "vol": 880,
+     "cpc": 7.52,
+     "conc": "HIGH",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      1000,
+      1000,
+      720,
+      590,
+      1000,
+      880,
+      1000,
+      1000,
+      1000,
+      880,
+      1000,
+      1000
+     ],
+     "vol_ia": null
+    },
+    {
+     "kw": "advogado especialista em plano de saúde",
+     "tema": "saude",
+     "vol": 720,
+     "cpc": 7.46,
+     "conc": "HIGH",
+     "kd": 12,
+     "intencao": "commercial",
+     "tend_ano": -63,
+     "meses": [
+      880,
+      720,
+      590,
+      880,
+      720,
+      1000,
+      720,
+      720,
+      720,
+      720,
+      720,
+      590
+     ],
+     "vol_ia": null
+    },
+    {
+     "kw": "advogado especializado em plano de saúde",
+     "tema": "saude",
+     "vol": 720,
+     "cpc": 7.46,
+     "conc": "HIGH",
+     "kd": 12,
+     "intencao": "commercial",
+     "tend_ano": -63,
+     "meses": [
+      880,
+      720,
+      590,
+      880,
+      720,
+      1000,
+      720,
+      720,
+      720,
+      720,
+      720,
+      590
+     ],
+     "vol_ia": null
+    },
+    {
+     "kw": "plano de saúde para pj",
+     "tema": "saude",
+     "vol": 1000,
+     "cpc": 6.97,
+     "conc": "HIGH",
+     "kd": 16,
+     "intencao": "commercial",
+     "tend_ano": -23,
+     "meses": [
+      1300,
+      880,
+      720,
+      1300,
+      1000,
+      1300,
+      1300,
+      1300,
+      1000,
+      1000,
+      1000,
+      1000
+     ],
+     "vol_ia": null
+    },
+    {
+     "kw": "plano de saúde empresarial",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 6.9,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      3600,
+      2900,
+      2900,
+      4400,
+      3600,
+      5400,
+      3600,
+      3600,
+      3600,
+      3600,
+      3600,
+      4400
+     ],
+     "vol_ia": 139
+    },
+    {
+     "kw": "plano de saúde empresariais",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 6.9,
+     "conc": "MEDIUM",
+     "kd": 3,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      3600,
+      2900,
+      2900,
+      4400,
+      3600,
+      5400,
+      3600,
+      3600,
+      3600,
+      3600,
+      3600,
+      4400
+     ],
+     "vol_ia": 139
+    },
+    {
+     "kw": "plano empresarial de saúde",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 6.9,
+     "conc": "MEDIUM",
+     "kd": 3,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      3600,
+      2900,
+      2900,
+      4400,
+      3600,
+      5400,
+      3600,
+      3600,
+      3600,
+      3600,
+      3600,
+      4400
+     ],
+     "vol_ia": 139
+    }
+   ],
+   "cabeca": {
+    "kw": "plano de saúde",
+    "tema": "saude",
+    "vol": 90500,
+    "cpc": 2.33,
+    "conc": "MEDIUM",
+    "kd": 33,
+    "intencao": "commercial",
+    "tend_ano": -18,
+    "meses": [
+     90500,
+     74000,
+     60500,
+     90500,
+     74000,
+     90500,
+     90500,
+     90500,
+     74000,
+     90500,
+     90500,
+     74000
+    ],
+    "vol_ia": 18199
+   },
+   "top_ia": [
+    {
+     "kw": "plano de saúde",
+     "tema": "saude",
+     "vol": 90500,
+     "cpc": 2.33,
+     "conc": "MEDIUM",
+     "kd": 33,
+     "intencao": "commercial",
+     "tend_ano": -18,
+     "meses": [
+      90500,
+      74000,
+      60500,
+      90500,
+      74000,
+      90500,
+      90500,
+      90500,
+      74000,
+      90500,
+      90500,
+      74000
+     ],
+     "vol_ia": 18199
+    },
+    {
+     "kw": "mais saúde plano de saúde",
+     "tema": "saude",
+     "vol": 1300,
+     "cpc": 1.12,
+     "conc": "LOW",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      1300,
+      1000,
+      1000,
+      1300,
+      1300,
+      1900,
+      1300,
+      1600,
+      1300,
+      1600,
+      1600,
+      1600
+     ],
+     "vol_ia": 18199
+    },
+    {
+     "kw": "qual melhor plano de saúde",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 1.07,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": 0,
+     "meses": [
+      3600,
+      3600,
+      3600,
+      2900,
+      3600,
+      3600,
+      4400,
+      4400,
+      3600,
+      2900,
+      3600,
+      3600
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "qual o melhor plano de saúde",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 1.15,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -19,
+     "meses": [
+      3600,
+      3600,
+      2900,
+      3600,
+      3600,
+      4400,
+      4400,
+      3600,
+      2900,
+      3600,
+      3600,
+      2900
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "qual o plano de saúde melhor",
+     "tema": "saude",
+     "vol": 3600,
+     "cpc": 1.15,
+     "conc": "MEDIUM",
+     "kd": null,
+     "intencao": "commercial",
+     "tend_ano": null,
+     "meses": [
+      3600,
+      3600,
+      2900,
+      3600,
+      3600,
+      4400,
+      4400,
+      3600,
+      2900,
+      3600,
+      3600,
+      2900
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "plano de saúde qual o melhor",
+     "tema": "saude",
+     "vol": 2900,
+     "cpc": 1.55,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2900,
+      2900,
+      2400,
+      2400,
+      2900,
+      2900,
+      3600,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "melhor plano de saúde",
+     "tema": "saude",
+     "vol": 2400,
+     "cpc": 1.48,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2900,
+      2400,
+      2400,
+      2900,
+      2900,
+      3600,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "plano de saúde melhor",
+     "tema": "saude",
+     "vol": 2400,
+     "cpc": 1.48,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2900,
+      2400,
+      2400,
+      2900,
+      2900,
+      3600,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "melhores plano de saúde",
+     "tema": "saude",
+     "vol": 2400,
+     "cpc": 1.48,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2900,
+      2400,
+      2400,
+      2900,
+      2900,
+      3600,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "plano de saúde melhores",
+     "tema": "saude",
+     "vol": 2400,
+     "cpc": 1.48,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "commercial",
+     "tend_ano": -17,
+     "meses": [
+      2900,
+      2400,
+      2400,
+      2900,
+      2900,
+      3600,
+      2900,
+      2400,
+      2400,
+      2400,
+      2400,
+      2400
+     ],
+     "vol_ia": 2620
+    },
+    {
+     "kw": "valor plano de saúde",
+     "tema": "saude",
+     "vol": 2900,
+     "cpc": 1.47,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "informational",
+     "tend_ano": -19,
+     "meses": [
+      3600,
+      2900,
+      2400,
+      3600,
+      2900,
+      3600,
+      3600,
+      3600,
+      2900,
+      2900,
+      2900,
+      2900
+     ],
+     "vol_ia": 2288
+    },
+    {
+     "kw": "plano de saúde valor",
+     "tema": "saude",
+     "vol": 2900,
+     "cpc": 1.47,
+     "conc": "MEDIUM",
+     "kd": 0,
+     "intencao": "informational",
+     "tend_ano": -19,
+     "meses": [
+      3600,
+      2900,
+      2400,
+      3600,
+      2900,
+      3600,
+      3600,
+      3600,
+      2900,
+      2900,
+      2900,
+      2900
+     ],
+     "vol_ia": 2288
+    }
+   ],
+   "vol_ia_total": 109224,
+   "vol_google_com_ia": 1598000
+  }
+ },
+ "aio_dominios": {
+  "seguro auto": [
+   {
+    "dominio": "youtube.com",
+    "mencoes": 50,
+    "volume_ia": 39290
+   },
+   {
+    "dominio": "portoseguro.com.br",
+    "mencoes": 48,
+    "volume_ia": 56210
+   },
+   {
+    "dominio": "minutoseguros.com.br",
+    "mencoes": 39,
+    "volume_ia": 27430
+   },
+   {
+    "dominio": "facebook.com",
+    "mencoes": 24,
+    "volume_ia": 22380
+   },
+   {
+    "dominio": "instagram.com",
+    "mencoes": 21,
+    "volume_ia": 5840
+   },
+   {
+    "dominio": "allianz.com.br",
+    "mencoes": 18,
+    "volume_ia": 18620
+   },
+   {
+    "dominio": "itau.com.br",
+    "mencoes": 18,
+    "volume_ia": 17790
+   },
+   {
+    "dominio": "santander.com.br",
+    "mencoes": 18,
+    "volume_ia": 10240
+   },
+   {
+    "dominio": "seguroauto.org",
+    "mencoes": 18,
+    "volume_ia": 5500
+   },
+   {
+    "dominio": "bradescoseguros.com.br",
+    "mencoes": 17,
+    "volume_ia": 5720
+   }
+  ],
+  "seguro de carro": [
+   {
+    "dominio": "youtube.com",
+    "mencoes": 126,
+    "volume_ia": 131300
+   },
+   {
+    "dominio": "suhaiseguradora.com",
+    "mencoes": 67,
+    "volume_ia": 54030
+   },
+   {
+    "dominio": "portoseguro.com.br",
+    "mencoes": 62,
+    "volume_ia": 115110
+   },
+   {
+    "dominio": "smartia.com.br",
+    "mencoes": 35,
+    "volume_ia": 16000
+   },
+   {
+    "dominio": "instagram.com",
+    "mencoes": 33,
+    "volume_ia": 13650
+   },
+   {
+    "dominio": "minutoseguros.com.br",
+    "mencoes": 31,
+    "volume_ia": 68740
+   },
+   {
+    "dominio": "seguroauto.org",
+    "mencoes": 30,
+    "volume_ia": 16460
+   },
+   {
+    "dominio": "pier.digital",
+    "mencoes": 28,
+    "volume_ia": 37820
+   },
+   {
+    "dominio": "idinheiro.com.br",
+    "mencoes": 27,
+    "volume_ia": 29470
+   },
+   {
+    "dominio": "aemcorretoradeseguros.com.br",
+    "mencoes": 27,
+    "volume_ia": 25480
+   }
+  ],
+  "plano de saúde": [
+   {
+    "dominio": "youtube.com",
+    "mencoes": 666,
+    "volume_ia": 825990
+   },
+   {
+    "dominio": "instagram.com",
+    "mencoes": 494,
+    "volume_ia": 315640
+   },
+   {
+    "dominio": "gndi.com.br",
+    "mencoes": 190,
+    "volume_ia": 121440
+   },
+   {
+    "dominio": "companyhero.com",
+    "mencoes": 170,
+    "volume_ia": 218660
+   },
+   {
+    "dominio": "facebook.com",
+    "mencoes": 155,
+    "volume_ia": 192660
+   },
+   {
+    "dominio": "gov.br",
+    "mencoes": 149,
+    "volume_ia": 72910
+   },
+   {
+    "dominio": "unimed.coop.br",
+    "mencoes": 147,
+    "volume_ia": 157020
+   },
+   {
+    "dominio": "compareplanodesaude.com.br",
+    "mencoes": 120,
+    "volume_ia": 71150
+   },
+   {
+    "dominio": "tabelasaude.com",
+    "mencoes": 120,
+    "volume_ia": 57230
+   },
+   {
+    "dominio": "eltonfernandes.com.br",
+    "mencoes": 114,
+    "volume_ia": 39430
+   }
+  ]
+ },
+ "aio_perguntas": {
+  "seguro auto": [
+   {
+    "pergunta": "seguro auto",
+    "volume_ia": 12100,
+    "fontes": [
+     "allianz.com.br",
+     "tokiomarine.com.br",
+     "portoseguro.com.br",
+     "semparar.com.br",
+     "saude.sulamericaseguros.com.br",
+     "youtube.com"
+    ]
+   },
+   {
+    "pergunta": "porto seguro auto",
+    "volume_ia": 8100,
+    "fontes": [
+     "portoseguro.com.br",
+     "itau.com.br"
+    ]
+   },
+   {
+    "pergunta": "cotação seguro auto",
+    "volume_ia": 4400,
+    "fontes": [
+     "cote.allianz.com.br",
+     "minutoseguros.com.br",
+     "portoseguro.com.br",
+     "assinatura.azulseguros.com.br",
+     "tokiomarine.com.br",
+     "pier.digital"
+    ]
+   },
+   {
+    "pergunta": "cotar seguro auto",
+    "volume_ia": 4400,
+    "fontes": [
+     "cote.allianz.com.br",
+     "minutoseguros.com.br",
+     "portoseguro.com.br",
+     "assinatura.azulseguros.com.br",
+     "tokiomarine.com.br",
+     "pier.digital"
+    ]
+   },
+   {
+    "pergunta": "seguro auto santander",
+    "volume_ia": 4400,
+    "fontes": [
+     "santander.com.br",
+     "reclameaqui.com.br",
+     "facebook.com"
+    ]
+   },
+   {
+    "pergunta": "telefone porto seguro auto",
+    "volume_ia": 3600,
+    "fontes": [
+     "portoseguro.com.br",
+     "feisercorretora.com.br"
+    ]
+   },
+   {
+    "pergunta": "azul seguro auto",
+    "volume_ia": 3600,
+    "fontes": [
+     "itau.com.br",
+     "azulseguros.com.br",
+     "portoseguro.com.br",
+     "assinatura.azulseguros.com.br",
+     "facebook.com",
+     "smartia.com.br"
+    ]
+   },
+   {
+    "pergunta": "porto seguro auto telefone",
+    "volume_ia": 2900,
+    "fontes": [
+     "portoseguro.com.br",
+     "feisercorretora.com.br",
+     "minutoseguros.com.br",
+     "youtube.com",
+     "7ases.com.br"
+    ]
+   },
+   {
+    "pergunta": "porto seguro telefone auto",
+    "volume_ia": 2900,
+    "fontes": [
+     "portoseguro.com.br",
+     "feisercorretora.com.br",
+     "minutoseguros.com.br"
+    ]
+   },
+   {
+    "pergunta": "tokio marine seguro auto",
+    "volume_ia": 1600,
+    "fontes": [
+     "tokiomarine.com.br"
+    ]
+   },
+   {
+    "pergunta": "seguro bb auto telefone",
+    "volume_ia": 1300,
+    "fontes": [
+     "bbseguros.com.br"
+    ]
+   },
+   {
+    "pergunta": "bradesco seguro auto telefone",
+    "volume_ia": 1000,
+    "fontes": [
+     "bradescoseguros.com.br",
+     "jlealseguros.com.br",
+     "minutoseguros.com.br"
+    ]
+   },
+   {
+    "pergunta": "ituran seguro auto",
+    "volume_ia": 1000,
+    "fontes": [
+     "ituran.com.br",
+     "loja.ituran.com.br",
+     "youtube.com"
+    ]
+   },
+   {
+    "pergunta": "seguro auto itau",
+    "volume_ia": 1000,
+    "fontes": [
+     "itau.com.br",
+     "youtube.com"
+    ]
+   },
+   {
+    "pergunta": "telefone da porto seguro auto",
+    "volume_ia": 1000,
+    "fontes": [
+     "portoseguro.com.br",
+     "feisercorretora.com.br"
+    ]
+   }
+  ],
+  "seguro de carro": [
+   {
+    "pergunta": "seguro de carro",
+    "volume_ia": 49500,
+    "fontes": [
+     "allianz.com.br",
+     "tokiomarine.com.br",
+     "portoseguro.com.br",
+     "bradescoseguros.com.br",
+     "youtube.com",
+     "justos.com.br"
+    ]
+   },
+   {
+    "pergunta": "cotar seguro de carro",
+    "volume_ia": 4400,
+    "fontes": [
+     "tokiomarine.com.br",
+     "portoseguro.com.br",
+     "bradescoseguros.com.br",
+     "assinatura.azulseguros.com.br",
+     "autocompara.com.br",
+     "youtube.com"
+    ]
+   },
+   {
+    "pergunta": "cotacao seguro de carro",
+    "volume_ia": 4400,
+    "fontes": [
+     "cote.allianz.com.br",
+     "autocompara.com.br",
+     "tokiomarine.com.br",
+     "portoseguro.com.br",
+     "bidu.com.br",
+     "pier.digital"
+    ]
+   },
+   {
+    "pergunta": "seguro de carro cotação",
+    "volume_ia": 4400,
+    "fontes": [
+     "cote.allianz.com.br",
+     "autocompara.com.br",
+     "tokiomarine.com.br",
+     "portoseguro.com.br",
+     "bidu.com.br",
+     "pier.digital"
+    ]
+   },
+   {
+    "pergunta": "cotação de seguro de carro",
+    "volume_ia": 4400,
+    "fontes": [
+     "cote.allianz.com.br",
+     "youse.com.br",
+     "portoseguro.com.br",
+     "pier.digital",
+     "santander.com.br",
+     "suhaiseguradora.com"
+    ]
+   },
+   {
+    "pergunta": "seguro de carro cotacao",
+    "volume_ia": 4400,
+    "fontes": [
+     "portoseguro.com.br",
+     "pier.digital",
+     "meuseguromaisbarato.com.br",
+     "neoseguradora.com.br",
+     "suhaiseguradora.com",
+     "minutoseguros.com.br"
+    ]
+   },
+   {
+    "pergunta": "cotacao de seguro de carro",
+    "volume_ia": 4400,
+    "fontes": [
+     "youtube.com",
+     "pier.digital",
+     "portoseguro.com.br",
+     "suhaiseguradora.com",
+     "autocertoveiculosjf.com.br",
+     "meuseguromaisbarato.com.br"
+    ]
+   },
+   {
+    "pergunta": "aluguel de carro na porto seguro",
+    "volume_ia": 3600,
+    "fontes": [
+     "localiza.com",
+     "rentcars.com",
+     "movida.com.br",
+     "unidas.com.br",
+     "skyscanner.com.br",
+     "instagram.com"
+    ]
+   },
+   {
+    "pergunta": "melhor seguro de carro",
+    "volume_ia": 2900,
+    "fontes": [
+     "portoseguro.com.br",
+     "allianz.com.br",
+     "youtube.com",
+     "smartia.com.br",
+     "portalvaleseguros.com.br",
+     "suhaiseguradora.com"
+    ]
+   },
+   {
+    "pergunta": "seguro de carro qual o melhor",
+    "volume_ia": 2900,
+    "fontes": [
+     "portoseguro.com.br",
+     "tokiomarine.com.br",
+     "companyhero.com",
+     "portalvaleseguros.com.br"
+    ]
+   },
+   {
+    "pergunta": "seguro de um carro",
+    "volume_ia": 2900,
+    "fontes": [
+     "portoseguro.com.br",
+     "allianz.com.br",
+     "autocompara.com.br",
+     "minutoseguros.com.br",
+     "youtube.com",
+     "suhaiseguradora.com"
+    ]
+   },
+   {
+    "pergunta": "aluguel de carro em porto seguro",
+    "volume_ia": 2400,
+    "fontes": [
+     "localiza.com",
+     "rentcars.com",
+     "kayak.com.br",
+     "skyscanner.com.br",
+     "instagram.com"
+    ]
+   },
+   {
+    "pergunta": "seguros de carro porto seguro",
+    "volume_ia": 2400,
+    "fontes": [
+     "portoseguro.com.br",
+     "itau.com.br",
+     "youtube.com"
+    ]
+   },
+   {
+    "pergunta": "porto seguro seguros de carro",
+    "volume_ia": 2400,
+    "fontes": [
+     "portoseguro.com.br",
+     "itau.com.br",
+     "youtube.com"
+    ]
+   },
+   {
+    "pergunta": "seguro de carro porto seguro",
+    "volume_ia": 2400,
+    "fontes": [
+     "portoseguro.com.br",
+     "itau.com.br",
+     "aemcorretoradeseguros.com.br",
+     "idinheiro.com.br"
+    ]
+   }
+  ],
+  "plano de saúde": [
+   {
+    "pergunta": "plano de saúde",
+    "volume_ia": 90500,
+    "fontes": [
+     "planosdesaudetodosaqui.com.br",
+     "youtube.com",
+     "facebook.com"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde da unimed",
+    "volume_ia": 60500,
+    "fontes": [
+     "unimed.coop.br",
+     "unimedcuritiba.com.br",
+     "unimedsorocaba.coop.br",
+     "unimed-assis.coop.br",
+     "youtube.com",
+     "tabelasplanosdesaude.com.br"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde bradesco",
+    "volume_ia": 40500,
+    "fontes": [
+     "bradescosaudeconvenios.com.br",
+     "bradescoseguros.com.br",
+     "wwws.bradescosaude.com.br",
+     "conveniosaudebradesco.com.br",
+     "planodesaudebradescosp.com.br",
+     "saudebradescospg.com.br"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde do bradesco",
+    "volume_ia": 40500,
+    "fontes": [
+     "bradescosaudeconvenios.com.br",
+     "bradescoseguros.com.br",
+     "conveniosaudebradesco.com.br",
+     "medlifeseguros.com.br",
+     "doutoresprotect.com.br"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde amil",
+    "volume_ia": 40500,
+    "fontes": [
+     "amil.com.br",
+     "institucional.amil.com.br",
+     "amilsaudebr.com.br",
+     "planosdesaudeamilrj.com.br",
+     "planossaudeamil.com.br",
+     "companyhero.com"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde da amil",
+    "volume_ia": 40500,
+    "fontes": [
+     "amil.com.br",
+     "amilplanos.com.br",
+     "institucional.amil.com.br",
+     "imedialsaude.com.br",
+     "planodesaudeamil.com.br",
+     "garantiaseg.com.br"
+    ]
+   },
+   {
+    "pergunta": "amil plano de saúde",
+    "volume_ia": 33100,
+    "fontes": [
+     "amil.com.br",
+     "institucional.amil.com.br",
+     "amilsaudebr.com.br",
+     "planosdesaudeamilrj.com.br",
+     "planossaudeamil.com.br",
+     "companyhero.com"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde pet",
+    "volume_ia": 27100,
+    "fontes": [
+     "saude.petlove.com.br",
+     "petz.com.br",
+     "inter.co",
+     "instagram.com",
+     "petmaissaude.com.br",
+     "melhores.com"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde da hapvida",
+    "volume_ia": 18100,
+    "fontes": [
+     "www2.hapvida.com.br",
+     "portal-beneficiario.hapvida.com.br",
+     "hbsaude.com.br",
+     "tabelaplanos.com.br",
+     "youtube.com",
+     "garantiaseg.com.br"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde hapvida",
+    "volume_ia": 18100,
+    "fontes": [
+     "www2.hapvida.com.br",
+     "tabelaplanos.com.br",
+     "hapvidaconvenios.com.br",
+     "youtube.com"
+    ]
+   },
+   {
+    "pergunta": "sulamerica plano de saúde",
+    "volume_ia": 14800,
+    "fontes": [
+     "portal.sulamericaseguros.com.br",
+     "saude.sulamericaseguros.com.br",
+     "instagram.com",
+     "youtube.com",
+     "sulamericasaudebrasil.com.br"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde individual",
+    "volume_ia": 14800,
+    "fontes": [
+     "conveniosaudebradesco.com.br",
+     "youtube.com"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde sulamerica",
+    "volume_ia": 12100,
+    "fontes": [
+     "portal.sulamericaseguros.com.br",
+     "saude.sulamericaseguros.com.br",
+     "instagram.com",
+     "youtube.com",
+     "sulamericasaudebrasil.com.br"
+    ]
+   },
+   {
+    "pergunta": "plano de saúde sulamérica",
+    "volume_ia": 12100,
+    "fontes": [
+     "saude.sulamericaseguros.com.br",
+     "portal.sulamericaseguros.com.br",
+     "saudesulamericasa.com.br",
+     "youtube.com",
+     "instagram.com"
+    ]
+   },
+   {
+    "pergunta": "valor plano de saúde unimed",
+    "volume_ia": 12100,
+    "fontes": [
+     "tabelasplanosdesaude.com.br",
+     "cotacao.facaseuplanodesaude.com.br"
+    ]
+   }
+  ]
+ },
+ "aio_fontes_top": [
+  [
+   "youtube.com",
+   54
+  ],
+  [
+   "portoseguro.com.br",
+   37
+  ],
+  [
+   "cote.allianz.com.br",
+   15
+  ],
+  [
+   "minutoseguros.com.br",
+   15
+  ],
+  [
+   "suhaiseguradora.com",
+   15
+  ],
+  [
+   "pier.digital",
+   14
+  ],
+  [
+   "tokiomarine.com.br",
+   11
+  ],
+  [
+   "instagram.com",
+   11
+  ],
+  [
+   "allianz.com.br",
+   10
+  ],
+  [
+   "facebook.com",
+   10
+  ],
+  [
+   "idinheiro.com.br",
+   10
+  ],
+  [
+   "companyhero.com",
+   10
+  ],
+  [
+   "bradescoseguros.com.br",
+   9
+  ],
+  [
+   "autocompara.com.br",
+   9
+  ],
+  [
+   "smartia.com.br",
+   7
+  ]
+ ],
+ "chatgpt_en_perguntas": {
+  "car insurance": [
+   {
+    "pergunta": "what car insurance company to stay away from?",
+    "volume_ia": 6725,
+    "fan_out": [
+     "Arizona auto insurance complaints NAIC complaint index 2025 insurers",
+     "Arizona Department Insurance auto insurance complaint ratios companies 2025"
+    ]
+   },
+   {
+    "pergunta": "who is the cheapest car insurance right now?",
+    "volume_ia": 3445,
+    "fan_out": [
+     "cheapest car insurance 2026 South Carolina average rates State Farm Auto-Owners USAA GEICO"
+    ]
+   },
+   {
+    "pergunta": "who has got the cheapest car insurance?",
+    "volume_ia": 2348,
+    "fan_out": [
+     "cheapest car insurance companies 2026 average rates US"
+    ]
+   },
+   {
+    "pergunta": "is $200 a month a lot for car insurance?",
+    "volume_ia": 2180,
+    "fan_out": []
+   },
+   {
+    "pergunta": "is $300 a month normal for car insurance?",
+    "volume_ia": 1507,
+    "fan_out": [
+     "Texas average car insurance monthly 2026 full coverage $300 month rates",
+     "Texas car insurance average rates 2026 monthly full coverage"
+    ]
+   },
+   {
+    "pergunta": "is $300 a month too much for car insurance?",
+    "volume_ia": 1422,
+    "fan_out": [
+     "Texas average car insurance cost 2026 full coverage monthly rates",
+     "Texas average car insurance cost 2026 full coverage monthly rates"
+    ]
+   },
+   {
+    "pergunta": "who has the cheapest car insurance right now?",
+    "volume_ia": 1181,
+    "fan_out": [
+     "cheapest car insurance 2026 Arkansas average rates State Farm GEICO Auto-Owners Progressive",
+     "Arkansas car insurance cheapest companies 2026 rates"
+    ]
+   },
+   {
+    "pergunta": "who is the cheapest car insurance in texas?",
+    "volume_ia": 967,
+    "fan_out": [
+     "cheapest car insurance Texas 2026 rates minimum full coverage Texas Farm Bureau State Farm GEICO",
+     "Texas Department of Insurance auto insurance compare rates minimum coverage Texas"
+    ]
+   },
+   {
+    "pergunta": "is $50 a month a lot for car insurance?",
+    "volume_ia": 900,
+    "fan_out": [
+     "average car insurance cost per month United States 2026 full coverage liability 2026"
+    ]
+   },
+   {
+    "pergunta": "is $300 a month a lot for car insurance?",
+    "volume_ia": 883,
+    "fan_out": [
+     "New York average car insurance monthly 2026 full coverage $300 a month car insurance",
+     "New York car insurance average rates 2026 Bankrate NerdWallet"
+    ]
+   },
+   {
+    "pergunta": "can my girlfriend drive my car if she's not on my insurance?",
+    "volume_ia": 871,
+    "fan_out": [
+     "Michigan insurance permissive use driver not listed on policy girlfriend drive my car auto insurance",
+     "Michigan auto insurance permissive use household resident driver named insured policy"
+    ]
+   },
+   {
+    "pergunta": "will my car insurance go up if i use safelite?",
+    "volume_ia": 681,
+    "fan_out": [
+     "Safelite insurance claim rates increase comprehensive glass claim deductible New York auto insurance",
+     "New York Department Financial Services auto insurance glass claim rates comprehensive windshield"
+    ]
+   },
+   {
+    "pergunta": "who has cheaper car insurance than state farm?",
+    "volume_ia": 637,
+    "fan_out": [
+     "cheaper car insurance companies than State Farm average rates 2026"
+    ]
+   },
+   {
+    "pergunta": "is $300 a month for car insurance bad?",
+    "volume_ia": 607,
+    "fan_out": [
+     "Pennsylvania average car insurance cost 2026 full coverage monthly",
+     "Pennsylvania car insurance average monthly cost 2026"
+    ]
+   },
+   {
+    "pergunta": "is it worth getting extra insurance on a rental car?",
+    "volume_ia": 607,
+    "fan_out": [
+     "rental car insurance collision damage waiver credit card personal auto insurance coverage rental car 2026"
+    ]
+   }
+  ],
+  "health insurance": [
+   {
+    "pergunta": "is $500 a month normal for health insurance?",
+    "volume_ia": 3545,
+    "fan_out": [
+     "2026 average health insurance premium individual monthly ACA Florida $500",
+     "2026 health insurance premiums average individual Florida ACA"
+    ]
+   },
+   {
+    "pergunta": "is $200 a month a lot for health insurance?",
+    "volume_ia": 2438,
+    "fan_out": [
+     "2026 average monthly health insurance premium individual ACA marketplace California 2026",
+     "2026 average employee health insurance premium monthly worker contribution individual coverage KFF"
+    ]
+   },
+   {
+    "pergunta": "is parkinson's disease covered by health insurance?",
+    "volume_ia": 2387,
+    "fan_out": [
+     "Parkinson's disease health insurance coverage Medicare Medicaid treatment coverage United States",
+     "Parkinson's disease insurance coverage health plans pre-existing condition ACA"
+    ]
+   },
+   {
+    "pergunta": "does health insurance cover bipolar disorder?",
+    "volume_ia": 2153,
+    "fan_out": [
+     "does health insurance cover bipolar disorder mental health parity"
+    ]
+   },
+   {
+    "pergunta": "is $200 a month expensive for health insurance?",
+    "volume_ia": 2024,
+    "fan_out": [
+     "2026 average monthly health insurance premium ACA marketplace individual benchmark premium 2026 KFF",
+     "2026 ACA marketplace premiums average monthly premium subsidies CMS 2026"
+    ]
+   },
+   {
+    "pergunta": "what is the top 5 best health insurance?",
+    "volume_ia": 1552,
+    "fan_out": [
+     "best health insurance companies 2026 US J.D. Power NCQA Aetna Kaiser Blue Cross UnitedHealthcare Cigna",
+     "2026 health insurance ratings NCQA commercial health plans Kaiser Blue Cross Aetna Cigna UnitedHealthcare"
+    ]
+   },
+   {
+    "pergunta": "can a diabetic get health insurance?",
+    "volume_ia": 1534,
+    "fan_out": [
+     "diabetes health insurance pre-existing condition ACA marketplace cannot deny coverage official healthcare.gov",
+     "diabetes health insurance pre-existing conditions HIPAA employer coverage official"
+    ]
+   },
+   {
+    "pergunta": "is pancreatitis covered in health insurance?",
+    "volume_ia": 1111,
+    "fan_out": [
+     "pancreatitis hospitalization health insurance coverage ACA pre-existing condition emergency treatment United States",
+     "pancreatitis treatment insurance coverage hospital medically necessary health insurance"
+    ]
+   },
+   {
+    "pergunta": "what are the top 3 health insurances?",
+    "volume_ia": 980,
+    "fan_out": [
+     "best health insurance companies United States 2026 J.D. Power NCQA ratings Blue Cross Blue Shield UnitedHealthcare Kaiser Permanente",
+     "2026 health insurance marketplace insurers network ratings UnitedHealthcare Blue Cross Blue Shield Kaiser Permanente"
+    ]
+   },
+   {
+    "pergunta": "does health insurance cover thyroid?",
+    "volume_ia": 915,
+    "fan_out": [
+     "health insurance coverage thyroid disease treatment tests medication United States ACA pre-existing condition",
+     "thyroid tests insurance coverage hypothyroidism treatment health insurance"
+    ]
+   },
+   {
+    "pergunta": "is psoriasis covered under health insurance?",
+    "volume_ia": 868,
+    "fan_out": [
+     "psoriasis health insurance coverage United States medically necessary treatment insurance HealthCare.gov psoriasis",
+     "psoriasis coverage insurance biologics prior authorization American Academy Dermatology insurance"
+    ]
+   },
+   {
+    "pergunta": "can my health insurance pay for a gym membership?",
+    "volume_ia": 848,
+    "fan_out": [
+     "health insurance gym membership reimbursement fitness benefit 2026 insurance plan gym membership",
+     "insurance gym membership reimbursement fitness benefit Medicare Advantage 2026"
+    ]
+   },
+   {
+    "pergunta": "does health insurance cover a pacemaker?",
+    "volume_ia": 822,
+    "fan_out": [
+     "does health insurance cover pacemaker implantation medically necessary"
+    ]
+   },
+   {
+    "pergunta": "what health insurance covers zepbound?",
+    "volume_ia": 788,
+    "fan_out": [
+     "health insurance plans cover Zepbound tirzepatide coverage 2026"
+    ]
+   },
+   {
+    "pergunta": "is $300 a month a lot for health insurance?",
+    "volume_ia": 771,
+    "fan_out": [
+     "2026 average health insurance premium individual ACA marketplace monthly premium subsidies KFF 2026",
+     "2026 ACA marketplace premiums average monthly premium subsidies CMS 2026"
+    ]
+   }
+  ]
+ },
+ "chatgpt_en_dominios": {
+  "car insurance": [
+   {
+    "dominio": "nerdwallet.com",
+    "mencoes": 1086,
+    "volume_ia": 42241
+   },
+   {
+    "dominio": "moneygeek.com",
+    "mencoes": 816,
+    "volume_ia": 13917
+   },
+   {
+    "dominio": "progressive.com",
+    "mencoes": 636,
+    "volume_ia": 11463
+   },
+   {
+    "dominio": "insurance.com",
+    "mencoes": 559,
+    "volume_ia": 20378
+   },
+   {
+    "dominio": "experian.com",
+    "mencoes": 497,
+    "volume_ia": 10793
+   },
+   {
+    "dominio": "forbes.com",
+    "mencoes": 467,
+    "volume_ia": 3592
+   },
+   {
+    "dominio": "carinsurance.com",
+    "mencoes": 417,
+    "volume_ia": 9614
+   },
+   {
+    "dominio": "insure.com",
+    "mencoes": 402,
+    "volume_ia": 4673
+   },
+   {
+    "dominio": "geico.com",
+    "mencoes": 374,
+    "volume_ia": 7171
+   },
+   {
+    "dominio": "compare.com",
+    "mencoes": 327,
+    "volume_ia": 4832
+   }
+  ],
+  "health insurance": [
+   {
+    "dominio": "healthcare.gov",
+    "mencoes": 1052,
+    "volume_ia": 41485
+   },
+   {
+    "dominio": "legalclarity.org",
+    "mencoes": 454,
+    "volume_ia": 3141
+   },
+   {
+    "dominio": "moneygeek.com",
+    "mencoes": 380,
+    "volume_ia": 4763
+   },
+   {
+    "dominio": "kff.org",
+    "mencoes": 361,
+    "volume_ia": 18929
+   },
+   {
+    "dominio": "healthinsurance.org",
+    "mencoes": 345,
+    "volume_ia": 2629
+   },
+   {
+    "dominio": "forbes.com",
+    "mencoes": 315,
+    "volume_ia": 1900
+   },
+   {
+    "dominio": "reddit.com",
+    "mencoes": 307,
+    "volume_ia": 2386
+   },
+   {
+    "dominio": "cms.gov",
+    "mencoes": 281,
+    "volume_ia": 10214
+   },
+   {
+    "dominio": "valuepenguin.com",
+    "mencoes": 191,
+    "volume_ia": 2774
+   },
+   {
+    "dominio": "irs.gov",
+    "mencoes": 181,
+    "volume_ia": 5873
+   }
+  ]
+ },
+ "respostas": {
+  "qual a melhor seguradora de carro no brasil": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Allianz",
+     "Azul Seguros",
+     "Porto Seguro",
+     "Tokio Marine"
+    ],
+    "fontes": [
+     "reviewauto.com.br",
+     "idinheiro.com.br",
+     "portoseguro.com.br",
+     "tokiomarine.com.br",
+     "azulseguros.com.br",
+     "cnnbrasil.com.br",
+     "virtuscorretora.com.br",
+     "allianz.com.br"
+    ],
+    "n_fontes": 9,
+    "trecho": "Pesquisei rankings e dados recentes sobre seguro auto no Brasil, considerando reputação dos clientes, resolução de reclamações e coberturas. Não existe uma única seguradora que seja a melhor para todos os motoristas\\: o preço e as condições dependem do carro, do CEP, do perfil do condutor e das coberturas contratadas. Quais seguradoras vale comparar em 2026? ! 1\\. Porto Seguro Boa opção para quem procura seguro compl"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Allianz",
+     "Azul Seguros",
+     "Bradesco Seguros",
+     "HDI",
+     "Mapfre",
+     "Porto Seguro",
+     "Suhai",
+     "Tokio Marine"
+    ],
+    "fontes": [
+     "solatiumseguros.com",
+     "minutoseguros.com.br",
+     "riorubiocorretora.com.br",
+     "virtuscorretora.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Não existe uma única \"melhor\" seguradora de carros absoluta para todos os perfis, pois o valor do seguro e a qualidade do atendimento variam muito conforme o seu CEP, modelo do veículo, idade e histórico de direção.No entanto, o mercado brasileiro conta com grandes líderes consolidadas que se destacam por solidez financeira, qualidade na prestação de serviços e ampla rede de oficinas referenciadas.As principais segur"
+   },
+   "Claude": {
+    "marcas": [
+     "Allianz",
+     "HDI",
+     "Justos",
+     "Porto Seguro",
+     "Suhai",
+     "Tokio Marine",
+     "Youse"
+    ],
+    "fontes": [
+     "solatiumseguros.com",
+     "virtuscorretora.com.br"
+    ],
+    "n_fontes": 2,
+    "trecho": "Não existe uma seguradora \"melhor\" para todo mundo. A resposta depende do seu perfil, do carro e do tipo de cobertura que você quer. Com base nas fontes que encontrei, este é o panorama: Quem costuma ser citado como referência geral - Porto Seguro: é a maior do mercado. Em seguro auto, a Porto Seguro lidera com cerca de 28% do mercado (somando as marcas Porto, Azul e Itaú Auto e Residência), seguida por Tokio Marine,"
+   },
+   "Perplexity": {
+    "marcas": [
+     "Allianz",
+     "Azul Seguros",
+     "HDI",
+     "Pier",
+     "Porto Seguro",
+     "Suhai",
+     "Tokio Marine"
+    ],
+    "fontes": [
+     "reviewauto.com.br",
+     "solatiumseguros.com",
+     "virtuscorretora.com.br",
+     "idinheiro.com.br",
+     "educandoseubolso.blog.br",
+     "comparaonline.com.br",
+     "mobills.com.br",
+     "smartia.com.br"
+    ],
+    "n_fontes": 8,
+    "trecho": "Não existe uma única “melhor” seguradora de carro no Brasil: a escolha depende do seu perfil, carro, CEP, uso e orçamento. Em termos gerais, Porto Seguro é uma das opções mais completas, enquanto Tokio Marine, Allianz, HDI e Azul costumam oferecer bom equilíbrio entre cobertura e preço.[2][9] Melhores opções por perfil - Porto Seguro: melhor para quem prioriza ampla rede de oficinas, assistência 24 horas e estrutura "
+   }
+  },
+  "quanto custa um seguro de carro por mês": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "avaliaseguros.com.br",
+     "meuseguromaisbarato.com.br",
+     "ecarts.com.br",
+     "forceseguros.com"
+    ],
+    "n_fontes": 4,
+    "trecho": "Pesquisei na web e, no Brasil, em 2026, um seguro de carro costuma custar entre R\\$ 120 e R\\$ 400 por mês para muitos carros de passeio. O valor pode ser maior dependendo do veículo e do perfil do motorista. Quanto custa por mês? | Valor do carro | Seguro mensal estimado | |--------|--------| | R\\$ 30 mil a R\\$ 50 mil | R\\$ 75 a R\\$ 250 | | R\\$ 50 mil a R\\$ 80 mil | R\\$ 125 a R\\$ 400 | | R\\$ 80 mil a R\\$ 120 mil | R\\"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Justos",
+     "Pier"
+    ],
+    "fontes": [
+     "blog.pier.digital",
+     "assinatura.localiza.com",
+     "justos.com.br"
+    ],
+    "n_fontes": 3,
+    "trecho": "No Brasil, o seguro de carro custa, em média, de R$ 100 a R$ 500 por mês (o que equivale a cerca de R$ 1.500 a R$ 5.000 por ano).Geralmente, o valor total do seguro representa de 3% a 6% do valor de mercado do veículo anualmente. Se você optar por parcelar o valor (muitas seguradoras oferecem divisão em até 10 ou 12 vezes), ele cairá nessa faixa mensal. O que faz o preço do seguro variar?O valor final não é fixo e mu"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "aemcorretoradeseguros.com.br",
+     "rbspirajuseguros.com.br"
+    ],
+    "n_fontes": 2,
+    "trecho": "Em geral, um seguro de carro no Brasil fica entre cerca de R$ 100 e R$ 400 por mês, mas o valor depende do veículo, do perfil do motorista e da região. Algumas faixas encontradas: - Média de referência: um guia de 2026 indica que em média, é de R$ 100 a R$ 400 por mês em 2026, dependendo do modelo, do perfil do motorista e da região. - Dados de mercado: segundo o levantamento citado por uma corretora, os homens pagar"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "lexseguros.com.br",
+     "meuseguromaisbarato.com.br",
+     "g1.globo.com",
+     "suhaiseguradora.com",
+     "bv.com.br",
+     "smartia.com.br",
+     "idinheiro.com.br",
+     "okteleseguros.pt"
+    ],
+    "n_fontes": 10,
+    "trecho": "No Brasil, um seguro de carro costuma ficar entre R$ 100 e R$ 300 por mês para veículos comuns, mas pode variar de aproximadamente R$ 70 a R$ 600 conforme o carro, perfil do motorista, cidade e cobertura.[1][2] Como referência: - Carro popular: R$ 75–R$ 117/mês.[1] - Veículo de R$ 40 mil a R$ 80 mil: cerca de R$ 191/mês.[2] - Veículo de R$ 80 mil a R$ 150 mil: cerca de R$ 206/mês.[2] - Carro de R$ 80 mil: estimativa "
+   }
+  },
+  "onde fazer cotação de seguro auto online mais barato": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Minuto Seguros"
+    ],
+    "fontes": [
+     "meuseguromaisbarato.com.br",
+     "comparaonline.com.br",
+     "autocompara.com.br",
+     "economize.com.br",
+     "simular.economize.com.br",
+     "glid.com.br"
+    ],
+    "n_fontes": 6,
+    "trecho": "Pesquisei sites para fazer cotação de seguro auto online e encontrar o menor preço no Brasil\\. Minha recomendação é começar por comparadores que consultam várias seguradoras ao mesmo tempo e depois conferir o preço diretamente em outra plataforma. O seguro mais barato depende do modelo e ano do carro, do CEP onde ele fica à noite, do perfil do motorista e das coberturas contratadas. Por isso, não existe um site que s"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Caixa Seguradora",
+     "Minuto Seguros",
+     "Suhai",
+     "Youse"
+    ],
+    "fontes": [
+     "comparaonline.com.br",
+     "semparar.com.br",
+     "uai.com.br",
+     "jornaldebrasilia.com.br",
+     "minutoseguros.com.br",
+     "123seguro.com.br",
+     "youse.com.br"
+    ],
+    "n_fontes": 7,
+    "trecho": "Para encontrar um seguro de carro mais barato online, o melhor caminho é utilizar plataformas de comparação (corretoras digitais). Elas permitem cotar o seu perfil e o seu veículo em dezenas de seguradoras simultaneamente, o que facilita muito a identificação do melhor custo-benefício.As principais opções para fazer cotações online de forma segura e prática no Brasil incluem: 1. Principais Comparadores e Corretoras O"
+   },
+   "Claude": {
+    "marcas": [
+     "Minuto Seguros",
+     "Suhai"
+    ],
+    "fontes": [
+     "o2multi.com.br",
+     "meuseguromaisbarato.com.br",
+     "financix.com.br",
+     "seguroauto.org"
+    ],
+    "n_fontes": 4,
+    "trecho": "Não existe um site único que seja sempre o mais barato, porque o preço depende do carro, do CEP, do perfil do condutor e das coberturas. A melhor estratégia é comparar várias seguradoras ao mesmo tempo, por meio de comparadores ou corretoras. Com base nas pesquisas que fiz, estas são as opções mais citadas: Comparadores e corretoras online - Minuto Seguros, Bidu, Autocompara (Santander) e ComparaOnline são plataforma"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "santander.com.br",
+     "seguroou.com.br",
+     "economize.com.br",
+     "meuseguromaisbarato.com.br",
+     "comparaonline.com.br",
+     "seguroauto.org",
+     "hellosafe.com.br",
+     "resicorseguros.com.br"
+    ],
+    "n_fontes": 10,
+    "trecho": "Para encontrar o seguro auto mais barato, faça cotações em comparadores que consultam várias seguradoras ao mesmo tempo: - Autocompara Santander — compara ofertas de até 11 seguradoras e permite contratar online.[1] - Seguroou — informa cotações de mais de 20 seguradoras.[2] - Economize — compara mais de 20 seguradoras, mostrando preço, franquia e coberturas lado a lado.[3] - Compara Online — permite cotar e contrata"
+   }
+  },
+  "vale a pena fazer seguro de carro": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "gov.br",
+     "serasa.com.br"
+    ],
+    "n_fontes": 2,
+    "trecho": "Sim, na maioria dos casos, vale a pena fazer seguro de carro no Brasil — principalmente se você depende do veículo no dia a dia e não teria dinheiro disponível para pagar um conserto caro ou comprar outro carro em caso de perda total. Mas depende do valor do carro, do preço do seguro, de onde você circula e de quanto você poderia perder financeiramente. O que vale a pena considerar? - Roubo ou furto\\: o seguro pode p"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Allianz"
+    ],
+    "fontes": [
+     "segurosaga.com.br",
+     "cnseg.org.br",
+     "allianz.com.br",
+     "heliar.com",
+     "investidorsardinha.r7.com",
+     "reddit.com"
+    ],
+    "n_fontes": 6,
+    "trecho": "Em suma, para a grande maioria dos motoristas que dependem do veículo no dia a dia e não possuem uma reserva de emergência robusta o suficiente para comprar outro carro à vista, o seguro de carro vale a pena.Mais do que proteger a lataria, o seguro funciona como uma ferramenta de gestão de risco e planejamento financeiro, transformando um potencial prejuízo catastrófico em uma despesa previsível.Abaixo estão os princ"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "forceseguros.com",
+     "revistaoeste.com",
+     "seguroauto.org"
+    ],
+    "n_fontes": 3,
+    "trecho": "Na maioria dos casos, sim, vale a pena. Mas depende do seu perfil, do valor do carro e de como você usa o veículo. Quando costuma valer a pena - Principalmente se você mora em cidade grande, usa o carro com frequência ou não quer correr o risco de um prejuízo alto por roubo, batida ou danos a terceiros. - O seguro passa a valer muito a pena em situações específicas: quando o carro é essencial para trabalho ou desloca"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "justos.com.br",
+     "rnews.com.br",
+     "suhaiseguradora.com",
+     "carglass.pt",
+     "infomoney.com.br",
+     "executivedigest.sapo.pt",
+     "embracon.com.br",
+     "investidorsardinha.r7.com"
+    ],
+    "n_fontes": 8,
+    "trecho": "Sim, geralmente vale a pena, principalmente se você não conseguiria comprar outro carro ou pagar um conserto caro sem se endividar. Roubo, colisão e danos a terceiros podem gerar prejuízos muito altos.[1][2] Considere contratar se: - O carro é novo, caro, financiado ou essencial para trabalhar. - Você circula muito ou em regiões com maior risco de roubo e acidentes. - Não possui uma reserva financeira capaz de cobrir"
+   }
+  },
+  "o que o seguro auto cobre": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Mapfre"
+    ],
+    "fontes": [
+     "gov.br",
+     "mapfre.com.br"
+    ],
+    "n_fontes": 2,
+    "trecho": "Pesquisei na web e consultei a SUSEP (Superintendência de Seguros Privados), órgão oficial que regula o mercado de seguros no Brasil. O seguro auto pode cobrir danos ao seu carro, roubo, furto, acidentes e prejuízos causados a outras pessoas — mas tudo depende das coberturas contratadas na apólice. O que o seguro auto cobre? ! 1\\. Colisão e acidentes Pode cobrir consertos do seu carro em casos de batida, abalroamento"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Mapfre"
+    ],
+    "fontes": [
+     "pbs.com.br",
+     "originalli.com.br",
+     "mapfre.com.br",
+     "seguroauto.org",
+     "cnseg.org.br"
+    ],
+    "n_fontes": 5,
+    "trecho": "O seguro de automóvel varia conforme o plano contratado, mas de forma geral as proteções dividem-se entre a cobertura básica (compreensiva) e as coberturas adicionais (opcionais). 1. Cobertura Básica (Compreensiva)É a modalidade mais contratada e protege o veículo contra os imprevistos mais comuns do dia a dia. Ela costuma cobrir: Colisão, abalroamento, capotagem ou derrapagem: Danos parciais ou totais ao seu carro d"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "minutoseguros.com.br",
+     "allianz.com.br",
+     "gringo.com.vc",
+     "suhaiseguradora.com",
+     "gpmautocenter.com"
+    ],
+    "n_fontes": 5,
+    "trecho": "Em geral, o seguro auto protege o carro contra prejuízos causados por acidentes, roubo e outros eventos, e também pode cobrir danos a terceiros. O que está incluído depende da apólice e das coberturas que você contratar. Coberturas básicas (de casco) Essas são as que protegem o próprio veículo. Entre as principais coberturas básicas podemos listar: colisão, abalroamento, capotagem ou derrapagem; queda de qualquer obj"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "bradescoseguros.com.br",
+     "allianz.com.br",
+     "bancopan.com.br",
+     "bv.com.br",
+     "logo.pt",
+     "suhaiseguradora.com",
+     "consumidor.asf.com.pt"
+    ],
+    "n_fontes": 7,
+    "trecho": "O seguro auto pode cobrir, conforme o plano contratado: - Colisão, batida e capotamento, incluindo reparos no seu veículo. - Roubo e furto, geralmente com indenização em caso de não recuperação. - Incêndio, explosão e eventos naturais, como alagamento, granizo ou queda de árvore, quando previstos na apólice. - Danos materiais e corporais a terceiros, caso você cause um acidente. - Danos morais e estéticos a terceiros"
+   }
+  },
+  "qual seguro auto tem o melhor custo benefício": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Azul Seguros",
+     "Pier",
+     "Tokio Marine",
+     "Youse"
+    ],
+    "fontes": [
+     "idinheiro.com.br",
+     "reviewauto.com.br",
+     "azulseguros.com.br",
+     "tokiomarine.com.br",
+     "pier.digital",
+     "youse.com.br",
+     "gov.br"
+    ],
+    "n_fontes": 7,
+    "trecho": "Pesquisei as informações mais recentes disponíveis sobre seguros de automóveis no Brasil, considerando preço, coberturas e atendimento ao cliente. Minha conclusão inicial: a Azul Seguros e a Tokio Marine são duas das primeiras opções que eu cotaria para buscar um bom custo-benefício. Se a prioridade for pagar o mínimo possível, também vale comparar a Pier e a Youse. A escolha final depende bastante do carro, do CEP e"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Aliro",
+     "Azul Seguros",
+     "Caixa Seguradora",
+     "HDI",
+     "Minuto Seguros",
+     "Pier",
+     "Porto Seguro",
+     "Suhai",
+     "Tokio Marine",
+     "Youse"
+    ],
+    "fontes": [
+     "idinheiro.com.br",
+     "solatiumseguros.com",
+     "smartia.com.br",
+     "garageseguros.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Não existe uma única resposta definitiva para qual é o seguro auto com o \"melhor custo-benefício\", pois o valor muda drasticamente de acordo com o seu perfil (idade, tempo de carteira, CEP de circulação) e o modelo do carro.No entanto, o mercado conta com seguradoras e marcas focadas justamente em entregar preços mais competitivos sem abrir mão de uma boa rede de atendimento. As principais opções de destaque em custo"
+   },
+   "Claude": {
+    "marcas": [
+     "Azul Seguros",
+     "HDI",
+     "Mapfre",
+     "Pier",
+     "Suhai",
+     "Youse"
+    ],
+    "fontes": [
+     "garagem360.com.br",
+     "segurosdeauto.com.br",
+     "aemcorretoradeseguros.com.br"
+    ],
+    "n_fontes": 3,
+    "trecho": "Não existe um único \"melhor\" seguro para todos, porque o preço depende do perfil, do carro e da cobertura escolhida. Mas, com base nas pesquisas mais recentes de 2026, estas são as opções que mais aparecem como melhor custo-benefício: Opções mais citadas - Azul Seguros: ligada ao Grupo Porto, a Azul Seguros ganhou força em 2026 por oferecer preços mais acessíveis sem abrir mão da credibilidade. É a indicação mais rec"
+   },
+   "Perplexity": {
+    "marcas": [
+     "Allianz",
+     "Azul Seguros",
+     "Pier",
+     "Suhai",
+     "Tokio Marine"
+    ],
+    "fontes": [
+     "idinheiro.com.br",
+     "forceseguros.com",
+     "naia.today",
+     "educandoseubolso.blog.br",
+     "auto.nd1.com.br",
+     "usnews.com",
+     "santander.com.br",
+     "seguroauto.org"
+    ],
+    "n_fontes": 10,
+    "trecho": "No Brasil, Tokio Marine e Allianz aparecem entre as melhores opções de custo-benefício para um seguro auto completo, enquanto Azul, Suhai e Pier podem ser mais econômicas dependendo das coberturas e do seu perfil.[1][2] - Tokio Marine: bom equilíbrio geral entre preço e cobertura; costuma ser interessante para motoristas com perfil de menor risco.[2] - Allianz: alternativa forte para quem valoriza cobertura ampla e a"
+   }
+  },
+  "qual o melhor plano de saúde do brasil": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Unimed"
+    ],
+    "fontes": [
+     "gov.br"
+    ],
+    "n_fontes": 1,
+    "trecho": "Pesquisei na web os dados oficiais da Agência Nacional de Saúde Suplementar (ANS) e informações atualizadas para 2026. A resposta curta é: não existe um único plano de saúde considerado o melhor do Brasil para todas as pessoas. A escolha depende da rede de hospitais, da cobertura na sua região, do preço e da qualidade da operadora. A ANS publica o Índice de Desempenho da Saúde Suplementar (IDSS), que avalia as operad"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Alice",
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "Omint",
+     "Seguros Unimed",
+     "SulAmérica",
+     "Unimed"
+    ],
+    "fontes": [
+     "companyhero.com",
+     "busqueplanodesaude.com.br",
+     "beneficiosrh.com.br"
+    ],
+    "n_fontes": 3,
+    "trecho": "Não existe uma única resposta definitiva para qual é o \"melhor\" plano de saúde do Brasil, pois isso depende muito da sua região, do seu orçamento e do tipo de cobertura que você procura (individual, familiar ou empresarial).No entanto, com base nas avaliações da ANS (Agência Nacional de Saúde Suplementar) — especialmente através do IDSS (Índice de Desempenho da Saúde Suplementar) — e na reputação do mercado, as opera"
+   },
+   "Claude": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "SulAmérica",
+     "Unimed"
+    ],
+    "fontes": [
+     "bymk.com.br",
+     "companyhero.com",
+     "blog.ilovesaude.com.br",
+     "tabelasaude.com"
+    ],
+    "n_fontes": 4,
+    "trecho": "Não existe um único \"melhor\" plano de saúde no Brasil: as fontes divergem bastante, e a escolha depende de cidade, orçamento e perfil. Com base nas buscas, o cenário é este: Operadoras mais citadas - Bradesco Saúde e SulAmérica aparecem com frequência no topo. Um dos textos indica que, considerando os índices oficiais da ANS em 2026, Bradesco Saúde e SulAmérica Saúde se destacam como as operadoras com melhor desempen"
+   },
+   "Perplexity": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "SulAmérica",
+     "Unimed"
+    ],
+    "fontes": [
+     "saudecidade.com",
+     "companyhero.com",
+     "virtuscorretora.com.br",
+     "idinheiro.com.br",
+     "simetriaplanosdesaude.com.br",
+     "busqueplanodesaude.com.br",
+     "joov.com.br",
+     "br.my-best.com"
+    ],
+    "n_fontes": 10,
+    "trecho": "Não existe um único “melhor” plano de saúde no Brasil. A escolha depende principalmente da cidade, hospitais desejados, idade, orçamento, tipo de contratação e necessidade de reembolso. A ANS é a melhor referência inicial para comparar a qualidade das operadoras, e rankings devem ser vistos com cautela porque uma mesma operadora pode ter redes muito diferentes por região.[1] Em geral, estas são boas opções - Premium "
+   }
+  },
+  "qual o plano de saúde mais barato": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "planosdesaude.org"
+    ],
+    "n_fontes": 1,
+    "trecho": "Pesquisei os preços de planos de saúde no Rio Grande do Sul, considerando São Gabriel como referência. O plano mais barato depende da sua idade, do tipo de cobertura e de ser individual, familiar ou empresarial. Encontrei opções com preços publicados em 2026, mas é importante confirmar se atendem em São Gabriel (RS) antes de contratar. O que encontrei ! Doctor Clin A partir de R\\$ 76,10/mês Plano empresarial, por pes"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "SulAmérica"
+    ],
+    "fontes": [
+     "tabelaplanos.com.br",
+     "campinassaude.com.br",
+     "planodesaudedodf.com.br",
+     "planodesaude.net"
+    ],
+    "n_fontes": 4,
+    "trecho": "Não existe um único plano de saúde mais barato válido para todo o Brasil, pois o preço final depende diretamente da sua região (cidade e estado), da sua faixa etária, do tipo de contratação e da rede de atendimento.Entre as operadoras de grande porte e abrangência nacional ou multirregional, a Hapvida NotreDame Intermédica costuma apresentar os menores preços de entrada. No entanto, o cenário muda bastante dependendo"
+   },
+   "Claude": {
+    "marcas": [
+     "Hapvida",
+     "NotreDame Intermédica",
+     "SulAmérica"
+    ],
+    "fontes": [
+     "blog.ilovesaude.com.br",
+     "busqueplanodesaude.com.br",
+     "tabelasaude.com"
+    ],
+    "n_fontes": 3,
+    "trecho": "Não existe um único plano de saúde \"mais barato\" para todos, porque o preço depende da idade, da cidade, do tipo de contratação e da cobertura. Com base nas pesquisas, este é o panorama: Plano mais barato em geral Um dos levantamentos aponta que o plano mais acessível custa R$ 27,30 por mês na faixa de 0 a 18 anos, e é empresarial da PAM, mas a maioria tem cobertura ambulatorial — sem internação hospitalar. Vale toma"
+   },
+   "Perplexity": {
+    "marcas": [
+     "Amil",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "Unimed"
+    ],
+    "fontes": [
+     "dicasdeplanodesaude.com.br",
+     "saudecidade.com",
+     "tabelaplanos.com.br",
+     "joov.com.br",
+     "tabelasaude.com",
+     "saude.seguroou.com.br",
+     "idinheiro.com.br",
+     "planodesaude.net"
+    ],
+    "n_fontes": 9,
+    "trecho": "O plano de saúde mais barato varia conforme cidade, idade, cobertura e forma de contratação. Em geral, a Hapvida costuma ter os menores preços de entrada, especialmente no Norte e Nordeste; há referências de planos a partir de aproximadamente R$ 88/mês para contratação via MEI/CNPJ.[1] Outras opções econômicas incluem: - NotreDame Intermédica, principalmente no Sudeste.[2] - Amil Fácil, geralmente com cobertura regio"
+   }
+  },
+  "quanto custa um plano de saúde individual por mês": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "veries.com.br",
+     "planosdesaude.org"
+    ],
+    "n_fontes": 2,
+    "trecho": "O preço de um plano de saúde individual no Brasil varia principalmente conforme sua idade, a cidade onde você mora, a cobertura e se o plano inclui internação hospitalar. Para ter uma ideia realista, vale comparar planos com e sem coparticipação (quando você paga uma parte de determinados atendimentos), porque isso pode mudar bastante o valor mensal. Quanto custa por mês em 2026? Estes são valores de referência para "
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "SulAmérica",
+     "Unimed"
+    ],
+    "fontes": [
+     "bradescosaudeconvenio.com",
+     "saludcorretora.com",
+     "virtuscorretora.com.br",
+     "tabelasaude.com"
+    ],
+    "n_fontes": 4,
+    "trecho": "O custo de um plano de saúde individual no Brasil varia bastante. Em média, as mensalidades partem de cerca de R$ 250 a R$ 400 para opções mais básicas e regionais, podendo ultrapassar R$ 2.000 em planos nacionais, completos e voltados para faixas etárias mais avançadas.O preço final é definido por uma combinação de fatores, sendo o principal deles a faixa etária regulamentada pela ANS. Média de Valores por Faixa Etá"
+   },
+   "Claude": {
+    "marcas": [
+     "Hapvida"
+    ],
+    "fontes": [
+     "saudecidade.com",
+     "tabelasaude.com",
+     "onlineplanodesaude.com.br",
+     "contratesaudeonline.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Não existe um preço único: o valor de um plano de saúde individual em 2026 varia muito conforme a idade, a operadora, a região e o tipo de cobertura. Os sites consultados trazem estimativas bem diferentes entre si, então use os números abaixo como referência geral. Faixas de preço estimadas (por pessoa, por mês): - Um plano básico e simples (por exemplo, ambulatorial e regional) pode começar em torno de R$ 150 para c"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "dicasdeplanodesaude.com.br",
+     "companyhero.com",
+     "onlineplanodesaude.com.br",
+     "contratesaudeonline.com.br",
+     "calculaplano.com.br",
+     "tabelasaude.com",
+     "techmenezes.com"
+    ],
+    "n_fontes": 7,
+    "trecho": "No Brasil, um plano de saúde individual costuma custar aproximadamente R$ 180 a R$ 1.500 por mês, dependendo da idade, cidade, operadora, cobertura, acomodação e coparticipação.[1] Faixas indicativas: - Até 18 anos: a partir de R$ 150–R$ 350/mês - 19 a 28 anos: cerca de R$ 220–R$ 850/mês - 29 a 38 anos: cerca de R$ 300–R$ 1.050/mês - 39 a 48 anos: cerca de R$ 450–R$ 1.450/mês - 49 a 58 anos: cerca de R$ 700–R$ 2.000/"
+   }
+  },
+  "qual o melhor plano de saúde para família": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "SulAmérica",
+     "Unimed"
+    ],
+    "fontes": [
+     "gov.br"
+    ],
+    "n_fontes": 1,
+    "trecho": "Pesquisei informações atualizadas sobre planos de saúde no Brasil para 2026. A principal conclusão é que o melhor plano de saúde para uma família depende da cidade onde vocês moram, das idades dos integrantes, do orçamento e dos hospitais e médicos disponíveis na região\\. A Agência Nacional de Saúde Suplementar (ANS) avalia as operadoras por meio do IDSS, índice que considera qualidade da assistência, acesso aos serv"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "Seguros Unimed",
+     "SulAmérica",
+     "Unimed"
+    ],
+    "fontes": [
+     "plano-de-saude-saopaulo.com.br",
+     "busqueplanodesaude.com.br",
+     "companyhero.com",
+     "planosdesaudetodosaqui.com.br",
+     "jcluz.com.br"
+    ],
+    "n_fontes": 5,
+    "trecho": "Não existe um único \"melhor\" plano de saúde para família, pois a escolha ideal depende de fatores como a região onde vocês moram, a faixa etária dos dependentes (especialmente crianças e idosos) e o orçamento disponível.No entanto, o mercado brasileiro conta com operadoras que se destacam consistentemente em avaliações de qualidade da ANS (Agência Nacional de Saúde Suplementar) e na preferência dos consumidores. As p"
+   },
+   "Claude": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Porto Saúde",
+     "SulAmérica",
+     "Unimed"
+    ],
+    "fontes": [
+     "centralplanodesaude.com.br",
+     "blog.ilovesaude.com.br",
+     "pedranoseguros.com.br",
+     "bymk.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Não existe um plano \"melhor\" para todas as famílias, porque a escolha depende de onde vocês moram, de quem está na família (crianças, gestantes, idosos, doenças crônicas) e do orçamento. Mas as pesquisas de 2026 trazem alguns consensos úteis. Operadoras mais citadas - SulAmérica Saúde: aparece em primeiro lugar em um dos rankings, com excelente desempenho nos indicadores oficiais, boa avaliação dos consumidores e for"
+   },
+   "Perplexity": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "SulAmérica",
+     "São Cristóvão",
+     "Trasmontano",
+     "Unimed"
+    ],
+    "fontes": [
+     "plano-de-saude-saopaulo.com.br",
+     "santander.com.br",
+     "planodesaude.net",
+     "qualicorp.com.br",
+     "latamcontabil.com",
+     "compareplanodesaude.com.br",
+     "tabelasaude.com",
+     "hellosafe.com.br"
+    ],
+    "n_fontes": 10,
+    "trecho": "Não existe um único “melhor” plano familiar: a escolha depende principalmente da cidade, idade dos beneficiários, hospitais desejados e orçamento. Em geral: - Melhor rede nacional: Unimed Nacional, Bradesco Saúde ou SulAmérica. - Boa rede própria e custo mais controlado: NotreDame Intermédica ou Hapvida. - Opção regional com possível custo-benefício: Amil, São Cristóvão, Trasmontano ou operadoras locais. - Famílias c"
+   }
+  },
+  "vale a pena fazer plano de saúde pelo mei": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "gov.br",
+     "planosdesaude.org"
+    ],
+    "n_fontes": 2,
+    "trecho": "Sim, vale a pena considerar um plano de saúde pelo MEI — principalmente se a mensalidade ficar mais barata que a de um plano contratado pelo CPF. Mas existe um detalhe importante: o plano empresarial pode começar mais barato e ter reajustes anuais maiores. Pesquisei as regras da Agência Nacional de Saúde Suplementar (ANS), atualizadas em 2026, e estes são os pontos que você precisa avaliar antes de contratar. Vantage"
+   },
+   "Gemini (app)": {
+    "marcas": [],
+    "fontes": [
+     "meiconveniomedico.com.br",
+     "brseguro.com",
+     "companyhero.com",
+     "mediarh.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Sim, na grande maioria dos cenários, fazer um plano de saúde pelo MEI vale muito a pena. Contratar um plano na modalidade coletiva empresarial oferece vantagens financeiras expressivas, mas exige atenção a regras específicas da Agência Nacional de Saúde Suplementar (ANS).Abaixo estão os principais pontos para ajudar a avaliar se essa é a escolha certa para o seu perfil: Principais Vantagens1. Economia no Valor da Men"
+   },
+   "Claude": {
+    "marcas": [
+     "Bradesco Saúde"
+    ],
+    "fontes": [
+     "companyhero.com",
+     "brseguro.com",
+     "tabelaplanos.com.br",
+     "bradescosaudeempresas.com.br",
+     "planosdesaudemei.com.br"
+    ],
+    "n_fontes": 5,
+    "trecho": "Em geral, sim, o plano de saúde pelo MEI costuma valer a pena, mas depende do seu perfil. Os resultados da pesquisa são em sua maioria de blogs e corretoras, então trate os números como referência e confirme valores com a operadora. Pontos a favor - Preço: Em geral, o plano de saúde MEI sai de 30% a 40% mais barato do que um plano individual equivalente, porque o risco é dividido no contrato coletivo. Um dos sites dá"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "brseguro.com",
+     "qualicorp.com.br",
+     "forcompanygroup.com",
+     "jornalcontabil.com.br",
+     "planosdesaudemei.com.br",
+     "tabelaplanos.com.br",
+     "contfisco.com.br",
+     "planejar.org.br"
+    ],
+    "n_fontes": 10,
+    "trecho": "Pode valer a pena, principalmente se você já tem um MEI ativo e encontra uma rede credenciada adequada. O plano empresarial via MEI costuma começar mais barato que o individual, mas essa economia pode diminuir com reajustes e regras menos favoráveis ao consumidor.[1][2] Vantagens - Mensalidade frequentemente 20% a 40% menor que a de um plano individual equivalente.[1][2] - Possibilidade de incluir dependentes. - Em a"
+   }
+  },
+  "como escolher um plano de saúde": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "gov.br"
+    ],
+    "n_fontes": 1,
+    "trecho": " Como escolher um plano de saúde no Brasil Pesquisei as orientações da Agência Nacional de Saúde Suplementar (ANS), órgão que regula os planos de saúde no Brasil. A principal dica é: não escolha apenas pelo preço da mensalidade. Compare também a cobertura, os hospitais disponíveis, as carências e as regras de reajuste. 1\\. Os 7 pontos que você deve avaliar ! 1\\. Tipo de cobertura - Ambulatorial\\: consultas, exames e "
+   },
+   "Gemini (app)": {
+    "marcas": [],
+    "fontes": [],
+    "n_fontes": 0,
+    "trecho": "Escolher um plano de saúde ideal exige equilibrar suas necessidades médicas atuais e futuras com o seu orçamento mensal. Como o mercado oferece diversas modalidades e regras reguladas pela ANS (Agência Nacional de Saúde Suplementar), vale a pena seguir um passo a passo estruturado para tomar a melhor decisão. 1. Avalie o Tipo de Contratação e a AbrangênciaO primeiro passo é entender como você pode contratar o plano e"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "parana.jor.br",
+     "tabelasaude.com",
+     "saudeseguros.com",
+     "blog.ilovesaude.com.br",
+     "lancers.com.br",
+     "propagseguros.com.br"
+    ],
+    "n_fontes": 6,
+    "trecho": "Aqui está um guia prático, com base em fontes atuais sobre a escolha de planos de saúde em 2026. 1. Defina seu perfil Comece pelas perguntas básicas: quem serão os beneficiários, qual a idade de cada pessoa e onde os beneficiários moram. Também vale considerar a necessidade de atendimento em outras cidades. 2. Escolha o tipo de contratação Os principais tipos são individual/familiar e empresarial. O individual ou fam"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "gov.br",
+     "tuasaude.com",
+     "cms.gov",
+     "santander.com.br",
+     "deco.proteste.pt",
+     "drauziovarella.uol.com.br",
+     "bvsms.saude.gov.br",
+     "alice.com.br"
+    ],
+    "n_fontes": 9,
+    "trecho": "Para escolher um plano de saúde no Brasil, compare cobertura, rede credenciada, custos e qualidade da operadora — não apenas a mensalidade. 1. Defina suas necessidades - Idade, doenças preexistentes, frequência de consultas e exames. - Necessidade de terapias, internações, parto, atendimento odontológico ou medicamentos. - Inclusão de dependentes. 2. Escolha a abrangência - Municipal ou regional: geralmente suficient"
+   }
+  },
+  "R$ 300 por mês é caro para seguro de carro?": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "infomoney.com.br",
+     "meuseguromaisbarato.com.br",
+     "assinatura.localiza.com"
+    ],
+    "n_fontes": 3,
+    "trecho": "Não necessariamente\\! R\\$ 300 por mês para seguro de carro é um preço razoável, dependendo do veículo, da sua idade e das coberturas incluídas. Em alguns casos, pode ser caro; em outros, está dentro do esperado. Pesquisei referências de preços para 2026 e encontrei o seguinte: Quanto R\\$ 300 por mês representa? Mensalidade R\\$ 300 --- Custo anual R\\$ 3.600 Referência para 12 mensalidades, sem taxas adicionais. Como c"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Justos"
+    ],
+    "fontes": [
+     "assinatura.localiza.com",
+     "suhaiseguradora.com",
+     "meuseguromaisbarato.com.br",
+     "justos.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Em termos gerais, pagar R$ 300 por mês (o que resulta em cerca de R$ 3.600 por ano) está na média do mercado brasileiro, mas se é considerado \"caro\" ou \"barato\" depende inteiramente de três fatores: o valor do seu carro, o tipo de cobertura contratada e o seu perfil de motorista.Para avaliar se esse valor faz sentido para o seu caso, veja como ele se posiciona: 1. O Contexto do Preço (R$ 3.600 por ano) Carros popular"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "aemcorretoradeseguros.com.br",
+     "rapioseguros.com.br",
+     "seguroauto.org",
+     "meuseguromaisbarato.com.br",
+     "economize.com.br"
+    ],
+    "n_fontes": 5,
+    "trecho": "Depende bastante do carro, mas R$ 300 por mês fica na faixa média para a maioria dos casos, e só seria caro para um modelo mais barato ou para um perfil de baixo risco. Referências de mercado (2026): - Uma fonte diz que em média, de R$ 100 a R$ 400 por mês, com a maioria dos perfis de risco médio ficando na casa dos R$ 200. Ou seja, R$ 300 está acima da média, mas dentro da faixa comum. - Outra estimativa indica que "
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "aemcorretoradeseguros.com.br",
+     "economia.uol.com.br",
+     "blog.caiuasseguros.com.br",
+     "forceseguros.com",
+     "avaliaseguros.com.br",
+     "lifin.pro",
+     "seguropontocom.com",
+     "minutoseguros.com.br"
+    ],
+    "n_fontes": 8,
+    "trecho": "Depende, mas R$ 300 por mês não é necessariamente caro: equivale a R$ 3.600 por ano, valor dentro da faixa comum para seguro completo no Brasil. Para um carro popular, fica na parte mais alta da média; para um SUV, veículo mais visado ou motorista jovem, pode ser um preço normal. [1][3] O valor tende a ser razoável quando inclui: - Cobertura contra colisão, roubo e furto; - Assistência 24 horas; - Cobertura para terc"
+   }
+  },
+  "qual seguradora de carro devo evitar?": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Allianz",
+     "Yelum"
+    ],
+    "fontes": [
+     "reviewauto.com.br",
+     "gov.br",
+     "consumidor.gov.br"
+    ],
+    "n_fontes": 3,
+    "trecho": "Se você está procurando um seguro de carro no Brasil, eu recomendo evitar seguradoras com histórico consistente de reclamações não resolvidas, problemas no pagamento de indenizações ou dificuldades para consertar o veículo após um sinistro — e não simplesmente a empresa que tem mais reclamações. O ideal é cruzar três informações: a fiscalização da SUSEP, os índices de reclamações dos consumidores e os relatos sobre a"
+   },
+   "Gemini (app)": {
+    "marcas": [],
+    "fontes": [
+     "investigacaofinanceira.com.br",
+     "homolog2.susep.gov.br",
+     "cnseg.org.br",
+     "cotandoseguro.com",
+     "www2.susep.gov.br",
+     "magalhaesgomes.com.br"
+    ],
+    "n_fontes": 6,
+    "trecho": "Ao buscar um seguro de carro, mais do que evitar uma marca específica (já que a qualidade do atendimento pode variar conforme a região e o tipo de apólice), o mais importante é evitar empresas não regulamentadas e aquelas com histórico crônico de má avaliação no pós-venda. O que evitar categoricamente Associações de Proteção Veicular irregulares: Muitas vezes comercializadas como \"seguro mais barato\" ou \"proteção mut"
+   },
+   "Claude": {
+    "marcas": [
+     "Bradesco Seguros",
+     "HDI",
+     "Mapfre",
+     "Porto Seguro",
+     "Suhai",
+     "Yelum"
+    ],
+    "fontes": [
+     "virtuscorretora.com.br",
+     "garageseguros.com.br",
+     "smartia.com.br",
+     "idinheiro.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Não existe uma seguradora que seja \"a que deve ser evitada\" de forma objetiva, e as fontes disponíveis não trazem um ranking definitivo de piores seguradoras. O que os dados mostram é quem tem mais reclamações ou reputação mais fraca, o que pode ajudar a decidir. Sinais de atenção: - Porto Seguro aparece com o maior volume de reclamações. Um levantamento aponta 5.083 reclamações no período analisado, mas também é a l"
+   },
+   "Perplexity": {
+    "marcas": [
+     "Mapfre",
+     "Pier",
+     "Suhai",
+     "Tokio Marine",
+     "Youse"
+    ],
+    "fontes": [
+     "joingerald.com",
+     "danielstark.com",
+     "virtuscorretora.com.br",
+     "reddit.com",
+     "autoinsurance.org",
+     "themoneyknowhow.com",
+     "idinheiro.com.br",
+     "suhaiseguradora.com"
+    ],
+    "n_fontes": 9,
+    "trecho": "Não dá para apontar uma seguradora específica para evitar em todo o Brasil. A experiência varia por estado, corretor, oficina referenciada, tipo de cobertura e perfil do motorista. Porém, evite qualquer empresa que não esteja autorizada pela SUSEP, tenha muitas reclamações não resolvidas ou ofereça contrato pouco claro. A SUSEP é o órgão responsável por regular e fiscalizar o mercado de seguros no Brasil.[8] Antes de"
+   }
+  },
+  "qual a seguradora de carro mais barata em São Paulo?": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Azul Seguros",
+     "Suhai",
+     "Youse"
+    ],
+    "fontes": [
+     "youse.com.br",
+     "suhaiseguradora.com",
+     "azulseguros.com.br",
+     "meuseguromaisbarato.com.br",
+     "seguroauto.meuseguromaisbarato.com.br",
+     "virtuscorretora.com.br",
+     "idinheiro.com.br"
+    ],
+    "n_fontes": 7,
+    "trecho": "Para descobrir qual é a seguradora de carro mais barata em São Paulo em 2026, o mais importante é comparar cotações para o seu perfil. Não existe uma única seguradora que seja sempre a mais barata: o preço varia conforme o carro, o CEP onde ele fica, a idade do motorista, o histórico de sinistros e as coberturas contratadas. Vale comparar tanto seguradoras tradicionais quanto seguros digitais e opções de proteção com"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Azul Seguros",
+     "Pier",
+     "Porto Seguro",
+     "Suhai",
+     "Tokio Marine",
+     "Youse"
+    ],
+    "fontes": [
+     "meuseguromaisbarato.com.br",
+     "aemcorretoradeseguros.com.br",
+     "pier.digital",
+     "seguroauto.org"
+    ],
+    "n_fontes": 4,
+    "trecho": "Não existe uma única \"seguradora mais barata\" absoluta em São Paulo, pois o preço do seguro varia drasticamente conforme o seu perfil (idade, gênero, CEP de pernoite na capital/grande SP) e o modelo do seu carro.No entanto, o mercado divide as opções mais econômicas de acordo com o tipo de proteção que você procura: 1. Seguradoras e Alternativas Digitais (Foco em Custo-Benefício) Pier: Muito conhecida por funcionar n"
+   },
+   "Claude": {
+    "marcas": [
+     "Pier",
+     "Suhai",
+     "Youse"
+    ],
+    "fontes": [
+     "idinheiro.com.br",
+     "segurosdeauto.com.br",
+     "consultadeplaca.net"
+    ],
+    "n_fontes": 3,
+    "trecho": "Não existe uma seguradora única e garantidamente mais barata em São Paulo: o preço depende do seu perfil, do carro e do CEP de pernoite. Segundo as fontes encontradas, as opções digitais mais citadas como as de menor preço são estas: Opções mais baratas citadas - Youse: A Youse tem um dos seguros auto mais baratos, a partir de R$ 45/mês. - Pier: Já na Pier, há parcelas a partir de R$ 52,35/mês. - Suhai: focada em rou"
+   },
+   "Perplexity": {
+    "marcas": [
+     "Azul Seguros",
+     "Suhai",
+     "Tokio Marine",
+     "Youse"
+    ],
+    "fontes": [
+     "segurosparacarros.com.br",
+     "hellosafe.com.br",
+     "seguroauto.org",
+     "suhaiseguradora.com",
+     "meuseguromaisbarato.com.br",
+     "cnnbrasil.com.br"
+    ],
+    "n_fontes": 6,
+    "trecho": "Não existe uma seguradora universalmente mais barata em São Paulo: o preço depende do modelo e ano do carro, CEP, idade dos condutores, uso do veículo, garagem, cobertura e franquia. Como referência, as opções que costumam aparecer entre as mais econômicas são: - Suhai — geralmente mais barata para cobertura de roubo e furto, mas pode não incluir colisão.[3][5] - Azul Seguros — costuma ter planos enxutos para veículo"
+   }
+  },
+  "meu filho pode dirigir meu carro se não estiver no seguro?": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "gov.br"
+    ],
+    "n_fontes": 1,
+    "trecho": "Sim, no Brasil, seu filho pode dirigir seu carro mesmo que ele não esteja incluído nominalmente no seguro, mas isso depende das condições da apólice. Ele precisa ter habilitação válida e respeitar as regras do seguro. Segundo a SUSEP, as coberturas e condições variam conforme o contrato. O que você precisa saber - Se ele dirige só ocasionalmente\\: algumas apólices podem cobrir esse uso, mesmo que ele não esteja lista"
+   },
+   "Gemini (app)": {
+    "marcas": [],
+    "fontes": [
+     "seguroauto.org",
+     "wtsseguros.com"
+    ],
+    "n_fontes": 2,
+    "trecho": "Sim, juridicamente e legalmente (perante a lei de trânsito), seu filho pode dirigir o seu carro desde que seja habilitado (possua CNH válida e compatível com a categoria do veículo).No entanto, em relação ao seguro do carro, a situação exige cautela e depende diretamente da frequência com que ele usa o veículo: Uso eventual e esporádico: Se o seu filho pega o carro raramente (por exemplo, uma viagem pontual ou uma em"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "justos.com.br",
+     "minutoseguros.com.br",
+     "genebraseguros.com.br",
+     "martinhagoadv.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Depende da apólice, mas há alguns pontos importantes a considerar. Em resumo: se o seu filho não estiver listado, a seguradora pode recusar a cobertura, e os riscos aumentam bastante se ele for jovem ou não tiver habilitação. Pontos principais: - Quem não está na apólice: Em geral, os seguros de carro oferecem cobertura para o segurado e para os condutores adicionais mencionados na apólice. Se a pessoa que dirigia nã"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "maiorseguros.com.br",
+     "pplware.sapo.pt",
+     "allianz.com.br",
+     "genebraseguros.com.br",
+     "tvi.iol.pt",
+     "seguroauto.org",
+     "minutoseguros.com.br",
+     "portaldotransito.com.br"
+    ],
+    "n_fontes": 8,
+    "trecho": "Sim — se ele tiver CNH válida e estiver dirigindo apenas eventualmente, em geral o seguro do carro pode cobrir o sinistro mesmo sem o filho aparecer nominalmente na apólice.[1][2] Mas atenção: - Se ele usa o carro com frequência — por exemplo, diariamente ou para ir à faculdade/trabalho — informe-o à seguradora e inclua-o como condutor adicional.[1][4] - Se ele tiver 18 a 25 anos, muitas apólices exigem que essa cond"
+   }
+  },
+  "o seguro do carro aumenta se eu usar a assistência de vidros?": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Allianz",
+     "Bradesco Seguros",
+     "HDI",
+     "Porto Seguro",
+     "Tokio Marine"
+    ],
+    "fontes": [
+     "gov.br",
+     "bradescoseguros.com.br",
+     "seguroauto.org"
+    ],
+    "n_fontes": 3,
+    "trecho": "Na maioria dos casos, não\\! 😊 Se você usar a assistência de vidros do seguro do carro para reparar ou trocar o para-brisa, o vidro lateral ou o vidro traseiro, geralmente isso não aumenta o valor do seguro na renovação nem reduz sua classe de bônus\\. Porém, depende das regras da seguradora. Entenda a diferença - Usar a assistência de vidros\\: normalmente não afeta seu bônus. A Bradesco Seguros, por exemplo, informa e"
+   },
+   "Gemini (app)": {
+    "marcas": [],
+    "fontes": [
+     "bv.com.br",
+     "seguroauto.org",
+     "serasa.com.br",
+     "glassdrive.pt"
+    ],
+    "n_fontes": 4,
+    "trecho": "De forma geral, usar a assistência ou cobertura de vidros não aumenta o valor do seguro e não faz você perder a classe de bônus na hora da renovação.No entanto, existem algumas regras importantes que variam conforme a seguradora e o tipo de serviço utilizado: 1. O que diz a regra geral (A maioria das seguradoras)A cobertura de vidros (para-brisa, vidros laterais, vigia traseiro e, em alguns casos, retrovisores e lant"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "smartia.com.br",
+     "seguroauto.org"
+    ],
+    "n_fontes": 2,
+    "trecho": "Em geral, não. Usar a cobertura de vidros normalmente não aumenta a mensalidade do seguro no ano seguinte, mas isso depende de como ela é contratada e das regras da seguradora. Os resultados que encontrei são em sua maioria de Portugal, então vale confirmar as regras do seu contrato no Brasil. O que as fontes dizem: - Quando acionada, a cobertura de vidros não é considerada um sinistro. Por isso, seu uso não fará com"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "tosegurado.com.br",
+     "carglass.pt",
+     "economize.com.br",
+     "chiaremendes.com.br",
+     "kobeseguros.com",
+     "seguroauto.org",
+     "creditas.com",
+     "allianz.com.br"
+    ],
+    "n_fontes": 10,
+    "trecho": "Geralmente, não. Usar a assistência de vidros costuma ser tratado separadamente de um sinistro de colisão e, na maioria das seguradoras, não reduz a classe de bônus nem provoca aumento automático na renovação.[1][5] Mas depende das regras da sua apólice: pode haver franquia própria, limite de utilizações e impacto no preço conforme a seguradora e o histórico do contrato.[4][8] O aumento mais comum ocorre quando você "
+   }
+  },
+  "R$ 500 por mês é normal para plano de saúde?": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "veries.com.br"
+    ],
+    "n_fontes": 1,
+    "trecho": "Sim, R\\$ 500 por mês pode ser um valor normal para um plano de saúde no Brasil, mas depende bastante da sua idade, da cidade onde você mora, da cobertura e do tipo de plano. O ponto principal é saber se você está pagando um preço justo pelo que recebe. Um plano de R\\$ 500 pode ser caro para uma pessoa jovem, com cobertura regional e coparticipação, mas pode ser um bom preço para alguém mais velho ou para um plano com"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Hapvida"
+    ],
+    "fontes": [
+     "onlineplanodesaude.com.br",
+     "tabelasaude.com",
+     "tabelaunimed.com",
+     "dicasdeplanodesaude.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Sim, R$ 500 por mês é um valor completamente dentro da realidade do mercado brasileiro de saúde suplementar, mas se é considerado \"normal\" ou caro depende muito da sua faixa etária e do tipo de plano.Para contextualizar o que esse valor representa, veja como ele se comporta no cenário atual: 1. Onde R$ 500/mês é considerado normal? Adultos entre 30 e 48 anos: Para essa faixa etária, planos individuais, coletivos por "
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "planodesaude.net",
+     "blog.valenteseguros.com.br",
+     "plural.jor.br"
+    ],
+    "n_fontes": 3,
+    "trecho": "Depende bastante do perfil. R$ 500 por mês é um valor comum para plano individual de adultos mais velhos, mas caro para quem é jovem. Por faixa etária (plano individual) Uma referência de preços estimados em 2026 indica que 18 a 23 anos pagam entre R$ 180 e R$ 320; 24 a 33 anos entre R$ 220 e R$ 450; 34 a 43 anos entre R$ 350 e R$ 650; 44 a 53 anos entre R$ 600 e R$ 950; 54 a 58 anos entre R$ 900 e R$ 1.300; e 59 ano"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "dicasdeplanodesaude.com.br",
+     "saudecidade.com",
+     "fortplanos.com.br",
+     "oglobo.globo.com",
+     "planodesaude.net",
+     "techmenezes.com",
+     "brseguro.com",
+     "catracalivre.com.br"
+    ],
+    "n_fontes": 9,
+    "trecho": "Sim. R$ 500 por mês pode ser um valor normal, especialmente para uma pessoa de 30–45 anos, em plano individual ou familiar básico/intermediário. Nessa faixa, estimativas de mercado ficam aproximadamente entre R$ 400 e R$ 1.100, dependendo da cobertura e da região.[1][2] O preço é mais ou menos esperado conforme: - Jovem, enfermaria e plano regional: pode ser caro, embora ainda plausível. - 30–45 anos, cobertura hospi"
+   }
+  },
+  "plano de saúde cobre Mounjaro ou Ozempic?": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Hapvida",
+     "Unimed"
+    ],
+    "fontes": [
+     "bvs.saude.gov.br",
+     "scon.stj.jus.br",
+     "gov.br",
+     "migalhas.com.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "No Brasil, em regra, os planos de saúde não são obrigados a fornecer Mounjaro ou Ozempic para o paciente aplicar em casa, mesmo quando há prescrição médica. Mas existem exceções que vale a pena verificar no seu contrato. O que cada plano costuma cobrir? ! Mounjaro \\(tirzepatida) (Em geral, não cobre) Normalmente, o paciente paga pelo medicamento quando ele é prescrito para uso domiciliar, inclusive no tratamento da o"
+   },
+   "Gemini (app)": {
+    "marcas": [],
+    "fontes": [
+     "fachiniadvogados.com.br",
+     "migalhas.com.br",
+     "gabrielbergamo.com",
+     "advocaciareis.adv.br",
+     "machadovilar.com"
+    ],
+    "n_fontes": 5,
+    "trecho": "Em regra geral, os planos de saúde não são obrigados a cobrir o Mounjaro (tirzepatida) nem o Ozempic (semaglutida).Os principais motivos para a negativa por parte das operadoras e o entendimento jurídico envolvem os seguintes pontos: Por que os planos costumam negar?1. Uso Domiciliar: Conforme a Lei dos Planos de Saúde (Lei nº 9.656/98), as operadoras não são obrigadas a fornecer medicamentos de administração em casa"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "voysaude.com.br",
+     "jusbrasil.com.br",
+     "belisario.com.br",
+     "advocaciareis.adv.br",
+     "tsa.adv.br"
+    ],
+    "n_fontes": 5,
+    "trecho": "Em regra, não. Os planos de saúde geralmente não são obrigados a cobrir Mounjaro (tirzepatida) nem Ozempic (semaglutida) para emagrecimento, mas há exceções e brechas que vale conhecer. Por que a negativa é comum - A cobertura obrigatória da ANS não inclui medicamentos para obesidade. - Apesar de serem aprovados pela Anvisa, tanto o Mounjaro quanto o Ozempic ainda não fazem parte do Rol da ANS, a lista de tratamentos"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "jusaqui.com.br",
+     "vitorbenin.com",
+     "tafelliritz.com.br",
+     "jusbrasil.com.br",
+     "consumidormoderno.com.br",
+     "diariodonordeste.verdesmares.com.br",
+     "saudepetrobras.com.br",
+     "ground.news"
+    ],
+    "n_fontes": 9,
+    "trecho": "Em geral, não há cobertura automática para Mounjaro ou Ozempic pelos planos de saúde no Brasil. Como são normalmente aplicados em casa e não estão no Rol da ANS para fornecimento rotineiro, a operadora costuma negar o pagamento.[1][3] A cobertura pode ser obtida em situações específicas, principalmente quando: - há prescrição médica detalhada; - o medicamento trata uma doença coberta pelo contrato, como diabetes tipo"
+   }
+  },
+  "quem tem diabetes consegue contratar plano de saúde?": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "gov.br",
+     "bvsms.saude.gov.br"
+    ],
+    "n_fontes": 2,
+    "trecho": "Sim\\! No Brasil, quem tem diabetes pode contratar um plano de saúde. A operadora não pode recusar a contratação simplesmente porque a pessoa tem diabetes, de acordo com as regras da Agência Nacional de Saúde Suplementar (ANS). Porém, existem regras específicas para doenças preexistentes que você precisa conhecer antes de assinar o contrato. Como funciona para quem tem diabetes? 1\\. Você pode contratar o plano Ter dia"
+   },
+   "Gemini (app)": {
+    "marcas": [],
+    "fontes": [
+     "anad.org.br",
+     "kobeplanodesaude.com",
+     "educamaisbrasil.com.br"
+    ],
+    "n_fontes": 3,
+    "trecho": "Sim, quem tem diabetes consegue contratar um plano de saúde.De acordo com as regras da ANS (Agência Nacional de Saúde Suplementar), nenhuma operadora pode recusar a venda de um plano de saúde ou cobrar mensalidades mais caras só porque o consumidor tem uma doença preexistente, como o diabetes. A recusa por esse motivo é considerada uma prática discriminatória e ilegal.Para que o processo ocorra de forma segura e dent"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "institutoclaro.org.br",
+     "fortplanos.com.br",
+     "www12.senado.leg.br",
+     "companyhero.com",
+     "belisario.com.br"
+    ],
+    "n_fontes": 5,
+    "trecho": "Sim, pessoas com diabetes podem contratar plano de saúde. A negativa de contratação por causa da doença é considerada discriminatória. Segundo a Sociedade Brasileira de Diabetes, a pessoa com diabetes não está impedida de contratar plano de saúde, podendo a sua negativa, sob tal pretexto, ser considerada uma prática discriminatória por parte das seguradoras. O que pode acontecer na contratação - Carência para doença "
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "diabetes.org",
+     "kobeplanodesaude.com",
+     "dicasdeplanodesaude.com.br",
+     "institutoclaro.org.br",
+     "ikaros.com.br",
+     "telessaude.saude.ba.gov.br",
+     "johnhancock.com"
+    ],
+    "n_fontes": 7,
+    "trecho": "Sim. Quem tem diabetes pode contratar plano de saúde no Brasil, e a operadora não pode recusar a contratação apenas por causa da doença preexistente.[2][4] Ao contratar: - Informe a diabetes corretamente na Declaração de Saúde. - A operadora pode aplicar Cobertura Parcial Temporária (CPT) por até 24 meses para cirurgias, leitos de alta tecnologia e procedimentos de alta complexidade relacionados à doença.[3] - Consul"
+   }
+  },
+  "qual operadora de plano de saúde tem mais reclamações?": {
+   "ChatGPT (app)": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "SulAmérica",
+     "Unimed"
+    ],
+    "fontes": [
+     "justa.com.br",
+     "bigdata.proctracker.app",
+     "eqbeneficios.com.br",
+     "gov.br"
+    ],
+    "n_fontes": 4,
+    "trecho": "Pesquisei os dados mais recentes disponíveis sobre reclamações contra operadoras de planos de saúde no Brasil, considerando os indicadores da Agência Nacional de Saúde Suplementar (ANS). A resposta depende de como as reclamações são contabilizadas\\: pelo número total de queixas ou pela quantidade de reclamações proporcional ao número de beneficiários. Qual operadora tem mais reclamações? ! 1\\. Maior índice de reclama"
+   },
+   "Gemini (app)": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "SulAmérica"
+    ],
+    "fontes": [
+     "axenya.com",
+     "eqbeneficios.com.br",
+     "planosdesaudetodosaqui.com.br",
+     "justa.com.br",
+     "futurodasaude.com.br"
+    ],
+    "n_fontes": 5,
+    "trecho": "Para responder a essa pergunta com precisão, é preciso diferenciar dois cenários analisados pela ANS (Agência Nacional de Saúde Suplementar): o número absoluto de reclamações (quantas queixas a operadora recebeu no total) e o Índice Geral de Reclamações (IGR), que ajusta esse volume proporcionalmente ao tamanho da carteira de clientes de cada plano. 1. Por Número Absoluto (Quem acumula mais queixas)As operadoras que "
+   },
+   "Claude": {
+    "marcas": [
+     "Amil",
+     "Bradesco Saúde",
+     "Hapvida",
+     "NotreDame Intermédica",
+     "Prevent Senior",
+     "SulAmérica",
+     "Unimed"
+    ],
+    "fontes": [
+     "meureajuste.com.br",
+     "reembolsesaude.com",
+     "planodesaude.net"
+    ],
+    "n_fontes": 3,
+    "trecho": "Não existe uma única resposta, porque depende do critério. Os dados mais recentes que encontrei apontam para algumas operadoras diferentes conforme a medição. Em números absolutos de reclamações (NIPs) na ANS: a Unimed Ferj aparece no topo do ranking de 2025, com 1.657 notificações, seguida da Liv Saúde (1.495). Mas esses números não consideram o tamanho da carteira. Esse mesmo levantamento indica que a média do merc"
+   },
+   "Perplexity": {
+    "marcas": [
+     "SulAmérica"
+    ],
+    "fontes": [
+     "justa.com.br",
+     "hospitais.com",
+     "oglobo.globo.com",
+     "companyhero.com",
+     "bloomberglinea.com.br",
+     "noticias.uol.com.br",
+     "br.investing.com",
+     "infomoney.com.br"
+    ],
+    "n_fontes": 9,
+    "trecho": "A Select é a operadora com mais reclamações proporcionalmente ao número de beneficiários entre as grandes operadoras: 427,8 reclamações por 100 mil beneficiários, no período de setembro de 2025 a agosto de 2026, segundo o índice da ANS. A média do setor foi de 52,9.[1] Esse ranking usa reclamações por beneficiário, que é mais adequado para comparação. Em números absolutos, operadoras maiores podem aparecer com mais q"
+   }
+  },
+  "é mais barato contratar plano de saúde com corretor?": {
+   "ChatGPT (app)": {
+    "marcas": [],
+    "fontes": [
+     "gov.br",
+     "planocertosaude.com.br"
+    ],
+    "n_fontes": 2,
+    "trecho": "Na maioria dos casos, não é mais barato contratar um plano de saúde com corretor — mas pode ser mais fácil encontrar um plano que custe menos e atenda melhor às suas necessidades. Pesquisei informações da Agência Nacional de Saúde Suplementar (ANS) e de corretoras brasileiras para entender a diferença. Contratar direto ou com corretor: qual compensa mais? | Critério | Direto com a operadora | Com corretor | |--------"
+   },
+   "Gemini (app)": {
+    "marcas": [],
+    "fontes": [
+     "americansaudeconvenio.com.br",
+     "axenya.com",
+     "givanildo.com.br"
+    ],
+    "n_fontes": 3,
+    "trecho": "Não, o plano de saúde não fica mais caro ao ser contratado por meio de um corretor. O preço final da mensalidade é exatamente o mesmo, seja fechado diretamente com a operadora/seguradora ou por intermédio de um profissional ou corretora. Como funciona a remuneração do corretor? Quem paga é a operadora: O valor do trabalho do corretor (comissão de agenciamento e/ou repasses futuros) já está previsto no custo operacion"
+   },
+   "Claude": {
+    "marcas": [],
+    "fontes": [
+     "viadiretaseguros.com.br",
+     "creditooudebito.com.br",
+     "companyhero.com"
+    ],
+    "n_fontes": 3,
+    "trecho": "Em geral, contratar com corretor não sai mais caro para você, mas a economia não é garantida. O que mais pesa no preço é a forma de contratação (CNPJ ou individual), o tipo de acomodação e a operadora escolhida, e não o canal em si. Por que o corretor pode não encarecer: Uma fonte afirma que contratar o plano direto com a operadora custa exatamente o mesmo do que contratar por qualquer tipo de corretor. Outra explica"
+   },
+   "Perplexity": {
+    "marcas": [],
+    "fontes": [
+     "companyhero.com",
+     "nfcorretoradeseguros.com.br",
+     "axenya.com",
+     "jscorretoradesaude.com.br",
+     "saudefluminense.com.br",
+     "fortplanos.com.br",
+     "investpremiumseguros.com.br",
+     "givanildo.com.br"
+    ],
+    "n_fontes": 8,
+    "trecho": "Em geral, não fica mais barato nem mais caro contratar o mesmo plano com um corretor. A corretora costuma receber comissão da operadora, sem cobrar uma taxa adicional do cliente; o preço da mesma opção tende a ser igual ao da contratação direta.[1][2] A vantagem do corretor é comparar várias operadoras, redes credenciadas, carências e coparticipações, além de oferecer suporte depois da contratação. Porém, confira se "
+   }
+  }
+ },
+ "marcas": {
+  "seguro": [
+   [
+    "Suhai",
+    14
+   ],
+   [
+    "Tokio Marine",
+    11
+   ],
+   [
+    "Azul Seguros",
+    10
+   ],
+   [
+    "Youse",
+    10
+   ],
+   [
+    "Pier",
+    9
+   ],
+   [
+    "Allianz",
+    8
+   ],
+   [
+    "Porto Seguro",
+    8
+   ],
+   [
+    "HDI",
+    7
+   ],
+   [
+    "Mapfre",
+    6
+   ],
+   [
+    "Minuto Seguros",
+    4
+   ],
+   [
+    "Bradesco Seguros",
+    3
+   ],
+   [
+    "Justos",
+    3
+   ],
+   [
+    "Caixa Seguradora",
+    2
+   ],
+   [
+    "Yelum",
+    2
+   ],
+   [
+    "Aliro",
+    1
+   ]
+  ],
+  "saude": [
+   [
+    "Hapvida",
+    15
+   ],
+   [
+    "SulAmérica",
+    14
+   ],
+   [
+    "Unimed",
+    13
+   ],
+   [
+    "Amil",
+    12
+   ],
+   [
+    "Bradesco Saúde",
+    12
+   ],
+   [
+    "NotreDame Intermédica",
+    11
+   ],
+   [
+    "Seguros Unimed",
+    2
+   ],
+   [
+    "Alice",
+    1
+   ],
+   [
+    "Omint",
+    1
+   ],
+   [
+    "Porto Saúde",
+    1
+   ],
+   [
+    "São Cristóvão",
+    1
+   ],
+   [
+    "Trasmontano",
+    1
+   ],
+   [
+    "Prevent Senior",
+    1
+   ]
+  ]
+ },
+ "marcas_por_plataforma": {
+  "seguro": {
+   "ChatGPT (app)": [
+    [
+     "Allianz",
+     3
+    ],
+    [
+     "Azul Seguros",
+     3
+    ],
+    [
+     "Tokio Marine",
+     3
+    ],
+    [
+     "Porto Seguro",
+     2
+    ],
+    [
+     "Youse",
+     2
+    ],
+    [
+     "Minuto Seguros",
+     1
+    ],
+    [
+     "Mapfre",
+     1
+    ],
+    [
+     "Pier",
+     1
+    ]
+   ],
+   "Gemini (app)": [
+    [
+     "Suhai",
+     4
+    ],
+    [
+     "Azul Seguros",
+     3
+    ],
+    [
+     "Porto Seguro",
+     3
+    ],
+    [
+     "Tokio Marine",
+     3
+    ],
+    [
+     "Pier",
+     3
+    ],
+    [
+     "Youse",
+     3
+    ],
+    [
+     "Allianz",
+     2
+    ],
+    [
+     "HDI",
+     2
+    ]
+   ],
+   "Claude": [
+    [
+     "Suhai",
+     5
+    ],
+    [
+     "HDI",
+     3
+    ],
+    [
+     "Youse",
+     3
+    ],
+    [
+     "Porto Seguro",
+     2
+    ],
+    [
+     "Mapfre",
+     2
+    ],
+    [
+     "Pier",
+     2
+    ],
+    [
+     "Allianz",
+     1
+    ],
+    [
+     "Justos",
+     1
+    ]
+   ],
+   "Perplexity": [
+    [
+     "Suhai",
+     4
+    ],
+    [
+     "Tokio Marine",
+     4
+    ],
+    [
+     "Azul Seguros",
+     3
+    ],
+    [
+     "Pier",
+     3
+    ],
+    [
+     "Allianz",
+     2
+    ],
+    [
+     "Youse",
+     2
+    ],
+    [
+     "HDI",
+     1
+    ],
+    [
+     "Porto Seguro",
+     1
+    ]
+   ]
+  },
+  "saude": {
+   "ChatGPT (app)": [
+    [
+     "Unimed",
+     4
+    ],
+    [
+     "Hapvida",
+     3
+    ],
+    [
+     "Amil",
+     2
+    ],
+    [
+     "Bradesco Saúde",
+     2
+    ],
+    [
+     "NotreDame Intermédica",
+     2
+    ],
+    [
+     "SulAmérica",
+     2
+    ]
+   ],
+   "Gemini (app)": [
+    [
+     "Hapvida",
+     5
+    ],
+    [
+     "SulAmérica",
+     5
+    ],
+    [
+     "Amil",
+     4
+    ],
+    [
+     "Bradesco Saúde",
+     4
+    ],
+    [
+     "NotreDame Intermédica",
+     4
+    ],
+    [
+     "Unimed",
+     3
+    ],
+    [
+     "Seguros Unimed",
+     2
+    ],
+    [
+     "Alice",
+     1
+    ]
+   ],
+   "Claude": [
+    [
+     "Bradesco Saúde",
+     4
+    ],
+    [
+     "Hapvida",
+     4
+    ],
+    [
+     "SulAmérica",
+     4
+    ],
+    [
+     "Amil",
+     3
+    ],
+    [
+     "Unimed",
+     3
+    ],
+    [
+     "NotreDame Intermédica",
+     2
+    ],
+    [
+     "Porto Saúde",
+     1
+    ],
+    [
+     "Prevent Senior",
+     1
+    ]
+   ],
+   "Perplexity": [
+    [
+     "Amil",
+     3
+    ],
+    [
+     "Hapvida",
+     3
+    ],
+    [
+     "NotreDame Intermédica",
+     3
+    ],
+    [
+     "SulAmérica",
+     3
+    ],
+    [
+     "Unimed",
+     3
+    ],
+    [
+     "Bradesco Saúde",
+     2
+    ],
+    [
+     "São Cristóvão",
+     1
+    ],
+    [
+     "Trasmontano",
+     1
+    ]
+   ]
+  }
+ },
+ "fontes_ia": {
+  "seguro": [
+   [
+    "seguroauto.org",
+    14
+   ],
+   [
+    "meuseguromaisbarato.com.br",
+    11
+   ],
+   [
+    "idinheiro.com.br",
+    10
+   ],
+   [
+    "suhaiseguradora.com",
+    8
+   ],
+   [
+    "virtuscorretora.com.br",
+    7
+   ],
+   [
+    "allianz.com.br",
+    6
+   ],
+   [
+    "minutoseguros.com.br",
+    6
+   ],
+   [
+    "gov.br",
+    6
+   ],
+   [
+    "smartia.com.br",
+    5
+   ],
+   [
+    "aemcorretoradeseguros.com.br",
+    5
+   ],
+   [
+    "reviewauto.com.br",
+    4
+   ],
+   [
+    "solatiumseguros.com",
+    4
+   ],
+   [
+    "comparaonline.com.br",
+    4
+   ],
+   [
+    "forceseguros.com",
+    4
+   ],
+   [
+    "justos.com.br",
+    4
+   ]
+  ],
+  "saude": [
+   [
+    "companyhero.com",
+    11
+   ],
+   [
+    "gov.br",
+    9
+   ],
+   [
+    "tabelasaude.com",
+    9
+   ],
+   [
+    "planodesaude.net",
+    6
+   ],
+   [
+    "dicasdeplanodesaude.com.br",
+    5
+   ],
+   [
+    "busqueplanodesaude.com.br",
+    4
+   ],
+   [
+    "blog.ilovesaude.com.br",
+    4
+   ],
+   [
+    "saudecidade.com",
+    4
+   ],
+   [
+    "tabelaplanos.com.br",
+    4
+   ],
+   [
+    "brseguro.com",
+    4
+   ],
+   [
+    "planosdesaude.org",
+    3
+   ],
+   [
+    "onlineplanodesaude.com.br",
+    3
+   ],
+   [
+    "fortplanos.com.br",
+    3
+   ],
+   [
+    "justa.com.br",
+    3
+   ],
+   [
+    "axenya.com",
+    3
+   ]
+  ]
+ },
+ "serp": {
+  "seguro auto": {
+   "organicos": [
+    "bbseguros.com.br",
+    "mapfre.com.br",
+    "meuseguromaisbarato.com.br",
+    "blog.nubank.com.br",
+    "ailos.coop.br",
+    "santander.com.br",
+    "sicoob.com.br",
+    "99app.com"
+   ],
+   "aio_fontes": [
+    "bradescoseguros.com.br",
+    "portoseguro.com.br",
+    "portoseguro.com.br",
+    "bradescoseguros.com.br",
+    "allianz.com.br",
+    "cote.allianz.com.br",
+    "tokiomarine.com.br",
+    "pier.digital",
+    "autocompara.com.br",
+    "allianz.com.br",
+    "autocompara.com.br",
+    "tokiomarine.com.br",
+    "tokiomarine.com.br",
+    "bradescoseguros.com.br",
+    "allianz.com.br",
+    "portoseguro.com.br"
+   ],
+   "tem_aio": true
+  },
+  "cotação seguro auto": {
+   "organicos": [
+    "thinkseg.com",
+    "sicoob.com.br",
+    "minutoseguros.com.br",
+    "yelumseguros.com.br",
+    "santander.com.br",
+    "123seguro.com.br",
+    "ituran.com.br",
+    "globalopsi.com",
+    "segurofacil.com.br"
+   ],
+   "aio_fontes": [
+    "portoseguro.com.br",
+    "autocompara.com.br",
+    "minutoseguros.com.br",
+    "pier.digital",
+    "portoseguro.com.br",
+    "youtube.com",
+    "autocompara.com.br",
+    "pier.digital",
+    "cote.allianz.com.br",
+    "tokiomarine.com.br",
+    "bradescoseguros.com.br",
+    "youtube.com",
+    "youtube.com",
+    "youtube.com",
+    "youtube.com",
+    "youtube.com",
+    "autocompara.com.br",
+    "cote.allianz.com.br",
+    "portoseguro.com.br"
+   ],
+   "tem_aio": true
+  },
+  "seguro auto mais barato": {
+   "organicos": [
+    "mapfre.com.br",
+    "globalopsi.com",
+    "suhaiseguradora.com",
+    "neoseguradora.com.br",
+    "amigaosaude.com.br",
+    "pulsoseguros.com.br",
+    "smartia.com.br",
+    "azulseguros.com.br"
+   ],
+   "aio_fontes": [
+    "mapfre.com.br",
+    "seguroauto.org",
+    "seguroauto.org",
+    "suhaiseguradora.com",
+    "pier.digital",
+    "tokiomarine.com.br",
+    "mapfre.com.br",
+    "suhaiseguradora.com",
+    "ituran.com.br",
+    "youtube.com",
+    "mapfre.com.br",
+    "seguroauto.org",
+    "pier.digital"
+   ],
+   "tem_aio": true
+  },
+  "melhor seguradora de carro": {
+   "organicos": [
+    "smartia.com.br",
+    "idinheiro.com.br",
+    "meuseguromaisbarato.com.br",
+    "suhaiseguradora.com",
+    "seguroauto.org",
+    "youtube.com"
+   ],
+   "aio_fontes": [
+    "mapfre.com.br",
+    "portalvaleseguros.com.br",
+    "portoseguro.com.br",
+    "azulseguros.com.br",
+    "allianz.com.br",
+    "tokiomarine.com.br",
+    "suhaiseguradora.com",
+    "pier.digital",
+    "portoseguro.com.br",
+    "tokiomarine.com.br",
+    "allianz.com.br",
+    "azulseguros.com.br",
+    "suhaiseguradora.com",
+    "pier.digital",
+    "portoseguro.com.br",
+    "allianz.com.br",
+    "azulseguros.com.br"
+   ],
+   "tem_aio": true
+  },
+  "quanto custa seguro de carro": {
+   "organicos": [
+    "bbseguros.com.br",
+    "portoseguro.com.br",
+    "meuseguromaisbarato.com.br",
+    "fortificaseguros.com.br",
+    "pulsoseguros.com.br",
+    "blog.pier.digital",
+    "tokiomarine.com.br",
+    "investidorsardinha.r7.com"
+   ],
+   "aio_fontes": [
+    "assinatura.localiza.com",
+    "rbspirajuseguros.com.br",
+    "garageseguros.com.br",
+    "idinheiro.com.br",
+    "seguroauto.org",
+    "idinheiro.com.br",
+    "assinatura.localiza.com",
+    "garageseguros.com.br",
+    "youtube.com",
+    "assinatura.localiza.com",
+    "autocompara.com.br",
+    "cote.allianz.com.br",
+    "portoseguro.com.br",
+    "portoseguro.com.br",
+    "cote.allianz.com.br",
+    "autocompara.com.br"
+   ],
+   "tem_aio": true
+  },
+  "seguro auto online": {
+   "organicos": [
+    "autocompara.com.br",
+    "cote.allianz.com.br",
+    "youse.com.br",
+    "pier.digital",
+    "tokiomarine.com.br",
+    "assinatura.azulseguros.com.br",
+    "segurofacil.com.br",
+    "semparar.com.br",
+    "portoseguro.com.br"
+   ],
+   "aio_fontes": [
+    "youse.com.br",
+    "pier.digital",
+    "cote.allianz.com.br",
+    "minutoseguros.com.br",
+    "youtube.com",
+    "youtube.com",
+    "cote.allianz.com.br",
+    "pier.digital",
+    "instagram.com",
+    "youtube.com",
+    "youse.com.br",
+    "cote.allianz.com.br",
+    "pier.digital"
+   ],
+   "tem_aio": true
+  },
+  "plano de saúde": {
+   "organicos": [
+    "salutconsult.com",
+    "ans.gov.br"
+   ],
+   "aio_fontes": [
+    "youtube.com",
+    "gndisul.com.br",
+    "jusbrasil.com.br",
+    "youtube.com",
+    "plano-de-saude-saopaulo.com.br",
+    "instagram.com",
+    "youtube.com",
+    "jusbrasil.com.br",
+    "opopular.com.br",
+    "youtube.com",
+    "youtube.com",
+    "gndisul.com.br"
+   ],
+   "tem_aio": true
+  },
+  "plano de saúde mais barato": {
+   "organicos": [
+    "tabelasaude.com",
+    "google.com",
+    "busqueplanodesaude.com.br"
+   ],
+   "aio_fontes": [
+    "tabelasaude.com",
+    "tabelasaude.com",
+    "pedranoseguros.com.br",
+    "hebrombeneficios.com.br",
+    "tabelasaude.com",
+    "affix.com.br",
+    "youtube.com",
+    "planoamil.com.br",
+    "tabelasaude.com",
+    "tabelasaude.com",
+    "tabelasaude.com",
+    "affix.com.br",
+    "youtube.com"
+   ],
+   "tem_aio": true
+  },
+  "melhor plano de saúde": {
+   "organicos": [
+    "portal.sulamericaseguros.com.br",
+    "blog.ilovesaude.com.br",
+    "conveniosmedicossp.com.br",
+    "companyhero.com",
+    "planosdesaudetodosaqui.com.br",
+    "youtube.com",
+    "qualicorp.com.br",
+    "serasa.com.br",
+    "plano-de-saude-saopaulo.com.br"
+   ],
+   "aio_fontes": [
+    "blog.ilovesaude.com.br",
+    "companyhero.com",
+    "plano-de-saude-saopaulo.com.br",
+    "portal.sulamericaseguros.com.br",
+    "blog.ilovesaude.com.br",
+    "youtube.com",
+    "companyhero.com",
+    "conveniosmedicossp.com.br",
+    "instagram.com",
+    "plano-de-saude-saopaulo.com.br",
+    "blog.ilovesaude.com.br",
+    "companyhero.com",
+    "plano-de-saude-saopaulo.com.br",
+    "planosdesaudetodosaqui.com.br",
+    "serasa.com.br",
+    "portal.sulamericaseguros.com.br",
+    "blog.ilovesaude.com.br",
+    "conveniosmedicossp.com.br"
+   ],
+   "tem_aio": true
+  },
+  "plano de saúde individual": {
+   "organicos": [
+    "conveniosaudebradesco.com.br",
+    "gndi.com.br",
+    "qualicorp.com.br",
+    "unimed.coop.br",
+    "plano-de-saude-saopaulo.com.br",
+    "www2.hapvida.com.br",
+    "gov.br",
+    "planosdesaudetodosaqui.com.br"
+   ],
+   "aio_fontes": [
+    "tabelasaude.com",
+    "planosdesaudeprevent.com.br",
+    "youtube.com",
+    "youtube.com",
+    "youtube.com",
+    "youtube.com",
+    "tabelasaude.com",
+    "conveniosaudebradesco.com.br",
+    "gndi.com.br",
+    "plano-de-saude-saopaulo.com.br",
+    "conveniosaudebradesco.com.br",
+    "gndi.com.br"
+   ],
+   "tem_aio": true
+  },
+  "plano de saúde mei": {
+   "organicos": [
+    "saudebeneficencia.com.br",
+    "blog.unimedcascavel.coop.br",
+    "evoraseguros.com.br",
+    "joov.com.br",
+    "segurosaudenet.com.br",
+    "planosdesaudemei.com.br",
+    "brseguro.com",
+    "youtube.com"
+   ],
+   "aio_fontes": [
+    "garantiaseg.com.br",
+    "levesaude.com.br",
+    "youtube.com",
+    "saudebeneficencia.com.br",
+    "levesaude.com.br",
+    "youtube.com",
+    "garantiaseg.com.br",
+    "unimedriopreto.com.br",
+    "garantiaseg.com.br",
+    "unimedriopreto.com.br",
+    "garantiaseg.com.br",
+    "unimed.coop.br",
+    "unimedriopreto.com.br",
+    "qualicorp.com.br",
+    "unimedriopreto.com.br",
+    "unimed.coop.br",
+    "garantiaseg.com.br"
+   ],
+   "tem_aio": true
+  },
+  "quanto custa plano de saúde": {
+   "organicos": [
+    "planossaopaulo.com.br",
+    "idinheiro.com.br",
+    "planosaudesalvador.com.br",
+    "rotaseguros.com.br",
+    "conveniosaudebradesco.com.br",
+    "busqueplanodesaude.com.br",
+    "onlineplanodesaude.com.br",
+    "geap.org.br",
+    "cotacaoplanosdesaude.com.br"
+   ],
+   "aio_fontes": [
+    "tabelasplanosdesaude.com.br",
+    "companyhero.com",
+    "planosdesaudetodosaqui.com.br",
+    "tabelasaude.com",
+    "alice.com.br",
+    "tabelasaude.com",
+    "companyhero.com",
+    "companyhero.com",
+    "onlineplanodesaude.com.br",
+    "companyhero.com",
+    "tabelasplanosdesaude.com.br",
+    "tabelasaude.com",
+    "tabelasaude.com",
+    "companyhero.com",
+    "tabelasaude.com",
+    "onlineplanodesaude.com.br",
+    "planosdesaudetodosaqui.com.br",
+    "alice.com.br",
+    "onlineplanodesaude.com.br"
+   ],
+   "tem_aio": true
+  }
+ },
+ "modo_ia": {
+  "melhor seguradora de carro": {
+   "fontes": [
+    "solatiumseguros.com",
+    "aemcorretoradeseguros.com.br",
+    "blog.portoseguro.com.br",
+    "instagram.com",
+    "youtube.com",
+    "suhaiseguradora.com",
+    "reclameaqui.com.br",
+    "smartia.com.br",
+    "idinheiro.com.br",
+    "evoraseguros.com.br",
+    "smartia.com.br",
+    "solatiumseguros.com"
+   ],
+   "marcas": [
+    "Azul Seguros",
+    "HDI",
+    "Minuto Seguros",
+    "Porto Seguro",
+    "Suhai",
+    "Tokio Marine",
+    "Youse"
+   ]
+  },
+  "seguro auto mais barato": {
+   "fontes": [
+    "seguroauto.org",
+    "youtube.com",
+    "seguroauto.org",
+    "idinheiro.com.br",
+    "ituran.com.br",
+    "seguroauto.org",
+    "smartia.com.br",
+    "seguroauto.org",
+    "seguroauto.org",
+    "mapfre.com.br",
+    "virtuscorretora.com.br",
+    "cristianoandradeseguros.com.br",
+    "seguroauto.org",
+    "comparaonline.com.br",
+    "smartia.com.br",
+    "seguroauto.org",
+    "mapfre.com.br",
+    "ituran.com.br"
+   ],
+   "marcas": [
+    "Mapfre",
+    "Pier",
+    "Porto Seguro",
+    "Suhai",
+    "Tokio Marine",
+    "Youse"
+   ]
+  },
+  "melhor plano de saúde": {
+   "fontes": [
+    "blog.ilovesaude.com.br",
+    "blog.ilovesaude.com.br",
+    "beneficiosrh.com.br",
+    "beneficiosrh.com.br",
+    "blog.ilovesaude.com.br"
+   ],
+   "marcas": [
+    "Amil",
+    "Bradesco Saúde",
+    "Hapvida",
+    "NotreDame Intermédica",
+    "SulAmérica",
+    "Unimed"
+   ]
+  },
+  "plano de saúde mais barato": {
+   "fontes": [
+    "tabelasaude.com",
+    "instagram.com",
+    "tabelasaude.com",
+    "tabelasaude.com",
+    "companyhero.com",
+    "instagram.com",
+    "tabelasaude.com",
+    "tabelaplanos.com.br",
+    "tabelasaude.com",
+    "tabelasaude.com",
+    "tabelaplanos.com.br",
+    "blog.ilovesaude.com.br",
+    "instagram.com",
+    "blog.ilovesaude.com.br",
+    "instagram.com",
+    "gndi.com.br",
+    "busqueplanodesaude.com.br",
+    "tabelasaude.com"
+   ],
+   "marcas": [
+    "Amil",
+    "Hapvida",
+    "NotreDame Intermédica",
+    "SulAmérica",
+    "Trasmontano",
+    "Unimed"
+   ]
+  }
+ },
+ "perguntas_v1": [
+  "qual a melhor seguradora de carro no brasil",
+  "quanto custa um seguro de carro por mês",
+  "onde fazer cotação de seguro auto online mais barato",
+  "vale a pena fazer seguro de carro",
+  "o que o seguro auto cobre",
+  "qual seguro auto tem o melhor custo benefício",
+  "qual o melhor plano de saúde do brasil",
+  "qual o plano de saúde mais barato",
+  "quanto custa um plano de saúde individual por mês",
+  "qual o melhor plano de saúde para família",
+  "vale a pena fazer plano de saúde pelo mei",
+  "como escolher um plano de saúde"
+ ],
+ "perguntas_v2": [
+  "R$ 300 por mês é caro para seguro de carro?",
+  "qual seguradora de carro devo evitar?",
+  "qual a seguradora de carro mais barata em São Paulo?",
+  "meu filho pode dirigir meu carro se não estiver no seguro?",
+  "o seguro do carro aumenta se eu usar a assistência de vidros?",
+  "R$ 500 por mês é normal para plano de saúde?",
+  "plano de saúde cobre Mounjaro ou Ozempic?",
+  "quem tem diabetes consegue contratar plano de saúde?",
+  "qual operadora de plano de saúde tem mais reclamações?",
+  "é mais barato contratar plano de saúde com corretor?"
+ ],
+ "gasto_usd": 2.0323,
+ "pedidos": 118
+}

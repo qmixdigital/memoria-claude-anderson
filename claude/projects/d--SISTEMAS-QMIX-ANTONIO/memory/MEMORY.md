@@ -11,3 +11,4 @@
 - [API do editor e MCP do Jean](api-editor-mcp-jean.md) — chave por editor, fila do Antonio, modo editor no wp-mcp; falta a regra do Cloudflare
 - [Dayane e Diego: pagantes com indexação automática](dayane-editora-pagante-indexacao-auto.md) — lc_users 10 e 11, flag indexacao_auto, 3 créditos do fornecedor por URL sem debitar dela
 - [Editorias black ocultas](editorias-black-ocultas.md) — 5 categorias ocultas em 32 portais, reservadas a 2/4/10/11; 10 apps Next pendentes
+- [Receptor do Antônio em site estático](receptor-antonio-site-estatico.md) — _worker.js + KV nos três Pages convertidos; como estender a outro site

@@ -327,6 +327,12 @@ def coletar_ga4(cfg, conf, dias):
         "botao": corte("customEvent:texto_botao", 15),
         "paginas": corte("pagePath", 15),
         "canais": corte("sessionDefaultChannelGroup", 12),
+        # Origem exata da sessao que converteu (google / organic, instagram / social,
+        # chatgpt.com / referral): o canal diz o tipo, a origem diz o nome.
+        "origens": corte("sessionSourceMedium", 12),
+        # Tema da pagina (dimensao "tema" que o main.js dos sites novos envia em
+        # todo evento): junta doenca, tratamento e artigo do mesmo assunto.
+        "temas": corte("customEvent:tema", 12),
     }
     contato_detalhe["total"] = sum(x["contagem"]
                                    for x in contato_detalhe["metodo"]) or 0

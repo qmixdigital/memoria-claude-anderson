@@ -63,3 +63,6 @@
 - [Página sites para médicos](qmix-pagina-sites-para-medicos.md) — /sites-para-medicos criada 16/10/2026, mesmos pacotes de pequenas empresas; prova só com especialidades/cidades reais (Goiânia, BH), regras do CFM prometidas
 - [Fornecedor Lucas Martinatto inativo](fornecedor-lucas-martinatto-inativo.md) — 21/10/2026: 35 portais dele inativados (oitomeia, portalpalotina, revistafatorbrasil...); não confundir com Lucas Pelisari (blogs gratuitos)
 - [Filtros da lista de backlinks](qmix-lista-backlinks-filtros.md) — 21/10/2026: região, praça, nicho, preço, DA mín., tráfego mín., ordenação e chips na /lista-de-backlinks; /comprar-backlinks pública não tem grade de propósito; sem DR no cadastro
+- [Ferramentas: 60+ novas (lotes 22/10/2026)](qmix-ferramentas-lotes-2026-10.md) — gerador gen.py + specs, widgets em _shared, regra do Cloudflare para câmera/mic, tabelas 2026 em trab.ts, o que ficou de fora
+- [Pesquisa de ferramentas novas 2026-10](qmix-ferramentas-pesquisa-novas-2026-10.md) — 22/10/2026: dados em D:\tmp\ferr, critério (SERP de sites pequenos = viável), lista priorizada, casos "expandir em vez de criar" e o que não fazer
+- [Cópia local do qmix.digital](qmix-digital-site-copia-local.md) — 22/10/2026: site estático (Cloudflare Pages) baixado para D:\SITES\qmix.digital, 46 páginas; GSC só com busca de marca

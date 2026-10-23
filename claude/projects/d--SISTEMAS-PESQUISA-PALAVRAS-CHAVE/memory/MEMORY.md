@@ -1,0 +1,3 @@
+- [Relatório Raio-X DataForSEO](relatorio-raio-x-dataforseo.md) — modelo do sistema de pesquisa de palavras-chave; dados e prompt em referencia/
+- [Sistema Raio-X de palavras-chave](sistema-pesquisa-palavras-chave.md) — CLI Python sobre DataForSEO, validado com a API real, US$ 1,95 por relatório
+- [Relatórios sempre Brasil](relatorios-sempre-brasil.md) — todo relatório de palavras-chave é para cliente BR, pt-BR; etapa 5 (EUA) só a pedido
